@@ -1,0 +1,3 @@
+"/usr/bin/cmake" -E remove -f ../lib/libepd.a
+/usr/bin/ar cq ../lib/libepd.a  CMakeFiles/CUDD_EPD_LIB.dir/epd.c.o
+/usr/bin/ranlib ../lib/libepd.a

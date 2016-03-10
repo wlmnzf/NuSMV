@@ -1,0 +1,84 @@
+Determining if the include file ndir.h exists failed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2199226119/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2199226119.dir/build.make CMakeFiles/cmTryCompileExec2199226119.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2199226119.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2199226119.dir/CheckIncludeFile.c.o   -c /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:18: fatal error: ndir.h: No such file or directory
+ #include <ndir.h>
+                  ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTryCompileExec2199226119.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec2199226119/fast] Error 2
+
+
+Determining if the include file sys/ndir.h exists failed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1251838740/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1251838740.dir/build.make CMakeFiles/cmTryCompileExec1251838740.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1251838740.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1251838740.dir/CheckIncludeFile.c.o   -c /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:22: fatal error: sys/ndir.h: No such file or directory
+ #include <sys/ndir.h>
+                      ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTryCompileExec1251838740.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1251838740/fast] Error 2
+
+
+Determining if the function floor exists failed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1493106393/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1493106393.dir/build.make CMakeFiles/cmTryCompileExec1493106393.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1493106393.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=floor   -o CMakeFiles/cmTryCompileExec1493106393.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘floor’ [enabled by default]
+/usr/share/cmake-2.8/Modules/CheckFunctionExists.c:3:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+Linking C executable cmTryCompileExec1493106393
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1493106393.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=floor    CMakeFiles/cmTryCompileExec1493106393.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1493106393 -rdynamic 
+CMakeFiles/cmTryCompileExec1493106393.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x7): undefined reference to `floor'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec1493106393] Error 1
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1493106393/fast] Error 2
+
+
+Determining if the function pow exists failed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec409711815/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec409711815.dir/build.make CMakeFiles/cmTryCompileExec409711815.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec409711815.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pow   -o CMakeFiles/cmTryCompileExec409711815.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘pow’ [enabled by default]
+/usr/share/cmake-2.8/Modules/CheckFunctionExists.c:3:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+Linking C executable cmTryCompileExec409711815
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec409711815.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pow    CMakeFiles/cmTryCompileExec409711815.dir/CheckFunctionExists.c.o  -o cmTryCompileExec409711815 -rdynamic 
+CMakeFiles/cmTryCompileExec409711815.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x7): undefined reference to `pow'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec409711815] Error 1
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec409711815/fast] Error 2
+
+

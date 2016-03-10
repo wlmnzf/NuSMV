@@ -1,0 +1,1230 @@
+The system is: Linux - 3.13.0-74-generic - i686
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/2.8.12.2/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/2.8.12.2/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3443970857/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3443970857.dir/build.make CMakeFiles/cmTryCompileExec3443970857.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3443970857.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3443970857.dir/testCCompiler.c.o   -c /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec3443970857
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3443970857.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec3443970857.dir/testCCompiler.c.o  -o cmTryCompileExec3443970857 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2109927543/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2109927543.dir/build.make CMakeFiles/cmTryCompileExec2109927543.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2109927543.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2109927543.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec2109927543
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2109927543.dir/link.txt --verbose=1
+/usr/bin/cc     -v CMakeFiles/cmTryCompileExec2109927543.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec2109927543 -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/i686-linux-gnu/4.8/lto-wrapper
+Target: i686-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.4-2ubuntu1~14.04' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-i386/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-i386 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-i386 --with-arch-directory=i386 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-targets=all --enable-multiarch --disable-werror --with-arch-32=i686 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=i686-linux-gnu --host=i686-linux-gnu --target=i686-linux-gnu
+Thread model: posix
+gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04) 
+COMPILER_PATH=/usr/lib/gcc/i686-linux-gnu/4.8/:/usr/lib/gcc/i686-linux-gnu/4.8/:/usr/lib/gcc/i686-linux-gnu/:/usr/lib/gcc/i686-linux-gnu/4.8/:/usr/lib/gcc/i686-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/i686-linux-gnu/4.8/:/usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/:/usr/lib/gcc/i686-linux-gnu/4.8/../../../../lib/:/lib/i386-linux-gnu/:/lib/../lib/:/usr/lib/i386-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/i686-linux-gnu/4.8/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2109927543' '-rdynamic' '-mtune=generic' '-march=i686'
+ /usr/lib/gcc/i686-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_i386 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib/ld-linux.so.2 -z relro -o cmTryCompileExec2109927543 /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crt1.o /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crti.o /usr/lib/gcc/i686-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/i686-linux-gnu/4.8 -L/usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu -L/usr/lib/gcc/i686-linux-gnu/4.8/../../../../lib -L/lib/i386-linux-gnu -L/lib/../lib -L/usr/lib/i386-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/i686-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec2109927543.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/i686-linux-gnu/4.8/crtend.o /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crtn.o
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec2109927543/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec2109927543.dir/build.make CMakeFiles/cmTryCompileExec2109927543.dir/build]
+  ignore line: [make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec2109927543.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2109927543.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec2109927543]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2109927543.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTryCompileExec2109927543.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec2109927543 -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/i686-linux-gnu/4.8/lto-wrapper]
+  ignore line: [Target: i686-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.4-2ubuntu1~14.04' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-i386/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-i386 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-i386 --with-arch-directory=i386 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-targets=all --enable-multiarch --disable-werror --with-arch-32=i686 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=i686-linux-gnu --host=i686-linux-gnu --target=i686-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/i686-linux-gnu/4.8/:/usr/lib/gcc/i686-linux-gnu/4.8/:/usr/lib/gcc/i686-linux-gnu/:/usr/lib/gcc/i686-linux-gnu/4.8/:/usr/lib/gcc/i686-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/i686-linux-gnu/4.8/:/usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/:/usr/lib/gcc/i686-linux-gnu/4.8/../../../../lib/:/lib/i386-linux-gnu/:/lib/../lib/:/usr/lib/i386-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/i686-linux-gnu/4.8/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2109927543' '-rdynamic' '-mtune=generic' '-march=i686']
+  link line: [ /usr/lib/gcc/i686-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_i386 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib/ld-linux.so.2 -z relro -o cmTryCompileExec2109927543 /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crt1.o /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crti.o /usr/lib/gcc/i686-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/i686-linux-gnu/4.8 -L/usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu -L/usr/lib/gcc/i686-linux-gnu/4.8/../../../../lib -L/lib/i386-linux-gnu -L/lib/../lib -L/usr/lib/i386-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/i686-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec2109927543.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/i686-linux-gnu/4.8/crtend.o /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/i686-linux-gnu/4.8/collect2] ==> ignore
+    arg [--sysroot=/] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_i386] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-linux.so.2] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec2109927543] ==> ignore
+    arg [/usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/i686-linux-gnu/4.8/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/i686-linux-gnu/4.8] ==> dir [/usr/lib/gcc/i686-linux-gnu/4.8]
+    arg [-L/usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu] ==> dir [/usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu]
+    arg [-L/usr/lib/gcc/i686-linux-gnu/4.8/../../../../lib] ==> dir [/usr/lib/gcc/i686-linux-gnu/4.8/../../../../lib]
+    arg [-L/lib/i386-linux-gnu] ==> dir [/lib/i386-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/i386-linux-gnu] ==> dir [/usr/lib/i386-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/i686-linux-gnu/4.8/../../..] ==> dir [/usr/lib/gcc/i686-linux-gnu/4.8/../../..]
+    arg [CMakeFiles/cmTryCompileExec2109927543.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/usr/lib/gcc/i686-linux-gnu/4.8/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crtn.o] ==> ignore
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  collapse library dir [/usr/lib/gcc/i686-linux-gnu/4.8] ==> [/usr/lib/gcc/i686-linux-gnu/4.8]
+  collapse library dir [/usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu] ==> [/usr/lib/i386-linux-gnu]
+  collapse library dir [/usr/lib/gcc/i686-linux-gnu/4.8/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/i386-linux-gnu] ==> [/lib/i386-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/i386-linux-gnu] ==> [/usr/lib/i386-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/i686-linux-gnu/4.8/../../..] ==> [/usr/lib]
+  implicit libs: [c]
+  implicit dirs: [/usr/lib/gcc/i686-linux-gnu/4.8;/usr/lib/i386-linux-gnu;/usr/lib;/lib/i386-linux-gnu;/lib]
+  implicit fwks: []
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2368453779/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2368453779.dir/build.make CMakeFiles/cmTryCompileExec2368453779.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2368453779.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec2368453779.dir/testCXXCompiler.cxx.o -c /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec2368453779
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2368453779.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTryCompileExec2368453779.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec2368453779 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3369078522/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3369078522.dir/build.make CMakeFiles/cmTryCompileExec3369078522.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3369078522.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec3369078522.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec3369078522
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3369078522.dir/link.txt --verbose=1
+/usr/bin/c++      -v CMakeFiles/cmTryCompileExec3369078522.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec3369078522 -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/i686-linux-gnu/4.8/lto-wrapper
+Target: i686-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.4-2ubuntu1~14.04' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-i386/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-i386 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-i386 --with-arch-directory=i386 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-targets=all --enable-multiarch --disable-werror --with-arch-32=i686 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=i686-linux-gnu --host=i686-linux-gnu --target=i686-linux-gnu
+Thread model: posix
+gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04) 
+COMPILER_PATH=/usr/lib/gcc/i686-linux-gnu/4.8/:/usr/lib/gcc/i686-linux-gnu/4.8/:/usr/lib/gcc/i686-linux-gnu/:/usr/lib/gcc/i686-linux-gnu/4.8/:/usr/lib/gcc/i686-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/i686-linux-gnu/4.8/:/usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/:/usr/lib/gcc/i686-linux-gnu/4.8/../../../../lib/:/lib/i386-linux-gnu/:/lib/../lib/:/usr/lib/i386-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/i686-linux-gnu/4.8/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3369078522' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=i686'
+ /usr/lib/gcc/i686-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_i386 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib/ld-linux.so.2 -z relro -o cmTryCompileExec3369078522 /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crt1.o /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crti.o /usr/lib/gcc/i686-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/i686-linux-gnu/4.8 -L/usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu -L/usr/lib/gcc/i686-linux-gnu/4.8/../../../../lib -L/lib/i386-linux-gnu -L/lib/../lib -L/usr/lib/i386-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/i686-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec3369078522.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/i686-linux-gnu/4.8/crtend.o /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crtn.o
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec3369078522/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec3369078522.dir/build.make CMakeFiles/cmTryCompileExec3369078522.dir/build]
+  ignore line: [make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec3369078522.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTryCompileExec3369078522.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec3369078522]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3369078522.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTryCompileExec3369078522.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec3369078522 -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/i686-linux-gnu/4.8/lto-wrapper]
+  ignore line: [Target: i686-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.4-2ubuntu1~14.04' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-i386/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-i386 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-i386 --with-arch-directory=i386 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-targets=all --enable-multiarch --disable-werror --with-arch-32=i686 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=i686-linux-gnu --host=i686-linux-gnu --target=i686-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/i686-linux-gnu/4.8/:/usr/lib/gcc/i686-linux-gnu/4.8/:/usr/lib/gcc/i686-linux-gnu/:/usr/lib/gcc/i686-linux-gnu/4.8/:/usr/lib/gcc/i686-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/i686-linux-gnu/4.8/:/usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/:/usr/lib/gcc/i686-linux-gnu/4.8/../../../../lib/:/lib/i386-linux-gnu/:/lib/../lib/:/usr/lib/i386-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/i686-linux-gnu/4.8/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3369078522' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=i686']
+  link line: [ /usr/lib/gcc/i686-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_i386 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib/ld-linux.so.2 -z relro -o cmTryCompileExec3369078522 /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crt1.o /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crti.o /usr/lib/gcc/i686-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/i686-linux-gnu/4.8 -L/usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu -L/usr/lib/gcc/i686-linux-gnu/4.8/../../../../lib -L/lib/i386-linux-gnu -L/lib/../lib -L/usr/lib/i386-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/i686-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec3369078522.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/i686-linux-gnu/4.8/crtend.o /usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/i686-linux-gnu/4.8/collect2] ==> ignore
+    arg [--sysroot=/] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_i386] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-linux.so.2] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec3369078522] ==> ignore
+    arg [/usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/i686-linux-gnu/4.8/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/i686-linux-gnu/4.8] ==> dir [/usr/lib/gcc/i686-linux-gnu/4.8]
+    arg [-L/usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu] ==> dir [/usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu]
+    arg [-L/usr/lib/gcc/i686-linux-gnu/4.8/../../../../lib] ==> dir [/usr/lib/gcc/i686-linux-gnu/4.8/../../../../lib]
+    arg [-L/lib/i386-linux-gnu] ==> dir [/lib/i386-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/i386-linux-gnu] ==> dir [/usr/lib/i386-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/i686-linux-gnu/4.8/../../..] ==> dir [/usr/lib/gcc/i686-linux-gnu/4.8/../../..]
+    arg [CMakeFiles/cmTryCompileExec3369078522.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/i686-linux-gnu/4.8/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu/crtn.o] ==> ignore
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  collapse library dir [/usr/lib/gcc/i686-linux-gnu/4.8] ==> [/usr/lib/gcc/i686-linux-gnu/4.8]
+  collapse library dir [/usr/lib/gcc/i686-linux-gnu/4.8/../../../i386-linux-gnu] ==> [/usr/lib/i386-linux-gnu]
+  collapse library dir [/usr/lib/gcc/i686-linux-gnu/4.8/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/i386-linux-gnu] ==> [/lib/i386-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/i386-linux-gnu] ==> [/usr/lib/i386-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/i686-linux-gnu/4.8/../../..] ==> [/usr/lib]
+  implicit libs: [stdc++;m;c]
+  implicit dirs: [/usr/lib/gcc/i686-linux-gnu/4.8;/usr/lib/i386-linux-gnu;/usr/lib;/lib/i386-linux-gnu;/lib]
+  implicit fwks: []
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec468115222/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec468115222.dir/build.make CMakeFiles/cmTryCompileExec468115222.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec468115222.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec468115222.dir/CheckIncludeFile.c.o   -c /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec468115222
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec468115222.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec468115222.dir/CheckIncludeFile.c.o  -o cmTryCompileExec468115222 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2992750610/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2992750610.dir/build.make CMakeFiles/cmTryCompileExec2992750610.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2992750610.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2992750610.dir/CheckIncludeFile.c.o   -c /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec2992750610
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2992750610.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec2992750610.dir/CheckIncludeFile.c.o  -o cmTryCompileExec2992750610 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec864561641/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec864561641.dir/build.make CMakeFiles/cmTryCompileExec864561641.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec864561641.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec864561641.dir/CheckIncludeFile.c.o   -c /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec864561641
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec864561641.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec864561641.dir/CheckIncludeFile.c.o  -o cmTryCompileExec864561641 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of int passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1180270074/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1180270074.dir/build.make CMakeFiles/cmTryCompileExec1180270074.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1180270074.dir/_int_size.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1180270074.dir/_int_size.c.o   -c /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CheckTypeSize/_int_size.c
+Linking C executable cmTryCompileExec1180270074
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1180270074.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1180270074.dir/_int_size.c.o  -o cmTryCompileExec1180270074 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of long int passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2569530652/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2569530652.dir/build.make CMakeFiles/cmTryCompileExec2569530652.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2569530652.dir/_long_size.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2569530652.dir/_long_size.c.o   -c /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CheckTypeSize/_long_size.c
+Linking C executable cmTryCompileExec2569530652
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2569530652.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec2569530652.dir/_long_size.c.o  -o cmTryCompileExec2569530652 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of void * passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4031099298/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4031099298.dir/build.make CMakeFiles/cmTryCompileExec4031099298.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4031099298.dir/_voidp_size.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec4031099298.dir/_voidp_size.c.o   -c /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CheckTypeSize/_voidp_size.c
+Linking C executable cmTryCompileExec4031099298
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4031099298.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec4031099298.dir/_voidp_size.c.o  -o cmTryCompileExec4031099298 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Performing C SOURCE FILE Test _have_funcattr_noreturn succeded with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2289890046/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2289890046.dir/build.make CMakeFiles/cmTryCompileExec2289890046.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2289890046.dir/src.c.o
+/usr/bin/cc   -D_have_funcattr_noreturn   -o CMakeFiles/cmTryCompileExec2289890046.dir/src.c.o   -c /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/src.c
+/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/src.c: In function ‘f’:
+/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/src.c:2:5: warning: ‘noreturn’ function does return [enabled by default]
+     __attribute__ ((noreturn)) void f(void) {}
+     ^
+Linking C executable cmTryCompileExec2289890046
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2289890046.dir/link.txt --verbose=1
+/usr/bin/cc   -D_have_funcattr_noreturn    CMakeFiles/cmTryCompileExec2289890046.dir/src.c.o  -o cmTryCompileExec2289890046 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+    __attribute__ ((noreturn)) void f(void) {}
+
+    int main(void)
+    {
+        f();
+        return 0;
+    }
+    
+Performing C SOURCE FILE Test _have_funcattr_warn_unused_result succeded with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3970319504/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3970319504.dir/build.make CMakeFiles/cmTryCompileExec3970319504.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3970319504.dir/src.c.o
+/usr/bin/cc   -D_have_funcattr_warn_unused_result   -o CMakeFiles/cmTryCompileExec3970319504.dir/src.c.o   -c /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/src.c
+/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/src.c:6:10: warning: ignoring return value of ‘f’, declared with attribute warn_unused_result [-Wunused-result]
+         f(1);
+          ^
+Linking C executable cmTryCompileExec3970319504
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3970319504.dir/link.txt --verbose=1
+/usr/bin/cc   -D_have_funcattr_warn_unused_result    CMakeFiles/cmTryCompileExec3970319504.dir/src.c.o  -o cmTryCompileExec3970319504 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+    __attribute__ ((__warn_unused_result__)) int f(int i) { return i; }
+
+    int main(void)
+    {
+        f(1);
+        return 0;
+    }
+    
+Performing C SOURCE FILE Test HAVE_MALLOC succeded with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4071477946/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4071477946.dir/build.make CMakeFiles/cmTryCompileExec4071477946.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4071477946.dir/src.c.o
+/usr/bin/cc   -DHAVE_MALLOC   -o CMakeFiles/cmTryCompileExec4071477946.dir/src.c.o   -c /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/src.c
+/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/src.c:2:15: warning: conflicting types for built-in function ‘malloc’ [enabled by default]
+         char *malloc();
+               ^
+Linking C executable cmTryCompileExec4071477946
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4071477946.dir/link.txt --verbose=1
+/usr/bin/cc   -DHAVE_MALLOC    CMakeFiles/cmTryCompileExec4071477946.dir/src.c.o  -o cmTryCompileExec4071477946 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+Return value: 1
+Source file was:
+
+        char *malloc();
+
+        int main(void)
+        {
+            return (!malloc(0));
+        }
+        
+Determining if the include file malloc.h exists passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2716288041/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2716288041.dir/build.make CMakeFiles/cmTryCompileExec2716288041.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2716288041.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2716288041.dir/CheckIncludeFile.c.o   -c /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec2716288041
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2716288041.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec2716288041.dir/CheckIncludeFile.c.o  -o cmTryCompileExec2716288041 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file dirent.h exists passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3904165194/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3904165194.dir/build.make CMakeFiles/cmTryCompileExec3904165194.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3904165194.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3904165194.dir/CheckIncludeFile.c.o   -c /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec3904165194
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3904165194.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec3904165194.dir/CheckIncludeFile.c.o  -o cmTryCompileExec3904165194 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file dlfcn.h exists passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec735635893/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec735635893.dir/build.make CMakeFiles/cmTryCompileExec735635893.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec735635893.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec735635893.dir/CheckIncludeFile.c.o   -c /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec735635893
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec735635893.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec735635893.dir/CheckIncludeFile.c.o  -o cmTryCompileExec735635893 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file errno.h exists passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec51352783/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec51352783.dir/build.make CMakeFiles/cmTryCompileExec51352783.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec51352783.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec51352783.dir/CheckIncludeFile.c.o   -c /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec51352783
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec51352783.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec51352783.dir/CheckIncludeFile.c.o  -o cmTryCompileExec51352783 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file float.h exists passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec927171362/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec927171362.dir/build.make CMakeFiles/cmTryCompileExec927171362.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec927171362.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec927171362.dir/CheckIncludeFile.c.o   -c /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec927171362
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec927171362.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec927171362.dir/CheckIncludeFile.c.o  -o cmTryCompileExec927171362 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file fnmatch.h exists passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec787285222/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec787285222.dir/build.make CMakeFiles/cmTryCompileExec787285222.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec787285222.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec787285222.dir/CheckIncludeFile.c.o   -c /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec787285222
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec787285222.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec787285222.dir/CheckIncludeFile.c.o  -o cmTryCompileExec787285222 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file inttypes.h exists passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2692653982/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2692653982.dir/build.make CMakeFiles/cmTryCompileExec2692653982.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2692653982.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2692653982.dir/CheckIncludeFile.c.o   -c /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec2692653982
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2692653982.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec2692653982.dir/CheckIncludeFile.c.o  -o cmTryCompileExec2692653982 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file limits.h exists passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2754954224/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2754954224.dir/build.make CMakeFiles/cmTryCompileExec2754954224.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2754954224.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2754954224.dir/CheckIncludeFile.c.o   -c /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec2754954224
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2754954224.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec2754954224.dir/CheckIncludeFile.c.o  -o cmTryCompileExec2754954224 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file memory.h exists passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2341041885/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2341041885.dir/build.make CMakeFiles/cmTryCompileExec2341041885.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2341041885.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2341041885.dir/CheckIncludeFile.c.o   -c /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec2341041885
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2341041885.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec2341041885.dir/CheckIncludeFile.c.o  -o cmTryCompileExec2341041885 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file regex.h exists passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3310108438/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3310108438.dir/build.make CMakeFiles/cmTryCompileExec3310108438.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3310108438.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3310108438.dir/CheckIncludeFile.c.o   -c /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec3310108438
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3310108438.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec3310108438.dir/CheckIncludeFile.c.o  -o cmTryCompileExec3310108438 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file signal.h exists passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec121530745/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec121530745.dir/build.make CMakeFiles/cmTryCompileExec121530745.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec121530745.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec121530745.dir/CheckIncludeFile.c.o   -c /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec121530745
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec121530745.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec121530745.dir/CheckIncludeFile.c.o  -o cmTryCompileExec121530745 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stdbool.h exists passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec344026830/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec344026830.dir/build.make CMakeFiles/cmTryCompileExec344026830.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec344026830.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec344026830.dir/CheckIncludeFile.c.o   -c /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec344026830
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec344026830.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec344026830.dir/CheckIncludeFile.c.o  -o cmTryCompileExec344026830 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stdlib.h exists passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1231061547/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1231061547.dir/build.make CMakeFiles/cmTryCompileExec1231061547.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1231061547.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1231061547.dir/CheckIncludeFile.c.o   -c /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec1231061547
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1231061547.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1231061547.dir/CheckIncludeFile.c.o  -o cmTryCompileExec1231061547 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file string.h exists passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1339659960/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1339659960.dir/build.make CMakeFiles/cmTryCompileExec1339659960.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1339659960.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1339659960.dir/CheckIncludeFile.c.o   -c /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec1339659960
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1339659960.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1339659960.dir/CheckIncludeFile.c.o  -o cmTryCompileExec1339659960 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file strings.h exists passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4111544621/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4111544621.dir/build.make CMakeFiles/cmTryCompileExec4111544621.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4111544621.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec4111544621.dir/CheckIncludeFile.c.o   -c /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec4111544621
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4111544621.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec4111544621.dir/CheckIncludeFile.c.o  -o cmTryCompileExec4111544621 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/dir.h exists passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2492942787/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2492942787.dir/build.make CMakeFiles/cmTryCompileExec2492942787.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2492942787.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2492942787.dir/CheckIncludeFile.c.o   -c /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec2492942787
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2492942787.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec2492942787.dir/CheckIncludeFile.c.o  -o cmTryCompileExec2492942787 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/ioctl.h exists passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1986798013/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1986798013.dir/build.make CMakeFiles/cmTryCompileExec1986798013.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1986798013.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1986798013.dir/CheckIncludeFile.c.o   -c /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec1986798013
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1986798013.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1986798013.dir/CheckIncludeFile.c.o  -o cmTryCompileExec1986798013 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/param.h exists passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec30386551/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec30386551.dir/build.make CMakeFiles/cmTryCompileExec30386551.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec30386551.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec30386551.dir/CheckIncludeFile.c.o   -c /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec30386551
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec30386551.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec30386551.dir/CheckIncludeFile.c.o  -o cmTryCompileExec30386551 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/resource.h exists passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1039276016/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1039276016.dir/build.make CMakeFiles/cmTryCompileExec1039276016.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1039276016.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1039276016.dir/CheckIncludeFile.c.o   -c /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec1039276016
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1039276016.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1039276016.dir/CheckIncludeFile.c.o  -o cmTryCompileExec1039276016 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/signal.h exists passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec535115953/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec535115953.dir/build.make CMakeFiles/cmTryCompileExec535115953.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec535115953.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec535115953.dir/CheckIncludeFile.c.o   -c /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec535115953
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec535115953.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec535115953.dir/CheckIncludeFile.c.o  -o cmTryCompileExec535115953 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/stat.h exists passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec45356799/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec45356799.dir/build.make CMakeFiles/cmTryCompileExec45356799.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec45356799.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec45356799.dir/CheckIncludeFile.c.o   -c /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec45356799
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec45356799.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec45356799.dir/CheckIncludeFile.c.o  -o cmTryCompileExec45356799 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file sys/time.h exists passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3698510325/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3698510325.dir/build.make CMakeFiles/cmTryCompileExec3698510325.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3698510325.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3698510325.dir/CheckIncludeFile.c.o   -c /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec3698510325
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3698510325.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec3698510325.dir/CheckIncludeFile.c.o  -o cmTryCompileExec3698510325 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file unistd.h exists passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2880720069/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2880720069.dir/build.make CMakeFiles/cmTryCompileExec2880720069.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2880720069.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2880720069.dir/CheckIncludeFile.c.o   -c /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec2880720069
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2880720069.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec2880720069.dir/CheckIncludeFile.c.o  -o cmTryCompileExec2880720069 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function getenv exists passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1259739997/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1259739997.dir/build.make CMakeFiles/cmTryCompileExec1259739997.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1259739997.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=getenv   -o CMakeFiles/cmTryCompileExec1259739997.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1259739997
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1259739997.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=getenv    CMakeFiles/cmTryCompileExec1259739997.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1259739997 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function getpid exists passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec416196928/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec416196928.dir/build.make CMakeFiles/cmTryCompileExec416196928.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec416196928.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=getpid   -o CMakeFiles/cmTryCompileExec416196928.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec416196928
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec416196928.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=getpid    CMakeFiles/cmTryCompileExec416196928.dir/CheckFunctionExists.c.o  -o cmTryCompileExec416196928 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function isatty exists passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec237708019/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec237708019.dir/build.make CMakeFiles/cmTryCompileExec237708019.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec237708019.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=isatty   -o CMakeFiles/cmTryCompileExec237708019.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec237708019
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec237708019.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=isatty    CMakeFiles/cmTryCompileExec237708019.dir/CheckFunctionExists.c.o  -o cmTryCompileExec237708019 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function memmove exists passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3121768499/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3121768499.dir/build.make CMakeFiles/cmTryCompileExec3121768499.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3121768499.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=memmove   -o CMakeFiles/cmTryCompileExec3121768499.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘memmove’ [enabled by default]
+/usr/share/cmake-2.8/Modules/CheckFunctionExists.c:3:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+Linking C executable cmTryCompileExec3121768499
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3121768499.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=memmove    CMakeFiles/cmTryCompileExec3121768499.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3121768499 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function memset exists passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec409601654/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec409601654.dir/build.make CMakeFiles/cmTryCompileExec409601654.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec409601654.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=memset   -o CMakeFiles/cmTryCompileExec409601654.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘memset’ [enabled by default]
+/usr/share/cmake-2.8/Modules/CheckFunctionExists.c:3:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+Linking C executable cmTryCompileExec409601654
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec409601654.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=memset    CMakeFiles/cmTryCompileExec409601654.dir/CheckFunctionExists.c.o  -o cmTryCompileExec409601654 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function mkstemp exists passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2550204125/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2550204125.dir/build.make CMakeFiles/cmTryCompileExec2550204125.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2550204125.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=mkstemp   -o CMakeFiles/cmTryCompileExec2550204125.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2550204125
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2550204125.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=mkstemp    CMakeFiles/cmTryCompileExec2550204125.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2550204125 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function mktemp exists passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2251898055/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2251898055.dir/build.make CMakeFiles/cmTryCompileExec2251898055.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2251898055.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=mktemp   -o CMakeFiles/cmTryCompileExec2251898055.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2251898055
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2251898055.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=mktemp    CMakeFiles/cmTryCompileExec2251898055.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2251898055 -rdynamic 
+CMakeFiles/cmTryCompileExec2251898055.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x7): warning: the use of `mktemp' is dangerous, better use `mkstemp' or `mkdtemp'
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function popen exists passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec705588800/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec705588800.dir/build.make CMakeFiles/cmTryCompileExec705588800.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec705588800.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=popen   -o CMakeFiles/cmTryCompileExec705588800.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec705588800
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec705588800.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=popen    CMakeFiles/cmTryCompileExec705588800.dir/CheckFunctionExists.c.o  -o cmTryCompileExec705588800 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function random exists passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1532893115/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1532893115.dir/build.make CMakeFiles/cmTryCompileExec1532893115.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1532893115.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=random   -o CMakeFiles/cmTryCompileExec1532893115.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1532893115
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1532893115.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=random    CMakeFiles/cmTryCompileExec1532893115.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1532893115 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function realloc exists passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec827251899/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec827251899.dir/build.make CMakeFiles/cmTryCompileExec827251899.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec827251899.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=realloc   -o CMakeFiles/cmTryCompileExec827251899.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘realloc’ [enabled by default]
+/usr/share/cmake-2.8/Modules/CheckFunctionExists.c:3:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+Linking C executable cmTryCompileExec827251899
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec827251899.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=realloc    CMakeFiles/cmTryCompileExec827251899.dir/CheckFunctionExists.c.o  -o cmTryCompileExec827251899 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function setvbuf exists passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1914643695/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1914643695.dir/build.make CMakeFiles/cmTryCompileExec1914643695.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1914643695.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=setvbuf   -o CMakeFiles/cmTryCompileExec1914643695.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1914643695
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1914643695.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=setvbuf    CMakeFiles/cmTryCompileExec1914643695.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1914643695 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function srandom exists passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1199049790/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1199049790.dir/build.make CMakeFiles/cmTryCompileExec1199049790.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1199049790.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=srandom   -o CMakeFiles/cmTryCompileExec1199049790.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1199049790
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1199049790.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=srandom    CMakeFiles/cmTryCompileExec1199049790.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1199049790 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function strcasecmp exists passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2522659144/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2522659144.dir/build.make CMakeFiles/cmTryCompileExec2522659144.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2522659144.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strcasecmp   -o CMakeFiles/cmTryCompileExec2522659144.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘strcasecmp’ [enabled by default]
+/usr/share/cmake-2.8/Modules/CheckFunctionExists.c:3:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+Linking C executable cmTryCompileExec2522659144
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2522659144.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strcasecmp    CMakeFiles/cmTryCompileExec2522659144.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2522659144 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function strchr exists passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3574534033/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3574534033.dir/build.make CMakeFiles/cmTryCompileExec3574534033.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3574534033.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strchr   -o CMakeFiles/cmTryCompileExec3574534033.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘strchr’ [enabled by default]
+/usr/share/cmake-2.8/Modules/CheckFunctionExists.c:3:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+Linking C executable cmTryCompileExec3574534033
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3574534033.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strchr    CMakeFiles/cmTryCompileExec3574534033.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3574534033 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function strrchr exists passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4097412360/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4097412360.dir/build.make CMakeFiles/cmTryCompileExec4097412360.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4097412360.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strrchr   -o CMakeFiles/cmTryCompileExec4097412360.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘strrchr’ [enabled by default]
+/usr/share/cmake-2.8/Modules/CheckFunctionExists.c:3:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+Linking C executable cmTryCompileExec4097412360
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4097412360.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strrchr    CMakeFiles/cmTryCompileExec4097412360.dir/CheckFunctionExists.c.o  -o cmTryCompileExec4097412360 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function strstr exists passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec256410928/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec256410928.dir/build.make CMakeFiles/cmTryCompileExec256410928.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec256410928.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strstr   -o CMakeFiles/cmTryCompileExec256410928.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘strstr’ [enabled by default]
+/usr/share/cmake-2.8/Modules/CheckFunctionExists.c:3:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+Linking C executable cmTryCompileExec256410928
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec256410928.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strstr    CMakeFiles/cmTryCompileExec256410928.dir/CheckFunctionExists.c.o  -o cmTryCompileExec256410928 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function strtod exists passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2309245420/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2309245420.dir/build.make CMakeFiles/cmTryCompileExec2309245420.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2309245420.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strtod   -o CMakeFiles/cmTryCompileExec2309245420.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2309245420
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2309245420.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strtod    CMakeFiles/cmTryCompileExec2309245420.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2309245420 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function strtol exists passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1622703162/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1622703162.dir/build.make CMakeFiles/cmTryCompileExec1622703162.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1622703162.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strtol   -o CMakeFiles/cmTryCompileExec1622703162.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1622703162
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1622703162.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strtol    CMakeFiles/cmTryCompileExec1622703162.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1622703162 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function strtoull exists passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1761030029/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1761030029.dir/build.make CMakeFiles/cmTryCompileExec1761030029.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1761030029.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strtoull   -o CMakeFiles/cmTryCompileExec1761030029.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1761030029
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1761030029.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strtoull    CMakeFiles/cmTryCompileExec1761030029.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1761030029 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function system exists passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2709704813/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2709704813.dir/build.make CMakeFiles/cmTryCompileExec2709704813.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2709704813.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=system   -o CMakeFiles/cmTryCompileExec2709704813.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2709704813
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2709704813.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=system    CMakeFiles/cmTryCompileExec2709704813.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2709704813 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function tmpnam exists passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec850079885/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec850079885.dir/build.make CMakeFiles/cmTryCompileExec850079885.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec850079885.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=tmpnam   -o CMakeFiles/cmTryCompileExec850079885.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec850079885
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec850079885.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=tmpnam    CMakeFiles/cmTryCompileExec850079885.dir/CheckFunctionExists.c.o  -o cmTryCompileExec850079885 -rdynamic 
+CMakeFiles/cmTryCompileExec850079885.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x7): warning: the use of `tmpnam' is dangerous, better use `mkstemp'
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function vprintf exists passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2153586279/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2153586279.dir/build.make CMakeFiles/cmTryCompileExec2153586279.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2153586279.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=vprintf   -o CMakeFiles/cmTryCompileExec2153586279.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘vprintf’ [enabled by default]
+/usr/share/cmake-2.8/Modules/CheckFunctionExists.c:3:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+Linking C executable cmTryCompileExec2153586279
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2153586279.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=vprintf    CMakeFiles/cmTryCompileExec2153586279.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2153586279 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Performing C SOURCE FILE Test HAVE__BOOL succeded with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3567516228/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3567516228.dir/build.make CMakeFiles/cmTryCompileExec3567516228.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3567516228.dir/src.c.o
+/usr/bin/cc   -DHAVE__BOOL   -o CMakeFiles/cmTryCompileExec3567516228.dir/src.c.o   -c /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTryCompileExec3567516228
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3567516228.dir/link.txt --verbose=1
+/usr/bin/cc   -DHAVE__BOOL    CMakeFiles/cmTryCompileExec3567516228.dir/src.c.o  -o cmTryCompileExec3567516228 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+    #include <stdbool.h>
+    int main(void)
+    {
+        _Bool b;
+        return 0;
+    }
+    
+Determining size of int passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2014148288/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2014148288.dir/build.make CMakeFiles/cmTryCompileExec2014148288.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2014148288.dir/SIZEOF_INT.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2014148288.dir/SIZEOF_INT.c.o   -c /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CheckTypeSize/SIZEOF_INT.c
+Linking C executable cmTryCompileExec2014148288
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2014148288.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec2014148288.dir/SIZEOF_INT.c.o  -o cmTryCompileExec2014148288 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of long passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1267235645/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1267235645.dir/build.make CMakeFiles/cmTryCompileExec1267235645.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1267235645.dir/SIZEOF_LONG.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1267235645.dir/SIZEOF_LONG.c.o   -c /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CheckTypeSize/SIZEOF_LONG.c
+Linking C executable cmTryCompileExec1267235645
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1267235645.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1267235645.dir/SIZEOF_LONG.c.o  -o cmTryCompileExec1267235645 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of long long passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec508882831/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec508882831.dir/build.make CMakeFiles/cmTryCompileExec508882831.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec508882831.dir/SIZEOF_LONG_LONG.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec508882831.dir/SIZEOF_LONG_LONG.c.o   -c /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CheckTypeSize/SIZEOF_LONG_LONG.c
+Linking C executable cmTryCompileExec508882831
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec508882831.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec508882831.dir/SIZEOF_LONG_LONG.c.o  -o cmTryCompileExec508882831 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of void * passed with the following output:
+Change Dir: /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1652579056/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1652579056.dir/build.make CMakeFiles/cmTryCompileExec1652579056.dir/build
+make[1]: Entering directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1652579056.dir/SIZEOF_VOID_P.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1652579056.dir/SIZEOF_VOID_P.c.o   -c /home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CheckTypeSize/SIZEOF_VOID_P.c
+Linking C executable cmTryCompileExec1652579056
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1652579056.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1652579056.dir/SIZEOF_VOID_P.c.o  -o cmTryCompileExec1652579056 -rdynamic 
+make[1]: Leaving directory `/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/CMakeFiles/CMakeTmp'
+
+
