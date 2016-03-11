@@ -1,1 +1,0 @@
-/usr/bin/c++   -O3 -DNDEBUG    CMakeFiles/minisat_simp.dir/minisat/simp/Main.cc.o  -o minisat -rdynamic libminisat.a 

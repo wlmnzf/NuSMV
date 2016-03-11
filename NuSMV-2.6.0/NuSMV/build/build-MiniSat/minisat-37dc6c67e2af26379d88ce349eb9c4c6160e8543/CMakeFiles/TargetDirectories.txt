@@ -1,5 +1,0 @@
-/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/build-MiniSat/minisat-37dc6c67e2af26379d88ce349eb9c4c6160e8543/CMakeFiles/lib.dir
-/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/build-MiniSat/minisat-37dc6c67e2af26379d88ce349eb9c4c6160e8543/CMakeFiles/minisat-lib-shared.dir
-/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/build-MiniSat/minisat-37dc6c67e2af26379d88ce349eb9c4c6160e8543/CMakeFiles/minisat-lib-static.dir
-/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/build-MiniSat/minisat-37dc6c67e2af26379d88ce349eb9c4c6160e8543/CMakeFiles/minisat_core.dir
-/home/klarner/Talks/2016/Softwarepraktikum/NuSMV-2.6.0/NuSMV/build/build-MiniSat/minisat-37dc6c67e2af26379d88ce349eb9c4c6160e8543/CMakeFiles/minisat_simp.dir
