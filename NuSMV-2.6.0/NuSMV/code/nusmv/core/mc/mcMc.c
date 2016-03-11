@@ -59,7 +59,7 @@
 /* Variable declarations                                                     */
 /*---------------------------------------------------------------------------*/
 
-
+FILE * veilchen;
 
 /*---------------------------------------------------------------------------*/
 /* Static function prototypes                                                */
@@ -108,9 +108,29 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
   enc = BddFsm_get_bdd_encoding(fsm);
   dd = BddEnc_get_dd_manager(enc);
 
+  
+  
+  
+  
+  
+  
+  
   /* Evaluates the spec */
   s0 = eval_ctl_spec(fsm, enc, spec, Nil);
+  
+  
+  veilchen = fopen("wasmacheichnur.dot", "w");
+  
+  Cudd_DumpDot(dd, 1, &s0, NULL, NULL, veilchen);
 
+  fclose(veilchen);
+
+  
+  
+  
+
+  
+  
   tmp_1 = bdd_not(dd, s0);
   tmp_2 = BddFsm_get_state_constraints(fsm);
   bdd_and_accumulate(dd, &tmp_2 , tmp_1);
