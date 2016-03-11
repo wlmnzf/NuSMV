@@ -2,9 +2,9 @@
 Build from source:
 ==================
 
-(1) /NuSMV/mkdir build
-(2) /NuSMV/build/cmake ..
-(3) /NuSMV/build/make
+   * (1) /NuSMV/mkdir build
+   * (2) /NuSMV/build/cmake ..
+   * (3) /NuSMV/build/make
 
 synaptic:
  - readline-dev 
