@@ -120,8 +120,8 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
   
   
   veilchen = fopen("wasmacheichnur.dot", "w");
-  
-  Cudd_DumpDot(dd, 1, &s0, NULL, NULL, veilchen);
+  printf("jo hier scheiter ich");
+  dd_dump_dot(dd, 1, &s0, NULL, NULL, veilchen);
 
   fclose(veilchen);
 
