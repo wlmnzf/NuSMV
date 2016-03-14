@@ -61,6 +61,8 @@
 
 FILE * veilchen;
 
+FILE * file;
+
 /*---------------------------------------------------------------------------*/
 /* Static function prototypes                                                */
 /*---------------------------------------------------------------------------*/
@@ -126,7 +128,11 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
   fclose(veilchen);
 
   
+  file = fopen("neuerversuch.txt", "w");
   
+  dd_dump_factored_form(dd, 1, &s0, NULL, NULL, file);
+  
+  fclose(file);
   
 
   
