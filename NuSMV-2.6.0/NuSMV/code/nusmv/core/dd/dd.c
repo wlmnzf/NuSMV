@@ -706,6 +706,27 @@ int dd_dump_davinci(
 			  (char**) inames, (char**) onames, fp));
 }
 
+
+
+
+/*
+ * Test: dump-Funktion fuer human readable formel 
+ */
+int dd_dump_factored_form(
+    DDMgr_ptr dd /* manager */,
+    int n /* number of output nodes to be dumped */,
+    dd_ptr *f /* array of output nodes to be dumped */,
+    const char ** inames /* array of input names (or NULL) */,
+    const char ** onames /* array of output names (or NULL) */,
+    FILE * fp /* pointer to the dump file */)
+{
+    return(Cudd_DumpFactoredForm(dd->dd, n, (DdNode **)f,
+                                 (char**) inames, (char**) onames, fp));
+}
+
+
+
+
 add_ptr add_true(DDMgr_ptr dd)
 {
   DdNode * result = Cudd_ReadTrue(dd->dd);
