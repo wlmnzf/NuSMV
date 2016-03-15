@@ -63,6 +63,10 @@ FILE * veilchen;
 
 FILE * file;
 
+FILE * malsehen;
+
+bdd_ptr accepted, init, init_and_accepted;
+
 /*---------------------------------------------------------------------------*/
 /* Static function prototypes                                                */
 /*---------------------------------------------------------------------------*/
@@ -80,6 +84,31 @@ Mc_fair_si_iteration(BddFsm_ptr fsm,
 /*---------------------------------------------------------------------------*/
 /* Definition of exported functions                                          */
 /*---------------------------------------------------------------------------*/
+
+
+void machNeueSachen(NuSMVEnv_ptr env, Prop_ptr prop){
+  BddFsm_ptr fsm;
+  BddEnc_ptr enc;
+  DDMgr_ptr dd;
+  
+  fsm = Prop_compute_ground_bdd_fsm(env, prop);
+  enc = BddFsm_get_bdd_encoding(fsm);
+  dd = BddEnc_get_dd_manager(enc);
+
+
+  malsehen = fopen("neueAusgabe.txt", "w");
+  
+  dd_dump_factored_form(dd, 1, &accepted, NULL, NULL, malsehen);
+  dd_dump_factored_form(dd, 1, &init, NULL, NULL, malsehen);
+  dd_dump_factored_form(dd, 1, &init_and_accepted, NULL, NULL, malsehen);
+
+  
+  fclose(malsehen);
+  
+}
+
+
+
 
 void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
 {
@@ -119,7 +148,8 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
   
   /* Evaluates the spec */
   s0 = eval_ctl_spec(fsm, enc, spec, Nil);
-  
+  accepted = bdd_dup(s0);  
+
   
   veilchen = fopen("wasmacheichnur.dot", "w");
   printf("jo hier scheiter ich");
@@ -139,20 +169,33 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
   
   tmp_1 = bdd_not(dd, s0);
   tmp_2 = BddFsm_get_state_constraints(fsm);
+
   bdd_and_accumulate(dd, &tmp_2 , tmp_1);
   bdd_free(dd, tmp_1);
   tmp_1 = BddFsm_get_fair_states(fsm);
+
+
   if (bdd_is_false(dd, tmp_1)) {
     ErrorMgr_warning_fsm_fairness_empty(errmgr);
   }
   bdd_and_accumulate(dd, &tmp_2 , tmp_1);
+
+
   bdd_free(dd, tmp_1);
   bdd_free(dd, s0);
 
   s0 = BddFsm_get_init(fsm);
+  init = bdd_dup(s0);
+  
   bdd_and_accumulate(dd, &s0, tmp_2);
-  bdd_free(dd, tmp_2);
+  init_and_accepted = bdd_dup(init);
+  bdd_and_accumulate(dd, &init_and_accepted, accepted);
 
+  
+
+
+  bdd_free(dd, tmp_2);  
+  
   /* Prints out the result, if not true explain. */
   StreamMgr_print_output(streams,  "-- ");
   print_spec(StreamMgr_get_output_ostream(streams),
@@ -225,6 +268,7 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
   }
 
   bdd_free(dd, s0);
+  machNeueSachen(env, prop);
 } /* Mc_CheckCTLSpec */
 
 void Mc_CheckCompute(NuSMVEnv_ptr env, Prop_ptr prop)
