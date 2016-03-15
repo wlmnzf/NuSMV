@@ -674,6 +674,12 @@ int      dd_dump_dot(DDMgr_ptr , int, dd_ptr *, const char **, const char **, FI
 */
 int      dd_dump_davinci(DDMgr_ptr , int, dd_ptr *, const char **, const char **, FILE *);
 
+
+/*
+ * TODO ordentlich kommentieren... Hier Deklaration fuer dd_dum_factored_form- Funktion, die in dd.c definiert wurde.
+ */
+int      dd_dump_factored_form(DDMgr_ptr , int, dd_ptr *, const char **, const char **, FILE *);
+
 /*!
   \brief Converts an ADD to a BDD.
 
