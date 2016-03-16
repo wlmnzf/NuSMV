@@ -87,23 +87,28 @@ Mc_fair_si_iteration(BddFsm_ptr fsm,
 
 
 void machNeueSachen(NuSMVEnv_ptr env, Prop_ptr prop){
+  const StreamMgr_ptr streams =
+    STREAM_MGR(NuSMVEnv_get_value(env, ENV_STREAM_MANAGER));
+  FILE * out = StreamMgr_get_output_stream(streams);
+  
   BddFsm_ptr fsm;
   BddEnc_ptr enc;
   DDMgr_ptr dd;
-  
+    
   fsm = Prop_compute_ground_bdd_fsm(env, prop);
   enc = BddFsm_get_bdd_encoding(fsm);
   dd = BddEnc_get_dd_manager(enc);
-
-
-  malsehen = fopen("neueAusgabe.txt", "w");
   
-  dd_dump_factored_form(dd, 1, &accepted, NULL, NULL, malsehen);
-  dd_dump_factored_form(dd, 1, &init, NULL, NULL, malsehen);
-  dd_dump_factored_form(dd, 1, &init_and_accepted, NULL, NULL, malsehen);
+  StreamMgr_print_output(streams,  "Accepting States: \n");
+  dd_dump_factored_form(dd, 1, &accepted, NULL, NULL, out);
 
-  
-  fclose(malsehen);
+  StreamMgr_print_output(streams,  "\nInitial States: \n");
+  dd_dump_factored_form(dd, 1, &init, NULL, NULL, out);
+
+  StreamMgr_print_output(streams,  "\nInitial Accepting states: \n");
+  dd_dump_factored_form(dd, 1, &init_and_accepted, NULL, NULL, out);
+  StreamMgr_print_output(streams,  "\n");
+
   
 }
 
@@ -152,7 +157,6 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
 
   
   veilchen = fopen("wasmacheichnur.dot", "w");
-  printf("jo hier scheiter ich");
   dd_dump_dot(dd, 1, &s0, NULL, NULL, veilchen);
 
   fclose(veilchen);
@@ -192,6 +196,7 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
   bdd_and_accumulate(dd, &init_and_accepted, accepted);
 
   
+  machNeueSachen(env, prop);
 
 
   bdd_free(dd, tmp_2);  
@@ -268,7 +273,6 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
   }
 
   bdd_free(dd, s0);
-  machNeueSachen(env, prop);
 } /* Mc_CheckCTLSpec */
 
 void Mc_CheckCompute(NuSMVEnv_ptr env, Prop_ptr prop)
