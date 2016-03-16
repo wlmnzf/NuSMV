@@ -108,8 +108,7 @@ void machNeueSachen(NuSMVEnv_ptr env, Prop_ptr prop){
   StreamMgr_print_output(streams,  "\nInitial Accepting states: \n");
   dd_dump_factored_form(dd, 1, &init_and_accepted, NULL, NULL, out);
   StreamMgr_print_output(streams,  "\n");
-
-  
+    
 }
 
 
