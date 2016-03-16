@@ -95,11 +95,15 @@ void machNeueSachen(NuSMVEnv_ptr env, Prop_ptr prop){
   enc = BddFsm_get_bdd_encoding(fsm);
   dd = BddEnc_get_dd_manager(enc);
 
+  
 
   malsehen = fopen("neueAusgabe.txt", "w");
-  
+   
+  fprintf(malsehen,"Accepting States:\n");
   dd_dump_factored_form(dd, 1, &accepted, NULL, NULL, malsehen);
+  fprintf(malsehen, "\nInitial States:\n");
   dd_dump_factored_form(dd, 1, &init, NULL, NULL, malsehen);
+  fprintf(malsehen, "\nInitial Accepting States:\n");
   dd_dump_factored_form(dd, 1, &init_and_accepted, NULL, NULL, malsehen);
 
   
