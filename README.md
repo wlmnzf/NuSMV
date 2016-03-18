@@ -2,9 +2,9 @@
 ### Build from source:
 
 
-1) `/NuSMV/mkdir build`
-2) `/NuSMV/build/cmake ..`
-3) `/NuSMV/build/make`
+1. `/NuSMV/mkdir build`
+2. `/NuSMV/build/cmake ..`
+3. `/NuSMV/build/make`
 
  
 ### Command line options zu NuSMV hinzufügen
@@ -42,16 +42,15 @@ Interessante Funktionen:
 * `OptsHandler_get_string_option_value(opt, PROGRAM_NAME)` für string Parameter
 * `OptsHandler_get_int_option_value(opt, VERBOSE_LEVEL)` für integer Parameter
 
-#### Ergänzungen für die Shell
-[./NuSMV-2.6.0/NuSMV/code/nusmv/shell/mc/mcCmd.c](./NuSMV-2.6.0/NuSMV/code/nusmv/shell/mc/mcCmd.c)
-
-`Cmd_CommandAdd(env, "check_ctlspec", CommandCheckCtlSpec, 0, true)`
-
-Ein Beispiel das zeigt wie man einen Befehl zur Shell hinzufügt.
-
 
       
 ### Die accepting states speichern
+
+[./NuSMV-2.6.0/NuSMV/code/nusmv/core/mc/mcMc.c](./NuSMV-2.6.0/NuSMV/code/nusmv/core/mc/mcMc.c)
+
+Hier gibt's die Funktion `Mc_CheckCTLSpec`
+
+
 
 [./NuSMV-2.6.0/NuSMV/code/nusmv/core/prop/Prop.c](./NuSMV-2.6.0/NuSMV/code/nusmv/core/prop/Prop.c)
 
@@ -76,9 +75,20 @@ Bereits vorhandende Funktionen zur Ausgabe von BDDs:
 
 
 
+### Ergänzungen für die Shell
+#### Command hinzufügen
 
-#### Ergänzungen für die Shell
+[./NuSMV-2.6.0/NuSMV/code/nusmv/shell/mc/mcCmd.c](./NuSMV-2.6.0/NuSMV/code/nusmv/shell/mc/mcCmd.c)
 
+`Cmd_CommandAdd(env, "check_ctlspec", CommandCheckCtlSpec, 0, true)`
+
+Ein Beispiel das zeigt wie man einen Befehl zur Shell hinzufügt.
+
+
+
+
+
+#### Accepting states speichern
 
 [./NuSMV-2.6.0/NuSMV/code/nusmv/core/mc/mc.h](./NuSMV-2.6.0/NuSMV/code/nusmv/core/mc/mc.h)
       
