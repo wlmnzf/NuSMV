@@ -59,14 +59,6 @@
 /* Variable declarations                                                     */
 /*---------------------------------------------------------------------------*/
 
-FILE * veilchen;
-
-FILE * file;
-
-FILE * malsehen;
-
-bdd_ptr accepted, init, init_and_accepted;
-
 /*---------------------------------------------------------------------------*/
 /* Static function prototypes                                                */
 /*---------------------------------------------------------------------------*/
@@ -85,34 +77,11 @@ Mc_fair_si_iteration(BddFsm_ptr fsm,
 /* Definition of exported functions                                          */
 /*---------------------------------------------------------------------------*/
 
-
-void machNeueSachen(NuSMVEnv_ptr env, Prop_ptr prop){
-  const StreamMgr_ptr streams =
-    STREAM_MGR(NuSMVEnv_get_value(env, ENV_STREAM_MANAGER));
-  FILE * out = StreamMgr_get_output_stream(streams);
-  
-  BddFsm_ptr fsm;
-  BddEnc_ptr enc;
-  DDMgr_ptr dd;
-    
-  fsm = Prop_compute_ground_bdd_fsm(env, prop);
-  enc = BddFsm_get_bdd_encoding(fsm);
-  dd = BddEnc_get_dd_manager(enc);
-  
-  StreamMgr_print_output(streams,  "Accepting States: \n");
-  dd_dump_factored_form(dd, 1, &accepted, NULL, NULL, out);
-
-  StreamMgr_print_output(streams,  "\nInitial States: \n");
-  dd_dump_factored_form(dd, 1, &init, NULL, NULL, out);
-
-  StreamMgr_print_output(streams,  "\nInitial Accepting states: \n");
-  dd_dump_factored_form(dd, 1, &init_and_accepted, NULL, NULL, out);
-  StreamMgr_print_output(streams,  "\n");
-    
-}
-
-
-
+/*
+ * Funktion mit eigenen Aenderungen: Ausgabe auf Kommandozeile/in Datei schreiben
+ * TODO umbenennen, wenn Flags funktionieren und klar ist, 
+ * an welcher Stelle Mc_CheckCTLSpec aufgerufen wird
+ */
 
 void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
 {
@@ -122,7 +91,7 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
     ERROR_MGR(NuSMVEnv_get_value(env, ENV_ERROR_MANAGER));
   node_ptr exp;
   Trace_ptr trace;
-  bdd_ptr s0, tmp_1, tmp_2;
+  bdd_ptr s0, tmp_1, tmp_2, accepted, init, init_and_accepted;
   BddFsm_ptr fsm;
   BddEnc_ptr enc;
   DDMgr_ptr dd;
@@ -131,7 +100,10 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
     OPTS_HANDLER(NuSMVEnv_get_value(env, ENV_OPTS_HANDLER));
   const NodeMgr_ptr nodemgr =
     NODE_MGR(NuSMVEnv_get_value(env, ENV_NODE_MGR));
-
+  FILE * out = StreamMgr_get_output_stream(streams);
+  FILE * dot_output, * txt_output;
+  
+  
   if (opt_verbose_level_gt(opts, 0)) {
     Logger_ptr logger = LOGGER(NuSMVEnv_get_value(env, ENV_LOGGER));
     Logger_log(logger, "evaluating ");
@@ -143,32 +115,11 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
   enc = BddFsm_get_bdd_encoding(fsm);
   dd = BddEnc_get_dd_manager(enc);
 
-  
-  
-  
-  
-  
-  
-  
   /* Evaluates the spec */
   s0 = eval_ctl_spec(fsm, enc, spec, Nil);
+  
+  /* save accepted states */
   accepted = bdd_dup(s0);  
-
-  
-  veilchen = fopen("wasmacheichnur.dot", "w");
-  dd_dump_dot(dd, 1, &s0, NULL, NULL, veilchen);
-
-  fclose(veilchen);
-
-  
-  file = fopen("neuerversuch.txt", "w");
-  
-  dd_dump_factored_form(dd, 1, &s0, NULL, NULL, file);
-  
-  fclose(file);
-  
-
-  
   
   tmp_1 = bdd_not(dd, s0);
   tmp_2 = BddFsm_get_state_constraints(fsm);
@@ -188,19 +139,19 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
   bdd_free(dd, s0);
 
   s0 = BddFsm_get_init(fsm);
+  /* get initial states */
   init = bdd_dup(s0);
   
   bdd_and_accumulate(dd, &s0, tmp_2);
+  /* get initial accepting states */
   init_and_accepted = bdd_dup(init);
   bdd_and_accumulate(dd, &init_and_accepted, accepted);
-
-  
-  machNeueSachen(env, prop);
-
 
   bdd_free(dd, tmp_2);  
   
   /* Prints out the result, if not true explain. */
+  /* ADDED: prints out accepting states, initial states 
+   * and initial accepting states as additional information */  
   StreamMgr_print_output(streams,  "-- ");
   print_spec(StreamMgr_get_output_ostream(streams),
              prop, get_prop_print_method(opts));
@@ -270,9 +221,170 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
       free_list(nodemgr, exp);
     }
   }
+  
+  // TODO anpassen, falls mehrere CTLSpecs in .smv-file sind
+  /* print out accepting states, initial states, initial accepting states */
+  StreamMgr_print_output(streams,  "Accepting States: \n");
+  dd_dump_factored_form(dd, 1, &accepted, NULL, NULL, out);
+
+  StreamMgr_print_output(streams,  "\nInitial States: \n");
+  dd_dump_factored_form(dd, 1, &init, NULL, NULL, out);
+
+  StreamMgr_print_output(streams,  "\nInitial Accepting States: \n");
+  dd_dump_factored_form(dd, 1, &init_and_accepted, NULL, NULL, out);
+  StreamMgr_print_output(streams,  "\n");
+  
+  
+  // TODO if-Abfrage ergaenzen (wenn Flags fertig sind),
+  // um zu entscheiden, ob auch in Datei geschrieben werden soll
+  // TODO wenn moeglich, CTLSpec abgreifen und als Filename verwenden
+  // TODO anpassen, falls mehrere CTLSpecs in .smv-file sind
+  dot_output = fopen("output.dot", "w");
+  dd_dump_dot(dd, 1, &s0, NULL, NULL, dot_output);
+  fclose(dot_output);
+  
+  txt_output = fopen("output.txt", "a");
+  fprintf(txt_output, "Accepting States: \n");
+  dd_dump_factored_form(dd, 1, &accepted, NULL, NULL, txt_output);
+  fprintf(txt_output, "\n\nInitialStates: \n");
+  dd_dump_factored_form(dd, 1, &init, NULL, NULL, txt_output);
+  fprintf(txt_output, "\n\nInitial Accepting States: \n");
+  dd_dump_factored_form(dd, 1, &init_and_accepted, NULL, NULL, txt_output);
+  fclose(txt_output); 
+  
 
   bdd_free(dd, s0);
-} /* Mc_CheckCTLSpec */
+  bdd_free(dd,init);
+  bdd_free(dd,init_and_accepted);
+  bdd_free(dd,accepted);
+}  /* Mc_CheckCTLSpec */
+
+/*
+ * Originalfunktion ohne Aenderungen
+ * auskommentieren, um Funktion mit Aenderungen testen zu koennen
+ */
+// void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
+// {
+//   const StreamMgr_ptr streams =
+//     STREAM_MGR(NuSMVEnv_get_value(env, ENV_STREAM_MANAGER));
+//   const ErrorMgr_ptr errmgr =
+//     ERROR_MGR(NuSMVEnv_get_value(env, ENV_ERROR_MANAGER));
+//   node_ptr exp;
+//   Trace_ptr trace;
+//   bdd_ptr s0, tmp_1, tmp_2;
+//   BddFsm_ptr fsm;
+//   BddEnc_ptr enc;
+//   DDMgr_ptr dd;
+//   Expr_ptr spec  = Prop_get_expr_core(prop);
+//   const OptsHandler_ptr opts =
+//     OPTS_HANDLER(NuSMVEnv_get_value(env, ENV_OPTS_HANDLER));
+//   const NodeMgr_ptr nodemgr =
+//     NODE_MGR(NuSMVEnv_get_value(env, ENV_NODE_MGR));
+// 
+//   if (opt_verbose_level_gt(opts, 0)) {
+//     Logger_ptr logger = LOGGER(NuSMVEnv_get_value(env, ENV_LOGGER));
+//     Logger_log(logger, "evaluating ");
+//     print_spec(Logger_get_ostream(logger), prop, get_prop_print_method(opts));
+//     Logger_log(logger, "\n");
+//   }
+// 
+//   fsm = Prop_compute_ground_bdd_fsm(env, prop);
+//   enc = BddFsm_get_bdd_encoding(fsm);
+//   dd = BddEnc_get_dd_manager(enc);
+// 
+//   /* Evaluates the spec */
+//   s0 = eval_ctl_spec(fsm, enc, spec, Nil);
+// 
+//   tmp_1 = bdd_not(dd, s0);
+//   tmp_2 = BddFsm_get_state_constraints(fsm);
+//   bdd_and_accumulate(dd, &tmp_2 , tmp_1);
+//   bdd_free(dd, tmp_1);
+//   tmp_1 = BddFsm_get_fair_states(fsm);
+//   if (bdd_is_false(dd, tmp_1)) {
+//     ErrorMgr_warning_fsm_fairness_empty(errmgr);
+//   }
+//   bdd_and_accumulate(dd, &tmp_2 , tmp_1);
+//   bdd_free(dd, tmp_1);
+//   bdd_free(dd, s0);
+// 
+//   s0 = BddFsm_get_init(fsm);
+//   bdd_and_accumulate(dd, &s0, tmp_2);
+//   bdd_free(dd, tmp_2);
+// 
+//   /* Prints out the result, if not true explain. */
+//   StreamMgr_print_output(streams,  "-- ");
+//   print_spec(StreamMgr_get_output_ostream(streams),
+//              prop, get_prop_print_method(opts));
+// 
+//   if (bdd_is_false(dd, s0)) {
+//     StreamMgr_print_output(streams,  "is true\n");
+//     Prop_set_status(prop, Prop_True);
+//   }
+//   else {
+//     StreamMgr_print_output(streams,  "is false\n");
+//     Prop_set_status(prop, Prop_False);
+// 
+//     if (opt_counter_examples(opts)) {
+//       char* trace_title = NULL;
+//       char* trace_title_postfix = " Counterexample";
+// 
+//       tmp_1 = BddEnc_pick_one_state(enc, s0);
+//       bdd_free(dd, s0);
+//       s0 = bdd_dup(tmp_1);
+//       bdd_free(dd, tmp_1);
+// 
+//       exp = reverse(explain(fsm, enc, cons(nodemgr, (node_ptr) bdd_dup(s0), Nil),
+//                             spec, Nil));
+// 
+//       if (exp == Nil) {
+//         /* The counterexample consists of one initial state */
+//         exp = cons(nodemgr, (node_ptr) bdd_dup(s0), Nil);
+//       }
+// 
+//       /* The trace title depends on the property type. For example it
+//        is in the form "LTL Counterexample" */
+//       trace_title = ALLOC(char,
+//                           strlen(Prop_get_type_as_string(prop)) +
+//                           strlen(trace_title_postfix) + 1);
+//       nusmv_assert(trace_title != (char*) NULL);
+//       strcpy(trace_title, Prop_get_type_as_string(prop));
+//       strcat(trace_title, trace_title_postfix);
+// 
+//       {
+//         SexpFsm_ptr sexp_fsm; /* needed for trace lanugage */
+//         sexp_fsm = Prop_get_scalar_sexp_fsm(prop);
+//         if (SEXP_FSM(NULL) == sexp_fsm) {
+//           sexp_fsm = \
+//             SEXP_FSM(NuSMVEnv_get_value(env, ENV_SEXP_FSM));
+//           SEXP_FSM_CHECK_INSTANCE(sexp_fsm);
+//         }
+// 
+//         trace = \
+//           Mc_create_trace_from_bdd_state_input_list(enc,
+//                SexpFsm_get_symbols_list(sexp_fsm), trace_title,
+//                                                    TRACE_TYPE_CNTEXAMPLE, exp);
+//       }
+// 
+//       FREE(trace_title);
+// 
+//       StreamMgr_print_output(streams, 
+//               "-- as demonstrated by the following execution sequence\n");
+// 
+//       TraceMgr_register_trace(TRACE_MGR(NuSMVEnv_get_value(env, ENV_TRACE_MGR)), trace);
+//       TraceMgr_execute_plugin(TRACE_MGR(NuSMVEnv_get_value(env, ENV_TRACE_MGR)), TRACE_OPT(NULL),
+//                                   TRACE_MGR_DEFAULT_PLUGIN,
+//                                   TRACE_MGR_LAST_TRACE);
+// 
+//       Prop_set_trace(prop, Trace_get_id(trace));
+// 
+//       walk_dd(dd, bdd_free, exp);
+//       free_list(nodemgr, exp);
+//     }
+//   }
+// 
+//   bdd_free(dd, s0);
+// } /* Mc_CheckCTLSpec */
+// 
 
 void Mc_CheckCompute(NuSMVEnv_ptr env, Prop_ptr prop)
 {
