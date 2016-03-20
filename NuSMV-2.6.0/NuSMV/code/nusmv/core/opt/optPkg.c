@@ -202,11 +202,6 @@ void Opt_Pkg_init(NuSMVEnv_ptr const env)
   // TEST Flag setzen
   res = OptsHandler_register_bool_option(opts, RETURN_ACCEPTING, false, false);
   nusmv_assert(res);
-
-  /* if this option is used, also their use is enabled */
-  res = OptsHandler_add_option_trigger(opts, RETURN_ACCEPTING,
-                                       opt_set_reachable_states_trigger, env);
-  nusmv_assert(res);
   
 
   {
