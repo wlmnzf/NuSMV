@@ -340,6 +340,27 @@ boolean opt_verbose_level_le(OptsHandler_ptr opt, int level)
   return((get_verbose_level(opt) <= level));
 }
 
+
+/*********************************************************************************/
+/* TEST command line option setzen */
+
+void set_return_accepting(OptsHandler_ptr opt)
+{
+  boolean res = OptsHandler_set_bool_option_value(opt, RETURN_ACCEPTING, true);
+  nusmv_assert(res);
+}
+void unset_return_accepting(OptsHandler_ptr opt)
+{
+  boolean res = OptsHandler_set_bool_option_value(opt, RETURN_ACCEPTING, false);
+  nusmv_assert(res);
+}
+
+boolean opt_return_accepting(OptsHandler_ptr opt)
+{
+  return OptsHandler_get_bool_option_value(opt, RETURN_ACCEPTING);
+}
+
+
 /******************************************************************************/
 /* PP_LIST */
 void set_pp_list(OptsHandler_ptr opt, char* pp_list, const NuSMVEnv_ptr env)
