@@ -100,8 +100,11 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
     OPTS_HANDLER(NuSMVEnv_get_value(env, ENV_OPTS_HANDLER));
   const NodeMgr_ptr nodemgr =
     NODE_MGR(NuSMVEnv_get_value(env, ENV_NODE_MGR));
+  const VarsHandler_ptr varmgr =
+    NuSMVEnv_get_value(env, ENV_DD_VARS_HANDLER);
   FILE * out = StreamMgr_get_output_stream(streams);
   FILE * dot_output, * txt_output;
+  const char **inputNames;
   
   
   if (opt_verbose_level_gt(opts, 0)) {
@@ -222,35 +225,47 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
     }
   }
   
-  // TODO anpassen, falls mehrere CTLSpecs in .smv-file sind
-  /* print out accepting states, initial states, initial accepting states */
-  StreamMgr_print_output(streams,  "Accepting States: \n");
-  dd_dump_factored_form(dd, 1, &accepted, NULL, NULL, out);
+  //TEST koennen inputNames aus env abgefragt werden?
+  // TODO geht so noch nicht... Segmentation Fault..
+//   inputNames = NuSMVEnv_get_value(env, ENV_DD_VARS_HANDLER);
+//   fprintf(out, inputNames);
+  
+  // Parameter "-a" aus ENV_OPTS_HANDLER abfragen, 
+  // falls Flag gesetzt ist: States ausgeben und in Datei speichern
+  if(opt_return_accepting(opts))
+  {
+    // TODO anpassen, falls mehrere CTLSpecs in .smv-file sind
+    /* print out accepting states, initial states, initial accepting states */  
+    StreamMgr_print_output(streams,  "Accepting States: \n");
+    dd_dump_factored_form(dd, 1, &accepted, NULL, NULL, out);
 
-  StreamMgr_print_output(streams,  "\nInitial States: \n");
-  dd_dump_factored_form(dd, 1, &init, NULL, NULL, out);
+    StreamMgr_print_output(streams,  "\nInitial States: \n");
+    dd_dump_factored_form(dd, 1, &init, NULL, NULL, out);
 
-  StreamMgr_print_output(streams,  "\nInitial Accepting States: \n");
-  dd_dump_factored_form(dd, 1, &init_and_accepted, NULL, NULL, out);
-  StreamMgr_print_output(streams,  "\n");
+    StreamMgr_print_output(streams,  "\nInitial Accepting States: \n");
+    dd_dump_factored_form(dd, 1, &init_and_accepted, NULL, NULL, out);
+    StreamMgr_print_output(streams,  "\n");
+    
+    
+    // TODO if-Abfrage ergaenzen (wenn Flag-Option erweitert ist),
+    // um zu entscheiden, ob auch in Datei geschrieben werden soll
+    // TODO wenn moeglich, CTLSpec abgreifen und als Filename verwenden
+    // TODO anpassen, falls mehrere CTLSpecs in .smv-file sind
+    dot_output = fopen("output.dot", "w");
+    dd_dump_dot(dd, 1, &s0, NULL, NULL, dot_output);
+    fclose(dot_output);
+    
+    txt_output = fopen("output.txt", "a");
+    fprintf(txt_output, "Accepting States: \n");
+    dd_dump_factored_form(dd, 1, &accepted, NULL, NULL, txt_output);
+    fprintf(txt_output, "\n\nInitialStates: \n");
+    dd_dump_factored_form(dd, 1, &init, NULL, NULL, txt_output);
+    fprintf(txt_output, "\n\nInitial Accepting States: \n");
+    dd_dump_factored_form(dd, 1, &init_and_accepted, NULL, NULL, txt_output);
+    fclose(txt_output); 
+  }
   
   
-  // TODO if-Abfrage ergaenzen (wenn Flags fertig sind),
-  // um zu entscheiden, ob auch in Datei geschrieben werden soll
-  // TODO wenn moeglich, CTLSpec abgreifen und als Filename verwenden
-  // TODO anpassen, falls mehrere CTLSpecs in .smv-file sind
-  dot_output = fopen("output.dot", "w");
-  dd_dump_dot(dd, 1, &s0, NULL, NULL, dot_output);
-  fclose(dot_output);
-  
-  txt_output = fopen("output.txt", "a");
-  fprintf(txt_output, "Accepting States: \n");
-  dd_dump_factored_form(dd, 1, &accepted, NULL, NULL, txt_output);
-  fprintf(txt_output, "\n\nInitialStates: \n");
-  dd_dump_factored_form(dd, 1, &init, NULL, NULL, txt_output);
-  fprintf(txt_output, "\n\nInitial Accepting States: \n");
-  dd_dump_factored_form(dd, 1, &init_and_accepted, NULL, NULL, txt_output);
-  fclose(txt_output); 
   
 
   bdd_free(dd, s0);
