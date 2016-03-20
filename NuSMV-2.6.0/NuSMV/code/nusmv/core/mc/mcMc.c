@@ -252,10 +252,10 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
     // TODO wenn moeglich, CTLSpec abgreifen und als Filename verwenden
     // TODO anpassen, falls mehrere CTLSpecs in .smv-file sind
     dot_output = fopen("output.dot", "w");
-    dd_dump_dot(dd, 1, &s0, NULL, NULL, dot_output);
+    dd_dump_dot(dd, 1, &accepted, NULL, NULL, dot_output);
     fclose(dot_output);
     
-    txt_output = fopen("output.txt", "a");
+    txt_output = fopen("output.txt", "w");
     fprintf(txt_output, "Accepting States: \n");
     dd_dump_factored_form(dd, 1, &accepted, NULL, NULL, txt_output);
     fprintf(txt_output, "\n\nInitialStates: \n");
