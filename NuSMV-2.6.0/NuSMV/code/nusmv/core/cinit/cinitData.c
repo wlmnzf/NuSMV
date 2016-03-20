@@ -763,6 +763,14 @@ void NuSMVCore_init_cmd_options(NuSMVEnv_ptr env)
                                         "constant DEFINEs",
                                         NULL, KEEP_SINGLE_VALUE_VARS, true,
                                         false, NULL, NULL);
+  
+  // TEST: Versuch, neue env_command_line_option zu setzen
+  NuSMVCore_add_env_command_line_option("-a", 
+					"Prints accepting states, "
+					"initial states and "
+					"initial accepting states",
+					NULL, RETURN_ACCEPTING, true,
+					false, NULL, NULL);
 
   FREE(libraryName);
 }
