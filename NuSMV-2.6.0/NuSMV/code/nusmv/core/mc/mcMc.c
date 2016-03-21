@@ -55,6 +55,8 @@
 #include "nusmv/core/enc/enc.h"
 #include "nusmv/core/prop/propPkg.h"
 
+#include "nusmv/core/fsm/bdd/BddFsm.h"
+
 /*---------------------------------------------------------------------------*/
 /* Variable declarations                                                     */
 /*---------------------------------------------------------------------------*/
@@ -78,9 +80,10 @@ Mc_fair_si_iteration(BddFsm_ptr fsm,
 /*---------------------------------------------------------------------------*/
 
 /*
- * Funktion mit eigenen Aenderungen: Ausgabe auf Kommandozeile/in Datei schreiben
- * TODO umbenennen, wenn Flags funktionieren und klar ist, 
- * an welcher Stelle Mc_CheckCTLSpec aufgerufen wird
+ * Funktion mit eigenen Aenderungen: Ausgabe auf Kommandozeile/in Datei schreiben,
+ * falls Parameter "-a" uebergeben wurde
+ * TODO ueberlegen, ob eigene Aenderungen nicht doch wieder in extra Funktion sollten
+ * (Uebersichtlichkeit)
  */
 
 void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
@@ -91,7 +94,10 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
     ERROR_MGR(NuSMVEnv_get_value(env, ENV_ERROR_MANAGER));
   node_ptr exp;
   Trace_ptr trace;
+  
+  // ADDED bdd_ptr for accepting, initial, initial accepting states
   bdd_ptr s0, tmp_1, tmp_2, accepted, init, init_and_accepted;
+  
   BddFsm_ptr fsm;
   BddEnc_ptr enc;
   DDMgr_ptr dd;
@@ -100,12 +106,19 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
     OPTS_HANDLER(NuSMVEnv_get_value(env, ENV_OPTS_HANDLER));
   const NodeMgr_ptr nodemgr =
     NODE_MGR(NuSMVEnv_get_value(env, ENV_NODE_MGR));
+  
+  // TODO kann vielleicht wieder raus  
   const VarsHandler_ptr varmgr =
     NuSMVEnv_get_value(env, ENV_DD_VARS_HANDLER);
+  
+  // for printing bdd states to standard output
+  OStream_ptr stream = StreamMgr_get_output_ostream(streams);
+    
+    
+  // ADDED File-pointer for standard output and output.txt and dot files
   FILE * out = StreamMgr_get_output_stream(streams);
   FILE * dot_output, * txt_output;
-  const char **inputNames;
-  
+    
   
   if (opt_verbose_level_gt(opts, 0)) {
     Logger_ptr logger = LOGGER(NuSMVEnv_get_value(env, ENV_LOGGER));
@@ -140,21 +153,19 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
 
   bdd_free(dd, tmp_1);
   bdd_free(dd, s0);
-
-  s0 = BddFsm_get_init(fsm);
+  
   /* get initial states */
+  s0 = BddFsm_get_init(fsm);
   init = bdd_dup(s0);
   
-  bdd_and_accumulate(dd, &s0, tmp_2);
   /* get initial accepting states */
+  bdd_and_accumulate(dd, &s0, tmp_2);
   init_and_accepted = bdd_dup(init);
   bdd_and_accumulate(dd, &init_and_accepted, accepted);
 
   bdd_free(dd, tmp_2);  
   
-  /* Prints out the result, if not true explain. */
-  /* ADDED: prints out accepting states, initial states 
-   * and initial accepting states as additional information */  
+  /* Prints out the result, if not true explain. */  
   StreamMgr_print_output(streams,  "-- ");
   print_spec(StreamMgr_get_output_ostream(streams),
              prop, get_prop_print_method(opts));
@@ -224,16 +235,46 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
       free_list(nodemgr, exp);
     }
   }
-  
-  //TEST koennen inputNames aus env abgefragt werden?
-  // TODO geht so noch nicht... Segmentation Fault..
-//   inputNames = NuSMVEnv_get_value(env, ENV_DD_VARS_HANDLER);
-//   fprintf(out, inputNames);
-  
-  // Parameter "-a" aus ENV_OPTS_HANDLER abfragen, 
-  // falls Flag gesetzt ist: States ausgeben und in Datei speichern
+    
+  /* ADDED: prints out accepting states, initial states 
+   * and initial accepting states as additional information 
+   * if commandline parameter "-a" is set */
   if(opt_return_accepting(opts))
-  {
+  { 
+    // TEST fuer BddEnc_print_bdd Funktion von nusmv
+    // Ist die Ausgabe so sinnvoll?
+    NodeList_ptr vars;
+    SymbTableIter iter;
+    SymbTable_ptr st = BaseEnc_get_symb_table(BASE_ENC(enc));
+
+    SymbTable_gen_iter(st, &iter, STT_VAR);
+    vars = SymbTable_iter_to_list(st, iter);
+    
+    StreamMgr_print_output(streams, "\nAusgabe mit BddEnc_print_bdd\n");
+    StreamMgr_print_output(streams, "\nPrinting accepting States:\n");
+    BddEnc_print_bdd_begin(enc, vars, false);
+    BddEnc_print_bdd(enc, accepted, (VPFBEFNNV) NULL, stream, NULL);
+    StreamMgr_print_output(streams, "Printing initial States:\n");
+    BddEnc_print_bdd(enc, init, (VPFBEFNNV) NULL, stream, NULL);
+    StreamMgr_print_output(streams, "Printing initial accepting States:\n");
+    BddEnc_print_bdd(enc, init_and_accepted, (VPFBEFNNV) NULL, stream, NULL);
+    BddEnc_print_bdd_end(enc);
+    NodeList_destroy(vars);
+    
+    // TEST fuer BddEnc_print_set_of_states Funktion von nusmv
+    // Vielleicht ist das ja sinnvoller als Ausgabe?
+    StreamMgr_print_output(streams, "\nAusgabe mit BddEnc_print_set_of_states\n");
+    StreamMgr_print_output(streams, "\nPrinting accepting States:\n");
+    BddEnc_print_set_of_states(enc, accepted, false, true, (VPFBEFNNV) NULL, stream, NULL);
+    StreamMgr_print_output(streams, "\nPrinting initial States:\n");
+    BddEnc_print_set_of_states(enc, init, false, true, (VPFBEFNNV) NULL, stream, NULL);
+    StreamMgr_print_output(streams, "\nPrinting initial accepting States:\n");
+    BddEnc_print_set_of_states(enc, init_and_accepted, false, true, (VPFBEFNNV) NULL, stream, NULL);
+    
+    
+    
+    /* TODO free variables here ?*/
+    
     // TODO anpassen, falls mehrere CTLSpecs in .smv-file sind
     /* print out accepting states, initial states, initial accepting states */  
     StreamMgr_print_output(streams,  "Accepting States: \n");
@@ -251,6 +292,7 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
     // um zu entscheiden, ob auch in Datei geschrieben werden soll
     // TODO wenn moeglich, CTLSpec abgreifen und als Filename verwenden
     // TODO anpassen, falls mehrere CTLSpecs in .smv-file sind
+    // TODO fprintf durch nusmv StreamMgr Funktionen ersetzen
     dot_output = fopen("output.dot", "w");
     dd_dump_dot(dd, 1, &accepted, NULL, NULL, dot_output);
     fclose(dot_output);
@@ -262,7 +304,7 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
     dd_dump_factored_form(dd, 1, &init, NULL, NULL, txt_output);
     fprintf(txt_output, "\n\nInitial Accepting States: \n");
     dd_dump_factored_form(dd, 1, &init_and_accepted, NULL, NULL, txt_output);
-    fclose(txt_output); 
+    fclose(txt_output);    
   }
   
   
@@ -276,7 +318,7 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
 
 /*
  * Originalfunktion ohne Aenderungen
- * auskommentieren, um Funktion mit Aenderungen testen zu koennen
+ * auskommentiert, um Funktion mit Aenderungen testen zu koennen
  */
 // void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
 // {
