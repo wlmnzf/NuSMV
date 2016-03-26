@@ -80,6 +80,24 @@ Mc_fair_si_iteration(BddFsm_ptr fsm,
 /*---------------------------------------------------------------------------*/
 
 /*
+ * TEST Variablen Namen aus node_ptr Datenstruktur ziehen und in char array speichern
+ */
+
+void get_these_variable_names(NuSMVEnv_ptr env)
+{
+  const StreamMgr_ptr streams = 
+    STREAM_MGR(NuSMVEnv_get_value(env, ENV_STREAM_MANAGER));
+    
+  
+  StreamMgr_print_output(streams, "\nHello variable names\n");
+  
+  
+}
+
+
+
+
+/*
  * Funktion mit eigenen Aenderungen: Ausgabe auf Kommandozeile/in Datei schreiben,
  * falls Parameter "-a" uebergeben wurde
  * TODO ueberlegen, ob eigene Aenderungen nicht doch wieder in extra Funktion sollten
@@ -98,7 +116,7 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
   // ADDED bdd_ptr for accepting, initial, initial accepting states
   bdd_ptr s0, tmp_1, tmp_2, accepted, init, init_and_accepted;
   
-  BddFsm_ptr fsm;
+  BddFsm_ptr fsm, trying;
   BddEnc_ptr enc;
   DDMgr_ptr dd;
   Expr_ptr spec  = Prop_get_expr_core(prop);
@@ -239,16 +257,19 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
   /* ADDED: prints out accepting states, initial states 
    * and initial accepting states as additional information 
    * if commandline parameter "-a" is set */
-  if(opt_return_accepting(opts))
-  { 
+  if(opt_return_accepting(opts)) { 
     // TEST fuer BddEnc_print_bdd Funktion von nusmv
     // Ist die Ausgabe so sinnvoll?
     NodeList_ptr vars;
     SymbTableIter iter;
     SymbTable_ptr st = BaseEnc_get_symb_table(BASE_ENC(enc));
+    const char ** inputNames;
+    
+    get_these_variable_names(env);
 
     SymbTable_gen_iter(st, &iter, STT_VAR);
     vars = SymbTable_iter_to_list(st, iter);
+        
     
     StreamMgr_print_output(streams, "\nAusgabe mit BddEnc_print_bdd\n");
     StreamMgr_print_output(streams, "\nPrinting accepting States:\n");
@@ -270,6 +291,24 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
     BddEnc_print_set_of_states(enc, init, false, true, (VPFBEFNNV) NULL, stream, NULL);
     StreamMgr_print_output(streams, "\nPrinting initial accepting States:\n");
     BddEnc_print_set_of_states(enc, init_and_accepted, false, true, (VPFBEFNNV) NULL, stream, NULL);
+    
+    // TEST fuer BddEnc_print_set_of_state_input_pairs Funktion von nusmv
+//     StreamMgr_print_output(streams, "\nAusgabe mit BddEnc_print_vars_in_cube\n");
+//     BddEnc_print_vars_in_cube(enc, accepted, exp, stream);
+    
+    // TEST fuer BddEnc_print_set_of_inputs Funktion von nusmv
+//     StreamMgr_print_output(streams, "\nAusgabe mit BddEnc_print_set_of_inputs\n");
+//     BddEnc_print_set_of_inputs(enc, s0, false, (VPFBEFNNV) NULL, stream, NULL);
+    
+    // TEST fuer BddEnc_print_set_of_state_input_pairs Funktion von nusmv
+    StreamMgr_print_output(streams, "\nAusgabe mit BddEnc_print_set_of_state_input_pairs\n");
+    BddEnc_print_set_of_state_input_pairs(enc, accepted, false, (VPFBEFNNV) NULL, stream, NULL);
+    BddEnc_print_set_of_state_input_pairs(enc, init, false, (VPFBEFNNV) NULL, stream, NULL);
+    
+    // TEST Ausgabe mit BddFsmPrint Funktionen: BddFsm_print_reachable_states_info
+    trying = BDD_FSM(NuSMVEnv_get_value(env, ENV_BDD_FSM));
+    StreamMgr_print_output(streams, "\nAusgabe mit BddFsm_print_reachable_states_info\n");
+    BddFsm_print_reachable_states_info(trying, false, false, true, stream);
     
     
     
