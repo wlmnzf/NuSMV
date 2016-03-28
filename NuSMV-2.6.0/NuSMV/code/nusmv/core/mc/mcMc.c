@@ -312,23 +312,19 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
     // TEST Ausgabe mit BddFsmPrint Funktionen: BddFsm_print_reachable_states_info
     trying = BDD_FSM(NuSMVEnv_get_value(env, ENV_BDD_FSM));
     StreamMgr_print_output(streams, "\nAusgabe mit BddFsm_print_reachable_states_info\n");
-    BddFsm_print_accepting_states_info(trying, accepted, false, false, true, stream);
-    
-    
-    
+    StreamMgr_print_output(streams,  "Accepting States: \n");
+    BddFsm_print_interesting_states_info(trying, accepted, false, false, true, stream);
+    StreamMgr_print_output(streams,  "\nInitial States: \n");
+    BddFsm_print_interesting_states_info(trying, init, false, false, true, stream);
+    StreamMgr_print_output(streams,  "\nInitial Accepting States: \n");
+    BddFsm_print_interesting_states_info(trying, init_and_accepted, false, false, true, stream);
+    StreamMgr_print_output(streams,  "\n");  
     /* TODO free variables here ?*/
     
     // TODO anpassen, falls mehrere CTLSpecs in .smv-file sind
     /* print out accepting states, initial states, initial accepting states */  
-    StreamMgr_print_output(streams,  "Accepting States: \n");
-    dd_dump_factored_form(dd, 1, &accepted, NULL, NULL, out);
 
-    StreamMgr_print_output(streams,  "\nInitial States: \n");
-    dd_dump_factored_form(dd, 1, &init, NULL, NULL, out);
 
-    StreamMgr_print_output(streams,  "\nInitial Accepting States: \n");
-    dd_dump_factored_form(dd, 1, &init_and_accepted, NULL, NULL, out);
-    StreamMgr_print_output(streams,  "\n");
     
     
     // TODO if-Abfrage ergaenzen (wenn Flag-Option erweitert ist),

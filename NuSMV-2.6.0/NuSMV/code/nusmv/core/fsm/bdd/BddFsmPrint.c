@@ -272,8 +272,8 @@ void BddFsm_print_reachable_states_info(const BddFsm_ptr self,
 
 
 
-void BddFsm_print_accepting_states_info(const BddFsm_ptr self, 
-					bdd_ptr accepting,
+void BddFsm_print_interesting_states_info(const BddFsm_ptr self, 
+					bdd_ptr interesting_states,
                                         const boolean print_states,
                                         const boolean print_defines,
                                         const boolean print_formula,
@@ -288,7 +288,7 @@ void BddFsm_print_accepting_states_info(const BddFsm_ptr self,
 
   mask = BddEnc_get_state_frozen_vars_mask_bdd(self->enc);
 
-  reachable = accepting;
+  reachable = interesting_states;
 
   bdd_and_accumulate(self->dd, &reachable, mask);
 
@@ -300,17 +300,17 @@ void BddFsm_print_accepting_states_info(const BddFsm_ptr self,
      the number of reachable states (ie. We do not have onion rings
      informations. For example, reachable states have been computed
      with Guided Reachability  */
-  if (BddFsm_reachable_states_computed(self)) {
-    OStream_printf(file, "system diameter: %d\n", BddFsm_get_diameter(self));
-  }
-  else {
-    nusmv_assert(BddFsm_has_cached_reachable_states(self));
-    OStream_printf(file, "system diameter: N/A\n");
-  }
+//   if (BddFsm_reachable_states_computed(self)) {
+//     OStream_printf(file, "system diameter: %d\n", BddFsm_get_diameter(self));
+//   }
+//   else {
+//     nusmv_assert(BddFsm_has_cached_reachable_states(self));
+//     OStream_printf(file, "system diameter: N/A\n");
+//   }
 
-  OStream_printf(file, "reachable states: %g (2^%g) out of %g (2^%g)\n",
-          reached_cardinality, log(reached_cardinality)/log(2.0),
-          search_space_cardinality, log(search_space_cardinality)/log(2.0));
+//   OStream_printf(file, "reachable states: %g (2^%g) out of %g (2^%g)\n",
+//           reached_cardinality, log(reached_cardinality)/log(2.0),
+//           search_space_cardinality, log(search_space_cardinality)/log(2.0));
 
   /* one of these flags can be enabled, not both */
   nusmv_assert(!print_states || !print_formula);
