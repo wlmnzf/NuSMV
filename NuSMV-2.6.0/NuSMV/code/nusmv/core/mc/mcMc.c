@@ -36,6 +36,7 @@
 
 #include "nusmv/core/mc/mcInt.h"
 #include "nusmv/core/mc/mc.h"
+#include "../enc/bdd/BddEnc.h"
 
 #include "nusmv/core/utils/OStream.h"
 #include "nusmv/core/utils/StreamMgr.h"
@@ -284,13 +285,16 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
     
     // TEST fuer BddEnc_print_set_of_states Funktion von nusmv
     // Vielleicht ist das ja sinnvoller als Ausgabe?
-    StreamMgr_print_output(streams, "\nAusgabe mit BddEnc_print_set_of_states\n");
-    StreamMgr_print_output(streams, "\nPrinting accepting States:\n");
-    BddEnc_print_set_of_states(enc, accepted, false, true, (VPFBEFNNV) NULL, stream, NULL);
-    StreamMgr_print_output(streams, "\nPrinting initial States:\n");
-    BddEnc_print_set_of_states(enc, init, false, true, (VPFBEFNNV) NULL, stream, NULL);
-    StreamMgr_print_output(streams, "\nPrinting initial accepting States:\n");
-    BddEnc_print_set_of_states(enc, init_and_accepted, false, true, (VPFBEFNNV) NULL, stream, NULL);
+    
+    
+    // BddEnc_print_set_of_states(enc, fair_g, false, (VPFNNF) NULL, outstream)
+//     StreamMgr_print_output(streams, "\nAusgabe mit BddEnc_print_set_of_states\n");
+//     StreamMgr_print_output(streams, "\nPrinting accepting States:\n");
+//     BddEnc_print_set_of_states(enc, accepted, false, true, (VPFBEFNNV) NULL, stream, NULL);
+//     StreamMgr_print_output(streams, "\nPrinting initial States:\n");
+//     BddEnc_print_set_of_states(enc, init, false, true, (VPFBEFNNV) NULL, stream, NULL);
+//     StreamMgr_print_output(streams, "\nPrinting initial accepting States:\n");
+//     BddEnc_print_set_of_states(enc, init_and_accepted, false, true, (VPFBEFNNV) NULL, stream, NULL);
     
     // TEST fuer BddEnc_print_set_of_state_input_pairs Funktion von nusmv
 //     StreamMgr_print_output(streams, "\nAusgabe mit BddEnc_print_vars_in_cube\n");
@@ -301,14 +305,14 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
 //     BddEnc_print_set_of_inputs(enc, s0, false, (VPFBEFNNV) NULL, stream, NULL);
     
     // TEST fuer BddEnc_print_set_of_state_input_pairs Funktion von nusmv
-    StreamMgr_print_output(streams, "\nAusgabe mit BddEnc_print_set_of_state_input_pairs\n");
-    BddEnc_print_set_of_state_input_pairs(enc, accepted, false, (VPFBEFNNV) NULL, stream, NULL);
-    BddEnc_print_set_of_state_input_pairs(enc, init, false, (VPFBEFNNV) NULL, stream, NULL);
+//     StreamMgr_print_output(streams, "\nAusgabe mit BddEnc_print_set_of_state_input_pairs\n");
+//     BddEnc_print_set_of_state_input_pairs(enc, accepted, false, (VPFBEFNNV) NULL, stream, NULL);
+//     BddEnc_print_set_of_state_input_pairs(enc, init, false, (VPFBEFNNV) NULL, stream, NULL);
     
     // TEST Ausgabe mit BddFsmPrint Funktionen: BddFsm_print_reachable_states_info
     trying = BDD_FSM(NuSMVEnv_get_value(env, ENV_BDD_FSM));
     StreamMgr_print_output(streams, "\nAusgabe mit BddFsm_print_reachable_states_info\n");
-    BddFsm_print_reachable_states_info(trying, false, false, true, stream);
+    BddFsm_print_accepting_states_info(trying, accepted, false, false, true, stream);
     
     
     
