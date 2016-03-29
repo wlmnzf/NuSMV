@@ -137,7 +137,8 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
   s0 = eval_ctl_spec(fsm, enc, spec, Nil);
   
   /* save accepted states */
-  accepted = bdd_dup(s0);  
+  if(opt_return_accepting(opts) || opt_print_accepting(opts))
+    accepted = bdd_dup(s0);  
   
   tmp_1 = bdd_not(dd, s0);
   tmp_2 = BddFsm_get_state_constraints(fsm);
@@ -162,8 +163,10 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
   
   /* get initial accepting states */
   bdd_and_accumulate(dd, &s0, tmp_2);
-  init_and_accepted = bdd_dup(init);
-  bdd_and_accumulate(dd, &init_and_accepted, accepted);
+  if(opt_return_accepting(opts) || opt_print_accepting(opts)) {
+    init_and_accepted = bdd_dup(init);
+    bdd_and_accumulate(dd, &init_and_accepted, accepted);
+  }
 
   bdd_free(dd, tmp_2);  
   
@@ -337,9 +340,11 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
   
 
   bdd_free(dd, s0);
-  bdd_free(dd,init);
-  bdd_free(dd,init_and_accepted);
-  bdd_free(dd,accepted);
+  if(opt_return_accepting(opts) || opt_print_accepting(opts)) {
+    bdd_free(dd,init);
+    bdd_free(dd,init_and_accepted);
+    bdd_free(dd,accepted);
+  }
 }  /* Mc_CheckCTLSpec */
 
 /*
