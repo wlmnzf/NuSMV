@@ -768,8 +768,17 @@ void NuSMVCore_init_cmd_options(NuSMVEnv_ptr env)
   NuSMVCore_add_env_command_line_option("-a", 
 					"Prints accepting states, "
 					"initial states and "
-					"initial accepting states",
+					"initial accepting states. ",
 					NULL, RETURN_ACCEPTING, true,
+					false, NULL, NULL);
+  
+  NuSMVCore_add_env_command_line_option("-a_file", 
+					"Prints accepting states, "
+					"initial states and "
+					"initial accepting states. "
+					"Results will be written to the "
+					"file \"interesting_states\".",
+					NULL, PRINT_ACCEPTING, true,
 					false, NULL, NULL);
 
   FREE(libraryName);
