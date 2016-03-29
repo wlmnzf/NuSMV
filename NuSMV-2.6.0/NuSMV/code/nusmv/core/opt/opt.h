@@ -409,6 +409,8 @@ typedef enum {
 // TEST command line flag fuer accepting states
 #define RETURN_ACCEPTING   "return_accepting"
 
+#define PRINT_ACCEPTING		"print_accepting"
+
 /*!
   \brief \todo Missing synopsis
 
@@ -1284,6 +1286,22 @@ void    unset_return_accepting(OptsHandler_ptr);
   \todo Missing description
 */
 boolean opt_return_accepting(OptsHandler_ptr);
+
+void    set_print_accepting(OptsHandler_ptr);
+
+/*!
+  \brief \todo Missing synopsis
+
+  \todo Missing description
+*/
+void    unset_print_accepting(OptsHandler_ptr);
+
+/*!
+  \brief \todo Missing synopsis
+
+  \todo Missing description
+*/
+boolean opt_print_accepting(OptsHandler_ptr);
 
 /************************************************************************************/
 

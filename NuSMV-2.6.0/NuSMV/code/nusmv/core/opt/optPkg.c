@@ -203,6 +203,8 @@ void Opt_Pkg_init(NuSMVEnv_ptr const env)
   res = OptsHandler_register_bool_option(opts, RETURN_ACCEPTING, false, false);
   nusmv_assert(res);
   
+  res = OptsHandler_register_bool_option(opts, PRINT_ACCEPTING, false, false);
+  nusmv_assert(res);
 
   {
     res = OptsHandler_register_int_option(opts, DEFAULT_TRACE_PLUGIN, 0, true);

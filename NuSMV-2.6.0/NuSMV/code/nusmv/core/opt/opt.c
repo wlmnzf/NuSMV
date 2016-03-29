@@ -360,6 +360,22 @@ boolean opt_return_accepting(OptsHandler_ptr opt)
   return OptsHandler_get_bool_option_value(opt, RETURN_ACCEPTING);
 }
 
+void set_print_accepting(OptsHandler_ptr opt)
+{
+  boolean res = OptsHandler_set_bool_option_value(opt, PRINT_ACCEPTING, true);
+  nusmv_assert(res);
+}
+
+void unset_return_acceptin(OptsHandler_ptr opt)
+{
+  boolean res = OptsHandler_set_bool_option_value(opt, PRINT_ACCEPTING, false);
+  nusmv_assert(res);
+}
+
+boolean opt_print_accepting(OptsHandler_ptr opt)
+{
+  return OptsHandler_get_bool_option_value(opt, PRINT_ACCEPTING);
+}
 
 /******************************************************************************/
 /* PP_LIST */
