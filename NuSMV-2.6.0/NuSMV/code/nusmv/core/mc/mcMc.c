@@ -80,23 +80,6 @@ Mc_fair_si_iteration(BddFsm_ptr fsm,
 /* Definition of exported functions                                          */
 /*---------------------------------------------------------------------------*/
 
-/*
- * TEST Variablen Namen aus node_ptr Datenstruktur ziehen und in char array speichern
- */
-
-void get_these_variable_names(NuSMVEnv_ptr env)
-{
-  const StreamMgr_ptr streams = 
-    STREAM_MGR(NuSMVEnv_get_value(env, ENV_STREAM_MANAGER));
-    
-  
-  StreamMgr_print_output(streams, "\nHello variable names\n");
-  
-  
-}
-
-
-
 
 /*
  * Funktion mit eigenen Aenderungen: Ausgabe auf Kommandozeile/in Datei schreiben,
@@ -132,7 +115,7 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
   
   // for printing bdd states to standard output
   OStream_ptr stream = StreamMgr_get_output_ostream(streams);
-    
+  OStream_ptr file = StreamMgr_get_output_ostream(streams);  
     
   // ADDED File-pointer for standard output and output.txt and dot files
   FILE * out = StreamMgr_get_output_stream(streams);
@@ -264,9 +247,6 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
     NodeList_ptr vars;
     SymbTableIter iter;
     SymbTable_ptr st = BaseEnc_get_symb_table(BASE_ENC(enc));
-    const char ** inputNames;
-    
-    get_these_variable_names(env);
 
     SymbTable_gen_iter(st, &iter, STT_VAR);
     vars = SymbTable_iter_to_list(st, iter);
@@ -311,7 +291,7 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
     
     // TEST Ausgabe mit BddFsmPrint Funktionen: BddFsm_print_reachable_states_info
     trying = BDD_FSM(NuSMVEnv_get_value(env, ENV_BDD_FSM));
-    StreamMgr_print_output(streams, "\nAusgabe mit BddFsm_print_reachable_states_info\n");
+    StreamMgr_print_output(streams, "\nAusgabe mit BddFsm_print_accepting_states_info\n");
     StreamMgr_print_output(streams,  "Accepting States: \n");
     BddFsm_print_interesting_states_info(trying, accepted, false, false, true, stream);
     StreamMgr_print_output(streams,  "\nInitial States: \n");
@@ -322,30 +302,37 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
     /* TODO free variables here ?*/
     
     // TODO anpassen, falls mehrere CTLSpecs in .smv-file sind
-    /* print out accepting states, initial states, initial accepting states */  
-
-
-    
-    
-    // TODO if-Abfrage ergaenzen (wenn Flag-Option erweitert ist),
-    // um zu entscheiden, ob auch in Datei geschrieben werden soll
-    // TODO wenn moeglich, CTLSpec abgreifen und als Filename verwenden
-    // TODO anpassen, falls mehrere CTLSpecs in .smv-file sind
-    // TODO fprintf durch nusmv StreamMgr Funktionen ersetzen
-    dot_output = fopen("output.dot", "w");
-    dd_dump_dot(dd, 1, &accepted, NULL, NULL, dot_output);
-    fclose(dot_output);
-    
-    txt_output = fopen("output.txt", "w");
-    fprintf(txt_output, "Accepting States: \n");
-    dd_dump_factored_form(dd, 1, &accepted, NULL, NULL, txt_output);
-    fprintf(txt_output, "\n\nInitialStates: \n");
-    dd_dump_factored_form(dd, 1, &init, NULL, NULL, txt_output);
-    fprintf(txt_output, "\n\nInitial Accepting States: \n");
-    dd_dump_factored_form(dd, 1, &init_and_accepted, NULL, NULL, txt_output);
-    fclose(txt_output);    
+    /* print out accepting states, initial states, initial accepting states */      
+  
   }
   
+  // TODO fprintf durch StreamMgr ersetzen
+  // TODO dd_dump funktionen durch BddFsm_print_interesting_states_info ersetzen
+  // TODO wenn moeglich, CTL-Spec als Filenamen verwenden
+  // TODO anpassen fuer mehrere CTLs
+  if(opt_print_accepting(opts)) {
+    FILE * output = fopen("interesting_states.txt", "w");
+    FILE * dot = fopen("interesting_states.dot", "w");
+    trying = BDD_FSM(NuSMVEnv_get_value(env, ENV_BDD_FSM));
+    
+    fprintf(output,  "Accepting States: \n");
+//     BddFsm_print_interesting_states_info(trying, accepted, false, false, true, output);
+    dd_dump_factored_form(dd, 1, &accepted, NULL, NULL, output);
+    fprintf(output, "\n\nInitialStates: \n");
+    dd_dump_factored_form(dd, 1, &init, NULL, NULL, output);
+    fprintf(output, "\n\nInitial Accepting States: \n");
+    dd_dump_factored_form(dd, 1, &init_and_accepted, NULL, NULL, output);
+    
+    fclose(output);
+    
+    
+    dd_dump_dot(dd, 1, &accepted, NULL, NULL, dot);
+    dd_dump_dot(dd, 1, &init, NULL, NULL, dot);
+    dd_dump_dot(dd, 1, &init_and_accepted, NULL, NULL, dot);
+    
+    fclose(dot);
+    
+  }
   
   
 
