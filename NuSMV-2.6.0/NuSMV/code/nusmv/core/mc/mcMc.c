@@ -96,16 +96,22 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
     ERROR_MGR(NuSMVEnv_get_value(env, ENV_ERROR_MANAGER));
     
   int index_of_spec = Prop_get_index(prop);
-  char dotbuffer[32]; 
-  char txtbuffer[32];
-  
+  char * dot_file_name = NIL(char);
+  char * txt_file_name = NIL(char);
+
+  int max_len = sizeof(char) * 32;
+   int chars;
+   
+  char * dotout;
   node_ptr exp;
   Trace_ptr trace;
   
   // ADDED bdd_ptr for accepting, initial, initial accepting states
   bdd_ptr s0, tmp_1, tmp_2, accepted, init, init_and_accepted;
   
-  BddFsm_ptr fsm, trying;
+  BddFsm_ptr fsm;
+  const BddFsm_ptr trying = BDD_FSM(NuSMVEnv_get_value(env, ENV_BDD_FSM));
+
   BddEnc_ptr enc;
   DDMgr_ptr dd;
   Expr_ptr spec  = Prop_get_expr_core(prop);
@@ -120,7 +126,7 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
   
   // for printing bdd states to standard output
   OStream_ptr stream = StreamMgr_get_output_ostream(streams);
-  OStream_ptr file = StreamMgr_get_output_ostream(streams);  
+  OStream_ptr output_file = StreamMgr_get_output_ostream(streams);
     
   // ADDED File-pointer for standard output and output.txt and dot files
   FILE * out = StreamMgr_get_output_stream(streams);
@@ -298,7 +304,6 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
 //     BddEnc_print_set_of_state_input_pairs(enc, init, false, (VPFBEFNNV) NULL, stream, NULL);
     
     // TEST Ausgabe mit BddFsmPrint Funktionen: BddFsm_print_reachable_states_info
-    trying = BDD_FSM(NuSMVEnv_get_value(env, ENV_BDD_FSM));
     StreamMgr_print_output(streams, "\nAusgabe mit BddFsm_print_accepting_states_info\n");
     StreamMgr_print_output(streams,  "Accepting States: \n");
     BddFsm_print_interesting_states_info(trying, accepted, false, false, true, stream);
@@ -318,32 +323,42 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
   // TODO dd_dump funktionen durch BddFsm_print_interesting_states_info ersetzen
   // TODO wenn moeglich, CTL-Spec als Filenamen verwenden
   // TODO anpassen fuer mehrere CTLs
-  
-   snprintf(dotbuffer, sizeof(char) * 32, "interesting_states%d.dot", index_of_spec);
-   snprintf(txtbuffer, sizeof(char) * 32, "interesting_states%d.txt", index_of_spec);
-    
+   
+
+   dot_file_name = ALLOC(char, max_len);
+   txt_file_name = ALLOC(char, max_len);
+   chars = snprintf(dot_file_name, max_len, "interesting_states%d.dot", index_of_spec);
+   SNPRINTF_CHECK(chars, max_len);
+   chars = snprintf(txt_file_name, max_len, "interesting_states%d.txt", index_of_spec);
+   SNPRINTF_CHECK(chars, max_len);
+ 
+   dot_output = fopen(dot_file_name, "w");
+   txt_output = OStream_create_file(txt_file_name, false);
+   
+   
+ 
   if(opt_print_accepting(opts)) {
-    FILE * output = fopen(txtbuffer, "w");
-    FILE * dot = fopen(dotbuffer, "w");
-    trying = BDD_FSM(NuSMVEnv_get_value(env, ENV_BDD_FSM));
-    fprintf(output,  "Accepting States: \n");
-//     BddFsm_print_interesting_states_info(trying, accepted, false, false, true, output);
-    dd_dump_factored_form(dd, 1, &accepted, NULL, NULL, output);
-    fprintf(output, "\n\nInitialStates: \n");
-    dd_dump_factored_form(dd, 1, &init, NULL, NULL, output);
+
+    OStream_printf(txt_output, "Accepting States: \n");
+    BddFsm_print_interesting_states_info(trying, accepted, false, false, true, txt_output);
+
+    OStream_printf(txt_output, "\nInitial States: \n");
+    BddFsm_print_interesting_states_info(trying, init, false, false, true, txt_output);
+
+    OStream_printf(txt_output, "\nInitial Accepting States: \n");
+    BddFsm_print_interesting_states_info(trying, init_and_accepted, false, false, true, txt_output);
+    OStream_printf(txt_output, "\n");
+
+      
+    dd_dump_dot(dd, 1, &accepted, NULL, NULL, dot_output);
+    dd_dump_dot(dd, 1, &init, NULL, NULL, dot_output);
+    dd_dump_dot(dd, 1, &init_and_accepted, NULL, NULL, dot_output);
     
-    fprintf(output, "\n\nInitial Accepting States: \n");
-    dd_dump_factored_form(dd, 1, &init_and_accepted, NULL, NULL, output);
-    
-    fclose(output);
-    
-    
-    dd_dump_dot(dd, 1, &accepted, NULL, NULL, dot);
-    dd_dump_dot(dd, 1, &init, NULL, NULL, dot);
-    dd_dump_dot(dd, 1, &init_and_accepted, NULL, NULL, dot);
-    
-    fclose(dot);
-    
+   
+    OStream_flush(txt_output);
+    OStream_destroy(txt_output);
+    FREE(txt_file_name);
+    fclose(dot_output);
   }
   
   
