@@ -94,6 +94,11 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
     STREAM_MGR(NuSMVEnv_get_value(env, ENV_STREAM_MANAGER));
   const ErrorMgr_ptr errmgr =
     ERROR_MGR(NuSMVEnv_get_value(env, ENV_ERROR_MANAGER));
+    
+  int index_of_spec = Prop_get_index(prop);
+  char dotbuffer[32]; 
+  char txtbuffer[32];
+  
   node_ptr exp;
   Trace_ptr trace;
   
@@ -313,16 +318,20 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
   // TODO dd_dump funktionen durch BddFsm_print_interesting_states_info ersetzen
   // TODO wenn moeglich, CTL-Spec als Filenamen verwenden
   // TODO anpassen fuer mehrere CTLs
-  if(opt_print_accepting(opts)) {
-    FILE * output = fopen("interesting_states.txt", "w");
-    FILE * dot = fopen("interesting_states.dot", "w");
-    trying = BDD_FSM(NuSMVEnv_get_value(env, ENV_BDD_FSM));
+  
+   snprintf(dotbuffer, sizeof(char) * 32, "interesting_states%d.dot", index_of_spec);
+   snprintf(txtbuffer, sizeof(char) * 32, "interesting_states%d.txt", index_of_spec);
     
+  if(opt_print_accepting(opts)) {
+    FILE * output = fopen(txtbuffer, "w");
+    FILE * dot = fopen(dotbuffer, "w");
+    trying = BDD_FSM(NuSMVEnv_get_value(env, ENV_BDD_FSM));
     fprintf(output,  "Accepting States: \n");
 //     BddFsm_print_interesting_states_info(trying, accepted, false, false, true, output);
     dd_dump_factored_form(dd, 1, &accepted, NULL, NULL, output);
     fprintf(output, "\n\nInitialStates: \n");
     dd_dump_factored_form(dd, 1, &init, NULL, NULL, output);
+    
     fprintf(output, "\n\nInitial Accepting States: \n");
     dd_dump_factored_form(dd, 1, &init_and_accepted, NULL, NULL, output);
     
