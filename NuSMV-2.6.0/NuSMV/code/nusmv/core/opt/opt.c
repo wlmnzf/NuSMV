@@ -366,7 +366,7 @@ void set_print_accepting(OptsHandler_ptr opt)
   nusmv_assert(res);
 }
 
-void unset_return_acceptin(OptsHandler_ptr opt)
+void unset_print_accepting(OptsHandler_ptr opt)
 {
   boolean res = OptsHandler_set_bool_option_value(opt, PRINT_ACCEPTING, false);
   nusmv_assert(res);
