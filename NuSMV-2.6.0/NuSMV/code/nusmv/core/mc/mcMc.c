@@ -120,16 +120,11 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
   const NodeMgr_ptr nodemgr =
     NODE_MGR(NuSMVEnv_get_value(env, ENV_NODE_MGR));
   
-  // TODO kann vielleicht wieder raus  
-  const VarsHandler_ptr varmgr =
-    NuSMVEnv_get_value(env, ENV_DD_VARS_HANDLER);
-  
   // for printing bdd states to standard output
   OStream_ptr stream = StreamMgr_get_output_ostream(streams);
-  OStream_ptr output_file = StreamMgr_get_output_ostream(streams);
+
     
   // ADDED File-pointer for standard output and output.txt and dot files
-  FILE * out = StreamMgr_get_output_stream(streams);
   FILE * dot_output, * txt_output;
     
   
@@ -256,90 +251,29 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
    * and initial accepting states as additional information 
    * if commandline parameter "-a" is set */
   if(opt_return_accepting(opts)) { 
-    // TEST fuer BddEnc_print_bdd Funktion von nusmv
-    // Ist die Ausgabe so sinnvoll?
-    NodeList_ptr vars;
-    SymbTableIter iter;
-    SymbTable_ptr st = BaseEnc_get_symb_table(BASE_ENC(enc));
 
-    SymbTable_gen_iter(st, &iter, STT_VAR);
-    vars = SymbTable_iter_to_list(st, iter);
-        
-    
-//     StreamMgr_print_output(streams, "\nAusgabe mit BddEnc_print_bdd\n");
-//     StreamMgr_print_output(streams, "\nPrinting accepting States:\n");
-//     BddEnc_print_bdd_begin(enc, vars, false);
-//     BddEnc_print_bdd(enc, accepted, (VPFBEFNNV) NULL, stream, NULL);
-//     StreamMgr_print_output(streams, "Printing initial States:\n");
-//     BddEnc_print_bdd(enc, init, (VPFBEFNNV) NULL, stream, NULL);
-//     StreamMgr_print_output(streams, "Printing initial accepting States:\n");
-//     BddEnc_print_bdd(enc, init_and_accepted, (VPFBEFNNV) NULL, stream, NULL);
-//     BddEnc_print_bdd_end(enc);
-//     NodeList_destroy(vars);
-    
-    // TEST fuer BddEnc_print_set_of_states Funktion von nusmv
-    // Vielleicht ist das ja sinnvoller als Ausgabe?
-    
-    
-    // BddEnc_print_set_of_states(enc, fair_g, false, (VPFNNF) NULL, outstream)
-//     StreamMgr_print_output(streams, "\nAusgabe mit BddEnc_print_set_of_states\n");
-//     StreamMgr_print_output(streams, "\nPrinting accepting States:\n");
-//     BddEnc_print_set_of_states(enc, accepted, false, true, (VPFBEFNNV) NULL, stream, NULL);
-//     StreamMgr_print_output(streams, "\nPrinting initial States:\n");
-//     BddEnc_print_set_of_states(enc, init, false, true, (VPFBEFNNV) NULL, stream, NULL);
-//     StreamMgr_print_output(streams, "\nPrinting initial accepting States:\n");
-//     BddEnc_print_set_of_states(enc, init_and_accepted, false, true, (VPFBEFNNV) NULL, stream, NULL);
-    
-    // TEST fuer BddEnc_print_set_of_state_input_pairs Funktion von nusmv
-//     StreamMgr_print_output(streams, "\nAusgabe mit BddEnc_print_vars_in_cube\n");
-//     BddEnc_print_vars_in_cube(enc, accepted, exp, stream);
-    
-    // TEST fuer BddEnc_print_set_of_inputs Funktion von nusmv
-//     StreamMgr_print_output(streams, "\nAusgabe mit BddEnc_print_set_of_inputs\n");
-//     BddEnc_print_set_of_inputs(enc, s0, false, (VPFBEFNNV) NULL, stream, NULL);
-    
-    // TEST fuer BddEnc_print_set_of_state_input_pairs Funktion von nusmv
-//     StreamMgr_print_output(streams, "\nAusgabe mit BddEnc_print_set_of_state_input_pairs\n");
-//     BddEnc_print_set_of_state_input_pairs(enc, accepted, false, (VPFBEFNNV) NULL, stream, NULL);
-//     BddEnc_print_set_of_state_input_pairs(enc, init, false, (VPFBEFNNV) NULL, stream, NULL);
-    
-    // TEST Ausgabe mit BddFsmPrint Funktionen: BddFsm_print_reachable_states_info
-//     StreamMgr_print_output(streams, "\nAusgabe mit BddFsm_print_accepting_states_info\n");
     StreamMgr_print_output(streams,  "\nInitial States: ");
     BddFsm_print_interesting_states_info(trying, init, false, false, true, stream);
     StreamMgr_print_output(streams,  "Accepting States: ");
     BddFsm_print_interesting_states_info(trying, accepted, false, false, true, stream);
     StreamMgr_print_output(streams,  "Initial and Accepting States: ");
-    BddFsm_print_interesting_states_info(trying, init_and_accepted, false, false, true, stream);
-//     StreamMgr_print_output(streams,  "\n");  
-    /* TODO free variables here ?*/
-    
-    // TODO anpassen, falls mehrere CTLSpecs in .smv-file sind
-    /* print out accepting states, initial states, initial accepting states */      
+    BddFsm_print_interesting_states_info(trying, init_and_accepted, false, false, true, stream);    
   
   }
-  
-  // TODO fprintf durch StreamMgr ersetzen
-  // TODO dd_dump funktionen durch BddFsm_print_interesting_states_info ersetzen
-  // TODO wenn moeglich, CTL-Spec als Filenamen verwenden
-  // TODO anpassen fuer mehrere CTLs
-   
-
-   file_name = "interesting_states";
-   
-   dot_file_name = ALLOC(char, max_len);
-   txt_file_name = ALLOC(char, max_len);
-   chars = snprintf(dot_file_name, max_len, "%s%d.dot", file_name, index_of_spec);
-   SNPRINTF_CHECK(chars, max_len);
-   chars = snprintf(txt_file_name, max_len, "%s%d.txt", file_name, index_of_spec);
-   SNPRINTF_CHECK(chars, max_len);
- 
-   dot_output = fopen(dot_file_name, "w");
-   txt_output = OStream_create_file(txt_file_name, false);
-   
-   
  
   if(opt_print_accepting(opts)) {
+    
+    file_name = "interesting_states";
+   
+    dot_file_name = ALLOC(char, max_len);
+    txt_file_name = ALLOC(char, max_len);
+    chars = snprintf(dot_file_name, max_len, "%s%d.dot", file_name, index_of_spec);
+    SNPRINTF_CHECK(chars, max_len);
+    chars = snprintf(txt_file_name, max_len, "%s%d.txt", file_name, index_of_spec);
+    SNPRINTF_CHECK(chars, max_len);
+  
+    dot_output = fopen(dot_file_name, "w");
+    txt_output = OStream_create_file(txt_file_name, false);
     
     print_spec_only(txt_output,
              prop, get_prop_print_method(opts));
