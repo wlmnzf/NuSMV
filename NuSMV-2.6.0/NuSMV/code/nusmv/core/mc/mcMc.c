@@ -102,7 +102,7 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
   int max_len = sizeof(char) * 32;
    int chars;
    
-  char * dotout;
+  char * file_name;
   node_ptr exp;
   Trace_ptr trace;
   
@@ -325,11 +325,13 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
   // TODO anpassen fuer mehrere CTLs
    
 
+   file_name = "interesting_states";
+   
    dot_file_name = ALLOC(char, max_len);
    txt_file_name = ALLOC(char, max_len);
-   chars = snprintf(dot_file_name, max_len, "interesting_states%d.dot", index_of_spec);
+   chars = snprintf(dot_file_name, max_len, "%s%d.dot", file_name, index_of_spec);
    SNPRINTF_CHECK(chars, max_len);
-   chars = snprintf(txt_file_name, max_len, "interesting_states%d.txt", index_of_spec);
+   chars = snprintf(txt_file_name, max_len, "%s%d.txt", file_name, index_of_spec);
    SNPRINTF_CHECK(chars, max_len);
  
    dot_output = fopen(dot_file_name, "w");
