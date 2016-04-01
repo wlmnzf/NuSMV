@@ -29,7 +29,15 @@ ASSIGN
 TRANS STEADYSTATE | count((next(Erk)!=Erk), (next(Mek)!=Mek), (next(Raf)!=Raf))=1;
 
 
-INIT SUCCESSORS=3
+INIT TRUE
 
 
-CTLSPEC AG(Erk)
+CTLSPEC  EF(!Erk&!Mek&Raf) &  EF(Erk&Mek&Raf)
+-- erwarte: Erk&!Mek&Raf | Erk&!Mek&!Raf | !Erk&Mek&!Raf
+
+CTLSPEC !EF(!Erk&!Mek&Raf) &  EF(Erk&Mek&Raf)
+-- erwarte: Erk&Mek&!Raf | Erk&Mek&Raf | !Erk&Mek&Raf
+
+CTLSPEC  EF(!Erk&!Mek&Raf) & !EF(Erk&Mek&Raf)
+-- erwarte: !Erk&!Mek&!Raf | !Erk&!Mek&Raf
+
