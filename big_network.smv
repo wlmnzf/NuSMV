@@ -12,11 +12,9 @@ VAR
 	CREB: boolean;
 	Caspase: boolean;
 	Ceramide: boolean;
-	Cyt_sign: boolean;
 	DISC: boolean;
 	ERK: boolean;
 	FLIP: boolean;
-	FYN: boolean;
 	Fas: boolean;
 	FasL: boolean;
 	FasT: boolean;
@@ -29,8 +27,6 @@ VAR
 	IL2: boolean;
 	IL2RA: boolean;
 	IL2RAT: boolean;
-	IL2RB: boolean;
-	IL2RBT: boolean;
 	LCK: boolean;
 	MEK: boolean;
 	NFAT: boolean;
@@ -46,7 +42,6 @@ VAR
 	TNF: boolean;
 	TPL2: boolean;
 	TRADD: boolean;
-	Tbet: boolean;
 	ZAP70: boolean;
 	sFas: boolean;
 
@@ -58,26 +53,22 @@ DEFINE
 	CREB_IMAGE := IFNg&!Apoptosis&ERK;
 	Caspase_IMAGE := !Apoptosis&BID&!IAP&TRADD | !Apoptosis&BID&!IAP&GZMB | !Apoptosis&DISC;
 	Ceramide_IMAGE := !Apoptosis&!S1P&Fas;
-	Cyt_sign_IMAGE := !Apoptosis&FYN;
 	DISC_IMAGE := !Apoptosis&IL2&FasT&Fas | !Apoptosis&!FLIP&FasT&Fas | !Apoptosis&Ceramide&FasT;
 	ERK_IMAGE := !Apoptosis&MEK&PI3K;
 	FLIP_IMAGE := IFNg&!Apoptosis&CREB&!DISC | !Apoptosis&!DISC&NFkB;
-	FYN_IMAGE := !Apoptosis&IL2RB;
 	Fas_IMAGE := !Apoptosis&!sFas&FasT&FasL;
 	FasL_IMAGE := !Apoptosis&NFkB | !Apoptosis&NFAT | !Apoptosis&ERK;
 	FasT_IMAGE := !Apoptosis&NFkB;
 	GPCR_IMAGE := !Apoptosis&S1P;
-	GRB2_IMAGE := !Apoptosis&ZAP70 | !Apoptosis&IL2RB;
-	GZMB_IMAGE := IFNg&!Apoptosis&CREB | !Apoptosis&Tbet;
+	GRB2_IMAGE := !Apoptosis&ZAP70;
+	GZMB_IMAGE := IFNg&!Apoptosis&CREB;
 	IAP_IMAGE := !Apoptosis&!BID&NFkB;
 	IFNg_IMAGE := !Apoptosis&IL2&IFNgT&!SMAD | !Apoptosis&IFNgT&!SMAD;
-	IFNgT_IMAGE := !Apoptosis&Tbet | !Apoptosis&NFAT;
-	IL2_IMAGE := !Apoptosis&NFkB&!Tbet | !Apoptosis&!Tbet&NFAT;
+	IFNgT_IMAGE := !Apoptosis&NFAT;
+	IL2_IMAGE := !Apoptosis&NFkB | !Apoptosis&NFAT;
 	IL2RA_IMAGE := !Apoptosis&IL2&IL2RAT&!IL2RA;
 	IL2RAT_IMAGE := !Apoptosis&NFkB&IL2;
-	IL2RB_IMAGE := !Apoptosis&IL2&IL2RBT | !Apoptosis&IL2RBT;
-	IL2RBT_IMAGE := !Apoptosis&Tbet&ERK;
-	LCK_IMAGE := !Apoptosis&IL2RB&!ZAP70 | !Apoptosis;
+	LCK_IMAGE := !Apoptosis;
 	MEK_IMAGE := !Apoptosis&RAS;
 	NFAT_IMAGE := !Apoptosis&PI3K;
 	NFkB_IMAGE := !Apoptosis&FLIP&TRADD&IAP | !Apoptosis&TPL2 | !Apoptosis&PI3K;
@@ -92,8 +83,7 @@ DEFINE
 	TNF_IMAGE := !Apoptosis&NFkB;
 	TPL2_IMAGE := !Apoptosis&TNF&PI3K | !Apoptosis;
 	TRADD_IMAGE := !A20&!Apoptosis&TNF&!IAP;
-	Tbet_IMAGE := !Apoptosis&Tbet;
-	ZAP70_IMAGE := !Apoptosis&!FYN&LCK;
+	ZAP70_IMAGE := !Apoptosis&LCK;
 	sFas_IMAGE := !Apoptosis&FasT;
 
 	A20_STEADY := (A20_IMAGE = A20);
@@ -103,11 +93,9 @@ DEFINE
 	CREB_STEADY := (CREB_IMAGE = CREB);
 	Caspase_STEADY := (Caspase_IMAGE = Caspase);
 	Ceramide_STEADY := (Ceramide_IMAGE = Ceramide);
-	Cyt_sign_STEADY := (Cyt_sign_IMAGE = Cyt_sign);
 	DISC_STEADY := (DISC_IMAGE = DISC);
 	ERK_STEADY := (ERK_IMAGE = ERK);
 	FLIP_STEADY := (FLIP_IMAGE = FLIP);
-	FYN_STEADY := (FYN_IMAGE = FYN);
 	Fas_STEADY := (Fas_IMAGE = Fas);
 	FasL_STEADY := (FasL_IMAGE = FasL);
 	FasT_STEADY := (FasT_IMAGE = FasT);
@@ -120,8 +108,6 @@ DEFINE
 	IL2_STEADY := (IL2_IMAGE = IL2);
 	IL2RA_STEADY := (IL2RA_IMAGE = IL2RA);
 	IL2RAT_STEADY := (IL2RAT_IMAGE = IL2RAT);
-	IL2RB_STEADY := (IL2RB_IMAGE = IL2RB);
-	IL2RBT_STEADY := (IL2RBT_IMAGE = IL2RBT);
 	LCK_STEADY := (LCK_IMAGE = LCK);
 	MEK_STEADY := (MEK_IMAGE = MEK);
 	NFAT_STEADY := (NFAT_IMAGE = NFAT);
@@ -137,11 +123,10 @@ DEFINE
 	TNF_STEADY := (TNF_IMAGE = TNF);
 	TPL2_STEADY := (TPL2_IMAGE = TPL2);
 	TRADD_STEADY := (TRADD_IMAGE = TRADD);
-	Tbet_STEADY := (Tbet_IMAGE = Tbet);
 	ZAP70_STEADY := (ZAP70_IMAGE = ZAP70);
 	sFas_STEADY := (sFas_IMAGE = sFas);
 
-	SUCCESSORS := count((!A20_STEADY), (!Apoptosis_STEADY), (!BID_STEADY), (!BclxL_STEADY), (!CREB_STEADY), (!Caspase_STEADY), (!Ceramide_STEADY), (!Cyt_sign_STEADY), (!DISC_STEADY), (!ERK_STEADY), (!FLIP_STEADY), (!FYN_STEADY), (!Fas_STEADY), (!FasL_STEADY), (!FasT_STEADY), (!GPCR_STEADY), (!GRB2_STEADY), (!GZMB_STEADY), (!IAP_STEADY), (!IFNg_STEADY), (!IFNgT_STEADY), (!IL2_STEADY), (!IL2RA_STEADY), (!IL2RAT_STEADY), (!IL2RB_STEADY), (!IL2RBT_STEADY), (!LCK_STEADY), (!MEK_STEADY), (!NFAT_STEADY), (!NFkB_STEADY), (!PDGFR_STEADY), (!PI3K_STEADY), (!PLCG1_STEADY), (!RANTES_STEADY), (!RAS_STEADY), (!S1P_STEADY), (!SMAD_STEADY), (!SPHK1_STEADY), (!TNF_STEADY), (!TPL2_STEADY), (!TRADD_STEADY), (!Tbet_STEADY), (!ZAP70_STEADY), (!sFas_STEADY));
+	SUCCESSORS := count((!A20_STEADY), (!Apoptosis_STEADY), (!BID_STEADY), (!BclxL_STEADY), (!CREB_STEADY), (!Caspase_STEADY), (!Ceramide_STEADY), (!DISC_STEADY), (!ERK_STEADY), (!FLIP_STEADY), (!Fas_STEADY), (!FasL_STEADY), (!FasT_STEADY), (!GPCR_STEADY), (!GRB2_STEADY), (!GZMB_STEADY), (!IAP_STEADY), (!IFNg_STEADY), (!IFNgT_STEADY), (!IL2_STEADY), (!IL2RA_STEADY), (!IL2RAT_STEADY), (!LCK_STEADY), (!MEK_STEADY), (!NFAT_STEADY), (!NFkB_STEADY), (!PDGFR_STEADY), (!PI3K_STEADY), (!PLCG1_STEADY), (!RANTES_STEADY), (!RAS_STEADY), (!S1P_STEADY), (!SMAD_STEADY), (!SPHK1_STEADY), (!TNF_STEADY), (!TPL2_STEADY), (!TRADD_STEADY), (!ZAP70_STEADY), (!sFas_STEADY));
 	STEADYSTATE := (SUCCESSORS = 0);
 
 ASSIGN
@@ -152,11 +137,9 @@ ASSIGN
 	next(CREB) := {CREB, CREB_IMAGE};
 	next(Caspase) := {Caspase, Caspase_IMAGE};
 	next(Ceramide) := {Ceramide, Ceramide_IMAGE};
-	next(Cyt_sign) := {Cyt_sign, Cyt_sign_IMAGE};
 	next(DISC) := {DISC, DISC_IMAGE};
 	next(ERK) := {ERK, ERK_IMAGE};
 	next(FLIP) := {FLIP, FLIP_IMAGE};
-	next(FYN) := {FYN, FYN_IMAGE};
 	next(Fas) := {Fas, Fas_IMAGE};
 	next(FasL) := {FasL, FasL_IMAGE};
 	next(FasT) := {FasT, FasT_IMAGE};
@@ -169,8 +152,6 @@ ASSIGN
 	next(IL2) := {IL2, IL2_IMAGE};
 	next(IL2RA) := {IL2RA, IL2RA_IMAGE};
 	next(IL2RAT) := {IL2RAT, IL2RAT_IMAGE};
-	next(IL2RB) := {IL2RB, IL2RB_IMAGE};
-	next(IL2RBT) := {IL2RBT, IL2RBT_IMAGE};
 	next(LCK) := {LCK, LCK_IMAGE};
 	next(MEK) := {MEK, MEK_IMAGE};
 	next(NFAT) := {NFAT, NFAT_IMAGE};
@@ -186,17 +167,16 @@ ASSIGN
 	next(TNF) := {TNF, TNF_IMAGE};
 	next(TPL2) := {TPL2, TPL2_IMAGE};
 	next(TRADD) := {TRADD, TRADD_IMAGE};
-	next(Tbet) := {Tbet, Tbet_IMAGE};
 	next(ZAP70) := {ZAP70, ZAP70_IMAGE};
 	next(sFas) := {sFas, sFas_IMAGE};
 
-TRANS STEADYSTATE | count((next(A20)!=A20), (next(Apoptosis)!=Apoptosis), (next(BID)!=BID), (next(BclxL)!=BclxL), (next(CREB)!=CREB), (next(Caspase)!=Caspase), (next(Ceramide)!=Ceramide), (next(Cyt_sign)!=Cyt_sign), (next(DISC)!=DISC), (next(ERK)!=ERK), (next(FLIP)!=FLIP), (next(FYN)!=FYN), (next(Fas)!=Fas), (next(FasL)!=FasL), (next(FasT)!=FasT), (next(GPCR)!=GPCR), (next(GRB2)!=GRB2), (next(GZMB)!=GZMB), (next(IAP)!=IAP), (next(IFNg)!=IFNg), (next(IFNgT)!=IFNgT), (next(IL2)!=IL2), (next(IL2RA)!=IL2RA), (next(IL2RAT)!=IL2RAT), (next(IL2RB)!=IL2RB), (next(IL2RBT)!=IL2RBT), (next(LCK)!=LCK), (next(MEK)!=MEK), (next(NFAT)!=NFAT), (next(NFkB)!=NFkB), (next(PDGFR)!=PDGFR), (next(PI3K)!=PI3K), (next(PLCG1)!=PLCG1), (next(RANTES)!=RANTES), (next(RAS)!=RAS), (next(S1P)!=S1P), (next(SMAD)!=SMAD), (next(SPHK1)!=SPHK1), (next(TNF)!=TNF), (next(TPL2)!=TPL2), (next(TRADD)!=TRADD), (next(Tbet)!=Tbet), (next(ZAP70)!=ZAP70), (next(sFas)!=sFas))=1;
+TRANS STEADYSTATE | count((next(A20)!=A20), (next(Apoptosis)!=Apoptosis), (next(BID)!=BID), (next(BclxL)!=BclxL), (next(CREB)!=CREB), (next(Caspase)!=Caspase), (next(Ceramide)!=Ceramide), (next(DISC)!=DISC), (next(ERK)!=ERK), (next(FLIP)!=FLIP), (next(Fas)!=Fas), (next(FasL)!=FasL), (next(FasT)!=FasT), (next(GPCR)!=GPCR), (next(GRB2)!=GRB2), (next(GZMB)!=GZMB), (next(IAP)!=IAP), (next(IFNg)!=IFNg), (next(IFNgT)!=IFNgT), (next(IL2)!=IL2), (next(IL2RA)!=IL2RA), (next(IL2RAT)!=IL2RAT), (next(LCK)!=LCK), (next(MEK)!=MEK), (next(NFAT)!=NFAT), (next(NFkB)!=NFkB), (next(PDGFR)!=PDGFR), (next(PI3K)!=PI3K), (next(PLCG1)!=PLCG1), (next(RANTES)!=RANTES), (next(RAS)!=RAS), (next(S1P)!=S1P), (next(SMAD)!=SMAD), (next(SPHK1)!=SPHK1), (next(TNF)!=TNF), (next(TPL2)!=TPL2), (next(TRADD)!=TRADD), (next(ZAP70)!=ZAP70), (next(sFas)!=sFas))=1;
 
 
 INIT TRUE
 
-CTLSPEC !EF(A20&!Apoptosis&!BID&BclxL&!CREB&!Caspase&!Ceramide&!Cyt_sign&!DISC&ERK&FLIP&!FYN&!Fas&FasL&FasT&GPCR&GRB2&!GZMB&IAP&!IFNg&IFNgT&IL2&!IL2RA&IL2RAT&!IL2RB&!IL2RBT&LCK&MEK&NFAT&NFkB&PDGFR&PI3K&PLCG1&RANTES&RAS&S1P&SMAD&SPHK1&TNF&TPL2&!TRADD&!Tbet&ZAP70&sFas) &  EF(!A20&Apoptosis&!BID&!BclxL&!CREB&!Caspase&!Ceramide&!Cyt_sign&!DISC&!ERK&!FLIP&!FYN&!Fas&!FasL&!FasT&!GPCR&!GRB2&!GZMB&!IAP&!IFNg&!IFNgT&!IL2&!IL2RA&!IL2RAT&!IL2RB&!IL2RBT&!LCK&!MEK&!NFAT&!NFkB&!PDGFR&!PI3K&!PLCG1&!RANTES&!RAS&!S1P&!SMAD&!SPHK1&!TNF&!TPL2&!TRADD&!Tbet&!ZAP70&!sFas)
+CTLSPEC !EF(A20&!Apoptosis&!BID&BclxL&!CREB&!Caspase&!Ceramide&!DISC&ERK&FLIP&!Fas&FasL&FasT&GPCR&GRB2&!GZMB&IAP&!IFNg&IFNgT&IL2&IL2RA&IL2RAT&LCK&MEK&NFAT&NFkB&PDGFR&PI3K&PLCG1&RANTES&RAS&S1P&SMAD&SPHK1&TNF&TPL2&!TRADD&ZAP70&sFas) &  EF(!A20&Apoptosis&!BID&!BclxL&!CREB&!Caspase&!Ceramide&!DISC&!ERK&!FLIP&!Fas&!FasL&!FasT&!GPCR&!GRB2&!GZMB&!IAP&!IFNg&!IFNgT&!IL2&!IL2RA&!IL2RAT&!LCK&!MEK&!NFAT&!NFkB&!PDGFR&!PI3K&!PLCG1&!RANTES&!RAS&!S1P&!SMAD&!SPHK1&!TNF&!TPL2&!TRADD&!ZAP70&!sFas)
 
-CTLSPEC  EF(A20&!Apoptosis&!BID&BclxL&!CREB&!Caspase&!Ceramide&!Cyt_sign&!DISC&ERK&FLIP&!FYN&!Fas&FasL&FasT&GPCR&GRB2&!GZMB&IAP&!IFNg&IFNgT&IL2&!IL2RA&IL2RAT&!IL2RB&!IL2RBT&LCK&MEK&NFAT&NFkB&PDGFR&PI3K&PLCG1&RANTES&RAS&S1P&SMAD&SPHK1&TNF&TPL2&!TRADD&!Tbet&ZAP70&sFas) & !EF(!A20&Apoptosis&!BID&!BclxL&!CREB&!Caspase&!Ceramide&!Cyt_sign&!DISC&!ERK&!FLIP&!FYN&!Fas&!FasL&!FasT&!GPCR&!GRB2&!GZMB&!IAP&!IFNg&!IFNgT&!IL2&!IL2RA&!IL2RAT&!IL2RB&!IL2RBT&!LCK&!MEK&!NFAT&!NFkB&!PDGFR&!PI3K&!PLCG1&!RANTES&!RAS&!S1P&!SMAD&!SPHK1&!TNF&!TPL2&!TRADD&!Tbet&!ZAP70&!sFas)
+CTLSPEC  EF(A20&!Apoptosis&!BID&BclxL&!CREB&!Caspase&!Ceramide&!DISC&ERK&FLIP&!Fas&FasL&FasT&GPCR&GRB2&!GZMB&IAP&!IFNg&IFNgT&IL2&IL2RA&IL2RAT&LCK&MEK&NFAT&NFkB&PDGFR&PI3K&PLCG1&RANTES&RAS&S1P&SMAD&SPHK1&TNF&TPL2&!TRADD&ZAP70&sFas) & !EF(!A20&Apoptosis&!BID&!BclxL&!CREB&!Caspase&!Ceramide&!DISC&!ERK&!FLIP&!Fas&!FasL&!FasT&!GPCR&!GRB2&!GZMB&!IAP&!IFNg&!IFNgT&!IL2&!IL2RA&!IL2RAT&!LCK&!MEK&!NFAT&!NFkB&!PDGFR&!PI3K&!PLCG1&!RANTES&!RAS&!S1P&!SMAD&!SPHK1&!TNF&!TPL2&!TRADD&!ZAP70&!sFas)
 
-CTLSPEC  EF(A20&!Apoptosis&!BID&BclxL&!CREB&!Caspase&!Ceramide&!Cyt_sign&!DISC&ERK&FLIP&!FYN&!Fas&FasL&FasT&GPCR&GRB2&!GZMB&IAP&!IFNg&IFNgT&IL2&!IL2RA&IL2RAT&!IL2RB&!IL2RBT&LCK&MEK&NFAT&NFkB&PDGFR&PI3K&PLCG1&RANTES&RAS&S1P&SMAD&SPHK1&TNF&TPL2&!TRADD&!Tbet&ZAP70&sFas) &  EF(!A20&Apoptosis&!BID&!BclxL&!CREB&!Caspase&!Ceramide&!Cyt_sign&!DISC&!ERK&!FLIP&!FYN&!Fas&!FasL&!FasT&!GPCR&!GRB2&!GZMB&!IAP&!IFNg&!IFNgT&!IL2&!IL2RA&!IL2RAT&!IL2RB&!IL2RBT&!LCK&!MEK&!NFAT&!NFkB&!PDGFR&!PI3K&!PLCG1&!RANTES&!RAS&!S1P&!SMAD&!SPHK1&!TNF&!TPL2&!TRADD&!Tbet&!ZAP70&!sFas)
+CTLSPEC  EF(A20&!Apoptosis&!BID&BclxL&!CREB&!Caspase&!Ceramide&!DISC&ERK&FLIP&!Fas&FasL&FasT&GPCR&GRB2&!GZMB&IAP&!IFNg&IFNgT&IL2&IL2RA&IL2RAT&LCK&MEK&NFAT&NFkB&PDGFR&PI3K&PLCG1&RANTES&RAS&S1P&SMAD&SPHK1&TNF&TPL2&!TRADD&ZAP70&sFas) &  EF(!A20&Apoptosis&!BID&!BclxL&!CREB&!Caspase&!Ceramide&!DISC&!ERK&!FLIP&!Fas&!FasL&!FasT&!GPCR&!GRB2&!GZMB&!IAP&!IFNg&!IFNgT&!IL2&!IL2RA&!IL2RAT&!LCK&!MEK&!NFAT&!NFkB&!PDGFR&!PI3K&!PLCG1&!RANTES&!RAS&!S1P&!SMAD&!SPHK1&!TNF&!TPL2&!TRADD&!ZAP70&!sFas)
