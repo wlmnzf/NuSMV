@@ -337,7 +337,7 @@ void BddFsm_print_interesting_states_info(const BddFsm_ptr self,
     }
     NodeList_destroy(all_vars);
 
-    OStream_printf(file, "\nFORMULA = \n");
+//     OStream_printf(file, "\nFORMULA = \n");
     BddEnc_print_bdd_wff(self->enc, reachable, scalar_vars,
                          true, false, 0, file);
 
