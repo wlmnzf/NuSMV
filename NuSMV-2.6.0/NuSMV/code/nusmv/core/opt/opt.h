@@ -1306,13 +1306,6 @@ void    reset_print_accepting(OptsHandler_ptr);
   \todo Missing description
 */
 char* get_print_accepting(OptsHandler_ptr opt);
-/*!
-  \brief \todo Missing synopsis
-
-  \todo Missing description
-*/
-boolean opt_print_accepting(OptsHandler_ptr);
-
 
 
 /************************************************************************************/

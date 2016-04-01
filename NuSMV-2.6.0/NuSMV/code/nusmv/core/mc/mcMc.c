@@ -142,7 +142,7 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
   s0 = eval_ctl_spec(fsm, enc, spec, Nil);
   
   /* save accepted states */
-  if(opt_return_accepting(opts) || opt_print_accepting(opts))
+  if(opt_return_accepting(opts) || get_print_accepting(opts) != NULL)
     accepted = bdd_dup(s0);  
   
   tmp_1 = bdd_not(dd, s0);
@@ -168,7 +168,7 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
   
   /* get initial accepting states */
   bdd_and_accumulate(dd, &s0, tmp_2);
-  if(opt_return_accepting(opts) || opt_print_accepting(opts)) {
+  if(opt_return_accepting(opts) || get_print_accepting(opts) != NULL) {
     init_and_accepted = bdd_dup(init);
     bdd_and_accumulate(dd, &init_and_accepted, accepted);
   }
@@ -260,7 +260,7 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
   
   }
  
-  if(opt_print_accepting(opts)) {
+  if(get_print_accepting(opts) != NULL) {
     
     file_name = get_print_accepting(opts);//"interesting_states";
    
@@ -301,7 +301,7 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
   
 
   bdd_free(dd, s0);
-  if(opt_return_accepting(opts) || opt_print_accepting(opts)) {
+  if(opt_return_accepting(opts) || get_print_accepting(opts) != NULL) {
     bdd_free(dd,init);
     bdd_free(dd,init_and_accepted);
     bdd_free(dd,accepted);
