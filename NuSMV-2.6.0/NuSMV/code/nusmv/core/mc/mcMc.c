@@ -341,7 +341,6 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
  
   if(opt_print_accepting(opts)) {
     
-    OStream_printf(txt_output, "CTLSPEC: \t");
     print_spec_only(txt_output,
              prop, get_prop_print_method(opts));
     OStream_printf(txt_output, "\n\nINIT: \t\t");
@@ -1380,7 +1379,7 @@ void print_spec(OStream_ptr file, Prop_ptr prop, Prop_PrintFmt fmt)
 
 void print_spec_only(OStream_ptr file, Prop_ptr prop, Prop_PrintFmt fmt)
 {
-//   OStream_printf(file, "specification ");
+  OStream_printf(file, "CTLSPEC: \t");
   Prop_print(prop, file, fmt);
   OStream_printf(file, " ");
 }
