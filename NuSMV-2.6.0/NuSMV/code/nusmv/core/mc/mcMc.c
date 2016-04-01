@@ -266,16 +266,16 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
     vars = SymbTable_iter_to_list(st, iter);
         
     
-    StreamMgr_print_output(streams, "\nAusgabe mit BddEnc_print_bdd\n");
-    StreamMgr_print_output(streams, "\nPrinting accepting States:\n");
-    BddEnc_print_bdd_begin(enc, vars, false);
-    BddEnc_print_bdd(enc, accepted, (VPFBEFNNV) NULL, stream, NULL);
-    StreamMgr_print_output(streams, "Printing initial States:\n");
-    BddEnc_print_bdd(enc, init, (VPFBEFNNV) NULL, stream, NULL);
-    StreamMgr_print_output(streams, "Printing initial accepting States:\n");
-    BddEnc_print_bdd(enc, init_and_accepted, (VPFBEFNNV) NULL, stream, NULL);
-    BddEnc_print_bdd_end(enc);
-    NodeList_destroy(vars);
+//     StreamMgr_print_output(streams, "\nAusgabe mit BddEnc_print_bdd\n");
+//     StreamMgr_print_output(streams, "\nPrinting accepting States:\n");
+//     BddEnc_print_bdd_begin(enc, vars, false);
+//     BddEnc_print_bdd(enc, accepted, (VPFBEFNNV) NULL, stream, NULL);
+//     StreamMgr_print_output(streams, "Printing initial States:\n");
+//     BddEnc_print_bdd(enc, init, (VPFBEFNNV) NULL, stream, NULL);
+//     StreamMgr_print_output(streams, "Printing initial accepting States:\n");
+//     BddEnc_print_bdd(enc, init_and_accepted, (VPFBEFNNV) NULL, stream, NULL);
+//     BddEnc_print_bdd_end(enc);
+//     NodeList_destroy(vars);
     
     // TEST fuer BddEnc_print_set_of_states Funktion von nusmv
     // Vielleicht ist das ja sinnvoller als Ausgabe?
@@ -304,14 +304,14 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
 //     BddEnc_print_set_of_state_input_pairs(enc, init, false, (VPFBEFNNV) NULL, stream, NULL);
     
     // TEST Ausgabe mit BddFsmPrint Funktionen: BddFsm_print_reachable_states_info
-    StreamMgr_print_output(streams, "\nAusgabe mit BddFsm_print_accepting_states_info\n");
-    StreamMgr_print_output(streams,  "Accepting States: \n");
-    BddFsm_print_interesting_states_info(trying, accepted, false, false, true, stream);
-    StreamMgr_print_output(streams,  "\nInitial States: \n");
+//     StreamMgr_print_output(streams, "\nAusgabe mit BddFsm_print_accepting_states_info\n");
+    StreamMgr_print_output(streams,  "\nInitial States: ");
     BddFsm_print_interesting_states_info(trying, init, false, false, true, stream);
-    StreamMgr_print_output(streams,  "\nInitial Accepting States: \n");
+    StreamMgr_print_output(streams,  "Accepting States: ");
+    BddFsm_print_interesting_states_info(trying, accepted, false, false, true, stream);
+    StreamMgr_print_output(streams,  "Initial and Accepting States: ");
     BddFsm_print_interesting_states_info(trying, init_and_accepted, false, false, true, stream);
-    StreamMgr_print_output(streams,  "\n");  
+//     StreamMgr_print_output(streams,  "\n");  
     /* TODO free variables here ?*/
     
     // TODO anpassen, falls mehrere CTLSpecs in .smv-file sind
@@ -338,16 +338,19 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
    
  
   if(opt_print_accepting(opts)) {
-
-    OStream_printf(txt_output, "Accepting States: \n");
+    
+    OStream_printf(txt_output, "CTLSPEC: \t");
+    print_spec_only(txt_output,
+             prop, get_prop_print_method(opts));
+    OStream_printf(txt_output, "\n\nINIT: \t\t");
+    BddFsm_print_interesting_states_info(trying, init, false, false, true, txt_output);
+    
+    OStream_printf(txt_output, "ACCEPTING: \t");
     BddFsm_print_interesting_states_info(trying, accepted, false, false, true, txt_output);
 
-    OStream_printf(txt_output, "\nInitial States: \n");
-    BddFsm_print_interesting_states_info(trying, init, false, false, true, txt_output);
-
-    OStream_printf(txt_output, "\nInitial Accepting States: \n");
+    OStream_printf(txt_output, "INITACCEPTING: \t");
     BddFsm_print_interesting_states_info(trying, init_and_accepted, false, false, true, txt_output);
-    OStream_printf(txt_output, "\n");
+//     OStream_printf(txt_output, "\n");
 
       
     dd_dump_dot(dd, 1, &accepted, NULL, NULL, dot_output);
@@ -1369,6 +1372,13 @@ int maxu(BddFsm_ptr fsm, bdd_ptr f, bdd_ptr g)
 void print_spec(OStream_ptr file, Prop_ptr prop, Prop_PrintFmt fmt)
 {
   OStream_printf(file, "specification ");
+  Prop_print(prop, file, fmt);
+  OStream_printf(file, " ");
+}
+
+void print_spec_only(OStream_ptr file, Prop_ptr prop, Prop_PrintFmt fmt)
+{
+//   OStream_printf(file, "specification ");
   Prop_print(prop, file, fmt);
   OStream_printf(file, " ");
 }
