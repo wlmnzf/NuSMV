@@ -360,22 +360,59 @@ boolean opt_return_accepting(OptsHandler_ptr opt)
   return OptsHandler_get_bool_option_value(opt, RETURN_ACCEPTING);
 }
 
-void set_print_accepting(OptsHandler_ptr opt)
+/****************************************************************************/
+void set_print_accepting(OptsHandler_ptr opt, char* str)
 {
-  boolean res = OptsHandler_set_bool_option_value(opt, PRINT_ACCEPTING, true);
+  boolean res = OptsHandler_set_option_value(opt, PRINT_ACCEPTING, str);
   nusmv_assert(res);
 }
 
-void unset_print_accepting(OptsHandler_ptr opt)
+void reset_print_accepting(OptsHandler_ptr opt)
 {
-  boolean res = OptsHandler_set_bool_option_value(opt, PRINT_ACCEPTING, false);
+  boolean res = OptsHandler_reset_option_value(opt, PRINT_ACCEPTING);
   nusmv_assert(res);
+}
+
+char* get_print_accepting(OptsHandler_ptr opt)
+{
+  return OptsHandler_get_string_option_value(opt, PRINT_ACCEPTING);
 }
 
 boolean opt_print_accepting(OptsHandler_ptr opt)
 {
   return OptsHandler_get_bool_option_value(opt, PRINT_ACCEPTING);
 }
+
+
+/* BEISPIEL FUER FILE NAME UEBER KOMMANDOZEILE ABFRAGEN
+void set_output_order_file(OptsHandler_ptr opt, char* str)
+{
+  boolean res = OptsHandler_set_option_value(opt, OUTPUT_ORDER_FILE, str);
+  nusmv_assert(res);
+}
+void reset_output_order_file(OptsHandler_ptr opt)
+{
+  boolean res = OptsHandler_reset_option_value(opt, OUTPUT_ORDER_FILE);
+  nusmv_assert(res);
+}
+char* get_output_order_file(OptsHandler_ptr opt)
+{
+  return OptsHandler_get_string_option_value(opt, OUTPUT_ORDER_FILE);
+}
+
+boolean is_default_order_file(OptsHandler_ptr opt)
+{
+  char* oof;
+  oof = get_output_order_file(opt);
+
+  if (oof == NIL(char)) {
+    return DEFAULT_OUTPUT_ORDER_FILE == NIL(char);
+  }
+  if (DEFAULT_OUTPUT_ORDER_FILE == NIL(char)) return false;
+  return((strcmp(oof, DEFAULT_OUTPUT_ORDER_FILE) == 0));
+}
+*/
+
 
 /******************************************************************************/
 /* PP_LIST */

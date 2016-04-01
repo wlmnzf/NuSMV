@@ -776,9 +776,8 @@ void NuSMVCore_init_cmd_options(NuSMVEnv_ptr env)
 					"Prints accepting states, "
 					"initial states and "
 					"initial accepting states. "
-					"Results will be written to the "
-					"file \"interesting_states\".",
-					NULL, PRINT_ACCEPTING, true,
+					"to the file \"interesting_states\".",
+					"interesting_states", PRINT_ACCEPTING, true,
 					false, NULL, NULL);
 
   FREE(libraryName);

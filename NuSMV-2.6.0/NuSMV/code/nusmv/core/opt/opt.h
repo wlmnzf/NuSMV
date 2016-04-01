@@ -411,6 +411,8 @@ typedef enum {
 
 #define PRINT_ACCEPTING		"print_accepting"
 
+#define DEFAULT_PRINT_ACCEPTING (char *)NULL
+
 /*!
   \brief \todo Missing synopsis
 
@@ -1287,21 +1289,31 @@ void    unset_return_accepting(OptsHandler_ptr);
 */
 boolean opt_return_accepting(OptsHandler_ptr);
 
-void    set_print_accepting(OptsHandler_ptr);
+/***************************************************************************************************/
+
+void    set_print_accepting(OptsHandler_ptr, char* str);
 
 /*!
   \brief \todo Missing synopsis
 
   \todo Missing description
 */
-void    unset_print_accepting(OptsHandler_ptr);
+void    reset_print_accepting(OptsHandler_ptr);
 
+/*!
+  \brief \todo Missing synopsis
+
+  \todo Missing description
+*/
+char* get_print_accepting(OptsHandler_ptr opt);
 /*!
   \brief \todo Missing synopsis
 
   \todo Missing description
 */
 boolean opt_print_accepting(OptsHandler_ptr);
+
+
 
 /************************************************************************************/
 

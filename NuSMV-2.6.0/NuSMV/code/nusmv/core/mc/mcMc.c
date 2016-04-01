@@ -95,7 +95,6 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
   const ErrorMgr_ptr errmgr =
     ERROR_MGR(NuSMVEnv_get_value(env, ENV_ERROR_MANAGER));
     
-  int index_of_spec = Prop_get_index(prop);
   char * dot_file_name = NIL(char);
   char * txt_file_name = NIL(char);
 
@@ -263,17 +262,17 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
  
   if(opt_print_accepting(opts)) {
     
-    file_name = "interesting_states";
+    file_name = get_print_accepting(opts);//"interesting_states";
    
     dot_file_name = ALLOC(char, max_len);
     txt_file_name = ALLOC(char, max_len);
-    chars = snprintf(dot_file_name, max_len, "%s%d.dot", file_name, index_of_spec);
+    chars = snprintf(dot_file_name, max_len, "%s.dot", file_name);
     SNPRINTF_CHECK(chars, max_len);
-    chars = snprintf(txt_file_name, max_len, "%s%d.txt", file_name, index_of_spec);
+    chars = snprintf(txt_file_name, max_len, "%s.txt", file_name);
     SNPRINTF_CHECK(chars, max_len);
   
     dot_output = fopen(dot_file_name, "w");
-    txt_output = OStream_create_file(txt_file_name, false);
+    txt_output = OStream_create_file(txt_file_name, true);
     
     print_spec_only(txt_output,
              prop, get_prop_print_method(opts));
@@ -285,7 +284,7 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
 
     OStream_printf(txt_output, "INITACCEPTING: \t");
     BddFsm_print_interesting_states_info(trying, init_and_accepted, false, false, true, txt_output);
-//     OStream_printf(txt_output, "\n");
+    OStream_printf(txt_output, "\n");
 
       
     dd_dump_dot(dd, 1, &accepted, NULL, NULL, dot_output);
