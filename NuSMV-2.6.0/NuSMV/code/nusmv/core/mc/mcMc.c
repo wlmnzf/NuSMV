@@ -305,11 +305,11 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
     
     // TEST Ausgabe mit BddFsmPrint Funktionen: BddFsm_print_reachable_states_info
 //     StreamMgr_print_output(streams, "\nAusgabe mit BddFsm_print_accepting_states_info\n");
-    StreamMgr_print_output(streams,  "\nAccepting States: \t\t");
-    BddFsm_print_interesting_states_info(trying, accepted, false, false, true, stream);
-    StreamMgr_print_output(streams,  "Initial States: \t\t");
+    StreamMgr_print_output(streams,  "\nInitial States: ");
     BddFsm_print_interesting_states_info(trying, init, false, false, true, stream);
-    StreamMgr_print_output(streams,  "Initial Accepting States: \t");
+    StreamMgr_print_output(streams,  "Accepting States: ");
+    BddFsm_print_interesting_states_info(trying, accepted, false, false, true, stream);
+    StreamMgr_print_output(streams,  "Initial and Accepting States: ");
     BddFsm_print_interesting_states_info(trying, init_and_accepted, false, false, true, stream);
 //     StreamMgr_print_output(streams,  "\n");  
     /* TODO free variables here ?*/
@@ -339,16 +339,16 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
  
   if(opt_print_accepting(opts)) {
     
-    OStream_printf(txt_output, "-- ");
-    print_spec(txt_output,
+    OStream_printf(txt_output, "CTLSPEC: \t");
+    print_spec_only(txt_output,
              prop, get_prop_print_method(opts));
-    OStream_printf(txt_output, "\n\nAccepting States: \t\t");
+    OStream_printf(txt_output, "\n\nINIT: \t\t");
+    BddFsm_print_interesting_states_info(trying, init, false, false, true, txt_output);
+    
+    OStream_printf(txt_output, "ACCEPTING: \t");
     BddFsm_print_interesting_states_info(trying, accepted, false, false, true, txt_output);
 
-    OStream_printf(txt_output, "Initial States: \t\t");
-    BddFsm_print_interesting_states_info(trying, init, false, false, true, txt_output);
-
-    OStream_printf(txt_output, "Initial Accepting States: \t");
+    OStream_printf(txt_output, "INITACCEPTING: \t");
     BddFsm_print_interesting_states_info(trying, init_and_accepted, false, false, true, txt_output);
 //     OStream_printf(txt_output, "\n");
 
@@ -1372,6 +1372,13 @@ int maxu(BddFsm_ptr fsm, bdd_ptr f, bdd_ptr g)
 void print_spec(OStream_ptr file, Prop_ptr prop, Prop_PrintFmt fmt)
 {
   OStream_printf(file, "specification ");
+  Prop_print(prop, file, fmt);
+  OStream_printf(file, " ");
+}
+
+void print_spec_only(OStream_ptr file, Prop_ptr prop, Prop_PrintFmt fmt)
+{
+//   OStream_printf(file, "specification ");
   Prop_print(prop, file, fmt);
   OStream_printf(file, " ");
 }
