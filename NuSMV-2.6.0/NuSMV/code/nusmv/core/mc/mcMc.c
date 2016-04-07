@@ -94,25 +94,12 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
     STREAM_MGR(NuSMVEnv_get_value(env, ENV_STREAM_MANAGER));
   const ErrorMgr_ptr errmgr =
     ERROR_MGR(NuSMVEnv_get_value(env, ENV_ERROR_MANAGER));
-    
-  char * dot_file_name = NIL(char);
-  char * txt_file_name = NIL(char);
-
-  int max_len = sizeof(char) * 32;
-   int chars;
-   
-  char * file_name;
-  char * def = "print";
-  
   node_ptr exp;
   Trace_ptr trace;
   
   // ADDED bdd_ptr for accepting, initial, initial accepting states
   bdd_ptr s0, tmp_1, tmp_2, accepted, init, init_and_accepted;
-  
   BddFsm_ptr fsm;
-  const BddFsm_ptr trying = BDD_FSM(NuSMVEnv_get_value(env, ENV_BDD_FSM));
-
   BddEnc_ptr enc;
   DDMgr_ptr dd;
   Expr_ptr spec  = Prop_get_expr_core(prop);
@@ -120,15 +107,6 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
     OPTS_HANDLER(NuSMVEnv_get_value(env, ENV_OPTS_HANDLER));
   const NodeMgr_ptr nodemgr =
     NODE_MGR(NuSMVEnv_get_value(env, ENV_NODE_MGR));
-  
-  // for printing bdd states to standard output
-  OStream_ptr stream = StreamMgr_get_output_ostream(streams);
-
-    
-  // ADDED File-pointer for standard output and output.txt and dot files
-  FILE * dot_output; //, * txt_output;
-  OStream_ptr txt_output;
-    
   
   if (opt_verbose_level_gt(opts, 0)) {
     Logger_ptr logger = LOGGER(NuSMVEnv_get_value(env, ENV_LOGGER));
@@ -144,33 +122,33 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
   /* Evaluates the spec */
   s0 = eval_ctl_spec(fsm, enc, spec, Nil);
   
-  /* save accepted states */
+  /* ADDED: save accepting states */
   if(get_print_accepting(opts) != NULL)
     accepted = bdd_dup(s0);  
   
   tmp_1 = bdd_not(dd, s0);
   tmp_2 = BddFsm_get_state_constraints(fsm);
-
   bdd_and_accumulate(dd, &tmp_2 , tmp_1);
   bdd_free(dd, tmp_1);
   tmp_1 = BddFsm_get_fair_states(fsm);
-
-
   if (bdd_is_false(dd, tmp_1)) {
     ErrorMgr_warning_fsm_fairness_empty(errmgr);
   }
   bdd_and_accumulate(dd, &tmp_2 , tmp_1);
-
-
   bdd_free(dd, tmp_1);
   bdd_free(dd, s0);
   
   /* get initial states */
   s0 = BddFsm_get_init(fsm);
-  init = bdd_dup(s0);
+  
+  /* ADDED: save initial states */
+  if(get_print_accepting(opts) != NULL)
+    init = bdd_dup(s0);
   
   /* get initial accepting states */
   bdd_and_accumulate(dd, &s0, tmp_2);
+  
+  /* ADDED: save initial and accepting states */
   if(get_print_accepting(opts) != NULL) {
     init_and_accepted = bdd_dup(init);
     bdd_and_accumulate(dd, &init_and_accepted, accepted);
@@ -251,75 +229,102 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
     
   /* ADDED: prints out accepting states, initial states 
    * and initial accepting states as additional information 
-   * if commandline parameter "-a" is set */
-//   if(opt_return_accepting(opts)) { 
-// 
-//     StreamMgr_print_output(streams,  "\nInitial States: ");
-//     BddFsm_print_interesting_states_info(trying, init, false, false, true, stream);
-//     StreamMgr_print_output(streams,  "Accepting States: ");
-//     BddFsm_print_interesting_states_info(trying, accepted, false, false, true, stream);
-//     StreamMgr_print_output(streams,  "Initial and Accepting States: ");
-//     BddFsm_print_interesting_states_info(trying, init_and_accepted, false, false, true, stream);    
-//   }
-//  
+   * if commandline parameter "-a interesting_states" is set */
   if(get_print_accepting(opts) != NULL) {
     
-    file_name = get_print_accepting(opts);//"interesting_states";
+    print_states(env, prop, opts, streams, "\nInitial States: ", init);
+    print_states(env, prop, opts, streams, "Accepting States: ", accepted);
+    print_states(env, prop, opts, streams, "Initial and Accepting States: ", init_and_accepted);
+    print_to_dot(opts, dd, init, accepted, init_and_accepted);
     
-    if(strcmp(file_name, def) == 0) {
-      StreamMgr_print_output(streams,  "\nInitial States: ");
-      BddFsm_print_interesting_states_info(trying, init, false, false, true, stream);
-      StreamMgr_print_output(streams,  "Accepting States: ");
-      BddFsm_print_interesting_states_info(trying, accepted, false, false, true, stream);
-      StreamMgr_print_output(streams,  "Initial and Accepting States: ");
-      BddFsm_print_interesting_states_info(trying, init_and_accepted, false, false, true, stream);    
-    }
-    
-    if(strcmp(file_name, def) != 0) {
-      dot_file_name = ALLOC(char, max_len);
-      txt_file_name = ALLOC(char, max_len);
-      chars = snprintf(dot_file_name, max_len, "%s.dot", file_name);
-      SNPRINTF_CHECK(chars, max_len);
-      chars = snprintf(txt_file_name, max_len, "%s.txt", file_name);
-      SNPRINTF_CHECK(chars, max_len);
-    
-      dot_output = fopen(dot_file_name, "w");
-      txt_output = OStream_create_file(txt_file_name, true);
-      
-      print_spec_only(txt_output,
-	      prop, get_prop_print_method(opts));
-      OStream_printf(txt_output, "\n\nINIT: \t\t");
-      BddFsm_print_interesting_states_info(trying, init, false, false, true, txt_output);
-      
-      OStream_printf(txt_output, "ACCEPTING: \t");
-      BddFsm_print_interesting_states_info(trying, accepted, false, false, true, txt_output);
-
-      OStream_printf(txt_output, "INITACCEPTING: \t");
-      BddFsm_print_interesting_states_info(trying, init_and_accepted, false, false, true, txt_output);
-      OStream_printf(txt_output, "\n");
-
-	
-      dd_dump_dot(dd, 1, &accepted, NULL, NULL, dot_output);
-      dd_dump_dot(dd, 1, &init, NULL, NULL, dot_output);
-      dd_dump_dot(dd, 1, &init_and_accepted, NULL, NULL, dot_output);
-      
-    
-      OStream_flush(txt_output);
-      OStream_destroy(txt_output);
-      FREE(txt_file_name);
-      fclose(dot_output);
-    }
-  }
-  
-  
-
-  bdd_free(dd, s0);
-  if(get_print_accepting(opts) != NULL) {
     bdd_free(dd,init);
     bdd_free(dd,init_and_accepted);
     bdd_free(dd,accepted);
   }
-}  /* Mc_CheckCTLSpec */
+  
+  bdd_free(dd, s0);
+} /* Mc_CheckCTLSpec */
+
+
+
+void print_states(NuSMVEnv_ptr env,
+		  Prop_ptr prop,
+		  const OptsHandler_ptr opts,
+		  const StreamMgr_ptr streams,
+		  char * header, 
+		  bdd_ptr states)
+{
+  const BddFsm_ptr diagram = BDD_FSM(NuSMVEnv_get_value(env, ENV_BDD_FSM));
+  OStream_ptr stream = StreamMgr_get_output_ostream(streams);
+  OStream_ptr txt_output; 
+  char * file_name = get_print_accepting(opts);
+  char * def = "print";
+  char * txt_file_name = NIL(char);
+  int max_len = sizeof(char) * 32;
+  int chars;
+  
+  if(strcmp(file_name, def) == 0) {
+    StreamMgr_print_output(streams,  header);
+    BddFsm_print_interesting_states_info(diagram, states, false, false, true, stream);
+  }
+  else {
+    txt_file_name = ALLOC(char, max_len);
+    chars = snprintf(txt_file_name, max_len, "%s.txt", file_name);
+    SNPRINTF_CHECK(chars, max_len);
+    txt_output = OStream_create_file(txt_file_name, true);
+    
+    if(strcmp(header, "\nInitial States: ") == 0) {
+      print_spec_only(txt_output, prop, get_prop_print_method(opts));
+      OStream_printf(txt_output, "\n\nINIT: \t\t");
+      BddFsm_print_interesting_states_info(diagram, states, false, false, true, txt_output);     
+    }
+    else if(strcmp(header, "Accepting States: ") == 0) {
+      OStream_printf(txt_output, "ACCEPTING: \t");
+      BddFsm_print_interesting_states_info(diagram, states, false, false, true, txt_output);
+    }
+    else {
+      OStream_printf(txt_output, "INITACCEPTING: \t");
+      BddFsm_print_interesting_states_info(diagram, states, false, false, true, txt_output);
+      OStream_printf(txt_output, "\n");
+    }
+    
+    OStream_flush(txt_output);
+    OStream_destroy(txt_output);
+    FREE(txt_file_name);
+    
+  }
+  
+}
+
+void print_to_dot(const OptsHandler_ptr opts,
+		  DDMgr_ptr dd, 
+		  bdd_ptr init,
+		  bdd_ptr accepting,
+		  bdd_ptr init_and_accepting)
+{
+  FILE * dot_output; 
+  char * file_name = get_print_accepting(opts);
+  char * dot_file_name = NIL(char);
+  int max_len = sizeof(char) * 32;
+  int chars;
+  char * def = "print";
+  
+  if(strcmp(file_name,def) != 0) {
+    dot_file_name = ALLOC(char, max_len);
+    chars = snprintf(dot_file_name, max_len, "%s.dot", file_name);
+    SNPRINTF_CHECK(chars, max_len);
+    dot_output = fopen(dot_file_name, "w");
+    dd_dump_dot(dd, 1, &init, NULL, NULL, dot_output);
+    dd_dump_dot(dd, 1, &accepting, NULL, NULL, dot_output);
+    dd_dump_dot(dd, 1, &init_and_accepting, NULL, NULL, dot_output);
+    fclose(dot_output);
+    FREE(dot_file_name);
+  }
+  
+}
+
+
+/* Mc_CheckCTLSpec */
 
 /*
  * Originalfunktion ohne Aenderungen
@@ -1330,6 +1335,7 @@ void print_spec_only(OStream_ptr file, Prop_ptr prop, Prop_PrintFmt fmt)
   Prop_print(prop, file, fmt);
   OStream_printf(file, " ");
 }
+
 
 void print_compute(OStream_ptr file, Prop_ptr p, Prop_PrintFmt fmt)
 {
