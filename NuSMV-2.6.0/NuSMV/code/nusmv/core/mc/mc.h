@@ -295,6 +295,13 @@ Mc_trace_step_put_input_from_bdd(Trace_ptr trace, TraceIter step,
 void print_spec(OStream_ptr file, Prop_ptr prop, Prop_PrintFmt fmt);
 
 /*!
+  \brief Prints out a CTL specification with header "CTLSPEC
+
+  Prints out a CTL specification
+*/
+void print_spec_only(OStream_ptr file, Prop_ptr prop, Prop_PrintFmt fmt);
+
+/*!
   \brief Print an invariant specification
 
   Print an invariant specification

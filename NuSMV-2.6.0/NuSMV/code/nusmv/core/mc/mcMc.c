@@ -126,7 +126,8 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
 
     
   // ADDED File-pointer for standard output and output.txt and dot files
-  FILE * dot_output, * txt_output;
+  FILE * dot_output; //, * txt_output;
+  OStream_ptr txt_output;
     
   
   if (opt_verbose_level_gt(opts, 0)) {
@@ -1322,6 +1323,7 @@ void print_spec(OStream_ptr file, Prop_ptr prop, Prop_PrintFmt fmt)
   OStream_printf(file, " ");
 }
 
+/* TODO Comments*/
 void print_spec_only(OStream_ptr file, Prop_ptr prop, Prop_PrintFmt fmt)
 {
   OStream_printf(file, "CTLSPEC: \t");
