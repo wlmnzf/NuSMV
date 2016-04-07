@@ -199,11 +199,8 @@ void Opt_Pkg_init(NuSMVEnv_ptr const env)
   nusmv_assert(res);
   
   
-  // TEST Flag setzen
-  res = OptsHandler_register_bool_option(opts, RETURN_ACCEPTING, false, false);
-  nusmv_assert(res);
-  
-  res = OptsHandler_register_bool_option(opts, PRINT_ACCEPTING, false, false);
+  // TEST Flag setzen  
+  res = OptsHandler_register_generic_option(opts, PRINT_ACCEPTING, DEFAULT_PRINT_ACCEPTING, true);
   nusmv_assert(res);
 
   {

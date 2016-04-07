@@ -407,8 +407,6 @@ typedef enum {
 #define VERBOSE_LEVEL     "verbose_level"
 
 // TEST command line flag fuer accepting states
-#define RETURN_ACCEPTING   "return_accepting"
-
 #define PRINT_ACCEPTING		"print_accepting"
 
 #define DEFAULT_PRINT_ACCEPTING (char *)NULL
@@ -1273,21 +1271,21 @@ boolean opt_verbose_level_le(OptsHandler_ptr, int);
 
 /***********************************************************************************/
 /* TEST define new command line option */
-void    set_return_accepting(OptsHandler_ptr);
-
-/*!
-  \brief \todo Missing synopsis
-
-  \todo Missing description
-*/
-void    unset_return_accepting(OptsHandler_ptr);
-
-/*!
-  \brief \todo Missing synopsis
-
-  \todo Missing description
-*/
-boolean opt_return_accepting(OptsHandler_ptr);
+// void    set_return_accepting(OptsHandler_ptr);
+// 
+// /*!
+//   \brief \todo Missing synopsis
+// 
+//   \todo Missing description
+// */
+// void    unset_return_accepting(OptsHandler_ptr);
+// 
+// /*!
+//   \brief \todo Missing synopsis
+// 
+//   \todo Missing description
+// */
+// boolean opt_return_accepting(OptsHandler_ptr);
 
 /***************************************************************************************************/
 
