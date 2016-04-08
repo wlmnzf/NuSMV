@@ -292,25 +292,7 @@ void BddFsm_print_interesting_states_info(const BddFsm_ptr self,
 
   bdd_and_accumulate(self->dd, &reachable, mask);
 
-  reached_cardinality = BddEnc_count_states_of_bdd(self->enc, reachable);
-  search_space_cardinality = BddEnc_count_states_of_bdd(self->enc, mask);
   bdd_free(self->dd, mask);
-
-  /* If we have diameter info, print it. Otherwise, we can only print
-     the number of reachable states (ie. We do not have onion rings
-     informations. For example, reachable states have been computed
-     with Guided Reachability  */
-//   if (BddFsm_reachable_states_computed(self)) {
-//     OStream_printf(file, "system diameter: %d\n", BddFsm_get_diameter(self));
-//   }
-//   else {
-//     nusmv_assert(BddFsm_has_cached_reachable_states(self));
-//     OStream_printf(file, "system diameter: N/A\n");
-//   }
-
-//   OStream_printf(file, "reachable states: %g (2^%g) out of %g (2^%g)\n",
-//           reached_cardinality, log(reached_cardinality)/log(2.0),
-//           search_space_cardinality, log(search_space_cardinality)/log(2.0));
 
   /* one of these flags can be enabled, not both */
   nusmv_assert(!print_states || !print_formula);
@@ -337,9 +319,8 @@ void BddFsm_print_interesting_states_info(const BddFsm_ptr self,
     }
     NodeList_destroy(all_vars);
 
-//     OStream_printf(file, "\nFORMULA = \n");
     BddEnc_print_bdd_wff(self->enc, reachable, scalar_vars,
-                         true, false, 0, file);
+                         false, false, 0, file);
 
     NodeList_destroy(scalar_vars);
   }
