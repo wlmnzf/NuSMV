@@ -311,14 +311,9 @@ void print_states(NuSMVEnv_ptr env,
 		  const OptsHandler_ptr opts,
 		  const StreamMgr_ptr streams,
 		  char * header, 
-		  bdd_ptr states);
-
-void print_to_dot(const OptsHandler_ptr opts,
-		  DDMgr_ptr dd, 
-		  bdd_ptr init,
-		  bdd_ptr accepting,
-		  bdd_ptr init_and_accepting);
-
+		  bdd_ptr init, 
+		  bdd_ptr accepted, 
+		  bdd_ptr init_and_accepted);
 
 /*!
   \brief Print an invariant specification
