@@ -291,8 +291,11 @@ void BddFsm_print_interesting_states_info(const BddFsm_ptr self,
   reachable = interesting_states;
 
   bdd_and_accumulate(self->dd, &reachable, mask);
-
+  
+  reached_cardinality = BddEnc_count_states_of_bdd(self->enc, reachable);
+  search_space_cardinality = BddEnc_count_states_of_bdd(self->enc, mask);
   bdd_free(self->dd, mask);
+
 
   /* one of these flags can be enabled, not both */
   nusmv_assert(!print_states || !print_formula);
@@ -323,6 +326,15 @@ void BddFsm_print_interesting_states_info(const BddFsm_ptr self,
                          false, false, 0, file);
 
     NodeList_destroy(scalar_vars);
+     /* If we have diameter info, print it. Otherwise, we can only print
+     the number of reachable states (ie. We do not have onion rings
+     informations. For example, reachable states have been computed
+     with Guided Reachability  */
+    OStream_printf(file, "system diameter: %d\n", BddFsm_get_diameter(self));
+  
+    OStream_printf(file, "reachable states: %g (2^%g) out of %g (2^%g)\n",
+          reached_cardinality, log(reached_cardinality)/log(2.0),
+          search_space_cardinality, log(search_space_cardinality)/log(2.0));
   }
 
   bdd_free(self->dd, reachable);
@@ -477,6 +489,29 @@ void BddFsm_print_fair_state_input_pairs_info(
 
 
 int BddFsm_print_reachable_states(BddFsm_ptr self,
+                                  NuSMVEnv_ptr env, OStream_ptr stream,
+                                  boolean verbose, boolean print_defines,
+                                  boolean formula)
+{
+  OptsHandler_ptr const opts =
+     OPTS_HANDLER(NuSMVEnv_get_value(env, ENV_OPTS_HANDLER));
+  const StreamMgr_ptr streams =
+      STREAM_MGR(NuSMVEnv_get_value(env, ENV_STREAM_MANAGER));
+
+  int retval = 0;
+
+  set_forward_search(opts);
+  set_print_reachable(opts);
+
+  StreamMgr_print_output(streams, HEADER_SEPARATOR);
+  BddFsm_print_reachable_states_info(
+      BDD_FSM(NuSMVEnv_get_value(env, ENV_BDD_FSM)),
+      verbose, print_defines, formula, stream);
+  StreamMgr_print_output(streams, HEADER_SEPARATOR);
+
+  return retval;
+}
+int BddFsm_print_fucking_states(BddFsm_ptr self,
                                   NuSMVEnv_ptr env, OStream_ptr stream,
                                   boolean verbose, boolean print_defines,
                                   boolean formula)
