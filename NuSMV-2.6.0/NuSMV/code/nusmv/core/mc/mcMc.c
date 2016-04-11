@@ -123,6 +123,7 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
   s0 = eval_ctl_spec(fsm, enc, spec, Nil);
   
   /* ADDED: save accepting states */
+//   accepted = bdd_dup(s0);
   if(get_print_accepting(opts) != NULL)
     accepted = bdd_dup(s0);  
   
@@ -138,23 +139,20 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
   bdd_free(dd, tmp_1);
   bdd_free(dd, s0);
   
-  /* get initial states */
   s0 = BddFsm_get_init(fsm);
+  bdd_and_accumulate(dd, &s0, tmp_2);
+  bdd_free(dd, tmp_2);
   
-  /* ADDED: save initial states */
+  /* get initial states */
+//   init = bdd_dup(s0);
   if(get_print_accepting(opts) != NULL)
     init = bdd_dup(s0);
   
   /* get initial accepting states */
-  bdd_and_accumulate(dd, &s0, tmp_2);
-  
-  /* ADDED: save initial and accepting states */
   if(get_print_accepting(opts) != NULL) {
     init_and_accepted = bdd_dup(init);
     bdd_and_accumulate(dd, &init_and_accepted, accepted);
   }
-
-  bdd_free(dd, tmp_2);  
   
   /* Prints out the result, if not true explain. */  
   StreamMgr_print_output(streams,  "-- ");
@@ -233,18 +231,61 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
   if(get_print_accepting(opts) != NULL) {
     
     print_states(env, prop, opts, streams, "\nInitial States: ", init, accepted, init_and_accepted);
- //   print_states(env, prop, opts, streams, "Accepting States: ", accepted);
- //   print_states(env, prop, opts, streams, "Initial and Accepting States: ", init_and_accepted);
+    try_to_print_this(env, dd, enc, init, accepted, init_and_accepted, streams);
     
     bdd_free(dd,init);
     bdd_free(dd,init_and_accepted);
     bdd_free(dd,accepted);
   }
   
+
+  
   bdd_free(dd, s0);
 } /* Mc_CheckCTLSpec */
 
-
+/* Neuer Versuch: output mit dd_dump_factored_form 
+ * und input names */
+void try_to_print_this(NuSMVEnv_ptr env, 
+		       DDMgr_ptr dd,
+		       BddEnc_ptr enc,
+		       bdd_ptr init,
+		       bdd_ptr accepted,
+		       bdd_ptr init_and_accepted,
+		       const StreamMgr_ptr streams)
+{
+  const MasterPrinter_ptr wffprint =
+    MASTER_PRINTER(NuSMVEnv_get_value(env, ENV_WFF_PRINTER));
+  
+  /* get input names */
+  const int dd_size = dd_get_size(dd);
+  const char** inames;
+  int lev;
+  FILE * out = StreamMgr_get_output_stream(streams);
+  
+  inames = ALLOC( const char*, dd_size);
+  nusmv_assert((const char**) NULL != inames);
+  
+  for(lev = 0; lev < dd_size; ++lev) {
+    int index = dd_get_index_at_level(dd, lev);
+    if(BddEnc_has_var_at_index(enc, index)) {
+      inames[lev] = (const char*) sprint_node(wffprint,
+                      BddEnc_get_var_name_from_index(enc, index));
+    }
+    else {
+      inames[lev] = (const char*) NULL;
+    }
+  }
+  StreamMgr_print_output(streams,  "Test DumpFactoredForm Initial States: ");
+  dd_dump_factored_form(dd, 1, &init, inames, NULL, out);
+  StreamMgr_print_output(streams, "\n");
+  StreamMgr_print_output(streams,  "Test DumpFactoredForm Accepting States: ");
+  dd_dump_factored_form(dd, 1, &accepted, inames, NULL, out);
+  StreamMgr_print_output(streams, "\n");
+  StreamMgr_print_output(streams,  "Test DumpFactoredForm Accepting States: ");
+  dd_dump_factored_form(dd, 1, &init_and_accepted, inames, NULL, out);
+  StreamMgr_print_output(streams, "\n");
+  
+}
 
 void print_states(NuSMVEnv_ptr env,
 		  Prop_ptr prop,
@@ -266,11 +307,13 @@ void print_states(NuSMVEnv_ptr env,
   int chars;
   
   if(strcmp(file_name, def) == 0) {
-    StreamMgr_print_output(streams,  header);
+    StreamMgr_print_output(streams,  "Initial states: ");
     BddFsm_print_interesting_states_info(diagram, init, false, false, true, stream);
+    StreamMgr_print_output(streams, "Accepting states: ");
     BddFsm_print_interesting_states_info(diagram, accepted, false, false, true, stream);
+    StreamMgr_print_output(streams, "Initial accepting states: ");
     BddFsm_print_interesting_states_info(diagram, init_and_accepted, false, false, true, stream);
-
+    StreamMgr_print_output(streams, "\n");
   }
   else {
     txt_file_name = ALLOC(char, max_len);
