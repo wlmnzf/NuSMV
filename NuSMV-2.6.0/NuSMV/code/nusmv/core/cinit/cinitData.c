@@ -769,7 +769,7 @@ void NuSMVCore_init_cmd_options(NuSMVEnv_ptr env)
 					"Prints accepting states, "
 					"initial states and "
 					"initial accepting states. "
-					"to the file \"interesting_states\" or "
+					"to the file \"filename\" or "
 					"to the command line, if \"print\" is "
 					"specified as filename.",
 					"interesting_states", PRINT_ACCEPTING, true,

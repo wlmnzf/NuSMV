@@ -323,7 +323,8 @@ void print_states(NuSMVEnv_ptr env,
   }
   else {
     txt_file_name = ALLOC(char, max_len);
-    chars = snprintf(txt_file_name, max_len, "%s.txt", file_name);
+    chars = snprintf(txt_file_name, max_len, file_name);
+//     chars = snprintf(txt_file_name, max_len, "%s.txt", file_name);
     SNPRINTF_CHECK(chars, max_len);
     if (index_of_spec != 0){
       txt_output = OStream_create_file(txt_file_name, true);
