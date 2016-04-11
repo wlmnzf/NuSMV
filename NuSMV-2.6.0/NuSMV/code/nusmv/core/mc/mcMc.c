@@ -225,7 +225,7 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
    * and initial accepting states as additional information 
    * if commandline parameter "-a interesting_states" is set */
   if(get_print_accepting(opts) != NULL) {
-    
+        
     print_states(env, prop, opts, streams, "\nInitial States: ", init, accepted, init_and_accepted);
     try_to_print_this(env, dd, enc, init, accepted, init_and_accepted, streams);
     
@@ -251,6 +251,7 @@ void try_to_print_this(NuSMVEnv_ptr env,
 {
   const MasterPrinter_ptr wffprint =
     MASTER_PRINTER(NuSMVEnv_get_value(env, ENV_WFF_PRINTER));
+    
   
   /* get input names */
   const int dd_size = dd_get_size(dd);
@@ -295,20 +296,29 @@ void print_states(NuSMVEnv_ptr env,
   const BddFsm_ptr diagram = BDD_FSM(NuSMVEnv_get_value(env, ENV_BDD_FSM));
   OStream_ptr stream = StreamMgr_get_output_ostream(streams);
   OStream_ptr txt_output; 
+    BddStates ini, acci, iniacci;
+
   int index_of_spec = Prop_get_index(prop);
   char * file_name = get_print_accepting(opts);
   char * def = "print";
   char * txt_file_name = NIL(char);
   int max_len = sizeof(char) * 32;
   int chars;
+    ini = init;
+    acci = accepted;
+    iniacci = init_and_accepted;
+    bdd_ref((bdd_ptr) ini);
+    bdd_ref((bdd_ptr) acci);
+    bdd_ref((bdd_ptr) iniacci);
+
   
   if(strcmp(file_name, def) == 0) {
     StreamMgr_print_output(streams,  "Initial states: ");
-    BddFsm_print_interesting_states_info(diagram, init, false, false, true, stream);
+    BddFsm_print_interesting_states_info(diagram, ini, false, false, true, stream);
     StreamMgr_print_output(streams, "Accepting states: ");
-    BddFsm_print_interesting_states_info(diagram, accepted, false, false, true, stream);
+    BddFsm_print_interesting_states_info(diagram, acci, false, false, true, stream);
     StreamMgr_print_output(streams, "Initial accepting states: ");
-    BddFsm_print_interesting_states_info(diagram, init_and_accepted, false, false, true, stream);
+    BddFsm_print_interesting_states_info(diagram, iniacci, false, false, true, stream);
     StreamMgr_print_output(streams, "\n");
   }
   else {
