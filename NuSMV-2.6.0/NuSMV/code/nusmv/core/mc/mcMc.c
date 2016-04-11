@@ -277,7 +277,7 @@ void try_to_print_this(NuSMVEnv_ptr env,
   StreamMgr_print_output(streams,  "Test DumpFactoredForm Accepting States: ");
   dd_dump_factored_form(dd, 1, &accepted, inames, NULL, out);
   StreamMgr_print_output(streams, "\n");
-  StreamMgr_print_output(streams,  "Test DumpFactoredForm Accepting States: ");
+  StreamMgr_print_output(streams,  "Test DumpFactoredForm Initial and Accepting States: ");
   dd_dump_factored_form(dd, 1, &init_and_accepted, inames, NULL, out);
   StreamMgr_print_output(streams, "\n");
   
