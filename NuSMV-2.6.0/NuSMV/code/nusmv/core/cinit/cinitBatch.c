@@ -81,9 +81,15 @@ void CInit_batch_main(NuSMVEnv_ptr env)
   ErrorMgr_reset_long_jmp(errmgr);
   CATCH(errmgr) {
     int res;
-
+    
     {  /* 1: Read the model */
       char* fname = get_input_file(opts);
+      
+      if( get_print_accepting(opts) && NULL == fname) {
+	StreamMgr_print_error(streams,
+			      "filename for option -a is (null). You must set the filename before.\n");
+	goto batch_exit_fail;
+      }
       if (NULL == fname) {
         StreamMgr_print_error(streams,
             "Input file is (null). You must set the input file before.\n");
