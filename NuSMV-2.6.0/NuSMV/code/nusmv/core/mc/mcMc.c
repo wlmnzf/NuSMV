@@ -333,13 +333,13 @@ void print_states(NuSMVEnv_ptr env,
     }
     print_spec_only(txt_output, prop, get_prop_print_method(opts));
     OStream_printf(txt_output, "\nINIT: \t\t");
-    BddFsm_print_interesting_states_info(diagram, init, false, false, true, txt_output);     
+    BddFsm_print_interesting_states_info(diagram, ini, false, false, true, txt_output);     
     
     OStream_printf(txt_output, "ACCEPTING: \t");
-    BddFsm_print_interesting_states_info(diagram, accepted, false, false, true, txt_output);
+    BddFsm_print_interesting_states_info(diagram, acci, false, false, true, txt_output);
   
     OStream_printf(txt_output, "INITACCEPTING: \t");
-    BddFsm_print_interesting_states_info(diagram, init_and_accepted, false, false, true, txt_output);
+    BddFsm_print_interesting_states_info(diagram, iniacci, false, false, true, txt_output);
     OStream_printf(txt_output, "\n");
     
     
