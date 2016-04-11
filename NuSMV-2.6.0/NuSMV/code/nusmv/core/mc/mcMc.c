@@ -143,13 +143,9 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
   bdd_and_accumulate(dd, &s0, tmp_2);
   bdd_free(dd, tmp_2);
   
-  /* get initial states */
-//   init = bdd_dup(s0);
-  if(get_print_accepting(opts) != NULL)
-    init = bdd_dup(s0);
-  
-  /* get initial accepting states */
+  /* get initial states and initial accepted states */
   if(get_print_accepting(opts) != NULL) {
+    init = BddFsm_get_init(fsm);
     init_and_accepted = bdd_dup(init);
     bdd_and_accumulate(dd, &init_and_accepted, accepted);
   }
