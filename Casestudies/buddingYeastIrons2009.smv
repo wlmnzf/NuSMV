@@ -1,0 +1,94 @@
+-- created on 13. Apr. 2016 using PyBoolNet
+-- available at "sourceforge.net/projects/boolnetfixpoints".
+
+
+MODULE main
+
+VAR
+	CD: boolean;
+	CKI: boolean;
+	Cdc14: boolean;
+	Cdc20: boolean;
+	Cdh1: boolean;
+	Clb2: boolean;
+	Clb5: boolean;
+	Cln2: boolean;
+	Cln3: boolean;
+	FEAR: boolean;
+	MEN: boolean;
+	SFF: boolean;
+	SMBF: boolean;
+	Swi5: boolean;
+	Yhp1: boolean;
+	varB: boolean;
+	varM: boolean;
+	varS: boolean;
+
+DEFINE
+	CD_IMAGE := varM&FEAR&Cdc14&!CD;
+	CKI_IMAGE := Swi5&!Clb2&!Cln2&!Clb5 | !Clb2&CKI&!Cln2&!Clb5 | Swi5&Cdc14;
+	Cdc14_IMAGE := FEAR&MEN;
+	Cdc20_IMAGE := SFF&Clb2&varM;
+	Cdh1_IMAGE := !Clb2&!Cln2&!Clb5 | Cdc14;
+	Clb2_IMAGE := !Cdh1&Clb2&SFF&!CKI | SFF&Clb2&!CKI&!Cdc20 | !Cdh1&!CKI&varB | varB&!CKI&!Cdc20;
+	Clb5_IMAGE := SMBF&!Cdc20;
+	Cln2_IMAGE := SMBF;
+	Cln3_IMAGE := !Yhp1;
+	FEAR_IMAGE := Cdc20;
+	MEN_IMAGE := Clb2&FEAR;
+	SFF_IMAGE := !Cdh1&!CKI&varB | varB&!CKI&!Cdc20 | SFF&Clb2;
+	SMBF_IMAGE := SMBF&!Clb2 | !Clb2&Cln3 | !Clb2&Cln2;
+	Swi5_IMAGE := SFF&!Clb2 | SFF&Cdc14;
+	Yhp1_IMAGE := SMBF;
+	varB_IMAGE := varB&!CD | Cln2&!CD | Clb5&!CD;
+	varM_IMAGE := Clb2&varS&!CD | varM&!CD;
+	varS_IMAGE := varS&!CD | Clb5&!CD | Clb2&!CD;
+
+	CD_STEADY := (CD_IMAGE = CD);
+	CKI_STEADY := (CKI_IMAGE = CKI);
+	Cdc14_STEADY := (Cdc14_IMAGE = Cdc14);
+	Cdc20_STEADY := (Cdc20_IMAGE = Cdc20);
+	Cdh1_STEADY := (Cdh1_IMAGE = Cdh1);
+	Clb2_STEADY := (Clb2_IMAGE = Clb2);
+	Clb5_STEADY := (Clb5_IMAGE = Clb5);
+	Cln2_STEADY := (Cln2_IMAGE = Cln2);
+	Cln3_STEADY := (Cln3_IMAGE = Cln3);
+	FEAR_STEADY := (FEAR_IMAGE = FEAR);
+	MEN_STEADY := (MEN_IMAGE = MEN);
+	SFF_STEADY := (SFF_IMAGE = SFF);
+	SMBF_STEADY := (SMBF_IMAGE = SMBF);
+	Swi5_STEADY := (Swi5_IMAGE = Swi5);
+	Yhp1_STEADY := (Yhp1_IMAGE = Yhp1);
+	varB_STEADY := (varB_IMAGE = varB);
+	varM_STEADY := (varM_IMAGE = varM);
+	varS_STEADY := (varS_IMAGE = varS);
+
+	SUCCESSORS := count((!CD_STEADY), (!CKI_STEADY), (!Cdc14_STEADY), (!Cdc20_STEADY), (!Cdh1_STEADY), (!Clb2_STEADY), (!Clb5_STEADY), (!Cln2_STEADY), (!Cln3_STEADY), (!FEAR_STEADY), (!MEN_STEADY), (!SFF_STEADY), (!SMBF_STEADY), (!Swi5_STEADY), (!Yhp1_STEADY), (!varB_STEADY), (!varM_STEADY), (!varS_STEADY));
+	STEADYSTATE := (SUCCESSORS = 0);
+
+ASSIGN
+	next(CD) := {CD, CD_IMAGE};
+	next(CKI) := {CKI, CKI_IMAGE};
+	next(Cdc14) := {Cdc14, Cdc14_IMAGE};
+	next(Cdc20) := {Cdc20, Cdc20_IMAGE};
+	next(Cdh1) := {Cdh1, Cdh1_IMAGE};
+	next(Clb2) := {Clb2, Clb2_IMAGE};
+	next(Clb5) := {Clb5, Clb5_IMAGE};
+	next(Cln2) := {Cln2, Cln2_IMAGE};
+	next(Cln3) := {Cln3, Cln3_IMAGE};
+	next(FEAR) := {FEAR, FEAR_IMAGE};
+	next(MEN) := {MEN, MEN_IMAGE};
+	next(SFF) := {SFF, SFF_IMAGE};
+	next(SMBF) := {SMBF, SMBF_IMAGE};
+	next(Swi5) := {Swi5, Swi5_IMAGE};
+	next(Yhp1) := {Yhp1, Yhp1_IMAGE};
+	next(varB) := {varB, varB_IMAGE};
+	next(varM) := {varM, varM_IMAGE};
+	next(varS) := {varS, varS_IMAGE};
+
+TRANS STEADYSTATE | count((next(CD)!=CD), (next(CKI)!=CKI), (next(Cdc14)!=Cdc14), (next(Cdc20)!=Cdc20), (next(Cdh1)!=Cdh1), (next(Clb2)!=Clb2), (next(Clb5)!=Clb5), (next(Cln2)!=Cln2), (next(Cln3)!=Cln3), (next(FEAR)!=FEAR), (next(MEN)!=MEN), (next(SFF)!=SFF), (next(SMBF)!=SMBF), (next(Swi5)!=Swi5), (next(Yhp1)!=Yhp1), (next(varB)!=varB), (next(varM)!=varM), (next(varS)!=varS))=1;
+
+
+INIT TRUE
+
+CTLSPEC EF(!CD&CKI&!Cdc14&Cdc20&Cdh1&Clb2&Clb5&!Cln2&Cln3&FEAR&!MEN&SFF&SMBF&!Swi5&!Yhp1&!varB&varM&!varS)

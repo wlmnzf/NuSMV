@@ -1,0 +1,268 @@
+-- created on 13. Apr. 2016 using PyBoolNet
+-- available at "sourceforge.net/projects/boolnetfixpoints".
+
+
+MODULE main
+
+VAR
+	AKT: boolean;
+	AP1: boolean;
+	ATF2: boolean;
+	ATM: boolean;
+	Apoptosis: boolean;
+	BCL2: boolean;
+	CREB: boolean;
+	DNA_damage: boolean;
+	DUSP1: boolean;
+	EGFR: boolean;
+	EGFR_stimulus: boolean;
+	ELK1: boolean;
+	ERK: boolean;
+	FGFR3: boolean;
+	FGFR3_stimulus: boolean;
+	FOS: boolean;
+	FOXO3: boolean;
+	FRS2: boolean;
+	GAB1: boolean;
+	GADD45: boolean;
+	GRB2: boolean;
+	Growth_Arrest: boolean;
+	JNK: boolean;
+	JUN: boolean;
+	MAP3K1_3: boolean;
+	MAX1: boolean;
+	MDM2: boolean;
+	MEK1_2: boolean;
+	MSK: boolean;
+	MTK1: boolean;
+	MYC: boolean;
+	PDK1: boolean;
+	PI3K: boolean;
+	PKC: boolean;
+	PLCG: boolean;
+	PPP2CA: boolean;
+	PTEN: boolean;
+	Proliferation: boolean;
+	RAF: boolean;
+	RAS: boolean;
+	RSK: boolean;
+	SMAD: boolean;
+	SOS: boolean;
+	SPRY: boolean;
+	TAK1: boolean;
+	TAOK: boolean;
+	TGFBR: boolean;
+	TGFBR_stimulus: boolean;
+	p14: boolean;
+	p21: boolean;
+	p38: boolean;
+	p53: boolean;
+	p70: boolean;
+
+DEFINE
+	AKT_IMAGE := PDK1&!PTEN;
+	AP1_IMAGE := JUN&FOS | JUN&ATF2;
+	ATF2_IMAGE := p38 | JNK;
+	ATM_IMAGE := DNA_damage;
+	Apoptosis_IMAGE := FOXO3&p53&!ERK&!BCL2;
+	BCL2_IMAGE := CREB&AKT;
+	CREB_IMAGE := MSK;
+	DNA_damage_IMAGE := DNA_damage;
+	DUSP1_IMAGE := CREB;
+	EGFR_IMAGE := !PKC&!GRB2&SPRY | !PKC&!GRB2&EGFR_stimulus;
+	EGFR_stimulus_IMAGE := EGFR_stimulus;
+	ELK1_IMAGE := p38 | JNK | ERK;
+	ERK_IMAGE := MEK1_2;
+	FGFR3_IMAGE := !PKC&!GRB2&FGFR3_stimulus;
+	FGFR3_stimulus_IMAGE := FGFR3_stimulus;
+	FOS_IMAGE := RSK&ELK1&ERK | CREB&RSK&ERK;
+	FOXO3_IMAGE := JNK&!AKT;
+	FRS2_IMAGE := !GRB2&FGFR3&!SPRY;
+	GAB1_IMAGE := PI3K | GRB2;
+	GADD45_IMAGE := p53 | SMAD;
+	GRB2_IMAGE := TGFBR | FRS2 | EGFR;
+	Growth_Arrest_IMAGE := p21;
+	JNK_IMAGE := TAK1&TAOK | MTK1&TAOK | TAK1&MTK1 | MAP3K1_3&TAOK | TAK1&MAP3K1_3 | MAP3K1_3&MTK1 | !DUSP1&TAOK | TAK1&!DUSP1 | MTK1&!DUSP1 | MAP3K1_3&!DUSP1;
+	JUN_IMAGE := JNK;
+	MAP3K1_3_IMAGE := RAS;
+	MAX1_IMAGE := p38;
+	MDM2_IMAGE := !p14&p53 | !p14&AKT;
+	MEK1_2_IMAGE := !PPP2CA&RAF&!AP1 | !PPP2CA&!AP1&MAP3K1_3;
+	MSK_IMAGE := p38 | ERK;
+	MTK1_IMAGE := GADD45;
+	MYC_IMAGE := MAX1&MSK | MSK&AKT;
+	PDK1_IMAGE := PI3K;
+	PI3K_IMAGE := SOS&RAS | GAB1;
+	PKC_IMAGE := PLCG;
+	PLCG_IMAGE := FGFR3 | EGFR;
+	PPP2CA_IMAGE := p38;
+	PTEN_IMAGE := p53;
+	Proliferation_IMAGE := MYC&!p21&p70;
+	RAF_IMAGE := !ERK&RAS&!AKT | PKC&!ERK&!AKT;
+	RAS_IMAGE := SOS | PLCG;
+	RSK_IMAGE := ERK;
+	SMAD_IMAGE := TGFBR;
+	SOS_IMAGE := GRB2&!RSK;
+	SPRY_IMAGE := ERK;
+	TAK1_IMAGE := TGFBR;
+	TAOK_IMAGE := ATM;
+	TGFBR_IMAGE := TGFBR_stimulus;
+	TGFBR_stimulus_IMAGE := TGFBR_stimulus;
+	p14_IMAGE := MYC;
+	p21_IMAGE := p53&!AKT;
+	p38_IMAGE := TAK1&TAOK | MTK1&TAOK | TAK1&MTK1 | MAP3K1_3&TAOK | TAK1&MAP3K1_3 | MAP3K1_3&MTK1 | !DUSP1&TAOK | TAK1&!DUSP1 | MTK1&!DUSP1 | MAP3K1_3&!DUSP1;
+	p53_IMAGE := !MDM2&p38 | p38&ATM | !MDM2&ATM;
+	p70_IMAGE := PDK1&ERK;
+
+	AKT_STEADY := (AKT_IMAGE = AKT);
+	AP1_STEADY := (AP1_IMAGE = AP1);
+	ATF2_STEADY := (ATF2_IMAGE = ATF2);
+	ATM_STEADY := (ATM_IMAGE = ATM);
+	Apoptosis_STEADY := (Apoptosis_IMAGE = Apoptosis);
+	BCL2_STEADY := (BCL2_IMAGE = BCL2);
+	CREB_STEADY := (CREB_IMAGE = CREB);
+	DNA_damage_STEADY := (DNA_damage_IMAGE = DNA_damage);
+	DUSP1_STEADY := (DUSP1_IMAGE = DUSP1);
+	EGFR_STEADY := (EGFR_IMAGE = EGFR);
+	EGFR_stimulus_STEADY := (EGFR_stimulus_IMAGE = EGFR_stimulus);
+	ELK1_STEADY := (ELK1_IMAGE = ELK1);
+	ERK_STEADY := (ERK_IMAGE = ERK);
+	FGFR3_STEADY := (FGFR3_IMAGE = FGFR3);
+	FGFR3_stimulus_STEADY := (FGFR3_stimulus_IMAGE = FGFR3_stimulus);
+	FOS_STEADY := (FOS_IMAGE = FOS);
+	FOXO3_STEADY := (FOXO3_IMAGE = FOXO3);
+	FRS2_STEADY := (FRS2_IMAGE = FRS2);
+	GAB1_STEADY := (GAB1_IMAGE = GAB1);
+	GADD45_STEADY := (GADD45_IMAGE = GADD45);
+	GRB2_STEADY := (GRB2_IMAGE = GRB2);
+	Growth_Arrest_STEADY := (Growth_Arrest_IMAGE = Growth_Arrest);
+	JNK_STEADY := (JNK_IMAGE = JNK);
+	JUN_STEADY := (JUN_IMAGE = JUN);
+	MAP3K1_3_STEADY := (MAP3K1_3_IMAGE = MAP3K1_3);
+	MAX1_STEADY := (MAX1_IMAGE = MAX1);
+	MDM2_STEADY := (MDM2_IMAGE = MDM2);
+	MEK1_2_STEADY := (MEK1_2_IMAGE = MEK1_2);
+	MSK_STEADY := (MSK_IMAGE = MSK);
+	MTK1_STEADY := (MTK1_IMAGE = MTK1);
+	MYC_STEADY := (MYC_IMAGE = MYC);
+	PDK1_STEADY := (PDK1_IMAGE = PDK1);
+	PI3K_STEADY := (PI3K_IMAGE = PI3K);
+	PKC_STEADY := (PKC_IMAGE = PKC);
+	PLCG_STEADY := (PLCG_IMAGE = PLCG);
+	PPP2CA_STEADY := (PPP2CA_IMAGE = PPP2CA);
+	PTEN_STEADY := (PTEN_IMAGE = PTEN);
+	Proliferation_STEADY := (Proliferation_IMAGE = Proliferation);
+	RAF_STEADY := (RAF_IMAGE = RAF);
+	RAS_STEADY := (RAS_IMAGE = RAS);
+	RSK_STEADY := (RSK_IMAGE = RSK);
+	SMAD_STEADY := (SMAD_IMAGE = SMAD);
+	SOS_STEADY := (SOS_IMAGE = SOS);
+	SPRY_STEADY := (SPRY_IMAGE = SPRY);
+	TAK1_STEADY := (TAK1_IMAGE = TAK1);
+	TAOK_STEADY := (TAOK_IMAGE = TAOK);
+	TGFBR_STEADY := (TGFBR_IMAGE = TGFBR);
+	TGFBR_stimulus_STEADY := (TGFBR_stimulus_IMAGE = TGFBR_stimulus);
+	p14_STEADY := (p14_IMAGE = p14);
+	p21_STEADY := (p21_IMAGE = p21);
+	p38_STEADY := (p38_IMAGE = p38);
+	p53_STEADY := (p53_IMAGE = p53);
+	p70_STEADY := (p70_IMAGE = p70);
+
+	SUCCESSORS := count((!AKT_STEADY), (!AP1_STEADY), (!ATF2_STEADY), (!ATM_STEADY), (!Apoptosis_STEADY), (!BCL2_STEADY), (!CREB_STEADY), (!DNA_damage_STEADY), (!DUSP1_STEADY), (!EGFR_STEADY), (!EGFR_stimulus_STEADY), (!ELK1_STEADY), (!ERK_STEADY), (!FGFR3_STEADY), (!FGFR3_stimulus_STEADY), (!FOS_STEADY), (!FOXO3_STEADY), (!FRS2_STEADY), (!GAB1_STEADY), (!GADD45_STEADY), (!GRB2_STEADY), (!Growth_Arrest_STEADY), (!JNK_STEADY), (!JUN_STEADY), (!MAP3K1_3_STEADY), (!MAX1_STEADY), (!MDM2_STEADY), (!MEK1_2_STEADY), (!MSK_STEADY), (!MTK1_STEADY), (!MYC_STEADY), (!PDK1_STEADY), (!PI3K_STEADY), (!PKC_STEADY), (!PLCG_STEADY), (!PPP2CA_STEADY), (!PTEN_STEADY), (!Proliferation_STEADY), (!RAF_STEADY), (!RAS_STEADY), (!RSK_STEADY), (!SMAD_STEADY), (!SOS_STEADY), (!SPRY_STEADY), (!TAK1_STEADY), (!TAOK_STEADY), (!TGFBR_STEADY), (!TGFBR_stimulus_STEADY), (!p14_STEADY), (!p21_STEADY), (!p38_STEADY), (!p53_STEADY), (!p70_STEADY));
+	STEADYSTATE := (SUCCESSORS = 0);
+
+ASSIGN
+	next(AKT) := {AKT, AKT_IMAGE};
+	next(AP1) := {AP1, AP1_IMAGE};
+	next(ATF2) := {ATF2, ATF2_IMAGE};
+	next(ATM) := {ATM, ATM_IMAGE};
+	next(Apoptosis) := {Apoptosis, Apoptosis_IMAGE};
+	next(BCL2) := {BCL2, BCL2_IMAGE};
+	next(CREB) := {CREB, CREB_IMAGE};
+	next(DNA_damage) := {DNA_damage, DNA_damage_IMAGE};
+	next(DUSP1) := {DUSP1, DUSP1_IMAGE};
+	next(EGFR) := {EGFR, EGFR_IMAGE};
+	next(EGFR_stimulus) := {EGFR_stimulus, EGFR_stimulus_IMAGE};
+	next(ELK1) := {ELK1, ELK1_IMAGE};
+	next(ERK) := {ERK, ERK_IMAGE};
+	next(FGFR3) := {FGFR3, FGFR3_IMAGE};
+	next(FGFR3_stimulus) := {FGFR3_stimulus, FGFR3_stimulus_IMAGE};
+	next(FOS) := {FOS, FOS_IMAGE};
+	next(FOXO3) := {FOXO3, FOXO3_IMAGE};
+	next(FRS2) := {FRS2, FRS2_IMAGE};
+	next(GAB1) := {GAB1, GAB1_IMAGE};
+	next(GADD45) := {GADD45, GADD45_IMAGE};
+	next(GRB2) := {GRB2, GRB2_IMAGE};
+	next(Growth_Arrest) := {Growth_Arrest, Growth_Arrest_IMAGE};
+	next(JNK) := {JNK, JNK_IMAGE};
+	next(JUN) := {JUN, JUN_IMAGE};
+	next(MAP3K1_3) := {MAP3K1_3, MAP3K1_3_IMAGE};
+	next(MAX1) := {MAX1, MAX1_IMAGE};
+	next(MDM2) := {MDM2, MDM2_IMAGE};
+	next(MEK1_2) := {MEK1_2, MEK1_2_IMAGE};
+	next(MSK) := {MSK, MSK_IMAGE};
+	next(MTK1) := {MTK1, MTK1_IMAGE};
+	next(MYC) := {MYC, MYC_IMAGE};
+	next(PDK1) := {PDK1, PDK1_IMAGE};
+	next(PI3K) := {PI3K, PI3K_IMAGE};
+	next(PKC) := {PKC, PKC_IMAGE};
+	next(PLCG) := {PLCG, PLCG_IMAGE};
+	next(PPP2CA) := {PPP2CA, PPP2CA_IMAGE};
+	next(PTEN) := {PTEN, PTEN_IMAGE};
+	next(Proliferation) := {Proliferation, Proliferation_IMAGE};
+	next(RAF) := {RAF, RAF_IMAGE};
+	next(RAS) := {RAS, RAS_IMAGE};
+	next(RSK) := {RSK, RSK_IMAGE};
+	next(SMAD) := {SMAD, SMAD_IMAGE};
+	next(SOS) := {SOS, SOS_IMAGE};
+	next(SPRY) := {SPRY, SPRY_IMAGE};
+	next(TAK1) := {TAK1, TAK1_IMAGE};
+	next(TAOK) := {TAOK, TAOK_IMAGE};
+	next(TGFBR) := {TGFBR, TGFBR_IMAGE};
+	next(TGFBR_stimulus) := {TGFBR_stimulus, TGFBR_stimulus_IMAGE};
+	next(p14) := {p14, p14_IMAGE};
+	next(p21) := {p21, p21_IMAGE};
+	next(p38) := {p38, p38_IMAGE};
+	next(p53) := {p53, p53_IMAGE};
+	next(p70) := {p70, p70_IMAGE};
+
+TRANS STEADYSTATE | count((next(AKT)!=AKT), (next(AP1)!=AP1), (next(ATF2)!=ATF2), (next(ATM)!=ATM), (next(Apoptosis)!=Apoptosis), (next(BCL2)!=BCL2), (next(CREB)!=CREB), (next(DNA_damage)!=DNA_damage), (next(DUSP1)!=DUSP1), (next(EGFR)!=EGFR), (next(EGFR_stimulus)!=EGFR_stimulus), (next(ELK1)!=ELK1), (next(ERK)!=ERK), (next(FGFR3)!=FGFR3), (next(FGFR3_stimulus)!=FGFR3_stimulus), (next(FOS)!=FOS), (next(FOXO3)!=FOXO3), (next(FRS2)!=FRS2), (next(GAB1)!=GAB1), (next(GADD45)!=GADD45), (next(GRB2)!=GRB2), (next(Growth_Arrest)!=Growth_Arrest), (next(JNK)!=JNK), (next(JUN)!=JUN), (next(MAP3K1_3)!=MAP3K1_3), (next(MAX1)!=MAX1), (next(MDM2)!=MDM2), (next(MEK1_2)!=MEK1_2), (next(MSK)!=MSK), (next(MTK1)!=MTK1), (next(MYC)!=MYC), (next(PDK1)!=PDK1), (next(PI3K)!=PI3K), (next(PKC)!=PKC), (next(PLCG)!=PLCG), (next(PPP2CA)!=PPP2CA), (next(PTEN)!=PTEN), (next(Proliferation)!=Proliferation), (next(RAF)!=RAF), (next(RAS)!=RAS), (next(RSK)!=RSK), (next(SMAD)!=SMAD), (next(SOS)!=SOS), (next(SPRY)!=SPRY), (next(TAK1)!=TAK1), (next(TAOK)!=TAOK), (next(TGFBR)!=TGFBR), (next(TGFBR_stimulus)!=TGFBR_stimulus), (next(p14)!=p14), (next(p21)!=p21), (next(p38)!=p38), (next(p53)!=p53), (next(p70)!=p70))=1;
+
+
+INIT TRUE
+
+CTLSPEC EF(!AKT&AP1&!ATF2&!ATM&Apoptosis&!BCL2&CREB&!DNA_damage&!DUSP1&EGFR&!EGFR_stimulus&!ELK1&ERK&FGFR3&FGFR3_stimulus&!FOS&FOXO3&!FRS2&GAB1&!GADD45&GRB2&!Growth_Arrest&JNK&!JUN&!MAP3K1_3&!MAX1&!MDM2&!MEK1_2&MSK&!MTK1&MYC&PDK1&PI3K&PKC&!PLCG&!PPP2CA&!PTEN&!Proliferation&RAF&!RAS&RSK&!SMAD&!SOS&SPRY&!TAK1&!TAOK&!TGFBR&!TGFBR_stimulus&p14&!p21&p38&p53&!p70)
+
+CTLSPEC EF(AKT&!AP1&ATF2&!ATM&Apoptosis&!BCL2&!CREB&!DNA_damage&!DUSP1&!EGFR&EGFR_stimulus&ELK1&ERK&!FGFR3&FGFR3_stimulus&!FOS&FOXO3&!FRS2&GAB1&!GADD45&!GRB2&Growth_Arrest&!JNK&JUN&MAP3K1_3&!MAX1&MDM2&!MEK1_2&!MSK&!MTK1&MYC&PDK1&PI3K&!PKC&!PLCG&PPP2CA&PTEN&Proliferation&!RAF&RAS&RSK&!SMAD&!SOS&SPRY&!TAK1&!TAOK&!TGFBR&!TGFBR_stimulus&p14&p21&!p38&p53&p70)
+
+CTLSPEC EF(AKT&AP1&!ATF2&!ATM&!Apoptosis&BCL2&CREB&!DNA_damage&DUSP1&EGFR&EGFR_stimulus&ELK1&ERK&!FGFR3&!FGFR3_stimulus&!FOS&!FOXO3&!FRS2&GAB1&GADD45&GRB2&Growth_Arrest&JNK&JUN&!MAP3K1_3&!MAX1&!MDM2&MEK1_2&!MSK&MTK1&MYC&PDK1&PI3K&!PKC&!PLCG&PPP2CA&PTEN&!Proliferation&RAF&!RAS&!RSK&!SMAD&SOS&SPRY&!TAK1&!TAOK&!TGFBR&!TGFBR_stimulus&!p14&!p21&!p38&p53&!p70)
+
+CTLSPEC EF(!AKT&AP1&ATF2&ATM&Apoptosis&!BCL2&CREB&DNA_damage&DUSP1&!EGFR&EGFR_stimulus&ELK1&!ERK&!FGFR3&FGFR3_stimulus&!FOS&FOXO3&FRS2&GAB1&GADD45&GRB2&Growth_Arrest&JNK&JUN&!MAP3K1_3&MAX1&!MDM2&!MEK1_2&MSK&MTK1&MYC&PDK1&PI3K&PKC&!PLCG&PPP2CA&PTEN&!Proliferation&RAF&RAS&!RSK&!SMAD&!SOS&!SPRY&!TAK1&TAOK&!TGFBR&!TGFBR_stimulus&p14&p21&p38&p53&!p70)
+
+CTLSPEC EF(!AKT&AP1&ATF2&ATM&Apoptosis&!BCL2&CREB&DNA_damage&DUSP1&!EGFR&!EGFR_stimulus&ELK1&!ERK&!FGFR3&FGFR3_stimulus&!FOS&FOXO3&FRS2&GAB1&GADD45&GRB2&Growth_Arrest&JNK&JUN&!MAP3K1_3&MAX1&!MDM2&!MEK1_2&MSK&MTK1&MYC&PDK1&PI3K&!PKC&!PLCG&PPP2CA&PTEN&!Proliferation&!RAF&!RAS&!RSK&!SMAD&!SOS&!SPRY&!TAK1&TAOK&!TGFBR&!TGFBR_stimulus&p14&p21&p38&p53&!p70)
+
+CTLSPEC EF(!AKT&AP1&ATF2&ATM&Apoptosis&!BCL2&CREB&DNA_damage&DUSP1&EGFR&EGFR_stimulus&ELK1&!ERK&!FGFR3&!FGFR3_stimulus&!FOS&FOXO3&!FRS2&GAB1&GADD45&GRB2&Growth_Arrest&JNK&JUN&MAP3K1_3&MAX1&!MDM2&!MEK1_2&MSK&MTK1&MYC&PDK1&PI3K&!PKC&PLCG&PPP2CA&PTEN&!Proliferation&RAF&RAS&!RSK&!SMAD&!SOS&!SPRY&!TAK1&TAOK&!TGFBR&!TGFBR_stimulus&p14&p21&p38&p53&!p70)
+
+CTLSPEC EF(!AKT&!AP1&!ATF2&!ATM&!Apoptosis&!BCL2&!CREB&!DNA_damage&!DUSP1&!EGFR&!EGFR_stimulus&!ELK1&!ERK&!FGFR3&!FGFR3_stimulus&!FOS&!FOXO3&!FRS2&!GAB1&!GADD45&!GRB2&!Growth_Arrest&!JNK&!JUN&!MAP3K1_3&!MAX1&!MDM2&!MEK1_2&!MSK&!MTK1&!MYC&!PDK1&!PI3K&!PKC&!PLCG&!PPP2CA&!PTEN&!Proliferation&!RAF&!RAS&!RSK&!SMAD&!SOS&!SPRY&!TAK1&!TAOK&!TGFBR&!TGFBR_stimulus&!p14&!p21&!p38&!p53&!p70)
+
+CTLSPEC EF(!AKT&AP1&ATF2&!ATM&Apoptosis&!BCL2&CREB&!DNA_damage&DUSP1&!EGFR&!EGFR_stimulus&ELK1&!ERK&!FGFR3&!FGFR3_stimulus&!FOS&FOXO3&!FRS2&GAB1&GADD45&GRB2&Growth_Arrest&JNK&JUN&MAP3K1_3&MAX1&!MDM2&!MEK1_2&MSK&MTK1&MYC&PDK1&PI3K&!PKC&!PLCG&PPP2CA&PTEN&!Proliferation&RAF&RAS&!RSK&SMAD&SOS&!SPRY&TAK1&!TAOK&TGFBR&TGFBR_stimulus&p14&p21&p38&p53&!p70)
+
+CTLSPEC EF(!AKT&AP1&ATF2&!ATM&Apoptosis&!BCL2&CREB&!DNA_damage&DUSP1&!EGFR&!EGFR_stimulus&ELK1&!ERK&!FGFR3&FGFR3_stimulus&!FOS&FOXO3&!FRS2&GAB1&GADD45&GRB2&Growth_Arrest&JNK&JUN&MAP3K1_3&MAX1&!MDM2&!MEK1_2&MSK&MTK1&MYC&PDK1&PI3K&!PKC&!PLCG&PPP2CA&PTEN&!Proliferation&RAF&RAS&!RSK&SMAD&SOS&!SPRY&TAK1&!TAOK&TGFBR&TGFBR_stimulus&p14&p21&p38&p53&!p70)
+
+CTLSPEC EF(!AKT&AP1&ATF2&!ATM&Apoptosis&!BCL2&CREB&!DNA_damage&DUSP1&!EGFR&EGFR_stimulus&ELK1&!ERK&!FGFR3&!FGFR3_stimulus&!FOS&FOXO3&!FRS2&GAB1&GADD45&GRB2&Growth_Arrest&JNK&JUN&MAP3K1_3&MAX1&!MDM2&!MEK1_2&MSK&MTK1&MYC&PDK1&PI3K&!PKC&!PLCG&PPP2CA&PTEN&!Proliferation&RAF&RAS&!RSK&SMAD&SOS&!SPRY&TAK1&!TAOK&TGFBR&TGFBR_stimulus&p14&p21&p38&p53&!p70)
+
+CTLSPEC EF(!AKT&AP1&ATF2&!ATM&Apoptosis&!BCL2&CREB&!DNA_damage&DUSP1&!EGFR&EGFR_stimulus&ELK1&!ERK&!FGFR3&FGFR3_stimulus&!FOS&FOXO3&!FRS2&GAB1&GADD45&GRB2&Growth_Arrest&JNK&JUN&MAP3K1_3&MAX1&!MDM2&!MEK1_2&MSK&MTK1&MYC&PDK1&PI3K&!PKC&!PLCG&PPP2CA&PTEN&!Proliferation&RAF&RAS&!RSK&SMAD&SOS&!SPRY&TAK1&!TAOK&TGFBR&TGFBR_stimulus&p14&p21&p38&p53&!p70)
+
+CTLSPEC EF(!AKT&AP1&ATF2&ATM&Apoptosis&!BCL2&CREB&DNA_damage&DUSP1&!EGFR&!EGFR_stimulus&ELK1&!ERK&!FGFR3&!FGFR3_stimulus&!FOS&FOXO3&!FRS2&!GAB1&GADD45&!GRB2&Growth_Arrest&JNK&JUN&!MAP3K1_3&MAX1&!MDM2&!MEK1_2&MSK&MTK1&MYC&!PDK1&!PI3K&!PKC&!PLCG&PPP2CA&PTEN&!Proliferation&!RAF&!RAS&!RSK&!SMAD&!SOS&!SPRY&!TAK1&TAOK&!TGFBR&!TGFBR_stimulus&p14&p21&p38&p53&!p70)
+
+CTLSPEC EF(!AKT&AP1&ATF2&ATM&Apoptosis&!BCL2&CREB&DNA_damage&DUSP1&!EGFR&!EGFR_stimulus&ELK1&!ERK&!FGFR3&!FGFR3_stimulus&!FOS&FOXO3&!FRS2&GAB1&GADD45&!GRB2&Growth_Arrest&JNK&JUN&!MAP3K1_3&MAX1&!MDM2&!MEK1_2&MSK&MTK1&MYC&PDK1&PI3K&!PKC&!PLCG&PPP2CA&PTEN&!Proliferation&!RAF&!RAS&!RSK&!SMAD&!SOS&!SPRY&!TAK1&TAOK&!TGFBR&!TGFBR_stimulus&p14&p21&p38&p53&!p70)
+
+CTLSPEC EF(!AKT&AP1&ATF2&ATM&Apoptosis&!BCL2&CREB&DNA_damage&DUSP1&!EGFR&!EGFR_stimulus&ELK1&!ERK&!FGFR3&!FGFR3_stimulus&!FOS&FOXO3&!FRS2&GAB1&GADD45&GRB2&Growth_Arrest&JNK&JUN&MAP3K1_3&MAX1&!MDM2&!MEK1_2&MSK&MTK1&MYC&PDK1&PI3K&!PKC&!PLCG&PPP2CA&PTEN&!Proliferation&RAF&RAS&!RSK&SMAD&SOS&!SPRY&TAK1&TAOK&TGFBR&TGFBR_stimulus&p14&p21&p38&p53&!p70)
+
+CTLSPEC EF(!AKT&AP1&ATF2&ATM&Apoptosis&!BCL2&CREB&DNA_damage&DUSP1&!EGFR&!EGFR_stimulus&ELK1&!ERK&!FGFR3&FGFR3_stimulus&!FOS&FOXO3&!FRS2&GAB1&GADD45&GRB2&Growth_Arrest&JNK&JUN&MAP3K1_3&MAX1&!MDM2&!MEK1_2&MSK&MTK1&MYC&PDK1&PI3K&!PKC&!PLCG&PPP2CA&PTEN&!Proliferation&RAF&RAS&!RSK&SMAD&SOS&!SPRY&TAK1&TAOK&TGFBR&TGFBR_stimulus&p14&p21&p38&p53&!p70)
+
+CTLSPEC EF(!AKT&AP1&ATF2&ATM&Apoptosis&!BCL2&CREB&DNA_damage&DUSP1&!EGFR&EGFR_stimulus&ELK1&!ERK&!FGFR3&!FGFR3_stimulus&!FOS&FOXO3&!FRS2&GAB1&GADD45&GRB2&Growth_Arrest&JNK&JUN&MAP3K1_3&MAX1&!MDM2&!MEK1_2&MSK&MTK1&MYC&PDK1&PI3K&!PKC&!PLCG&PPP2CA&PTEN&!Proliferation&RAF&RAS&!RSK&SMAD&SOS&!SPRY&TAK1&TAOK&TGFBR&TGFBR_stimulus&p14&p21&p38&p53&!p70)
+
+CTLSPEC EF(!AKT&AP1&ATF2&ATM&Apoptosis&!BCL2&CREB&DNA_damage&DUSP1&!EGFR&EGFR_stimulus&ELK1&!ERK&!FGFR3&FGFR3_stimulus&!FOS&FOXO3&!FRS2&GAB1&GADD45&GRB2&Growth_Arrest&JNK&JUN&MAP3K1_3&MAX1&!MDM2&!MEK1_2&MSK&MTK1&MYC&PDK1&PI3K&!PKC&!PLCG&PPP2CA&PTEN&!Proliferation&RAF&RAS&!RSK&SMAD&SOS&!SPRY&TAK1&TAOK&TGFBR&TGFBR_stimulus&p14&p21&p38&p53&!p70)
+
+CTLSPEC EF(AKT&!AP1&!ATF2&!ATM&!Apoptosis&!BCL2&!CREB&!DNA_damage&!DUSP1&!EGFR&!EGFR_stimulus&!ELK1&!ERK&!FGFR3&!FGFR3_stimulus&!FOS&!FOXO3&!FRS2&GAB1&!GADD45&!GRB2&!Growth_Arrest&!JNK&!JUN&!MAP3K1_3&!MAX1&MDM2&!MEK1_2&!MSK&!MTK1&!MYC&PDK1&PI3K&!PKC&!PLCG&!PPP2CA&!PTEN&!Proliferation&!RAF&!RAS&!RSK&!SMAD&!SOS&!SPRY&!TAK1&!TAOK&!TGFBR&!TGFBR_stimulus&!p14&!p21&!p38&!p53&!p70)
