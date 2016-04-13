@@ -1,16 +1,18 @@
-CTLSPEC: 	    (EF ((!Erk & !Mek) & Raf) & EF ((Erk & Mek) & Raf))  
-INIT: 		    TRUE
-ACCEPTING: 	    (Erk & !Mek) | (Mek & !Raf)
-INITACCEPTING:  (Erk & !Mek) | (Mek & !Raf)
+CTLSPEC: 	       (EF ((!Erk & !Mek) & Raf) & EF ((Erk & Mek) & Raf))  
+INIT(8):  	       TRUE
+ACCEPTING: 	       (Erk & !Mek) | (Mek & !Raf)
+INITACCEPTING:     (Erk & !Mek) | (Mek & !Raf)
+ANSWER:            FALSE
 
-CTLSPEC: 	    (!(EF ((!Erk & !Mek) & Raf)) & EF ((Erk & Mek) & Raf))  
-INIT: 		    TRUE
-ACCEPTING: 	    (Mek & (Erk | Raf))
-INITACCEPTING:  (Mek & (Erk | Raf))
+CTLSPEC: 	       (!(EF ((!Erk & !Mek) & Raf)) & EF ((Erk & Mek) & Raf))  
+INIT(8): 	       TRUE
+ACCEPTING(3):      (Mek & (Erk | Raf))
+INITACCEPTING(3):  (Mek & (Erk | Raf))
+ANSWER:            FALSE
 
-CTLSPEC: 	    (EF ((!Erk & !Mek) & Raf) & !(EF ((Erk & Mek) & Raf)))  
-INIT: 		    TRUE
-ACCEPTING: 	    (!Erk & !Mek)
-INITACCEPTING:  (!Erk & !Mek)
-
+CTLSPEC: 	       (EF ((!Erk & !Mek) & Raf) & !(EF ((Erk & Mek) & Raf)))  
+INIT(8): 	       TRUE
+ACCEPTING(2):      (!Erk & !Mek)
+INITACCEPTING(2):  (!Erk & !Mek)
+ANSWER:            FALSE
 
