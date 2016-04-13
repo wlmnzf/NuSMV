@@ -766,13 +766,11 @@ void NuSMVCore_init_cmd_options(NuSMVEnv_ptr env)
   
   // TEST: Versuch, neue env_command_line_option zu setzen
   NuSMVCore_add_env_command_line_option("-a", 
-					"Prints accepting states, "
-					"initial states and "
-					"initial accepting states. "
+					"prints a factored form formula of the accepting states "
 					"to the file \"filename\" or "
 					"to the command line, if \"print\" is "
-					"specified as filename.",
-					"interesting_states", PRINT_ACCEPTING, true,
+					"specified as filename",
+					"filename", PRINT_ACCEPTING, true,
 					false, NULL, NULL);
 
   FREE(libraryName);
