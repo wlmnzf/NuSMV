@@ -1,0 +1,58 @@
+-- created on 13. Apr. 2016 using PyBoolNet
+-- available at "sourceforge.net/projects/boolnetfixpoints".
+
+
+MODULE main
+
+VAR
+	ACE2: boolean;
+	CLN3: boolean;
+	HCM1: boolean;
+	MBF: boolean;
+	SBF: boolean;
+	SFF: boolean;
+	SWI5: boolean;
+	YHP1: boolean;
+	YOX1: boolean;
+
+DEFINE
+	ACE2_IMAGE := SFF;
+	CLN3_IMAGE := SWI5&ACE2&!YOX1 | SWI5&ACE2&!YHP1;
+	HCM1_IMAGE := MBF&SBF;
+	MBF_IMAGE := CLN3;
+	SBF_IMAGE := !YOX1&MBF | MBF&!YHP1 | !YOX1&CLN3 | CLN3&!YHP1;
+	SFF_IMAGE := HCM1&SBF;
+	SWI5_IMAGE := SFF;
+	YHP1_IMAGE := SBF | MBF;
+	YOX1_IMAGE := MBF&SBF;
+
+	ACE2_STEADY := (ACE2_IMAGE = ACE2);
+	CLN3_STEADY := (CLN3_IMAGE = CLN3);
+	HCM1_STEADY := (HCM1_IMAGE = HCM1);
+	MBF_STEADY := (MBF_IMAGE = MBF);
+	SBF_STEADY := (SBF_IMAGE = SBF);
+	SFF_STEADY := (SFF_IMAGE = SFF);
+	SWI5_STEADY := (SWI5_IMAGE = SWI5);
+	YHP1_STEADY := (YHP1_IMAGE = YHP1);
+	YOX1_STEADY := (YOX1_IMAGE = YOX1);
+
+	SUCCESSORS := count((!ACE2_STEADY), (!CLN3_STEADY), (!HCM1_STEADY), (!MBF_STEADY), (!SBF_STEADY), (!SFF_STEADY), (!SWI5_STEADY), (!YHP1_STEADY), (!YOX1_STEADY));
+	STEADYSTATE := (SUCCESSORS = 0);
+
+ASSIGN
+	next(ACE2) := {ACE2, ACE2_IMAGE};
+	next(CLN3) := {CLN3, CLN3_IMAGE};
+	next(HCM1) := {HCM1, HCM1_IMAGE};
+	next(MBF) := {MBF, MBF_IMAGE};
+	next(SBF) := {SBF, SBF_IMAGE};
+	next(SFF) := {SFF, SFF_IMAGE};
+	next(SWI5) := {SWI5, SWI5_IMAGE};
+	next(YHP1) := {YHP1, YHP1_IMAGE};
+	next(YOX1) := {YOX1, YOX1_IMAGE};
+
+TRANS STEADYSTATE | count((next(ACE2)!=ACE2), (next(CLN3)!=CLN3), (next(HCM1)!=HCM1), (next(MBF)!=MBF), (next(SBF)!=SBF), (next(SFF)!=SFF), (next(SWI5)!=SWI5), (next(YHP1)!=YHP1), (next(YOX1)!=YOX1))=1;
+
+
+INIT TRUE
+
+CTLSPEC EF(!ACE2&!CLN3&!HCM1&!MBF&!SBF&!SFF&!SWI5&!YHP1&!YOX1)

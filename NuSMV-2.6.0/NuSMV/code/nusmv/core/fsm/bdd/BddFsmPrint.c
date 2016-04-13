@@ -511,29 +511,6 @@ int BddFsm_print_reachable_states(BddFsm_ptr self,
 
   return retval;
 }
-int BddFsm_print_fucking_states(BddFsm_ptr self,
-                                  NuSMVEnv_ptr env, OStream_ptr stream,
-                                  boolean verbose, boolean print_defines,
-                                  boolean formula)
-{
-  OptsHandler_ptr const opts =
-     OPTS_HANDLER(NuSMVEnv_get_value(env, ENV_OPTS_HANDLER));
-  const StreamMgr_ptr streams =
-      STREAM_MGR(NuSMVEnv_get_value(env, ENV_STREAM_MANAGER));
-
-  int retval = 0;
-
-  set_forward_search(opts);
-  set_print_reachable(opts);
-
-  StreamMgr_print_output(streams, HEADER_SEPARATOR);
-  BddFsm_print_reachable_states_info(
-      BDD_FSM(NuSMVEnv_get_value(env, ENV_BDD_FSM)),
-      verbose, print_defines, formula, stream);
-  StreamMgr_print_output(streams, HEADER_SEPARATOR);
-
-  return retval;
-}
 
 
 int BddFsm_print_fair_states(BddFsm_ptr self,

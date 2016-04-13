@@ -1,4 +1,14 @@
 
+### Source rekursiv durchsuchen
+
+`grep -rn "Prop_get_status" "."`
+
+### Links zu Dateien
+
+ - [nusmv/core/mc/mcMc.c](./NuSMV-2.6.0/NuSMV/code/nusmv/core/mc/mcMc.c)
+ - [nusmv/core/fsm/bdd/BddFsmPrint.c](./NuSMV-2.6.0/NuSMV/code/nusmv/core/fsm/bdd/BddFsmPrint.c)
+
+
 ### Unterschied zwischen zwei Versionen Anzeigen
 
 https://github.com/hklarner/SWP2016/compare
@@ -31,9 +41,7 @@ Welche Rolle spielt die Funktion `check_and_apply(..)` in Schritt 4) ?
 Beipiel: Wie wird die Option `-v` mit dem zusätzlichen Parameter `vl` (Zeile 747) definiert?
 Erzeugt die "environment variable" `VERBOSE_LEVEL`. Wo und wie wird die verwendet?
 
-Suchen mit grep.
-
-`grep -rnw "." -e "VERBOSE_LEVEL"`. In vier Dateien:
+Suchen mit grep:
 
 * [./NuSMV-2.6.0/NuSMV/code/nusmv/core/opt/opt.h](./NuSMV-2.6.0/NuSMV/code/nusmv/core/opt/opt.h)
 * [./NuSMV-2.6.0/NuSMV/code/nusmv/core/opt/opt.c](./NuSMV-2.6.0/NuSMV/code/nusmv/core/opt/opt.c)
