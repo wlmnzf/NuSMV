@@ -1,7 +1,7 @@
 CTLSPEC: 	       (EF ((!Erk & !Mek) & Raf) & EF ((Erk & Mek) & Raf))  
 INIT(8):  	       TRUE
-ACCEPTING: 	       (Erk & !Mek) | (Mek & !Raf)
-INITACCEPTING:     (Erk & !Mek) | (Mek & !Raf)
+ACCEPTING(4):      (Erk & !Mek) | (Mek & !Raf)
+INITACCEPTING(4):  (Erk & !Mek) | (Mek & !Raf)
 ANSWER:            FALSE
 
 CTLSPEC: 	       (!(EF ((!Erk & !Mek) & Raf)) & EF ((Erk & Mek) & Raf))  
