@@ -7,6 +7,7 @@ bdd/BddFsmPrint.c
 bdd/BddFsmCache.c
 bdd/bddMisc.c
 bdd/FairnessList.c
+bdd/BddFsmPrintAc.c
 
 be/BeFsm.c
 
@@ -30,6 +31,7 @@ nusmv_add_pkg_headers(
   bdd/BddFsm_private.h
   bdd/bdd.h
   bdd/FairnessList.h
+  bdd/BddFsmPrintAc.h
 
   be/BeFsm.h
   )
