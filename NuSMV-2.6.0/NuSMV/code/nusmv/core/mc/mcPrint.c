@@ -34,8 +34,6 @@ void print_accepting_states(NuSMVEnv_ptr env,
 		  bdd_ptr accepted)
 {
   
-  // TODO welche Variablen brauchen wir wirklich?
-  const BddFsm_ptr diagram = BDD_FSM(NuSMVEnv_get_value(env, ENV_BDD_FSM));
   const MasterPrinter_ptr wffprint =
     MASTER_PRINTER(NuSMVEnv_get_value(env, ENV_WFF_PRINTER));
   OStream_ptr stream = StreamMgr_get_output_ostream(streams);
@@ -98,7 +96,7 @@ void print_accepting_states(NuSMVEnv_ptr env,
       txt_output = OStream_create_file(txt_file_name, true);
     }
     else{
-     txt_output = OStream_create_file(txt_file_name, false); 
+      txt_output = OStream_create_file(txt_file_name, false); 
     }
     
     out = fopen(txt_file_name, "a");
@@ -134,7 +132,7 @@ void print_accepting_states(NuSMVEnv_ptr env,
   
   bdd_free(dd,init_and_accepted);
   
-    /* aufraeumen */
+  /* aufraeumen */
   {
     int i;
     /* free inames */

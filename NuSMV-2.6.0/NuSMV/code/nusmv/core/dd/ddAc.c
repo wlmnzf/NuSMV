@@ -126,14 +126,6 @@ Cudd_DumpFormula_modified(
 
     /* Call the function that really gets the job done. */
     for (i = 0; i < n; i++) {
-    
-   /*
-	if (onames == NULL) {
-	    retval = fprintf(fp, "f%d = ", i);
-	} else {
-	    retval = fprintf(fp, "%s = ", onames[i]);
-	}
-	*/
 	
 	if (retval == EOF) return(0);
 	if (f[i] == DD_TRUE(dd)) {
@@ -166,7 +158,6 @@ int dd_dump_factored_form_modified(
     int n /* number of output nodes to be dumped */,
     dd_ptr *f /* array of output nodes to be dumped */,
     const char ** inames /* array of input names (or NULL) */,
-    //const char ** onames /* array of output names (or NULL) */,
     FILE * fp /* pointer to the dump file */)
 {
     return(Cudd_DumpFormula_modified(dd->dd, n, (DdNode **)f,
