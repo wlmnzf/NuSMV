@@ -31,8 +31,7 @@ void print_accepting_states(NuSMVEnv_ptr env,
 		  const OptsHandler_ptr opts,
 		  const StreamMgr_ptr streams,
 		  bdd_ptr init, 
-		  bdd_ptr accepted, 
-		  bdd_ptr init_and_accepted)
+		  bdd_ptr accepted)
 {
   
   // TODO welche Variablen brauchen wir wirklich?
@@ -49,12 +48,15 @@ void print_accepting_states(NuSMVEnv_ptr env,
   int chars;
   
   const char** inames;
-  const char** onames;
   int lev;
   
   FILE * out = StreamMgr_get_output_stream(streams);
   const int dd_size = dd_get_size(dd);
   
+  bdd_ptr init_and_accepted = bdd_dup(init);
+  bdd_and_accumulate(dd, &init_and_accepted, accepted);
+    
+    
   
   
   /* get input names */
@@ -71,9 +73,6 @@ void print_accepting_states(NuSMVEnv_ptr env,
       inames[lev] = (const char*) NULL;
     }
   }
-  /* set output names */
-  onames = ALLOC( const char*, 1);
-  nusmv_assert((const char**) NULL != onames);
 
   
   if(strcmp(file_name, "print") == 0) {
@@ -133,6 +132,8 @@ void print_accepting_states(NuSMVEnv_ptr env,
     
   }
   
+  bdd_free(dd,init_and_accepted);
+  
     /* aufraeumen */
   {
     int i;
@@ -141,7 +142,6 @@ void print_accepting_states(NuSMVEnv_ptr env,
       if( (const char*) NULL != inames[i]) { free( inames[i]); }
     }
     FREE(inames);
-    FREE(onames);
   }
   
 }

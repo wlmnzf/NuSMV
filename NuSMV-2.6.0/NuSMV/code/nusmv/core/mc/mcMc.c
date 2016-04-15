@@ -223,14 +223,11 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
    * if commandline parameter "-a interesting_states" is set */
   if(get_print_accepting(opts) != NULL) {
   
-    init = BddFsm_get_init(fsm);
-    init_and_accepted = bdd_dup(init);
-    bdd_and_accumulate(dd, &init_and_accepted, accepted);       
+    init = BddFsm_get_init(fsm);      
     
-    print_accepting_states(env, prop, dd, enc, opts, streams, init, accepted, init_and_accepted);
+    print_accepting_states(env, prop, dd, enc, opts, streams, init, accepted);
     
     bdd_free(dd,init);
-    bdd_free(dd,init_and_accepted);
     bdd_free(dd,accepted);
   }
   
