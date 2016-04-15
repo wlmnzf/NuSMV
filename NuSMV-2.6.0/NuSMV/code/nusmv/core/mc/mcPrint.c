@@ -103,18 +103,10 @@ void print_accepting_states(NuSMVEnv_ptr env,
     }
     
     out = fopen(txt_file_name, "a");
-    
-    
-    //print_spec_only(txt_output, prop, get_prop_print_method(opts));
-    //OStream_printf(txt_output, "\n");
-    //OStream_flush(txt_output);
-
-    //void print_spec_only(OStream_ptr file, Prop_ptr prop, Prop_PrintFmt fmt)
 
     OStream_printf(txt_output, "CTLSPEC:       ");
     Prop_print(prop, txt_output, get_prop_print_method(opts));
     OStream_printf(txt_output, "\n");
-      
 
     fprintf(out, "INIT:          ");
     dd_dump_factored_form_modified(dd, 1, &init, inames, out);
@@ -153,15 +145,6 @@ void print_accepting_states(NuSMVEnv_ptr env,
   }
   
 }
-
-/* TODO Comments*/
-void print_spec_only(OStream_ptr file, Prop_ptr prop, Prop_PrintFmt fmt)
-{
-  OStream_printf(file, "CTLSPEC:       ");
-  Prop_print(prop, file, fmt);
-  OStream_printf(file, " ");
-}
-
 
 /*
 void print_bdd_size(const BddFsm_ptr self, 
