@@ -21,88 +21,90 @@
 #include "nusmv/core/prop/propPkg.h"
 
 #include "nusmv/core/fsm/bdd/BddFsm.h"
+#include "nusmv/core/fsm/bdd/BddFsm_private.h"
+#include "nusmv/core/dd/ddAc.h"
 
 
-/* Neuer Versuch: output mit dd_dump_factored_form 
- * und input names */
-void try_to_print_this(NuSMVEnv_ptr env, 
-		       Prop_ptr prop,
-		       DDMgr_ptr dd,
-		       BddEnc_ptr enc,
-		       bdd_ptr init,
-		       bdd_ptr accepted,
-		       bdd_ptr init_and_accepted,
-		       const StreamMgr_ptr streams)
-{
-  const MasterPrinter_ptr wffprint =
-    MASTER_PRINTER(NuSMVEnv_get_value(env, ENV_WFF_PRINTER));
-    
-  
-  
-  const int dd_size = dd_get_size(dd);
-  const char** inames;
-  const char** onames;// = {"Initial States", "Accepting States", "Initial Accepting States"};
-  int lev, i;
-  
-  FILE * out = StreamMgr_get_output_stream(streams); 
-  
-  
-  
-  /* get input names */
-  inames = ALLOC( const char*, dd_size);
-  nusmv_assert((const char**) NULL != inames);
-  
-  for(lev = 0; lev < dd_size; ++lev) {
-    int index = dd_get_index_at_level(dd, lev);
-    if(BddEnc_has_var_at_index(enc, index)) {
-      inames[lev] = (const char*) sprint_node(wffprint,
-                      BddEnc_get_var_name_from_index(enc, index));
-    }
-    else {
-      inames[lev] = (const char*) NULL;
-    }
-  }
-  /* set output names */
-  onames = ALLOC( const char*, 1);
-  nusmv_assert((const char**) NULL != onames);
-  
-  onames[0] = "Initial States";
-  
-  
-//   onames[0] = "Initial States";
-  
-  StreamMgr_print_output(streams,  "Test DumpFactoredForm Initial States: ");
-  dd_dump_factored_form(dd, 1, &init, inames, onames, out);
-  StreamMgr_print_output(streams, "\n");
-  
-//   free(*onames);
-
-  onames[0] = "Accepting States";
-  StreamMgr_print_output(streams,  "Test DumpFactoredForm Accepting States: ");
-  dd_dump_factored_form(dd, 1, &accepted, inames, onames, out);
-  StreamMgr_print_output(streams, "\n");
-  
-  onames[0] = "Initial and Accepting States";
-  StreamMgr_print_output(streams,  "Test DumpFactoredForm Initial and Accepting States: ");
-  dd_dump_factored_form(dd, 1, &init_and_accepted, inames, onames, out);
-  StreamMgr_print_output(streams, "\n");
-  
-  
-  /* aufraeumen */
-  {
-    int i;
-    /* free inames */
-    for( i=0; i < dd_size; ++i) {
-      if( (const char*) NULL != inames[i]) { free( inames[i]); }
-    }
-//     if( (const char*) NULL != onames[0]) { free( onames[0]); }
-    FREE(inames);
-    FREE(onames);
-  }
-//   free(onames[0]);
-//   free(onames);
+// /* Neuer Versuch: output mit dd_dump_factored_form 
+//  * und input names */
+// void try_to_print_this(NuSMVEnv_ptr env, 
+// 		       Prop_ptr prop,
+// 		       DDMgr_ptr dd,
+// 		       BddEnc_ptr enc,
+// 		       bdd_ptr init,
+// 		       bdd_ptr accepted,
+// 		       bdd_ptr init_and_accepted,
+// 		       const StreamMgr_ptr streams)
+// {
+//   const MasterPrinter_ptr wffprint =
+//     MASTER_PRINTER(NuSMVEnv_get_value(env, ENV_WFF_PRINTER));
+//     
 //   
-}
+//   
+//   const int dd_size = dd_get_size(dd);
+//   const char** inames;
+//   const char** onames;// = {"Initial States", "Accepting States", "Initial Accepting States"};
+//   int lev, i;
+//   
+//   FILE * out = StreamMgr_get_output_stream(streams); 
+//   
+//   
+//   
+//   /* get input names */
+//   inames = ALLOC( const char*, dd_size);
+//   nusmv_assert((const char**) NULL != inames);
+//   
+//   for(lev = 0; lev < dd_size; ++lev) {
+//     int index = dd_get_index_at_level(dd, lev);
+//     if(BddEnc_has_var_at_index(enc, index)) {
+//       inames[lev] = (const char*) sprint_node(wffprint,
+//                       BddEnc_get_var_name_from_index(enc, index));
+//     }
+//     else {
+//       inames[lev] = (const char*) NULL;
+//     }
+//   }
+//   /* set output names */
+//   onames = ALLOC( const char*, 1);
+//   nusmv_assert((const char**) NULL != onames);
+//   
+//   onames[0] = "Initial States";
+//   
+//   
+// //   onames[0] = "Initial States";
+//   
+//   StreamMgr_print_output(streams,  "Test DumpFactoredForm Initial States: ");
+//   dd_dump_factored_form(dd, 1, &init, inames, onames, out);
+//   StreamMgr_print_output(streams, "\n");
+//   
+// //   free(*onames);
+// 
+//   onames[0] = "Accepting States";
+//   StreamMgr_print_output(streams,  "Test DumpFactoredForm Accepting States: ");
+//   dd_dump_factored_form(dd, 1, &accepted, inames, onames, out);
+//   StreamMgr_print_output(streams, "\n");
+//   
+//   onames[0] = "Initial and Accepting States";
+//   StreamMgr_print_output(streams,  "Test DumpFactoredForm Initial and Accepting States: ");
+//   dd_dump_factored_form(dd, 1, &init_and_accepted, inames, onames, out);
+//   StreamMgr_print_output(streams, "\n");
+//   
+//   
+//   /* aufraeumen */
+//   {
+//     int i;
+//     /* free inames */
+//     for( i=0; i < dd_size; ++i) {
+//       if( (const char*) NULL != inames[i]) { free( inames[i]); }
+//     }
+// //     if( (const char*) NULL != onames[0]) { free( onames[0]); }
+//     FREE(inames);
+//     FREE(onames);
+//   }
+// //   free(onames[0]);
+// //   free(onames);
+// //   
+// }
 
 void print_states(NuSMVEnv_ptr env,
 		  Prop_ptr prop,
@@ -261,4 +263,88 @@ void print_spec_only(OStream_ptr file, Prop_ptr prop, Prop_PrintFmt fmt)
   OStream_printf(file, "CTLSPEC: \t");
   Prop_print(prop, file, fmt);
   OStream_printf(file, " ");
+}
+
+
+
+void BddFsm_print_interesting_states_info(const BddFsm_ptr self, 
+					bdd_ptr interesting_states,
+                                        const boolean print_states,
+                                        const boolean print_defines,
+                                        const boolean print_formula,
+                                        OStream_ptr file,
+					DDMgr_ptr dd,
+					dd_ptr * states,
+					const char ** inames,
+					const char ** onames,
+					FILE * output)
+{
+  bdd_ptr reachable;
+  bdd_ptr mask;
+  double reached_cardinality;
+  double search_space_cardinality;
+
+  BDD_FSM_CHECK_INSTANCE(self);
+
+  mask = BddEnc_get_state_frozen_vars_mask_bdd(self->enc);
+
+  reachable = interesting_states;
+
+  bdd_and_accumulate(self->dd, &reachable, mask);
+  
+  reached_cardinality = BddEnc_count_states_of_bdd(self->enc, reachable);
+  search_space_cardinality = BddEnc_count_states_of_bdd(self->enc, mask);
+  bdd_free(self->dd, mask);
+
+
+  /* one of these flags can be enabled, not both */
+  nusmv_assert(!print_states || !print_formula);
+  if (print_states) {
+    BddEnc_print_set_of_states(self->enc, reachable, false, print_defines,
+                               (VPFBEFNNV) NULL, file, NULL);
+  }
+  
+  // TODO hier stattdessen dump_factored_form verwenden?
+  
+  else if (print_formula) {
+//     BoolEnc_ptr benc = BoolEncClient_get_bool_enc(BOOL_ENC_CLIENT(self->enc));
+// 
+//     const array_t* layer_names =
+//       BaseEnc_get_committed_layer_names(BASE_ENC(self->enc));
+// 
+//     SymbTable_ptr st = BaseEnc_get_symb_table(BASE_ENC(self->enc));
+//     NodeList_ptr all_vars = SymbTable_get_layers_sf_vars(st, layer_names);
+//     NodeList_ptr scalar_vars = NodeList_create();
+//     ListIter_ptr iter;
+// 
+//     /* encoding variables are not allowed in the wff printer */
+//     NODE_LIST_FOREACH(all_vars, iter) {
+//       node_ptr v = NodeList_get_elem_at(all_vars, iter);
+//       if (BoolEnc_is_var_bit(benc, v)) continue;
+//       NodeList_append(scalar_vars, v);
+//     }
+//     NodeList_destroy(all_vars);
+// 
+//     BddEnc_print_bdd_wff(self->enc, reachable, scalar_vars,
+//                          false, false, 0, file);
+// 
+//     NodeList_destroy(scalar_vars);
+    
+    /* print formula */
+    dd_dump_factored_form(dd, 1, &states, inames, onames, output);
+    
+    
+     /* If we have diameter info, print it. Otherwise, we can only print
+     the number of reachable states (ie. We do not have onion rings
+     informations. For example, reachable states have been computed
+     with Guided Reachability  */
+    OStream_printf(file, "\nsystem diameter: %d\n", BddFsm_get_diameter(self));
+  
+    OStream_printf(file, "reachable states: %g (2^%g) out of %g (2^%g)\n",
+          reached_cardinality, log(reached_cardinality)/log(2.0),
+          search_space_cardinality, log(search_space_cardinality)/log(2.0));
+    OStream_printf(file, "\n");
+  }
+
+  bdd_free(self->dd, reachable);
 }
