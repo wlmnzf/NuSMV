@@ -1,14 +1,4 @@
-// TODO TEST Welche Header sind wirklich noetig?
-
-#include "nusmv/core/dd/DDMgr.h"
-#include "nusmv/core/utils/utils.h"
-#include "nusmv/core/utils/array.h"
-#include "nusmv/core/utils/avl.h"
-#include "nusmv/core/node/node.h"
-#include "cudd/cudd.h"
-#include "nusmv/core/opt/OptsHandler.h"
-#include "nusmv/core/cinit/NuSMVEnv.h"
-
+// TODO Doku fuer Header Files durchgehen
 
 static int
 ddDoDumpFactoredForm(

@@ -306,14 +306,14 @@ void print_spec_only(OStream_ptr file, Prop_ptr prop, Prop_PrintFmt fmt);
 
   Comments
 */
-void print_states(NuSMVEnv_ptr env,
-		  Prop_ptr prop,
-		  const OptsHandler_ptr opts,
-		  const StreamMgr_ptr streams,
-		  char * header, 
-		  bdd_ptr init, 
-		  bdd_ptr accepted, 
-		  bdd_ptr init_and_accepted);
+// void print_states(NuSMVEnv_ptr env,
+// 		  Prop_ptr prop,
+// 		  const OptsHandler_ptr opts,
+// 		  const StreamMgr_ptr streams,
+// 		  char * header, 
+// 		  bdd_ptr init, 
+// 		  bdd_ptr accepted, 
+// 		  bdd_ptr init_and_accepted);
 
 /*!
   \brief Print an invariant specification

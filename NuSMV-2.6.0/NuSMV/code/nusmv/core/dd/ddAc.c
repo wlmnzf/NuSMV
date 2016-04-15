@@ -1,16 +1,7 @@
-// TODO TEST welche Header sind wirklich noetig?
+// TODO Kommentieren
 
-#include "nusmv/core/utils/StreamMgr.h"
-#include "nusmv/core/utils/Logger.h"
-#include "nusmv/core/node/NodeMgr.h"
-#include "nusmv/core/utils/ErrorMgr.h"
 #include "nusmv/core/dd/ddInt.h"
-#include "nusmv/core/enc/operators.h"
-#include "nusmv/core/parser/symbols.h" /* for FAILURE value */
 #include "nusmv/core/dd/DDMgr_private.h"
-
-#include "nusmv/core/dd/ddAc.h"
-
 
 /**Function********************************************************************
 
