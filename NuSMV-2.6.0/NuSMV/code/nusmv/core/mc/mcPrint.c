@@ -44,7 +44,6 @@ void print_accepting_states(NuSMVEnv_ptr env,
   
   int index_of_spec = Prop_get_index(prop);
   char * file_name = get_print_accepting(opts);
-  char * def = "print";
   char * txt_file_name = NIL(char);
   int max_len = sizeof(char) * 32;
   int chars;
@@ -77,18 +76,18 @@ void print_accepting_states(NuSMVEnv_ptr env,
   nusmv_assert((const char**) NULL != onames);
 
   
-  if(strcmp(file_name, def) == 0) {
+  if(strcmp(file_name, "print") == 0) {
     
-    onames[0] = "Initial States";
-    dd_dump_factored_form(dd, 1, &init, inames, onames, out);
+    StreamMgr_print_output(streams, "Initial States: ");
+    dd_dump_factored_form_modified(dd, 1, &init, inames, out);
     StreamMgr_print_output(streams, "\n");
 
-    onames[0] = "Accepting States";
-    dd_dump_factored_form(dd, 1, &accepted, inames, onames, out);
+    StreamMgr_print_output(streams, "Accepting States: ");
+    dd_dump_factored_form_modified(dd, 1, &accepted, inames, out);
     StreamMgr_print_output(streams, "\n");
     
-    onames[0] = "Initial and Accepting States";
-    dd_dump_factored_form(dd, 1, &init_and_accepted, inames, onames, out);
+    StreamMgr_print_output(streams, "Initial and Accepting States: ");
+    dd_dump_factored_form_modified(dd, 1, &init_and_accepted, inames, out);
     StreamMgr_print_output(streams, "\n\n");
   }
   
@@ -102,22 +101,39 @@ void print_accepting_states(NuSMVEnv_ptr env,
     else{
      txt_output = OStream_create_file(txt_file_name, false); 
     }
+    
     out = fopen(txt_file_name, "a");
-    print_spec_only(txt_output, prop, get_prop_print_method(opts));
-    OStream_printf(txt_output, "\n");
-    OStream_flush(txt_output);
+    
+    
+    //print_spec_only(txt_output, prop, get_prop_print_method(opts));
+    //OStream_printf(txt_output, "\n");
+    //OStream_flush(txt_output);
 
-    onames[0] = "INIT: \t\t";
-    dd_dump_factored_form(dd, 1, &init, inames, onames, out);
+    //void print_spec_only(OStream_ptr file, Prop_ptr prop, Prop_PrintFmt fmt)
+
+    OStream_printf(txt_output, "CTLSPEC:       ");
+    Prop_print(prop, txt_output, get_prop_print_method(opts));
+    OStream_printf(txt_output, "\n");
+      
+
+    fprintf(out, "INIT:          ");
+    dd_dump_factored_form_modified(dd, 1, &init, inames, out);
     fprintf(out, "\n");
     
-    onames[0] = "ACCEPTING: \t";
-    dd_dump_factored_form(dd, 1, &accepted, inames, onames, out);
+    fprintf(out, "ACCEPTING:     ");
+    dd_dump_factored_form_modified(dd, 1, &accepted, inames, out);
     fprintf(out, "\n");
     
-    onames[0] = "INITACCEPTING: \t";
-    dd_dump_factored_form(dd, 1, &init_and_accepted, inames, onames, out);
-    fprintf(out, "\n\n");
+    fprintf(out, "INITACCEPTING: ");
+    dd_dump_factored_form_modified(dd, 1, &init_and_accepted, inames, out);
+    fprintf(out, "\n");
+    
+    if (Prop_get_status(prop) == Prop_True) {
+      fprintf(out, "ANSWER:        TRUE\n\n");
+    }
+    else{
+      fprintf(out, "ANSWER:        FALSE\n\n");
+    }
 
     OStream_destroy(txt_output);
     FREE(txt_file_name);
@@ -141,7 +157,7 @@ void print_accepting_states(NuSMVEnv_ptr env,
 /* TODO Comments*/
 void print_spec_only(OStream_ptr file, Prop_ptr prop, Prop_PrintFmt fmt)
 {
-  OStream_printf(file, "CTLSPEC: \t");
+  OStream_printf(file, "CTLSPEC:       ");
   Prop_print(prop, file, fmt);
   OStream_printf(file, " ");
 }

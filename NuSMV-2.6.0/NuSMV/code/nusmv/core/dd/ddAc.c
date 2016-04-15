@@ -21,7 +21,7 @@
 
 ******************************************************************************/
 static int
-ddDoDumpFactoredForm(
+ddDoDumpFactoredForm_modified(
   DdManager * dd,
   DdNode * f,
   FILE * fp,
@@ -54,7 +54,7 @@ ddDoDumpFactoredForm(
 	if (T != DD_TRUE(dd)) {
 	    retval = fprintf(fp, "%s(", E != DD_TRUE(dd) ? " & " : "");
 	    if (retval == EOF) return(0);
-	    retval = ddDoDumpFactoredForm(dd,T,fp,names);
+	    retval = ddDoDumpFactoredForm_modified(dd,T,fp,names);
 	    if (retval != 1) return(retval);
 	    retval = fprintf(fp, ")");
 	    if (retval == EOF) return(0);
@@ -76,7 +76,7 @@ ddDoDumpFactoredForm(
 	retval = fprintf(fp, "%s%s(", T != DD_TRUE(dd) ? " & " : "",
 			 E != cuddE(f) ? "!" : "");
 	if (retval == EOF) return(0);
-	retval = ddDoDumpFactoredForm(dd,E,fp,names);
+	retval = ddDoDumpFactoredForm_modified(dd,E,fp,names);
 	if (retval != 1) return(retval);
 	retval = fprintf(fp, ")");
 	if (retval == EOF) return(0);
@@ -114,12 +114,11 @@ ddDoDumpFactoredForm(
 
 ******************************************************************************/
 int
-Cudd_DumpFormula(
+Cudd_DumpFormula_modified(
   DdManager * dd /* manager */,
   int  n /* number of output nodes to be dumped */,
   DdNode ** f /* array of output nodes to be dumped */,
   char ** inames /* array of input names (or NULL) */,
-  char ** onames /* array of output names (or NULL) */,
   FILE * fp /* pointer to the dump file */)
 {
     int		retval;
@@ -127,11 +126,15 @@ Cudd_DumpFormula(
 
     /* Call the function that really gets the job done. */
     for (i = 0; i < n; i++) {
+    
+   /*
 	if (onames == NULL) {
 	    retval = fprintf(fp, "f%d = ", i);
 	} else {
 	    retval = fprintf(fp, "%s = ", onames[i]);
 	}
+	*/
+	
 	if (retval == EOF) return(0);
 	if (f[i] == DD_TRUE(dd)) {
 	    retval = fprintf(fp, "TRUE");
@@ -142,7 +145,7 @@ Cudd_DumpFormula(
 	} else {
 	    retval = fprintf(fp, "%s", Cudd_IsComplement(f[i]) ? "!(" : "");
 	    if (retval == EOF) return(0);
-	    retval = ddDoDumpFactoredForm(dd,Cudd_Regular(f[i]),fp,inames);
+	    retval = ddDoDumpFactoredForm_modified(dd,Cudd_Regular(f[i]),fp,inames);
 	    if (retval == 0) return(0);
 	    retval = fprintf(fp, "%s", Cudd_IsComplement(f[i]) ? ")" : "");
 	    if (retval == EOF) return(0);
@@ -158,14 +161,14 @@ Cudd_DumpFormula(
 
 
 
-int dd_dump_factored_form(
+int dd_dump_factored_form_modified(
     DDMgr_ptr dd /* manager */,
     int n /* number of output nodes to be dumped */,
     dd_ptr *f /* array of output nodes to be dumped */,
     const char ** inames /* array of input names (or NULL) */,
-    const char ** onames /* array of output names (or NULL) */,
+    //const char ** onames /* array of output names (or NULL) */,
     FILE * fp /* pointer to the dump file */)
 {
-    return(Cudd_DumpFormula(dd->dd, n, (DdNode **)f,
-                                 (char**) inames, (char**) onames, fp));
+    return(Cudd_DumpFormula_modified(dd->dd, n, (DdNode **)f,
+                                 (char**) inames, fp));
 }
