@@ -148,13 +148,6 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
   bdd_and_accumulate(dd, &s0, tmp_2);
   bdd_free(dd, tmp_2);
   
-  /* ADDED: store initial states and initial accepted states */
-  if(get_print_accepting(opts) != NULL) {
-    init = BddFsm_get_init(fsm);
-    init_and_accepted = bdd_dup(init);
-    bdd_and_accumulate(dd, &init_and_accepted, accepted);
-  }
-  
   /* Prints out the result, if not true explain. */  
   StreamMgr_print_output(streams,  "-- ");
   print_spec(StreamMgr_get_output_ostream(streams),
@@ -230,8 +223,13 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
    * and initial accepting states as additional information 
    * if commandline parameter "-a interesting_states" is set */
   if(get_print_accepting(opts) != NULL) {
-        
+  
+    init = BddFsm_get_init(fsm);
+    init_and_accepted = bdd_dup(init);
+    bdd_and_accumulate(dd, &init_and_accepted, accepted);        
+    
     print_states(env, prop, dd, enc, opts, streams, "\nInitial States: ", init, accepted, init_and_accepted);
+//     print_states(env, prop, opts, streams, "\nInitial States: ", init, accepted, init_and_accepted);
 //     try_to_print_this(env, prop, dd, enc, init, accepted, init_and_accepted, streams);
     
     bdd_free(dd,init);
@@ -390,135 +388,6 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
 //   }
 //   
 // }
-
-/* Mc_CheckCTLSpec */
-
-/*
- * Originalfunktion ohne Aenderungen
- * auskommentiert, um Funktion mit Aenderungen testen zu koennen
- */
-// void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
-// {
-//   const StreamMgr_ptr streams =
-//     STREAM_MGR(NuSMVEnv_get_value(env, ENV_STREAM_MANAGER));
-//   const ErrorMgr_ptr errmgr =
-//     ERROR_MGR(NuSMVEnv_get_value(env, ENV_ERROR_MANAGER));
-//   node_ptr exp;
-//   Trace_ptr trace;
-//   bdd_ptr s0, tmp_1, tmp_2;
-//   BddFsm_ptr fsm;
-//   BddEnc_ptr enc;
-//   DDMgr_ptr dd;
-//   Expr_ptr spec  = Prop_get_expr_core(prop);
-//   const OptsHandler_ptr opts =
-//     OPTS_HANDLER(NuSMVEnv_get_value(env, ENV_OPTS_HANDLER));
-//   const NodeMgr_ptr nodemgr =
-//     NODE_MGR(NuSMVEnv_get_value(env, ENV_NODE_MGR));
-// 
-//   if (opt_verbose_level_gt(opts, 0)) {
-//     Logger_ptr logger = LOGGER(NuSMVEnv_get_value(env, ENV_LOGGER));
-//     Logger_log(logger, "evaluating ");
-//     print_spec(Logger_get_ostream(logger), prop, get_prop_print_method(opts));
-//     Logger_log(logger, "\n");
-//   }
-// 
-//   fsm = Prop_compute_ground_bdd_fsm(env, prop);
-//   enc = BddFsm_get_bdd_encoding(fsm);
-//   dd = BddEnc_get_dd_manager(enc);
-// 
-//   /* Evaluates the spec */
-//   s0 = eval_ctl_spec(fsm, enc, spec, Nil);
-// 
-//   tmp_1 = bdd_not(dd, s0);
-//   tmp_2 = BddFsm_get_state_constraints(fsm);
-//   bdd_and_accumulate(dd, &tmp_2 , tmp_1);
-//   bdd_free(dd, tmp_1);
-//   tmp_1 = BddFsm_get_fair_states(fsm);
-//   if (bdd_is_false(dd, tmp_1)) {
-//     ErrorMgr_warning_fsm_fairness_empty(errmgr);
-//   }
-//   bdd_and_accumulate(dd, &tmp_2 , tmp_1);
-//   bdd_free(dd, tmp_1);
-//   bdd_free(dd, s0);
-// 
-//   s0 = BddFsm_get_init(fsm);
-//   bdd_and_accumulate(dd, &s0, tmp_2);
-//   bdd_free(dd, tmp_2);
-// 
-//   /* Prints out the result, if not true explain. */
-//   StreamMgr_print_output(streams,  "-- ");
-//   print_spec(StreamMgr_get_output_ostream(streams),
-//              prop, get_prop_print_method(opts));
-// 
-//   if (bdd_is_false(dd, s0)) {
-//     StreamMgr_print_output(streams,  "is true\n");
-//     Prop_set_status(prop, Prop_True);
-//   }
-//   else {
-//     StreamMgr_print_output(streams,  "is false\n");
-//     Prop_set_status(prop, Prop_False);
-// 
-//     if (opt_counter_examples(opts)) {
-//       char* trace_title = NULL;
-//       char* trace_title_postfix = " Counterexample";
-// 
-//       tmp_1 = BddEnc_pick_one_state(enc, s0);
-//       bdd_free(dd, s0);
-//       s0 = bdd_dup(tmp_1);
-//       bdd_free(dd, tmp_1);
-// 
-//       exp = reverse(explain(fsm, enc, cons(nodemgr, (node_ptr) bdd_dup(s0), Nil),
-//                             spec, Nil));
-// 
-//       if (exp == Nil) {
-//         /* The counterexample consists of one initial state */
-//         exp = cons(nodemgr, (node_ptr) bdd_dup(s0), Nil);
-//       }
-// 
-//       /* The trace title depends on the property type. For example it
-//        is in the form "LTL Counterexample" */
-//       trace_title = ALLOC(char,
-//                           strlen(Prop_get_type_as_string(prop)) +
-//                           strlen(trace_title_postfix) + 1);
-//       nusmv_assert(trace_title != (char*) NULL);
-//       strcpy(trace_title, Prop_get_type_as_string(prop));
-//       strcat(trace_title, trace_title_postfix);
-// 
-//       {
-//         SexpFsm_ptr sexp_fsm; /* needed for trace lanugage */
-//         sexp_fsm = Prop_get_scalar_sexp_fsm(prop);
-//         if (SEXP_FSM(NULL) == sexp_fsm) {
-//           sexp_fsm = \
-//             SEXP_FSM(NuSMVEnv_get_value(env, ENV_SEXP_FSM));
-//           SEXP_FSM_CHECK_INSTANCE(sexp_fsm);
-//         }
-// 
-//         trace = \
-//           Mc_create_trace_from_bdd_state_input_list(enc,
-//                SexpFsm_get_symbols_list(sexp_fsm), trace_title,
-//                                                    TRACE_TYPE_CNTEXAMPLE, exp);
-//       }
-// 
-//       FREE(trace_title);
-// 
-//       StreamMgr_print_output(streams, 
-//               "-- as demonstrated by the following execution sequence\n");
-// 
-//       TraceMgr_register_trace(TRACE_MGR(NuSMVEnv_get_value(env, ENV_TRACE_MGR)), trace);
-//       TraceMgr_execute_plugin(TRACE_MGR(NuSMVEnv_get_value(env, ENV_TRACE_MGR)), TRACE_OPT(NULL),
-//                                   TRACE_MGR_DEFAULT_PLUGIN,
-//                                   TRACE_MGR_LAST_TRACE);
-// 
-//       Prop_set_trace(prop, Trace_get_id(trace));
-// 
-//       walk_dd(dd, bdd_free, exp);
-//       free_list(nodemgr, exp);
-//     }
-//   }
-// 
-//   bdd_free(dd, s0);
-// } /* Mc_CheckCTLSpec */
-// 
 
 void Mc_CheckCompute(NuSMVEnv_ptr env, Prop_ptr prop)
 {
