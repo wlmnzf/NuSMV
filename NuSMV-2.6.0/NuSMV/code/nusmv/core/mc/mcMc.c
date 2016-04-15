@@ -59,7 +59,6 @@
 #include "nusmv/core/fsm/bdd/BddFsm.h"
 
 #include "nusmv/core/dd/ddAc.h"
-#include "nusmv/core/fsm/bdd/BddFsmPrintAc.h"
 #include "nusmv/core/mc/mcPrint.h"
 
 // #include "nusmv/core/ac/accepting_states.h"
@@ -226,7 +225,7 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
   
     init = BddFsm_get_init(fsm);
     init_and_accepted = bdd_dup(init);
-    bdd_and_accumulate(dd, &init_and_accepted, accepted);        
+    bdd_and_accumulate(dd, &init_and_accepted, accepted);       
     
     print_states(env, prop, dd, enc, opts, streams, "\nInitial States: ", init, accepted, init_and_accepted);
 //     print_states(env, prop, opts, streams, "\nInitial States: ", init, accepted, init_and_accepted);
