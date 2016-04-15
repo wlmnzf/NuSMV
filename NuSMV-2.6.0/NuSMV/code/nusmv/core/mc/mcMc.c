@@ -59,7 +59,7 @@
 #include "nusmv/core/fsm/bdd/BddFsm.h"
 
 #include "nusmv/core/dd/ddAc.h"
-#include "nusmv/core/fsm/bdd/BddFsmPrintAc.h"
+// #include "nusmv/core/fsm/bdd/BddFsmPrintAc.h"
 #include "nusmv/core/mc/mcPrint.h"
 
 // #include "nusmv/core/ac/accepting_states.h"
