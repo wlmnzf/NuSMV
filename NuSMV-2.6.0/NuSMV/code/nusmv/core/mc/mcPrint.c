@@ -41,7 +41,7 @@ void print_accepting_states(NuSMVEnv_ptr env,
     MASTER_PRINTER(NuSMVEnv_get_value(env, ENV_WFF_PRINTER));
   OStream_ptr stream = StreamMgr_get_output_ostream(streams);
   OStream_ptr txt_output; 
-  BddStates ini, acci, iniacci;
+  
   int index_of_spec = Prop_get_index(prop);
   char * file_name = get_print_accepting(opts);
   char * def = "print";
@@ -56,12 +56,6 @@ void print_accepting_states(NuSMVEnv_ptr env,
   FILE * out = StreamMgr_get_output_stream(streams);
   const int dd_size = dd_get_size(dd);
   
-  ini = init;
-  acci = accepted;
-  iniacci = init_and_accepted;
-  bdd_ref((bdd_ptr) ini);
-  bdd_ref((bdd_ptr) acci);
-  bdd_ref((bdd_ptr) iniacci);
   
   
   /* get input names */
