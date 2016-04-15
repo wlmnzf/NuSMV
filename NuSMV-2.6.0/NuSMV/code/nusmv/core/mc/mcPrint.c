@@ -30,7 +30,6 @@ void print_accepting_states(NuSMVEnv_ptr env,
 		  BddEnc_ptr enc,
 		  const OptsHandler_ptr opts,
 		  const StreamMgr_ptr streams,
-		  char * header, 
 		  bdd_ptr init, 
 		  bdd_ptr accepted, 
 		  bdd_ptr init_and_accepted)
