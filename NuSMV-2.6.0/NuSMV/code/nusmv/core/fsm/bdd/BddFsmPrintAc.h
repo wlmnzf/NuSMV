@@ -3,4 +3,9 @@ void BddFsm_print_interesting_states_info(const BddFsm_ptr self,
                                         const boolean print_states,
                                         const boolean print_defines,
                                         const boolean print_formula,
-                                        OStream_ptr file);
+                                        OStream_ptr file,
+					DDMgr_ptr dd,
+					dd_ptr * states,
+					const char ** inames,
+					const char ** onames,
+					FILE * output);

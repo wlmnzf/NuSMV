@@ -1,12 +1,18 @@
 
 #include "nusmv/core/fsm/bdd/BddFsm_private.h"
+#include "nusmv/core/dd/ddAc.h"
 
 void BddFsm_print_interesting_states_info(const BddFsm_ptr self, 
 					bdd_ptr interesting_states,
                                         const boolean print_states,
                                         const boolean print_defines,
                                         const boolean print_formula,
-                                        OStream_ptr file)
+                                        OStream_ptr file,
+					DDMgr_ptr dd,
+					dd_ptr * states,
+					const char ** inames,
+					const char ** onames,
+					FILE * output)
 {
   bdd_ptr reachable;
   bdd_ptr mask;
@@ -58,15 +64,21 @@ void BddFsm_print_interesting_states_info(const BddFsm_ptr self,
 //                          false, false, 0, file);
 // 
 //     NodeList_destroy(scalar_vars);
+    
+    /* print formula */
+    dd_dump_factored_form(dd, 1, &states, inames, onames, output);
+    
+    
      /* If we have diameter info, print it. Otherwise, we can only print
      the number of reachable states (ie. We do not have onion rings
      informations. For example, reachable states have been computed
      with Guided Reachability  */
-    OStream_printf(file, "system diameter: %d\n", BddFsm_get_diameter(self));
+    OStream_printf(file, "\nsystem diameter: %d\n", BddFsm_get_diameter(self));
   
     OStream_printf(file, "reachable states: %g (2^%g) out of %g (2^%g)\n",
           reached_cardinality, log(reached_cardinality)/log(2.0),
           search_space_cardinality, log(search_space_cardinality)/log(2.0));
+    OStream_printf(file, "\n");
   }
 
   bdd_free(self->dd, reachable);
