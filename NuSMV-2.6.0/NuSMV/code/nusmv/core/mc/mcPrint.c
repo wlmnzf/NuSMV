@@ -87,29 +87,21 @@ void print_states(NuSMVEnv_ptr env,
   if(strcmp(file_name, def) == 0) {
     
     onames[0] = "Initial States";
-//     dd_dump_factored_form(dd, 1, &init, inames, onames, out);
-//     StreamMgr_print_output(streams, "\n");
-    BddFsm_print_interesting_states_info(diagram, ini, false, false, true, stream, dd, init, inames, onames, out);
-//     StreamMgr_print_output(streams, "\n");
+    dd_dump_factored_form(dd, 1, &init, inames, onames, out);
+    StreamMgr_print_output(streams, "\n");
 
     onames[0] = "Accepting States";
-//     dd_dump_factored_form(dd, 1, &accepted, inames, onames, out);
-//     StreamMgr_print_output(streams, "\n");
-    BddFsm_print_interesting_states_info(diagram, acci, false, false, true, stream, dd, accepted, inames, onames, out);
-//     StreamMgr_print_output(streams, "\n");
+    dd_dump_factored_form(dd, 1, &accepted, inames, onames, out);
+    StreamMgr_print_output(streams, "\n");
     
     onames[0] = "Initial and Accepting States";
-//     dd_dump_factored_form(dd, 1, &init_and_accepted, inames, onames, out);
-//     StreamMgr_print_output(streams, "\n");
-    BddFsm_print_interesting_states_info(diagram, iniacci, false, false, true, stream, dd, init_and_accepted, inames, onames, out);
-//     StreamMgr_print_output(streams, "\n");        
+    dd_dump_factored_form(dd, 1, &init_and_accepted, inames, onames, out);
+    StreamMgr_print_output(streams, "\n\n");
   }
   
-  // TODO hier auch mit dd_dump_factored_form arbeiten
   else {
     txt_file_name = ALLOC(char, max_len);
     chars = snprintf(txt_file_name, max_len, file_name);
-//     chars = snprintf(txt_file_name, max_len, "%s.txt", file_name);
     SNPRINTF_CHECK(chars, max_len);
     if (index_of_spec != 0){
       txt_output = OStream_create_file(txt_file_name, true);
@@ -118,44 +110,22 @@ void print_states(NuSMVEnv_ptr env,
      txt_output = OStream_create_file(txt_file_name, false); 
     }
     out = fopen(txt_file_name, "a");
-//     out = OStream_get_stream(txt_output);
     print_spec_only(txt_output, prop, get_prop_print_method(opts));
     OStream_printf(txt_output, "\n");
     OStream_flush(txt_output);
-//     
-//     onames[0] = "INIT: \t\t";
-//     dd_dump_factored_form(dd, 1, &init, inames, onames, out);
-//     fprintf(out, "\n");
-    
-//     txt_output = OStream_get_stream(txt_file_name);
-//     fprintf(out, "\n");
+
     onames[0] = "INIT: \t\t";
-//     OStream_printf(txt_output, "\n");
     dd_dump_factored_form(dd, 1, &init, inames, onames, out);
     fprintf(out, "\n");
-//     BddFsm_print_interesting_states_info(diagram, ini, false, false, true, txt_output, dd, init, inames, onames, out);     
-//     OStream_printf(txt_output, "\n");
     
     onames[0] = "ACCEPTING: \t";
     dd_dump_factored_form(dd, 1, &accepted, inames, onames, out);
     fprintf(out, "\n");
-//     BddFsm_print_interesting_states_info(diagram, ini, false, false, true, txt_output, dd, accepted, inames, onames, out); 
-//     OStream_printf(txt_output, "\n");
     
     onames[0] = "INITACCEPTING: \t";
     dd_dump_factored_form(dd, 1, &init_and_accepted, inames, onames, out);
     fprintf(out, "\n\n");
-//     BddFsm_print_interesting_states_info(diagram, ini, false, false, true, txt_output, dd, init_and_accepted, inames, onames, out); 
-//     OStream_printf(txt_output, "\n");
-//     BddFsm_print_interesting_states_info(diagram, acci, false, false, true, txt_output);
-//   
-//     OStream_printf(txt_output, "INITACCEPTING: \t");
-//     BddFsm_print_interesting_states_info(diagram, iniacci, false, false, true, txt_output);
-//     OStream_printf(txt_output, "\n");
-    
-//     fclose(out);
-//     OStream_flush(txt_output);
-//     OStream_destroy(txt_output);
+
     OStream_destroy(txt_output);
     FREE(txt_file_name);
     fclose(out);
@@ -185,7 +155,7 @@ void print_spec_only(OStream_ptr file, Prop_ptr prop, Prop_PrintFmt fmt)
 
 
 
-void BddFsm_print_interesting_states_info(const BddFsm_ptr self, 
+void Bdd_size(const BddFsm_ptr self, 
 					bdd_ptr interesting_states,
                                         const boolean print_states,
                                         const boolean print_defines,
