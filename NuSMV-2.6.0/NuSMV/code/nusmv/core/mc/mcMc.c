@@ -227,9 +227,7 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
     init_and_accepted = bdd_dup(init);
     bdd_and_accumulate(dd, &init_and_accepted, accepted);       
     
-    print_states(env, prop, dd, enc, opts, streams, "\nInitial States: ", init, accepted, init_and_accepted);
-//     print_states(env, prop, opts, streams, "\nInitial States: ", init, accepted, init_and_accepted);
-//     try_to_print_this(env, prop, dd, enc, init, accepted, init_and_accepted, streams);
+    print_accepting_states(env, prop, dd, enc, opts, streams, "\nInitial States: ", init, accepted, init_and_accepted);
     
     bdd_free(dd,init);
     bdd_free(dd,init_and_accepted);
