@@ -14,9 +14,7 @@ void print_accepting_states(NuSMVEnv_ptr env,
   const MasterPrinter_ptr wffprint =
     MASTER_PRINTER(NuSMVEnv_get_value(env, ENV_WFF_PRINTER));
   OStream_ptr stream = StreamMgr_get_output_ostream(streams);
-  OStream_ptr txt_output; 
-//   DdManager mgr = dd->dd;
-  
+  OStream_ptr txt_output;   
   
   int index_of_spec = Prop_get_index(prop);
   char * file_name = get_print_accepting(opts);
@@ -130,8 +128,7 @@ void print_bdd_size(BddEnc_ptr enc,
 		    bdd_ptr states,
 		    OStream_ptr file)
 { 
-  double size;
-  size = BddEnc_count_states_of_bdd(enc, states);
+  double size = BddEnc_count_states_of_bdd(enc, states);
   OStream_printf(file, "\n");
   OStream_printf(file, "number of states: %g", size);
 }
