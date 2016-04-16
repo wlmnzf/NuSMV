@@ -15,6 +15,8 @@ void print_accepting_states(NuSMVEnv_ptr env,
     MASTER_PRINTER(NuSMVEnv_get_value(env, ENV_WFF_PRINTER));
   OStream_ptr stream = StreamMgr_get_output_ostream(streams);
   OStream_ptr txt_output; 
+//   DdManager mgr = dd->dd;
+  
   
   int index_of_spec = Prop_get_index(prop);
   char * file_name = get_print_accepting(opts);
@@ -48,20 +50,19 @@ void print_accepting_states(NuSMVEnv_ptr env,
       inames[lev] = (const char*) NULL;
     }
   }
-
   
   if(strcmp(file_name, "print") == 0) {
     
     StreamMgr_print_output(streams, "Initial States: ");
-    dd_dump_factored_form_modified(dd, 1, &init, inames, out);
+    Cudd_DumpFormula_modified(dd, 1, &init, inames, out);
     StreamMgr_print_output(streams, "\n");
 
     StreamMgr_print_output(streams, "Accepting States: ");
-    dd_dump_factored_form_modified(dd, 1, &accepted, inames, out);
+    Cudd_DumpFormula_modified(dd, 1, &accepted, inames, out);
     StreamMgr_print_output(streams, "\n");
     
     StreamMgr_print_output(streams, "Initial and Accepting States: ");
-    dd_dump_factored_form_modified(dd, 1, &init_and_accepted, inames, out);
+    Cudd_DumpFormula_modified(dd, 1, &init_and_accepted, inames, out);
     StreamMgr_print_output(streams, "\n\n");
   }
   
@@ -83,15 +84,15 @@ void print_accepting_states(NuSMVEnv_ptr env,
     OStream_printf(txt_output, "\n");
 
     fprintf(out, "INIT:          ");
-    dd_dump_factored_form_modified(dd, 1, &init, inames, out);
+    Cudd_DumpFormula_modified(dd, 1, &init, inames, out);
     fprintf(out, "\n");
     
     fprintf(out, "ACCEPTING:     ");
-    dd_dump_factored_form_modified(dd, 1, &accepted, inames, out);
+    Cudd_DumpFormula_modified(dd, 1, &accepted, inames, out);
     fprintf(out, "\n");
     
     fprintf(out, "INITACCEPTING: ");
-    dd_dump_factored_form_modified(dd, 1, &init_and_accepted, inames, out);
+    Cudd_DumpFormula_modified(dd, 1, &init_and_accepted, inames, out);
     fprintf(out, "\n");
     
     if (Prop_get_status(prop) == Prop_True) {
