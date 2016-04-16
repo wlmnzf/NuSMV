@@ -14,9 +14,12 @@ void print_accepting_states(NuSMVEnv_ptr env,
   const MasterPrinter_ptr wffprint =
     MASTER_PRINTER(NuSMVEnv_get_value(env, ENV_WFF_PRINTER));
   OStream_ptr stream = StreamMgr_get_output_ostream(streams);
-  OStream_ptr txt_output;   
+  OStream_ptr txt_output;
   
+  node_ptr p = Prop_get_expr(prop);
+  const char* ctlspec = (char*) sprint_node(wffprint, p);
   int index_of_spec = Prop_get_index(prop);
+  
   char * file_name = get_print_accepting(opts);
   char * txt_file_name = NIL(char);
   int max_len = sizeof(char) * 32;
@@ -84,6 +87,9 @@ void print_accepting_states(NuSMVEnv_ptr env,
     Prop_print(prop, txt_output, get_prop_print_method(opts));
     OStream_printf(txt_output, "\n");
 
+//     fprintf(out, ctlspec);
+//     fprintf(out, "\n");
+    
     fprintf(out, "INIT:          ");
     Cudd_DumpFormula_modified(dd, 1, &init, inames, out);
     fprintf(out, "\n");
@@ -108,18 +114,19 @@ void print_accepting_states(NuSMVEnv_ptr env,
     fclose(out);
     
   }
-  
+    
+  /* aufraeumen */
   bdd_free(dd,init_and_accepted);
   
-  /* aufraeumen */
   {
     int i;
     /* free inames */
     for( i=0; i < dd_size; ++i) {
-      if( (const char*) NULL != inames[i]) { free( inames[i]); }
+      if( (const char*) NULL != inames[i]) { FREE( inames[i]); }
     }
     FREE(inames);
   }
+  FREE(ctlspec);
   
 }
 
