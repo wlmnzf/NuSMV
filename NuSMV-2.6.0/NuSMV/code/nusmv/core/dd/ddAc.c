@@ -25,7 +25,7 @@ ddDoDumpFactoredForm_modified(
   DdManager * dd,
   DdNode * f,
   FILE * fp,
-  char ** names)
+  const char ** names)
 {
     DdNode	*T, *E;
     int		retval;
