@@ -115,12 +115,13 @@ ddDoDumpFactoredForm_modified(
 ******************************************************************************/
 int
 Cudd_DumpFormula_modified(
-  DdManager * dd /* manager */,
+  DDMgr_ptr dd_ptr,
   int  n /* number of output nodes to be dumped */,
   DdNode ** f /* array of output nodes to be dumped */,
-  char ** inames /* array of input names (or NULL) */,
+  const char ** inames /* array of input names (or NULL) */,
   FILE * fp /* pointer to the dump file */)
 {
+    DdManager * dd = dd_ptr->dd;
     int		retval;
     int		i;
 
@@ -149,17 +150,3 @@ Cudd_DumpFormula_modified(
     return(1);
 
 } /* end of Cudd_DumpFactoredForm */
-
-
-
-
-int dd_dump_factored_form_modified(
-    DDMgr_ptr dd /* manager */,
-    int n /* number of output nodes to be dumped */,
-    dd_ptr *f /* array of output nodes to be dumped */,
-    const char ** inames /* array of input names (or NULL) */,
-    FILE * fp /* pointer to the dump file */)
-{
-    return(Cudd_DumpFormula_modified(dd->dd, n, (DdNode **)f,
-                                 (char**) inames, fp));
-}
