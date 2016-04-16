@@ -1,27 +1,4 @@
-#include "nusmv/core/mc/mcInt.h"
-#include "nusmv/core/mc/mc.h"
-#include "../enc/bdd/BddEnc.h"
-
-#include "nusmv/core/utils/OStream.h"
-#include "nusmv/core/utils/StreamMgr.h"
-#include "nusmv/core/utils/Logger.h"
-#include "nusmv/core/utils/ErrorMgr.h"
-#include "nusmv/core/utils/error.h"
-#include "nusmv/core/utils/utils_io.h"
-
-#include "nusmv/core/trace/Trace.h"
-#include "nusmv/core/trace/TraceMgr.h"
-
-#include "nusmv/core/bmc/bmc.h"
 #include "nusmv/core/bmc/sbmc/sbmcGen.h"
-
-#include "nusmv/core/fsm/bdd/FairnessList.h"
-#include "nusmv/core/parser/symbols.h"
-#include "nusmv/core/enc/enc.h"
-#include "nusmv/core/prop/propPkg.h"
-
-#include "nusmv/core/fsm/bdd/BddFsm.h"
-#include "nusmv/core/fsm/bdd/BddFsm_private.h"
 #include "nusmv/core/dd/ddAc.h"
 
 void print_accepting_states(NuSMVEnv_ptr env,
