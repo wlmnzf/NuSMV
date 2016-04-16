@@ -87,8 +87,8 @@ void print_accepting_states(NuSMVEnv_ptr env,
     Prop_print(prop, txt_output, get_prop_print_method(opts));
     OStream_printf(txt_output, "\n");
 
-    fprintf(out, ctlspec);
-    fprintf(out, "\n");
+//     fprintf(out, ctlspec);
+//     fprintf(out, "\n");
     
     fprintf(out, "INIT:          ");
     Cudd_DumpFormula_modified(dd, 1, &init, inames, out);
