@@ -55,14 +55,17 @@ void print_accepting_states(NuSMVEnv_ptr env,
     
     StreamMgr_print_output(streams, "Initial States: ");
     Cudd_DumpFormula_modified(dd, 1, &init, inames, out);
+    print_bdd_size(enc, init, stream);
     StreamMgr_print_output(streams, "\n");
 
     StreamMgr_print_output(streams, "Accepting States: ");
     Cudd_DumpFormula_modified(dd, 1, &accepted, inames, out);
+    print_bdd_size(enc, accepted, stream);
     StreamMgr_print_output(streams, "\n");
     
     StreamMgr_print_output(streams, "Initial and Accepting States: ");
     Cudd_DumpFormula_modified(dd, 1, &init_and_accepted, inames, out);
+    print_bdd_size(enc, init_and_accepted, stream);
     StreamMgr_print_output(streams, "\n\n");
   }
   
@@ -122,32 +125,16 @@ void print_accepting_states(NuSMVEnv_ptr env,
   
 }
 
-/*
-void print_bdd_size(const BddFsm_ptr self, 
-					bdd_ptr states,
-					OStream_ptr file,
-					DDMgr_ptr dd,
-					dd_ptr * states,
-					const char ** inames,
-					const char ** onames,
-					FILE * output)
-{
-  bdd_ptr reachable;
-  bdd_ptr mask;
+
+void print_bdd_size(BddEnc_ptr enc,
+		    bdd_ptr states,
+		    OStream_ptr file)
+{ 
   double size;
-
-  BDD_FSM_CHECK_INSTANCE(self);
-
-  mask = BddEnc_get_state_frozen_vars_mask_bdd(self->enc);
-  bdd_and_accumulate(self->dd, &bdd, mask);
-  
-  size = BddEnc_count_states_of_bdd(self->enc, states);
-  bdd_free(self->dd, mask);
-
-  OStream_printf(file, "number of states: %g", size);
+  size = BddEnc_count_states_of_bdd(enc, states);
   OStream_printf(file, "\n");
-  
-
-  bdd_free(self->dd, reachable);
+  OStream_printf(file, "number of states: %g", size);
 }
-*/
+
+
+
