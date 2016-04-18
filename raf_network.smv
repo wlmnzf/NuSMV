@@ -29,7 +29,7 @@ ASSIGN
 TRANS STEADYSTATE | count((next(Erk)!=Erk), (next(Mek)!=Mek), (next(Raf)!=Raf))=1;
 
 
-INIT !(Erk & (Mek) | !Erk & ((Raf) | !Mek))
+INIT TRUE
 
 
 CTLSPEC  EF(!Erk&!Mek&Raf) &  EF(Erk&Mek&Raf)
