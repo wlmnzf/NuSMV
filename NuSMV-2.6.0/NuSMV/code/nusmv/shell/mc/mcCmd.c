@@ -199,8 +199,6 @@ int CommandCheckCtlSpec(NuSMVEnv_ptr env, int argc, char** argv)
     case 'h': return UsageCheckCtlSpec(env);
     case 'a': 
      {
-       StreamMgr_print_output(streams,  "Let me verarsch ju\n");
-
        set_print_accepting(opts, "print");
        break;
       }
