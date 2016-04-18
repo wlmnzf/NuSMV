@@ -197,6 +197,11 @@ int CommandCheckCtlSpec(NuSMVEnv_ptr env, int argc, char** argv)
   while ((c = util_getopt(argc,argv,"hamo:n:p:P:")) != EOF) {
     switch (c) {
     case 'h': return UsageCheckCtlSpec(env);
+    case 'a': 
+     {
+       set_print_accepting(opts, "print");
+       break;
+      }
     case 'n':
       {
         if (formula != NIL(char)) return UsageCheckCtlSpec(env);
@@ -246,15 +251,6 @@ int CommandCheckCtlSpec(NuSMVEnv_ptr env, int argc, char** argv)
       if (dbgFileName != NIL(char)) return UsageCheckCtlSpec(env);
       useMore = 1;
       break;
-    case 'a': 
-     {
-       if (formula != NIL(char)) return UsageCheckCtlSpec(env);
-       if (prop_no != -1) return UsageCheckCtlSpec(env);
-       if (formula_name != NIL(char)) return UsageCheckCtlSpec(env);
-	
-       set_print_accepting(opts, "print");
-       break;
-      }
     default:  return UsageCheckCtlSpec(env);
     }
   }
