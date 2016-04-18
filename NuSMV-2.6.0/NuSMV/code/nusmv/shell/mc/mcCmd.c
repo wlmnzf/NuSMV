@@ -192,13 +192,15 @@ int CommandCheckCtlSpec(NuSMVEnv_ptr env, int argc, char** argv)
   OptsHandler_ptr opts = OPTS_HANDLER(NuSMVEnv_get_value(env, ENV_OPTS_HANDLER));
   const ErrorMgr_ptr errmgr =
     ERROR_MGR(NuSMVEnv_get_value(env, ENV_ERROR_MANAGER));
-
   util_getopt_reset();
+  reset_print_accepting(opts);
   while ((c = util_getopt(argc,argv,"hamo:n:p:P:")) != EOF) {
     switch (c) {
     case 'h': return UsageCheckCtlSpec(env);
     case 'a': 
      {
+       StreamMgr_print_output(streams,  "Let me verarsch ju\n");
+
        set_print_accepting(opts, "print");
        break;
       }
