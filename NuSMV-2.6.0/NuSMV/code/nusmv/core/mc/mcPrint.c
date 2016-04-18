@@ -14,28 +14,22 @@ void print_accepting_states(NuSMVEnv_ptr env,
   const MasterPrinter_ptr wffprint =
     MASTER_PRINTER(NuSMVEnv_get_value(env, ENV_WFF_PRINTER));
   OStream_ptr stream = StreamMgr_get_output_ostream(streams);
-  OStream_ptr txt_output;
-  
+  FILE * out = StreamMgr_get_output_stream(streams);
   node_ptr p = Prop_get_expr(prop);
   const char* ctlspec = (char*) sprint_node(wffprint, p);
-  int index_of_spec = Prop_get_index(prop);
-  
-  char * file_name = get_print_accepting(opts);
-  char * txt_file_name = NIL(char);
-  int max_len = sizeof(char) * 32;
-  int chars;
-  
+  const char * file_name = get_print_accepting(opts);
   const char** inames;
   int lev;
-  
-  FILE * out = StreamMgr_get_output_stream(streams);
+  int index_of_spec = Prop_get_index(prop);
+  double init_size, acc_size, inacc_size;
   const int dd_size = dd_get_size(dd);
   
   bdd_ptr init_and_accepted = bdd_dup(init);
   bdd_and_accumulate(dd, &init_and_accepted, accepted);
-    
-    
   
+  init_size = BddEnc_count_states_of_bdd(enc, init);
+  acc_size = BddEnc_count_states_of_bdd(enc, accepted);
+  inacc_size = BddEnc_count_states_of_bdd(enc, init_and_accepted);
   
   /* get input names */
   inames = ALLOC( const char*, dd_size);
@@ -54,63 +48,55 @@ void print_accepting_states(NuSMVEnv_ptr env,
   
   if(strcmp(file_name, "print") == 0) {
     
-    StreamMgr_print_output(streams, "Initial States: ");
+    OStream_printf(stream, "Initial States: ");
     Cudd_DumpFormula_modified(dd, 1, &init, inames, out);
-    print_bdd_size(enc, init, stream);
-    StreamMgr_print_output(streams, "\n");
+    OStream_printf(stream, "\nnumber of initial states: %g", init_size);
+    OStream_printf(stream, "\n");
 
-    StreamMgr_print_output(streams, "Accepting States: ");
+    OStream_printf(stream, "Accepting States: ");
     Cudd_DumpFormula_modified(dd, 1, &accepted, inames, out);
-    print_bdd_size(enc, accepted, stream);
-    StreamMgr_print_output(streams, "\n");
+    OStream_printf(stream, "\nnumber of accepting states: %g", acc_size);
+    OStream_printf(stream, "\n");
     
-    StreamMgr_print_output(streams, "Initial and Accepting States: ");
+    OStream_printf(stream, "Initial and Accepting States: ");
     Cudd_DumpFormula_modified(dd, 1, &init_and_accepted, inames, out);
-    print_bdd_size(enc, init_and_accepted, stream);
-    StreamMgr_print_output(streams, "\n\n");
+    OStream_printf(stream, "\nnumber of initial and accepting states: %g", inacc_size);
+    OStream_printf(stream, "\n\n");
   }
   
   else {
-    txt_file_name = ALLOC(char, max_len);
-    chars = snprintf(txt_file_name, max_len, file_name);
-    SNPRINTF_CHECK(chars, max_len);
     if (index_of_spec != 0){
-      txt_output = OStream_create_file(txt_file_name, true);
+      out = fopen(file_name, "a");
     }
     else{
-      txt_output = OStream_create_file(txt_file_name, false); 
+      out = fopen(file_name, "w");
     }
-    
-    out = fopen(txt_file_name, "a");
 
-    OStream_printf(txt_output, "CTLSPEC:       ");
-    Prop_print(prop, txt_output, get_prop_print_method(opts));
-    OStream_printf(txt_output, "\n");
-
-//     fprintf(out, ctlspec);
-//     fprintf(out, "\n");
+    fprintf(out, "CTLSPEC:              ");
+    fprintf(out, "%s", ctlspec);
+    fprintf(out, "\n");
     
-    fprintf(out, "INIT:          ");
+    fprintf(out, "INIT:                 ");
     Cudd_DumpFormula_modified(dd, 1, &init, inames, out);
+    fprintf(out, "\nINIT_SIZE:            %g", init_size);
     fprintf(out, "\n");
     
-    fprintf(out, "ACCEPTING:     ");
+    fprintf(out, "ACCEPTING:            ");
     Cudd_DumpFormula_modified(dd, 1, &accepted, inames, out);
+    fprintf(out, "\nACCEPTING_SIZE:       %g", acc_size);
     fprintf(out, "\n");
     
-    fprintf(out, "INITACCEPTING: ");
+    fprintf(out, "INITACCEPTING:        ");
     Cudd_DumpFormula_modified(dd, 1, &init_and_accepted, inames, out);
+    fprintf(out, "\nINITACCEPTING_SIZE:   %g", inacc_size);
     fprintf(out, "\n");
     
     if (Prop_get_status(prop) == Prop_True) {
-      fprintf(out, "ANSWER:        TRUE\n\n");
+      fprintf(out, "ANSWER:               TRUE\n\n");
     }
     else{
-      fprintf(out, "ANSWER:        FALSE\n\n");
+      fprintf(out, "ANSWER:               FALSE\n\n");
     }
-
-    OStream_destroy(txt_output);
-    FREE(txt_file_name);
     fclose(out);
     
   }
@@ -126,18 +112,7 @@ void print_accepting_states(NuSMVEnv_ptr env,
     }
     FREE(inames);
   }
-  FREE(ctlspec);
   
-}
-
-
-void print_bdd_size(BddEnc_ptr enc,
-		    bdd_ptr states,
-		    OStream_ptr file)
-{ 
-  double size = BddEnc_count_states_of_bdd(enc, states);
-  OStream_printf(file, "\n");
-  OStream_printf(file, "number of states: %g", size);
 }
 
 
