@@ -3,17 +3,10 @@
 nusmvswp='../NuSMV-2.6.0/NuSMV/build/bin/NuSMV'
 
 
-for file in ./*.smv ; do
-   
+for file in *.smv ;
+do   
+   echo working on $file
    fname=$(basename $file)
-   if [ "$fname" == "mapk.smv" ]
-      then
-         echo "skipping" $fname
-      else
-         fnameout=${fname%.*}.out
-         echo $fnameout
-         $nusmvswp -dcx -a $fnameout $fname
-         
-   fi
-
+   fnameout=${fname%.*}.out
+   $nusmvswp -dcx -a $fnameout $file
 done
