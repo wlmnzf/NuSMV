@@ -48,7 +48,7 @@ void print_accepting_states(NuSMVEnv_ptr env,
   
   if(strcmp(file_name, "print") == 0) {
     
-    OStream_printf(stream, "initial states: ");
+    OStream_printf(stream, "\ninitial states: ");
     Cudd_DumpFormula_modified(dd, 1, &init, inames, out);
     OStream_printf(stream, "\nnumber of initial states: %g", init_size);
     OStream_printf(stream, "\n");
