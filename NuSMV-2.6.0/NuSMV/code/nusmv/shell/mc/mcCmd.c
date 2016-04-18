@@ -340,9 +340,9 @@ static int UsageCheckCtlSpec(const NuSMVEnv_ptr env)
   StreamMgr_ptr streams = STREAM_MGR(NuSMVEnv_get_value(env, ENV_STREAM_MANAGER));
   StreamMgr_print_error(streams,  "usage: check_ctlspec [-h] [-a] [-m | -o file] [-n number | -p \"ctl-expr\" | -P \"name\"]\n");
   StreamMgr_print_error(streams,  "   -h \t\t\tPrints the command usage.\n");
-  StreamMgr_print_error(streams,  "   -a \t\t\t Prints a factored form formula of the accepting\n"); 
-  StreamMgr_print_error(streams,  "	\t\t\tstates to the file output-file specified with option -o \n");
-  StreamMgr_print_error(streams,  "	\t\t\tor to the command line, if option -m is selected.\n");
+  StreamMgr_print_error(streams,  "   -a \t\t\tPrints a factored form formula of the accepting\n"); 
+  StreamMgr_print_error(streams,  "      \t\t\tstates to the file output-file specified with option -o \n");
+  StreamMgr_print_error(streams,  "      \t\t\tor to the command line, if option -m is selected.\n");
   StreamMgr_print_error(streams,  "   -m \t\t\tPipes output through the program specified\n");
   StreamMgr_print_error(streams,  "      \t\t\tby the \"PAGER\" environment variable if defined,\n");
   StreamMgr_print_error(streams,  "      \t\t\telse through the UNIX command \"more\".\n");
