@@ -32,6 +32,15 @@
   
   Print function for printing initial, accepting and initial accepting 
   states when the commandline option `-a` is specified. 
+  
+  \param env The environment
+  \param prop The properties of the environment
+  \param dd The decision diagram
+  \param enc Support for printing bdd's
+  \param opts OptsHandler_ptr to check where to print
+  \param streams StreamMgr_ptr for printing
+  \param init bdd_ptr holding the initial states
+  \param accepting bdd_ptr holding the accepting states
 
 */
 
