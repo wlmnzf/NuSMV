@@ -11,7 +11,7 @@ Für eingeschränkte Dateiendungen z.B. `-- '*.c'` dranhängen.
 c Dateien im Folder NuSMV/code die wir seit dem ersten bis zum commit 156 geändert haben:
 
 ```
-NuSMV-2.6.0/NuSMV/code/nusmv$ git diff --name-only ff5cb851788acaf73e4b1661f323f6efe99561a7 0eb2d131e29b3d904dea3cbe1b7a395f12a644cd
+NuSMV-2.6.0/NuSMV/code/nusmv$ git diff --name-only ff5cb851788acaf73e4b1661f323f6efe99561a7 0eb2d131e29b3d904dea3cbe1b7a395f12a644cd -- '*.c'
 
 NuSMV-2.6.0/NuSMV/code/nusmv/core/cinit/cinitBatch.c
 NuSMV-2.6.0/NuSMV/code/nusmv/core/cinit/cinitData.c
