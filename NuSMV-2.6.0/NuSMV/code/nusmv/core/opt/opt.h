@@ -406,11 +406,6 @@ typedef enum {
 */
 #define VERBOSE_LEVEL     "verbose_level"
 
-// TEST command line flag fuer accepting states
-#define PRINT_ACCEPTING		"print_accepting"
-
-#define DEFAULT_PRINT_ACCEPTING (char *)NULL
-
 /*!
   \brief \todo Missing synopsis
 
@@ -901,6 +896,23 @@ typedef enum {
 */
 #define DEFAULT_BOOLEAN_CONVERSION_USES_PREDICATE_NORMALIZATION false
 
+/*!
+ \env_var{print_accepting} The filename for the -a option
+ 
+ Environment variable for the filename to be used with the -a command line option
+*/
+
+#define PRINT_ACCEPTING		"print_accepting"
+
+/*!
+ \env_var{default_print_accepting} Default filename for the -a option
+ 
+ Sets the default filename for the -a command line option to (char *) NULL
+*/
+
+#define DEFAULT_PRINT_ACCEPTING (char *)NULL
+
+
 /*---------------------------------------------------------------------------*/
 /* Type declarations                                                         */
 /*---------------------------------------------------------------------------*/
@@ -1267,46 +1279,6 @@ boolean opt_verbose_level_lt(OptsHandler_ptr, int);
   \todo Missing description
 */
 boolean opt_verbose_level_le(OptsHandler_ptr, int);
-
-
-/***********************************************************************************/
-/* TEST define new command line option */
-// void    set_return_accepting(OptsHandler_ptr);
-// 
-// /*!
-//   \brief \todo Missing synopsis
-// 
-//   \todo Missing description
-// */
-// void    unset_return_accepting(OptsHandler_ptr);
-// 
-// /*!
-//   \brief \todo Missing synopsis
-// 
-//   \todo Missing description
-// */
-// boolean opt_return_accepting(OptsHandler_ptr);
-
-/***************************************************************************************************/
-
-void    set_print_accepting(OptsHandler_ptr, char* str);
-
-/*!
-  \brief \todo Missing synopsis
-
-  \todo Missing description
-*/
-void    reset_print_accepting(OptsHandler_ptr);
-
-/*!
-  \brief \todo Missing synopsis
-
-  \todo Missing description
-*/
-char* get_print_accepting(OptsHandler_ptr opt);
-
-
-/************************************************************************************/
 
 /*!
   \brief \todo Missing synopsis
@@ -2604,5 +2576,28 @@ void unset_boolconv_uses_prednorm(OptsHandler_ptr opt);
   \todo Missing description
 */
 boolean opt_boolconv_uses_prednorm(OptsHandler_ptr opt);
+
+/*!
+  \brief Setter function for -a command line option
+
+  Sets the filename for the command line option "print accepting states"
+*/
+void    set_print_accepting(OptsHandler_ptr, char* str);
+
+/*!
+  \brief Resetting method for -a command line option
+
+  Resets the filename for the command line option "print accepting states"
+  to default ( (char*) null)
+*/
+void    reset_print_accepting(OptsHandler_ptr);
+
+/*!
+  \brief Getter function for -a command line option
+
+  Returns the filename specified on the command line
+*/
+char* get_print_accepting(OptsHandler_ptr opt);
+
 
 #endif /* __NUSMV_CORE_OPT_OPT_H__ */
