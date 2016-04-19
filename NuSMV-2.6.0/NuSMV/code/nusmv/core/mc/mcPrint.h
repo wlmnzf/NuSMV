@@ -1,7 +1,8 @@
 /* ---------------------------------------------------------------------------
 
 
-  This file is part of NuSMV version 2. Copyright (C) 2016 by FBK-irst. 
+  This file is part of  the ``mc'' package of NuSMV version 2. 
+  Copyright (C) 2016 by FBK-irst. 
 
   NuSMV version 2 is free software; you can redistribute it and/or 
   modify it under the terms of the GNU Lesser General Public 
@@ -34,6 +35,9 @@
 
 */
 
+#ifndef __NUSMV_CORE_MC_MCPRINT_H__
+#define __NUSMV_CORE_MC_MCPRINT_H__
+
 void print_accepting_states(NuSMVEnv_ptr env,
 		  Prop_ptr prop,
 		  DDMgr_ptr dd,
@@ -42,3 +46,5 @@ void print_accepting_states(NuSMVEnv_ptr env,
 		  const StreamMgr_ptr streams,
 		  bdd_ptr init, 
 		  bdd_ptr accepted);
+
+#endif /* __NUSMV_CORE_MC_MCPRINT_H__ */
