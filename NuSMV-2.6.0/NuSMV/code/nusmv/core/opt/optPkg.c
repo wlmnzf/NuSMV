@@ -198,11 +198,6 @@ void Opt_Pkg_init(NuSMVEnv_ptr const env)
   res = OptsHandler_register_int_option(opts, VERBOSE_LEVEL, 0, true);
   nusmv_assert(res);
   
-  
-  // TEST Flag setzen  
-  res = OptsHandler_register_generic_option(opts, PRINT_ACCEPTING, DEFAULT_PRINT_ACCEPTING, true);
-  nusmv_assert(res);
-
   {
     res = OptsHandler_register_int_option(opts, DEFAULT_TRACE_PLUGIN, 0, true);
     nusmv_assert(res);
@@ -638,7 +633,11 @@ void Opt_Pkg_init(NuSMVEnv_ptr const env)
   res = OptsHandler_register_bool_option(opts, BOOLEAN_CONVERSION_USES_PREDICATE_NORMALIZATION,
                                          DEFAULT_BOOLEAN_CONVERSION_USES_PREDICATE_NORMALIZATION, true);
   nusmv_assert(res);
-
+  
+   /* register command line option -a */  
+  res = OptsHandler_register_generic_option(opts, PRINT_ACCEPTING, DEFAULT_PRINT_ACCEPTING, true);
+  nusmv_assert(res);
+  
 }
 
 void Opt_Pkg_deinit(NuSMVEnv_ptr const env)
