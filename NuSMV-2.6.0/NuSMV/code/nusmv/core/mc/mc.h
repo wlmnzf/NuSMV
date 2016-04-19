@@ -295,27 +295,6 @@ Mc_trace_step_put_input_from_bdd(Trace_ptr trace, TraceIter step,
 void print_spec(OStream_ptr file, Prop_ptr prop, Prop_PrintFmt fmt);
 
 /*!
-  \brief Prints out a CTL specification with header "CTLSPEC"
-
-  Prints out a CTL specification
-*/
-void print_spec_only(OStream_ptr file, Prop_ptr prop, Prop_PrintFmt fmt);
-
-/*!
-  \brief TODO comments
-
-  Comments
-*/
-// void print_states(NuSMVEnv_ptr env,
-// 		  Prop_ptr prop,
-// 		  const OptsHandler_ptr opts,
-// 		  const StreamMgr_ptr streams,
-// 		  char * header, 
-// 		  bdd_ptr init, 
-// 		  bdd_ptr accepted, 
-// 		  bdd_ptr init_and_accepted);
-
-/*!
   \brief Print an invariant specification
 
   Print an invariant specification

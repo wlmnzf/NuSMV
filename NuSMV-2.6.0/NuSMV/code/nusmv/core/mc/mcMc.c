@@ -58,10 +58,8 @@
 
 #include "nusmv/core/fsm/bdd/BddFsm.h"
 
-#include "nusmv/core/dd/ddAc.h"
+/* ADDED Header file for printing accepting states */
 #include "nusmv/core/mc/mcPrint.h"
-
-// #include "nusmv/core/ac/accepting_states.h"
 
 /*---------------------------------------------------------------------------*/
 /* Variable declarations                                                     */
@@ -85,14 +83,6 @@ Mc_fair_si_iteration(BddFsm_ptr fsm,
 /* Definition of exported functions                                          */
 /*---------------------------------------------------------------------------*/
 
-
-/*
- * Funktion mit eigenen Aenderungen: Ausgabe auf Kommandozeile/in Datei schreiben,
- * falls Parameter "-a" uebergeben wurde
- * TODO ueberlegen, ob eigene Aenderungen nicht doch wieder in extra Funktion sollten
- * (Uebersichtlichkeit)
- */
-
 void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
 {
   const StreamMgr_ptr streams =
@@ -102,8 +92,9 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
   node_ptr exp;
   Trace_ptr trace;
   
-  // ADDED bdd_ptr for accepting, initial, initial accepting states
+  /* ADDED bdd_ptr for accepting, initial, initial accepting states */
   bdd_ptr s0, tmp_1, tmp_2, accepted, init, init_and_accepted;
+  
   BddFsm_ptr fsm;
   BddEnc_ptr enc;
   DDMgr_ptr dd;
@@ -1109,15 +1100,6 @@ void print_spec(OStream_ptr file, Prop_ptr prop, Prop_PrintFmt fmt)
   Prop_print(prop, file, fmt);
   OStream_printf(file, " ");
 }
-
-/* TODO Comments*/
-// void print_spec_only(OStream_ptr file, Prop_ptr prop, Prop_PrintFmt fmt)
-// {
-//   OStream_printf(file, "CTLSPEC: \t");
-//   Prop_print(prop, file, fmt);
-//   OStream_printf(file, " ");
-// }
-
 
 void print_compute(OStream_ptr file, Prop_ptr p, Prop_PrintFmt fmt)
 {
