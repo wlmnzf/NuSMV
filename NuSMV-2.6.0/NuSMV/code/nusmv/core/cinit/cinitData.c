@@ -764,7 +764,7 @@ void NuSMVCore_init_cmd_options(NuSMVEnv_ptr env)
                                         NULL, KEEP_SINGLE_VALUE_VARS, true,
                                         false, NULL, NULL);
   
-  // TEST: Versuch, neue env_command_line_option zu setzen
+  /* ADDED CommandLineOption -a for printing initial, accepting, initial and accepting states */
   NuSMVCore_add_env_command_line_option("-a", 
 					"prints a factored form formula of the accepting states "
 					"to the file \"filename\" or "

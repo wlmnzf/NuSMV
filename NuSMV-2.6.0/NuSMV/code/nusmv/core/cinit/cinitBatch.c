@@ -85,9 +85,10 @@ void CInit_batch_main(NuSMVEnv_ptr env)
     {  /* 1: Read the model */
       char* fname = get_input_file(opts);
       
+      /* ADDED print error, if option -a is set but only input file name specified */
       if( get_print_accepting(opts) && NULL == fname) {
 	StreamMgr_print_error(streams,
-			      "filename for option -a is (null). You must set the filename before.\n");
+	    "Filename for option -a is (null). You must set the filename before.\n");
 	goto batch_exit_fail;
       }
       if (NULL == fname) {
