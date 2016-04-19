@@ -706,7 +706,6 @@ int dd_dump_davinci(
 			  (char**) inames, (char**) onames, fp));
 }
 
-
 add_ptr add_true(DDMgr_ptr dd)
 {
   DdNode * result = Cudd_ReadTrue(dd->dd);
