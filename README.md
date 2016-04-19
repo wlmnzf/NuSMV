@@ -6,7 +6,7 @@
 
 wobei `SHA1` und `SHA2` jeweil der _secure hash_ eines commits ist.
 Findet man in github rechts bei den commits.
-Für eingeschränkte Dateiendungen z.B. `'-- '*.c'` dranhängen.
+Für eingeschränkte Dateiendungen z.B. `-- '*.c'` dranhängen.
 
 c Dateien im Folder NuSMV/code die wir seit dem ersten bis zum commit 156 geändert haben:
 
