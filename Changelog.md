@@ -8,11 +8,6 @@
 
 - Added command line option `-a` for printing initial, accepting and initial accepting states to the command line or a file specified by the user.
 
-#### `NuSMV-2.6.0/NuSMV/code/nusmv/core/cinit/cinitVers.c`
-
-- Added SWP2016 to `cinit_banner_print`.
-- kann wieder raus, oder?
-
 #### `NuSMV-2.6.0/NuSMV/code/nusmv/core/dd/CMakeLists.txt`
 
 - Added `ddAc.c` to sources and `ddAc.h` to headers.
