@@ -1,4 +1,15 @@
 ### How to use the command line option `-a`
+
+The command line option `-a` adds support for printing initial states, accepting states and initial and accepting states of a bdd representing a ctl specification to the `nusmv` model checking procedure.
+
+The initial states are a set of states representing the possible starting points of the given CTL formula. They are specified by the user. `TRUE` means that the verification of the formula can start at any node within the bdd representing the ctl specification.
+
+The accepting states are the set of states in which the ctl specification holds.
+
+The initial and accepting states are the initial states in which the ctl specification holds.
+
+The output is given as a factored formula, e.g. a representation of the logic functions underlying the respective set of states in terms of sums and products of the input variables.
+
 #### batch mode
 
 - Example file used: `raf_network.smv`
