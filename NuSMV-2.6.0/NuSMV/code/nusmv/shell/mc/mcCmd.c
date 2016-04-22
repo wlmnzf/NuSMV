@@ -194,9 +194,11 @@ int CommandCheckCtlSpec(NuSMVEnv_ptr env, int argc, char** argv)
     ERROR_MGR(NuSMVEnv_get_value(env, ENV_ERROR_MANAGER));
   util_getopt_reset();
   reset_print_accepting(opts);
+  /* ADDED: option a */
   while ((c = util_getopt(argc,argv,"hamo:n:p:P:")) != EOF) {
     switch (c) {
     case 'h': return UsageCheckCtlSpec(env);
+    /* ADDED: case for option 'a' */
     case 'a': 
      {
        set_print_accepting(opts, "print");
@@ -338,6 +340,7 @@ check_ctlspec_exit:
 static int UsageCheckCtlSpec(const NuSMVEnv_ptr env)
 {
   StreamMgr_ptr streams = STREAM_MGR(NuSMVEnv_get_value(env, ENV_STREAM_MANAGER));
+  /* ADDED: command line option a for printing initial states, accepting states, initial accepting states */
   StreamMgr_print_error(streams,  "usage: check_ctlspec [-h] [-a] [-m | -o file] [-n number | -p \"ctl-expr\" | -P \"name\"]\n");
   StreamMgr_print_error(streams,  "   -h \t\t\tPrints the command usage.\n");
   StreamMgr_print_error(streams,  "   -a \t\t\tPrints a factored form formula of the accepting\n"); 
