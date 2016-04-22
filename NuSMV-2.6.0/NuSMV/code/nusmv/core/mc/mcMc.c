@@ -92,8 +92,8 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
   node_ptr exp;
   Trace_ptr trace;
   
-  /* ADDED bdd_ptr for accepting, initial, initial accepting states */
-  bdd_ptr s0, tmp_1, tmp_2, accepted, init, init_and_accepted;
+  /* ADDED bdd_ptr for accepting and initial states */
+  bdd_ptr s0, tmp_1, tmp_2, accepted, init;
   
   BddFsm_ptr fsm;
   BddEnc_ptr enc;
