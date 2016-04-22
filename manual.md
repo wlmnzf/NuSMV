@@ -3,7 +3,6 @@
 
 - Example file used: `raf_network.smv`
 - Command for output on the command line: `nusmv -a print raf_network.smv`
-- Command for output on the command line, but without counter examples: `nusmv -dcx -a print raf_network.smv`
 - Generated output:
 
 ```
@@ -74,7 +73,7 @@ ANSWER:               FALSE
 
 - Example file: `raf_network.smv`
 - Example ctl_spec: `EF(Mek)`
-- Command for output on the shell: `check_ctlspec -p "EF(Mek)" -a` or `check_ctlspec -p "EF(Mek)" -a -m`
+- Command for output on the shell: `check_ctlspec -p "EF(Mek)" -a`
 - Generated output:
 
 ```
@@ -104,6 +103,6 @@ number of initial and accepting states: 6
 
 ```
 
-- Command for output to the file `out.txt`: `check_ctlspec -p "EF(Mek)" -a` or `check_ctlspec -p "EF(Mek)" -a -out`
-- This command generates the same output as `check_ctlspec -p "EF(Mek)" -a -m`, but the output is written to the file `out.txt`
+- Command for output to the file `out.txt`: `check_ctlspec -p "EF(Mek)" -a -out`
+- This command generates the same output as `check_ctlspec -p "EF(Mek)" -a`, but the output is written to the file `out.txt`
 
