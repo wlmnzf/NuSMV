@@ -59,7 +59,7 @@
 #include "nusmv/core/fsm/bdd/BddFsm.h"
 
 /* ADDED Header file for printing accepting states */
-#include "nusmv/core/mc/mcPrint.h"
+#include "nusmv/core/mc/mcAc.h"
 
 /*---------------------------------------------------------------------------*/
 /* Variable declarations                                                     */
