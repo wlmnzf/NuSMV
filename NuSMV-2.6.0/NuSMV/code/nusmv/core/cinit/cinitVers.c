@@ -237,7 +237,7 @@ void CInit_BannerPrint_zchaff(FILE * file)
 */
 static void cinit_banner_print(FILE* file, boolean is_linked)
 {
-  fprintf(file, "*** This is %s %s (SWP2016, compiled on %s)\n",
+  fprintf(file, "*** This is %s %s (compiled on %s)\n",
           NuSMVCore_get_tool_name(),
           NuSMVCore_get_tool_version(),
           NuSMVCore_get_build_date());
