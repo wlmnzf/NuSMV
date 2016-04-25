@@ -1,13 +1,13 @@
 from PyBoolNet import FileExchange as FEX
-from PyBoolNet import InteractionGraphs as IGs
+#from PyBoolNet import InteractionGraphs as IGs
 from PyBoolNet import StateTransitionGraphs as STGs
 from PyBoolNet import ModelChecking as MC
 from PyBoolNet import TrapSpaces as TS
 from PyBoolNet import AttractorDetection as AD
-from PyBoolNet import QuineMcCluskey as QMC
+#from PyBoolNet import QuineMcCluskey as QMC
 from PyBoolNet import TemporalQueries as TQ
 
-import networkx
+#import networkx
 
 
 primes = FEX.bnet2primes("raf_network.bnet")
@@ -19,10 +19,11 @@ print tspaces
 print a
 print TQ.EF_oneof_subspaces(primes,tspaces)
 
+#answer, counterex = AD.completeness_naive(primes, "asynchronous", tspaces)
+
 spec = "CTLSPEC " + TQ.EF_oneof_subspaces(primes,tspaces)
 print spec
 
 init = "INIT TRUE"
-answer = MC.check_primes(primes, update, init, spec, False)
+answer, counterex = MC.check_primes(primes, update, init, spec, DisableCounterExamples=False)
 print answer
-
