@@ -1,6 +1,6 @@
 ### How to use the command line option `-a`
 
-The command line option `-a` adds support for printing initial states, accepting states and initial and accepting states of a bdd representing a ctl specification to the `nusmv` model checking procedure.
+The command line option `-a` adds support for printing initial states, accepting states and initial and accepting states of a BDD representing a CTL specification to the `nusmv` model checking procedure.
 Sets of states are represented as _factored formulas_, that is, as algebraic sums and products of state variables that represent the respective states.
 In addition the integer cardinality of each set is given.
 
