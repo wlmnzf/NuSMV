@@ -1,14 +1,16 @@
 ### How to use the command line option `-a`
 
 The command line option `-a` adds support for printing initial states, accepting states and initial and accepting states of a bdd representing a ctl specification to the `nusmv` model checking procedure.
+Sets of states are represented as _factored formulas_, that is, as algebraic sums and products of state variables that represent the respective states.
+In addition the integer cardinality of each set is given.
 
-The initial states are a set of states representing the possible starting points of the given CTL formula. They are specified by the user. `TRUE` means that the verification of the formula can start at any node within the bdd representing the ctl specification.
+The _initial states_ represent the possible starting points of the given CTL property. They are specified by the user. `TRUE` means that the verification of the formula can start at any state of the transition system.
 
-The accepting states are the set of states in which the ctl specification holds.
+The _accepting states_ are the states in which the CTL specification holds.
 
-The initial and accepting states are the initial states in which the ctl specification holds.
+The _initial and accepting states_ are the initial states in which the CTL specification holds.
 
-The output is given as a factored formula, e.g. a representation of the logic functions underlying the respective set of states in terms of sums and products of the input variables.
+
 
 #### batch mode
 
@@ -114,6 +116,6 @@ number of initial and accepting states: 6
 
 ```
 
-- Command for output to the file `out.txt`: `check_ctlspec -p "EF(Mek)" -a -out`
+- Command for output to the file `out.txt`: `check_ctlspec -p "EF(Mek)" -a -o out.txt`
 - This command generates the same output as `check_ctlspec -p "EF(Mek)" -a`, but the output is written to the file `out.txt`
 
