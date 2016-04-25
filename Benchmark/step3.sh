@@ -8,5 +8,5 @@ do
    echo working on $file
    fname=$(basename $file)
    fnameout=${fname%.*}.out
-   $nusmvswp -dcx -a $fnameout $file
+   time $nusmvswp -dcx -a $fnameout $file
 done
