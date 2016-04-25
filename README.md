@@ -37,7 +37,7 @@ NuSMV-2.6.0/NuSMV/code/nusmv/shell/mc/mcCmd.c
  - [nusmv/core/fsm/bdd/BddFsmPrint.c](./NuSMV-2.6.0/NuSMV/code/nusmv/core/fsm/bdd/BddFsmPrint.c)
 
 
-### Unterschied zwischen zwei Versionen Anzeigen
+### Unterschied zwischen zwei Versionen online Anzeigen
 
 https://github.com/hklarner/SWP2016/compare
 
@@ -51,6 +51,18 @@ https://github.com/hklarner/SWP2016/compare
 
 
 ### Ergänzungen für die Shell
+
+#### Ausführen interaktiver Modus
+
+```
+./NuSMV-2.6.0/NuSMV/build/bin/NuSMV -int
+NuSMV > read_model -i raf_network.smv
+NuSMV > go
+NuSMV > check_ctlspec -p "EF(Mek)"
+```
+
+
+
 #### Command hinzufügen
 
 [./NuSMV-2.6.0/NuSMV/code/nusmv/shell/mc/mcCmd.c](./NuSMV-2.6.0/NuSMV/code/nusmv/shell/mc/mcCmd.c)
