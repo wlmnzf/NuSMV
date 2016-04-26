@@ -2,6 +2,12 @@
 #!/bin/bash
 nusmvswp='../NuSMV-2.6.0/NuSMV/build/bin/NuSMV'
 
+timefile = timeout.txt
+if [ ! -e "$timefile" ] ; then
+    touch "$timefile"
+    echo "n system user" > timeout.txt
+fi
+
 for file in *.smv ;
 do   
    echo working on $file
