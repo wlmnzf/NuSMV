@@ -8,10 +8,13 @@ if [ ! -e "$timefile" ] ; then
     echo "n system user" > timeout.txt
 fi
 
+n=5
+
 for file in *.smv ;
-do   
+do 
    echo working on $file
    fname=$(basename $file)
-   fnameout=${fname%.*}.out 
-   /usr/bin/time -o timeout.txt --append --format " %S %U" $nusmvswp -dcx -a $fnameout $file
+   fnameout=${fname%.*}.out
+   /usr/bin/time -o timeout.txt --append --format "$n %S %U" $nusmvswp -dcx -a $fnameout $file
+   let n++
 done
