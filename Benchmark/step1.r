@@ -1,7 +1,7 @@
 
 library(BoolNet)
 
-for(i in 5:20)
+for(i in 5:30)
 {
    net = generateRandomNKNetwork(n=i,k=3,topology="homogeneous",noIrrelevantGenes=TRUE)
    fnameout = paste("n", formatC(i, width=3, flag="0"), sep="")
