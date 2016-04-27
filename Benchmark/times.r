@@ -12,7 +12,7 @@ sys <- add(s1)
 
 # get user time and split into different vectors
 u0 <- times$user
-spli <- seq_along(u0)
+spl <- seq_along(u0)
 u1 <- split(u0, ceiling(spl/26))
 user <- add(u1)
 
