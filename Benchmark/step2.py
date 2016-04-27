@@ -25,6 +25,7 @@ def run():
         specs = []
         for x in states:
             specs.append("CTLSPEC EF(%s)"%TQ.subspace2proposition(primes,x))
+            break
         spec = "\n\n".join(specs)
 
         fname = fname.replace(".bnet",".smv")
