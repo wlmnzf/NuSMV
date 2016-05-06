@@ -46,6 +46,7 @@
 
 #include "nusmv/core/bmc/sbmc/sbmcGen.h"
 #include "nusmv/core/dd/ddAc.h"
+#include "nusmv/core/mc/mcAc.h"
 
 /*---------------------------------------------------------------------------*/
 /* Variable declarations                                                     */
