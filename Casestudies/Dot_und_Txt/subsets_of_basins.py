@@ -57,18 +57,26 @@ def main(argv=sys.argv):
     output = open(new_file, "w")
     subsets = open(subset_table, "w")
     CTLs = read_and_collect(veilchen, output, subsets)
-    powerset, binary_set = make_powerset(CTLs)
-    for CTL in powerset:
-      output.write("\nCTLSPEC ")
-      output.write(CTL)
-      output.write("\n")
-    for entry in binary_set:
-      subsets.write(str(entry))
-      subsets.write("\n")
+    if len(CTLs)==0:
+      print ("There are no CTLs")
+      sys.exit()
+    elif len(CTLs)==1:
+      output.write("\nCTLSPEC !("  + CTLs[0] + ")\n")
+      output.write("\nCTLSPEC ("  + CTLs[0] + ")\n")
+      subsets.write("\n(0)")
+      subsets.write("\n(1)")
+    else:
+      powerset, binary_set = make_powerset(CTLs)
+      for CTL in powerset:
+	output.write("\nCTLSPEC ")
+	output.write(CTL)
+	output.write("\n")
+      for entry in binary_set:
+	subsets.write(str(entry))
+	subsets.write("\n")
     veilchen.close()
     output.close()
     subsets.close()
-    
   except IOError:
     print ("There was an error opening", file_name)
     sys.exit()
