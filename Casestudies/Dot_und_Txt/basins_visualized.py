@@ -66,9 +66,8 @@ def make_list(new_file, CTLs, subset_table, basins):
   for num, basin in enumerate(basins):
     output.write("\nSubsets of the Basin specified by %s \n" %basin)
     for elem in CTLs:
-      print subset_table
-      #if subset_table[elem[2]][num]==1:
-	#output.write("%s	%s	%s\n" %(elem[0], subset_table[elem[2]], elem[1]))
+      if subset_table[elem[2]][num]==1:
+	output.write("%s	%s	%s\n" %(elem[0], subset_table[elem[2]], elem[1]))
   
   output.close()
 
