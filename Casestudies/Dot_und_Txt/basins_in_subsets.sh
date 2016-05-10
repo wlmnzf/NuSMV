@@ -2,7 +2,7 @@
 
 
 filename=$1
-nusmvswp='NuSMV-2.6.0/NuSMV/build/bin/NuSMV'
+nusmvswp='../../NuSMV-2.6.0/NuSMV/build/bin/NuSMV'
 outputfile=$filename
 echo $outputfile
 outputfile="${outputfile%.smv}.txt"
