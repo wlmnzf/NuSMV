@@ -72,8 +72,8 @@ def main(argv=sys.argv):
 	output.write(CTL)
 	output.write("\n")
       for entry in binary_set:
-	subsets.write(str(entry))
 	subsets.write("\n")
+	subsets.write(str(entry))
     veilchen.close()
     output.close()
     subsets.close()

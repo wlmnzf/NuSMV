@@ -18,18 +18,16 @@ def read_file(veilchen, subsets):
       line = line.replace("\n", "")
       ctlspec.append(line.lstrip())
       
-    elif (line.startswith('INITACCEPTING_SIZE')):
-      line = line.replace("INITACCEPTING_SIZE:", "")
+    elif (line.startswith('ACCEPTING_SIZE')):
+      line = line.replace("ACCEPTING_SIZE:", "")
       line = line.replace("\n", "")
-      ctlspec.append(int(line.lstrip()))
-      
-    elif (line.startswith('ANSWER')):
-      if (line.find("FALSE") < 0):
+      if int(line.lstrip())>0:
+	ctlspec.append(int(line.lstrip()))
 	ctlspec.append(index_of_ctl)
 	CTLs.append(ctlspec)
       ctlspec = []
       index_of_ctl +=1
-	
+      	
     else:
       continue
 
@@ -57,7 +55,7 @@ def make_list(new_file, CTLs, subset_table, basins):
   except IOError:
     print ("There was an error opening", list_output)
     sys.exit()
-  
+    
   total_size = 0
   for ctl in CTLs:
     total_size += ctl[1]
@@ -80,26 +78,33 @@ def make_dot(new_file, CTLs, subset_table, basins):
   except IOError:
     print ("There was an error opening", dot_output)
     sys.exit()
+  total_size = 0
+  for ctl in CTLs:
+    total_size += ctl[1]  
     
   output.write('digraph mygraph{\n label = "\nBasins are: \n')
   for basin in basins:
     output.write('%s' %basin.strip("CTLSPEC"))
+  output.write('Total size is: %s' %total_size)
   output.write('\n"')
   
   CTLs_inorder = sorted(CTLs, key=lambda CTLs: CTLs[2])
   if len(CTLs)==1:
     output.write('	"SingleNode" [label = "(%s)", xlabel = "size = %s"]\n' %(str(subset_table[CTLs[0][2]])[1:-1], CTLs[0][1]))
   else: 
-    for index in range(0, len(CTLs)-1):
+    for index in range(0, len(CTLs)):
+      node = 0
       for nextindex in range(index+1, len(CTLs)):
 	if all(tuple(i <= j for i, j in zip(subset_table[CTLs[index][2]], subset_table[CTLs[nextindex][2]]))):
-	  output.write('	"(%s)" -> "(%s)" [label = " size = %s"]\n' %(str(subset_table[CTLs[index][2]])[1:-1], str(subset_table[CTLs[nextindex][2]])[1:-1], CTLs[index][1]))
+	  output.write('	"(%s)" [xlabel = " size = %s"]\n' %(str(subset_table[CTLs[index][2]])[1:-1], CTLs[index][1]))
+  	  output.write('	"(%s)" [xlabel = " size = %s"]\n' %(str(subset_table[CTLs[nextindex][2]])[1:-1], CTLs[nextindex][1]))
+	  output.write('	"(%s)" -> "(%s)"\n' %(str(subset_table[CTLs[index][2]])[1:-1], str(subset_table[CTLs[nextindex][2]])[1:-1]))
+	  node = 1
 	  continue
+      if node == 0:
+	output.write('	"%s" [label = "(%s)", xlabel = "size = %s"]\n' %(str(subset_table[CTLs[index][2]])[1:-1], str(subset_table[CTLs[index][2]])[1:-1], CTLs[0][1]))
   output.write("}\n")
   
-
-#def make_plot():
-
 
 
 def main(argv=sys.argv):
