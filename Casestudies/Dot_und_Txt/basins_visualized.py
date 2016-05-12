@@ -82,7 +82,7 @@ def make_dot(new_file, CTLs, subset_table, basins):
   for ctl in CTLs:
     total_size += ctl[1]  
     
-  output.write('digraph mygraph{\n label = "\nBasins are: \n')
+  output.write('digraph mygraph{\n	ratio="fill";\n	 size="8, 8";\n	 margin=0;\n	label = "\nBasins are: \n')
   for basin in basins:
     output.write('%s' %basin.strip("CTLSPEC"))
   output.write('Total size is: %s' %total_size)
@@ -90,19 +90,19 @@ def make_dot(new_file, CTLs, subset_table, basins):
   
   CTLs_inorder = sorted(CTLs, key=lambda CTLs: CTLs[2])
   if len(CTLs)==1:
-    output.write('	"SingleNode" [label = "(%s)", xlabel = "size = %s"]\n' %(str(subset_table[CTLs[0][2]])[1:-1], CTLs[0][1]))
+    output.write('	"SingleNode" [label = "(%s)", xlabel = "size = %s"];\n' %(str(subset_table[CTLs[0][2]])[1:-1], CTLs[0][1]))
   else: 
     for index in range(0, len(CTLs)):
       node = 0
       for nextindex in range(index+1, len(CTLs)):
 	if all(tuple(i <= j for i, j in zip(subset_table[CTLs[index][2]], subset_table[CTLs[nextindex][2]]))):
-	  output.write('	"(%s)" [xlabel = " size = %s"]\n' %(str(subset_table[CTLs[index][2]])[1:-1], CTLs[index][1]))
-  	  output.write('	"(%s)" [xlabel = " size = %s"]\n' %(str(subset_table[CTLs[nextindex][2]])[1:-1], CTLs[nextindex][1]))
+	  output.write('	"(%s)" [xlabel = " size = %s"];\n' %(str(subset_table[CTLs[index][2]])[1:-1], CTLs[index][1]))
+  	  output.write('	"(%s)" [xlabel = " size = %s"];\n' %(str(subset_table[CTLs[nextindex][2]])[1:-1], CTLs[nextindex][1]))
 	  output.write('	"(%s)" -> "(%s)"\n' %(str(subset_table[CTLs[index][2]])[1:-1], str(subset_table[CTLs[nextindex][2]])[1:-1]))
 	  node = 1
 	  continue
       if node == 0:
-	output.write('	"%s" [label = "(%s)", xlabel = "size = %s"]\n' %(str(subset_table[CTLs[index][2]])[1:-1], str(subset_table[CTLs[index][2]])[1:-1], CTLs[0][1]))
+	output.write('	"%s" [label = "(%s)", xlabel = "size = %s"];\n' %(str(subset_table[CTLs[index][2]])[1:-1], str(subset_table[CTLs[index][2]])[1:-1], CTLs[0][1]))
   output.write("}\n")
   
 
