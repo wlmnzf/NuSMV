@@ -10,7 +10,7 @@ echo $outputfile
 
 
 python subsets_of_basins.py $filename
-$nusmvswp -a $outputfile "${filename%.smv}_prepared.smv"
+$nusmvswp -dcx -a $outputfile "${filename%.smv}_prepared.smv"
 python basins_visualized.py $outputfile
 dot -Tpdf "${outputfile%.txt}_output.dot" -o "${outputfile%.txt}.pdf"
 
