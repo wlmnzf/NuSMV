@@ -41,16 +41,18 @@ for d in dictList:
 """
 #print mintspaces[0]
 #print mintspaces[1]
+
 """
 for y in mintspaces:
 	y = ", ".join(STGs.subspace2str(primes, x) for x in mintspaces)
 	print y
 
-
+"""
 for x in stg.nodes():
 	if networkx.has_path(stg, x, "000"):
 		print x
-		print TQ.EF_oneof_subspaces(primes, x)
-"""
+		print TQ.EF_oneof_subspaces(primes, [x])
+		
+
 
 
