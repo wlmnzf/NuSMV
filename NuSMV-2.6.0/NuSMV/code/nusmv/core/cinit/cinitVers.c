@@ -237,10 +237,12 @@ void CInit_BannerPrint_zchaff(FILE * file)
 */
 static void cinit_banner_print(FILE* file, boolean is_linked)
 {
-  fprintf(file, "*** This is %s %s (compiled on %s)\n",
-          NuSMVCore_get_tool_name(),
-          NuSMVCore_get_tool_version(),
+  fprintf(file, "*** This is NuSMV-A (compiled on %s)\n",
           NuSMVCore_get_build_date());
+  fprintf(file, "*** NuSMV-A is an extension of %s %s\n",
+          NuSMVCore_get_tool_name(),
+          NuSMVCore_get_tool_version());
+  fprintf(file, "*** For more information on NuSMV-A see <http://github.com/hklarner/NuSMV-A>\n");          
 # ifdef NUSMV_LINKED_CORE_ADDONS
   /* linked addons are printed only if not empty */
   if (strcmp(NuSMVCore_get_linked_addons(), "") != 0) {
