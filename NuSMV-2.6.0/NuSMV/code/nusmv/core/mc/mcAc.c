@@ -135,7 +135,7 @@ void print_accepting_states(NuSMVEnv_ptr env,
     OStream_printf(stream, "\nnumber of accepting states: %g", acc_size);
     OStream_printf(stream, "\n");
     
-    OStream_printf(stream, "initial and accepting States: ");
+    OStream_printf(stream, "initial and accepting states: ");
     Cudd_DumpFormula_modified(dd, 1, &init_and_accepted, inames, out);
     OStream_printf(stream, "\nnumber of initial and accepting states: %g", inacc_size);
     OStream_printf(stream, "\n\n");
