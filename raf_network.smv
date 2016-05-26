@@ -35,9 +35,9 @@ INIT TRUE
 CTLSPEC  EF(!Erk&!Mek&Raf) &  EF(Erk&Mek&Raf)
 -- erwarte: Erk&!Mek&Raf | Erk&!Mek&!Raf | !Erk&Mek&!Raf
 
-CTLSPEC !EF(!Erk&!Mek&Raf) &  EF(Erk&Mek&Raf)
+--CTLSPEC !EF(!Erk&!Mek&Raf) &  EF(Erk&Mek&Raf)
 -- erwarte: Erk&Mek&!Raf | Erk&Mek&Raf | !Erk&Mek&Raf
 
-CTLSPEC  EF(!Erk&!Mek&Raf) & !EF(Erk&Mek&Raf)
+--CTLSPEC  EF(!Erk&!Mek&Raf) & !EF(Erk&Mek&Raf)
 -- erwarte: !Erk&!Mek&!Raf | !Erk&!Mek&Raf
 
