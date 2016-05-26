@@ -31,13 +31,13 @@
 - Added: in `Mc_CheckCTLSpec`, the initial states and accepting states are stored in bdd_ptr's.
 - Added: calls `print_accepting_states` function if commandline option `-a` is set.
 
-#### [NuSMV-2.6.0/NuSMV/code/nusmv/core/mc/mcPrint.c](./NuSMV-2.6.0/NuSMV/code/nusmv/core/mc/mcPrint.c)
+#### [NuSMV-2.6.0/NuSMV/code/nusmv/core/mc/mcAc.c](./NuSMV-2.6.0/NuSMV/code/nusmv/core/mc/mcAc.c)
 
 - Created file `mcAc.c` which computes the initial accepting states and prints initial, accepting and initial accepting states to the standard output or to a file specified by the user.
 
 #### [NuSMV-2.6.0/NuSMV/code/nusmv/core/mc/mcAc.h](./NuSMV-2.6.0/NuSMV/code/nusmv/core/mc/mcAc.h)
 
-- Created file `mcPrint.h`, the header file for `mcPrint.c`
+- Created file `mcAc.h`, the header file for `mcAc.c`
 
 #### [NuSMV-2.6.0/NuSMV/code/nusmv/core/opt/opt.c](./NuSMV-2.6.0/NuSMV/code/nusmv/core/opt/opt.c)
 
