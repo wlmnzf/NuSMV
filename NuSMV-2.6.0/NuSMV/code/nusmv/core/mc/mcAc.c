@@ -127,17 +127,17 @@ void print_accepting_states(NuSMVEnv_ptr env,
     
     OStream_printf(stream, "\ninitial states: ");
     Cudd_DumpFormula_modified(dd, 1, &init, inames, out);
-    OStream_printf(stream, "\nnumber of initial states: %.15g", init_size);
+    OStream_printf(stream, "\nnumber of initial states: %.20g", init_size);
     OStream_printf(stream, "\n");
 
     OStream_printf(stream, "accepting states: ");
     Cudd_DumpFormula_modified(dd, 1, &accepted, inames, out);
-    OStream_printf(stream, "\nnumber of accepting states: %.15g", acc_size);
+    OStream_printf(stream, "\nnumber of accepting states: %.20g", acc_size);
     OStream_printf(stream, "\n");
     
     OStream_printf(stream, "initial and accepting states: ");
     Cudd_DumpFormula_modified(dd, 1, &init_and_accepted, inames, out);
-    OStream_printf(stream, "\nnumber of initial and accepting states: %.15g", inacc_size);
+    OStream_printf(stream, "\nnumber of initial and accepting states: %.20g", inacc_size);
     OStream_printf(stream, "\n\n");
   }
   
@@ -157,17 +157,17 @@ void print_accepting_states(NuSMVEnv_ptr env,
     
     fprintf(out, "INIT:                 ");
     Cudd_DumpFormula_modified(dd, 1, &init, inames, out);
-    fprintf(out, "\nINIT_SIZE:            %.15g", init_size);
+    fprintf(out, "\nINIT_SIZE:            %.20g", init_size);
     fprintf(out, "\n");
     
     fprintf(out, "ACCEPTING:            ");
     Cudd_DumpFormula_modified(dd, 1, &accepted, inames, out);
-    fprintf(out, "\nACCEPTING_SIZE:       %.15g", acc_size);
+    fprintf(out, "\nACCEPTING_SIZE:       %.20g", acc_size);
     fprintf(out, "\n");
     
     fprintf(out, "INITACCEPTING:        ");
     Cudd_DumpFormula_modified(dd, 1, &init_and_accepted, inames, out);
-    fprintf(out, "\nINITACCEPTING_SIZE:   %.15g", inacc_size);
+    fprintf(out, "\nINITACCEPTING_SIZE:   %.20g", inacc_size);
     fprintf(out, "\n");
     
     if (Prop_get_status(prop) == Prop_True) {

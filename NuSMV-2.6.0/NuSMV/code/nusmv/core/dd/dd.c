@@ -1634,7 +1634,7 @@ int bdd_size(DDMgr_ptr dd, bdd_ptr fn)
 
 double bdd_count_minterm(DDMgr_ptr dd, bdd_ptr fn, int nvars)
 {
-  return(floor(Cudd_CountMinterm(dd->dd, (DdNode *)fn, nvars)));
+  return(Cudd_CountMinterm(dd->dd, (DdNode *)fn, nvars));
 }
 
 bdd_ptr bdd_support(DDMgr_ptr dd, bdd_ptr fn)
