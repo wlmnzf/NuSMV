@@ -125,3 +125,12 @@ number of initial and accepting states: 6
 - Command for output to the file `out.txt`: `check_ctlspec -p "EF(Mek)" -a -o out.txt`
 - This command generates the same output as `check_ctlspec -p "EF(Mek)" -a`, but the output is written to the file `out.txt`
 
+
+
+
+### Build from source for Linux
+
+(1) /NuSMV/mkdir build
+(2) /NuSMV/build/cmake ..
+(3) /NuSMV/build/make
+
