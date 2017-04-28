@@ -112,14 +112,27 @@ void print_accepting_states(NuSMVEnv_ptr env,
   nusmv_assert((const char**) NULL != inames);
   
   for(lev = 0; lev < dd_size; ++lev) {
-    int index = dd_get_index_at_level(dd, lev);
+    
+    /*
+    originally we used
+
+         int index = dd_get_index_at_level(dd, lev);
+    
+    to get the index. this returns wrong names when dynamic reordering happend.
+    now we use
+    
+         index = lev;
+    */
+
+    index = lev;
+    
     if(BddEnc_has_var_at_index(enc, index)) {
       inames[lev] = (const char*) sprint_node(wffprint,
                       BddEnc_get_var_name_from_index(enc, index));
     }
     else {
       inames[lev] = (const char*) NULL;
-    }
+    } 
   }
   
   /* if 'print' is specified as filename, write states to commandline */ 
