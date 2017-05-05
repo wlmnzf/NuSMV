@@ -124,7 +124,7 @@ void print_accepting_states(NuSMVEnv_ptr env,
          index = lev;
     */
 
-    index = lev;
+    int index = lev;
     
     if(BddEnc_has_var_at_index(enc, index)) {
       inames[lev] = (const char*) sprint_node(wffprint,
