@@ -1,5 +1,6 @@
 
 
+
 ### About NuSMV-a 
 `NuSMV-a` is an extension of `NuSMV 2.6.0` that adds the command line option `-a` for printing and saving the _accepting states_ of queries.
 It was written by Frederike Heinitz and Sarah Nee as part of a software internship under the supervision of Hannes Klarner at the Freie Universität Berlin.
