@@ -1,0 +1,80 @@
+Determining if the include file ndir.h exists failed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_46eab/fast"
+/usr/bin/make -f CMakeFiles/cmTC_46eab.dir/build.make CMakeFiles/cmTC_46eab.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_46eab.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_46eab.dir/CheckIncludeFile.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: ndir.h: 没有那个文件或目录
+ #include <ndir.h>
+          ^~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_46eab.dir/build.make:66：CMakeFiles/cmTC_46eab.dir/CheckIncludeFile.c.o] 错误 1
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+make: *** [Makefile:121：cmTC_46eab/fast] 错误 2
+
+
+Determining if the include file sys/ndir.h exists failed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c61b4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c61b4.dir/build.make CMakeFiles/cmTC_c61b4.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_c61b4.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_c61b4.dir/CheckIncludeFile.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: sys/ndir.h: 没有那个文件或目录
+ #include <sys/ndir.h>
+          ^~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_c61b4.dir/build.make:66：CMakeFiles/cmTC_c61b4.dir/CheckIncludeFile.c.o] 错误 1
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+make: *** [Makefile:121：cmTC_c61b4/fast] 错误 2
+
+
+Determining if the function floor exists failed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_42c83/fast"
+/usr/bin/make -f CMakeFiles/cmTC_42c83.dir/build.make CMakeFiles/cmTC_42c83.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_42c83.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=floor   -o CMakeFiles/cmTC_42c83.dir/CheckFunctionExists.c.o   -c /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘floor’ [-Wbuiltin-declaration-mismatch]
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+   CHECK_FUNCTION_EXISTS(void);
+   ^~~~~~~~~~~~~~~~~~~~~
+Linking C executable cmTC_42c83
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_42c83.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=floor    -rdynamic CMakeFiles/cmTC_42c83.dir/CheckFunctionExists.c.o  -o cmTC_42c83 
+CMakeFiles/cmTC_42c83.dir/CheckFunctionExists.c.o：在函数‘main’中：
+CheckFunctionExists.c:(.text+0x10)：对‘floor’未定义的引用
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_42c83.dir/build.make:87：cmTC_42c83] 错误 1
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+make: *** [Makefile:121：cmTC_42c83/fast] 错误 2
+
+
+Determining if the function pow exists failed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_86b00/fast"
+/usr/bin/make -f CMakeFiles/cmTC_86b00.dir/build.make CMakeFiles/cmTC_86b00.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_86b00.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pow   -o CMakeFiles/cmTC_86b00.dir/CheckFunctionExists.c.o   -c /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘pow’ [-Wbuiltin-declaration-mismatch]
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+   CHECK_FUNCTION_EXISTS(void);
+   ^~~~~~~~~~~~~~~~~~~~~
+Linking C executable cmTC_86b00
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_86b00.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pow    -rdynamic CMakeFiles/cmTC_86b00.dir/CheckFunctionExists.c.o  -o cmTC_86b00 
+CMakeFiles/cmTC_86b00.dir/CheckFunctionExists.c.o：在函数‘main’中：
+CheckFunctionExists.c:(.text+0x10)：对‘pow’未定义的引用
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_86b00.dir/build.make:87：cmTC_86b00] 错误 1
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+make: *** [Makefile:121：cmTC_86b00/fast] 错误 2
+
+

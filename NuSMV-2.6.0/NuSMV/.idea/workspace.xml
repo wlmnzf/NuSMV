@@ -1,0 +1,817 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="NuSMV" targetName="code_nusmv_core_dag" />
+      <config projectName="NuSMV" targetName="code_nusmv_core_trace" />
+      <config projectName="NuSMV" targetName="CUDD_CUDD_LIB" />
+      <config projectName="NuSMV" targetName="code_nusmv_shell_dd" />
+      <config projectName="NuSMV" targetName="docs" />
+      <config projectName="NuSMV" targetName="code_nusmv_shell_enc" />
+      <config projectName="NuSMV" targetName="code_nusmv_core_compile" />
+      <config projectName="NuSMV" targetName="code_nusmv_shell_utils" />
+      <config projectName="NuSMV" targetName="code_nusmv_core_parser_ord" />
+      <config projectName="NuSMV" targetName="code_nusmv_shell_fsm" />
+      <config projectName="NuSMV" targetName="NuSMV" />
+      <config projectName="NuSMV" targetName="code_nusmv_core_wff_lr" />
+      <config projectName="NuSMV" targetName="distbin" />
+      <config projectName="NuSMV" targetName="minisat_interface_header" />
+      <config projectName="NuSMV" targetName="code_nusmv_core_wff_w2w" />
+      <config projectName="NuSMV" targetName="code_nusmv_core_mc" />
+      <config projectName="NuSMV" targetName="gitarchive" />
+      <config projectName="NuSMV" targetName="code_nusmv_core_parser_idlist" />
+      <config projectName="NuSMV" targetName="code_nusmv_core_trans" />
+      <config projectName="NuSMV" targetName="NUSMV_RBC_LIB" />
+      <config projectName="NuSMV" targetName="code_nusmv_core_utils" />
+      <config projectName="NuSMV" targetName="CUDD_EPD_LIB" />
+      <config projectName="NuSMV" targetName="code_nusmv_shell_bmc" />
+      <config projectName="NuSMV" targetName="code_nusmv_core_compile_symb_table" />
+      <config projectName="NuSMV" targetName="CUDD_MTR_LIB" />
+      <config projectName="NuSMV" targetName="code_nusmv_core_wff" />
+      <config projectName="NuSMV" targetName="code_nusmv_core_be" />
+      <config projectName="NuSMV" targetName="code_nusmv_core_bmc" />
+      <config projectName="NuSMV" targetName="dist" />
+      <config projectName="NuSMV" targetName="code_nusmv_core_enc" />
+      <config projectName="NuSMV" targetName="html" />
+      <config projectName="NuSMV" targetName="code_nusmv_shell_ltl" />
+      <config projectName="NuSMV" targetName="ltl2smv" />
+      <config projectName="NuSMV" targetName="code_nusmv_core_ltl" />
+      <config projectName="NuSMV" targetName="code_nusmv_core_parser_psl" />
+      <config projectName="NuSMV" targetName="NUSMV_ADDONSCORE_LIB" />
+      <config projectName="NuSMV" targetName="NUSMV_GRAMMAR_LIB" />
+      <config projectName="NuSMV" targetName="code_nusmv_core_sexp" />
+      <config projectName="NuSMV" targetName="code_nusmv_core_set" />
+      <config projectName="NuSMV" targetName="code_nusmv_shell_simulate" />
+      <config projectName="NuSMV" targetName="user-man" />
+      <config projectName="NuSMV" targetName="code_nusmv_core_sat" />
+      <config projectName="NuSMV" targetName="tutorial" />
+      <config projectName="NuSMV" targetName="NUSMV_CORE_LIB" />
+      <config projectName="NuSMV" targetName="code_nusmv_core_node_anonymizers" />
+      <config projectName="NuSMV" targetName="code_nusmv_core_simulate" />
+      <config projectName="NuSMV" targetName="code_nusmv_shell_hrc" />
+      <config projectName="NuSMV" targetName="code_nusmv_core_bmc_sbmc" />
+      <config projectName="NuSMV" targetName="code_nusmv_shell_cinit" />
+      <config projectName="NuSMV" targetName="code_nusmv_core_node_printers" />
+      <config projectName="NuSMV" targetName="code_nusmv_core_prop" />
+      <config projectName="NuSMV" targetName="code_nusmv_shell_prop" />
+      <config projectName="NuSMV" targetName="code_nusmv_core_sat_solvers" />
+      <config projectName="NuSMV" targetName="code_nusmv_addons_core_compass" />
+      <config projectName="NuSMV" targetName="code_nusmv_core_fsm" />
+      <config projectName="NuSMV" targetName="code_nusmv_core_parser_grammar" />
+      <config projectName="NuSMV" targetName="CUDD_ST_LIB" />
+      <config projectName="NuSMV" targetName="code_nusmv_core_hrc_dumpers" />
+      <config projectName="NuSMV" targetName="code_nusmv_addons_core_compass_parser_prob" />
+      <config projectName="NuSMV" targetName="CUDD_UTIL_LIB" />
+      <config projectName="NuSMV" targetName="code_nusmv_core_compile_dependency" />
+      <config projectName="NuSMV" targetName="code_nusmv_core_cinit" />
+      <config projectName="NuSMV" targetName="code_nusmv_shell_opt" />
+      <config projectName="NuSMV" targetName="code_nusmv_shell_parser" />
+      <config projectName="NuSMV" targetName="code_nusmv_core_opt" />
+      <config projectName="NuSMV" targetName="code_nusmv_core_rbc" />
+      <config projectName="NuSMV" targetName="code_nusmv_shell_trace" />
+      <config projectName="NuSMV" targetName="uninstall" />
+      <config projectName="NuSMV" targetName="code_nusmv_addons_core" />
+      <config projectName="NuSMV" targetName="code_nusmv_shell_cmd" />
+      <config projectName="NuSMV" targetName="code_nusmv_core_node_normalizers" />
+      <config projectName="NuSMV" targetName="code_nusmv_core_compile_type_checking" />
+      <config projectName="NuSMV" targetName="code_nusmv_core_dd" />
+      <config projectName="NuSMV" targetName="code_nusmv_core_node" />
+      <config projectName="NuSMV" targetName="code_nusmv_shell_compile" />
+      <config projectName="NuSMV" targetName="code_nusmv_core_hrc" />
+      <config projectName="NuSMV" targetName="code_nusmv_core_parser" />
+      <config projectName="NuSMV" targetName="prog-man" />
+      <config projectName="NuSMV" targetName="MINISAT_BUILD" />
+      <config projectName="NuSMV" targetName="NUSMV_SHELL_LIB" />
+      <config projectName="NuSMV" targetName="code_nusmv_core_compile_flattening" />
+      <config projectName="NuSMV" targetName="code_nusmv_shell_mc" />
+      <config projectName="NuSMV" targetName="code_nusmv_addons_core_compass_parser_ap" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="069669ac-a81a-48f8-b63f-2adaa3242111" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MiniSat/MiniSat_v061208_nusmv.patch" beforeDir="false" afterPath="$PROJECT_DIR$/../MiniSat/MiniSat_v061208_nusmv.patch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MiniSat/MiniSat_v1.14_nusmv.patch" beforeDir="false" afterPath="$PROJECT_DIR$/../MiniSat/MiniSat_v1.14_nusmv.patch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MiniSat/MiniSat_v2.2.0_nusmv.patch" beforeDir="false" afterPath="$PROJECT_DIR$/../MiniSat/MiniSat_v2.2.0_nusmv.patch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MiniSat/MiniSat_v37dc6c6_nusmv.patch" beforeDir="false" afterPath="$PROJECT_DIR$/../MiniSat/MiniSat_v37dc6c6_nusmv.patch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cudd-2.4.1.1/util/pipefork.c" beforeDir="false" afterPath="$PROJECT_DIR$/../cudd-2.4.1.1/util/pipefork.c" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../MiniSat/MiniSat_v070721_nusmv.patch">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="121" column="31" selection-start-line="121" selection-start-column="17" selection-end-line="121" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../MiniSat/MiniSat_v061208_nusmv.patch">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="679">
+              <caret line="47" column="12" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../MiniSat/MiniSat_v37dc6c6_nusmv.patch">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="678" column="12" selection-start-line="678" selection-start-column="12" selection-end-line="678" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../MiniSat/MiniSat_v2.2.0_nusmv.patch">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="213" column="12" selection-start-line="213" selection-start-column="12" selection-end-line="213" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../MiniSat/MiniSat_v1.14_nusmv.patch">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="152" column="12" selection-start-line="152" selection-start-column="12" selection-end-line="152" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>MiniSat_Delete</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/../MiniSat/MiniSat_v061208_nusmv.patch" />
+        <option value="$PROJECT_DIR$/../MiniSat/MiniSat_v37dc6c6_nusmv.patch" />
+        <option value="$PROJECT_DIR$/../MiniSat/MiniSat_v2.2.0_nusmv.patch" />
+        <option value="$PROJECT_DIR$/../MiniSat/MiniSat_v1.14_nusmv.patch" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="346" />
+    <option name="width" value="1380" />
+    <option name="height" value="1010" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="NuSMV" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NuSMV" type="47feb1d3:ProjectViewModuleNode" />
+            </path>
+            <path>
+              <item name="NuSMV" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NuSMV" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="MiniSat" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NuSMV" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NuSMV" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="NuSMV" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/CMakeLists.txt" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.NuSMV">
+    <configuration name="CUDD_CUDD_LIB" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="CUDD_CUDD_LIB" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CUDD_EPD_LIB" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="CUDD_EPD_LIB" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CUDD_MTR_LIB" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="CUDD_MTR_LIB" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CUDD_ST_LIB" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="CUDD_ST_LIB" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CUDD_UTIL_LIB" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="CUDD_UTIL_LIB" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MINISAT_BUILD" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="MINISAT_BUILD" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NUSMV_ADDONSCORE_LIB" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="NUSMV_ADDONSCORE_LIB" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NUSMV_CORE_LIB" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="NUSMV_CORE_LIB" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NUSMV_GRAMMAR_LIB" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="NUSMV_GRAMMAR_LIB" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NUSMV_RBC_LIB" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="NUSMV_RBC_LIB" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NUSMV_SHELL_LIB" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="NUSMV_SHELL_LIB" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NuSMV" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="NuSMV" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="NuSMV" RUN_TARGET_NAME="NuSMV">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_addons_core" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_addons_core" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_addons_core_compass" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_addons_core_compass" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_addons_core_compass_parser_ap" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_addons_core_compass_parser_ap" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_addons_core_compass_parser_prob" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_addons_core_compass_parser_prob" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_core_be" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_core_be" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_core_bmc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_core_bmc" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_core_bmc_sbmc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_core_bmc_sbmc" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_core_cinit" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_core_cinit" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_core_compile" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_core_compile" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_core_compile_dependency" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_core_compile_dependency" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_core_compile_flattening" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_core_compile_flattening" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_core_compile_symb_table" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_core_compile_symb_table" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_core_compile_type_checking" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_core_compile_type_checking" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_core_dag" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_core_dag" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_core_dd" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_core_dd" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_core_enc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_core_enc" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_core_fsm" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_core_fsm" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_core_hrc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_core_hrc" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_core_hrc_dumpers" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_core_hrc_dumpers" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_core_ltl" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_core_ltl" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_core_mc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_core_mc" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_core_node" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_core_node" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_core_node_anonymizers" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_core_node_anonymizers" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_core_node_normalizers" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_core_node_normalizers" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_core_node_printers" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_core_node_printers" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_core_opt" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_core_opt" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_core_parser" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_core_parser" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_core_parser_grammar" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_core_parser_grammar" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_core_parser_idlist" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_core_parser_idlist" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_core_parser_ord" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_core_parser_ord" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_core_parser_psl" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_core_parser_psl" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_core_prop" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_core_prop" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_core_rbc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_core_rbc" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_core_sat" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_core_sat" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_core_sat_solvers" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_core_sat_solvers" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_core_set" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_core_set" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_core_sexp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_core_sexp" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_core_simulate" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_core_simulate" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_core_trace" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_core_trace" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_core_trans" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_core_trans" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_core_utils" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_core_utils" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_core_wff" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_core_wff" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_core_wff_lr" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_core_wff_lr" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_core_wff_w2w" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_core_wff_w2w" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_shell_bmc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_shell_bmc" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_shell_cinit" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_shell_cinit" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_shell_cmd" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_shell_cmd" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_shell_compile" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_shell_compile" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_shell_dd" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_shell_dd" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_shell_enc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_shell_enc" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_shell_fsm" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_shell_fsm" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_shell_hrc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_shell_hrc" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_shell_ltl" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_shell_ltl" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_shell_mc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_shell_mc" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_shell_opt" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_shell_opt" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_shell_parser" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_shell_parser" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_shell_prop" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_shell_prop" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_shell_simulate" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_shell_simulate" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_shell_trace" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_shell_trace" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code_nusmv_shell_utils" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="code_nusmv_shell_utils" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="dist" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="dist" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="distbin" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="distbin" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="docs" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="docs" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gitarchive" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="gitarchive" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="html" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="html" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ltl2smv" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="ltl2smv" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="NuSMV" RUN_TARGET_NAME="ltl2smv">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="minisat_interface_header" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="minisat_interface_header" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="prog-man" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="prog-man" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tutorial" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="tutorial" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="uninstall" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="uninstall" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="user-man" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NuSMV" TARGET_NAME="user-man" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.dist" />
+      <item itemvalue="Application.distbin" />
+      <item itemvalue="Application.gitarchive" />
+      <item itemvalue="Application.ltl2smv" />
+      <item itemvalue="Application.NuSMV" />
+      <item itemvalue="Application.NUSMV_ADDONSCORE_LIB" />
+      <item itemvalue="Application.NUSMV_CORE_LIB" />
+      <item itemvalue="Application.NUSMV_GRAMMAR_LIB" />
+      <item itemvalue="Application.NUSMV_RBC_LIB" />
+      <item itemvalue="Application.NUSMV_SHELL_LIB" />
+      <item itemvalue="Application.uninstall" />
+      <item itemvalue="Application.code_nusmv_addons_core" />
+      <item itemvalue="Application.code_nusmv_addons_core_compass" />
+      <item itemvalue="Application.code_nusmv_addons_core_compass_parser_ap" />
+      <item itemvalue="Application.code_nusmv_addons_core_compass_parser_prob" />
+      <item itemvalue="Application.code_nusmv_core_be" />
+      <item itemvalue="Application.code_nusmv_core_bmc" />
+      <item itemvalue="Application.code_nusmv_core_bmc_sbmc" />
+      <item itemvalue="Application.code_nusmv_core_cinit" />
+      <item itemvalue="Application.code_nusmv_core_compile" />
+      <item itemvalue="Application.code_nusmv_core_compile_dependency" />
+      <item itemvalue="Application.code_nusmv_core_compile_flattening" />
+      <item itemvalue="Application.code_nusmv_core_compile_symb_table" />
+      <item itemvalue="Application.code_nusmv_core_compile_type_checking" />
+      <item itemvalue="Application.code_nusmv_core_dag" />
+      <item itemvalue="Application.code_nusmv_core_dd" />
+      <item itemvalue="Application.code_nusmv_core_enc" />
+      <item itemvalue="Application.code_nusmv_core_fsm" />
+      <item itemvalue="Application.code_nusmv_core_hrc" />
+      <item itemvalue="Application.code_nusmv_core_hrc_dumpers" />
+      <item itemvalue="Application.code_nusmv_core_ltl" />
+      <item itemvalue="Application.code_nusmv_core_mc" />
+      <item itemvalue="Application.code_nusmv_core_node" />
+      <item itemvalue="Application.code_nusmv_core_node_anonymizers" />
+      <item itemvalue="Application.code_nusmv_core_node_normalizers" />
+      <item itemvalue="Application.code_nusmv_core_node_printers" />
+      <item itemvalue="Application.code_nusmv_core_opt" />
+      <item itemvalue="Application.code_nusmv_core_parser" />
+      <item itemvalue="Application.code_nusmv_core_parser_grammar" />
+      <item itemvalue="Application.code_nusmv_core_parser_idlist" />
+      <item itemvalue="Application.code_nusmv_core_parser_ord" />
+      <item itemvalue="Application.code_nusmv_core_parser_psl" />
+      <item itemvalue="Application.code_nusmv_core_prop" />
+      <item itemvalue="Application.code_nusmv_core_rbc" />
+      <item itemvalue="Application.code_nusmv_core_sat" />
+      <item itemvalue="Application.code_nusmv_core_sat_solvers" />
+      <item itemvalue="Application.minisat_interface_header" />
+      <item itemvalue="Application.code_nusmv_core_set" />
+      <item itemvalue="Application.code_nusmv_core_sexp" />
+      <item itemvalue="Application.code_nusmv_core_simulate" />
+      <item itemvalue="Application.code_nusmv_core_trace" />
+      <item itemvalue="Application.code_nusmv_core_trans" />
+      <item itemvalue="Application.code_nusmv_core_utils" />
+      <item itemvalue="Application.code_nusmv_core_wff" />
+      <item itemvalue="Application.code_nusmv_core_wff_lr" />
+      <item itemvalue="Application.code_nusmv_core_wff_w2w" />
+      <item itemvalue="Application.code_nusmv_shell_bmc" />
+      <item itemvalue="Application.code_nusmv_shell_cinit" />
+      <item itemvalue="Application.code_nusmv_shell_cmd" />
+      <item itemvalue="Application.code_nusmv_shell_compile" />
+      <item itemvalue="Application.code_nusmv_shell_dd" />
+      <item itemvalue="Application.code_nusmv_shell_enc" />
+      <item itemvalue="Application.code_nusmv_shell_fsm" />
+      <item itemvalue="Application.code_nusmv_shell_hrc" />
+      <item itemvalue="Application.code_nusmv_shell_ltl" />
+      <item itemvalue="Application.code_nusmv_shell_mc" />
+      <item itemvalue="Application.code_nusmv_shell_opt" />
+      <item itemvalue="Application.code_nusmv_shell_parser" />
+      <item itemvalue="Application.code_nusmv_shell_prop" />
+      <item itemvalue="Application.code_nusmv_shell_simulate" />
+      <item itemvalue="Application.code_nusmv_shell_trace" />
+      <item itemvalue="Application.code_nusmv_shell_utils" />
+      <item itemvalue="Application.docs" />
+      <item itemvalue="Application.html" />
+      <item itemvalue="Application.prog-man" />
+      <item itemvalue="Application.tutorial" />
+      <item itemvalue="Application.user-man" />
+      <item itemvalue="Application.CUDD_CUDD_LIB" />
+      <item itemvalue="Application.CUDD_EPD_LIB" />
+      <item itemvalue="Application.CUDD_MTR_LIB" />
+      <item itemvalue="Application.CUDD_ST_LIB" />
+      <item itemvalue="Application.CUDD_UTIL_LIB" />
+      <item itemvalue="Application.MINISAT_BUILD" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="069669ac-a81a-48f8-b63f-2adaa3242111" name="Default Changelist" comment="" />
+      <created>1552097938690</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1552097938690</updated>
+      <workItem from="1552097943251" duration="205000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="205000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="2560" height="1390" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13264495" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="CMake" visible="true" weight="0.23034154" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="make" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../MiniSat/MiniSat_v070721_nusmv.patch">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="121" column="31" selection-start-line="121" selection-start-column="17" selection-end-line="121" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MiniSat/MiniSat_v061208_nusmv.patch">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="679">
+          <caret line="47" column="12" selection-start-line="47" selection-start-column="12" selection-end-line="47" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MiniSat/MiniSat_v37dc6c6_nusmv.patch">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="678" column="12" selection-start-line="678" selection-start-column="12" selection-end-line="678" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MiniSat/MiniSat_v2.2.0_nusmv.patch">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="213" column="12" selection-start-line="213" selection-start-column="12" selection-end-line="213" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MiniSat/MiniSat_v1.14_nusmv.patch">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="152" column="12" selection-start-line="152" selection-start-column="12" selection-end-line="152" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

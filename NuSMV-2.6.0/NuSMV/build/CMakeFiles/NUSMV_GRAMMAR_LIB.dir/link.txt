@@ -1,0 +1,3 @@
+"/usr/bin/cmake" -E remove -f lib/libnusmvgrammar.a
+/usr/bin/ar cq lib/libnusmvgrammar.a  code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser_grammar.dir/input.c.o code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser_grammar.dir/grammar.c.o
+/usr/bin/ranlib lib/libnusmvgrammar.a

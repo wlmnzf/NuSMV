@@ -1,0 +1,1539 @@
+The system is: Linux - 4.15.0-29deepin-generic - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_dcf65/fast"
+/usr/bin/make -f CMakeFiles/cmTC_dcf65.dir/build.make CMakeFiles/cmTC_dcf65.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_dcf65.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_dcf65.dir/testCCompiler.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_dcf65
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dcf65.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_dcf65.dir/testCCompiler.c.o  -o cmTC_dcf65 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a0133/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a0133.dir/build.make CMakeFiles/cmTC_a0133.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_a0133.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_a0133.dir/CMakeCCompilerABI.c.o   -c /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_a0133
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a0133.dir/link.txt --verbose=1
+/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_a0133.dir/CMakeCCompilerABI.c.o  -o cmTC_a0133 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Debian 7.3.0-19' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 7.3.0 (Debian 7.3.0-19) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_a0133' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cceRTDyp.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_a0133 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_a0133.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_a0133' '-mtune=generic' '-march=x86-64'
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_a0133/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_a0133.dir/build.make CMakeFiles/cmTC_a0133.dir/build]
+  ignore line: [make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”]
+  ignore line: [Building C object CMakeFiles/cmTC_a0133.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTC_a0133.dir/CMakeCCompilerABI.c.o   -c /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_a0133]
+  ignore line: [/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a0133.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v -rdynamic CMakeFiles/cmTC_a0133.dir/CMakeCCompilerABI.c.o  -o cmTC_a0133 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 7.3.0-19' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 7.3.0 (Debian 7.3.0-19) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_a0133' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cceRTDyp.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_a0133 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_a0133.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/7/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cceRTDyp.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--sysroot=/] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_a0133] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../..]
+    arg [CMakeFiles/cmTC_a0133.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7] ==> [/usr/lib/gcc/x86_64-linux-gnu/7]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../..] ==> [/usr/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/7;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+
+
+Detecting C [-std=c11] compiler features compiled with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a1188/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a1188.dir/build.make CMakeFiles/cmTC_a1188.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_a1188.dir/feature_tests.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTC_a1188.dir/feature_tests.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_a1188
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a1188.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_a1188.dir/feature_tests.c.o  -o cmTC_a1188 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:1c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c99] compiler features compiled with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7cb25/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7cb25.dir/build.make CMakeFiles/cmTC_7cb25.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_7cb25.dir/feature_tests.c.o
+/usr/bin/cc   -std=c99 -o CMakeFiles/cmTC_7cb25.dir/feature_tests.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_7cb25
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7cb25.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_7cb25.dir/feature_tests.c.o  -o cmTC_7cb25 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c90] compiler features compiled with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6da9d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6da9d.dir/build.make CMakeFiles/cmTC_6da9d.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_6da9d.dir/feature_tests.c.o
+/usr/bin/cc   -std=c90 -o CMakeFiles/cmTC_6da9d.dir/feature_tests.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/feature_tests.c
+Linking C executable cmTC_6da9d
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6da9d.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_6da9d.dir/feature_tests.c.o  -o cmTC_6da9d 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:0c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:0c_variadic_macros
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1d1b2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1d1b2.dir/build.make CMakeFiles/cmTC_1d1b2.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_1d1b2.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_1d1b2.dir/testCXXCompiler.cxx.o -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_1d1b2
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1d1b2.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_1d1b2.dir/testCXXCompiler.cxx.o  -o cmTC_1d1b2 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9e625/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9e625.dir/build.make CMakeFiles/cmTC_9e625.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_9e625.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTC_9e625.dir/CMakeCXXCompilerABI.cpp.o -c /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_9e625
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9e625.dir/link.txt --verbose=1
+/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_9e625.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_9e625 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Debian 7.3.0-19' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 7.3.0 (Debian 7.3.0-19) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_9e625' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccu0UfRL.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_9e625 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_9e625.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_9e625' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_9e625/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_9e625.dir/build.make CMakeFiles/cmTC_9e625.dir/build]
+  ignore line: [make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”]
+  ignore line: [Building CXX object CMakeFiles/cmTC_9e625.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTC_9e625.dir/CMakeCXXCompilerABI.cpp.o -c /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_9e625]
+  ignore line: [/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9e625.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v -rdynamic CMakeFiles/cmTC_9e625.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_9e625 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 7.3.0-19' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 7.3.0 (Debian 7.3.0-19) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_9e625' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccu0UfRL.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_9e625 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_9e625.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/7/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccu0UfRL.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--sysroot=/] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_9e625] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../..]
+    arg [CMakeFiles/cmTC_9e625.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o] ==> ignore
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7] ==> [/usr/lib/gcc/x86_64-linux-gnu/7]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../..] ==> [/usr/lib]
+  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/7;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+
+
+Detecting CXX [-std=c++1z] compiler features compiled with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_74e0c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_74e0c.dir/build.make CMakeFiles/cmTC_74e0c.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_74e0c.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++1z -o CMakeFiles/cmTC_74e0c.dir/feature_tests.cxx.o -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_74e0c
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_74e0c.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_74e0c.dir/feature_tests.cxx.o  -o cmTC_74e0c 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++14] compiler features compiled with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_03108/fast"
+/usr/bin/make -f CMakeFiles/cmTC_03108.dir/build.make CMakeFiles/cmTC_03108.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_03108.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++14 -o CMakeFiles/cmTC_03108.dir/feature_tests.cxx.o -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_03108
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_03108.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_03108.dir/feature_tests.cxx.o  -o cmTC_03108 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++11] compiler features compiled with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_70b4b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_70b4b.dir/build.make CMakeFiles/cmTC_70b4b.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_70b4b.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTC_70b4b.dir/feature_tests.cxx.o -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_70b4b
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_70b4b.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_70b4b.dir/feature_tests.cxx.o  -o cmTC_70b4b 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++98] compiler features compiled with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_02057/fast"
+/usr/bin/make -f CMakeFiles/cmTC_02057.dir/build.make CMakeFiles/cmTC_02057.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building CXX object CMakeFiles/cmTC_02057.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTC_02057.dir/feature_tests.cxx.o -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_02057
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_02057.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_02057.dir/feature_tests.cxx.o  -o cmTC_02057 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:0cxx_alias_templates
+    Feature record: CXX_FEATURE:0cxx_alignas
+    Feature record: CXX_FEATURE:0cxx_alignof
+    Feature record: CXX_FEATURE:0cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:0cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:0cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:0cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:0cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:0cxx_default_function_template_args
+    Feature record: CXX_FEATURE:0cxx_defaulted_functions
+    Feature record: CXX_FEATURE:0cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:0cxx_delegating_constructors
+    Feature record: CXX_FEATURE:0cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:0cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:0cxx_explicit_conversions
+    Feature record: CXX_FEATURE:0cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:0cxx_extern_templates
+    Feature record: CXX_FEATURE:0cxx_final
+    Feature record: CXX_FEATURE:0cxx_func_identifier
+    Feature record: CXX_FEATURE:0cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:0cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:0cxx_inline_namespaces
+    Feature record: CXX_FEATURE:0cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:0cxx_local_type_template_args
+    Feature record: CXX_FEATURE:0cxx_long_long_type
+    Feature record: CXX_FEATURE:0cxx_noexcept
+    Feature record: CXX_FEATURE:0cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:0cxx_nullptr
+    Feature record: CXX_FEATURE:0cxx_override
+    Feature record: CXX_FEATURE:0cxx_range_for
+    Feature record: CXX_FEATURE:0cxx_raw_string_literals
+    Feature record: CXX_FEATURE:0cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:0cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:0cxx_rvalue_references
+    Feature record: CXX_FEATURE:0cxx_sizeof_member
+    Feature record: CXX_FEATURE:0cxx_static_assert
+    Feature record: CXX_FEATURE:0cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:0cxx_thread_local
+    Feature record: CXX_FEATURE:0cxx_trailing_return_types
+    Feature record: CXX_FEATURE:0cxx_unicode_literals
+    Feature record: CXX_FEATURE:0cxx_uniform_initialization
+    Feature record: CXX_FEATURE:0cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:0cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:0cxx_variadic_macros
+    Feature record: CXX_FEATURE:0cxx_variadic_templates
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9ea8c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9ea8c.dir/build.make CMakeFiles/cmTC_9ea8c.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_9ea8c.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_9ea8c.dir/CheckIncludeFile.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_9ea8c
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9ea8c.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_9ea8c.dir/CheckIncludeFile.c.o  -o cmTC_9ea8c 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2ad8a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2ad8a.dir/build.make CMakeFiles/cmTC_2ad8a.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_2ad8a.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_2ad8a.dir/CheckIncludeFile.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_2ad8a
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2ad8a.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_2ad8a.dir/CheckIncludeFile.c.o  -o cmTC_2ad8a 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_380e5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_380e5.dir/build.make CMakeFiles/cmTC_380e5.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_380e5.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_380e5.dir/CheckIncludeFile.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_380e5
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_380e5.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_380e5.dir/CheckIncludeFile.c.o  -o cmTC_380e5 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining size of int passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5c89d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5c89d.dir/build.make CMakeFiles/cmTC_5c89d.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_5c89d.dir/_int_size.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_5c89d.dir/_int_size.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CheckTypeSize/_int_size.c
+Linking C executable cmTC_5c89d
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5c89d.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_5c89d.dir/_int_size.c.o  -o cmTC_5c89d 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining size of long int passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c906b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c906b.dir/build.make CMakeFiles/cmTC_c906b.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_c906b.dir/_long_size.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_c906b.dir/_long_size.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CheckTypeSize/_long_size.c
+Linking C executable cmTC_c906b
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c906b.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_c906b.dir/_long_size.c.o  -o cmTC_c906b 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining size of void * passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a76df/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a76df.dir/build.make CMakeFiles/cmTC_a76df.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_a76df.dir/_voidp_size.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_a76df.dir/_voidp_size.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CheckTypeSize/_voidp_size.c
+Linking C executable cmTC_a76df
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a76df.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_a76df.dir/_voidp_size.c.o  -o cmTC_a76df 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Performing C SOURCE FILE Test _have_funcattr_noreturn succeeded with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0f16b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0f16b.dir/build.make CMakeFiles/cmTC_0f16b.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_0f16b.dir/src.c.o
+/usr/bin/cc   -D_have_funcattr_noreturn   -o CMakeFiles/cmTC_0f16b.dir/src.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp/src.c: In function ‘f’:
+/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:2:5: warning: ‘noreturn’ function does return
+     __attribute__ ((noreturn)) void f(void) {}
+     ^~~~~~~~~~~~~
+Linking C executable cmTC_0f16b
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0f16b.dir/link.txt --verbose=1
+/usr/bin/cc  -D_have_funcattr_noreturn    -rdynamic CMakeFiles/cmTC_0f16b.dir/src.c.o  -o cmTC_0f16b 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+Source file was:
+
+    __attribute__ ((noreturn)) void f(void) {}
+
+    int main(void)
+    {
+        f();
+        return 0;
+    }
+    
+Performing C SOURCE FILE Test _have_funcattr_warn_unused_result succeeded with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_dd2f2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_dd2f2.dir/build.make CMakeFiles/cmTC_dd2f2.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_dd2f2.dir/src.c.o
+/usr/bin/cc   -D_have_funcattr_warn_unused_result   -o CMakeFiles/cmTC_dd2f2.dir/src.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:9: warning: ignoring return value of ‘f’, declared with attribute warn_unused_result [-Wunused-result]
+         f(1);
+         ^~~~
+Linking C executable cmTC_dd2f2
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dd2f2.dir/link.txt --verbose=1
+/usr/bin/cc  -D_have_funcattr_warn_unused_result    -rdynamic CMakeFiles/cmTC_dd2f2.dir/src.c.o  -o cmTC_dd2f2 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+Source file was:
+
+    __attribute__ ((__warn_unused_result__)) int f(int i) { return i; }
+
+    int main(void)
+    {
+        f(1);
+        return 0;
+    }
+    
+Performing C SOURCE FILE Test HAVE_MALLOC succeeded with the following compile output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3be82/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3be82.dir/build.make CMakeFiles/cmTC_3be82.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_3be82.dir/src.c.o
+/usr/bin/cc   -DHAVE_MALLOC   -o CMakeFiles/cmTC_3be82.dir/src.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:2:15: warning: conflicting types for built-in function ‘malloc’ [-Wbuiltin-declaration-mismatch]
+         char *malloc();
+               ^~~~~~
+Linking C executable cmTC_3be82
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3be82.dir/link.txt --verbose=1
+/usr/bin/cc  -DHAVE_MALLOC    -rdynamic CMakeFiles/cmTC_3be82.dir/src.c.o  -o cmTC_3be82 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+...and run output:
+
+Return value: 1
+Source file was:
+
+        char *malloc();
+
+        int main(void)
+        {
+            return (!malloc(0));
+        }
+        
+Determining if the include file malloc.h exists passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_59f81/fast"
+/usr/bin/make -f CMakeFiles/cmTC_59f81.dir/build.make CMakeFiles/cmTC_59f81.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_59f81.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_59f81.dir/CheckIncludeFile.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_59f81
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_59f81.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_59f81.dir/CheckIncludeFile.c.o  -o cmTC_59f81 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining if the include file dirent.h exists passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6f9ca/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6f9ca.dir/build.make CMakeFiles/cmTC_6f9ca.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_6f9ca.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_6f9ca.dir/CheckIncludeFile.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_6f9ca
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6f9ca.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_6f9ca.dir/CheckIncludeFile.c.o  -o cmTC_6f9ca 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining if the include file dlfcn.h exists passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c92b2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c92b2.dir/build.make CMakeFiles/cmTC_c92b2.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_c92b2.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_c92b2.dir/CheckIncludeFile.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_c92b2
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c92b2.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_c92b2.dir/CheckIncludeFile.c.o  -o cmTC_c92b2 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining if the include file errno.h exists passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_eac2d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_eac2d.dir/build.make CMakeFiles/cmTC_eac2d.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_eac2d.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_eac2d.dir/CheckIncludeFile.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_eac2d
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eac2d.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_eac2d.dir/CheckIncludeFile.c.o  -o cmTC_eac2d 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining if the include file float.h exists passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9fb6b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9fb6b.dir/build.make CMakeFiles/cmTC_9fb6b.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_9fb6b.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_9fb6b.dir/CheckIncludeFile.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_9fb6b
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9fb6b.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_9fb6b.dir/CheckIncludeFile.c.o  -o cmTC_9fb6b 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining if the include file fnmatch.h exists passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2962f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2962f.dir/build.make CMakeFiles/cmTC_2962f.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_2962f.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_2962f.dir/CheckIncludeFile.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_2962f
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2962f.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_2962f.dir/CheckIncludeFile.c.o  -o cmTC_2962f 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining if the include file inttypes.h exists passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_eec75/fast"
+/usr/bin/make -f CMakeFiles/cmTC_eec75.dir/build.make CMakeFiles/cmTC_eec75.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_eec75.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_eec75.dir/CheckIncludeFile.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_eec75
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eec75.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_eec75.dir/CheckIncludeFile.c.o  -o cmTC_eec75 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining if the include file limits.h exists passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_23488/fast"
+/usr/bin/make -f CMakeFiles/cmTC_23488.dir/build.make CMakeFiles/cmTC_23488.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_23488.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_23488.dir/CheckIncludeFile.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_23488
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_23488.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_23488.dir/CheckIncludeFile.c.o  -o cmTC_23488 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining if the include file memory.h exists passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_512ed/fast"
+/usr/bin/make -f CMakeFiles/cmTC_512ed.dir/build.make CMakeFiles/cmTC_512ed.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_512ed.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_512ed.dir/CheckIncludeFile.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_512ed
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_512ed.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_512ed.dir/CheckIncludeFile.c.o  -o cmTC_512ed 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining if the include file regex.h exists passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_938a2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_938a2.dir/build.make CMakeFiles/cmTC_938a2.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_938a2.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_938a2.dir/CheckIncludeFile.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_938a2
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_938a2.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_938a2.dir/CheckIncludeFile.c.o  -o cmTC_938a2 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining if the include file signal.h exists passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6cb98/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6cb98.dir/build.make CMakeFiles/cmTC_6cb98.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_6cb98.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_6cb98.dir/CheckIncludeFile.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_6cb98
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6cb98.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_6cb98.dir/CheckIncludeFile.c.o  -o cmTC_6cb98 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining if the include file stdbool.h exists passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_49d1f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_49d1f.dir/build.make CMakeFiles/cmTC_49d1f.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_49d1f.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_49d1f.dir/CheckIncludeFile.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_49d1f
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_49d1f.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_49d1f.dir/CheckIncludeFile.c.o  -o cmTC_49d1f 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining if the include file stdlib.h exists passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ba16a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ba16a.dir/build.make CMakeFiles/cmTC_ba16a.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_ba16a.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_ba16a.dir/CheckIncludeFile.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_ba16a
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ba16a.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_ba16a.dir/CheckIncludeFile.c.o  -o cmTC_ba16a 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining if the include file string.h exists passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_620ad/fast"
+/usr/bin/make -f CMakeFiles/cmTC_620ad.dir/build.make CMakeFiles/cmTC_620ad.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_620ad.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_620ad.dir/CheckIncludeFile.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_620ad
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_620ad.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_620ad.dir/CheckIncludeFile.c.o  -o cmTC_620ad 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining if the include file strings.h exists passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_65b92/fast"
+/usr/bin/make -f CMakeFiles/cmTC_65b92.dir/build.make CMakeFiles/cmTC_65b92.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_65b92.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_65b92.dir/CheckIncludeFile.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_65b92
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_65b92.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_65b92.dir/CheckIncludeFile.c.o  -o cmTC_65b92 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining if the include file sys/dir.h exists passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d6e75/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d6e75.dir/build.make CMakeFiles/cmTC_d6e75.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_d6e75.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_d6e75.dir/CheckIncludeFile.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_d6e75
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d6e75.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_d6e75.dir/CheckIncludeFile.c.o  -o cmTC_d6e75 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining if the include file sys/ioctl.h exists passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4af6d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4af6d.dir/build.make CMakeFiles/cmTC_4af6d.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_4af6d.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_4af6d.dir/CheckIncludeFile.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_4af6d
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4af6d.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_4af6d.dir/CheckIncludeFile.c.o  -o cmTC_4af6d 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining if the include file sys/param.h exists passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b9a5b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b9a5b.dir/build.make CMakeFiles/cmTC_b9a5b.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_b9a5b.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_b9a5b.dir/CheckIncludeFile.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_b9a5b
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b9a5b.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_b9a5b.dir/CheckIncludeFile.c.o  -o cmTC_b9a5b 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining if the include file sys/resource.h exists passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_59ddb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_59ddb.dir/build.make CMakeFiles/cmTC_59ddb.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_59ddb.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_59ddb.dir/CheckIncludeFile.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_59ddb
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_59ddb.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_59ddb.dir/CheckIncludeFile.c.o  -o cmTC_59ddb 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining if the include file sys/signal.h exists passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_17d30/fast"
+/usr/bin/make -f CMakeFiles/cmTC_17d30.dir/build.make CMakeFiles/cmTC_17d30.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_17d30.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_17d30.dir/CheckIncludeFile.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_17d30
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_17d30.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_17d30.dir/CheckIncludeFile.c.o  -o cmTC_17d30 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining if the include file sys/stat.h exists passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_643f0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_643f0.dir/build.make CMakeFiles/cmTC_643f0.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_643f0.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_643f0.dir/CheckIncludeFile.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_643f0
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_643f0.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_643f0.dir/CheckIncludeFile.c.o  -o cmTC_643f0 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining if the include file sys/time.h exists passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_dd70f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_dd70f.dir/build.make CMakeFiles/cmTC_dd70f.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_dd70f.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_dd70f.dir/CheckIncludeFile.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_dd70f
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dd70f.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_dd70f.dir/CheckIncludeFile.c.o  -o cmTC_dd70f 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining if the include file unistd.h exists passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4a9b5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4a9b5.dir/build.make CMakeFiles/cmTC_4a9b5.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_4a9b5.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_4a9b5.dir/CheckIncludeFile.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_4a9b5
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4a9b5.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_4a9b5.dir/CheckIncludeFile.c.o  -o cmTC_4a9b5 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining if the function getenv exists passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e3fef/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e3fef.dir/build.make CMakeFiles/cmTC_e3fef.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_e3fef.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=getenv   -o CMakeFiles/cmTC_e3fef.dir/CheckFunctionExists.c.o   -c /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e3fef
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e3fef.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=getenv    -rdynamic CMakeFiles/cmTC_e3fef.dir/CheckFunctionExists.c.o  -o cmTC_e3fef 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining if the function getpid exists passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_481d0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_481d0.dir/build.make CMakeFiles/cmTC_481d0.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_481d0.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=getpid   -o CMakeFiles/cmTC_481d0.dir/CheckFunctionExists.c.o   -c /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_481d0
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_481d0.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=getpid    -rdynamic CMakeFiles/cmTC_481d0.dir/CheckFunctionExists.c.o  -o cmTC_481d0 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining if the function isatty exists passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_cd780/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cd780.dir/build.make CMakeFiles/cmTC_cd780.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_cd780.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=isatty   -o CMakeFiles/cmTC_cd780.dir/CheckFunctionExists.c.o   -c /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_cd780
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cd780.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=isatty    -rdynamic CMakeFiles/cmTC_cd780.dir/CheckFunctionExists.c.o  -o cmTC_cd780 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining if the function memmove exists passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_49087/fast"
+/usr/bin/make -f CMakeFiles/cmTC_49087.dir/build.make CMakeFiles/cmTC_49087.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_49087.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=memmove   -o CMakeFiles/cmTC_49087.dir/CheckFunctionExists.c.o   -c /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘memmove’ [-Wbuiltin-declaration-mismatch]
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+   CHECK_FUNCTION_EXISTS(void);
+   ^~~~~~~~~~~~~~~~~~~~~
+Linking C executable cmTC_49087
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_49087.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=memmove    -rdynamic CMakeFiles/cmTC_49087.dir/CheckFunctionExists.c.o  -o cmTC_49087 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining if the function memset exists passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5da4f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5da4f.dir/build.make CMakeFiles/cmTC_5da4f.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_5da4f.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=memset   -o CMakeFiles/cmTC_5da4f.dir/CheckFunctionExists.c.o   -c /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘memset’ [-Wbuiltin-declaration-mismatch]
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+   CHECK_FUNCTION_EXISTS(void);
+   ^~~~~~~~~~~~~~~~~~~~~
+Linking C executable cmTC_5da4f
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5da4f.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=memset    -rdynamic CMakeFiles/cmTC_5da4f.dir/CheckFunctionExists.c.o  -o cmTC_5da4f 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining if the function mkstemp exists passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_395e8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_395e8.dir/build.make CMakeFiles/cmTC_395e8.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_395e8.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=mkstemp   -o CMakeFiles/cmTC_395e8.dir/CheckFunctionExists.c.o   -c /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_395e8
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_395e8.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=mkstemp    -rdynamic CMakeFiles/cmTC_395e8.dir/CheckFunctionExists.c.o  -o cmTC_395e8 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining if the function mktemp exists passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1fc4d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1fc4d.dir/build.make CMakeFiles/cmTC_1fc4d.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_1fc4d.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=mktemp   -o CMakeFiles/cmTC_1fc4d.dir/CheckFunctionExists.c.o   -c /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_1fc4d
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1fc4d.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=mktemp    -rdynamic CMakeFiles/cmTC_1fc4d.dir/CheckFunctionExists.c.o  -o cmTC_1fc4d 
+CMakeFiles/cmTC_1fc4d.dir/CheckFunctionExists.c.o：在函数‘main’中：
+CheckFunctionExists.c:(.text+0x10): 警告：the use of `mktemp' is dangerous, better use `mkstemp' or `mkdtemp'
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining if the function popen exists passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_cdad8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cdad8.dir/build.make CMakeFiles/cmTC_cdad8.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_cdad8.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=popen   -o CMakeFiles/cmTC_cdad8.dir/CheckFunctionExists.c.o   -c /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_cdad8
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cdad8.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=popen    -rdynamic CMakeFiles/cmTC_cdad8.dir/CheckFunctionExists.c.o  -o cmTC_cdad8 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining if the function random exists passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_15ecd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_15ecd.dir/build.make CMakeFiles/cmTC_15ecd.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_15ecd.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=random   -o CMakeFiles/cmTC_15ecd.dir/CheckFunctionExists.c.o   -c /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_15ecd
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_15ecd.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=random    -rdynamic CMakeFiles/cmTC_15ecd.dir/CheckFunctionExists.c.o  -o cmTC_15ecd 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining if the function realloc exists passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9119e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9119e.dir/build.make CMakeFiles/cmTC_9119e.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_9119e.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=realloc   -o CMakeFiles/cmTC_9119e.dir/CheckFunctionExists.c.o   -c /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘realloc’ [-Wbuiltin-declaration-mismatch]
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+   CHECK_FUNCTION_EXISTS(void);
+   ^~~~~~~~~~~~~~~~~~~~~
+Linking C executable cmTC_9119e
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9119e.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=realloc    -rdynamic CMakeFiles/cmTC_9119e.dir/CheckFunctionExists.c.o  -o cmTC_9119e 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining if the function setvbuf exists passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_12c38/fast"
+/usr/bin/make -f CMakeFiles/cmTC_12c38.dir/build.make CMakeFiles/cmTC_12c38.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_12c38.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=setvbuf   -o CMakeFiles/cmTC_12c38.dir/CheckFunctionExists.c.o   -c /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_12c38
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_12c38.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=setvbuf    -rdynamic CMakeFiles/cmTC_12c38.dir/CheckFunctionExists.c.o  -o cmTC_12c38 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining if the function srandom exists passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_66f0b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_66f0b.dir/build.make CMakeFiles/cmTC_66f0b.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_66f0b.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=srandom   -o CMakeFiles/cmTC_66f0b.dir/CheckFunctionExists.c.o   -c /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_66f0b
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_66f0b.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=srandom    -rdynamic CMakeFiles/cmTC_66f0b.dir/CheckFunctionExists.c.o  -o cmTC_66f0b 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining if the function strcasecmp exists passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c83a6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c83a6.dir/build.make CMakeFiles/cmTC_c83a6.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_c83a6.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strcasecmp   -o CMakeFiles/cmTC_c83a6.dir/CheckFunctionExists.c.o   -c /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘strcasecmp’ [-Wbuiltin-declaration-mismatch]
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+   CHECK_FUNCTION_EXISTS(void);
+   ^~~~~~~~~~~~~~~~~~~~~
+Linking C executable cmTC_c83a6
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c83a6.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=strcasecmp    -rdynamic CMakeFiles/cmTC_c83a6.dir/CheckFunctionExists.c.o  -o cmTC_c83a6 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining if the function strchr exists passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_26a22/fast"
+/usr/bin/make -f CMakeFiles/cmTC_26a22.dir/build.make CMakeFiles/cmTC_26a22.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_26a22.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strchr   -o CMakeFiles/cmTC_26a22.dir/CheckFunctionExists.c.o   -c /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘strchr’ [-Wbuiltin-declaration-mismatch]
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+   CHECK_FUNCTION_EXISTS(void);
+   ^~~~~~~~~~~~~~~~~~~~~
+Linking C executable cmTC_26a22
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_26a22.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=strchr    -rdynamic CMakeFiles/cmTC_26a22.dir/CheckFunctionExists.c.o  -o cmTC_26a22 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining if the function strrchr exists passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_bbf9d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bbf9d.dir/build.make CMakeFiles/cmTC_bbf9d.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_bbf9d.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strrchr   -o CMakeFiles/cmTC_bbf9d.dir/CheckFunctionExists.c.o   -c /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘strrchr’ [-Wbuiltin-declaration-mismatch]
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+   CHECK_FUNCTION_EXISTS(void);
+   ^~~~~~~~~~~~~~~~~~~~~
+Linking C executable cmTC_bbf9d
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bbf9d.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=strrchr    -rdynamic CMakeFiles/cmTC_bbf9d.dir/CheckFunctionExists.c.o  -o cmTC_bbf9d 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining if the function strstr exists passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c9fb6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c9fb6.dir/build.make CMakeFiles/cmTC_c9fb6.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_c9fb6.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strstr   -o CMakeFiles/cmTC_c9fb6.dir/CheckFunctionExists.c.o   -c /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘strstr’ [-Wbuiltin-declaration-mismatch]
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+   CHECK_FUNCTION_EXISTS(void);
+   ^~~~~~~~~~~~~~~~~~~~~
+Linking C executable cmTC_c9fb6
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c9fb6.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=strstr    -rdynamic CMakeFiles/cmTC_c9fb6.dir/CheckFunctionExists.c.o  -o cmTC_c9fb6 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining if the function strtod exists passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d7c4a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d7c4a.dir/build.make CMakeFiles/cmTC_d7c4a.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_d7c4a.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strtod   -o CMakeFiles/cmTC_d7c4a.dir/CheckFunctionExists.c.o   -c /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_d7c4a
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d7c4a.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=strtod    -rdynamic CMakeFiles/cmTC_d7c4a.dir/CheckFunctionExists.c.o  -o cmTC_d7c4a 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining if the function strtol exists passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a0fca/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a0fca.dir/build.make CMakeFiles/cmTC_a0fca.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_a0fca.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strtol   -o CMakeFiles/cmTC_a0fca.dir/CheckFunctionExists.c.o   -c /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a0fca
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a0fca.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=strtol    -rdynamic CMakeFiles/cmTC_a0fca.dir/CheckFunctionExists.c.o  -o cmTC_a0fca 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining if the function strtoull exists passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_13e64/fast"
+/usr/bin/make -f CMakeFiles/cmTC_13e64.dir/build.make CMakeFiles/cmTC_13e64.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_13e64.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=strtoull   -o CMakeFiles/cmTC_13e64.dir/CheckFunctionExists.c.o   -c /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_13e64
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_13e64.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=strtoull    -rdynamic CMakeFiles/cmTC_13e64.dir/CheckFunctionExists.c.o  -o cmTC_13e64 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining if the function system exists passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_74a51/fast"
+/usr/bin/make -f CMakeFiles/cmTC_74a51.dir/build.make CMakeFiles/cmTC_74a51.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_74a51.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=system   -o CMakeFiles/cmTC_74a51.dir/CheckFunctionExists.c.o   -c /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_74a51
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_74a51.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=system    -rdynamic CMakeFiles/cmTC_74a51.dir/CheckFunctionExists.c.o  -o cmTC_74a51 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining if the function tmpnam exists passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1f62a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1f62a.dir/build.make CMakeFiles/cmTC_1f62a.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_1f62a.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=tmpnam   -o CMakeFiles/cmTC_1f62a.dir/CheckFunctionExists.c.o   -c /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_1f62a
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1f62a.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=tmpnam    -rdynamic CMakeFiles/cmTC_1f62a.dir/CheckFunctionExists.c.o  -o cmTC_1f62a 
+CMakeFiles/cmTC_1f62a.dir/CheckFunctionExists.c.o：在函数‘main’中：
+CheckFunctionExists.c:(.text+0x10): 警告：the use of `tmpnam' is dangerous, better use `mkstemp'
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining if the function vprintf exists passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9b07b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9b07b.dir/build.make CMakeFiles/cmTC_9b07b.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_9b07b.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=vprintf   -o CMakeFiles/cmTC_9b07b.dir/CheckFunctionExists.c.o   -c /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘vprintf’ [-Wbuiltin-declaration-mismatch]
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/share/cmake-3.13/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+   CHECK_FUNCTION_EXISTS(void);
+   ^~~~~~~~~~~~~~~~~~~~~
+Linking C executable cmTC_9b07b
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9b07b.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=vprintf    -rdynamic CMakeFiles/cmTC_9b07b.dir/CheckFunctionExists.c.o  -o cmTC_9b07b 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Performing C SOURCE FILE Test HAVE__BOOL succeeded with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b35a8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b35a8.dir/build.make CMakeFiles/cmTC_b35a8.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_b35a8.dir/src.c.o
+/usr/bin/cc   -DHAVE__BOOL   -o CMakeFiles/cmTC_b35a8.dir/src.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_b35a8
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b35a8.dir/link.txt --verbose=1
+/usr/bin/cc  -DHAVE__BOOL    -rdynamic CMakeFiles/cmTC_b35a8.dir/src.c.o  -o cmTC_b35a8 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+Source file was:
+
+    #include <stdbool.h>
+    int main(void)
+    {
+        _Bool b;
+        return 0;
+    }
+    
+Determining size of int passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_bd9e9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bd9e9.dir/build.make CMakeFiles/cmTC_bd9e9.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_bd9e9.dir/SIZEOF_INT.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_bd9e9.dir/SIZEOF_INT.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CheckTypeSize/SIZEOF_INT.c
+Linking C executable cmTC_bd9e9
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bd9e9.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_bd9e9.dir/SIZEOF_INT.c.o  -o cmTC_bd9e9 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining size of long passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a7140/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a7140.dir/build.make CMakeFiles/cmTC_a7140.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_a7140.dir/SIZEOF_LONG.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_a7140.dir/SIZEOF_LONG.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CheckTypeSize/SIZEOF_LONG.c
+Linking C executable cmTC_a7140
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a7140.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_a7140.dir/SIZEOF_LONG.c.o  -o cmTC_a7140 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining size of long long passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_260f1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_260f1.dir/build.make CMakeFiles/cmTC_260f1.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_260f1.dir/SIZEOF_LONG_LONG.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_260f1.dir/SIZEOF_LONG_LONG.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CheckTypeSize/SIZEOF_LONG_LONG.c
+Linking C executable cmTC_260f1
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_260f1.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_260f1.dir/SIZEOF_LONG_LONG.c.o  -o cmTC_260f1 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
+Determining size of void * passed with the following output:
+Change Dir: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d17dd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d17dd.dir/build.make CMakeFiles/cmTC_d17dd.dir/build
+make[1]: 进入目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_d17dd.dir/SIZEOF_VOID_P.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_d17dd.dir/SIZEOF_VOID_P.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CheckTypeSize/SIZEOF_VOID_P.c
+Linking C executable cmTC_d17dd
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d17dd.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_d17dd.dir/SIZEOF_VOID_P.c.o  -o cmTC_d17dd 
+make[1]: 离开目录“/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/CMakeTmp”
+
+
