@@ -43,10 +43,10 @@ RM = /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV
+CMAKE_SOURCE_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug
+CMAKE_BINARY_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug
 
 # Utility rule file for tutorial.
 
@@ -63,10 +63,10 @@ doc/tutorial/CMakeFiles/tutorial.dir/build: tutorial
 .PHONY : doc/tutorial/CMakeFiles/tutorial.dir/build
 
 doc/tutorial/CMakeFiles/tutorial.dir/clean:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/doc/tutorial && $(CMAKE_COMMAND) -P CMakeFiles/tutorial.dir/cmake_clean.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/doc/tutorial && $(CMAKE_COMMAND) -P CMakeFiles/tutorial.dir/cmake_clean.cmake
 .PHONY : doc/tutorial/CMakeFiles/tutorial.dir/clean
 
 doc/tutorial/CMakeFiles/tutorial.dir/depend:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/doc/tutorial /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/doc/tutorial /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/doc/tutorial/CMakeFiles/tutorial.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/doc/tutorial /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/doc/tutorial /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/doc/tutorial/CMakeFiles/tutorial.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : doc/tutorial/CMakeFiles/tutorial.dir/depend
 

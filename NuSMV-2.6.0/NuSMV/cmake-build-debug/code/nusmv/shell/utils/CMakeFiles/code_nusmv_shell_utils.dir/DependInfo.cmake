@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/utils/utilsCmd.c" "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/utils/CMakeFiles/code_nusmv_shell_utils.dir/utilsCmd.c.o"
+  "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/utils/utilsCmd.c" "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/utils/CMakeFiles/code_nusmv_shell_utils.dir/utilsCmd.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

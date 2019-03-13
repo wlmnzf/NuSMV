@@ -1,3 +1,3 @@
 ARCHIVE_NAME = NuSMV-2.6.0
-SRC_PACKAGE_NAME = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/NuSMV-2.6.0.tar.gz
-BIN_PACKAGE_NAME = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/NuSMV-2.6.0-Linux.tar.gz
+SRC_PACKAGE_NAME = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/NuSMV-2.6.0.tar.gz
+BIN_PACKAGE_NAME = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/NuSMV-2.6.0-Linux.tar.gz

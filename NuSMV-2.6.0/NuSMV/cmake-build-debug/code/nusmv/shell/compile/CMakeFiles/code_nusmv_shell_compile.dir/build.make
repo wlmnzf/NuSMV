@@ -43,10 +43,10 @@ RM = /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV
+CMAKE_SOURCE_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug
+CMAKE_BINARY_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include code/nusmv/shell/compile/CMakeFiles/code_nusmv_shell_compile.dir/depend.make
@@ -59,16 +59,16 @@ include code/nusmv/shell/compile/CMakeFiles/code_nusmv_shell_compile.dir/flags.m
 
 code/nusmv/shell/compile/CMakeFiles/code_nusmv_shell_compile.dir/compileCmd.c.o: code/nusmv/shell/compile/CMakeFiles/code_nusmv_shell_compile.dir/flags.make
 code/nusmv/shell/compile/CMakeFiles/code_nusmv_shell_compile.dir/compileCmd.c.o: ../code/nusmv/shell/compile/compileCmd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object code/nusmv/shell/compile/CMakeFiles/code_nusmv_shell_compile.dir/compileCmd.c.o"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/compile && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_shell_compile.dir/compileCmd.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/compile/compileCmd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object code/nusmv/shell/compile/CMakeFiles/code_nusmv_shell_compile.dir/compileCmd.c.o"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/compile && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_shell_compile.dir/compileCmd.c.o   -c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/compile/compileCmd.c
 
 code/nusmv/shell/compile/CMakeFiles/code_nusmv_shell_compile.dir/compileCmd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code_nusmv_shell_compile.dir/compileCmd.c.i"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/compile && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/compile/compileCmd.c > CMakeFiles/code_nusmv_shell_compile.dir/compileCmd.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/compile && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/compile/compileCmd.c > CMakeFiles/code_nusmv_shell_compile.dir/compileCmd.c.i
 
 code/nusmv/shell/compile/CMakeFiles/code_nusmv_shell_compile.dir/compileCmd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code_nusmv_shell_compile.dir/compileCmd.c.s"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/compile && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/compile/compileCmd.c -o CMakeFiles/code_nusmv_shell_compile.dir/compileCmd.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/compile && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/compile/compileCmd.c -o CMakeFiles/code_nusmv_shell_compile.dir/compileCmd.c.s
 
 code_nusmv_shell_compile: code/nusmv/shell/compile/CMakeFiles/code_nusmv_shell_compile.dir/compileCmd.c.o
 code_nusmv_shell_compile: code/nusmv/shell/compile/CMakeFiles/code_nusmv_shell_compile.dir/build.make
@@ -81,10 +81,10 @@ code/nusmv/shell/compile/CMakeFiles/code_nusmv_shell_compile.dir/build: code_nus
 .PHONY : code/nusmv/shell/compile/CMakeFiles/code_nusmv_shell_compile.dir/build
 
 code/nusmv/shell/compile/CMakeFiles/code_nusmv_shell_compile.dir/clean:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/compile && $(CMAKE_COMMAND) -P CMakeFiles/code_nusmv_shell_compile.dir/cmake_clean.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/compile && $(CMAKE_COMMAND) -P CMakeFiles/code_nusmv_shell_compile.dir/cmake_clean.cmake
 .PHONY : code/nusmv/shell/compile/CMakeFiles/code_nusmv_shell_compile.dir/clean
 
 code/nusmv/shell/compile/CMakeFiles/code_nusmv_shell_compile.dir/depend:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/compile /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/compile /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/compile/CMakeFiles/code_nusmv_shell_compile.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/compile /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/compile /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/compile/CMakeFiles/code_nusmv_shell_compile.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : code/nusmv/shell/compile/CMakeFiles/code_nusmv_shell_compile.dir/depend
 

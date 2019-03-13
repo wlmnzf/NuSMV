@@ -85,7 +85,7 @@ code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/Maste
  ../code/nusmv/core/utils/portability.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/node/printers/MasterPrinter.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/node/printers/MasterPrinter.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -174,7 +174,7 @@ code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/Print
  ../code/nusmv/core/utils/portability.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/node/printers/PrinterBase.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/node/printers/PrinterBase.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -262,7 +262,7 @@ code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/Print
  ../code/nusmv/core/utils/ustring.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/node/printers/PrinterIWffCore.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/node/printers/PrinterIWffCore.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -355,7 +355,7 @@ code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/Print
  ../code/nusmv/core/utils/portability.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/node/printers/PrinterPsl.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/node/printers/PrinterPsl.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -448,7 +448,7 @@ code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/Print
  ../code/nusmv/core/utils/ustring.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/node/printers/PrinterSexpCore.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/node/printers/PrinterSexpCore.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -541,7 +541,7 @@ code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/Print
  ../code/nusmv/core/utils/ustring.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/node/printers/PrinterWffCore.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/node/printers/PrinterWffCore.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h

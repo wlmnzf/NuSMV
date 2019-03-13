@@ -48,10 +48,10 @@ RM = /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV
+CMAKE_SOURCE_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug
+CMAKE_BINARY_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -93,7 +93,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -104,7 +104,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CPackSourceConfig.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -159,14 +159,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/enc/CMakeFiles/progress.marks
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/enc/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/enc/CMakeFiles/progress.marks
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/enc/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/enc/clean
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/enc/clean
 .PHONY : clean
 
 # The main clean target
@@ -176,22 +176,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/enc/preinstall
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/enc/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/enc/preinstall
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/enc/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/rule:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/rule
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/rule
 .PHONY : code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/rule
 
 # Convenience name for target.
@@ -201,7 +201,7 @@ code_nusmv_core_enc: code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/rule
 
 # fast build rule for target.
 code_nusmv_core_enc/fast:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build
 .PHONY : code_nusmv_core_enc/fast
 
 base/BaseEnc.o: base/BaseEnc.c.o
@@ -210,7 +210,7 @@ base/BaseEnc.o: base/BaseEnc.c.o
 
 # target to build an object file
 base/BaseEnc.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/base/BaseEnc.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/base/BaseEnc.c.o
 .PHONY : base/BaseEnc.c.o
 
 base/BaseEnc.i: base/BaseEnc.c.i
@@ -219,7 +219,7 @@ base/BaseEnc.i: base/BaseEnc.c.i
 
 # target to preprocess a source file
 base/BaseEnc.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/base/BaseEnc.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/base/BaseEnc.c.i
 .PHONY : base/BaseEnc.c.i
 
 base/BaseEnc.s: base/BaseEnc.c.s
@@ -228,7 +228,7 @@ base/BaseEnc.s: base/BaseEnc.c.s
 
 # target to generate assembly for a file
 base/BaseEnc.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/base/BaseEnc.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/base/BaseEnc.c.s
 .PHONY : base/BaseEnc.c.s
 
 base/BoolEncClient.o: base/BoolEncClient.c.o
@@ -237,7 +237,7 @@ base/BoolEncClient.o: base/BoolEncClient.c.o
 
 # target to build an object file
 base/BoolEncClient.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/base/BoolEncClient.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/base/BoolEncClient.c.o
 .PHONY : base/BoolEncClient.c.o
 
 base/BoolEncClient.i: base/BoolEncClient.c.i
@@ -246,7 +246,7 @@ base/BoolEncClient.i: base/BoolEncClient.c.i
 
 # target to preprocess a source file
 base/BoolEncClient.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/base/BoolEncClient.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/base/BoolEncClient.c.i
 .PHONY : base/BoolEncClient.c.i
 
 base/BoolEncClient.s: base/BoolEncClient.c.s
@@ -255,7 +255,7 @@ base/BoolEncClient.s: base/BoolEncClient.c.s
 
 # target to generate assembly for a file
 base/BoolEncClient.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/base/BoolEncClient.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/base/BoolEncClient.c.s
 .PHONY : base/BoolEncClient.c.s
 
 bdd/BddEnc.o: bdd/BddEnc.c.o
@@ -264,7 +264,7 @@ bdd/BddEnc.o: bdd/BddEnc.c.o
 
 # target to build an object file
 bdd/BddEnc.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/bdd/BddEnc.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/bdd/BddEnc.c.o
 .PHONY : bdd/BddEnc.c.o
 
 bdd/BddEnc.i: bdd/BddEnc.c.i
@@ -273,7 +273,7 @@ bdd/BddEnc.i: bdd/BddEnc.c.i
 
 # target to preprocess a source file
 bdd/BddEnc.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/bdd/BddEnc.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/bdd/BddEnc.c.i
 .PHONY : bdd/BddEnc.c.i
 
 bdd/BddEnc.s: bdd/BddEnc.c.s
@@ -282,7 +282,7 @@ bdd/BddEnc.s: bdd/BddEnc.c.s
 
 # target to generate assembly for a file
 bdd/BddEnc.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/bdd/BddEnc.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/bdd/BddEnc.c.s
 .PHONY : bdd/BddEnc.c.s
 
 bdd/BddEncBddPrintWff.o: bdd/BddEncBddPrintWff.c.o
@@ -291,7 +291,7 @@ bdd/BddEncBddPrintWff.o: bdd/BddEncBddPrintWff.c.o
 
 # target to build an object file
 bdd/BddEncBddPrintWff.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/bdd/BddEncBddPrintWff.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/bdd/BddEncBddPrintWff.c.o
 .PHONY : bdd/BddEncBddPrintWff.c.o
 
 bdd/BddEncBddPrintWff.i: bdd/BddEncBddPrintWff.c.i
@@ -300,7 +300,7 @@ bdd/BddEncBddPrintWff.i: bdd/BddEncBddPrintWff.c.i
 
 # target to preprocess a source file
 bdd/BddEncBddPrintWff.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/bdd/BddEncBddPrintWff.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/bdd/BddEncBddPrintWff.c.i
 .PHONY : bdd/BddEncBddPrintWff.c.i
 
 bdd/BddEncBddPrintWff.s: bdd/BddEncBddPrintWff.c.s
@@ -309,7 +309,7 @@ bdd/BddEncBddPrintWff.s: bdd/BddEncBddPrintWff.c.s
 
 # target to generate assembly for a file
 bdd/BddEncBddPrintWff.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/bdd/BddEncBddPrintWff.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/bdd/BddEncBddPrintWff.c.s
 .PHONY : bdd/BddEncBddPrintWff.c.s
 
 bdd/BddEncCache.o: bdd/BddEncCache.c.o
@@ -318,7 +318,7 @@ bdd/BddEncCache.o: bdd/BddEncCache.c.o
 
 # target to build an object file
 bdd/BddEncCache.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/bdd/BddEncCache.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/bdd/BddEncCache.c.o
 .PHONY : bdd/BddEncCache.c.o
 
 bdd/BddEncCache.i: bdd/BddEncCache.c.i
@@ -327,7 +327,7 @@ bdd/BddEncCache.i: bdd/BddEncCache.c.i
 
 # target to preprocess a source file
 bdd/BddEncCache.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/bdd/BddEncCache.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/bdd/BddEncCache.c.i
 .PHONY : bdd/BddEncCache.c.i
 
 bdd/BddEncCache.s: bdd/BddEncCache.c.s
@@ -336,7 +336,7 @@ bdd/BddEncCache.s: bdd/BddEncCache.c.s
 
 # target to generate assembly for a file
 bdd/BddEncCache.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/bdd/BddEncCache.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/bdd/BddEncCache.c.s
 .PHONY : bdd/BddEncCache.c.s
 
 be/BeEnc.o: be/BeEnc.c.o
@@ -345,7 +345,7 @@ be/BeEnc.o: be/BeEnc.c.o
 
 # target to build an object file
 be/BeEnc.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/be/BeEnc.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/be/BeEnc.c.o
 .PHONY : be/BeEnc.c.o
 
 be/BeEnc.i: be/BeEnc.c.i
@@ -354,7 +354,7 @@ be/BeEnc.i: be/BeEnc.c.i
 
 # target to preprocess a source file
 be/BeEnc.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/be/BeEnc.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/be/BeEnc.c.i
 .PHONY : be/BeEnc.c.i
 
 be/BeEnc.s: be/BeEnc.c.s
@@ -363,7 +363,7 @@ be/BeEnc.s: be/BeEnc.c.s
 
 # target to generate assembly for a file
 be/BeEnc.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/be/BeEnc.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/be/BeEnc.c.s
 .PHONY : be/BeEnc.c.s
 
 bool/BitValues.o: bool/BitValues.c.o
@@ -372,7 +372,7 @@ bool/BitValues.o: bool/BitValues.c.o
 
 # target to build an object file
 bool/BitValues.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/bool/BitValues.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/bool/BitValues.c.o
 .PHONY : bool/BitValues.c.o
 
 bool/BitValues.i: bool/BitValues.c.i
@@ -381,7 +381,7 @@ bool/BitValues.i: bool/BitValues.c.i
 
 # target to preprocess a source file
 bool/BitValues.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/bool/BitValues.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/bool/BitValues.c.i
 .PHONY : bool/BitValues.c.i
 
 bool/BitValues.s: bool/BitValues.c.s
@@ -390,7 +390,7 @@ bool/BitValues.s: bool/BitValues.c.s
 
 # target to generate assembly for a file
 bool/BitValues.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/bool/BitValues.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/bool/BitValues.c.s
 .PHONY : bool/BitValues.c.s
 
 bool/BoolEnc.o: bool/BoolEnc.c.o
@@ -399,7 +399,7 @@ bool/BoolEnc.o: bool/BoolEnc.c.o
 
 # target to build an object file
 bool/BoolEnc.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/bool/BoolEnc.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/bool/BoolEnc.c.o
 .PHONY : bool/BoolEnc.c.o
 
 bool/BoolEnc.i: bool/BoolEnc.c.i
@@ -408,7 +408,7 @@ bool/BoolEnc.i: bool/BoolEnc.c.i
 
 # target to preprocess a source file
 bool/BoolEnc.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/bool/BoolEnc.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/bool/BoolEnc.c.i
 .PHONY : bool/BoolEnc.c.i
 
 bool/BoolEnc.s: bool/BoolEnc.c.s
@@ -417,7 +417,7 @@ bool/BoolEnc.s: bool/BoolEnc.c.s
 
 # target to generate assembly for a file
 bool/BoolEnc.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/bool/BoolEnc.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/bool/BoolEnc.c.s
 .PHONY : bool/BoolEnc.c.s
 
 enc.o: enc.c.o
@@ -426,7 +426,7 @@ enc.o: enc.c.o
 
 # target to build an object file
 enc.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/enc.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/enc.c.o
 .PHONY : enc.c.o
 
 enc.i: enc.c.i
@@ -435,7 +435,7 @@ enc.i: enc.c.i
 
 # target to preprocess a source file
 enc.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/enc.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/enc.c.i
 .PHONY : enc.c.i
 
 enc.s: enc.c.s
@@ -444,7 +444,7 @@ enc.s: enc.c.s
 
 # target to generate assembly for a file
 enc.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/enc.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/enc.c.s
 .PHONY : enc.c.s
 
 operators.o: operators.c.o
@@ -453,7 +453,7 @@ operators.o: operators.c.o
 
 # target to build an object file
 operators.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/operators.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/operators.c.o
 .PHONY : operators.c.o
 
 operators.i: operators.c.i
@@ -462,7 +462,7 @@ operators.i: operators.c.i
 
 # target to preprocess a source file
 operators.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/operators.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/operators.c.i
 .PHONY : operators.c.i
 
 operators.s: operators.c.s
@@ -471,7 +471,7 @@ operators.s: operators.c.s
 
 # target to generate assembly for a file
 operators.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/operators.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/operators.c.s
 .PHONY : operators.c.s
 
 utils/AddArray.o: utils/AddArray.c.o
@@ -480,7 +480,7 @@ utils/AddArray.o: utils/AddArray.c.o
 
 # target to build an object file
 utils/AddArray.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/utils/AddArray.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/utils/AddArray.c.o
 .PHONY : utils/AddArray.c.o
 
 utils/AddArray.i: utils/AddArray.c.i
@@ -489,7 +489,7 @@ utils/AddArray.i: utils/AddArray.c.i
 
 # target to preprocess a source file
 utils/AddArray.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/utils/AddArray.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/utils/AddArray.c.i
 .PHONY : utils/AddArray.c.i
 
 utils/AddArray.s: utils/AddArray.c.s
@@ -498,7 +498,7 @@ utils/AddArray.s: utils/AddArray.c.s
 
 # target to generate assembly for a file
 utils/AddArray.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/utils/AddArray.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/utils/AddArray.c.s
 .PHONY : utils/AddArray.c.s
 
 utils/OrdGroups.o: utils/OrdGroups.c.o
@@ -507,7 +507,7 @@ utils/OrdGroups.o: utils/OrdGroups.c.o
 
 # target to build an object file
 utils/OrdGroups.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/utils/OrdGroups.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/utils/OrdGroups.c.o
 .PHONY : utils/OrdGroups.c.o
 
 utils/OrdGroups.i: utils/OrdGroups.c.i
@@ -516,7 +516,7 @@ utils/OrdGroups.i: utils/OrdGroups.c.i
 
 # target to preprocess a source file
 utils/OrdGroups.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/utils/OrdGroups.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/utils/OrdGroups.c.i
 .PHONY : utils/OrdGroups.c.i
 
 utils/OrdGroups.s: utils/OrdGroups.c.s
@@ -525,7 +525,7 @@ utils/OrdGroups.s: utils/OrdGroups.c.s
 
 # target to generate assembly for a file
 utils/OrdGroups.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/utils/OrdGroups.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/utils/OrdGroups.c.s
 .PHONY : utils/OrdGroups.c.s
 
 utils/utils.o: utils/utils.c.o
@@ -534,7 +534,7 @@ utils/utils.o: utils/utils.c.o
 
 # target to build an object file
 utils/utils.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/utils/utils.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/utils/utils.c.o
 .PHONY : utils/utils.c.o
 
 utils/utils.i: utils/utils.c.i
@@ -543,7 +543,7 @@ utils/utils.i: utils/utils.c.i
 
 # target to preprocess a source file
 utils/utils.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/utils/utils.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/utils/utils.c.i
 .PHONY : utils/utils.c.i
 
 utils/utils.s: utils/utils.c.s
@@ -552,7 +552,7 @@ utils/utils.s: utils/utils.c.s
 
 # target to generate assembly for a file
 utils/utils.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/utils/utils.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/utils/utils.c.s
 .PHONY : utils/utils.c.s
 
 # Help Target
@@ -621,6 +621,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

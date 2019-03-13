@@ -1,0 +1,15 @@
+MODULE main
+VAR 
+state:{1,2,3,4,5,6};
+
+ASSIGN
+init(state):=1;
+next(state):=case
+			 state=1: {2,3};
+             state=2|state=3:{4,5};
+             state=4|state=5:6;
+			TRUE : state;
+		esac;
+
+
+SPEC !EF (state=6)

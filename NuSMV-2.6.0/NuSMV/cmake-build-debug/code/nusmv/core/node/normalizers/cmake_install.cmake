@@ -1,4 +1,4 @@
-# Install script for directory: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/node/normalizers
+# Install script for directory: /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/node/normalizers
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,22 +38,22 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/code/nusmv/core/node/normalizers" TYPE FILE FILES "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/node/normalizers/MasterNormalizer.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/code/nusmv/core/node/normalizers" TYPE FILE FILES "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/node/normalizers/MasterNormalizer.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/code/nusmv/core/node/normalizers" TYPE FILE FILES "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/node/normalizers/NormalizerBase.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/code/nusmv/core/node/normalizers" TYPE FILE FILES "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/node/normalizers/NormalizerBase.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/code/nusmv/core/node/normalizers" TYPE FILE FILES "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/node/normalizers/NormalizerCore.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/code/nusmv/core/node/normalizers" TYPE FILE FILES "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/node/normalizers/NormalizerCore.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/code/nusmv/core/node/normalizers" TYPE FILE FILES "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/node/normalizers/NormalizerPsl.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/code/nusmv/core/node/normalizers" TYPE FILE FILES "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/node/normalizers/NormalizerPsl.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/code/nusmv/core/node/normalizers" TYPE FILE FILES "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/node/normalizers/NormalizerBase_private.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/code/nusmv/core/node/normalizers" TYPE FILE FILES "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/node/normalizers/NormalizerBase_private.h")
 endif()
 

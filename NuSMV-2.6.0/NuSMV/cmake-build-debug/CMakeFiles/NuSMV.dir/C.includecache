@@ -864,21 +864,21 @@ nusmv/core/compile/symb_table/SymbTable.h
 nusmv/core/cinit/NuSMVEnv.h
 ../code/nusmv/shell/cinit/nusmv/core/cinit/NuSMVEnv.h
 
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/main.c
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/main.c
 nusmv-config.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/nusmv-config.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/nusmv-config.h
 nusmv/core/cinit/cinit.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/nusmv/core/cinit/cinit.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/nusmv/core/cinit/cinit.h
 nusmv/core/opt/opt.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/nusmv/core/opt/opt.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/nusmv/core/opt/opt.h
 nusmv/shell/cinit/cinit.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/nusmv/shell/cinit/cinit.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/nusmv/shell/cinit/cinit.h
 nusmv/core/cinit/cinitInt.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/nusmv/core/cinit/cinitInt.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/nusmv/core/cinit/cinitInt.h
 nusmv/addons_core/addonsCore.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/nusmv/addons_core/addonsCore.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/nusmv/addons_core/addonsCore.h
 nusmv/addons_core/compass/compassCmd.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/nusmv/addons_core/compass/compassCmd.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/nusmv/addons_core/compass/compassCmd.h
 
 build-cudd/include/cudd/cudd.h
 nusmv-config.h

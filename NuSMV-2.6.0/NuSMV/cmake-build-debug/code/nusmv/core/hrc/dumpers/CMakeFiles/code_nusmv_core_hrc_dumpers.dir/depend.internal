@@ -83,7 +83,7 @@ code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumper
  ../code/nusmv/core/utils/portability.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/dumpers/HrcDumper.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/dumpers/HrcDumper.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -174,7 +174,7 @@ code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumper
  ../code/nusmv/core/utils/object_private.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/dumpers/HrcDumperAnonymizer.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/dumpers/HrcDumperAnonymizer.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -264,7 +264,7 @@ code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumper
  ../code/nusmv/core/utils/portability.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/dumpers/HrcDumperDebug.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/dumpers/HrcDumperDebug.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -354,7 +354,7 @@ code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumper
  ../code/nusmv/core/utils/portability.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/dumpers/HrcDumperSmv.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/dumpers/HrcDumperSmv.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -444,7 +444,7 @@ code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumper
  ../code/nusmv/core/utils/portability.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/dumpers/HrcDumperXml.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/dumpers/HrcDumperXml.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h

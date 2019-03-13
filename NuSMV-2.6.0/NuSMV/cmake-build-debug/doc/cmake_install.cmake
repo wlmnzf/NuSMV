@@ -1,4 +1,4 @@
-# Install script for directory: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/doc
+# Install script for directory: /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/doc
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,10 +39,10 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/doc/user-man/cmake_install.cmake")
-  include("/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/doc/tutorial/cmake_install.cmake")
-  include("/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/doc/html/cmake_install.cmake")
-  include("/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/doc/prog-man/cmake_install.cmake")
+  include("/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/doc/user-man/cmake_install.cmake")
+  include("/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/doc/tutorial/cmake_install.cmake")
+  include("/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/doc/html/cmake_install.cmake")
+  include("/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/doc/prog-man/cmake_install.cmake")
 
 endif()
 

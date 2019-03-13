@@ -43,10 +43,10 @@ RM = /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV
+CMAKE_SOURCE_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug
+CMAKE_BINARY_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug
 
 # Utility rule file for minisat_interface_header.
 
@@ -57,8 +57,8 @@ code/nusmv/core/sat/solvers/CMakeFiles/minisat_interface_header:
 
 
 code/nusmv/core/sat/solvers/satMiniSatIfc.h: build-MiniSat/minisat-37dc6c67e2af26379d88ce349eb9c4c6160e8543/Solver_C.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "generating MiniSat interface header"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/sat/solvers && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E copy_if_different /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-MiniSat/minisat-37dc6c67e2af26379d88ce349eb9c4c6160e8543/Solver_C.h /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/sat/solvers/satMiniSatIfc.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "generating MiniSat interface header"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/sat/solvers && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E copy_if_different /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-MiniSat/minisat-37dc6c67e2af26379d88ce349eb9c4c6160e8543/Solver_C.h /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/sat/solvers/satMiniSatIfc.h
 
 minisat_interface_header: code/nusmv/core/sat/solvers/CMakeFiles/minisat_interface_header
 minisat_interface_header: code/nusmv/core/sat/solvers/satMiniSatIfc.h
@@ -72,10 +72,10 @@ code/nusmv/core/sat/solvers/CMakeFiles/minisat_interface_header.dir/build: minis
 .PHONY : code/nusmv/core/sat/solvers/CMakeFiles/minisat_interface_header.dir/build
 
 code/nusmv/core/sat/solvers/CMakeFiles/minisat_interface_header.dir/clean:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/sat/solvers && $(CMAKE_COMMAND) -P CMakeFiles/minisat_interface_header.dir/cmake_clean.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/sat/solvers && $(CMAKE_COMMAND) -P CMakeFiles/minisat_interface_header.dir/cmake_clean.cmake
 .PHONY : code/nusmv/core/sat/solvers/CMakeFiles/minisat_interface_header.dir/clean
 
 code/nusmv/core/sat/solvers/CMakeFiles/minisat_interface_header.dir/depend:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/sat/solvers /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/sat/solvers /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/sat/solvers/CMakeFiles/minisat_interface_header.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/sat/solvers /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/sat/solvers /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/sat/solvers/CMakeFiles/minisat_interface_header.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : code/nusmv/core/sat/solvers/CMakeFiles/minisat_interface_header.dir/depend
 

@@ -145,7 +145,7 @@ int parser_ord_wrap(void);
 void parser_ord_error(char *s);
 
 
-#line 149 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/ord/ord_grammar.c" /* yacc.c:339  */
+#line 149 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/ord/ord_grammar.c" /* yacc.c:339  */
 
 # ifndef YY_NULLPTR
 #  if defined __cplusplus && 201103L <= __cplusplus
@@ -165,8 +165,8 @@ void parser_ord_error(char *s);
 
 /* In a future release of Bison, this section will be replaced
    by #include "ord_grammar.h".  */
-#ifndef YY_PARSER_ORD_HOME_WILLIAM_NUSMV_A_NUSMV_2_6_0_NUSMV_CMAKE_BUILD_DEBUG_CODE_NUSMV_CORE_PARSER_ORD_ORD_GRAMMAR_H_INCLUDED
-# define YY_PARSER_ORD_HOME_WILLIAM_NUSMV_A_NUSMV_2_6_0_NUSMV_CMAKE_BUILD_DEBUG_CODE_NUSMV_CORE_PARSER_ORD_ORD_GRAMMAR_H_INCLUDED
+#ifndef YY_PARSER_ORD_HOME_WILLIAM_CLIONPROJECTS_NUSMV_NUSMV_2_6_0_NUSMV_CMAKE_BUILD_DEBUG_CODE_NUSMV_CORE_PARSER_ORD_ORD_GRAMMAR_H_INCLUDED
+# define YY_PARSER_ORD_HOME_WILLIAM_CLIONPROJECTS_NUSMV_NUSMV_2_6_0_NUSMV_CMAKE_BUILD_DEBUG_CODE_NUSMV_CORE_PARSER_ORD_ORD_GRAMMAR_H_INCLUDED
 /* Debug traces.  */
 #ifndef YYDEBUG
 # define YYDEBUG 0
@@ -198,7 +198,7 @@ union YYSTYPE
 
   node_ptr node;
 
-#line 202 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/ord/ord_grammar.c" /* yacc.c:355  */
+#line 202 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/ord/ord_grammar.c" /* yacc.c:355  */
 };
 
 typedef union YYSTYPE YYSTYPE;
@@ -211,11 +211,11 @@ extern YYSTYPE parser_ord_lval;
 
 int parser_ord_parse (void);
 
-#endif /* !YY_PARSER_ORD_HOME_WILLIAM_NUSMV_A_NUSMV_2_6_0_NUSMV_CMAKE_BUILD_DEBUG_CODE_NUSMV_CORE_PARSER_ORD_ORD_GRAMMAR_H_INCLUDED  */
+#endif /* !YY_PARSER_ORD_HOME_WILLIAM_CLIONPROJECTS_NUSMV_NUSMV_2_6_0_NUSMV_CMAKE_BUILD_DEBUG_CODE_NUSMV_CORE_PARSER_ORD_ORD_GRAMMAR_H_INCLUDED  */
 
 /* Copy the second part of user declarations.  */
 
-#line 219 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/ord/ord_grammar.c" /* yacc.c:358  */
+#line 219 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/ord/ord_grammar.c" /* yacc.c:358  */
 
 #ifdef short
 # undef short
@@ -1290,13 +1290,13 @@ yyreduce:
         case 2:
 #line 101 "ord_grammar.y" /* yacc.c:1646  */
     { }
-#line 1294 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/ord/ord_grammar.c" /* yacc.c:1646  */
+#line 1294 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/ord/ord_grammar.c" /* yacc.c:1646  */
     break;
 
   case 3:
 #line 105 "ord_grammar.y" /* yacc.c:1646  */
     {}
-#line 1300 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/ord/ord_grammar.c" /* yacc.c:1646  */
+#line 1300 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/ord/ord_grammar.c" /* yacc.c:1646  */
     break;
 
   case 4:
@@ -1304,19 +1304,19 @@ yyreduce:
     {
                   parser_ord_add_var(parser_ord_get_global_parser(), (yyvsp[-1].node));
                 }
-#line 1308 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/ord/ord_grammar.c" /* yacc.c:1646  */
+#line 1308 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/ord/ord_grammar.c" /* yacc.c:1646  */
     break;
 
   case 5:
 #line 112 "ord_grammar.y" /* yacc.c:1646  */
     { _is_main_var = true; }
-#line 1314 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/ord/ord_grammar.c" /* yacc.c:1646  */
+#line 1314 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/ord/ord_grammar.c" /* yacc.c:1646  */
     break;
 
   case 6:
 #line 112 "ord_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = (yyvsp[0].node); }
-#line 1320 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/ord/ord_grammar.c" /* yacc.c:1646  */
+#line 1320 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/ord/ord_grammar.c" /* yacc.c:1646  */
     break;
 
   case 7:
@@ -1331,7 +1331,7 @@ yyreduce:
                 (yyval.node) = (yyvsp[0].node);
               }
             }
-#line 1335 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/ord/ord_grammar.c" /* yacc.c:1646  */
+#line 1335 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/ord/ord_grammar.c" /* yacc.c:1646  */
     break;
 
   case 8:
@@ -1340,7 +1340,7 @@ yyreduce:
               (yyval.node) = parser_ord_mk_bit(parser_ord_get_global_parser(),
                                      (yyvsp[-2].node), NODE_TO_INT(car((yyvsp[0].node))));
             }
-#line 1344 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/ord/ord_grammar.c" /* yacc.c:1646  */
+#line 1344 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/ord/ord_grammar.c" /* yacc.c:1646  */
     break;
 
   case 9:
@@ -1349,7 +1349,7 @@ yyreduce:
                      (yyval.node) = parser_ord_mk_array(parser_ord_get_global_parser(), 
                                               (yyvsp[-3].node), (yyvsp[-1].node));
                    }
-#line 1353 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/ord/ord_grammar.c" /* yacc.c:1646  */
+#line 1353 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/ord/ord_grammar.c" /* yacc.c:1646  */
     break;
 
   case 10:
@@ -1362,7 +1362,7 @@ yyreduce:
                                               (yyvsp[-4].node), num);
 
                    }
-#line 1366 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/ord/ord_grammar.c" /* yacc.c:1646  */
+#line 1366 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/ord/ord_grammar.c" /* yacc.c:1646  */
     break;
 
   case 11:
@@ -1371,11 +1371,11 @@ yyreduce:
                      (yyval.node) = parser_ord_mk_dot(parser_ord_get_global_parser(), 
                                             (yyvsp[-2].node), (yyvsp[0].node));
                    }
-#line 1375 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/ord/ord_grammar.c" /* yacc.c:1646  */
+#line 1375 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/ord/ord_grammar.c" /* yacc.c:1646  */
     break;
 
 
-#line 1379 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/ord/ord_grammar.c" /* yacc.c:1646  */
+#line 1379 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/ord/ord_grammar.c" /* yacc.c:1646  */
       default: break;
     }
   /* User semantic actions sometimes alter yychar, and that requires

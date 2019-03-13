@@ -1,6 +1,6 @@
-#line 2 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/ord/ord_input.c"
+#line 2 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/ord/ord_input.c"
 
-#line 4 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/ord/ord_input.c"
+#line 4 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/ord/ord_input.c"
 
 #define  YY_INT_ALIGNED short int
 
@@ -851,10 +851,10 @@ static int yy_prev_more_offset = 0;
 #undef YY_USES_REJECT
 #endif
 
-#line 855 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/ord/ord_input.c"
+#line 855 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/ord/ord_input.c"
 #line 127 "ord_input.l"
      /* %option outfile="lex.yy.c" */
-#line 858 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/ord/ord_input.c"
+#line 858 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/ord/ord_input.c"
 
 #define INITIAL 0
 
@@ -1073,7 +1073,7 @@ YY_DECL
 	{
 #line 130 "ord_input.l"
 
-#line 1077 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/ord/ord_input.c"
+#line 1077 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/ord/ord_input.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -1223,7 +1223,7 @@ YY_RULE_SETUP
 #line 163 "ord_input.l"
 ECHO;
 	YY_BREAK
-#line 1227 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/ord/ord_input.c"
+#line 1227 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/ord/ord_input.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 

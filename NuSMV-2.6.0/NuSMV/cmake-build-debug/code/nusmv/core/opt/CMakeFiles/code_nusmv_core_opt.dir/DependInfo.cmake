@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/opt/OptsHandler.c" "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/opt/CMakeFiles/code_nusmv_core_opt.dir/OptsHandler.c.o"
-  "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/opt/opt.c" "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/opt/CMakeFiles/code_nusmv_core_opt.dir/opt.c.o"
-  "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/opt/optPkg.c" "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/opt/CMakeFiles/code_nusmv_core_opt.dir/optPkg.c.o"
+  "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/opt/OptsHandler.c" "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/opt/CMakeFiles/code_nusmv_core_opt.dir/OptsHandler.c.o"
+  "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/opt/opt.c" "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/opt/CMakeFiles/code_nusmv_core_opt.dir/opt.c.o"
+  "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/opt/optPkg.c" "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/opt/CMakeFiles/code_nusmv_core_opt.dir/optPkg.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

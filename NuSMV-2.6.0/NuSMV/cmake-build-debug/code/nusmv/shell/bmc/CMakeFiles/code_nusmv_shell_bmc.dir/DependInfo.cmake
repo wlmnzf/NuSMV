@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/bmc/bmcCmd.c" "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/bmc/CMakeFiles/code_nusmv_shell_bmc.dir/bmcCmd.c.o"
-  "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/bmc/sbmc/sbmcCmd.c" "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/bmc/CMakeFiles/code_nusmv_shell_bmc.dir/sbmc/sbmcCmd.c.o"
+  "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/bmc/bmcCmd.c" "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/bmc/CMakeFiles/code_nusmv_shell_bmc.dir/bmcCmd.c.o"
+  "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/bmc/sbmc/sbmcCmd.c" "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/bmc/CMakeFiles/code_nusmv_shell_bmc.dir/sbmc/sbmcCmd.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

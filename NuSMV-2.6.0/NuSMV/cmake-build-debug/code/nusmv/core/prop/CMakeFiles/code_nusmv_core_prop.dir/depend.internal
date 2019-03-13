@@ -111,7 +111,7 @@ code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/Prop.c.o
  ../code/nusmv/core/wff/ExprMgr.h
  ../code/nusmv/core/wff/wff.h
  ../code/nusmv/core/wff/wffRewrite.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/prop/Prop.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/prop/Prop.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -209,7 +209,7 @@ code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/PropDb.c.o
  ../code/nusmv/core/utils/ucmd.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/prop/PropDb.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/prop/PropDb.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -305,7 +305,7 @@ code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/Prop_Rewriter.c.o
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
  ../code/nusmv/core/wff/wffRewrite.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/prop/Prop_Rewriter.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/prop/Prop_Rewriter.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -393,7 +393,7 @@ code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/propPkg.c.o
  ../code/nusmv/core/utils/object.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/prop/propPkg.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/prop/propPkg.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -486,7 +486,7 @@ code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/propProp.c.o
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
  ../code/nusmv/core/wff/wffRewrite.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/prop/propProp.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/prop/propProp.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h

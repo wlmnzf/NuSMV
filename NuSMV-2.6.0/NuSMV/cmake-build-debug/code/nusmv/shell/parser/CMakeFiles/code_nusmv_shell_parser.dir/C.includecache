@@ -908,23 +908,23 @@ nusmv/core/cinit/NuSMVEnv.h
 nusmv/core/cinit/NuSMVEnv.h
 ../code/nusmv/shell/parser/nusmv/core/cinit/NuSMVEnv.h
 
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/parser/parserCmd.c
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/parser/parserCmd.c
 nusmv/shell/cmd/cmd.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/parser/nusmv/shell/cmd/cmd.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/parser/nusmv/shell/cmd/cmd.h
 nusmv/shell/parser/parserCmd.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/parser/nusmv/shell/parser/parserCmd.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/parser/nusmv/shell/parser/parserCmd.h
 nusmv/core/compile/compile.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/parser/nusmv/core/compile/compile.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/parser/nusmv/core/compile/compile.h
 nusmv/core/parser/parser.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/parser/nusmv/core/parser/parser.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/parser/nusmv/core/parser/parser.h
 nusmv/core/utils/ErrorMgr.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/parser/nusmv/core/utils/ErrorMgr.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/parser/nusmv/core/utils/ErrorMgr.h
 nusmv/core/utils/Logger.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/parser/nusmv/core/utils/Logger.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/parser/nusmv/core/utils/Logger.h
 nusmv/core/utils/StreamMgr.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/parser/nusmv/core/utils/StreamMgr.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/parser/nusmv/core/utils/StreamMgr.h
 nusmv/core/utils/error.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/parser/nusmv/core/utils/error.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/parser/nusmv/core/utils/error.h
 
 build-cudd/include/cudd/cudd.h
 nusmv-config.h

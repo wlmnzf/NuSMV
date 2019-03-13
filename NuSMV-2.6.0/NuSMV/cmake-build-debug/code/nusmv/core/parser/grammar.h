@@ -30,8 +30,8 @@
    This special exception was added by the Free Software Foundation in
    version 2.2 of Bison.  */
 
-#ifndef YY_NUSMV_YY_HOME_WILLIAM_NUSMV_A_NUSMV_2_6_0_NUSMV_CMAKE_BUILD_DEBUG_CODE_NUSMV_CORE_PARSER_GRAMMAR_H_INCLUDED
-# define YY_NUSMV_YY_HOME_WILLIAM_NUSMV_A_NUSMV_2_6_0_NUSMV_CMAKE_BUILD_DEBUG_CODE_NUSMV_CORE_PARSER_GRAMMAR_H_INCLUDED
+#ifndef YY_NUSMV_YY_HOME_WILLIAM_CLIONPROJECTS_NUSMV_NUSMV_2_6_0_NUSMV_CMAKE_BUILD_DEBUG_CODE_NUSMV_CORE_PARSER_GRAMMAR_H_INCLUDED
+# define YY_NUSMV_YY_HOME_WILLIAM_CLIONPROJECTS_NUSMV_NUSMV_2_6_0_NUSMV_CMAKE_BUILD_DEBUG_CODE_NUSMV_CORE_PARSER_GRAMMAR_H_INCLUDED
 /* Debug traces.  */
 #ifndef YYDEBUG
 # define YYDEBUG 0
@@ -195,12 +195,12 @@ extern int nusmv_yydebug;
 
 union YYSTYPE
 {
-#line 138 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1909  */
+#line 138 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1909  */
 
   node_ptr node;
   int lineno;
 
-#line 204 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.h" /* yacc.c:1909  */
+#line 204 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.h" /* yacc.c:1909  */
 };
 
 typedef union YYSTYPE YYSTYPE;
@@ -213,4 +213,4 @@ extern YYSTYPE nusmv_yylval;
 
 int nusmv_yyparse (void);
 
-#endif /* !YY_NUSMV_YY_HOME_WILLIAM_NUSMV_A_NUSMV_2_6_0_NUSMV_CMAKE_BUILD_DEBUG_CODE_NUSMV_CORE_PARSER_GRAMMAR_H_INCLUDED  */
+#endif /* !YY_NUSMV_YY_HOME_WILLIAM_CLIONPROJECTS_NUSMV_NUSMV_2_6_0_NUSMV_CMAKE_BUILD_DEBUG_CODE_NUSMV_CORE_PARSER_GRAMMAR_H_INCLUDED  */

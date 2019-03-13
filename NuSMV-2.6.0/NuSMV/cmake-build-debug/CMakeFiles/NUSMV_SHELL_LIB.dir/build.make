@@ -43,10 +43,10 @@ RM = /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV
+CMAKE_SOURCE_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug
+CMAKE_BINARY_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/NUSMV_SHELL_LIB.dir/depend.make
@@ -62,28 +62,28 @@ NUSMV_SHELL_LIB_OBJECTS =
 
 # External object files for target NUSMV_SHELL_LIB
 NUSMV_SHELL_LIB_EXTERNAL_OBJECTS = \
-"/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/parser/CMakeFiles/code_nusmv_shell_parser.dir/parserCmd.c.o" \
-"/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/enc/CMakeFiles/code_nusmv_shell_enc.dir/encCmd.c.o" \
-"/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/ltl/CMakeFiles/code_nusmv_shell_ltl.dir/ltlCmd.c.o" \
-"/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/mc/CMakeFiles/code_nusmv_shell_mc.dir/mcCmd.c.o" \
-"/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/opt/CMakeFiles/code_nusmv_shell_opt.dir/optCmd.c.o" \
-"/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/prop/CMakeFiles/code_nusmv_shell_prop.dir/propCmd.c.o" \
-"/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/simulate/CMakeFiles/code_nusmv_shell_simulate.dir/simulateCmd.c.o" \
-"/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/trace/CMakeFiles/code_nusmv_shell_trace.dir/traceCmd.c.o" \
-"/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/bmc/CMakeFiles/code_nusmv_shell_bmc.dir/bmcCmd.c.o" \
-"/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/bmc/CMakeFiles/code_nusmv_shell_bmc.dir/sbmc/sbmcCmd.c.o" \
-"/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/compile/CMakeFiles/code_nusmv_shell_compile.dir/compileCmd.c.o" \
-"/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/dd/CMakeFiles/code_nusmv_shell_dd.dir/ddCmd.c.o" \
-"/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/fsm/CMakeFiles/code_nusmv_shell_fsm.dir/bdd/bddCmd.c.o" \
-"/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/cinit/CMakeFiles/code_nusmv_shell_cinit.dir/cinit.c.o" \
-"/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/cinit/CMakeFiles/code_nusmv_shell_cinit.dir/cinitCmd.c.o" \
-"/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/utils/CMakeFiles/code_nusmv_shell_utils.dir/utilsCmd.c.o" \
-"/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/hrc/CMakeFiles/code_nusmv_shell_hrc.dir/hrcCmd.c.o" \
-"/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/cmd/CMakeFiles/code_nusmv_shell_cmd.dir/cmd.c.o" \
-"/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/cmd/CMakeFiles/code_nusmv_shell_cmd.dir/cmdCmd.c.o" \
-"/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/cmd/CMakeFiles/code_nusmv_shell_cmd.dir/cmdFile.c.o" \
-"/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/cmd/CMakeFiles/code_nusmv_shell_cmd.dir/cmdMisc.c.o" \
-"/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/cmd/CMakeFiles/code_nusmv_shell_cmd.dir/cmdHelp.c.o"
+"/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/parser/CMakeFiles/code_nusmv_shell_parser.dir/parserCmd.c.o" \
+"/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/enc/CMakeFiles/code_nusmv_shell_enc.dir/encCmd.c.o" \
+"/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/ltl/CMakeFiles/code_nusmv_shell_ltl.dir/ltlCmd.c.o" \
+"/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/mc/CMakeFiles/code_nusmv_shell_mc.dir/mcCmd.c.o" \
+"/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/opt/CMakeFiles/code_nusmv_shell_opt.dir/optCmd.c.o" \
+"/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/prop/CMakeFiles/code_nusmv_shell_prop.dir/propCmd.c.o" \
+"/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/simulate/CMakeFiles/code_nusmv_shell_simulate.dir/simulateCmd.c.o" \
+"/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/trace/CMakeFiles/code_nusmv_shell_trace.dir/traceCmd.c.o" \
+"/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/bmc/CMakeFiles/code_nusmv_shell_bmc.dir/bmcCmd.c.o" \
+"/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/bmc/CMakeFiles/code_nusmv_shell_bmc.dir/sbmc/sbmcCmd.c.o" \
+"/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/compile/CMakeFiles/code_nusmv_shell_compile.dir/compileCmd.c.o" \
+"/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/dd/CMakeFiles/code_nusmv_shell_dd.dir/ddCmd.c.o" \
+"/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/fsm/CMakeFiles/code_nusmv_shell_fsm.dir/bdd/bddCmd.c.o" \
+"/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/cinit/CMakeFiles/code_nusmv_shell_cinit.dir/cinit.c.o" \
+"/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/cinit/CMakeFiles/code_nusmv_shell_cinit.dir/cinitCmd.c.o" \
+"/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/utils/CMakeFiles/code_nusmv_shell_utils.dir/utilsCmd.c.o" \
+"/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/hrc/CMakeFiles/code_nusmv_shell_hrc.dir/hrcCmd.c.o" \
+"/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/cmd/CMakeFiles/code_nusmv_shell_cmd.dir/cmd.c.o" \
+"/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/cmd/CMakeFiles/code_nusmv_shell_cmd.dir/cmdCmd.c.o" \
+"/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/cmd/CMakeFiles/code_nusmv_shell_cmd.dir/cmdFile.c.o" \
+"/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/cmd/CMakeFiles/code_nusmv_shell_cmd.dir/cmdMisc.c.o" \
+"/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/cmd/CMakeFiles/code_nusmv_shell_cmd.dir/cmdHelp.c.o"
 
 lib/libnusmvshell.a: code/nusmv/shell/parser/CMakeFiles/code_nusmv_shell_parser.dir/parserCmd.c.o
 lib/libnusmvshell.a: code/nusmv/shell/enc/CMakeFiles/code_nusmv_shell_enc.dir/encCmd.c.o
@@ -109,7 +109,7 @@ lib/libnusmvshell.a: code/nusmv/shell/cmd/CMakeFiles/code_nusmv_shell_cmd.dir/cm
 lib/libnusmvshell.a: code/nusmv/shell/cmd/CMakeFiles/code_nusmv_shell_cmd.dir/cmdHelp.c.o
 lib/libnusmvshell.a: CMakeFiles/NUSMV_SHELL_LIB.dir/build.make
 lib/libnusmvshell.a: CMakeFiles/NUSMV_SHELL_LIB.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Linking C static library lib/libnusmvshell.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Linking C static library lib/libnusmvshell.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/NUSMV_SHELL_LIB.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/NUSMV_SHELL_LIB.dir/link.txt --verbose=$(VERBOSE)
 
@@ -123,6 +123,6 @@ CMakeFiles/NUSMV_SHELL_LIB.dir/clean:
 .PHONY : CMakeFiles/NUSMV_SHELL_LIB.dir/clean
 
 CMakeFiles/NUSMV_SHELL_LIB.dir/depend:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/NUSMV_SHELL_LIB.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/NUSMV_SHELL_LIB.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/NUSMV_SHELL_LIB.dir/depend
 

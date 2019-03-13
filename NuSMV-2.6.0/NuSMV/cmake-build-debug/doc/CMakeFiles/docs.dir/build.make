@@ -43,10 +43,10 @@ RM = /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV
+CMAKE_SOURCE_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug
+CMAKE_BINARY_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug
 
 # Utility rule file for docs.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug
 include doc/CMakeFiles/docs.dir/progress.make
 
 doc/CMakeFiles/docs:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/doc && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E echo Warning:\ Doxygen\ not\ found,\ prog-man\ documentation\ cannot\ be\ built.
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/doc && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E echo Warning:\ Doxygen\ not\ found,\ prog-man\ documentation\ cannot\ be\ built.
 
 docs: doc/CMakeFiles/docs
 docs: doc/CMakeFiles/docs.dir/build.make
@@ -67,10 +67,10 @@ doc/CMakeFiles/docs.dir/build: docs
 .PHONY : doc/CMakeFiles/docs.dir/build
 
 doc/CMakeFiles/docs.dir/clean:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/doc && $(CMAKE_COMMAND) -P CMakeFiles/docs.dir/cmake_clean.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/doc && $(CMAKE_COMMAND) -P CMakeFiles/docs.dir/cmake_clean.cmake
 .PHONY : doc/CMakeFiles/docs.dir/clean
 
 doc/CMakeFiles/docs.dir/depend:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/doc /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/doc /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/doc/CMakeFiles/docs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/doc /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/doc /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/doc/CMakeFiles/docs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : doc/CMakeFiles/docs.dir/depend
 

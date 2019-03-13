@@ -1,6 +1,6 @@
-#line 2 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.c"
+#line 2 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.c"
 
-#line 4 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.c"
+#line 4 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.c"
 
 #define  YY_INT_ALIGNED short int
 
@@ -987,8 +987,8 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
-#line 2 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 1 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 2 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
   /* BEGINS: input.l.1.25 */
 /***************************************************************  -*-C-*-  ***/
 /**CFile***********************************************************************
@@ -1138,10 +1138,10 @@ static inline int isatty(int d) { return 0; }
                 }
 #endif /* NUSMV_HAVE_ERRNO_H */
 
-#line 1142 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.c"
-#line 160 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 1142 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.c"
+#line 160 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
   /* ENDS: input.l.1.50 */
-#line 1145 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.c"
+#line 1145 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.c"
 
 #define INITIAL 0
 
@@ -1361,12 +1361,12 @@ YY_DECL
 		}
 
 	{
-#line 161 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 161 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 
   /* BEGINS: input.l.2.25 */
   /* **************************************************************  -*-C-*-  ***/
 
-#line 1370 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.c"
+#line 1370 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -1437,29 +1437,29 @@ do_action:	/* This label is used only to access EOF actions. */
 case 1:
 /* rule 1 can match eol */
 YY_RULE_SETUP
-#line 165 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 165 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 ;
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 166 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 166 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 nusmv_skip_comment();
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 167 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 167 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 nusmv_skip_multiline_comment();
 	YY_BREAK
 case 4:
 /* rule 4 can match eol */
 YY_RULE_SETUP
-#line 168 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 168 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 sscanf(nusmv_yytext,"# %d",&nusmv_yylineno);
 	YY_BREAK
 case 5:
 /* rule 5 can match eol */
 YY_RULE_SETUP
-#line 169 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 169 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {
   const ErrorMgr_ptr errmgr =
     ERROR_MGR(NuSMVEnv_get_value(__nusmv_parser_env__, ENV_ERROR_MANAGER));
@@ -1471,422 +1471,422 @@ YY_RULE_SETUP
 /* **************************************************************  -*-C-*-  ***/
 case 6:
 YY_RULE_SETUP
-#line 178 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 178 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_MODULE);}
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 179 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 179 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_PROCESS);}
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 180 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 180 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_DEFINE);}
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 181 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 181 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_ARRAY_DEFINE);}
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 182 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 182 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_VAR);}
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 183 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 183 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_FUN);}
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 184 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 184 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_FROZENVAR);}
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 185 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 185 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_IVAR);}
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
-#line 186 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 186 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_INIT);}
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
-#line 187 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 187 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_TRANS);}
 	YY_BREAK
 case 16:
 YY_RULE_SETUP
-#line 188 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 188 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_INVAR);}
 	YY_BREAK
 case 17:
 YY_RULE_SETUP
-#line 189 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 189 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_SPEC);}
 	YY_BREAK
 case 18:
 YY_RULE_SETUP
-#line 190 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 190 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_CTLSPEC);}
 	YY_BREAK
 case 19:
 YY_RULE_SETUP
-#line 191 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 191 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_LTLSPEC);}
 	YY_BREAK
 case 20:
 YY_RULE_SETUP
-#line 192 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 192 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; Parser_switch_to_psl(); return(TOK_PSLSPEC);}
 	YY_BREAK
 case 21:
 YY_RULE_SETUP
-#line 193 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 193 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_COMPUTE);}
 	YY_BREAK
 case 22:
 YY_RULE_SETUP
-#line 194 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 194 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_INVARSPEC);}
 	YY_BREAK
 case 23:
 YY_RULE_SETUP
-#line 195 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 195 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_NAME);}
 	YY_BREAK
 case 24:
 YY_RULE_SETUP
-#line 196 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 196 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_CONSTRAINT);}
 	YY_BREAK
 case 25:
 YY_RULE_SETUP
-#line 197 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 197 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_ITYPE);}
 	YY_BREAK
 case 26:
 YY_RULE_SETUP
-#line 198 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 198 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_CONSTANTS);}
 	YY_BREAK
 case 27:
 YY_RULE_SETUP
-#line 199 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 199 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_SIMPWFF);}
 	YY_BREAK
 case 28:
 YY_RULE_SETUP
-#line 200 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 200 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_NEXTWFF);}
 	YY_BREAK
 case 29:
 YY_RULE_SETUP
-#line 201 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 201 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_CTLWFF);}
 	YY_BREAK
 case 30:
 YY_RULE_SETUP
-#line 202 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 202 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_LTLWFF);}
 	YY_BREAK
 case 31:
 YY_RULE_SETUP
-#line 203 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 203 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_COMPWFF);}
 	YY_BREAK
 case 32:
 YY_RULE_SETUP
-#line 204 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 204 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_COMPID);}
 	YY_BREAK
 case 33:
 YY_RULE_SETUP
-#line 205 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 205 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_INCONTEXT);}
 	YY_BREAK
 case 34:
 YY_RULE_SETUP
-#line 206 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 206 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_FAIRNESS);}
 	YY_BREAK
 case 35:
 YY_RULE_SETUP
-#line 207 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 207 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_JUSTICE);}
 	YY_BREAK
 case 36:
 YY_RULE_SETUP
-#line 208 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 208 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_COMPASSION);}
 	YY_BREAK
 case 37:
 YY_RULE_SETUP
-#line 209 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 209 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_ISA);}
 	YY_BREAK
 case 38:
 YY_RULE_SETUP
-#line 210 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 210 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_ASSIGN);}
 	YY_BREAK
 case 39:
 YY_RULE_SETUP
-#line 212 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 212 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_ARRAY);}
 	YY_BREAK
 case 40:
 YY_RULE_SETUP
-#line 213 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 213 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_BOOL);}
 	YY_BREAK
 case 41:
 YY_RULE_SETUP
-#line 214 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 214 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_OF);}
 	YY_BREAK
 case 42:
 YY_RULE_SETUP
-#line 215 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 215 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_BOOLEAN);}
 	YY_BREAK
 case 43:
 YY_RULE_SETUP
-#line 216 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 216 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_WORD1);}
 	YY_BREAK
 case 44:
 YY_RULE_SETUP
-#line 217 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 217 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_WORD);}
 	YY_BREAK
 case 45:
 YY_RULE_SETUP
-#line 218 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 218 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_WORD);}
 	YY_BREAK
 case 46:
 YY_RULE_SETUP
-#line 220 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 220 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_SIGNED);}
 	YY_BREAK
 case 47:
 YY_RULE_SETUP
-#line 221 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 221 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_UNSIGNED);}
 	YY_BREAK
 case 48:
 YY_RULE_SETUP
-#line 222 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 222 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_EXTEND);}
 	YY_BREAK
 case 49:
 YY_RULE_SETUP
-#line 224 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 224 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_UWCONST);}
 	YY_BREAK
 case 50:
 YY_RULE_SETUP
-#line 225 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 225 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_SWCONST);}
 	YY_BREAK
 case 51:
 YY_RULE_SETUP
-#line 227 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 227 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_WRESIZE);}
 	YY_BREAK
 case 52:
 YY_RULE_SETUP
-#line 228 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 228 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_WSIZEOF);}
 	YY_BREAK
 case 53:
 YY_RULE_SETUP
-#line 229 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 229 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_WTOINT);}
 	YY_BREAK
 case 54:
 YY_RULE_SETUP
-#line 230 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 230 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_COUNT);}
 	YY_BREAK
 case 55:
 YY_RULE_SETUP
-#line 232 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 232 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_WAREAD);}
 	YY_BREAK
 case 56:
 YY_RULE_SETUP
-#line 233 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 233 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_WAWRITE);}
 	YY_BREAK
 case 57:
 YY_RULE_SETUP
-#line 235 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 235 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_EX);}
 	YY_BREAK
 case 58:
 YY_RULE_SETUP
-#line 236 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 236 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_AX);}
 	YY_BREAK
 case 59:
 YY_RULE_SETUP
-#line 237 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 237 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_EF);}
 	YY_BREAK
 case 60:
 YY_RULE_SETUP
-#line 238 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 238 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_AF);}
 	YY_BREAK
 case 61:
 YY_RULE_SETUP
-#line 239 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 239 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_EG);}
 	YY_BREAK
 case 62:
 YY_RULE_SETUP
-#line 240 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 240 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_AG);}
 	YY_BREAK
 case 63:
 YY_RULE_SETUP
-#line 241 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 241 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_EE);}
 	YY_BREAK
 case 64:
 YY_RULE_SETUP
-#line 242 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 242 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_OP_FUTURE);}
 	YY_BREAK
 case 65:
 YY_RULE_SETUP
-#line 243 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 243 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_OP_ONCE);}
 	YY_BREAK
 case 66:
 YY_RULE_SETUP
-#line 244 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 244 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_OP_GLOBAL);}
 	YY_BREAK
 case 67:
 YY_RULE_SETUP
-#line 245 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 245 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_OP_HISTORICAL);}
 	YY_BREAK
 case 68:
 YY_RULE_SETUP
-#line 246 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 246 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_OP_NEXT);}
 	YY_BREAK
 case 69:
 YY_RULE_SETUP
-#line 247 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 247 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_OP_PREC);}
 	YY_BREAK
 case 70:
 YY_RULE_SETUP
-#line 248 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 248 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_OP_NOTPRECNOT);}
 	YY_BREAK
 case 71:
 YY_RULE_SETUP
-#line 249 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 249 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_AA);}
 	YY_BREAK
 case 72:
 YY_RULE_SETUP
-#line 250 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 250 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_UNTIL);}
 	YY_BREAK
 case 73:
 YY_RULE_SETUP
-#line 251 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 251 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_SINCE);}
 	YY_BREAK
 case 74:
 YY_RULE_SETUP
-#line 252 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 252 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_RELEASES);}
 	YY_BREAK
 case 75:
 YY_RULE_SETUP
-#line 253 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 253 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_TRIGGERED);}
 	YY_BREAK
 case 76:
 YY_RULE_SETUP
-#line 254 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 254 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_BUNTIL);}
 	YY_BREAK
 case 77:
 YY_RULE_SETUP
-#line 255 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 255 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_EBF);}
 	YY_BREAK
 case 78:
 YY_RULE_SETUP
-#line 256 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 256 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_ABF);}
 	YY_BREAK
 case 79:
 YY_RULE_SETUP
-#line 257 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 257 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_EBG);}
 	YY_BREAK
 case 80:
 YY_RULE_SETUP
-#line 258 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 258 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_ABG);}
 	YY_BREAK
 case 81:
 YY_RULE_SETUP
-#line 259 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 259 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_MMIN);}
 	YY_BREAK
 case 82:
 YY_RULE_SETUP
-#line 260 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 260 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_MMAX);}
 	YY_BREAK
 case 83:
 YY_RULE_SETUP
-#line 261 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 261 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_LP);}
 	YY_BREAK
 case 84:
 YY_RULE_SETUP
-#line 262 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 262 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_RP);}
 	YY_BREAK
 case 85:
 YY_RULE_SETUP
-#line 263 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 263 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_LB);}
 	YY_BREAK
 case 86:
 YY_RULE_SETUP
-#line 264 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 264 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_RB);}
 	YY_BREAK
 case 87:
 YY_RULE_SETUP
-#line 265 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 265 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_LCB);}
 	YY_BREAK
 case 88:
 YY_RULE_SETUP
-#line 266 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 266 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_RCB);}
 	YY_BREAK
 case 89:
 YY_RULE_SETUP
-#line 267 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 267 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {
                          const NodeMgr_ptr nodemgr =
                            NODE_MGR(NuSMVEnv_get_value(__nusmv_parser_env__,
@@ -1897,7 +1897,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 90:
 YY_RULE_SETUP
-#line 274 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 274 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {
                          const NodeMgr_ptr nodemgr =
                            NODE_MGR(NuSMVEnv_get_value(__nusmv_parser_env__,
@@ -1908,202 +1908,202 @@ YY_RULE_SETUP
 	YY_BREAK
 case 91:
 YY_RULE_SETUP
-#line 281 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 281 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_CASE);}
 	YY_BREAK
 case 92:
 YY_RULE_SETUP
-#line 282 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 282 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_ESAC);}
 	YY_BREAK
 case 93:
 YY_RULE_SETUP
-#line 283 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 283 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_EQDEF);}
 	YY_BREAK
 case 94:
 YY_RULE_SETUP
-#line 284 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 284 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_PLUS);}
 	YY_BREAK
 case 95:
 YY_RULE_SETUP
-#line 285 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 285 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_MINUS);}
 	YY_BREAK
 case 96:
 YY_RULE_SETUP
-#line 286 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 286 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_TIMES);}
 	YY_BREAK
 case 97:
 YY_RULE_SETUP
-#line 287 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 287 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_DIVIDE);}
 	YY_BREAK
 case 98:
 YY_RULE_SETUP
-#line 288 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 288 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_MOD);}
 	YY_BREAK
 case 99:
 YY_RULE_SETUP
-#line 289 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 289 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_LSHIFT);}
 	YY_BREAK
 case 100:
 YY_RULE_SETUP
-#line 290 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 290 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_RSHIFT);}
 	YY_BREAK
 case 101:
 YY_RULE_SETUP
-#line 291 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 291 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_LROTATE);}
 	YY_BREAK
 case 102:
 YY_RULE_SETUP
-#line 292 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 292 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_RROTATE);}
 	YY_BREAK
 case 103:
 YY_RULE_SETUP
-#line 293 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 293 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_EQUAL);}
 	YY_BREAK
 case 104:
 YY_RULE_SETUP
-#line 294 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 294 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_NOTEQUAL);}
 	YY_BREAK
 case 105:
 YY_RULE_SETUP
-#line 295 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 295 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_LE);}
 	YY_BREAK
 case 106:
 YY_RULE_SETUP
-#line 296 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 296 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_GE);}
 	YY_BREAK
 case 107:
 YY_RULE_SETUP
-#line 297 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 297 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_LT);}
 	YY_BREAK
 case 108:
 YY_RULE_SETUP
-#line 298 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 298 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_GT);}
 	YY_BREAK
 case 109:
 YY_RULE_SETUP
-#line 299 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 299 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_NEXT);}
 	YY_BREAK
 case 110:
 YY_RULE_SETUP
-#line 300 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 300 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_SMALLINIT);}
 	YY_BREAK
 case 111:
 YY_RULE_SETUP
-#line 301 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 301 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_SELF);}
 	YY_BREAK
 case 112:
 YY_RULE_SETUP
-#line 302 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 302 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_UNION);}
 	YY_BREAK
 case 113:
 YY_RULE_SETUP
-#line 303 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 303 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_SETIN);}
 	YY_BREAK
 case 114:
 YY_RULE_SETUP
-#line 304 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 304 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_ABS);}
 	YY_BREAK
 case 115:
 YY_RULE_SETUP
-#line 305 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 305 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_MIN);}
 	YY_BREAK
 case 116:
 YY_RULE_SETUP
-#line 306 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 306 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_MAX);}
 	YY_BREAK
 case 117:
 YY_RULE_SETUP
-#line 307 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 307 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_TWODOTS);}
 	YY_BREAK
 case 118:
 YY_RULE_SETUP
-#line 308 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 308 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_DOT);}
 	YY_BREAK
 case 119:
 YY_RULE_SETUP
-#line 309 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 309 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_IMPLIES);}
 	YY_BREAK
 case 120:
 YY_RULE_SETUP
-#line 310 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 310 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_IFF);}
 	YY_BREAK
 case 121:
 YY_RULE_SETUP
-#line 311 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 311 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_OR);}
 	YY_BREAK
 case 122:
 YY_RULE_SETUP
-#line 312 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 312 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_AND);}
 	YY_BREAK
 case 123:
 YY_RULE_SETUP
-#line 313 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 313 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_XOR);}
 	YY_BREAK
 case 124:
 YY_RULE_SETUP
-#line 314 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 314 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_XNOR);}
 	YY_BREAK
 case 125:
 YY_RULE_SETUP
-#line 315 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 315 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_NOT);}
 	YY_BREAK
 case 126:
 YY_RULE_SETUP
-#line 316 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 316 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_QUESTIONMARK);}
 	YY_BREAK
 case 127:
 YY_RULE_SETUP
-#line 317 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 317 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_COMMA);}
 	YY_BREAK
 case 128:
 YY_RULE_SETUP
-#line 318 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 318 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_COLON);}
 	YY_BREAK
 case 129:
 YY_RULE_SETUP
-#line 319 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 319 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_SEMI);}
 	YY_BREAK
 case 130:
 YY_RULE_SETUP
-#line 320 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 320 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_CONCATENATION);}
 	YY_BREAK
 /* ENDS: input.l.2.50 */
@@ -2111,12 +2111,12 @@ YY_RULE_SETUP
 /* **************************************************************  -*-C-*-  ***/
 case 131:
 YY_RULE_SETUP
-#line 327 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 327 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_CONST_ARRAY);}
 	YY_BREAK
 case 132:
 YY_RULE_SETUP
-#line 328 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 328 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {nusmv_yylval.lineno = nusmv_yylineno; return(TOK_TYPEOF);}
 	YY_BREAK
 /* ENDS: input.l.2.51 */
@@ -2125,7 +2125,7 @@ YY_RULE_SETUP
 /* word constants */
 case 133:
 YY_RULE_SETUP
-#line 334 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 334 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {
                  const WordNumberMgr_ptr words =
                    WORD_NUMBER_MGR(NuSMVEnv_get_value(__nusmv_parser_env__,
@@ -2151,7 +2151,7 @@ YY_RULE_SETUP
 /* real, fractional and exponential constants */
 case 134:
 YY_RULE_SETUP
-#line 357 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 357 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {
                   const UStringMgr_ptr strings =
                     USTRING_MGR(NuSMVEnv_get_value(__nusmv_parser_env__, ENV_STRING_MGR));
@@ -2166,7 +2166,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 135:
 YY_RULE_SETUP
-#line 369 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 369 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {
                  const NodeMgr_ptr nodemgr =
                    NODE_MGR(NuSMVEnv_get_value(__nusmv_parser_env__, ENV_NODE_MGR));
@@ -2180,7 +2180,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 136:
 YY_RULE_SETUP
-#line 380 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 380 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {
                   const UStringMgr_ptr strings =
                     USTRING_MGR(NuSMVEnv_get_value(__nusmv_parser_env__, ENV_STRING_MGR));
@@ -2195,7 +2195,7 @@ YY_RULE_SETUP
 /* integer number */
 case 137:
 YY_RULE_SETUP
-#line 392 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 392 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {
                  const ErrorMgr_ptr errmgr =
                    ERROR_MGR(NuSMVEnv_get_value(__nusmv_parser_env__, ENV_ERROR_MANAGER));
@@ -2233,7 +2233,7 @@ YY_RULE_SETUP
 /* identifier */
 case 138:
 YY_RULE_SETUP
-#line 427 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 427 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {
                   const UStringMgr_ptr strings =
                     USTRING_MGR(NuSMVEnv_get_value(__nusmv_parser_env__, ENV_STRING_MGR));
@@ -2248,7 +2248,7 @@ YY_RULE_SETUP
 case 139:
 /* rule 139 can match eol */
 YY_RULE_SETUP
-#line 437 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 437 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {
                   const UStringMgr_ptr strings =
                     USTRING_MGR(NuSMVEnv_get_value(__nusmv_parser_env__, ENV_STRING_MGR));
@@ -2261,7 +2261,7 @@ YY_RULE_SETUP
 	YY_BREAK
 case 140:
 YY_RULE_SETUP
-#line 447 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 447 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 {
                   const ErrorMgr_ptr errmgr =
                     ERROR_MGR(NuSMVEnv_get_value(__nusmv_parser_env__, ENV_ERROR_MANAGER));
@@ -2272,10 +2272,10 @@ YY_RULE_SETUP
 /* ENDS: input.l.2.75 */
 case 141:
 YY_RULE_SETUP
-#line 454 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 454 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 ECHO;
 	YY_BREAK
-#line 2279 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.c"
+#line 2279 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -3294,7 +3294,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 454 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+#line 454 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
 
   /* BEGINS: input.l.3.50 */
 /***************************************************************  -*-C-*-  ***/

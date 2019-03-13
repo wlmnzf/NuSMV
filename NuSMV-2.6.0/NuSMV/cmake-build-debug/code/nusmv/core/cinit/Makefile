@@ -48,10 +48,10 @@ RM = /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV
+CMAKE_SOURCE_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug
+CMAKE_BINARY_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -83,7 +83,7 @@ install/fast: preinstall/fast
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -94,7 +94,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CPackSourceConfig.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -159,14 +159,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/cinit/CMakeFiles/progress.marks
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/cinit/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/cinit/CMakeFiles/progress.marks
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/cinit/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/cinit/clean
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/cinit/clean
 .PHONY : clean
 
 # The main clean target
@@ -176,22 +176,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/cinit/preinstall
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/cinit/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/cinit/preinstall
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/cinit/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/rule:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/rule
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/rule
 .PHONY : code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/rule
 
 # Convenience name for target.
@@ -201,7 +201,7 @@ code_nusmv_core_cinit: code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.di
 
 # fast build rule for target.
 code_nusmv_core_cinit/fast:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/build.make code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/build
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/build.make code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/build
 .PHONY : code_nusmv_core_cinit/fast
 
 NuSMVEnv.o: NuSMVEnv.c.o
@@ -210,7 +210,7 @@ NuSMVEnv.o: NuSMVEnv.c.o
 
 # target to build an object file
 NuSMVEnv.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/build.make code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/NuSMVEnv.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/build.make code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/NuSMVEnv.c.o
 .PHONY : NuSMVEnv.c.o
 
 NuSMVEnv.i: NuSMVEnv.c.i
@@ -219,7 +219,7 @@ NuSMVEnv.i: NuSMVEnv.c.i
 
 # target to preprocess a source file
 NuSMVEnv.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/build.make code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/NuSMVEnv.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/build.make code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/NuSMVEnv.c.i
 .PHONY : NuSMVEnv.c.i
 
 NuSMVEnv.s: NuSMVEnv.c.s
@@ -228,7 +228,7 @@ NuSMVEnv.s: NuSMVEnv.c.s
 
 # target to generate assembly for a file
 NuSMVEnv.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/build.make code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/NuSMVEnv.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/build.make code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/NuSMVEnv.c.s
 .PHONY : NuSMVEnv.c.s
 
 cinitBatch.o: cinitBatch.c.o
@@ -237,7 +237,7 @@ cinitBatch.o: cinitBatch.c.o
 
 # target to build an object file
 cinitBatch.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/build.make code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/cinitBatch.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/build.make code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/cinitBatch.c.o
 .PHONY : cinitBatch.c.o
 
 cinitBatch.i: cinitBatch.c.i
@@ -246,7 +246,7 @@ cinitBatch.i: cinitBatch.c.i
 
 # target to preprocess a source file
 cinitBatch.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/build.make code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/cinitBatch.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/build.make code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/cinitBatch.c.i
 .PHONY : cinitBatch.c.i
 
 cinitBatch.s: cinitBatch.c.s
@@ -255,7 +255,7 @@ cinitBatch.s: cinitBatch.c.s
 
 # target to generate assembly for a file
 cinitBatch.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/build.make code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/cinitBatch.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/build.make code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/cinitBatch.c.s
 .PHONY : cinitBatch.c.s
 
 cinitData.o: cinitData.c.o
@@ -264,7 +264,7 @@ cinitData.o: cinitData.c.o
 
 # target to build an object file
 cinitData.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/build.make code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/cinitData.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/build.make code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/cinitData.c.o
 .PHONY : cinitData.c.o
 
 cinitData.i: cinitData.c.i
@@ -273,7 +273,7 @@ cinitData.i: cinitData.c.i
 
 # target to preprocess a source file
 cinitData.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/build.make code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/cinitData.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/build.make code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/cinitData.c.i
 .PHONY : cinitData.c.i
 
 cinitData.s: cinitData.c.s
@@ -282,7 +282,7 @@ cinitData.s: cinitData.c.s
 
 # target to generate assembly for a file
 cinitData.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/build.make code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/cinitData.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/build.make code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/cinitData.c.s
 .PHONY : cinitData.c.s
 
 cinitInit.o: cinitInit.c.o
@@ -291,7 +291,7 @@ cinitInit.o: cinitInit.c.o
 
 # target to build an object file
 cinitInit.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/build.make code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/cinitInit.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/build.make code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/cinitInit.c.o
 .PHONY : cinitInit.c.o
 
 cinitInit.i: cinitInit.c.i
@@ -300,7 +300,7 @@ cinitInit.i: cinitInit.c.i
 
 # target to preprocess a source file
 cinitInit.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/build.make code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/cinitInit.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/build.make code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/cinitInit.c.i
 .PHONY : cinitInit.c.i
 
 cinitInit.s: cinitInit.c.s
@@ -309,7 +309,7 @@ cinitInit.s: cinitInit.c.s
 
 # target to generate assembly for a file
 cinitInit.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/build.make code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/cinitInit.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/build.make code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/cinitInit.c.s
 .PHONY : cinitInit.c.s
 
 cinitVers.o: cinitVers.c.o
@@ -318,7 +318,7 @@ cinitVers.o: cinitVers.c.o
 
 # target to build an object file
 cinitVers.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/build.make code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/cinitVers.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/build.make code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/cinitVers.c.o
 .PHONY : cinitVers.c.o
 
 cinitVers.i: cinitVers.c.i
@@ -327,7 +327,7 @@ cinitVers.i: cinitVers.c.i
 
 # target to preprocess a source file
 cinitVers.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/build.make code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/cinitVers.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/build.make code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/cinitVers.c.i
 .PHONY : cinitVers.c.i
 
 cinitVers.s: cinitVers.c.s
@@ -336,7 +336,7 @@ cinitVers.s: cinitVers.c.s
 
 # target to generate assembly for a file
 cinitVers.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/build.make code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/cinitVers.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/build.make code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/cinitVers.c.s
 .PHONY : cinitVers.c.s
 
 # Help Target
@@ -381,6 +381,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

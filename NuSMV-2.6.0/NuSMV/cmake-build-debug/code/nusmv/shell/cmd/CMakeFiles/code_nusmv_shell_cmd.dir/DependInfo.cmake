@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/cmd/cmd.c" "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/cmd/CMakeFiles/code_nusmv_shell_cmd.dir/cmd.c.o"
-  "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/cmd/cmdCmd.c" "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/cmd/CMakeFiles/code_nusmv_shell_cmd.dir/cmdCmd.c.o"
-  "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/cmd/cmdFile.c" "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/cmd/CMakeFiles/code_nusmv_shell_cmd.dir/cmdFile.c.o"
-  "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/cmd/cmdHelp.c" "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/cmd/CMakeFiles/code_nusmv_shell_cmd.dir/cmdHelp.c.o"
-  "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/cmd/cmdMisc.c" "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/cmd/CMakeFiles/code_nusmv_shell_cmd.dir/cmdMisc.c.o"
+  "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/cmd/cmd.c" "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/cmd/CMakeFiles/code_nusmv_shell_cmd.dir/cmd.c.o"
+  "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/cmd/cmdCmd.c" "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/cmd/CMakeFiles/code_nusmv_shell_cmd.dir/cmdCmd.c.o"
+  "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/cmd/cmdFile.c" "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/cmd/CMakeFiles/code_nusmv_shell_cmd.dir/cmdFile.c.o"
+  "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/cmd/cmdHelp.c" "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/cmd/CMakeFiles/code_nusmv_shell_cmd.dir/cmdHelp.c.o"
+  "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/cmd/cmdMisc.c" "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/cmd/CMakeFiles/code_nusmv_shell_cmd.dir/cmdMisc.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

@@ -770,15 +770,15 @@ nusmv/core/node/node.h
 nusmv/core/compile/symb_table/SymbTable.h
 ../code/nusmv/core/wff/nusmv/core/compile/symb_table/SymbTable.h
 
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/sat/solvers/SatMinisat.c
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/sat/solvers/SatMinisat.c
 nusmv-config.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/sat/solvers/nusmv-config.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/sat/solvers/nusmv-config.h
 nusmv/core/sat/solvers/SatMinisat_private.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/sat/solvers/nusmv/core/sat/solvers/SatMinisat_private.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/sat/solvers/nusmv/core/sat/solvers/SatMinisat_private.h
 nusmv/core/utils/error.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/sat/solvers/nusmv/core/utils/error.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/sat/solvers/nusmv/core/utils/error.h
 nusmv/core/utils/Sset.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/sat/solvers/nusmv/core/utils/Sset.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/sat/solvers/nusmv/core/utils/Sset.h
 
 build-cudd/include/cudd/cudd.h
 nusmv-config.h

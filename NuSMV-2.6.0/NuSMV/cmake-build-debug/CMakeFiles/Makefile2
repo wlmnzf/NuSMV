@@ -59,18 +59,18 @@ RM = /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV
+CMAKE_SOURCE_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug
+CMAKE_BINARY_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug
 
 #=============================================================================
 # Target rules for target CMakeFiles/NUSMV_CORE_LIB.dir
 
 # All Build rule for target.
+CMakeFiles/NUSMV_CORE_LIB.dir/all: build-cudd/epd/CMakeFiles/CUDD_EPD_LIB.dir/all
 CMakeFiles/NUSMV_CORE_LIB.dir/all: build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/all
 CMakeFiles/NUSMV_CORE_LIB.dir/all: build-cudd/cudd/CMakeFiles/CUDD_CUDD_LIB.dir/all
-CMakeFiles/NUSMV_CORE_LIB.dir/all: build-cudd/epd/CMakeFiles/CUDD_EPD_LIB.dir/all
 CMakeFiles/NUSMV_CORE_LIB.dir/all: CMakeFiles/NUSMV_SHELL_LIB.dir/all
 CMakeFiles/NUSMV_CORE_LIB.dir/all: build-cudd/st/CMakeFiles/CUDD_ST_LIB.dir/all
 CMakeFiles/NUSMV_CORE_LIB.dir/all: build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/all
@@ -113,7 +113,7 @@ CMakeFiles/NUSMV_CORE_LIB.dir/all: code/nusmv/core/wff/w2w/CMakeFiles/code_nusmv
 CMakeFiles/NUSMV_CORE_LIB.dir/all: code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/all
 	$(MAKE) -f CMakeFiles/NUSMV_CORE_LIB.dir/build.make CMakeFiles/NUSMV_CORE_LIB.dir/depend
 	$(MAKE) -f CMakeFiles/NUSMV_CORE_LIB.dir/build.make CMakeFiles/NUSMV_CORE_LIB.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target NUSMV_CORE_LIB"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target NUSMV_CORE_LIB"
 .PHONY : CMakeFiles/NUSMV_CORE_LIB.dir/all
 
 # Include target in all.
@@ -123,9 +123,9 @@ all: CMakeFiles/NUSMV_CORE_LIB.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/NUSMV_CORE_LIB.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 90
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 90
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/NUSMV_CORE_LIB.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/NUSMV_CORE_LIB.dir/rule
 
 # Convenience name for target.
@@ -147,19 +147,19 @@ clean: CMakeFiles/NUSMV_CORE_LIB.dir/clean
 # Target rules for target CMakeFiles/ltl2smv.dir
 
 # All Build rule for target.
-CMakeFiles/ltl2smv.dir/all: CMakeFiles/NUSMV_ADDONSCORE_LIB.dir/all
+CMakeFiles/ltl2smv.dir/all: build-cudd/epd/CMakeFiles/CUDD_EPD_LIB.dir/all
 CMakeFiles/ltl2smv.dir/all: build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/all
-CMakeFiles/ltl2smv.dir/all: CMakeFiles/NUSMV_GRAMMAR_LIB.dir/all
 CMakeFiles/ltl2smv.dir/all: CMakeFiles/NUSMV_RBC_LIB.dir/all
 CMakeFiles/ltl2smv.dir/all: build-cudd/cudd/CMakeFiles/CUDD_CUDD_LIB.dir/all
-CMakeFiles/ltl2smv.dir/all: build-cudd/epd/CMakeFiles/CUDD_EPD_LIB.dir/all
+CMakeFiles/ltl2smv.dir/all: CMakeFiles/NUSMV_GRAMMAR_LIB.dir/all
+CMakeFiles/ltl2smv.dir/all: CMakeFiles/NUSMV_ADDONSCORE_LIB.dir/all
 CMakeFiles/ltl2smv.dir/all: CMakeFiles/NUSMV_SHELL_LIB.dir/all
 CMakeFiles/ltl2smv.dir/all: CMakeFiles/NUSMV_CORE_LIB.dir/all
 CMakeFiles/ltl2smv.dir/all: build-cudd/st/CMakeFiles/CUDD_ST_LIB.dir/all
 CMakeFiles/ltl2smv.dir/all: build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/all
 	$(MAKE) -f CMakeFiles/ltl2smv.dir/build.make CMakeFiles/ltl2smv.dir/depend
 	$(MAKE) -f CMakeFiles/ltl2smv.dir/build.make CMakeFiles/ltl2smv.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target ltl2smv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target ltl2smv"
 .PHONY : CMakeFiles/ltl2smv.dir/all
 
 # Include target in all.
@@ -169,9 +169,9 @@ all: CMakeFiles/ltl2smv.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ltl2smv.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 100
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 100
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ltl2smv.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/ltl2smv.dir/rule
 
 # Convenience name for target.
@@ -193,9 +193,9 @@ clean: CMakeFiles/ltl2smv.dir/clean
 # Target rules for target CMakeFiles/NUSMV_SHELL_LIB.dir
 
 # All Build rule for target.
+CMakeFiles/NUSMV_SHELL_LIB.dir/all: build-cudd/epd/CMakeFiles/CUDD_EPD_LIB.dir/all
 CMakeFiles/NUSMV_SHELL_LIB.dir/all: build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/all
 CMakeFiles/NUSMV_SHELL_LIB.dir/all: build-cudd/cudd/CMakeFiles/CUDD_CUDD_LIB.dir/all
-CMakeFiles/NUSMV_SHELL_LIB.dir/all: build-cudd/epd/CMakeFiles/CUDD_EPD_LIB.dir/all
 CMakeFiles/NUSMV_SHELL_LIB.dir/all: build-cudd/st/CMakeFiles/CUDD_ST_LIB.dir/all
 CMakeFiles/NUSMV_SHELL_LIB.dir/all: build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/all
 CMakeFiles/NUSMV_SHELL_LIB.dir/all: code/nusmv/shell/parser/CMakeFiles/code_nusmv_shell_parser.dir/all
@@ -216,7 +216,7 @@ CMakeFiles/NUSMV_SHELL_LIB.dir/all: code/nusmv/shell/hrc/CMakeFiles/code_nusmv_s
 CMakeFiles/NUSMV_SHELL_LIB.dir/all: code/nusmv/shell/cmd/CMakeFiles/code_nusmv_shell_cmd.dir/all
 	$(MAKE) -f CMakeFiles/NUSMV_SHELL_LIB.dir/build.make CMakeFiles/NUSMV_SHELL_LIB.dir/depend
 	$(MAKE) -f CMakeFiles/NUSMV_SHELL_LIB.dir/build.make CMakeFiles/NUSMV_SHELL_LIB.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=20 "Built target NUSMV_SHELL_LIB"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=20 "Built target NUSMV_SHELL_LIB"
 .PHONY : CMakeFiles/NUSMV_SHELL_LIB.dir/all
 
 # Include target in all.
@@ -226,9 +226,9 @@ all: CMakeFiles/NUSMV_SHELL_LIB.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/NUSMV_SHELL_LIB.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 25
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 25
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/NUSMV_SHELL_LIB.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/NUSMV_SHELL_LIB.dir/rule
 
 # Convenience name for target.
@@ -253,14 +253,14 @@ clean: CMakeFiles/NUSMV_SHELL_LIB.dir/clean
 CMakeFiles/gitarchive.dir/all:
 	$(MAKE) -f CMakeFiles/gitarchive.dir/build.make CMakeFiles/gitarchive.dir/depend
 	$(MAKE) -f CMakeFiles/gitarchive.dir/build.make CMakeFiles/gitarchive.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target gitarchive"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target gitarchive"
 .PHONY : CMakeFiles/gitarchive.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gitarchive.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/gitarchive.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/gitarchive.dir/rule
 
 # Convenience name for target.
@@ -285,14 +285,14 @@ clean: CMakeFiles/gitarchive.dir/clean
 CMakeFiles/uninstall.dir/all:
 	$(MAKE) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/depend
 	$(MAKE) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target uninstall"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target uninstall"
 .PHONY : CMakeFiles/uninstall.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/uninstall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/uninstall.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/uninstall.dir/rule
 
 # Convenience name for target.
@@ -314,19 +314,19 @@ clean: CMakeFiles/uninstall.dir/clean
 # Target rules for target CMakeFiles/NuSMV.dir
 
 # All Build rule for target.
-CMakeFiles/NuSMV.dir/all: CMakeFiles/NUSMV_ADDONSCORE_LIB.dir/all
+CMakeFiles/NuSMV.dir/all: build-cudd/epd/CMakeFiles/CUDD_EPD_LIB.dir/all
 CMakeFiles/NuSMV.dir/all: build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/all
-CMakeFiles/NuSMV.dir/all: CMakeFiles/NUSMV_GRAMMAR_LIB.dir/all
 CMakeFiles/NuSMV.dir/all: CMakeFiles/NUSMV_RBC_LIB.dir/all
 CMakeFiles/NuSMV.dir/all: build-cudd/cudd/CMakeFiles/CUDD_CUDD_LIB.dir/all
-CMakeFiles/NuSMV.dir/all: build-cudd/epd/CMakeFiles/CUDD_EPD_LIB.dir/all
+CMakeFiles/NuSMV.dir/all: CMakeFiles/NUSMV_GRAMMAR_LIB.dir/all
+CMakeFiles/NuSMV.dir/all: CMakeFiles/NUSMV_ADDONSCORE_LIB.dir/all
 CMakeFiles/NuSMV.dir/all: CMakeFiles/NUSMV_SHELL_LIB.dir/all
 CMakeFiles/NuSMV.dir/all: CMakeFiles/NUSMV_CORE_LIB.dir/all
 CMakeFiles/NuSMV.dir/all: build-cudd/st/CMakeFiles/CUDD_ST_LIB.dir/all
 CMakeFiles/NuSMV.dir/all: build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/all
 	$(MAKE) -f CMakeFiles/NuSMV.dir/build.make CMakeFiles/NuSMV.dir/depend
 	$(MAKE) -f CMakeFiles/NuSMV.dir/build.make CMakeFiles/NuSMV.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target NuSMV"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target NuSMV"
 .PHONY : CMakeFiles/NuSMV.dir/all
 
 # Include target in all.
@@ -336,9 +336,9 @@ all: CMakeFiles/NuSMV.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/NuSMV.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 100
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 100
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/NuSMV.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/NuSMV.dir/rule
 
 # Convenience name for target.
@@ -363,14 +363,14 @@ clean: CMakeFiles/NuSMV.dir/clean
 CMakeFiles/dist.dir/all: CMakeFiles/gitarchive.dir/all
 	$(MAKE) -f CMakeFiles/dist.dir/build.make CMakeFiles/dist.dir/depend
 	$(MAKE) -f CMakeFiles/dist.dir/build.make CMakeFiles/dist.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target dist"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target dist"
 .PHONY : CMakeFiles/dist.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/dist.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/dist.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/dist.dir/rule
 
 # Convenience name for target.
@@ -395,14 +395,14 @@ clean: CMakeFiles/dist.dir/clean
 CMakeFiles/distbin.dir/all: doc/CMakeFiles/docs.dir/all
 	$(MAKE) -f CMakeFiles/distbin.dir/build.make CMakeFiles/distbin.dir/depend
 	$(MAKE) -f CMakeFiles/distbin.dir/build.make CMakeFiles/distbin.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target distbin"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target distbin"
 .PHONY : CMakeFiles/distbin.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/distbin.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/distbin.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/distbin.dir/rule
 
 # Convenience name for target.
@@ -424,9 +424,9 @@ clean: CMakeFiles/distbin.dir/clean
 # Target rules for target CMakeFiles/NUSMV_RBC_LIB.dir
 
 # All Build rule for target.
+CMakeFiles/NUSMV_RBC_LIB.dir/all: build-cudd/epd/CMakeFiles/CUDD_EPD_LIB.dir/all
 CMakeFiles/NUSMV_RBC_LIB.dir/all: build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/all
 CMakeFiles/NUSMV_RBC_LIB.dir/all: build-cudd/cudd/CMakeFiles/CUDD_CUDD_LIB.dir/all
-CMakeFiles/NUSMV_RBC_LIB.dir/all: build-cudd/epd/CMakeFiles/CUDD_EPD_LIB.dir/all
 CMakeFiles/NUSMV_RBC_LIB.dir/all: CMakeFiles/NUSMV_SHELL_LIB.dir/all
 CMakeFiles/NUSMV_RBC_LIB.dir/all: build-cudd/st/CMakeFiles/CUDD_ST_LIB.dir/all
 CMakeFiles/NUSMV_RBC_LIB.dir/all: build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/all
@@ -434,7 +434,7 @@ CMakeFiles/NUSMV_RBC_LIB.dir/all: code/nusmv/core/dag/CMakeFiles/code_nusmv_core
 CMakeFiles/NUSMV_RBC_LIB.dir/all: code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/all
 	$(MAKE) -f CMakeFiles/NUSMV_RBC_LIB.dir/build.make CMakeFiles/NUSMV_RBC_LIB.dir/depend
 	$(MAKE) -f CMakeFiles/NUSMV_RBC_LIB.dir/build.make CMakeFiles/NUSMV_RBC_LIB.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target NUSMV_RBC_LIB"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target NUSMV_RBC_LIB"
 .PHONY : CMakeFiles/NUSMV_RBC_LIB.dir/all
 
 # Include target in all.
@@ -444,9 +444,9 @@ all: CMakeFiles/NUSMV_RBC_LIB.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/NUSMV_RBC_LIB.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 29
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 29
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/NUSMV_RBC_LIB.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/NUSMV_RBC_LIB.dir/rule
 
 # Convenience name for target.
@@ -468,16 +468,16 @@ clean: CMakeFiles/NUSMV_RBC_LIB.dir/clean
 # Target rules for target CMakeFiles/NUSMV_GRAMMAR_LIB.dir
 
 # All Build rule for target.
+CMakeFiles/NUSMV_GRAMMAR_LIB.dir/all: build-cudd/epd/CMakeFiles/CUDD_EPD_LIB.dir/all
 CMakeFiles/NUSMV_GRAMMAR_LIB.dir/all: build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/all
 CMakeFiles/NUSMV_GRAMMAR_LIB.dir/all: build-cudd/cudd/CMakeFiles/CUDD_CUDD_LIB.dir/all
-CMakeFiles/NUSMV_GRAMMAR_LIB.dir/all: build-cudd/epd/CMakeFiles/CUDD_EPD_LIB.dir/all
 CMakeFiles/NUSMV_GRAMMAR_LIB.dir/all: CMakeFiles/NUSMV_SHELL_LIB.dir/all
 CMakeFiles/NUSMV_GRAMMAR_LIB.dir/all: build-cudd/st/CMakeFiles/CUDD_ST_LIB.dir/all
 CMakeFiles/NUSMV_GRAMMAR_LIB.dir/all: build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/all
 CMakeFiles/NUSMV_GRAMMAR_LIB.dir/all: code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser_grammar.dir/all
 	$(MAKE) -f CMakeFiles/NUSMV_GRAMMAR_LIB.dir/build.make CMakeFiles/NUSMV_GRAMMAR_LIB.dir/depend
 	$(MAKE) -f CMakeFiles/NUSMV_GRAMMAR_LIB.dir/build.make CMakeFiles/NUSMV_GRAMMAR_LIB.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target NUSMV_GRAMMAR_LIB"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target NUSMV_GRAMMAR_LIB"
 .PHONY : CMakeFiles/NUSMV_GRAMMAR_LIB.dir/all
 
 # Include target in all.
@@ -487,9 +487,9 @@ all: CMakeFiles/NUSMV_GRAMMAR_LIB.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/NUSMV_GRAMMAR_LIB.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 26
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 26
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/NUSMV_GRAMMAR_LIB.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/NUSMV_GRAMMAR_LIB.dir/rule
 
 # Convenience name for target.
@@ -511,9 +511,9 @@ clean: CMakeFiles/NUSMV_GRAMMAR_LIB.dir/clean
 # Target rules for target CMakeFiles/NUSMV_ADDONSCORE_LIB.dir
 
 # All Build rule for target.
+CMakeFiles/NUSMV_ADDONSCORE_LIB.dir/all: build-cudd/epd/CMakeFiles/CUDD_EPD_LIB.dir/all
 CMakeFiles/NUSMV_ADDONSCORE_LIB.dir/all: build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/all
 CMakeFiles/NUSMV_ADDONSCORE_LIB.dir/all: build-cudd/cudd/CMakeFiles/CUDD_CUDD_LIB.dir/all
-CMakeFiles/NUSMV_ADDONSCORE_LIB.dir/all: build-cudd/epd/CMakeFiles/CUDD_EPD_LIB.dir/all
 CMakeFiles/NUSMV_ADDONSCORE_LIB.dir/all: CMakeFiles/NUSMV_SHELL_LIB.dir/all
 CMakeFiles/NUSMV_ADDONSCORE_LIB.dir/all: build-cudd/st/CMakeFiles/CUDD_ST_LIB.dir/all
 CMakeFiles/NUSMV_ADDONSCORE_LIB.dir/all: build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/all
@@ -523,7 +523,7 @@ CMakeFiles/NUSMV_ADDONSCORE_LIB.dir/all: code/nusmv/addons_core/compass/parser/p
 CMakeFiles/NUSMV_ADDONSCORE_LIB.dir/all: code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/all
 	$(MAKE) -f CMakeFiles/NUSMV_ADDONSCORE_LIB.dir/build.make CMakeFiles/NUSMV_ADDONSCORE_LIB.dir/depend
 	$(MAKE) -f CMakeFiles/NUSMV_ADDONSCORE_LIB.dir/build.make CMakeFiles/NUSMV_ADDONSCORE_LIB.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=19 "Built target NUSMV_ADDONSCORE_LIB"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=19 "Built target NUSMV_ADDONSCORE_LIB"
 .PHONY : CMakeFiles/NUSMV_ADDONSCORE_LIB.dir/all
 
 # Include target in all.
@@ -533,9 +533,9 @@ all: CMakeFiles/NUSMV_ADDONSCORE_LIB.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/NUSMV_ADDONSCORE_LIB.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 30
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 30
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/NUSMV_ADDONSCORE_LIB.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/NUSMV_ADDONSCORE_LIB.dir/rule
 
 # Convenience name for target.
@@ -608,7 +608,7 @@ build-cudd/st/preinstall:
 build-cudd/st/CMakeFiles/CUDD_ST_LIB.dir/all:
 	$(MAKE) -f build-cudd/st/CMakeFiles/CUDD_ST_LIB.dir/build.make build-cudd/st/CMakeFiles/CUDD_ST_LIB.dir/depend
 	$(MAKE) -f build-cudd/st/CMakeFiles/CUDD_ST_LIB.dir/build.make build-cudd/st/CMakeFiles/CUDD_ST_LIB.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target CUDD_ST_LIB"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target CUDD_ST_LIB"
 .PHONY : build-cudd/st/CMakeFiles/CUDD_ST_LIB.dir/all
 
 # Include target in all.
@@ -618,9 +618,9 @@ all: build-cudd/st/CMakeFiles/CUDD_ST_LIB.dir/all
 
 # Build rule for subdir invocation for target.
 build-cudd/st/CMakeFiles/CUDD_ST_LIB.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 build-cudd/st/CMakeFiles/CUDD_ST_LIB.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : build-cudd/st/CMakeFiles/CUDD_ST_LIB.dir/rule
 
 # Convenience name for target.
@@ -663,7 +663,7 @@ build-cudd/cudd/preinstall:
 build-cudd/cudd/CMakeFiles/CUDD_CUDD_LIB.dir/all:
 	$(MAKE) -f build-cudd/cudd/CMakeFiles/CUDD_CUDD_LIB.dir/build.make build-cudd/cudd/CMakeFiles/CUDD_CUDD_LIB.dir/depend
 	$(MAKE) -f build-cudd/cudd/CMakeFiles/CUDD_CUDD_LIB.dir/build.make build-cudd/cudd/CMakeFiles/CUDD_CUDD_LIB.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13 "Built target CUDD_CUDD_LIB"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13 "Built target CUDD_CUDD_LIB"
 .PHONY : build-cudd/cudd/CMakeFiles/CUDD_CUDD_LIB.dir/all
 
 # Include target in all.
@@ -673,9 +673,9 @@ all: build-cudd/cudd/CMakeFiles/CUDD_CUDD_LIB.dir/all
 
 # Build rule for subdir invocation for target.
 build-cudd/cudd/CMakeFiles/CUDD_CUDD_LIB.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 13
 	$(MAKE) -f CMakeFiles/Makefile2 build-cudd/cudd/CMakeFiles/CUDD_CUDD_LIB.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : build-cudd/cudd/CMakeFiles/CUDD_CUDD_LIB.dir/rule
 
 # Convenience name for target.
@@ -718,7 +718,7 @@ build-cudd/epd/preinstall:
 build-cudd/epd/CMakeFiles/CUDD_EPD_LIB.dir/all:
 	$(MAKE) -f build-cudd/epd/CMakeFiles/CUDD_EPD_LIB.dir/build.make build-cudd/epd/CMakeFiles/CUDD_EPD_LIB.dir/depend
 	$(MAKE) -f build-cudd/epd/CMakeFiles/CUDD_EPD_LIB.dir/build.make build-cudd/epd/CMakeFiles/CUDD_EPD_LIB.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target CUDD_EPD_LIB"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target CUDD_EPD_LIB"
 .PHONY : build-cudd/epd/CMakeFiles/CUDD_EPD_LIB.dir/all
 
 # Include target in all.
@@ -728,9 +728,9 @@ all: build-cudd/epd/CMakeFiles/CUDD_EPD_LIB.dir/all
 
 # Build rule for subdir invocation for target.
 build-cudd/epd/CMakeFiles/CUDD_EPD_LIB.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 build-cudd/epd/CMakeFiles/CUDD_EPD_LIB.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : build-cudd/epd/CMakeFiles/CUDD_EPD_LIB.dir/rule
 
 # Convenience name for target.
@@ -773,7 +773,7 @@ build-cudd/mtr/preinstall:
 build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/all:
 	$(MAKE) -f build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/build.make build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/depend
 	$(MAKE) -f build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/build.make build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=14 "Built target CUDD_MTR_LIB"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=14 "Built target CUDD_MTR_LIB"
 .PHONY : build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/all
 
 # Include target in all.
@@ -783,9 +783,9 @@ all: build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/all
 
 # Build rule for subdir invocation for target.
 build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/rule
 
 # Convenience name for target.
@@ -828,7 +828,7 @@ build-cudd/util/preinstall:
 build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/all:
 	$(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/depend
 	$(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=15,16,17,18 "Built target CUDD_UTIL_LIB"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=15,16,17,18 "Built target CUDD_UTIL_LIB"
 .PHONY : build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/all
 
 # Include target in all.
@@ -838,9 +838,9 @@ all: build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/all
 
 # Build rule for subdir invocation for target.
 build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/rule
 
 # Convenience name for target.
@@ -883,7 +883,7 @@ build-MiniSat/preinstall:
 build-MiniSat/CMakeFiles/MINISAT_BUILD.dir/all:
 	$(MAKE) -f build-MiniSat/CMakeFiles/MINISAT_BUILD.dir/build.make build-MiniSat/CMakeFiles/MINISAT_BUILD.dir/depend
 	$(MAKE) -f build-MiniSat/CMakeFiles/MINISAT_BUILD.dir/build.make build-MiniSat/CMakeFiles/MINISAT_BUILD.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target MINISAT_BUILD"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target MINISAT_BUILD"
 .PHONY : build-MiniSat/CMakeFiles/MINISAT_BUILD.dir/all
 
 # Include target in all.
@@ -893,9 +893,9 @@ all: build-MiniSat/CMakeFiles/MINISAT_BUILD.dir/all
 
 # Build rule for subdir invocation for target.
 build-MiniSat/CMakeFiles/MINISAT_BUILD.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 build-MiniSat/CMakeFiles/MINISAT_BUILD.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : build-MiniSat/CMakeFiles/MINISAT_BUILD.dir/rule
 
 # Convenience name for target.
@@ -1035,7 +1035,7 @@ code/nusmv/core/parser/preinstall: code/nusmv/core/parser/psl/preinstall
 code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser_grammar.dir/all:
 	$(MAKE) -f code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser_grammar.dir/build.make code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser_grammar.dir/depend
 	$(MAKE) -f code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser_grammar.dir/build.make code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser_grammar.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=64 "Built target code_nusmv_core_parser_grammar"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=64 "Built target code_nusmv_core_parser_grammar"
 .PHONY : code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser_grammar.dir/all
 
 # Include target in all.
@@ -1045,9 +1045,9 @@ all: code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser_grammar.dir/all
 
 # Build rule for subdir invocation for target.
 code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser_grammar.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser_grammar.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser_grammar.dir/rule
 
 # Convenience name for target.
@@ -1072,7 +1072,7 @@ clean: code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser_grammar.dir/clea
 code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser.dir/all:
 	$(MAKE) -f code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser.dir/build.make code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser.dir/depend
 	$(MAKE) -f code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser.dir/build.make code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=63 "Built target code_nusmv_core_parser"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=63 "Built target code_nusmv_core_parser"
 .PHONY : code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser.dir/all
 
 # Include target in all.
@@ -1082,9 +1082,9 @@ all: code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser.dir/all
 
 # Build rule for subdir invocation for target.
 code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser.dir/rule
 
 # Convenience name for target.
@@ -1127,7 +1127,7 @@ code/nusmv/core/parser/ord/preinstall:
 code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/all:
 	$(MAKE) -f code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/build.make code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/depend
 	$(MAKE) -f code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/build.make code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=66 "Built target code_nusmv_core_parser_ord"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=66 "Built target code_nusmv_core_parser_ord"
 .PHONY : code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/all
 
 # Include target in all.
@@ -1137,9 +1137,9 @@ all: code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/all
 
 # Build rule for subdir invocation for target.
 code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/rule
 
 # Convenience name for target.
@@ -1182,7 +1182,7 @@ code/nusmv/core/parser/idlist/preinstall:
 code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/all:
 	$(MAKE) -f code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/build.make code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/depend
 	$(MAKE) -f code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/build.make code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=65 "Built target code_nusmv_core_parser_idlist"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=65 "Built target code_nusmv_core_parser_idlist"
 .PHONY : code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/all
 
 # Include target in all.
@@ -1192,9 +1192,9 @@ all: code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/
 
 # Build rule for subdir invocation for target.
 code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/rule
 
 # Convenience name for target.
@@ -1237,7 +1237,7 @@ code/nusmv/core/parser/psl/preinstall:
 code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/all:
 	$(MAKE) -f code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/build.make code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/depend
 	$(MAKE) -f code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/build.make code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=67,68 "Built target code_nusmv_core_parser_psl"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=67,68 "Built target code_nusmv_core_parser_psl"
 .PHONY : code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/all
 
 # Include target in all.
@@ -1247,9 +1247,9 @@ all: code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/all
 
 # Build rule for subdir invocation for target.
 code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/rule
 
 # Convenience name for target.
@@ -1292,7 +1292,7 @@ code/nusmv/core/be/preinstall:
 code/nusmv/core/be/CMakeFiles/code_nusmv_core_be.dir/all:
 	$(MAKE) -f code/nusmv/core/be/CMakeFiles/code_nusmv_core_be.dir/build.make code/nusmv/core/be/CMakeFiles/code_nusmv_core_be.dir/depend
 	$(MAKE) -f code/nusmv/core/be/CMakeFiles/code_nusmv_core_be.dir/build.make code/nusmv/core/be/CMakeFiles/code_nusmv_core_be.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=25 "Built target code_nusmv_core_be"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=25 "Built target code_nusmv_core_be"
 .PHONY : code/nusmv/core/be/CMakeFiles/code_nusmv_core_be.dir/all
 
 # Include target in all.
@@ -1302,9 +1302,9 @@ all: code/nusmv/core/be/CMakeFiles/code_nusmv_core_be.dir/all
 
 # Build rule for subdir invocation for target.
 code/nusmv/core/be/CMakeFiles/code_nusmv_core_be.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/be/CMakeFiles/code_nusmv_core_be.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/core/be/CMakeFiles/code_nusmv_core_be.dir/rule
 
 # Convenience name for target.
@@ -1347,7 +1347,7 @@ code/nusmv/core/dag/preinstall:
 code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/all:
 	$(MAKE) -f code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/build.make code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/depend
 	$(MAKE) -f code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/build.make code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=43 "Built target code_nusmv_core_dag"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=43 "Built target code_nusmv_core_dag"
 .PHONY : code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/all
 
 # Include target in all.
@@ -1357,9 +1357,9 @@ all: code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/all
 
 # Build rule for subdir invocation for target.
 code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/rule
 
 # Convenience name for target.
@@ -1402,7 +1402,7 @@ code/nusmv/core/enc/preinstall:
 code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/all:
 	$(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/depend
 	$(MAKE) -f code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build.make code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=45,46,47,48 "Built target code_nusmv_core_enc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=45,46,47,48 "Built target code_nusmv_core_enc"
 .PHONY : code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/all
 
 # Include target in all.
@@ -1412,9 +1412,9 @@ all: code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/all
 
 # Build rule for subdir invocation for target.
 code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/core/enc/CMakeFiles/code_nusmv_core_enc.dir/rule
 
 # Convenience name for target.
@@ -1457,7 +1457,7 @@ code/nusmv/core/ltl/preinstall:
 code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/all:
 	$(MAKE) -f code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/build.make code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/depend
 	$(MAKE) -f code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/build.make code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=54 "Built target code_nusmv_core_ltl"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=54 "Built target code_nusmv_core_ltl"
 .PHONY : code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/all
 
 # Include target in all.
@@ -1467,9 +1467,9 @@ all: code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/all
 
 # Build rule for subdir invocation for target.
 code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/rule
 
 # Convenience name for target.
@@ -1512,7 +1512,7 @@ code/nusmv/core/mc/preinstall:
 code/nusmv/core/mc/CMakeFiles/code_nusmv_core_mc.dir/all:
 	$(MAKE) -f code/nusmv/core/mc/CMakeFiles/code_nusmv_core_mc.dir/build.make code/nusmv/core/mc/CMakeFiles/code_nusmv_core_mc.dir/depend
 	$(MAKE) -f code/nusmv/core/mc/CMakeFiles/code_nusmv_core_mc.dir/build.make code/nusmv/core/mc/CMakeFiles/code_nusmv_core_mc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=55,56 "Built target code_nusmv_core_mc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=55,56 "Built target code_nusmv_core_mc"
 .PHONY : code/nusmv/core/mc/CMakeFiles/code_nusmv_core_mc.dir/all
 
 # Include target in all.
@@ -1522,9 +1522,9 @@ all: code/nusmv/core/mc/CMakeFiles/code_nusmv_core_mc.dir/all
 
 # Build rule for subdir invocation for target.
 code/nusmv/core/mc/CMakeFiles/code_nusmv_core_mc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/mc/CMakeFiles/code_nusmv_core_mc.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/core/mc/CMakeFiles/code_nusmv_core_mc.dir/rule
 
 # Convenience name for target.
@@ -1567,7 +1567,7 @@ code/nusmv/core/opt/preinstall:
 code/nusmv/core/opt/CMakeFiles/code_nusmv_core_opt.dir/all:
 	$(MAKE) -f code/nusmv/core/opt/CMakeFiles/code_nusmv_core_opt.dir/build.make code/nusmv/core/opt/CMakeFiles/code_nusmv_core_opt.dir/depend
 	$(MAKE) -f code/nusmv/core/opt/CMakeFiles/code_nusmv_core_opt.dir/build.make code/nusmv/core/opt/CMakeFiles/code_nusmv_core_opt.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=62 "Built target code_nusmv_core_opt"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=62 "Built target code_nusmv_core_opt"
 .PHONY : code/nusmv/core/opt/CMakeFiles/code_nusmv_core_opt.dir/all
 
 # Include target in all.
@@ -1577,9 +1577,9 @@ all: code/nusmv/core/opt/CMakeFiles/code_nusmv_core_opt.dir/all
 
 # Build rule for subdir invocation for target.
 code/nusmv/core/opt/CMakeFiles/code_nusmv_core_opt.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/opt/CMakeFiles/code_nusmv_core_opt.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/core/opt/CMakeFiles/code_nusmv_core_opt.dir/rule
 
 # Convenience name for target.
@@ -1622,7 +1622,7 @@ code/nusmv/core/prop/preinstall:
 code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/all:
 	$(MAKE) -f code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/build.make code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/depend
 	$(MAKE) -f code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/build.make code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=69 "Built target code_nusmv_core_prop"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=69 "Built target code_nusmv_core_prop"
 .PHONY : code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/all
 
 # Include target in all.
@@ -1632,9 +1632,9 @@ all: code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/all
 
 # Build rule for subdir invocation for target.
 code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/rule
 
 # Convenience name for target.
@@ -1679,7 +1679,7 @@ code/nusmv/core/sat/preinstall: code/nusmv/core/sat/solvers/preinstall
 code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/all:
 	$(MAKE) -f code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/build.make code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/depend
 	$(MAKE) -f code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/build.make code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=73 "Built target code_nusmv_core_sat"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=73 "Built target code_nusmv_core_sat"
 .PHONY : code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/all
 
 # Include target in all.
@@ -1689,9 +1689,9 @@ all: code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/all
 
 # Build rule for subdir invocation for target.
 code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/rule
 
 # Convenience name for target.
@@ -1735,14 +1735,14 @@ code/nusmv/core/sat/solvers/preinstall:
 code/nusmv/core/sat/solvers/CMakeFiles/minisat_interface_header.dir/all: build-MiniSat/CMakeFiles/MINISAT_BUILD.dir/all
 	$(MAKE) -f code/nusmv/core/sat/solvers/CMakeFiles/minisat_interface_header.dir/build.make code/nusmv/core/sat/solvers/CMakeFiles/minisat_interface_header.dir/depend
 	$(MAKE) -f code/nusmv/core/sat/solvers/CMakeFiles/minisat_interface_header.dir/build.make code/nusmv/core/sat/solvers/CMakeFiles/minisat_interface_header.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=100 "Built target minisat_interface_header"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=100 "Built target minisat_interface_header"
 .PHONY : code/nusmv/core/sat/solvers/CMakeFiles/minisat_interface_header.dir/all
 
 # Build rule for subdir invocation for target.
 code/nusmv/core/sat/solvers/CMakeFiles/minisat_interface_header.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/sat/solvers/CMakeFiles/minisat_interface_header.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/core/sat/solvers/CMakeFiles/minisat_interface_header.dir/rule
 
 # Convenience name for target.
@@ -1767,7 +1767,7 @@ clean: code/nusmv/core/sat/solvers/CMakeFiles/minisat_interface_header.dir/clean
 code/nusmv/core/sat/solvers/CMakeFiles/code_nusmv_core_sat_solvers.dir/all: code/nusmv/core/sat/solvers/CMakeFiles/minisat_interface_header.dir/all
 	$(MAKE) -f code/nusmv/core/sat/solvers/CMakeFiles/code_nusmv_core_sat_solvers.dir/build.make code/nusmv/core/sat/solvers/CMakeFiles/code_nusmv_core_sat_solvers.dir/depend
 	$(MAKE) -f code/nusmv/core/sat/solvers/CMakeFiles/code_nusmv_core_sat_solvers.dir/build.make code/nusmv/core/sat/solvers/CMakeFiles/code_nusmv_core_sat_solvers.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target code_nusmv_core_sat_solvers"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target code_nusmv_core_sat_solvers"
 .PHONY : code/nusmv/core/sat/solvers/CMakeFiles/code_nusmv_core_sat_solvers.dir/all
 
 # Include target in all.
@@ -1777,9 +1777,9 @@ all: code/nusmv/core/sat/solvers/CMakeFiles/code_nusmv_core_sat_solvers.dir/all
 
 # Build rule for subdir invocation for target.
 code/nusmv/core/sat/solvers/CMakeFiles/code_nusmv_core_sat_solvers.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/sat/solvers/CMakeFiles/code_nusmv_core_sat_solvers.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/core/sat/solvers/CMakeFiles/code_nusmv_core_sat_solvers.dir/rule
 
 # Convenience name for target.
@@ -1822,7 +1822,7 @@ code/nusmv/core/set/preinstall:
 code/nusmv/core/set/CMakeFiles/code_nusmv_core_set.dir/all:
 	$(MAKE) -f code/nusmv/core/set/CMakeFiles/code_nusmv_core_set.dir/build.make code/nusmv/core/set/CMakeFiles/code_nusmv_core_set.dir/depend
 	$(MAKE) -f code/nusmv/core/set/CMakeFiles/code_nusmv_core_set.dir/build.make code/nusmv/core/set/CMakeFiles/code_nusmv_core_set.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=74 "Built target code_nusmv_core_set"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=74 "Built target code_nusmv_core_set"
 .PHONY : code/nusmv/core/set/CMakeFiles/code_nusmv_core_set.dir/all
 
 # Include target in all.
@@ -1832,9 +1832,9 @@ all: code/nusmv/core/set/CMakeFiles/code_nusmv_core_set.dir/all
 
 # Build rule for subdir invocation for target.
 code/nusmv/core/set/CMakeFiles/code_nusmv_core_set.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/set/CMakeFiles/code_nusmv_core_set.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/core/set/CMakeFiles/code_nusmv_core_set.dir/rule
 
 # Convenience name for target.
@@ -1877,7 +1877,7 @@ code/nusmv/core/simulate/preinstall:
 code/nusmv/core/simulate/CMakeFiles/code_nusmv_core_simulate.dir/all:
 	$(MAKE) -f code/nusmv/core/simulate/CMakeFiles/code_nusmv_core_simulate.dir/build.make code/nusmv/core/simulate/CMakeFiles/code_nusmv_core_simulate.dir/depend
 	$(MAKE) -f code/nusmv/core/simulate/CMakeFiles/code_nusmv_core_simulate.dir/build.make code/nusmv/core/simulate/CMakeFiles/code_nusmv_core_simulate.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=75 "Built target code_nusmv_core_simulate"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=75 "Built target code_nusmv_core_simulate"
 .PHONY : code/nusmv/core/simulate/CMakeFiles/code_nusmv_core_simulate.dir/all
 
 # Include target in all.
@@ -1887,9 +1887,9 @@ all: code/nusmv/core/simulate/CMakeFiles/code_nusmv_core_simulate.dir/all
 
 # Build rule for subdir invocation for target.
 code/nusmv/core/simulate/CMakeFiles/code_nusmv_core_simulate.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/simulate/CMakeFiles/code_nusmv_core_simulate.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/core/simulate/CMakeFiles/code_nusmv_core_simulate.dir/rule
 
 # Convenience name for target.
@@ -1932,7 +1932,7 @@ code/nusmv/core/trans/preinstall:
 code/nusmv/core/trans/CMakeFiles/code_nusmv_core_trans.dir/all:
 	$(MAKE) -f code/nusmv/core/trans/CMakeFiles/code_nusmv_core_trans.dir/build.make code/nusmv/core/trans/CMakeFiles/code_nusmv_core_trans.dir/depend
 	$(MAKE) -f code/nusmv/core/trans/CMakeFiles/code_nusmv_core_trans.dir/build.make code/nusmv/core/trans/CMakeFiles/code_nusmv_core_trans.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=82,83 "Built target code_nusmv_core_trans"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=82,83 "Built target code_nusmv_core_trans"
 .PHONY : code/nusmv/core/trans/CMakeFiles/code_nusmv_core_trans.dir/all
 
 # Include target in all.
@@ -1942,9 +1942,9 @@ all: code/nusmv/core/trans/CMakeFiles/code_nusmv_core_trans.dir/all
 
 # Build rule for subdir invocation for target.
 code/nusmv/core/trans/CMakeFiles/code_nusmv_core_trans.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/trans/CMakeFiles/code_nusmv_core_trans.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/core/trans/CMakeFiles/code_nusmv_core_trans.dir/rule
 
 # Convenience name for target.
@@ -1987,7 +1987,7 @@ code/nusmv/core/trace/preinstall:
 code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/all:
 	$(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/depend
 	$(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=76,77,78,79,80,81 "Built target code_nusmv_core_trace"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=76,77,78,79,80,81 "Built target code_nusmv_core_trace"
 .PHONY : code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/all
 
 # Include target in all.
@@ -1997,9 +1997,9 @@ all: code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/all
 
 # Build rule for subdir invocation for target.
 code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/rule
 
 # Convenience name for target.
@@ -2044,7 +2044,7 @@ code/nusmv/core/bmc/preinstall: code/nusmv/core/bmc/sbmc/preinstall
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/all:
 	$(MAKE) -f code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/build.make code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/depend
 	$(MAKE) -f code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/build.make code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=26,27,28,29 "Built target code_nusmv_core_bmc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=26,27,28,29 "Built target code_nusmv_core_bmc"
 .PHONY : code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/all
 
 # Include target in all.
@@ -2054,9 +2054,9 @@ all: code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/all
 
 # Build rule for subdir invocation for target.
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/rule
 
 # Convenience name for target.
@@ -2099,7 +2099,7 @@ code/nusmv/core/bmc/sbmc/preinstall:
 code/nusmv/core/bmc/sbmc/CMakeFiles/code_nusmv_core_bmc_sbmc.dir/all:
 	$(MAKE) -f code/nusmv/core/bmc/sbmc/CMakeFiles/code_nusmv_core_bmc_sbmc.dir/build.make code/nusmv/core/bmc/sbmc/CMakeFiles/code_nusmv_core_bmc_sbmc.dir/depend
 	$(MAKE) -f code/nusmv/core/bmc/sbmc/CMakeFiles/code_nusmv_core_bmc_sbmc.dir/build.make code/nusmv/core/bmc/sbmc/CMakeFiles/code_nusmv_core_bmc_sbmc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=30,31,32 "Built target code_nusmv_core_bmc_sbmc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=30,31,32 "Built target code_nusmv_core_bmc_sbmc"
 .PHONY : code/nusmv/core/bmc/sbmc/CMakeFiles/code_nusmv_core_bmc_sbmc.dir/all
 
 # Include target in all.
@@ -2109,9 +2109,9 @@ all: code/nusmv/core/bmc/sbmc/CMakeFiles/code_nusmv_core_bmc_sbmc.dir/all
 
 # Build rule for subdir invocation for target.
 code/nusmv/core/bmc/sbmc/CMakeFiles/code_nusmv_core_bmc_sbmc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/bmc/sbmc/CMakeFiles/code_nusmv_core_bmc_sbmc.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/core/bmc/sbmc/CMakeFiles/code_nusmv_core_bmc_sbmc.dir/rule
 
 # Convenience name for target.
@@ -2165,7 +2165,7 @@ code/nusmv/core/compile/preinstall: code/nusmv/core/compile/type_checking/preins
 code/nusmv/core/compile/CMakeFiles/code_nusmv_core_compile.dir/all:
 	$(MAKE) -f code/nusmv/core/compile/CMakeFiles/code_nusmv_core_compile.dir/build.make code/nusmv/core/compile/CMakeFiles/code_nusmv_core_compile.dir/depend
 	$(MAKE) -f code/nusmv/core/compile/CMakeFiles/code_nusmv_core_compile.dir/build.make code/nusmv/core/compile/CMakeFiles/code_nusmv_core_compile.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=34,35,36,37 "Built target code_nusmv_core_compile"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=34,35,36,37 "Built target code_nusmv_core_compile"
 .PHONY : code/nusmv/core/compile/CMakeFiles/code_nusmv_core_compile.dir/all
 
 # Include target in all.
@@ -2175,9 +2175,9 @@ all: code/nusmv/core/compile/CMakeFiles/code_nusmv_core_compile.dir/all
 
 # Build rule for subdir invocation for target.
 code/nusmv/core/compile/CMakeFiles/code_nusmv_core_compile.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/compile/CMakeFiles/code_nusmv_core_compile.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/core/compile/CMakeFiles/code_nusmv_core_compile.dir/rule
 
 # Convenience name for target.
@@ -2220,7 +2220,7 @@ code/nusmv/core/compile/dependency/preinstall:
 code/nusmv/core/compile/dependency/CMakeFiles/code_nusmv_core_compile_dependency.dir/all:
 	$(MAKE) -f code/nusmv/core/compile/dependency/CMakeFiles/code_nusmv_core_compile_dependency.dir/build.make code/nusmv/core/compile/dependency/CMakeFiles/code_nusmv_core_compile_dependency.dir/depend
 	$(MAKE) -f code/nusmv/core/compile/dependency/CMakeFiles/code_nusmv_core_compile_dependency.dir/build.make code/nusmv/core/compile/dependency/CMakeFiles/code_nusmv_core_compile_dependency.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=38 "Built target code_nusmv_core_compile_dependency"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=38 "Built target code_nusmv_core_compile_dependency"
 .PHONY : code/nusmv/core/compile/dependency/CMakeFiles/code_nusmv_core_compile_dependency.dir/all
 
 # Include target in all.
@@ -2230,9 +2230,9 @@ all: code/nusmv/core/compile/dependency/CMakeFiles/code_nusmv_core_compile_depen
 
 # Build rule for subdir invocation for target.
 code/nusmv/core/compile/dependency/CMakeFiles/code_nusmv_core_compile_dependency.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/compile/dependency/CMakeFiles/code_nusmv_core_compile_dependency.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/core/compile/dependency/CMakeFiles/code_nusmv_core_compile_dependency.dir/rule
 
 # Convenience name for target.
@@ -2275,7 +2275,7 @@ code/nusmv/core/compile/flattening/preinstall:
 code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/all:
 	$(MAKE) -f code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/build.make code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/depend
 	$(MAKE) -f code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/build.make code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=39 "Built target code_nusmv_core_compile_flattening"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=39 "Built target code_nusmv_core_compile_flattening"
 .PHONY : code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/all
 
 # Include target in all.
@@ -2285,9 +2285,9 @@ all: code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flatt
 
 # Build rule for subdir invocation for target.
 code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/rule
 
 # Convenience name for target.
@@ -2330,7 +2330,7 @@ code/nusmv/core/compile/symb_table/preinstall:
 code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/all:
 	$(MAKE) -f code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/build.make code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/depend
 	$(MAKE) -f code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/build.make code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=40,41 "Built target code_nusmv_core_compile_symb_table"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=40,41 "Built target code_nusmv_core_compile_symb_table"
 .PHONY : code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/all
 
 # Include target in all.
@@ -2340,9 +2340,9 @@ all: code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_
 
 # Build rule for subdir invocation for target.
 code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/rule
 
 # Convenience name for target.
@@ -2385,7 +2385,7 @@ code/nusmv/core/compile/type_checking/preinstall:
 code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/all:
 	$(MAKE) -f code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/build.make code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/depend
 	$(MAKE) -f code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/build.make code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=42 "Built target code_nusmv_core_compile_type_checking"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=42 "Built target code_nusmv_core_compile_type_checking"
 .PHONY : code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/all
 
 # Include target in all.
@@ -2395,9 +2395,9 @@ all: code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_ty
 
 # Build rule for subdir invocation for target.
 code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/rule
 
 # Convenience name for target.
@@ -2440,7 +2440,7 @@ code/nusmv/core/dd/preinstall:
 code/nusmv/core/dd/CMakeFiles/code_nusmv_core_dd.dir/all:
 	$(MAKE) -f code/nusmv/core/dd/CMakeFiles/code_nusmv_core_dd.dir/build.make code/nusmv/core/dd/CMakeFiles/code_nusmv_core_dd.dir/depend
 	$(MAKE) -f code/nusmv/core/dd/CMakeFiles/code_nusmv_core_dd.dir/build.make code/nusmv/core/dd/CMakeFiles/code_nusmv_core_dd.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=44 "Built target code_nusmv_core_dd"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=44 "Built target code_nusmv_core_dd"
 .PHONY : code/nusmv/core/dd/CMakeFiles/code_nusmv_core_dd.dir/all
 
 # Include target in all.
@@ -2450,9 +2450,9 @@ all: code/nusmv/core/dd/CMakeFiles/code_nusmv_core_dd.dir/all
 
 # Build rule for subdir invocation for target.
 code/nusmv/core/dd/CMakeFiles/code_nusmv_core_dd.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/dd/CMakeFiles/code_nusmv_core_dd.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/core/dd/CMakeFiles/code_nusmv_core_dd.dir/rule
 
 # Convenience name for target.
@@ -2495,7 +2495,7 @@ code/nusmv/core/fsm/preinstall:
 code/nusmv/core/fsm/CMakeFiles/code_nusmv_core_fsm.dir/all:
 	$(MAKE) -f code/nusmv/core/fsm/CMakeFiles/code_nusmv_core_fsm.dir/build.make code/nusmv/core/fsm/CMakeFiles/code_nusmv_core_fsm.dir/depend
 	$(MAKE) -f code/nusmv/core/fsm/CMakeFiles/code_nusmv_core_fsm.dir/build.make code/nusmv/core/fsm/CMakeFiles/code_nusmv_core_fsm.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=49,50 "Built target code_nusmv_core_fsm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=49,50 "Built target code_nusmv_core_fsm"
 .PHONY : code/nusmv/core/fsm/CMakeFiles/code_nusmv_core_fsm.dir/all
 
 # Include target in all.
@@ -2505,9 +2505,9 @@ all: code/nusmv/core/fsm/CMakeFiles/code_nusmv_core_fsm.dir/all
 
 # Build rule for subdir invocation for target.
 code/nusmv/core/fsm/CMakeFiles/code_nusmv_core_fsm.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/fsm/CMakeFiles/code_nusmv_core_fsm.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/core/fsm/CMakeFiles/code_nusmv_core_fsm.dir/rule
 
 # Convenience name for target.
@@ -2558,7 +2558,7 @@ code/nusmv/core/node/preinstall: code/nusmv/core/node/anonymizers/preinstall
 code/nusmv/core/node/CMakeFiles/code_nusmv_core_node.dir/all:
 	$(MAKE) -f code/nusmv/core/node/CMakeFiles/code_nusmv_core_node.dir/build.make code/nusmv/core/node/CMakeFiles/code_nusmv_core_node.dir/depend
 	$(MAKE) -f code/nusmv/core/node/CMakeFiles/code_nusmv_core_node.dir/build.make code/nusmv/core/node/CMakeFiles/code_nusmv_core_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=57 "Built target code_nusmv_core_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=57 "Built target code_nusmv_core_node"
 .PHONY : code/nusmv/core/node/CMakeFiles/code_nusmv_core_node.dir/all
 
 # Include target in all.
@@ -2568,9 +2568,9 @@ all: code/nusmv/core/node/CMakeFiles/code_nusmv_core_node.dir/all
 
 # Build rule for subdir invocation for target.
 code/nusmv/core/node/CMakeFiles/code_nusmv_core_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/node/CMakeFiles/code_nusmv_core_node.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/core/node/CMakeFiles/code_nusmv_core_node.dir/rule
 
 # Convenience name for target.
@@ -2613,7 +2613,7 @@ code/nusmv/core/node/normalizers/preinstall:
 code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/all:
 	$(MAKE) -f code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/build.make code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/depend
 	$(MAKE) -f code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/build.make code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=60 "Built target code_nusmv_core_node_normalizers"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=60 "Built target code_nusmv_core_node_normalizers"
 .PHONY : code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/all
 
 # Include target in all.
@@ -2623,9 +2623,9 @@ all: code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizer
 
 # Build rule for subdir invocation for target.
 code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/rule
 
 # Convenience name for target.
@@ -2668,7 +2668,7 @@ code/nusmv/core/node/printers/preinstall:
 code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/all:
 	$(MAKE) -f code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/build.make code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/depend
 	$(MAKE) -f code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/build.make code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=61 "Built target code_nusmv_core_node_printers"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=61 "Built target code_nusmv_core_node_printers"
 .PHONY : code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/all
 
 # Include target in all.
@@ -2678,9 +2678,9 @@ all: code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/
 
 # Build rule for subdir invocation for target.
 code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/rule
 
 # Convenience name for target.
@@ -2723,7 +2723,7 @@ code/nusmv/core/node/anonymizers/preinstall:
 code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/all:
 	$(MAKE) -f code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/build.make code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/depend
 	$(MAKE) -f code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/build.make code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=58,59 "Built target code_nusmv_core_node_anonymizers"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=58,59 "Built target code_nusmv_core_node_anonymizers"
 .PHONY : code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/all
 
 # Include target in all.
@@ -2733,9 +2733,9 @@ all: code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizer
 
 # Build rule for subdir invocation for target.
 code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/rule
 
 # Convenience name for target.
@@ -2778,7 +2778,7 @@ code/nusmv/core/rbc/preinstall:
 code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/all:
 	$(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/depend
 	$(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=70,71,72 "Built target code_nusmv_core_rbc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=70,71,72 "Built target code_nusmv_core_rbc"
 .PHONY : code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/all
 
 # Include target in all.
@@ -2788,9 +2788,9 @@ all: code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/all
 
 # Build rule for subdir invocation for target.
 code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rule
 
 # Convenience name for target.
@@ -2833,7 +2833,7 @@ code/nusmv/core/cinit/preinstall:
 code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/all:
 	$(MAKE) -f code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/build.make code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/depend
 	$(MAKE) -f code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/build.make code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=33 "Built target code_nusmv_core_cinit"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=33 "Built target code_nusmv_core_cinit"
 .PHONY : code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/all
 
 # Include target in all.
@@ -2843,9 +2843,9 @@ all: code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/all
 
 # Build rule for subdir invocation for target.
 code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/rule
 
 # Convenience name for target.
@@ -2888,7 +2888,7 @@ code/nusmv/core/utils/preinstall:
 code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/all:
 	$(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/depend
 	$(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=84,85,86,87,88,89,90,91,92 "Built target code_nusmv_core_utils"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=84,85,86,87,88,89,90,91,92 "Built target code_nusmv_core_utils"
 .PHONY : code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/all
 
 # Include target in all.
@@ -2898,9 +2898,9 @@ all: code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/all
 
 # Build rule for subdir invocation for target.
 code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/rule
 
 # Convenience name for target.
@@ -2943,7 +2943,7 @@ code/nusmv/core/sexp/preinstall:
 code/nusmv/core/sexp/CMakeFiles/code_nusmv_core_sexp.dir/all:
 	$(MAKE) -f code/nusmv/core/sexp/CMakeFiles/code_nusmv_core_sexp.dir/build.make code/nusmv/core/sexp/CMakeFiles/code_nusmv_core_sexp.dir/depend
 	$(MAKE) -f code/nusmv/core/sexp/CMakeFiles/code_nusmv_core_sexp.dir/build.make code/nusmv/core/sexp/CMakeFiles/code_nusmv_core_sexp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target code_nusmv_core_sexp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target code_nusmv_core_sexp"
 .PHONY : code/nusmv/core/sexp/CMakeFiles/code_nusmv_core_sexp.dir/all
 
 # Include target in all.
@@ -2953,9 +2953,9 @@ all: code/nusmv/core/sexp/CMakeFiles/code_nusmv_core_sexp.dir/all
 
 # Build rule for subdir invocation for target.
 code/nusmv/core/sexp/CMakeFiles/code_nusmv_core_sexp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/sexp/CMakeFiles/code_nusmv_core_sexp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/core/sexp/CMakeFiles/code_nusmv_core_sexp.dir/rule
 
 # Convenience name for target.
@@ -3000,7 +3000,7 @@ code/nusmv/core/hrc/preinstall: code/nusmv/core/hrc/dumpers/preinstall
 code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/all:
 	$(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/depend
 	$(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=51,52 "Built target code_nusmv_core_hrc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=51,52 "Built target code_nusmv_core_hrc"
 .PHONY : code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/all
 
 # Include target in all.
@@ -3010,9 +3010,9 @@ all: code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/all
 
 # Build rule for subdir invocation for target.
 code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/rule
 
 # Convenience name for target.
@@ -3055,7 +3055,7 @@ code/nusmv/core/hrc/dumpers/preinstall:
 code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/all:
 	$(MAKE) -f code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/build.make code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/depend
 	$(MAKE) -f code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/build.make code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=53 "Built target code_nusmv_core_hrc_dumpers"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=53 "Built target code_nusmv_core_hrc_dumpers"
 .PHONY : code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/all
 
 # Include target in all.
@@ -3065,9 +3065,9 @@ all: code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/all
 
 # Build rule for subdir invocation for target.
 code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/rule
 
 # Convenience name for target.
@@ -3115,7 +3115,7 @@ code/nusmv/core/wff/preinstall: code/nusmv/core/wff/lr/preinstall
 code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/all:
 	$(MAKE) -f code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/build.make code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/depend
 	$(MAKE) -f code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/build.make code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target code_nusmv_core_wff"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target code_nusmv_core_wff"
 .PHONY : code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/all
 
 # Include target in all.
@@ -3125,9 +3125,9 @@ all: code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/all
 
 # Build rule for subdir invocation for target.
 code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/rule
 
 # Convenience name for target.
@@ -3170,7 +3170,7 @@ code/nusmv/core/wff/w2w/preinstall:
 code/nusmv/core/wff/w2w/CMakeFiles/code_nusmv_core_wff_w2w.dir/all:
 	$(MAKE) -f code/nusmv/core/wff/w2w/CMakeFiles/code_nusmv_core_wff_w2w.dir/build.make code/nusmv/core/wff/w2w/CMakeFiles/code_nusmv_core_wff_w2w.dir/depend
 	$(MAKE) -f code/nusmv/core/wff/w2w/CMakeFiles/code_nusmv_core_wff_w2w.dir/build.make code/nusmv/core/wff/w2w/CMakeFiles/code_nusmv_core_wff_w2w.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target code_nusmv_core_wff_w2w"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target code_nusmv_core_wff_w2w"
 .PHONY : code/nusmv/core/wff/w2w/CMakeFiles/code_nusmv_core_wff_w2w.dir/all
 
 # Include target in all.
@@ -3180,9 +3180,9 @@ all: code/nusmv/core/wff/w2w/CMakeFiles/code_nusmv_core_wff_w2w.dir/all
 
 # Build rule for subdir invocation for target.
 code/nusmv/core/wff/w2w/CMakeFiles/code_nusmv_core_wff_w2w.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/wff/w2w/CMakeFiles/code_nusmv_core_wff_w2w.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/core/wff/w2w/CMakeFiles/code_nusmv_core_wff_w2w.dir/rule
 
 # Convenience name for target.
@@ -3225,7 +3225,7 @@ code/nusmv/core/wff/lr/preinstall:
 code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/all:
 	$(MAKE) -f code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/build.make code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/depend
 	$(MAKE) -f code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/build.make code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=93 "Built target code_nusmv_core_wff_lr"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=93 "Built target code_nusmv_core_wff_lr"
 .PHONY : code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/all
 
 # Include target in all.
@@ -3235,9 +3235,9 @@ all: code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/all
 
 # Build rule for subdir invocation for target.
 code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/rule
 
 # Convenience name for target.
@@ -3282,7 +3282,7 @@ code/nusmv/addons_core/preinstall: code/nusmv/addons_core/compass/preinstall
 code/nusmv/addons_core/CMakeFiles/code_nusmv_addons_core.dir/all:
 	$(MAKE) -f code/nusmv/addons_core/CMakeFiles/code_nusmv_addons_core.dir/build.make code/nusmv/addons_core/CMakeFiles/code_nusmv_addons_core.dir/depend
 	$(MAKE) -f code/nusmv/addons_core/CMakeFiles/code_nusmv_addons_core.dir/build.make code/nusmv/addons_core/CMakeFiles/code_nusmv_addons_core.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target code_nusmv_addons_core"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target code_nusmv_addons_core"
 .PHONY : code/nusmv/addons_core/CMakeFiles/code_nusmv_addons_core.dir/all
 
 # Include target in all.
@@ -3292,9 +3292,9 @@ all: code/nusmv/addons_core/CMakeFiles/code_nusmv_addons_core.dir/all
 
 # Build rule for subdir invocation for target.
 code/nusmv/addons_core/CMakeFiles/code_nusmv_addons_core.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/addons_core/CMakeFiles/code_nusmv_addons_core.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/addons_core/CMakeFiles/code_nusmv_addons_core.dir/rule
 
 # Convenience name for target.
@@ -3339,7 +3339,7 @@ code/nusmv/addons_core/compass/preinstall: code/nusmv/addons_core/compass/parser
 code/nusmv/addons_core/compass/CMakeFiles/code_nusmv_addons_core_compass.dir/all:
 	$(MAKE) -f code/nusmv/addons_core/compass/CMakeFiles/code_nusmv_addons_core_compass.dir/build.make code/nusmv/addons_core/compass/CMakeFiles/code_nusmv_addons_core_compass.dir/depend
 	$(MAKE) -f code/nusmv/addons_core/compass/CMakeFiles/code_nusmv_addons_core_compass.dir/build.make code/nusmv/addons_core/compass/CMakeFiles/code_nusmv_addons_core_compass.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=21,22 "Built target code_nusmv_addons_core_compass"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=21,22 "Built target code_nusmv_addons_core_compass"
 .PHONY : code/nusmv/addons_core/compass/CMakeFiles/code_nusmv_addons_core_compass.dir/all
 
 # Include target in all.
@@ -3349,9 +3349,9 @@ all: code/nusmv/addons_core/compass/CMakeFiles/code_nusmv_addons_core_compass.di
 
 # Build rule for subdir invocation for target.
 code/nusmv/addons_core/compass/CMakeFiles/code_nusmv_addons_core_compass.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/addons_core/compass/CMakeFiles/code_nusmv_addons_core_compass.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/addons_core/compass/CMakeFiles/code_nusmv_addons_core_compass.dir/rule
 
 # Convenience name for target.
@@ -3415,7 +3415,7 @@ code/nusmv/addons_core/compass/parser/prob/preinstall:
 code/nusmv/addons_core/compass/parser/prob/CMakeFiles/code_nusmv_addons_core_compass_parser_prob.dir/all:
 	$(MAKE) -f code/nusmv/addons_core/compass/parser/prob/CMakeFiles/code_nusmv_addons_core_compass_parser_prob.dir/build.make code/nusmv/addons_core/compass/parser/prob/CMakeFiles/code_nusmv_addons_core_compass_parser_prob.dir/depend
 	$(MAKE) -f code/nusmv/addons_core/compass/parser/prob/CMakeFiles/code_nusmv_addons_core_compass_parser_prob.dir/build.make code/nusmv/addons_core/compass/parser/prob/CMakeFiles/code_nusmv_addons_core_compass_parser_prob.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=24 "Built target code_nusmv_addons_core_compass_parser_prob"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=24 "Built target code_nusmv_addons_core_compass_parser_prob"
 .PHONY : code/nusmv/addons_core/compass/parser/prob/CMakeFiles/code_nusmv_addons_core_compass_parser_prob.dir/all
 
 # Include target in all.
@@ -3425,9 +3425,9 @@ all: code/nusmv/addons_core/compass/parser/prob/CMakeFiles/code_nusmv_addons_cor
 
 # Build rule for subdir invocation for target.
 code/nusmv/addons_core/compass/parser/prob/CMakeFiles/code_nusmv_addons_core_compass_parser_prob.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/addons_core/compass/parser/prob/CMakeFiles/code_nusmv_addons_core_compass_parser_prob.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/addons_core/compass/parser/prob/CMakeFiles/code_nusmv_addons_core_compass_parser_prob.dir/rule
 
 # Convenience name for target.
@@ -3470,7 +3470,7 @@ code/nusmv/addons_core/compass/parser/ap/preinstall:
 code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/all:
 	$(MAKE) -f code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/build.make code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/depend
 	$(MAKE) -f code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/build.make code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=23 "Built target code_nusmv_addons_core_compass_parser_ap"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=23 "Built target code_nusmv_addons_core_compass_parser_ap"
 .PHONY : code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/all
 
 # Include target in all.
@@ -3480,9 +3480,9 @@ all: code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_
 
 # Build rule for subdir invocation for target.
 code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/rule
 
 # Convenience name for target.
@@ -3588,7 +3588,7 @@ code/nusmv/shell/parser/preinstall:
 code/nusmv/shell/parser/CMakeFiles/code_nusmv_shell_parser.dir/all:
 	$(MAKE) -f code/nusmv/shell/parser/CMakeFiles/code_nusmv_shell_parser.dir/build.make code/nusmv/shell/parser/CMakeFiles/code_nusmv_shell_parser.dir/depend
 	$(MAKE) -f code/nusmv/shell/parser/CMakeFiles/code_nusmv_shell_parser.dir/build.make code/nusmv/shell/parser/CMakeFiles/code_nusmv_shell_parser.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target code_nusmv_shell_parser"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target code_nusmv_shell_parser"
 .PHONY : code/nusmv/shell/parser/CMakeFiles/code_nusmv_shell_parser.dir/all
 
 # Include target in all.
@@ -3598,9 +3598,9 @@ all: code/nusmv/shell/parser/CMakeFiles/code_nusmv_shell_parser.dir/all
 
 # Build rule for subdir invocation for target.
 code/nusmv/shell/parser/CMakeFiles/code_nusmv_shell_parser.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/shell/parser/CMakeFiles/code_nusmv_shell_parser.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/shell/parser/CMakeFiles/code_nusmv_shell_parser.dir/rule
 
 # Convenience name for target.
@@ -3643,7 +3643,7 @@ code/nusmv/shell/enc/preinstall:
 code/nusmv/shell/enc/CMakeFiles/code_nusmv_shell_enc.dir/all:
 	$(MAKE) -f code/nusmv/shell/enc/CMakeFiles/code_nusmv_shell_enc.dir/build.make code/nusmv/shell/enc/CMakeFiles/code_nusmv_shell_enc.dir/depend
 	$(MAKE) -f code/nusmv/shell/enc/CMakeFiles/code_nusmv_shell_enc.dir/build.make code/nusmv/shell/enc/CMakeFiles/code_nusmv_shell_enc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target code_nusmv_shell_enc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target code_nusmv_shell_enc"
 .PHONY : code/nusmv/shell/enc/CMakeFiles/code_nusmv_shell_enc.dir/all
 
 # Include target in all.
@@ -3653,9 +3653,9 @@ all: code/nusmv/shell/enc/CMakeFiles/code_nusmv_shell_enc.dir/all
 
 # Build rule for subdir invocation for target.
 code/nusmv/shell/enc/CMakeFiles/code_nusmv_shell_enc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/shell/enc/CMakeFiles/code_nusmv_shell_enc.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/shell/enc/CMakeFiles/code_nusmv_shell_enc.dir/rule
 
 # Convenience name for target.
@@ -3698,7 +3698,7 @@ code/nusmv/shell/ltl/preinstall:
 code/nusmv/shell/ltl/CMakeFiles/code_nusmv_shell_ltl.dir/all:
 	$(MAKE) -f code/nusmv/shell/ltl/CMakeFiles/code_nusmv_shell_ltl.dir/build.make code/nusmv/shell/ltl/CMakeFiles/code_nusmv_shell_ltl.dir/depend
 	$(MAKE) -f code/nusmv/shell/ltl/CMakeFiles/code_nusmv_shell_ltl.dir/build.make code/nusmv/shell/ltl/CMakeFiles/code_nusmv_shell_ltl.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target code_nusmv_shell_ltl"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target code_nusmv_shell_ltl"
 .PHONY : code/nusmv/shell/ltl/CMakeFiles/code_nusmv_shell_ltl.dir/all
 
 # Include target in all.
@@ -3708,9 +3708,9 @@ all: code/nusmv/shell/ltl/CMakeFiles/code_nusmv_shell_ltl.dir/all
 
 # Build rule for subdir invocation for target.
 code/nusmv/shell/ltl/CMakeFiles/code_nusmv_shell_ltl.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/shell/ltl/CMakeFiles/code_nusmv_shell_ltl.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/shell/ltl/CMakeFiles/code_nusmv_shell_ltl.dir/rule
 
 # Convenience name for target.
@@ -3753,7 +3753,7 @@ code/nusmv/shell/mc/preinstall:
 code/nusmv/shell/mc/CMakeFiles/code_nusmv_shell_mc.dir/all:
 	$(MAKE) -f code/nusmv/shell/mc/CMakeFiles/code_nusmv_shell_mc.dir/build.make code/nusmv/shell/mc/CMakeFiles/code_nusmv_shell_mc.dir/depend
 	$(MAKE) -f code/nusmv/shell/mc/CMakeFiles/code_nusmv_shell_mc.dir/build.make code/nusmv/shell/mc/CMakeFiles/code_nusmv_shell_mc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target code_nusmv_shell_mc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target code_nusmv_shell_mc"
 .PHONY : code/nusmv/shell/mc/CMakeFiles/code_nusmv_shell_mc.dir/all
 
 # Include target in all.
@@ -3763,9 +3763,9 @@ all: code/nusmv/shell/mc/CMakeFiles/code_nusmv_shell_mc.dir/all
 
 # Build rule for subdir invocation for target.
 code/nusmv/shell/mc/CMakeFiles/code_nusmv_shell_mc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/shell/mc/CMakeFiles/code_nusmv_shell_mc.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/shell/mc/CMakeFiles/code_nusmv_shell_mc.dir/rule
 
 # Convenience name for target.
@@ -3808,7 +3808,7 @@ code/nusmv/shell/opt/preinstall:
 code/nusmv/shell/opt/CMakeFiles/code_nusmv_shell_opt.dir/all:
 	$(MAKE) -f code/nusmv/shell/opt/CMakeFiles/code_nusmv_shell_opt.dir/build.make code/nusmv/shell/opt/CMakeFiles/code_nusmv_shell_opt.dir/depend
 	$(MAKE) -f code/nusmv/shell/opt/CMakeFiles/code_nusmv_shell_opt.dir/build.make code/nusmv/shell/opt/CMakeFiles/code_nusmv_shell_opt.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=98 "Built target code_nusmv_shell_opt"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=98 "Built target code_nusmv_shell_opt"
 .PHONY : code/nusmv/shell/opt/CMakeFiles/code_nusmv_shell_opt.dir/all
 
 # Include target in all.
@@ -3818,9 +3818,9 @@ all: code/nusmv/shell/opt/CMakeFiles/code_nusmv_shell_opt.dir/all
 
 # Build rule for subdir invocation for target.
 code/nusmv/shell/opt/CMakeFiles/code_nusmv_shell_opt.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/shell/opt/CMakeFiles/code_nusmv_shell_opt.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/shell/opt/CMakeFiles/code_nusmv_shell_opt.dir/rule
 
 # Convenience name for target.
@@ -3863,7 +3863,7 @@ code/nusmv/shell/prop/preinstall:
 code/nusmv/shell/prop/CMakeFiles/code_nusmv_shell_prop.dir/all:
 	$(MAKE) -f code/nusmv/shell/prop/CMakeFiles/code_nusmv_shell_prop.dir/build.make code/nusmv/shell/prop/CMakeFiles/code_nusmv_shell_prop.dir/depend
 	$(MAKE) -f code/nusmv/shell/prop/CMakeFiles/code_nusmv_shell_prop.dir/build.make code/nusmv/shell/prop/CMakeFiles/code_nusmv_shell_prop.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target code_nusmv_shell_prop"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target code_nusmv_shell_prop"
 .PHONY : code/nusmv/shell/prop/CMakeFiles/code_nusmv_shell_prop.dir/all
 
 # Include target in all.
@@ -3873,9 +3873,9 @@ all: code/nusmv/shell/prop/CMakeFiles/code_nusmv_shell_prop.dir/all
 
 # Build rule for subdir invocation for target.
 code/nusmv/shell/prop/CMakeFiles/code_nusmv_shell_prop.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/shell/prop/CMakeFiles/code_nusmv_shell_prop.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/shell/prop/CMakeFiles/code_nusmv_shell_prop.dir/rule
 
 # Convenience name for target.
@@ -3918,7 +3918,7 @@ code/nusmv/shell/simulate/preinstall:
 code/nusmv/shell/simulate/CMakeFiles/code_nusmv_shell_simulate.dir/all:
 	$(MAKE) -f code/nusmv/shell/simulate/CMakeFiles/code_nusmv_shell_simulate.dir/build.make code/nusmv/shell/simulate/CMakeFiles/code_nusmv_shell_simulate.dir/depend
 	$(MAKE) -f code/nusmv/shell/simulate/CMakeFiles/code_nusmv_shell_simulate.dir/build.make code/nusmv/shell/simulate/CMakeFiles/code_nusmv_shell_simulate.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target code_nusmv_shell_simulate"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target code_nusmv_shell_simulate"
 .PHONY : code/nusmv/shell/simulate/CMakeFiles/code_nusmv_shell_simulate.dir/all
 
 # Include target in all.
@@ -3928,9 +3928,9 @@ all: code/nusmv/shell/simulate/CMakeFiles/code_nusmv_shell_simulate.dir/all
 
 # Build rule for subdir invocation for target.
 code/nusmv/shell/simulate/CMakeFiles/code_nusmv_shell_simulate.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/shell/simulate/CMakeFiles/code_nusmv_shell_simulate.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/shell/simulate/CMakeFiles/code_nusmv_shell_simulate.dir/rule
 
 # Convenience name for target.
@@ -3973,7 +3973,7 @@ code/nusmv/shell/trace/preinstall:
 code/nusmv/shell/trace/CMakeFiles/code_nusmv_shell_trace.dir/all:
 	$(MAKE) -f code/nusmv/shell/trace/CMakeFiles/code_nusmv_shell_trace.dir/build.make code/nusmv/shell/trace/CMakeFiles/code_nusmv_shell_trace.dir/depend
 	$(MAKE) -f code/nusmv/shell/trace/CMakeFiles/code_nusmv_shell_trace.dir/build.make code/nusmv/shell/trace/CMakeFiles/code_nusmv_shell_trace.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=99 "Built target code_nusmv_shell_trace"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=99 "Built target code_nusmv_shell_trace"
 .PHONY : code/nusmv/shell/trace/CMakeFiles/code_nusmv_shell_trace.dir/all
 
 # Include target in all.
@@ -3983,9 +3983,9 @@ all: code/nusmv/shell/trace/CMakeFiles/code_nusmv_shell_trace.dir/all
 
 # Build rule for subdir invocation for target.
 code/nusmv/shell/trace/CMakeFiles/code_nusmv_shell_trace.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/shell/trace/CMakeFiles/code_nusmv_shell_trace.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/shell/trace/CMakeFiles/code_nusmv_shell_trace.dir/rule
 
 # Convenience name for target.
@@ -4028,7 +4028,7 @@ code/nusmv/shell/bmc/preinstall:
 code/nusmv/shell/bmc/CMakeFiles/code_nusmv_shell_bmc.dir/all:
 	$(MAKE) -f code/nusmv/shell/bmc/CMakeFiles/code_nusmv_shell_bmc.dir/build.make code/nusmv/shell/bmc/CMakeFiles/code_nusmv_shell_bmc.dir/depend
 	$(MAKE) -f code/nusmv/shell/bmc/CMakeFiles/code_nusmv_shell_bmc.dir/build.make code/nusmv/shell/bmc/CMakeFiles/code_nusmv_shell_bmc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=94 "Built target code_nusmv_shell_bmc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=94 "Built target code_nusmv_shell_bmc"
 .PHONY : code/nusmv/shell/bmc/CMakeFiles/code_nusmv_shell_bmc.dir/all
 
 # Include target in all.
@@ -4038,9 +4038,9 @@ all: code/nusmv/shell/bmc/CMakeFiles/code_nusmv_shell_bmc.dir/all
 
 # Build rule for subdir invocation for target.
 code/nusmv/shell/bmc/CMakeFiles/code_nusmv_shell_bmc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/shell/bmc/CMakeFiles/code_nusmv_shell_bmc.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/shell/bmc/CMakeFiles/code_nusmv_shell_bmc.dir/rule
 
 # Convenience name for target.
@@ -4083,7 +4083,7 @@ code/nusmv/shell/compile/preinstall:
 code/nusmv/shell/compile/CMakeFiles/code_nusmv_shell_compile.dir/all:
 	$(MAKE) -f code/nusmv/shell/compile/CMakeFiles/code_nusmv_shell_compile.dir/build.make code/nusmv/shell/compile/CMakeFiles/code_nusmv_shell_compile.dir/depend
 	$(MAKE) -f code/nusmv/shell/compile/CMakeFiles/code_nusmv_shell_compile.dir/build.make code/nusmv/shell/compile/CMakeFiles/code_nusmv_shell_compile.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target code_nusmv_shell_compile"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target code_nusmv_shell_compile"
 .PHONY : code/nusmv/shell/compile/CMakeFiles/code_nusmv_shell_compile.dir/all
 
 # Include target in all.
@@ -4093,9 +4093,9 @@ all: code/nusmv/shell/compile/CMakeFiles/code_nusmv_shell_compile.dir/all
 
 # Build rule for subdir invocation for target.
 code/nusmv/shell/compile/CMakeFiles/code_nusmv_shell_compile.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/shell/compile/CMakeFiles/code_nusmv_shell_compile.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/shell/compile/CMakeFiles/code_nusmv_shell_compile.dir/rule
 
 # Convenience name for target.
@@ -4138,7 +4138,7 @@ code/nusmv/shell/dd/preinstall:
 code/nusmv/shell/dd/CMakeFiles/code_nusmv_shell_dd.dir/all:
 	$(MAKE) -f code/nusmv/shell/dd/CMakeFiles/code_nusmv_shell_dd.dir/build.make code/nusmv/shell/dd/CMakeFiles/code_nusmv_shell_dd.dir/depend
 	$(MAKE) -f code/nusmv/shell/dd/CMakeFiles/code_nusmv_shell_dd.dir/build.make code/nusmv/shell/dd/CMakeFiles/code_nusmv_shell_dd.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target code_nusmv_shell_dd"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target code_nusmv_shell_dd"
 .PHONY : code/nusmv/shell/dd/CMakeFiles/code_nusmv_shell_dd.dir/all
 
 # Include target in all.
@@ -4148,9 +4148,9 @@ all: code/nusmv/shell/dd/CMakeFiles/code_nusmv_shell_dd.dir/all
 
 # Build rule for subdir invocation for target.
 code/nusmv/shell/dd/CMakeFiles/code_nusmv_shell_dd.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/shell/dd/CMakeFiles/code_nusmv_shell_dd.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/shell/dd/CMakeFiles/code_nusmv_shell_dd.dir/rule
 
 # Convenience name for target.
@@ -4193,7 +4193,7 @@ code/nusmv/shell/fsm/preinstall:
 code/nusmv/shell/fsm/CMakeFiles/code_nusmv_shell_fsm.dir/all:
 	$(MAKE) -f code/nusmv/shell/fsm/CMakeFiles/code_nusmv_shell_fsm.dir/build.make code/nusmv/shell/fsm/CMakeFiles/code_nusmv_shell_fsm.dir/depend
 	$(MAKE) -f code/nusmv/shell/fsm/CMakeFiles/code_nusmv_shell_fsm.dir/build.make code/nusmv/shell/fsm/CMakeFiles/code_nusmv_shell_fsm.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=97 "Built target code_nusmv_shell_fsm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=97 "Built target code_nusmv_shell_fsm"
 .PHONY : code/nusmv/shell/fsm/CMakeFiles/code_nusmv_shell_fsm.dir/all
 
 # Include target in all.
@@ -4203,9 +4203,9 @@ all: code/nusmv/shell/fsm/CMakeFiles/code_nusmv_shell_fsm.dir/all
 
 # Build rule for subdir invocation for target.
 code/nusmv/shell/fsm/CMakeFiles/code_nusmv_shell_fsm.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/shell/fsm/CMakeFiles/code_nusmv_shell_fsm.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/shell/fsm/CMakeFiles/code_nusmv_shell_fsm.dir/rule
 
 # Convenience name for target.
@@ -4248,7 +4248,7 @@ code/nusmv/shell/cinit/preinstall:
 code/nusmv/shell/cinit/CMakeFiles/code_nusmv_shell_cinit.dir/all:
 	$(MAKE) -f code/nusmv/shell/cinit/CMakeFiles/code_nusmv_shell_cinit.dir/build.make code/nusmv/shell/cinit/CMakeFiles/code_nusmv_shell_cinit.dir/depend
 	$(MAKE) -f code/nusmv/shell/cinit/CMakeFiles/code_nusmv_shell_cinit.dir/build.make code/nusmv/shell/cinit/CMakeFiles/code_nusmv_shell_cinit.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target code_nusmv_shell_cinit"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target code_nusmv_shell_cinit"
 .PHONY : code/nusmv/shell/cinit/CMakeFiles/code_nusmv_shell_cinit.dir/all
 
 # Include target in all.
@@ -4258,9 +4258,9 @@ all: code/nusmv/shell/cinit/CMakeFiles/code_nusmv_shell_cinit.dir/all
 
 # Build rule for subdir invocation for target.
 code/nusmv/shell/cinit/CMakeFiles/code_nusmv_shell_cinit.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/shell/cinit/CMakeFiles/code_nusmv_shell_cinit.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/shell/cinit/CMakeFiles/code_nusmv_shell_cinit.dir/rule
 
 # Convenience name for target.
@@ -4303,7 +4303,7 @@ code/nusmv/shell/utils/preinstall:
 code/nusmv/shell/utils/CMakeFiles/code_nusmv_shell_utils.dir/all:
 	$(MAKE) -f code/nusmv/shell/utils/CMakeFiles/code_nusmv_shell_utils.dir/build.make code/nusmv/shell/utils/CMakeFiles/code_nusmv_shell_utils.dir/depend
 	$(MAKE) -f code/nusmv/shell/utils/CMakeFiles/code_nusmv_shell_utils.dir/build.make code/nusmv/shell/utils/CMakeFiles/code_nusmv_shell_utils.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target code_nusmv_shell_utils"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target code_nusmv_shell_utils"
 .PHONY : code/nusmv/shell/utils/CMakeFiles/code_nusmv_shell_utils.dir/all
 
 # Include target in all.
@@ -4313,9 +4313,9 @@ all: code/nusmv/shell/utils/CMakeFiles/code_nusmv_shell_utils.dir/all
 
 # Build rule for subdir invocation for target.
 code/nusmv/shell/utils/CMakeFiles/code_nusmv_shell_utils.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/shell/utils/CMakeFiles/code_nusmv_shell_utils.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/shell/utils/CMakeFiles/code_nusmv_shell_utils.dir/rule
 
 # Convenience name for target.
@@ -4358,7 +4358,7 @@ code/nusmv/shell/hrc/preinstall:
 code/nusmv/shell/hrc/CMakeFiles/code_nusmv_shell_hrc.dir/all:
 	$(MAKE) -f code/nusmv/shell/hrc/CMakeFiles/code_nusmv_shell_hrc.dir/build.make code/nusmv/shell/hrc/CMakeFiles/code_nusmv_shell_hrc.dir/depend
 	$(MAKE) -f code/nusmv/shell/hrc/CMakeFiles/code_nusmv_shell_hrc.dir/build.make code/nusmv/shell/hrc/CMakeFiles/code_nusmv_shell_hrc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target code_nusmv_shell_hrc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target code_nusmv_shell_hrc"
 .PHONY : code/nusmv/shell/hrc/CMakeFiles/code_nusmv_shell_hrc.dir/all
 
 # Include target in all.
@@ -4368,9 +4368,9 @@ all: code/nusmv/shell/hrc/CMakeFiles/code_nusmv_shell_hrc.dir/all
 
 # Build rule for subdir invocation for target.
 code/nusmv/shell/hrc/CMakeFiles/code_nusmv_shell_hrc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/shell/hrc/CMakeFiles/code_nusmv_shell_hrc.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/shell/hrc/CMakeFiles/code_nusmv_shell_hrc.dir/rule
 
 # Convenience name for target.
@@ -4413,7 +4413,7 @@ code/nusmv/shell/cmd/preinstall:
 code/nusmv/shell/cmd/CMakeFiles/code_nusmv_shell_cmd.dir/all:
 	$(MAKE) -f code/nusmv/shell/cmd/CMakeFiles/code_nusmv_shell_cmd.dir/build.make code/nusmv/shell/cmd/CMakeFiles/code_nusmv_shell_cmd.dir/depend
 	$(MAKE) -f code/nusmv/shell/cmd/CMakeFiles/code_nusmv_shell_cmd.dir/build.make code/nusmv/shell/cmd/CMakeFiles/code_nusmv_shell_cmd.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=95,96 "Built target code_nusmv_shell_cmd"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=95,96 "Built target code_nusmv_shell_cmd"
 .PHONY : code/nusmv/shell/cmd/CMakeFiles/code_nusmv_shell_cmd.dir/all
 
 # Include target in all.
@@ -4423,9 +4423,9 @@ all: code/nusmv/shell/cmd/CMakeFiles/code_nusmv_shell_cmd.dir/all
 
 # Build rule for subdir invocation for target.
 code/nusmv/shell/cmd/CMakeFiles/code_nusmv_shell_cmd.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 code/nusmv/shell/cmd/CMakeFiles/code_nusmv_shell_cmd.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : code/nusmv/shell/cmd/CMakeFiles/code_nusmv_shell_cmd.dir/rule
 
 # Convenience name for target.
@@ -4480,14 +4480,14 @@ doc/CMakeFiles/docs.dir/all: doc/tutorial/CMakeFiles/tutorial.dir/all
 doc/CMakeFiles/docs.dir/all: doc/html/CMakeFiles/html.dir/all
 	$(MAKE) -f doc/CMakeFiles/docs.dir/build.make doc/CMakeFiles/docs.dir/depend
 	$(MAKE) -f doc/CMakeFiles/docs.dir/build.make doc/CMakeFiles/docs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target docs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target docs"
 .PHONY : doc/CMakeFiles/docs.dir/all
 
 # Build rule for subdir invocation for target.
 doc/CMakeFiles/docs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 doc/CMakeFiles/docs.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : doc/CMakeFiles/docs.dir/rule
 
 # Convenience name for target.
@@ -4530,14 +4530,14 @@ doc/user-man/preinstall:
 doc/user-man/CMakeFiles/user-man.dir/all:
 	$(MAKE) -f doc/user-man/CMakeFiles/user-man.dir/build.make doc/user-man/CMakeFiles/user-man.dir/depend
 	$(MAKE) -f doc/user-man/CMakeFiles/user-man.dir/build.make doc/user-man/CMakeFiles/user-man.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target user-man"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target user-man"
 .PHONY : doc/user-man/CMakeFiles/user-man.dir/all
 
 # Build rule for subdir invocation for target.
 doc/user-man/CMakeFiles/user-man.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 doc/user-man/CMakeFiles/user-man.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : doc/user-man/CMakeFiles/user-man.dir/rule
 
 # Convenience name for target.
@@ -4580,14 +4580,14 @@ doc/tutorial/preinstall:
 doc/tutorial/CMakeFiles/tutorial.dir/all:
 	$(MAKE) -f doc/tutorial/CMakeFiles/tutorial.dir/build.make doc/tutorial/CMakeFiles/tutorial.dir/depend
 	$(MAKE) -f doc/tutorial/CMakeFiles/tutorial.dir/build.make doc/tutorial/CMakeFiles/tutorial.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target tutorial"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target tutorial"
 .PHONY : doc/tutorial/CMakeFiles/tutorial.dir/all
 
 # Build rule for subdir invocation for target.
 doc/tutorial/CMakeFiles/tutorial.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 doc/tutorial/CMakeFiles/tutorial.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : doc/tutorial/CMakeFiles/tutorial.dir/rule
 
 # Convenience name for target.
@@ -4630,14 +4630,14 @@ doc/html/preinstall:
 doc/html/CMakeFiles/html.dir/all:
 	$(MAKE) -f doc/html/CMakeFiles/html.dir/build.make doc/html/CMakeFiles/html.dir/depend
 	$(MAKE) -f doc/html/CMakeFiles/html.dir/build.make doc/html/CMakeFiles/html.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target html"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target html"
 .PHONY : doc/html/CMakeFiles/html.dir/all
 
 # Build rule for subdir invocation for target.
 doc/html/CMakeFiles/html.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 doc/html/CMakeFiles/html.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : doc/html/CMakeFiles/html.dir/rule
 
 # Convenience name for target.
@@ -4680,14 +4680,14 @@ doc/prog-man/preinstall:
 doc/prog-man/CMakeFiles/prog-man.dir/all:
 	$(MAKE) -f doc/prog-man/CMakeFiles/prog-man.dir/build.make doc/prog-man/CMakeFiles/prog-man.dir/depend
 	$(MAKE) -f doc/prog-man/CMakeFiles/prog-man.dir/build.make doc/prog-man/CMakeFiles/prog-man.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target prog-man"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num= "Built target prog-man"
 .PHONY : doc/prog-man/CMakeFiles/prog-man.dir/all
 
 # Build rule for subdir invocation for target.
 doc/prog-man/CMakeFiles/prog-man.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 doc/prog-man/CMakeFiles/prog-man.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : doc/prog-man/CMakeFiles/prog-man.dir/rule
 
 # Convenience name for target.

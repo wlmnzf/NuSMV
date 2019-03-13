@@ -43,10 +43,10 @@ RM = /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV
+CMAKE_SOURCE_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug
+CMAKE_BINARY_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/depend.make
@@ -59,81 +59,81 @@ include code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile
 
 code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/TypeChecker.c.o: code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/flags.make
 code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/TypeChecker.c.o: ../code/nusmv/core/compile/type_checking/TypeChecker.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/TypeChecker.c.o"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/type_checking && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_compile_type_checking.dir/TypeChecker.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/type_checking/TypeChecker.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/TypeChecker.c.o"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/type_checking && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_compile_type_checking.dir/TypeChecker.c.o   -c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/type_checking/TypeChecker.c
 
 code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/TypeChecker.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code_nusmv_core_compile_type_checking.dir/TypeChecker.c.i"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/type_checking && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/type_checking/TypeChecker.c > CMakeFiles/code_nusmv_core_compile_type_checking.dir/TypeChecker.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/type_checking && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/type_checking/TypeChecker.c > CMakeFiles/code_nusmv_core_compile_type_checking.dir/TypeChecker.c.i
 
 code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/TypeChecker.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code_nusmv_core_compile_type_checking.dir/TypeChecker.c.s"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/type_checking && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/type_checking/TypeChecker.c -o CMakeFiles/code_nusmv_core_compile_type_checking.dir/TypeChecker.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/type_checking && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/type_checking/TypeChecker.c -o CMakeFiles/code_nusmv_core_compile_type_checking.dir/TypeChecker.c.s
 
 code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerBase.c.o: code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/flags.make
 code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerBase.c.o: ../code/nusmv/core/compile/type_checking/checkers/CheckerBase.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerBase.c.o"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/type_checking && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerBase.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/type_checking/checkers/CheckerBase.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerBase.c.o"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/type_checking && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerBase.c.o   -c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/type_checking/checkers/CheckerBase.c
 
 code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerBase.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerBase.c.i"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/type_checking && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/type_checking/checkers/CheckerBase.c > CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerBase.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/type_checking && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/type_checking/checkers/CheckerBase.c > CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerBase.c.i
 
 code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerBase.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerBase.c.s"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/type_checking && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/type_checking/checkers/CheckerBase.c -o CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerBase.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/type_checking && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/type_checking/checkers/CheckerBase.c -o CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerBase.c.s
 
 code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerCore.c.o: code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/flags.make
 code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerCore.c.o: ../code/nusmv/core/compile/type_checking/checkers/CheckerCore.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerCore.c.o"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/type_checking && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerCore.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/type_checking/checkers/CheckerCore.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerCore.c.o"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/type_checking && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerCore.c.o   -c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/type_checking/checkers/CheckerCore.c
 
 code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerCore.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerCore.c.i"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/type_checking && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/type_checking/checkers/CheckerCore.c > CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerCore.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/type_checking && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/type_checking/checkers/CheckerCore.c > CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerCore.c.i
 
 code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerCore.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerCore.c.s"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/type_checking && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/type_checking/checkers/CheckerCore.c -o CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerCore.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/type_checking && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/type_checking/checkers/CheckerCore.c -o CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerCore.c.s
 
 code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerPsl.c.o: code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/flags.make
 code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerPsl.c.o: ../code/nusmv/core/compile/type_checking/checkers/CheckerPsl.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerPsl.c.o"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/type_checking && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerPsl.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/type_checking/checkers/CheckerPsl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerPsl.c.o"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/type_checking && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerPsl.c.o   -c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/type_checking/checkers/CheckerPsl.c
 
 code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerPsl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerPsl.c.i"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/type_checking && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/type_checking/checkers/CheckerPsl.c > CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerPsl.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/type_checking && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/type_checking/checkers/CheckerPsl.c > CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerPsl.c.i
 
 code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerPsl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerPsl.c.s"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/type_checking && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/type_checking/checkers/CheckerPsl.c -o CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerPsl.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/type_checking && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/type_checking/checkers/CheckerPsl.c -o CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerPsl.c.s
 
 code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/checkersInt.c.o: code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/flags.make
 code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/checkersInt.c.o: ../code/nusmv/core/compile/type_checking/checkers/checkersInt.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/checkersInt.c.o"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/type_checking && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/checkersInt.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/type_checking/checkers/checkersInt.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/checkersInt.c.o"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/type_checking && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/checkersInt.c.o   -c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/type_checking/checkers/checkersInt.c
 
 code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/checkersInt.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/checkersInt.c.i"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/type_checking && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/type_checking/checkers/checkersInt.c > CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/checkersInt.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/type_checking && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/type_checking/checkers/checkersInt.c > CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/checkersInt.c.i
 
 code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/checkersInt.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/checkersInt.c.s"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/type_checking && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/type_checking/checkers/checkersInt.c -o CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/checkersInt.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/type_checking && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/type_checking/checkers/checkersInt.c -o CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/checkersInt.c.s
 
 code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerStatement.c.o: code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/flags.make
 code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerStatement.c.o: ../code/nusmv/core/compile/type_checking/checkers/CheckerStatement.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerStatement.c.o"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/type_checking && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerStatement.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/type_checking/checkers/CheckerStatement.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerStatement.c.o"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/type_checking && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerStatement.c.o   -c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/type_checking/checkers/CheckerStatement.c
 
 code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerStatement.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerStatement.c.i"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/type_checking && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/type_checking/checkers/CheckerStatement.c > CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerStatement.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/type_checking && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/type_checking/checkers/CheckerStatement.c > CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerStatement.c.i
 
 code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerStatement.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerStatement.c.s"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/type_checking && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/type_checking/checkers/CheckerStatement.c -o CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerStatement.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/type_checking && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/type_checking/checkers/CheckerStatement.c -o CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerStatement.c.s
 
 code_nusmv_core_compile_type_checking: code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/TypeChecker.c.o
 code_nusmv_core_compile_type_checking: code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/checkers/CheckerBase.c.o
@@ -151,10 +151,10 @@ code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_ch
 .PHONY : code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/build
 
 code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/clean:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/type_checking && $(CMAKE_COMMAND) -P CMakeFiles/code_nusmv_core_compile_type_checking.dir/cmake_clean.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/type_checking && $(CMAKE_COMMAND) -P CMakeFiles/code_nusmv_core_compile_type_checking.dir/cmake_clean.cmake
 .PHONY : code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/clean
 
 code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/depend:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/type_checking /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/type_checking /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/type_checking /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/type_checking /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : code/nusmv/core/compile/type_checking/CMakeFiles/code_nusmv_core_compile_type_checking.dir/depend
 

@@ -4,12 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/addons_core/compass/compass.c" "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/CMakeFiles/code_nusmv_addons_core_compass.dir/compass.c.o"
-  "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/addons_core/compass/compassCmd.c" "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/CMakeFiles/code_nusmv_addons_core_compass.dir/compassCmd.c.o"
-  "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/addons_core/compass/compassPkg.c" "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/CMakeFiles/code_nusmv_addons_core_compass.dir/compassPkg.c.o"
-  "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/addons_core/compass/compile/ProbAssign.c" "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/CMakeFiles/code_nusmv_addons_core_compass.dir/compile/ProbAssign.c.o"
-  "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/addons_core/compass/compile/compile.c" "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/CMakeFiles/code_nusmv_addons_core_compass.dir/compile/compile.c.o"
-  "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/addons_core/compass/sigref/sigrefWrite.c" "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/CMakeFiles/code_nusmv_addons_core_compass.dir/sigref/sigrefWrite.c.o"
+  "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/addons_core/compass/compass.c" "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/CMakeFiles/code_nusmv_addons_core_compass.dir/compass.c.o"
+  "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/addons_core/compass/compassCmd.c" "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/CMakeFiles/code_nusmv_addons_core_compass.dir/compassCmd.c.o"
+  "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/addons_core/compass/compassPkg.c" "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/CMakeFiles/code_nusmv_addons_core_compass.dir/compassPkg.c.o"
+  "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/addons_core/compass/compile/ProbAssign.c" "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/CMakeFiles/code_nusmv_addons_core_compass.dir/compile/ProbAssign.c.o"
+  "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/addons_core/compass/compile/compile.c" "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/CMakeFiles/code_nusmv_addons_core_compass.dir/compile/compile.c.o"
+  "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/addons_core/compass/sigref/sigrefWrite.c" "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/CMakeFiles/code_nusmv_addons_core_compass.dir/sigref/sigrefWrite.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

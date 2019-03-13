@@ -1,8 +1,8 @@
-if(NOT EXISTS "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/install_manifest.txt")
-  message(FATAL_ERROR "Cannot find install manifest: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/install_manifest.txt")
+if(NOT EXISTS "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/install_manifest.txt")
+  message(FATAL_ERROR "Cannot find install manifest: /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/install_manifest.txt")
 endif()
 
-file(READ "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/install_manifest.txt" files)
+file(READ "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 set(alldirs)
 foreach(file ${files})

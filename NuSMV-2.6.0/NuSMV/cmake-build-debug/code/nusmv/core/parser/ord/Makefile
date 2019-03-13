@@ -48,10 +48,10 @@ RM = /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV
+CMAKE_SOURCE_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug
+CMAKE_BINARY_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -93,7 +93,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -104,7 +104,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CPackSourceConfig.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -159,14 +159,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/ord/CMakeFiles/progress.marks
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/parser/ord/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/ord/CMakeFiles/progress.marks
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/parser/ord/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/parser/ord/clean
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/parser/ord/clean
 .PHONY : clean
 
 # The main clean target
@@ -176,22 +176,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/parser/ord/preinstall
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/parser/ord/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/parser/ord/preinstall
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/parser/ord/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/rule:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/rule
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/rule
 .PHONY : code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/rule
 
 # Convenience name for target.
@@ -201,7 +201,7 @@ code_nusmv_core_parser_ord: code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_cor
 
 # fast build rule for target.
 code_nusmv_core_parser_ord/fast:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/build.make code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/build
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/build.make code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/build
 .PHONY : code_nusmv_core_parser_ord/fast
 
 ParserOrd.o: ParserOrd.c.o
@@ -210,7 +210,7 @@ ParserOrd.o: ParserOrd.c.o
 
 # target to build an object file
 ParserOrd.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/build.make code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/ParserOrd.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/build.make code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/ParserOrd.c.o
 .PHONY : ParserOrd.c.o
 
 ParserOrd.i: ParserOrd.c.i
@@ -219,7 +219,7 @@ ParserOrd.i: ParserOrd.c.i
 
 # target to preprocess a source file
 ParserOrd.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/build.make code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/ParserOrd.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/build.make code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/ParserOrd.c.i
 .PHONY : ParserOrd.c.i
 
 ParserOrd.s: ParserOrd.c.s
@@ -228,7 +228,7 @@ ParserOrd.s: ParserOrd.c.s
 
 # target to generate assembly for a file
 ParserOrd.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/build.make code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/ParserOrd.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/build.make code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/ParserOrd.c.s
 .PHONY : ParserOrd.c.s
 
 ord_grammar.o: ord_grammar.c.o
@@ -237,7 +237,7 @@ ord_grammar.o: ord_grammar.c.o
 
 # target to build an object file
 ord_grammar.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/build.make code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/ord_grammar.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/build.make code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/ord_grammar.c.o
 .PHONY : ord_grammar.c.o
 
 ord_grammar.i: ord_grammar.c.i
@@ -246,7 +246,7 @@ ord_grammar.i: ord_grammar.c.i
 
 # target to preprocess a source file
 ord_grammar.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/build.make code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/ord_grammar.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/build.make code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/ord_grammar.c.i
 .PHONY : ord_grammar.c.i
 
 ord_grammar.s: ord_grammar.c.s
@@ -255,7 +255,7 @@ ord_grammar.s: ord_grammar.c.s
 
 # target to generate assembly for a file
 ord_grammar.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/build.make code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/ord_grammar.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/build.make code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/ord_grammar.c.s
 .PHONY : ord_grammar.c.s
 
 ord_input.o: ord_input.c.o
@@ -264,7 +264,7 @@ ord_input.o: ord_input.c.o
 
 # target to build an object file
 ord_input.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/build.make code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/ord_input.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/build.make code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/ord_input.c.o
 .PHONY : ord_input.c.o
 
 ord_input.i: ord_input.c.i
@@ -273,7 +273,7 @@ ord_input.i: ord_input.c.i
 
 # target to preprocess a source file
 ord_input.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/build.make code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/ord_input.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/build.make code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/ord_input.c.i
 .PHONY : ord_input.c.i
 
 ord_input.s: ord_input.c.s
@@ -282,7 +282,7 @@ ord_input.s: ord_input.c.s
 
 # target to generate assembly for a file
 ord_input.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/build.make code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/ord_input.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/build.make code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/ord_input.c.s
 .PHONY : ord_input.c.s
 
 # Help Target
@@ -321,6 +321,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -92,7 +92,7 @@ code/nusmv/shell/prop/CMakeFiles/code_nusmv_shell_prop.dir/propCmd.c.o
  ../code/nusmv/core/wff/wffRewrite.h
  ../code/nusmv/shell/cmd/cmd.h
  ../code/nusmv/shell/prop/propCmd.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/prop/propCmd.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/prop/propCmd.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h

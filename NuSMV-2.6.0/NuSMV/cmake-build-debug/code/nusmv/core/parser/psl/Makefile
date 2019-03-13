@@ -48,10 +48,10 @@ RM = /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV
+CMAKE_SOURCE_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug
+CMAKE_BINARY_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -93,7 +93,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -104,7 +104,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CPackSourceConfig.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -159,14 +159,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl/CMakeFiles/progress.marks
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/parser/psl/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl/CMakeFiles/progress.marks
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/parser/psl/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/parser/psl/clean
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/parser/psl/clean
 .PHONY : clean
 
 # The main clean target
@@ -176,22 +176,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/parser/psl/preinstall
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/parser/psl/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/parser/psl/preinstall
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/parser/psl/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/rule:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/rule
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/rule
 .PHONY : code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/rule
 
 # Convenience name for target.
@@ -201,7 +201,7 @@ code_nusmv_core_parser_psl: code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_cor
 
 # fast build rule for target.
 code_nusmv_core_parser_psl/fast:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/build.make code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/build
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/build.make code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/build
 .PHONY : code_nusmv_core_parser_psl/fast
 
 pslConv.o: pslConv.c.o
@@ -210,7 +210,7 @@ pslConv.o: pslConv.c.o
 
 # target to build an object file
 pslConv.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/build.make code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/pslConv.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/build.make code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/pslConv.c.o
 .PHONY : pslConv.c.o
 
 pslConv.i: pslConv.c.i
@@ -219,7 +219,7 @@ pslConv.i: pslConv.c.i
 
 # target to preprocess a source file
 pslConv.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/build.make code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/pslConv.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/build.make code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/pslConv.c.i
 .PHONY : pslConv.c.i
 
 pslConv.s: pslConv.c.s
@@ -228,7 +228,7 @@ pslConv.s: pslConv.c.s
 
 # target to generate assembly for a file
 pslConv.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/build.make code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/pslConv.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/build.make code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/pslConv.c.s
 .PHONY : pslConv.c.s
 
 pslExpr.o: pslExpr.c.o
@@ -237,7 +237,7 @@ pslExpr.o: pslExpr.c.o
 
 # target to build an object file
 pslExpr.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/build.make code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/pslExpr.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/build.make code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/pslExpr.c.o
 .PHONY : pslExpr.c.o
 
 pslExpr.i: pslExpr.c.i
@@ -246,7 +246,7 @@ pslExpr.i: pslExpr.c.i
 
 # target to preprocess a source file
 pslExpr.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/build.make code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/pslExpr.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/build.make code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/pslExpr.c.i
 .PHONY : pslExpr.c.i
 
 pslExpr.s: pslExpr.c.s
@@ -255,7 +255,7 @@ pslExpr.s: pslExpr.c.s
 
 # target to generate assembly for a file
 pslExpr.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/build.make code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/pslExpr.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/build.make code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/pslExpr.c.s
 .PHONY : pslExpr.c.s
 
 pslNode.o: pslNode.c.o
@@ -264,7 +264,7 @@ pslNode.o: pslNode.c.o
 
 # target to build an object file
 pslNode.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/build.make code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/pslNode.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/build.make code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/pslNode.c.o
 .PHONY : pslNode.c.o
 
 pslNode.i: pslNode.c.i
@@ -273,7 +273,7 @@ pslNode.i: pslNode.c.i
 
 # target to preprocess a source file
 pslNode.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/build.make code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/pslNode.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/build.make code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/pslNode.c.i
 .PHONY : pslNode.c.i
 
 pslNode.s: pslNode.c.s
@@ -282,7 +282,7 @@ pslNode.s: pslNode.c.s
 
 # target to generate assembly for a file
 pslNode.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/build.make code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/pslNode.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/build.make code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/pslNode.c.s
 .PHONY : pslNode.c.s
 
 psl_grammar.o: psl_grammar.c.o
@@ -291,7 +291,7 @@ psl_grammar.o: psl_grammar.c.o
 
 # target to build an object file
 psl_grammar.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/build.make code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/psl_grammar.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/build.make code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/psl_grammar.c.o
 .PHONY : psl_grammar.c.o
 
 psl_grammar.i: psl_grammar.c.i
@@ -300,7 +300,7 @@ psl_grammar.i: psl_grammar.c.i
 
 # target to preprocess a source file
 psl_grammar.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/build.make code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/psl_grammar.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/build.make code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/psl_grammar.c.i
 .PHONY : psl_grammar.c.i
 
 psl_grammar.s: psl_grammar.c.s
@@ -309,7 +309,7 @@ psl_grammar.s: psl_grammar.c.s
 
 # target to generate assembly for a file
 psl_grammar.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/build.make code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/psl_grammar.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/build.make code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/psl_grammar.c.s
 .PHONY : psl_grammar.c.s
 
 psl_input.o: psl_input.c.o
@@ -318,7 +318,7 @@ psl_input.o: psl_input.c.o
 
 # target to build an object file
 psl_input.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/build.make code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/psl_input.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/build.make code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/psl_input.c.o
 .PHONY : psl_input.c.o
 
 psl_input.i: psl_input.c.i
@@ -327,7 +327,7 @@ psl_input.i: psl_input.c.i
 
 # target to preprocess a source file
 psl_input.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/build.make code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/psl_input.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/build.make code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/psl_input.c.i
 .PHONY : psl_input.c.i
 
 psl_input.s: psl_input.c.s
@@ -336,7 +336,7 @@ psl_input.s: psl_input.c.s
 
 # target to generate assembly for a file
 psl_input.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/build.make code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/psl_input.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/build.make code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/psl_input.c.s
 .PHONY : psl_input.c.s
 
 # Help Target
@@ -381,6 +381,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

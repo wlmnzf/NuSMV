@@ -43,10 +43,10 @@ RM = /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV
+CMAKE_SOURCE_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug
+CMAKE_BINARY_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include build-cudd/epd/CMakeFiles/CUDD_EPD_LIB.dir/depend.make
@@ -58,17 +58,17 @@ include build-cudd/epd/CMakeFiles/CUDD_EPD_LIB.dir/progress.make
 include build-cudd/epd/CMakeFiles/CUDD_EPD_LIB.dir/flags.make
 
 build-cudd/epd/CMakeFiles/CUDD_EPD_LIB.dir/epd.c.o: build-cudd/epd/CMakeFiles/CUDD_EPD_LIB.dir/flags.make
-build-cudd/epd/CMakeFiles/CUDD_EPD_LIB.dir/epd.c.o: /home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/epd/epd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object build-cudd/epd/CMakeFiles/CUDD_EPD_LIB.dir/epd.c.o"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/epd && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/CUDD_EPD_LIB.dir/epd.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/epd/epd.c
+build-cudd/epd/CMakeFiles/CUDD_EPD_LIB.dir/epd.c.o: /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/epd/epd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object build-cudd/epd/CMakeFiles/CUDD_EPD_LIB.dir/epd.c.o"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/epd && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/CUDD_EPD_LIB.dir/epd.c.o   -c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/epd/epd.c
 
 build-cudd/epd/CMakeFiles/CUDD_EPD_LIB.dir/epd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CUDD_EPD_LIB.dir/epd.c.i"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/epd && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/epd/epd.c > CMakeFiles/CUDD_EPD_LIB.dir/epd.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/epd && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/epd/epd.c > CMakeFiles/CUDD_EPD_LIB.dir/epd.c.i
 
 build-cudd/epd/CMakeFiles/CUDD_EPD_LIB.dir/epd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CUDD_EPD_LIB.dir/epd.c.s"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/epd && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/epd/epd.c -o CMakeFiles/CUDD_EPD_LIB.dir/epd.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/epd && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/epd/epd.c -o CMakeFiles/CUDD_EPD_LIB.dir/epd.c.s
 
 # Object files for target CUDD_EPD_LIB
 CUDD_EPD_LIB_OBJECTS = \
@@ -80,9 +80,9 @@ CUDD_EPD_LIB_EXTERNAL_OBJECTS =
 build-cudd/lib/libepd.a: build-cudd/epd/CMakeFiles/CUDD_EPD_LIB.dir/epd.c.o
 build-cudd/lib/libepd.a: build-cudd/epd/CMakeFiles/CUDD_EPD_LIB.dir/build.make
 build-cudd/lib/libepd.a: build-cudd/epd/CMakeFiles/CUDD_EPD_LIB.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library ../lib/libepd.a"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/epd && $(CMAKE_COMMAND) -P CMakeFiles/CUDD_EPD_LIB.dir/cmake_clean_target.cmake
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/epd && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CUDD_EPD_LIB.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library ../lib/libepd.a"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/epd && $(CMAKE_COMMAND) -P CMakeFiles/CUDD_EPD_LIB.dir/cmake_clean_target.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/epd && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CUDD_EPD_LIB.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 build-cudd/epd/CMakeFiles/CUDD_EPD_LIB.dir/build: build-cudd/lib/libepd.a
@@ -90,10 +90,10 @@ build-cudd/epd/CMakeFiles/CUDD_EPD_LIB.dir/build: build-cudd/lib/libepd.a
 .PHONY : build-cudd/epd/CMakeFiles/CUDD_EPD_LIB.dir/build
 
 build-cudd/epd/CMakeFiles/CUDD_EPD_LIB.dir/clean:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/epd && $(CMAKE_COMMAND) -P CMakeFiles/CUDD_EPD_LIB.dir/cmake_clean.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/epd && $(CMAKE_COMMAND) -P CMakeFiles/CUDD_EPD_LIB.dir/cmake_clean.cmake
 .PHONY : build-cudd/epd/CMakeFiles/CUDD_EPD_LIB.dir/clean
 
 build-cudd/epd/CMakeFiles/CUDD_EPD_LIB.dir/depend:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV /home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/epd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/epd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/epd/CMakeFiles/CUDD_EPD_LIB.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/epd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/epd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/epd/CMakeFiles/CUDD_EPD_LIB.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : build-cudd/epd/CMakeFiles/CUDD_EPD_LIB.dir/depend
 

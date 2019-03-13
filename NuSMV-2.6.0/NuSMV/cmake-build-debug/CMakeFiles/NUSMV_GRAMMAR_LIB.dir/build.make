@@ -43,10 +43,10 @@ RM = /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV
+CMAKE_SOURCE_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug
+CMAKE_BINARY_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/NUSMV_GRAMMAR_LIB.dir/depend.make
@@ -62,14 +62,14 @@ NUSMV_GRAMMAR_LIB_OBJECTS =
 
 # External object files for target NUSMV_GRAMMAR_LIB
 NUSMV_GRAMMAR_LIB_EXTERNAL_OBJECTS = \
-"/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser_grammar.dir/input.c.o" \
-"/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser_grammar.dir/grammar.c.o"
+"/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser_grammar.dir/input.c.o" \
+"/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser_grammar.dir/grammar.c.o"
 
 lib/libnusmvgrammar.a: code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser_grammar.dir/input.c.o
 lib/libnusmvgrammar.a: code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser_grammar.dir/grammar.c.o
 lib/libnusmvgrammar.a: CMakeFiles/NUSMV_GRAMMAR_LIB.dir/build.make
 lib/libnusmvgrammar.a: CMakeFiles/NUSMV_GRAMMAR_LIB.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Linking C static library lib/libnusmvgrammar.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Linking C static library lib/libnusmvgrammar.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/NUSMV_GRAMMAR_LIB.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/NUSMV_GRAMMAR_LIB.dir/link.txt --verbose=$(VERBOSE)
 
@@ -83,6 +83,6 @@ CMakeFiles/NUSMV_GRAMMAR_LIB.dir/clean:
 .PHONY : CMakeFiles/NUSMV_GRAMMAR_LIB.dir/clean
 
 CMakeFiles/NUSMV_GRAMMAR_LIB.dir/depend:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/NUSMV_GRAMMAR_LIB.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/NUSMV_GRAMMAR_LIB.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/NUSMV_GRAMMAR_LIB.dir/depend
 

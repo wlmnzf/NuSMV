@@ -118,15 +118,15 @@ nusmv/core/cinit/NuSMVEnv.h
 nusmv/core/utils/list.h
 ../code/nusmv/core/utils/nusmv/core/utils/list.h
 
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/set/setSet.c
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/set/setSet.c
 nusmv/core/node/NodeMgr.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/set/nusmv/core/node/NodeMgr.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/set/nusmv/core/node/NodeMgr.h
 nusmv/core/node/printers/MasterPrinter.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/set/nusmv/core/node/printers/MasterPrinter.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/set/nusmv/core/node/printers/MasterPrinter.h
 nusmv/core/set/setInt.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/set/nusmv/core/set/setInt.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/set/nusmv/core/set/setInt.h
 nusmv/core/utils/NodeList.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/set/nusmv/core/utils/NodeList.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/set/nusmv/core/utils/NodeList.h
 
 build-cudd/include/cudd/st.h
 

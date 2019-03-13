@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/dependency/DependencyBase.c" "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/dependency/CMakeFiles/code_nusmv_core_compile_dependency.dir/DependencyBase.c.o"
-  "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/dependency/DependencyCore.c" "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/dependency/CMakeFiles/code_nusmv_core_compile_dependency.dir/DependencyCore.c.o"
-  "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/dependency/DependencyPsl.c" "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/dependency/CMakeFiles/code_nusmv_core_compile_dependency.dir/DependencyPsl.c.o"
-  "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/dependency/FormulaDependency.c" "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/dependency/CMakeFiles/code_nusmv_core_compile_dependency.dir/FormulaDependency.c.o"
-  "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/dependency/dependencyPkg.c" "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/dependency/CMakeFiles/code_nusmv_core_compile_dependency.dir/dependencyPkg.c.o"
+  "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/dependency/DependencyBase.c" "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/dependency/CMakeFiles/code_nusmv_core_compile_dependency.dir/DependencyBase.c.o"
+  "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/dependency/DependencyCore.c" "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/dependency/CMakeFiles/code_nusmv_core_compile_dependency.dir/DependencyCore.c.o"
+  "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/dependency/DependencyPsl.c" "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/dependency/CMakeFiles/code_nusmv_core_compile_dependency.dir/DependencyPsl.c.o"
+  "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/dependency/FormulaDependency.c" "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/dependency/CMakeFiles/code_nusmv_core_compile_dependency.dir/FormulaDependency.c.o"
+  "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/dependency/dependencyPkg.c" "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/dependency/CMakeFiles/code_nusmv_core_compile_dependency.dir/dependencyPkg.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

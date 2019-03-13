@@ -84,7 +84,7 @@ code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/ParserOrd.c
  ../code/nusmv/core/utils/ustring.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/parser/ord/ParserOrd.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/parser/ord/ParserOrd.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -168,7 +168,7 @@ code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/ord_grammar
  ../code/nusmv/core/utils/object.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/ord/ord_grammar.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/ord/ord_grammar.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -255,7 +255,7 @@ code/nusmv/core/parser/ord/CMakeFiles/code_nusmv_core_parser_ord.dir/ord_input.c
  ../code/nusmv/core/utils/ustring.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/ord/ord_input.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/ord/ord_input.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h

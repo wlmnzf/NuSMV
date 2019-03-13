@@ -16,7 +16,7 @@ code/nusmv/core/set/CMakeFiles/code_nusmv_core_set.dir/setSet.c.o
  ../code/nusmv/core/utils/list.h
  ../code/nusmv/core/utils/object.h
  ../code/nusmv/core/utils/utils.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/set/setSet.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/set/setSet.c
  build-cudd/include/cudd/st.h
  build-cudd/include/cudd/util.h
  nusmv-config.h

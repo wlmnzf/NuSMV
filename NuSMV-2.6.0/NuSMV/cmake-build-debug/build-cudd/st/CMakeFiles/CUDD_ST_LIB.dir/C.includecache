@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/st/st.c
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/st/st.c
 util.h
-/home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/st/util.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/st/util.h
 st.h
-/home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/st/st.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/st/st.h
 
-/home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/st/st.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/st/st.h
 
 build-cudd/include/cudd/util.h
 nusmv-config.h

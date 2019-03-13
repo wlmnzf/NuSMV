@@ -1,4 +1,4 @@
-# Install script for directory: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV
+# Install script for directory: /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,27 +38,27 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE FILES "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/nusmv-config.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE FILES "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/nusmv-config.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/lib/libnusmvshell.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/lib/libnusmvshell.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/lib/libnusmvaddonscore.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/lib/libnusmvaddonscore.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/lib/libnusmvcore.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/lib/libnusmvcore.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/lib/libnusmvrbc.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/lib/libnusmvrbc.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/lib/libnusmvgrammar.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/lib/libnusmvgrammar.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -68,7 +68,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/NuSMV"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/bin/NuSMV")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/bin/NuSMV")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/NuSMV" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/NuSMV")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -84,7 +84,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/ltl2smv"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/bin/ltl2smv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/bin/ltl2smv")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/ltl2smv" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/ltl2smv")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -95,26 +95,26 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/nusmv" TYPE FILE FILES
-    "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/LGPL-2.1"
-    "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/NEWS"
-    "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/README.txt"
-    "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/README_PLATFORMS.txt"
-    "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/README_zChaff.txt"
-    "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/README_MiniSat.txt"
-    "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/share/nusmv/master.nusmvrc"
+    "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/LGPL-2.1"
+    "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/NEWS"
+    "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/README.txt"
+    "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/README_PLATFORMS.txt"
+    "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/README_zChaff.txt"
+    "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/README_MiniSat.txt"
+    "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/share/nusmv/master.nusmvrc"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/cmake_install.cmake")
-  include("/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-MiniSat/cmake_install.cmake")
-  include("/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/cmake_install.cmake")
-  include("/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/cmake_install.cmake")
-  include("/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/cmake_install.cmake")
-  include("/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/doc/cmake_install.cmake")
-  include("/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/contrib/cmake_install.cmake")
-  include("/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/examples/cmake_install.cmake")
+  include("/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/cmake_install.cmake")
+  include("/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-MiniSat/cmake_install.cmake")
+  include("/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/cmake_install.cmake")
+  include("/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/cmake_install.cmake")
+  include("/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/cmake_install.cmake")
+  include("/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/doc/cmake_install.cmake")
+  include("/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/contrib/cmake_install.cmake")
+  include("/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/examples/cmake_install.cmake")
 
 endif()
 
@@ -126,5 +126,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

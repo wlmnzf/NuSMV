@@ -107,7 +107,7 @@ code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/ltl.c.o
  ../code/nusmv/core/utils/utils_io.h
  ../code/nusmv/core/wff/ExprMgr.h
  ../code/nusmv/core/wff/wffRewrite.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/ltl/ltl.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/ltl/ltl.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -194,7 +194,7 @@ code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/ltl2smv/ltl2smv.c.o
  ../code/nusmv/core/utils/ustring.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/ltl/ltl2smv/ltl2smv.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/ltl/ltl2smv/ltl2smv.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -292,7 +292,7 @@ code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/ltlCompassion.c.o
  ../code/nusmv/core/utils/portability.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/ltl/ltlCompassion.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/ltl/ltlCompassion.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h

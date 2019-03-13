@@ -48,10 +48,10 @@ RM = /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV
+CMAKE_SOURCE_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug
+CMAKE_BINARY_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -93,7 +93,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -104,7 +104,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CPackSourceConfig.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -159,14 +159,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/sat/CMakeFiles/progress.marks
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/sat/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/sat/CMakeFiles/progress.marks
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/sat/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/sat/clean
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/sat/clean
 .PHONY : clean
 
 # The main clean target
@@ -176,22 +176,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/sat/preinstall
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/sat/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/sat/preinstall
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/sat/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/rule:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/rule
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/rule
 .PHONY : code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/rule
 
 # Convenience name for target.
@@ -201,7 +201,7 @@ code_nusmv_core_sat: code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/rule
 
 # fast build rule for target.
 code_nusmv_core_sat/fast:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/build.make code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/build
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/build.make code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/build
 .PHONY : code_nusmv_core_sat/fast
 
 SatIncSolver.o: SatIncSolver.c.o
@@ -210,7 +210,7 @@ SatIncSolver.o: SatIncSolver.c.o
 
 # target to build an object file
 SatIncSolver.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/build.make code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/SatIncSolver.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/build.make code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/SatIncSolver.c.o
 .PHONY : SatIncSolver.c.o
 
 SatIncSolver.i: SatIncSolver.c.i
@@ -219,7 +219,7 @@ SatIncSolver.i: SatIncSolver.c.i
 
 # target to preprocess a source file
 SatIncSolver.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/build.make code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/SatIncSolver.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/build.make code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/SatIncSolver.c.i
 .PHONY : SatIncSolver.c.i
 
 SatIncSolver.s: SatIncSolver.c.s
@@ -228,7 +228,7 @@ SatIncSolver.s: SatIncSolver.c.s
 
 # target to generate assembly for a file
 SatIncSolver.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/build.make code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/SatIncSolver.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/build.make code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/SatIncSolver.c.s
 .PHONY : SatIncSolver.c.s
 
 SatSolver.o: SatSolver.c.o
@@ -237,7 +237,7 @@ SatSolver.o: SatSolver.c.o
 
 # target to build an object file
 SatSolver.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/build.make code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/SatSolver.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/build.make code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/SatSolver.c.o
 .PHONY : SatSolver.c.o
 
 SatSolver.i: SatSolver.c.i
@@ -246,7 +246,7 @@ SatSolver.i: SatSolver.c.i
 
 # target to preprocess a source file
 SatSolver.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/build.make code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/SatSolver.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/build.make code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/SatSolver.c.i
 .PHONY : SatSolver.c.i
 
 SatSolver.s: SatSolver.c.s
@@ -255,7 +255,7 @@ SatSolver.s: SatSolver.c.s
 
 # target to generate assembly for a file
 SatSolver.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/build.make code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/SatSolver.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/build.make code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/SatSolver.c.s
 .PHONY : SatSolver.c.s
 
 satUtils.o: satUtils.c.o
@@ -264,7 +264,7 @@ satUtils.o: satUtils.c.o
 
 # target to build an object file
 satUtils.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/build.make code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/satUtils.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/build.make code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/satUtils.c.o
 .PHONY : satUtils.c.o
 
 satUtils.i: satUtils.c.i
@@ -273,7 +273,7 @@ satUtils.i: satUtils.c.i
 
 # target to preprocess a source file
 satUtils.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/build.make code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/satUtils.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/build.make code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/satUtils.c.i
 .PHONY : satUtils.c.i
 
 satUtils.s: satUtils.c.s
@@ -282,7 +282,7 @@ satUtils.s: satUtils.c.s
 
 # target to generate assembly for a file
 satUtils.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/build.make code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/satUtils.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/build.make code/nusmv/core/sat/CMakeFiles/code_nusmv_core_sat.dir/satUtils.c.s
 .PHONY : satUtils.c.s
 
 # Help Target
@@ -321,6 +321,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

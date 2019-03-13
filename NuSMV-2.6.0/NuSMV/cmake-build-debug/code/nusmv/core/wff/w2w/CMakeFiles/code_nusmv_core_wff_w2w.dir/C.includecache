@@ -828,23 +828,23 @@ nusmv/core/utils/Pair.h
 nusmv/core/compile/FlatHierarchy.h
 ../code/nusmv/core/wff/nusmv/core/compile/FlatHierarchy.h
 
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/wff/w2w/wff2nnf.c
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/wff/w2w/wff2nnf.c
 nusmv-config.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/wff/w2w/nusmv-config.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/wff/w2w/nusmv-config.h
 nusmv/core/node/NodeMgr.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/wff/w2w/nusmv/core/node/NodeMgr.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/wff/w2w/nusmv/core/node/NodeMgr.h
 nusmv/core/utils/ErrorMgr.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/wff/w2w/nusmv/core/utils/ErrorMgr.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/wff/w2w/nusmv/core/utils/ErrorMgr.h
 nusmv/core/wff/wff.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/wff/w2w/nusmv/core/wff/wff.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/wff/w2w/nusmv/core/wff/wff.h
 nusmv/core/wff/w2w/w2wInt.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/wff/w2w/nusmv/core/wff/w2w/w2wInt.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/wff/w2w/nusmv/core/wff/w2w/w2wInt.h
 nusmv/core/parser/symbols.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/wff/w2w/nusmv/core/parser/symbols.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/wff/w2w/nusmv/core/parser/symbols.h
 nusmv/core/utils/error.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/wff/w2w/nusmv/core/utils/error.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/wff/w2w/nusmv/core/utils/error.h
 nusmv/core/utils/assoc.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/wff/w2w/nusmv/core/utils/assoc.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/wff/w2w/nusmv/core/utils/assoc.h
 
 build-cudd/include/cudd/cudd.h
 nusmv-config.h

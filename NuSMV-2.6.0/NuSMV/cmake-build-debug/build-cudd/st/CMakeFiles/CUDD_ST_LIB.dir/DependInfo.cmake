@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/st/st.c" "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/st/CMakeFiles/CUDD_ST_LIB.dir/st.c.o"
+  "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/st/st.c" "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/st/CMakeFiles/CUDD_ST_LIB.dir/st.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

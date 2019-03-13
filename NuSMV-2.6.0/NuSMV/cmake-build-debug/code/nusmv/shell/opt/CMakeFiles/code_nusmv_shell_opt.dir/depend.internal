@@ -81,7 +81,7 @@ code/nusmv/shell/opt/CMakeFiles/code_nusmv_shell_opt.dir/optCmd.c.o
  ../code/nusmv/core/wff/ExprMgr.h
  ../code/nusmv/shell/cmd/cmd.h
  ../code/nusmv/shell/opt/optCmd.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/opt/optCmd.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/opt/optCmd.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h

@@ -48,10 +48,10 @@ RM = /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV
+CMAKE_SOURCE_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug
+CMAKE_BINARY_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -83,7 +83,7 @@ install/fast: preinstall/fast
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -94,7 +94,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CPackSourceConfig.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -159,14 +159,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/node/anonymizers/CMakeFiles/progress.marks
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/node/anonymizers/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/node/anonymizers/CMakeFiles/progress.marks
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/node/anonymizers/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/node/anonymizers/clean
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/node/anonymizers/clean
 .PHONY : clean
 
 # The main clean target
@@ -176,22 +176,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/node/anonymizers/preinstall
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/node/anonymizers/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/node/anonymizers/preinstall
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/node/anonymizers/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/rule:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/rule
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/rule
 .PHONY : code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/rule
 
 # Convenience name for target.
@@ -201,7 +201,7 @@ code_nusmv_core_node_anonymizers: code/nusmv/core/node/anonymizers/CMakeFiles/co
 
 # fast build rule for target.
 code_nusmv_core_node_anonymizers/fast:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/build.make code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/build
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/build.make code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/build
 .PHONY : code_nusmv_core_node_anonymizers/fast
 
 NodeAnonymizerAtom.o: NodeAnonymizerAtom.c.o
@@ -210,7 +210,7 @@ NodeAnonymizerAtom.o: NodeAnonymizerAtom.c.o
 
 # target to build an object file
 NodeAnonymizerAtom.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/build.make code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/NodeAnonymizerAtom.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/build.make code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/NodeAnonymizerAtom.c.o
 .PHONY : NodeAnonymizerAtom.c.o
 
 NodeAnonymizerAtom.i: NodeAnonymizerAtom.c.i
@@ -219,7 +219,7 @@ NodeAnonymizerAtom.i: NodeAnonymizerAtom.c.i
 
 # target to preprocess a source file
 NodeAnonymizerAtom.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/build.make code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/NodeAnonymizerAtom.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/build.make code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/NodeAnonymizerAtom.c.i
 .PHONY : NodeAnonymizerAtom.c.i
 
 NodeAnonymizerAtom.s: NodeAnonymizerAtom.c.s
@@ -228,7 +228,7 @@ NodeAnonymizerAtom.s: NodeAnonymizerAtom.c.s
 
 # target to generate assembly for a file
 NodeAnonymizerAtom.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/build.make code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/NodeAnonymizerAtom.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/build.make code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/NodeAnonymizerAtom.c.s
 .PHONY : NodeAnonymizerAtom.c.s
 
 NodeAnonymizerBase.o: NodeAnonymizerBase.c.o
@@ -237,7 +237,7 @@ NodeAnonymizerBase.o: NodeAnonymizerBase.c.o
 
 # target to build an object file
 NodeAnonymizerBase.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/build.make code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/NodeAnonymizerBase.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/build.make code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/NodeAnonymizerBase.c.o
 .PHONY : NodeAnonymizerBase.c.o
 
 NodeAnonymizerBase.i: NodeAnonymizerBase.c.i
@@ -246,7 +246,7 @@ NodeAnonymizerBase.i: NodeAnonymizerBase.c.i
 
 # target to preprocess a source file
 NodeAnonymizerBase.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/build.make code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/NodeAnonymizerBase.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/build.make code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/NodeAnonymizerBase.c.i
 .PHONY : NodeAnonymizerBase.c.i
 
 NodeAnonymizerBase.s: NodeAnonymizerBase.c.s
@@ -255,7 +255,7 @@ NodeAnonymizerBase.s: NodeAnonymizerBase.c.s
 
 # target to generate assembly for a file
 NodeAnonymizerBase.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/build.make code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/NodeAnonymizerBase.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/build.make code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/NodeAnonymizerBase.c.s
 .PHONY : NodeAnonymizerBase.c.s
 
 NodeAnonymizerDot.o: NodeAnonymizerDot.c.o
@@ -264,7 +264,7 @@ NodeAnonymizerDot.o: NodeAnonymizerDot.c.o
 
 # target to build an object file
 NodeAnonymizerDot.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/build.make code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/NodeAnonymizerDot.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/build.make code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/NodeAnonymizerDot.c.o
 .PHONY : NodeAnonymizerDot.c.o
 
 NodeAnonymizerDot.i: NodeAnonymizerDot.c.i
@@ -273,7 +273,7 @@ NodeAnonymizerDot.i: NodeAnonymizerDot.c.i
 
 # target to preprocess a source file
 NodeAnonymizerDot.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/build.make code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/NodeAnonymizerDot.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/build.make code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/NodeAnonymizerDot.c.i
 .PHONY : NodeAnonymizerDot.c.i
 
 NodeAnonymizerDot.s: NodeAnonymizerDot.c.s
@@ -282,7 +282,7 @@ NodeAnonymizerDot.s: NodeAnonymizerDot.c.s
 
 # target to generate assembly for a file
 NodeAnonymizerDot.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/build.make code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/NodeAnonymizerDot.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/build.make code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/NodeAnonymizerDot.c.s
 .PHONY : NodeAnonymizerDot.c.s
 
 NodeAnonymizerST.o: NodeAnonymizerST.c.o
@@ -291,7 +291,7 @@ NodeAnonymizerST.o: NodeAnonymizerST.c.o
 
 # target to build an object file
 NodeAnonymizerST.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/build.make code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/NodeAnonymizerST.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/build.make code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/NodeAnonymizerST.c.o
 .PHONY : NodeAnonymizerST.c.o
 
 NodeAnonymizerST.i: NodeAnonymizerST.c.i
@@ -300,7 +300,7 @@ NodeAnonymizerST.i: NodeAnonymizerST.c.i
 
 # target to preprocess a source file
 NodeAnonymizerST.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/build.make code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/NodeAnonymizerST.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/build.make code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/NodeAnonymizerST.c.i
 .PHONY : NodeAnonymizerST.c.i
 
 NodeAnonymizerST.s: NodeAnonymizerST.c.s
@@ -309,7 +309,7 @@ NodeAnonymizerST.s: NodeAnonymizerST.c.s
 
 # target to generate assembly for a file
 NodeAnonymizerST.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/build.make code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/NodeAnonymizerST.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/build.make code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/NodeAnonymizerST.c.s
 .PHONY : NodeAnonymizerST.c.s
 
 PrinterNonAmbiguousDot.o: PrinterNonAmbiguousDot.c.o
@@ -318,7 +318,7 @@ PrinterNonAmbiguousDot.o: PrinterNonAmbiguousDot.c.o
 
 # target to build an object file
 PrinterNonAmbiguousDot.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/build.make code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/PrinterNonAmbiguousDot.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/build.make code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/PrinterNonAmbiguousDot.c.o
 .PHONY : PrinterNonAmbiguousDot.c.o
 
 PrinterNonAmbiguousDot.i: PrinterNonAmbiguousDot.c.i
@@ -327,7 +327,7 @@ PrinterNonAmbiguousDot.i: PrinterNonAmbiguousDot.c.i
 
 # target to preprocess a source file
 PrinterNonAmbiguousDot.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/build.make code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/PrinterNonAmbiguousDot.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/build.make code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/PrinterNonAmbiguousDot.c.i
 .PHONY : PrinterNonAmbiguousDot.c.i
 
 PrinterNonAmbiguousDot.s: PrinterNonAmbiguousDot.c.s
@@ -336,7 +336,7 @@ PrinterNonAmbiguousDot.s: PrinterNonAmbiguousDot.c.s
 
 # target to generate assembly for a file
 PrinterNonAmbiguousDot.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/build.make code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/PrinterNonAmbiguousDot.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/build.make code/nusmv/core/node/anonymizers/CMakeFiles/code_nusmv_core_node_anonymizers.dir/PrinterNonAmbiguousDot.c.s
 .PHONY : PrinterNonAmbiguousDot.c.s
 
 # Help Target
@@ -381,6 +381,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

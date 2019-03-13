@@ -8,285 +8,285 @@
 		<Option virtualFolders="CMake Files\;CMake Files\cmake\;CMake Files\..\;CMake Files\..\cudd-2.4.1.1\;CMake Files\..\cudd-2.4.1.1\st\;CMake Files\..\cudd-2.4.1.1\cudd\;CMake Files\..\cudd-2.4.1.1\epd\;CMake Files\..\cudd-2.4.1.1\mtr\;CMake Files\..\cudd-2.4.1.1\util\;CMake Files\..\MiniSat\;CMake Files\code\;CMake Files\code\nusmv\;CMake Files\code\nusmv\core\;CMake Files\code\nusmv\core\parser\;CMake Files\code\nusmv\core\parser\ord\;CMake Files\code\nusmv\core\parser\idlist\;CMake Files\code\nusmv\core\parser\psl\;CMake Files\code\nusmv\core\be\;CMake Files\code\nusmv\core\dag\;CMake Files\code\nusmv\core\enc\;CMake Files\code\nusmv\core\ltl\;CMake Files\code\nusmv\core\mc\;CMake Files\code\nusmv\core\opt\;CMake Files\code\nusmv\core\prop\;CMake Files\code\nusmv\core\sat\;CMake Files\code\nusmv\core\sat\solvers\;CMake Files\code\nusmv\core\set\;CMake Files\code\nusmv\core\simulate\;CMake Files\code\nusmv\core\trans\;CMake Files\code\nusmv\core\trace\;CMake Files\code\nusmv\core\bmc\;CMake Files\code\nusmv\core\bmc\sbmc\;CMake Files\code\nusmv\core\compile\;CMake Files\code\nusmv\core\compile\dependency\;CMake Files\code\nusmv\core\compile\flattening\;CMake Files\code\nusmv\core\compile\symb_table\;CMake Files\code\nusmv\core\compile\type_checking\;CMake Files\code\nusmv\core\dd\;CMake Files\code\nusmv\core\fsm\;CMake Files\code\nusmv\core\node\;CMake Files\code\nusmv\core\node\normalizers\;CMake Files\code\nusmv\core\node\printers\;CMake Files\code\nusmv\core\node\anonymizers\;CMake Files\code\nusmv\core\rbc\;CMake Files\code\nusmv\core\cinit\;CMake Files\code\nusmv\core\utils\;CMake Files\code\nusmv\core\sexp\;CMake Files\code\nusmv\core\hrc\;CMake Files\code\nusmv\core\hrc\dumpers\;CMake Files\code\nusmv\core\wff\;CMake Files\code\nusmv\core\wff\w2w\;CMake Files\code\nusmv\core\wff\lr\;CMake Files\code\nusmv\addons_core\;CMake Files\code\nusmv\addons_core\compass\;CMake Files\code\nusmv\addons_core\compass\parser\;CMake Files\code\nusmv\addons_core\compass\parser\prob\;CMake Files\code\nusmv\addons_core\compass\parser\ap\;CMake Files\code\nusmv\shell\;CMake Files\code\nusmv\shell\parser\;CMake Files\code\nusmv\shell\enc\;CMake Files\code\nusmv\shell\ltl\;CMake Files\code\nusmv\shell\mc\;CMake Files\code\nusmv\shell\opt\;CMake Files\code\nusmv\shell\prop\;CMake Files\code\nusmv\shell\simulate\;CMake Files\code\nusmv\shell\trace\;CMake Files\code\nusmv\shell\bmc\;CMake Files\code\nusmv\shell\compile\;CMake Files\code\nusmv\shell\dd\;CMake Files\code\nusmv\shell\fsm\;CMake Files\code\nusmv\shell\cinit\;CMake Files\code\nusmv\shell\utils\;CMake Files\code\nusmv\shell\hrc\;CMake Files\code\nusmv\shell\cmd\;CMake Files\doc\;CMake Files\doc\user-man\;CMake Files\doc\tutorial\;CMake Files\doc\html\;CMake Files\doc\prog-man\;CMake Files\contrib\;CMake Files\examples\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-MiniSat"/>
+				<Option working_dir="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-MiniSat"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-MiniSat/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-MiniSat/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-MiniSat/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-MiniSat/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-MiniSat/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-MiniSat/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-MiniSat/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-MiniSat/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="MINISAT_BUILD">
-				<Option working_dir="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-MiniSat"/>
+				<Option working_dir="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-MiniSat"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-MiniSat/Makefile&quot;  VERBOSE=1 MINISAT_BUILD"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-MiniSat/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-MiniSat/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-MiniSat/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-MiniSat/Makefile&quot;  VERBOSE=1 MINISAT_BUILD"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-MiniSat/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-MiniSat/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-MiniSat/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake/NuSMVUtils.cmake">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake/NuSMVUtils.cmake">
 			<Option virtualFolder="CMake Files\cmake\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake/test-inline.c">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake/test-inline.c">
 			<Option virtualFolder="CMake Files\cmake\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/../cudd-2.4.1.1/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/../cudd-2.4.1.1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\..\cudd-2.4.1.1\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/../cudd-2.4.1.1/st/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/../cudd-2.4.1.1/st/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\..\cudd-2.4.1.1\st\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/../cudd-2.4.1.1/st/st.h">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/../cudd-2.4.1.1/st/st.h">
 			<Option virtualFolder="CMake Files\..\cudd-2.4.1.1\st\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/../cudd-2.4.1.1/cudd/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/../cudd-2.4.1.1/cudd/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\..\cudd-2.4.1.1\cudd\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/../cudd-2.4.1.1/cudd/cudd.h">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/../cudd-2.4.1.1/cudd/cudd.h">
 			<Option virtualFolder="CMake Files\..\cudd-2.4.1.1\cudd\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/../cudd-2.4.1.1/cudd/cuddInt.h">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/../cudd-2.4.1.1/cudd/cuddInt.h">
 			<Option virtualFolder="CMake Files\..\cudd-2.4.1.1\cudd\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/../cudd-2.4.1.1/epd/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/../cudd-2.4.1.1/epd/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\..\cudd-2.4.1.1\epd\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/../cudd-2.4.1.1/epd/epd.h">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/../cudd-2.4.1.1/epd/epd.h">
 			<Option virtualFolder="CMake Files\..\cudd-2.4.1.1\epd\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/../cudd-2.4.1.1/mtr/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/../cudd-2.4.1.1/mtr/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\..\cudd-2.4.1.1\mtr\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/../cudd-2.4.1.1/mtr/mtr.h">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/../cudd-2.4.1.1/mtr/mtr.h">
 			<Option virtualFolder="CMake Files\..\cudd-2.4.1.1\mtr\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/../cudd-2.4.1.1/util/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/../cudd-2.4.1.1/util/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\..\cudd-2.4.1.1\util\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/../cudd-2.4.1.1/util/util.h">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/../cudd-2.4.1.1/util/util.h">
 			<Option virtualFolder="CMake Files\..\cudd-2.4.1.1\util\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/../MiniSat/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/../MiniSat/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\..\MiniSat\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/../MiniSat/minisat-default.cmake">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/../MiniSat/minisat-default.cmake">
 			<Option virtualFolder="CMake Files\..\MiniSat\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\core\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/parser/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/parser/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\core\parser\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/parser/ord/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/parser/ord/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\core\parser\ord\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/parser/idlist/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/parser/idlist/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\core\parser\idlist\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/parser/psl/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/parser/psl/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\core\parser\psl\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/be/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/be/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\core\be\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/dag/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/dag/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\core\dag\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/enc/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/enc/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\core\enc\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/ltl/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/ltl/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\core\ltl\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/mc/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/mc/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\core\mc\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/opt/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/opt/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\core\opt\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/prop/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/prop/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\core\prop\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/sat/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/sat/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\core\sat\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/sat/solvers/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/sat/solvers/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\core\sat\solvers\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/set/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/set/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\core\set\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/simulate/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/simulate/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\core\simulate\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/trans/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/trans/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\core\trans\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\core\trace\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\core\bmc\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/sbmc/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/sbmc/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\core\bmc\sbmc\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\core\compile\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/dependency/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/dependency/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\core\compile\dependency\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/flattening/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/flattening/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\core\compile\flattening\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/symb_table/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/symb_table/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\core\compile\symb_table\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/type_checking/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/type_checking/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\core\compile\type_checking\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/dd/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/dd/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\core\dd\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/fsm/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/fsm/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\core\fsm\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/node/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/node/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\core\node\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/node/normalizers/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/node/normalizers/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\core\node\normalizers\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/node/printers/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/node/printers/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\core\node\printers\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/node/anonymizers/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/node/anonymizers/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\core\node\anonymizers\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/rbc/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/rbc/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\core\rbc\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/cinit/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/cinit/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\core\cinit\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/utils/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/utils/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\core\utils\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/sexp/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/sexp/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\core\sexp\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\core\hrc\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/dumpers/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/dumpers/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\core\hrc\dumpers\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/wff/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/wff/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\core\wff\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/wff/w2w/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/wff/w2w/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\core\wff\w2w\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/wff/lr/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/wff/lr/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\core\wff\lr\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/addons_core/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/addons_core/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\addons_core\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/addons_core/compass/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/addons_core/compass/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\addons_core\compass\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/addons_core/compass/parser/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/addons_core/compass/parser/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\addons_core\compass\parser\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/addons_core/compass/parser/prob/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/addons_core/compass/parser/prob/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\addons_core\compass\parser\prob\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/addons_core/compass/parser/ap/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/addons_core/compass/parser/ap/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\addons_core\compass\parser\ap\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\shell\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/parser/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/parser/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\shell\parser\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/enc/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/enc/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\shell\enc\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/ltl/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/ltl/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\shell\ltl\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/mc/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/mc/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\shell\mc\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/opt/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/opt/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\shell\opt\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/prop/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/prop/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\shell\prop\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/simulate/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/simulate/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\shell\simulate\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/trace/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/trace/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\shell\trace\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/bmc/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/bmc/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\shell\bmc\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/compile/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/compile/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\shell\compile\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/dd/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/dd/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\shell\dd\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/fsm/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/fsm/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\shell\fsm\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/cinit/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/cinit/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\shell\cinit\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/utils/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/utils/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\shell\utils\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/hrc/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/hrc/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\shell\hrc\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/cmd/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/cmd/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\code\nusmv\shell\cmd\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/cmd/cmdHelp.c.in">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/cmd/cmdHelp.c.in">
 			<Option virtualFolder="CMake Files\code\nusmv\shell\cmd\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/doc/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/doc/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\doc\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/doc/user-man/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/doc/user-man/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\doc\user-man\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/doc/tutorial/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/doc/tutorial/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\doc\tutorial\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/doc/html/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/doc/html/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\doc\html\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/doc/prog-man/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/doc/prog-man/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\doc\prog-man\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/contrib/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/contrib/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\contrib\"/>
 		</Unit>
-		<Unit filename="/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/examples/CMakeLists.txt">
+		<Unit filename="/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/examples/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\examples\"/>
 		</Unit>
 	</Project>

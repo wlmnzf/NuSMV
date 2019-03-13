@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/util/cpu_stats.c
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/util/cpu_stats.c
 stdio.h
 -
 util.h
-/home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/util/util.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/util/util.h
 sys/types.h
 -
 sys/time.h
@@ -18,11 +18,11 @@ sys/time.h
 sys/resource.h
 -
 
-/home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/util/cpu_time.c
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/util/cpu_time.c
 stdio.h
 -
 util.h
-/home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/util/util.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/util/util.h
 sys/types.h
 -
 sys/time.h
@@ -40,77 +40,77 @@ types.h
 time.h
 -
 
-/home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/util/datalimit.c
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/util/datalimit.c
 sys/time.h
 -
 sys/resource.h
 -
 
-/home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/util/getopt.c
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/util/getopt.c
 stdio.h
 -
 util.h
-/home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/util/util.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/util/util.h
 
-/home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/util/pathsearch.c
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/util/pathsearch.c
 stdio.h
 -
 util.h
-/home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/util/util.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/util/util.h
 
-/home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/util/pipefork.c
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/util/pipefork.c
 util.h
-/home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/util/util.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/util/util.h
 sys/wait.h
 -
 
-/home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/util/prtime.c
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/util/prtime.c
 stdio.h
 -
 util.h
-/home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/util/util.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/util/util.h
 
-/home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/util/ptime.c
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/util/ptime.c
 util.h
-/home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/util/util.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/util/util.h
 
-/home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/util/safe_mem.c
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/util/safe_mem.c
 stdio.h
 -
 util.h
-/home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/util/util.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/util/util.h
 
-/home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/util/strsav.c
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/util/strsav.c
 stdio.h
 -
 util.h
-/home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/util/util.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/util/util.h
 
-/home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/util/stub.c
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/util/stub.c
 stdio.h
 -
 
-/home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/util/texpand.c
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/util/texpand.c
 stdio.h
 -
 util.h
-/home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/util/util.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/util/util.h
 pwd.h
 -
 
-/home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/util/tmpfile.c
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/util/tmpfile.c
 stdio.h
 -
 util.h
-/home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/util/util.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/util/util.h
 
-/home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/util/util.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/util/util.h
 nusmv-config.h
-/home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/util/nusmv-config.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/util/nusmv-config.h
 unistd.h
 -
 mnemosyne.h
-/home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/util/mnemosyne.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/util/mnemosyne.h
 stdio.h
 -
 ctype.h

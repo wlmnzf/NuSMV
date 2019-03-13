@@ -104,7 +104,7 @@ code/nusmv/shell/simulate/CMakeFiles/code_nusmv_shell_simulate.dir/simulateCmd.c
  ../code/nusmv/core/wff/ExprMgr.h
  ../code/nusmv/shell/cmd/cmd.h
  ../code/nusmv/shell/simulate/simulateCmd.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/simulate/simulateCmd.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/simulate/simulateCmd.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h

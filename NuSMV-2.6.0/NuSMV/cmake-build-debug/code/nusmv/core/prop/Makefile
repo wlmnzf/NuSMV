@@ -48,10 +48,10 @@ RM = /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV
+CMAKE_SOURCE_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug
+CMAKE_BINARY_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -93,7 +93,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -104,7 +104,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CPackSourceConfig.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -159,14 +159,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/prop/CMakeFiles/progress.marks
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/prop/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/prop/CMakeFiles/progress.marks
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/prop/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/prop/clean
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/prop/clean
 .PHONY : clean
 
 # The main clean target
@@ -176,22 +176,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/prop/preinstall
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/prop/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/prop/preinstall
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/prop/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/rule:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/rule
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/rule
 .PHONY : code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/rule
 
 # Convenience name for target.
@@ -201,7 +201,7 @@ code_nusmv_core_prop: code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/r
 
 # fast build rule for target.
 code_nusmv_core_prop/fast:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/build.make code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/build
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/build.make code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/build
 .PHONY : code_nusmv_core_prop/fast
 
 Prop.o: Prop.c.o
@@ -210,7 +210,7 @@ Prop.o: Prop.c.o
 
 # target to build an object file
 Prop.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/build.make code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/Prop.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/build.make code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/Prop.c.o
 .PHONY : Prop.c.o
 
 Prop.i: Prop.c.i
@@ -219,7 +219,7 @@ Prop.i: Prop.c.i
 
 # target to preprocess a source file
 Prop.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/build.make code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/Prop.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/build.make code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/Prop.c.i
 .PHONY : Prop.c.i
 
 Prop.s: Prop.c.s
@@ -228,7 +228,7 @@ Prop.s: Prop.c.s
 
 # target to generate assembly for a file
 Prop.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/build.make code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/Prop.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/build.make code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/Prop.c.s
 .PHONY : Prop.c.s
 
 PropDb.o: PropDb.c.o
@@ -237,7 +237,7 @@ PropDb.o: PropDb.c.o
 
 # target to build an object file
 PropDb.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/build.make code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/PropDb.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/build.make code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/PropDb.c.o
 .PHONY : PropDb.c.o
 
 PropDb.i: PropDb.c.i
@@ -246,7 +246,7 @@ PropDb.i: PropDb.c.i
 
 # target to preprocess a source file
 PropDb.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/build.make code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/PropDb.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/build.make code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/PropDb.c.i
 .PHONY : PropDb.c.i
 
 PropDb.s: PropDb.c.s
@@ -255,7 +255,7 @@ PropDb.s: PropDb.c.s
 
 # target to generate assembly for a file
 PropDb.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/build.make code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/PropDb.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/build.make code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/PropDb.c.s
 .PHONY : PropDb.c.s
 
 Prop_Rewriter.o: Prop_Rewriter.c.o
@@ -264,7 +264,7 @@ Prop_Rewriter.o: Prop_Rewriter.c.o
 
 # target to build an object file
 Prop_Rewriter.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/build.make code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/Prop_Rewriter.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/build.make code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/Prop_Rewriter.c.o
 .PHONY : Prop_Rewriter.c.o
 
 Prop_Rewriter.i: Prop_Rewriter.c.i
@@ -273,7 +273,7 @@ Prop_Rewriter.i: Prop_Rewriter.c.i
 
 # target to preprocess a source file
 Prop_Rewriter.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/build.make code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/Prop_Rewriter.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/build.make code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/Prop_Rewriter.c.i
 .PHONY : Prop_Rewriter.c.i
 
 Prop_Rewriter.s: Prop_Rewriter.c.s
@@ -282,7 +282,7 @@ Prop_Rewriter.s: Prop_Rewriter.c.s
 
 # target to generate assembly for a file
 Prop_Rewriter.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/build.make code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/Prop_Rewriter.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/build.make code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/Prop_Rewriter.c.s
 .PHONY : Prop_Rewriter.c.s
 
 propPkg.o: propPkg.c.o
@@ -291,7 +291,7 @@ propPkg.o: propPkg.c.o
 
 # target to build an object file
 propPkg.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/build.make code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/propPkg.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/build.make code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/propPkg.c.o
 .PHONY : propPkg.c.o
 
 propPkg.i: propPkg.c.i
@@ -300,7 +300,7 @@ propPkg.i: propPkg.c.i
 
 # target to preprocess a source file
 propPkg.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/build.make code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/propPkg.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/build.make code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/propPkg.c.i
 .PHONY : propPkg.c.i
 
 propPkg.s: propPkg.c.s
@@ -309,7 +309,7 @@ propPkg.s: propPkg.c.s
 
 # target to generate assembly for a file
 propPkg.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/build.make code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/propPkg.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/build.make code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/propPkg.c.s
 .PHONY : propPkg.c.s
 
 propProp.o: propProp.c.o
@@ -318,7 +318,7 @@ propProp.o: propProp.c.o
 
 # target to build an object file
 propProp.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/build.make code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/propProp.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/build.make code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/propProp.c.o
 .PHONY : propProp.c.o
 
 propProp.i: propProp.c.i
@@ -327,7 +327,7 @@ propProp.i: propProp.c.i
 
 # target to preprocess a source file
 propProp.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/build.make code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/propProp.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/build.make code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/propProp.c.i
 .PHONY : propProp.c.i
 
 propProp.s: propProp.c.s
@@ -336,7 +336,7 @@ propProp.s: propProp.c.s
 
 # target to generate assembly for a file
 propProp.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/build.make code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/propProp.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/build.make code/nusmv/core/prop/CMakeFiles/code_nusmv_core_prop.dir/propProp.c.s
 .PHONY : propProp.c.s
 
 # Help Target
@@ -381,6 +381,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

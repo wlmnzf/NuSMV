@@ -72,7 +72,7 @@ code/nusmv/core/opt/CMakeFiles/code_nusmv_core_opt.dir/OptsHandler.c.o
  ../code/nusmv/core/utils/ustring.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/opt/OptsHandler.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/opt/OptsHandler.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -174,7 +174,7 @@ code/nusmv/core/opt/CMakeFiles/code_nusmv_core_opt.dir/opt.c.o
  ../code/nusmv/core/utils/ucmd.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/opt/opt.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/opt/opt.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -264,7 +264,7 @@ code/nusmv/core/opt/CMakeFiles/code_nusmv_core_opt.dir/optPkg.c.o
  ../code/nusmv/core/utils/ucmd.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/opt/optPkg.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/opt/optPkg.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h

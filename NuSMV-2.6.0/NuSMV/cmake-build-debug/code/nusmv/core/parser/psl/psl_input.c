@@ -1,6 +1,6 @@
-#line 2 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl/psl_input.c"
+#line 2 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl/psl_input.c"
 
-#line 4 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl/psl_input.c"
+#line 4 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl/psl_input.c"
 
 #define  YY_INT_ALIGNED short int
 
@@ -1069,11 +1069,11 @@ void psl_yyerror(char* s, ...);
 #endif /* NUSMV_HAVE_ERRNO_H */
 
 
-#line 1073 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl/psl_input.c"
+#line 1073 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl/psl_input.c"
 #line 182 "psl_input.l"
  /* Word operation tokens */
  /* READ & WRITE? */
-#line 1077 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl/psl_input.c"
+#line 1077 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl/psl_input.c"
 
 #define INITIAL 0
 
@@ -1293,7 +1293,7 @@ YY_DECL
 #line 304 "psl_input.l"
 
 
-#line 1297 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl/psl_input.c"
+#line 1297 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl/psl_input.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -2093,7 +2093,7 @@ YY_RULE_SETUP
 #line 524 "psl_input.l"
 ECHO;
 	YY_BREAK
-#line 2097 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl/psl_input.c"
+#line 2097 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl/psl_input.c"
 
 	case YY_END_OF_BUFFER:
 		{

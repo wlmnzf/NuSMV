@@ -1,4 +1,4 @@
-# Install script for directory: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/doc/html
+# Install script for directory: /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/doc/html
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

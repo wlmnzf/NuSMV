@@ -43,10 +43,10 @@ RM = /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV
+CMAKE_SOURCE_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug
+CMAKE_BINARY_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/depend.make
@@ -58,80 +58,80 @@ include code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/pro
 include code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/flags.make
 
 code/nusmv/core/parser/psl/psl_grammar.c: ../code/nusmv/core/parser/psl/psl_grammar.y
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "[BISON][nusmv_core_psl_parser] Building parser with bison 3.0.4"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/parser/psl && /usr/bin/bison -d -p psl_yy -d -o /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl/psl_grammar.c psl_grammar.y
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "[BISON][nusmv_core_psl_parser] Building parser with bison 3.0.4"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/parser/psl && /usr/bin/bison -d -p psl_yy -d -o /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl/psl_grammar.c psl_grammar.y
 
 code/nusmv/core/parser/psl/psl_grammar.h: code/nusmv/core/parser/psl/psl_grammar.c
 	@$(CMAKE_COMMAND) -E touch_nocreate code/nusmv/core/parser/psl/psl_grammar.h
 
 code/nusmv/core/parser/psl/psl_input.c: ../code/nusmv/core/parser/psl/psl_input.l
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "[FLEX][nusmv_core_psl_lexer] Building scanner with flex 2.6.4"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/parser/psl && /usr/bin/flex -Ppsl_yy -o/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl/psl_input.c psl_input.l
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "[FLEX][nusmv_core_psl_lexer] Building scanner with flex 2.6.4"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/parser/psl && /usr/bin/flex -Ppsl_yy -o/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl/psl_input.c psl_input.l
 
 code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/pslExpr.c.o: code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/flags.make
 code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/pslExpr.c.o: ../code/nusmv/core/parser/psl/pslExpr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/pslExpr.c.o"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_parser_psl.dir/pslExpr.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/parser/psl/pslExpr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/pslExpr.c.o"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_parser_psl.dir/pslExpr.c.o   -c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/parser/psl/pslExpr.c
 
 code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/pslExpr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code_nusmv_core_parser_psl.dir/pslExpr.c.i"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/parser/psl/pslExpr.c > CMakeFiles/code_nusmv_core_parser_psl.dir/pslExpr.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/parser/psl/pslExpr.c > CMakeFiles/code_nusmv_core_parser_psl.dir/pslExpr.c.i
 
 code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/pslExpr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code_nusmv_core_parser_psl.dir/pslExpr.c.s"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/parser/psl/pslExpr.c -o CMakeFiles/code_nusmv_core_parser_psl.dir/pslExpr.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/parser/psl/pslExpr.c -o CMakeFiles/code_nusmv_core_parser_psl.dir/pslExpr.c.s
 
 code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/pslNode.c.o: code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/flags.make
 code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/pslNode.c.o: ../code/nusmv/core/parser/psl/pslNode.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/pslNode.c.o"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_parser_psl.dir/pslNode.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/parser/psl/pslNode.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/pslNode.c.o"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_parser_psl.dir/pslNode.c.o   -c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/parser/psl/pslNode.c
 
 code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/pslNode.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code_nusmv_core_parser_psl.dir/pslNode.c.i"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/parser/psl/pslNode.c > CMakeFiles/code_nusmv_core_parser_psl.dir/pslNode.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/parser/psl/pslNode.c > CMakeFiles/code_nusmv_core_parser_psl.dir/pslNode.c.i
 
 code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/pslNode.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code_nusmv_core_parser_psl.dir/pslNode.c.s"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/parser/psl/pslNode.c -o CMakeFiles/code_nusmv_core_parser_psl.dir/pslNode.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/parser/psl/pslNode.c -o CMakeFiles/code_nusmv_core_parser_psl.dir/pslNode.c.s
 
 code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/pslConv.c.o: code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/flags.make
 code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/pslConv.c.o: ../code/nusmv/core/parser/psl/pslConv.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/pslConv.c.o"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_parser_psl.dir/pslConv.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/parser/psl/pslConv.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/pslConv.c.o"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_parser_psl.dir/pslConv.c.o   -c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/parser/psl/pslConv.c
 
 code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/pslConv.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code_nusmv_core_parser_psl.dir/pslConv.c.i"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/parser/psl/pslConv.c > CMakeFiles/code_nusmv_core_parser_psl.dir/pslConv.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/parser/psl/pslConv.c > CMakeFiles/code_nusmv_core_parser_psl.dir/pslConv.c.i
 
 code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/pslConv.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code_nusmv_core_parser_psl.dir/pslConv.c.s"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/parser/psl/pslConv.c -o CMakeFiles/code_nusmv_core_parser_psl.dir/pslConv.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/parser/psl/pslConv.c -o CMakeFiles/code_nusmv_core_parser_psl.dir/pslConv.c.s
 
 code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/psl_grammar.c.o: code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/flags.make
 code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/psl_grammar.c.o: code/nusmv/core/parser/psl/psl_grammar.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/psl_grammar.c.o"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_parser_psl.dir/psl_grammar.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl/psl_grammar.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/psl_grammar.c.o"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_parser_psl.dir/psl_grammar.c.o   -c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl/psl_grammar.c
 
 code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/psl_grammar.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code_nusmv_core_parser_psl.dir/psl_grammar.c.i"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl/psl_grammar.c > CMakeFiles/code_nusmv_core_parser_psl.dir/psl_grammar.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl/psl_grammar.c > CMakeFiles/code_nusmv_core_parser_psl.dir/psl_grammar.c.i
 
 code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/psl_grammar.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code_nusmv_core_parser_psl.dir/psl_grammar.c.s"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl/psl_grammar.c -o CMakeFiles/code_nusmv_core_parser_psl.dir/psl_grammar.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl/psl_grammar.c -o CMakeFiles/code_nusmv_core_parser_psl.dir/psl_grammar.c.s
 
 code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/psl_input.c.o: code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/flags.make
 code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/psl_input.c.o: code/nusmv/core/parser/psl/psl_input.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/psl_input.c.o"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_parser_psl.dir/psl_input.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl/psl_input.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/psl_input.c.o"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_parser_psl.dir/psl_input.c.o   -c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl/psl_input.c
 
 code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/psl_input.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code_nusmv_core_parser_psl.dir/psl_input.c.i"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl/psl_input.c > CMakeFiles/code_nusmv_core_parser_psl.dir/psl_input.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl/psl_input.c > CMakeFiles/code_nusmv_core_parser_psl.dir/psl_input.c.i
 
 code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/psl_input.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code_nusmv_core_parser_psl.dir/psl_input.c.s"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl/psl_input.c -o CMakeFiles/code_nusmv_core_parser_psl.dir/psl_input.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl/psl_input.c -o CMakeFiles/code_nusmv_core_parser_psl.dir/psl_input.c.s
 
 code_nusmv_core_parser_psl: code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/pslExpr.c.o
 code_nusmv_core_parser_psl: code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/pslNode.c.o
@@ -148,12 +148,12 @@ code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/build: code
 .PHONY : code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/build
 
 code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/clean:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl && $(CMAKE_COMMAND) -P CMakeFiles/code_nusmv_core_parser_psl.dir/cmake_clean.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl && $(CMAKE_COMMAND) -P CMakeFiles/code_nusmv_core_parser_psl.dir/cmake_clean.cmake
 .PHONY : code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/clean
 
 code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/depend: code/nusmv/core/parser/psl/psl_grammar.c
 code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/depend: code/nusmv/core/parser/psl/psl_grammar.h
 code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/depend: code/nusmv/core/parser/psl/psl_input.c
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/parser/psl /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/parser/psl /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/depend
 

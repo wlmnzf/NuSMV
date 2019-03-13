@@ -48,10 +48,10 @@ RM = /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV
+CMAKE_SOURCE_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug
+CMAKE_BINARY_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -93,7 +93,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -104,7 +104,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CPackSourceConfig.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -159,14 +159,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/hrc/dumpers/CMakeFiles/progress.marks
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/hrc/dumpers/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/hrc/dumpers/CMakeFiles/progress.marks
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/hrc/dumpers/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/hrc/dumpers/clean
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/hrc/dumpers/clean
 .PHONY : clean
 
 # The main clean target
@@ -176,22 +176,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/hrc/dumpers/preinstall
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/hrc/dumpers/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/hrc/dumpers/preinstall
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/hrc/dumpers/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/rule:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/rule
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/rule
 .PHONY : code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/rule
 
 # Convenience name for target.
@@ -201,7 +201,7 @@ code_nusmv_core_hrc_dumpers: code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_c
 
 # fast build rule for target.
 code_nusmv_core_hrc_dumpers/fast:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/build.make code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/build
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/build.make code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/build
 .PHONY : code_nusmv_core_hrc_dumpers/fast
 
 HrcDumper.o: HrcDumper.c.o
@@ -210,7 +210,7 @@ HrcDumper.o: HrcDumper.c.o
 
 # target to build an object file
 HrcDumper.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/build.make code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumper.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/build.make code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumper.c.o
 .PHONY : HrcDumper.c.o
 
 HrcDumper.i: HrcDumper.c.i
@@ -219,7 +219,7 @@ HrcDumper.i: HrcDumper.c.i
 
 # target to preprocess a source file
 HrcDumper.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/build.make code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumper.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/build.make code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumper.c.i
 .PHONY : HrcDumper.c.i
 
 HrcDumper.s: HrcDumper.c.s
@@ -228,7 +228,7 @@ HrcDumper.s: HrcDumper.c.s
 
 # target to generate assembly for a file
 HrcDumper.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/build.make code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumper.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/build.make code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumper.c.s
 .PHONY : HrcDumper.c.s
 
 HrcDumperAnonymizer.o: HrcDumperAnonymizer.c.o
@@ -237,7 +237,7 @@ HrcDumperAnonymizer.o: HrcDumperAnonymizer.c.o
 
 # target to build an object file
 HrcDumperAnonymizer.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/build.make code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperAnonymizer.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/build.make code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperAnonymizer.c.o
 .PHONY : HrcDumperAnonymizer.c.o
 
 HrcDumperAnonymizer.i: HrcDumperAnonymizer.c.i
@@ -246,7 +246,7 @@ HrcDumperAnonymizer.i: HrcDumperAnonymizer.c.i
 
 # target to preprocess a source file
 HrcDumperAnonymizer.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/build.make code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperAnonymizer.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/build.make code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperAnonymizer.c.i
 .PHONY : HrcDumperAnonymizer.c.i
 
 HrcDumperAnonymizer.s: HrcDumperAnonymizer.c.s
@@ -255,7 +255,7 @@ HrcDumperAnonymizer.s: HrcDumperAnonymizer.c.s
 
 # target to generate assembly for a file
 HrcDumperAnonymizer.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/build.make code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperAnonymizer.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/build.make code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperAnonymizer.c.s
 .PHONY : HrcDumperAnonymizer.c.s
 
 HrcDumperDebug.o: HrcDumperDebug.c.o
@@ -264,7 +264,7 @@ HrcDumperDebug.o: HrcDumperDebug.c.o
 
 # target to build an object file
 HrcDumperDebug.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/build.make code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperDebug.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/build.make code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperDebug.c.o
 .PHONY : HrcDumperDebug.c.o
 
 HrcDumperDebug.i: HrcDumperDebug.c.i
@@ -273,7 +273,7 @@ HrcDumperDebug.i: HrcDumperDebug.c.i
 
 # target to preprocess a source file
 HrcDumperDebug.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/build.make code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperDebug.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/build.make code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperDebug.c.i
 .PHONY : HrcDumperDebug.c.i
 
 HrcDumperDebug.s: HrcDumperDebug.c.s
@@ -282,7 +282,7 @@ HrcDumperDebug.s: HrcDumperDebug.c.s
 
 # target to generate assembly for a file
 HrcDumperDebug.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/build.make code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperDebug.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/build.make code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperDebug.c.s
 .PHONY : HrcDumperDebug.c.s
 
 HrcDumperSmv.o: HrcDumperSmv.c.o
@@ -291,7 +291,7 @@ HrcDumperSmv.o: HrcDumperSmv.c.o
 
 # target to build an object file
 HrcDumperSmv.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/build.make code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperSmv.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/build.make code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperSmv.c.o
 .PHONY : HrcDumperSmv.c.o
 
 HrcDumperSmv.i: HrcDumperSmv.c.i
@@ -300,7 +300,7 @@ HrcDumperSmv.i: HrcDumperSmv.c.i
 
 # target to preprocess a source file
 HrcDumperSmv.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/build.make code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperSmv.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/build.make code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperSmv.c.i
 .PHONY : HrcDumperSmv.c.i
 
 HrcDumperSmv.s: HrcDumperSmv.c.s
@@ -309,7 +309,7 @@ HrcDumperSmv.s: HrcDumperSmv.c.s
 
 # target to generate assembly for a file
 HrcDumperSmv.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/build.make code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperSmv.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/build.make code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperSmv.c.s
 .PHONY : HrcDumperSmv.c.s
 
 HrcDumperXml.o: HrcDumperXml.c.o
@@ -318,7 +318,7 @@ HrcDumperXml.o: HrcDumperXml.c.o
 
 # target to build an object file
 HrcDumperXml.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/build.make code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperXml.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/build.make code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperXml.c.o
 .PHONY : HrcDumperXml.c.o
 
 HrcDumperXml.i: HrcDumperXml.c.i
@@ -327,7 +327,7 @@ HrcDumperXml.i: HrcDumperXml.c.i
 
 # target to preprocess a source file
 HrcDumperXml.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/build.make code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperXml.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/build.make code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperXml.c.i
 .PHONY : HrcDumperXml.c.i
 
 HrcDumperXml.s: HrcDumperXml.c.s
@@ -336,7 +336,7 @@ HrcDumperXml.s: HrcDumperXml.c.s
 
 # target to generate assembly for a file
 HrcDumperXml.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/build.make code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperXml.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/build.make code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperXml.c.s
 .PHONY : HrcDumperXml.c.s
 
 # Help Target
@@ -381,6 +381,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

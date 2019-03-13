@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/trans/bdd/BddTrans.c" "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/trans/CMakeFiles/code_nusmv_core_trans.dir/bdd/BddTrans.c.o"
-  "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/trans/bdd/Cluster.c" "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/trans/CMakeFiles/code_nusmv_core_trans.dir/bdd/Cluster.c.o"
-  "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/trans/bdd/ClusterList.c" "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/trans/CMakeFiles/code_nusmv_core_trans.dir/bdd/ClusterList.c.o"
-  "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/trans/bdd/ClusterOptions.c" "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/trans/CMakeFiles/code_nusmv_core_trans.dir/bdd/ClusterOptions.c.o"
-  "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/trans/generic/GenericTrans.c" "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/trans/CMakeFiles/code_nusmv_core_trans.dir/generic/GenericTrans.c.o"
+  "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/trans/bdd/BddTrans.c" "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/trans/CMakeFiles/code_nusmv_core_trans.dir/bdd/BddTrans.c.o"
+  "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/trans/bdd/Cluster.c" "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/trans/CMakeFiles/code_nusmv_core_trans.dir/bdd/Cluster.c.o"
+  "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/trans/bdd/ClusterList.c" "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/trans/CMakeFiles/code_nusmv_core_trans.dir/bdd/ClusterList.c.o"
+  "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/trans/bdd/ClusterOptions.c" "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/trans/CMakeFiles/code_nusmv_core_trans.dir/bdd/ClusterOptions.c.o"
+  "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/trans/generic/GenericTrans.c" "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/trans/CMakeFiles/code_nusmv_core_trans.dir/generic/GenericTrans.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

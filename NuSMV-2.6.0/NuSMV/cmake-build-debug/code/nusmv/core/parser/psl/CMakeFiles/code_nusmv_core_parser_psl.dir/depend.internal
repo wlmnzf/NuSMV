@@ -88,7 +88,7 @@ code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/pslConv.c.o
  ../code/nusmv/core/utils/portability.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/parser/psl/pslConv.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/parser/psl/pslConv.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -183,7 +183,7 @@ code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/pslExpr.c.o
  ../code/nusmv/core/utils/ustring.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/parser/psl/pslExpr.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/parser/psl/pslExpr.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -279,7 +279,7 @@ code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/pslNode.c.o
  ../code/nusmv/core/utils/ustring.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/parser/psl/pslNode.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/parser/psl/pslNode.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -364,7 +364,7 @@ code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/psl_grammar
  ../code/nusmv/core/utils/portability.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl/psl_grammar.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl/psl_grammar.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -450,7 +450,7 @@ code/nusmv/core/parser/psl/CMakeFiles/code_nusmv_core_parser_psl.dir/psl_input.c
  ../code/nusmv/core/utils/portability.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl/psl_input.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/psl/psl_input.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h

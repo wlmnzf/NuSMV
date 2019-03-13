@@ -156,7 +156,7 @@ static boolean isCorrectExp(node_ptr exp, enum EXP_KIND expectedKind);
 
 
 
-#line 160 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:339  */
+#line 160 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:339  */
 
 # ifndef YY_NULLPTR
 #  if defined __cplusplus && 201103L <= __cplusplus
@@ -176,8 +176,8 @@ static boolean isCorrectExp(node_ptr exp, enum EXP_KIND expectedKind);
 
 /* In a future release of Bison, this section will be replaced
    by #include "ap_grammar.h".  */
-#ifndef YY_PARSER_AP_HOME_WILLIAM_NUSMV_A_NUSMV_2_6_0_NUSMV_CMAKE_BUILD_DEBUG_CODE_NUSMV_ADDONS_CORE_COMPASS_PARSER_AP_AP_GRAMMAR_H_INCLUDED
-# define YY_PARSER_AP_HOME_WILLIAM_NUSMV_A_NUSMV_2_6_0_NUSMV_CMAKE_BUILD_DEBUG_CODE_NUSMV_ADDONS_CORE_COMPASS_PARSER_AP_AP_GRAMMAR_H_INCLUDED
+#ifndef YY_PARSER_AP_HOME_WILLIAM_CLIONPROJECTS_NUSMV_NUSMV_2_6_0_NUSMV_CMAKE_BUILD_DEBUG_CODE_NUSMV_ADDONS_CORE_COMPASS_PARSER_AP_AP_GRAMMAR_H_INCLUDED
+# define YY_PARSER_AP_HOME_WILLIAM_CLIONPROJECTS_NUSMV_NUSMV_2_6_0_NUSMV_CMAKE_BUILD_DEBUG_CODE_NUSMV_ADDONS_CORE_COMPASS_PARSER_AP_AP_GRAMMAR_H_INCLUDED
 /* Debug traces.  */
 #ifndef YYDEBUG
 # define YYDEBUG 0
@@ -285,7 +285,7 @@ union YYSTYPE
 
   node_ptr node;
 
-#line 289 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:355  */
+#line 289 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:355  */
 };
 
 typedef union YYSTYPE YYSTYPE;
@@ -298,11 +298,11 @@ extern YYSTYPE parser_ap_lval;
 
 int parser_ap_parse (void);
 
-#endif /* !YY_PARSER_AP_HOME_WILLIAM_NUSMV_A_NUSMV_2_6_0_NUSMV_CMAKE_BUILD_DEBUG_CODE_NUSMV_ADDONS_CORE_COMPASS_PARSER_AP_AP_GRAMMAR_H_INCLUDED  */
+#endif /* !YY_PARSER_AP_HOME_WILLIAM_CLIONPROJECTS_NUSMV_NUSMV_2_6_0_NUSMV_CMAKE_BUILD_DEBUG_CODE_NUSMV_ADDONS_CORE_COMPASS_PARSER_AP_AP_GRAMMAR_H_INCLUDED  */
 
 /* Copy the second part of user declarations.  */
 
-#line 306 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:358  */
+#line 306 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:358  */
 
 #ifdef short
 # undef short
@@ -1631,13 +1631,13 @@ yyreduce:
         case 2:
 #line 143 "ap_grammar.y" /* yacc.c:1646  */
     { }
-#line 1635 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1635 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 3:
 #line 147 "ap_grammar.y" /* yacc.c:1646  */
     {}
-#line 1641 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1641 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 4:
@@ -1645,7 +1645,7 @@ yyreduce:
     {
                parser_ap_add(parser_ap_get_global_parser(), (yyvsp[-1].node));
              }
-#line 1649 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1649 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 5:
@@ -1653,37 +1653,37 @@ yyreduce:
     {
   (yyval.node) = parser_ap_mk_ap(parser_ap_get_global_parser(), (yyvsp[-3].node), (yyvsp[-1].node));
 }
-#line 1657 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1657 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 7:
 #line 161 "ap_grammar.y" /* yacc.c:1646  */
     {}
-#line 1663 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1663 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 9:
 #line 164 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = (yyvsp[0].node); }
-#line 1669 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1669 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 11:
 #line 168 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = (yyvsp[0].node); }
-#line 1675 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1675 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 12:
 #line 170 "ap_grammar.y" /* yacc.c:1646  */
     {node_int_setcar((yyvsp[0].node), -(node_get_int((yyvsp[0].node)))); (yyval.node) = (yyvsp[0].node);}
-#line 1681 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1681 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 17:
 #line 183 "ap_grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_node(NODEMGR, TWODOTS, (yyvsp[-2].node), (yyvsp[0].node));}
-#line 1687 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1687 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 22:
@@ -1691,7 +1691,7 @@ yyreduce:
     {
                  (yyval.node) = (yyvsp[0].node);
                }
-#line 1695 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1695 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 23:
@@ -1699,7 +1699,7 @@ yyreduce:
     {
                  (yyval.node) = (yyvsp[0].node);
                }
-#line 1703 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1703 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 24:
@@ -1707,19 +1707,19 @@ yyreduce:
     {
                  (yyval.node) = (yyvsp[0].node);
                }
-#line 1711 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1711 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 26:
 #line 212 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, UMINUS, (yyvsp[0].node), Nil); }
-#line 1717 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1717 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 28:
 #line 214 "ap_grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_node(NODEMGR, SELF,Nil,Nil);}
-#line 1723 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1723 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 29:
@@ -1734,7 +1734,7 @@ yyreduce:
                       }
                       (yyval.node) = new_node(NODEMGR, DOT, (yyvsp[-2].node), (yyvsp[0].node)) ;
                     }
-#line 1738 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1738 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 30:
@@ -1749,7 +1749,7 @@ yyreduce:
                       }
                       (yyval.node) = new_node(NODEMGR, DOT, (yyvsp[-2].node), (yyvsp[0].node)) ;
                     }
-#line 1753 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1753 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 31:
@@ -1764,7 +1764,7 @@ yyreduce:
                        }
                        (yyval.node) = new_node(NODEMGR, ARRAY, (yyvsp[-3].node), (yyvsp[-1].node));
                      }
-#line 1768 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1768 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 32:
@@ -1772,61 +1772,61 @@ yyreduce:
     {
                         (yyval.node) = new_node(NODEMGR, BIT_SELECTION, (yyvsp[-5].node), new_node(NODEMGR, COLON, (yyvsp[-3].node), (yyvsp[-1].node)));
                        }
-#line 1776 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1776 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 33:
 #line 252 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = (yyvsp[-1].node); }
-#line 1782 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1782 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 34:
 #line 253 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, NOT, (yyvsp[0].node), Nil); }
-#line 1788 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1788 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 35:
 #line 254 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, CAST_BOOL, (yyvsp[-1].node), Nil); }
-#line 1794 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1794 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 36:
 #line 255 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, CAST_WORD1, (yyvsp[-1].node), Nil); }
-#line 1800 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1800 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 37:
 #line 256 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, NEXT, (yyvsp[-1].node), Nil); }
-#line 1806 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1806 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 38:
 #line 257 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, CAST_SIGNED, (yyvsp[-1].node), Nil); }
-#line 1812 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1812 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 39:
 #line 258 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, CAST_UNSIGNED, (yyvsp[-1].node), Nil); }
-#line 1818 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1818 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 40:
 #line 259 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, EXTEND, (yyvsp[-3].node), (yyvsp[-1].node)); }
-#line 1824 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1824 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 41:
 #line 260 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = (yyvsp[-1].node); }
-#line 1830 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1830 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 42:
@@ -1843,313 +1843,313 @@ yyreduce:
                                        parser_ap_lineno);
                (yyval.node) = new_node(NODEMGR, CASE, (yyvsp[0].node), fail);
              }
-#line 1847 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1847 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 43:
 #line 277 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, CASE, (yyvsp[-1].node), (yyvsp[0].node)); }
-#line 1853 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1853 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 44:
 #line 282 "ap_grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_node(NODEMGR, COLON, (yyvsp[-3].node), (yyvsp[-1].node));}
-#line 1859 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1859 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 46:
 #line 287 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, CONCATENATION, (yyvsp[-2].node), (yyvsp[0].node)); }
-#line 1865 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1865 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 48:
 #line 292 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, TIMES, (yyvsp[-2].node), (yyvsp[0].node)); }
-#line 1871 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1871 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 49:
 #line 293 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, DIVIDE, (yyvsp[-2].node), (yyvsp[0].node)); }
-#line 1877 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1877 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 50:
 #line 294 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, MOD, (yyvsp[-2].node), (yyvsp[0].node)); }
-#line 1883 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1883 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 52:
 #line 299 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, PLUS, (yyvsp[-2].node), (yyvsp[0].node)); }
-#line 1889 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1889 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 53:
 #line 300 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, MINUS, (yyvsp[-2].node), (yyvsp[0].node)); }
-#line 1895 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1895 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 55:
 #line 304 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, LSHIFT, (yyvsp[-2].node), (yyvsp[0].node)); }
-#line 1901 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1901 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 56:
 #line 305 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, RSHIFT, (yyvsp[-2].node), (yyvsp[0].node)); }
-#line 1907 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1907 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 59:
 #line 313 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = (yyvsp[-1].node); }
-#line 1913 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1913 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 61:
 #line 317 "ap_grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_node(NODEMGR, UNION, (yyvsp[-2].node), (yyvsp[0].node));}
-#line 1919 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1919 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 63:
 #line 322 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, UNION, (yyvsp[-2].node), (yyvsp[0].node)); }
-#line 1925 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1925 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 65:
 #line 326 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, SETIN, (yyvsp[-2].node), (yyvsp[0].node)); }
-#line 1931 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1931 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 67:
 #line 331 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, EQUAL, (yyvsp[-2].node), (yyvsp[0].node)); }
-#line 1937 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1937 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 68:
 #line 332 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, NOTEQUAL, (yyvsp[-2].node), (yyvsp[0].node)); }
-#line 1943 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1943 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 69:
 #line 333 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, LT, (yyvsp[-2].node), (yyvsp[0].node)); }
-#line 1949 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1949 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 70:
 #line 334 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, GT, (yyvsp[-2].node), (yyvsp[0].node)); }
-#line 1955 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1955 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 71:
 #line 335 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, LE, (yyvsp[-2].node), (yyvsp[0].node)); }
-#line 1961 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1961 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 72:
 #line 336 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, GE, (yyvsp[-2].node), (yyvsp[0].node)); }
-#line 1967 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1967 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 75:
 #line 344 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, EX, (yyvsp[0].node), Nil); }
-#line 1973 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1973 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 76:
 #line 345 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, AX, (yyvsp[0].node), Nil); }
-#line 1979 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1979 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 77:
 #line 346 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, EF, (yyvsp[0].node), Nil); }
-#line 1985 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1985 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 78:
 #line 347 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, AF, (yyvsp[0].node), Nil); }
-#line 1991 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1991 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 79:
 #line 348 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, EG, (yyvsp[0].node), Nil); }
-#line 1997 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 1997 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 80:
 #line 349 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, AG, (yyvsp[0].node), Nil); }
-#line 2003 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 2003 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 81:
 #line 351 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, AU, (yyvsp[-3].node), (yyvsp[-1].node)); }
-#line 2009 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 2009 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 82:
 #line 353 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, EU, (yyvsp[-3].node), (yyvsp[-1].node)); }
-#line 2015 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 2015 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 83:
 #line 355 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, ABU, new_node(NODEMGR, AU, (yyvsp[-4].node), (yyvsp[-1].node)), (yyvsp[-2].node)); }
-#line 2021 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 2021 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 84:
 #line 357 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, EBU, new_node(NODEMGR, EU, (yyvsp[-4].node), (yyvsp[-1].node)), (yyvsp[-2].node)); }
-#line 2027 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 2027 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 85:
 #line 358 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, EBF, (yyvsp[0].node), (yyvsp[-1].node)); }
-#line 2033 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 2033 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 86:
 #line 359 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, ABF, (yyvsp[0].node), (yyvsp[-1].node)); }
-#line 2039 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 2039 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 87:
 #line 360 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, EBG, (yyvsp[0].node), (yyvsp[-1].node)); }
-#line 2045 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 2045 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 88:
 #line 361 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, ABG, (yyvsp[0].node), (yyvsp[-1].node)); }
-#line 2051 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 2051 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 89:
 #line 364 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, NOT, (yyvsp[0].node), Nil); }
-#line 2057 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 2057 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 91:
 #line 371 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, AND, (yyvsp[-2].node), (yyvsp[0].node)); }
-#line 2063 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 2063 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 93:
 #line 375 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, OR,(yyvsp[-2].node), (yyvsp[0].node)); }
-#line 2069 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 2069 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 94:
 #line 376 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, XOR,(yyvsp[-2].node), (yyvsp[0].node)); }
-#line 2075 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 2075 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 95:
 #line 377 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, XNOR,(yyvsp[-2].node), (yyvsp[0].node)); }
-#line 2081 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 2081 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 97:
 #line 381 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, IFF, (yyvsp[-2].node), (yyvsp[0].node)); }
-#line 2087 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 2087 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 99:
 #line 386 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, IMPLIES, (yyvsp[-2].node), (yyvsp[0].node)); }
-#line 2093 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 2093 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 103:
 #line 399 "ap_grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_node(NODEMGR, OP_NEXT, (yyvsp[0].node), Nil);}
-#line 2099 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 2099 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 104:
 #line 400 "ap_grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_node(NODEMGR, OP_PREC, (yyvsp[0].node), Nil);}
-#line 2105 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 2105 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 105:
 #line 401 "ap_grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_node(NODEMGR, OP_NOTPRECNOT, (yyvsp[0].node), Nil);}
-#line 2111 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 2111 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 106:
 #line 402 "ap_grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_node(NODEMGR, OP_GLOBAL, (yyvsp[0].node), Nil);}
-#line 2117 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 2117 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 107:
 #line 403 "ap_grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_node(NODEMGR, OP_HISTORICAL, (yyvsp[0].node), Nil);}
-#line 2123 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 2123 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 108:
 #line 404 "ap_grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_node(NODEMGR, OP_FUTURE, (yyvsp[0].node), Nil);}
-#line 2129 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 2129 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 109:
 #line 405 "ap_grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_node(NODEMGR, OP_ONCE, (yyvsp[0].node), Nil);}
-#line 2135 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 2135 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 110:
 #line 407 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, NOT, (yyvsp[0].node), Nil); }
-#line 2141 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 2141 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 112:
 #line 414 "ap_grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_node(NODEMGR, UNTIL, (yyvsp[-2].node), (yyvsp[0].node));}
-#line 2147 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 2147 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 113:
 #line 416 "ap_grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_node(NODEMGR, SINCE, (yyvsp[-2].node), (yyvsp[0].node));}
-#line 2153 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 2153 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 114:
@@ -2159,7 +2159,7 @@ yyreduce:
                              new_node(NODEMGR, NOT, (yyvsp[-2].node), Nil),
                              new_node(NODEMGR, NOT, (yyvsp[0].node), Nil)), Nil);
                   }
-#line 2163 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 2163 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 115:
@@ -2169,53 +2169,53 @@ yyreduce:
                               new_node(NODEMGR, NOT, (yyvsp[-2].node), Nil),
                               new_node(NODEMGR, NOT, (yyvsp[0].node), Nil)), Nil);
                   }
-#line 2173 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 2173 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 117:
 #line 433 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, AND, (yyvsp[-2].node), (yyvsp[0].node)); }
-#line 2179 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 2179 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 119:
 #line 438 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, OR,(yyvsp[-2].node), (yyvsp[0].node)); }
-#line 2185 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 2185 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 120:
 #line 439 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, XOR,(yyvsp[-2].node), (yyvsp[0].node)); }
-#line 2191 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 2191 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 121:
 #line 440 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, XNOR,(yyvsp[-2].node), (yyvsp[0].node)); }
-#line 2197 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 2197 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 123:
 #line 445 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, IFF, (yyvsp[-2].node), (yyvsp[0].node)); }
-#line 2203 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 2203 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 125:
 #line 450 "ap_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, IMPLIES, (yyvsp[-2].node), (yyvsp[0].node)); }
-#line 2209 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 2209 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
   case 127:
 #line 455 "ap_grammar.y" /* yacc.c:1646  */
     {if (!isCorrectExp((yyval.node), EXP_SIMPLE)) YYABORT;}
-#line 2215 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 2215 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
     break;
 
 
-#line 2219 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
+#line 2219 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c" /* yacc.c:1646  */
       default: break;
     }
   /* User semantic actions sometimes alter yychar, and that requires

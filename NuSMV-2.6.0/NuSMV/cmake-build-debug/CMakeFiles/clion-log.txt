@@ -1,22 +1,7 @@
-/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV
--- The C compiler identification is GNU 7.3.0
--- The CXX compiler identification is GNU 7.3.0
--- Check for working C compiler: /usr/bin/cc
--- Check for working C compiler: /usr/bin/cc -- works
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Detecting C compile features
--- Detecting C compile features - done
--- Check for working CXX compiler: /usr/bin/c++
--- Check for working CXX compiler: /usr/bin/c++ -- works
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- Found PythonInterp: /usr/bin/python (found version "2.7.15") 
+/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV
 -- Found FLEX: /usr/bin/flex (found version "2.6.4") 
 -- Found BISON: /usr/bin/bison (found version "3.0.4") 
-CMake Warning (dev) at /home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/CMakeLists.txt:2 (project):
+CMake Warning (dev) at /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/CMakeLists.txt:2 (project):
   Policy CMP0048 is not set: project() command manages VERSION variables.
   Run "cmake --help-policy CMP0048" for policy details.  Use the cmake_policy
   command to set the policy and suppress this warning.
@@ -38,42 +23,42 @@ This warning is for project developers.  Use -Wno-dev to suppress it.
 -- Check size of long int - done
 -- Check size of void *
 -- Check size of void * - done
-CMake Warning (dev) at /home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/CMakeLists.txt:57 (configure_file):
+CMake Warning (dev) at /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/CMakeLists.txt:57 (configure_file):
   configure_file called with unknown argument(s):
 
    COPY_ONLY
 
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
-CMake Warning (dev) at /home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/CMakeLists.txt:57 (configure_file):
+CMake Warning (dev) at /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/CMakeLists.txt:57 (configure_file):
   configure_file called with unknown argument(s):
 
    COPY_ONLY
 
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
-CMake Warning (dev) at /home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/CMakeLists.txt:57 (configure_file):
+CMake Warning (dev) at /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/CMakeLists.txt:57 (configure_file):
   configure_file called with unknown argument(s):
 
    COPY_ONLY
 
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
-CMake Warning (dev) at /home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/CMakeLists.txt:57 (configure_file):
+CMake Warning (dev) at /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/CMakeLists.txt:57 (configure_file):
   configure_file called with unknown argument(s):
 
    COPY_ONLY
 
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
-CMake Warning (dev) at /home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/CMakeLists.txt:57 (configure_file):
+CMake Warning (dev) at /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/CMakeLists.txt:57 (configure_file):
   configure_file called with unknown argument(s):
 
    COPY_ONLY
 
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
-CMake Warning (dev) at /home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/CMakeLists.txt:57 (configure_file):
+CMake Warning (dev) at /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/CMakeLists.txt:57 (configure_file):
   configure_file called with unknown argument(s):
 
    COPY_ONLY
@@ -81,7 +66,7 @@ CMake Warning (dev) at /home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/CMakeLists
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
 writing CuDD config file
-CMake Warning (dev) at /home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/CMakeLists.txt:81 (get_target_property):
+CMake Warning (dev) at /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/CMakeLists.txt:81 (get_target_property):
   Policy CMP0026 is not set: Disallow use of the LOCATION target property.
   Run "cmake --help-policy CMP0026" for policy details.  Use the cmake_policy
   command to set the policy and suppress this warning.
@@ -92,7 +77,7 @@ CMake Warning (dev) at /home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/CMakeLists
 
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
-CMake Warning (dev) at /home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/CMakeLists.txt:81 (get_target_property):
+CMake Warning (dev) at /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/CMakeLists.txt:81 (get_target_property):
   Policy CMP0026 is not set: Disallow use of the LOCATION target property.
   Run "cmake --help-policy CMP0026" for policy details.  Use the cmake_policy
   command to set the policy and suppress this warning.
@@ -103,7 +88,7 @@ CMake Warning (dev) at /home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/CMakeLists
 
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
-CMake Warning (dev) at /home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/CMakeLists.txt:81 (get_target_property):
+CMake Warning (dev) at /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/CMakeLists.txt:81 (get_target_property):
   Policy CMP0026 is not set: Disallow use of the LOCATION target property.
   Run "cmake --help-policy CMP0026" for policy details.  Use the cmake_policy
   command to set the policy and suppress this warning.
@@ -114,7 +99,7 @@ CMake Warning (dev) at /home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/CMakeLists
 
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
-CMake Warning (dev) at /home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/CMakeLists.txt:81 (get_target_property):
+CMake Warning (dev) at /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/CMakeLists.txt:81 (get_target_property):
   Policy CMP0026 is not set: Disallow use of the LOCATION target property.
   Run "cmake --help-policy CMP0026" for policy details.  Use the cmake_policy
   command to set the policy and suppress this warning.
@@ -125,7 +110,7 @@ CMake Warning (dev) at /home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/CMakeLists
 
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
-CMake Warning (dev) at /home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/CMakeLists.txt:81 (get_target_property):
+CMake Warning (dev) at /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/CMakeLists.txt:81 (get_target_property):
   Policy CMP0026 is not set: Disallow use of the LOCATION target property.
   Run "cmake --help-policy CMP0026" for policy details.  Use the cmake_policy
   command to set the policy and suppress this warning.
@@ -136,7 +121,7 @@ CMake Warning (dev) at /home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/CMakeLists
 
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
-CMake Warning (dev) at /home/william/NuSMV-a/NuSMV-2.6.0/MiniSat/CMakeLists.txt:3 (project):
+CMake Warning (dev) at /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/MiniSat/CMakeLists.txt:3 (project):
   Policy CMP0048 is not set: project() command manages VERSION variables.
   Run "cmake --help-policy CMP0048" for policy details.  Use the cmake_policy
   command to set the policy and suppress this warning.
@@ -146,7 +131,6 @@ CMake Warning (dev) at /home/william/NuSMV-a/NuSMV-2.6.0/MiniSat/CMakeLists.txt:
     PROJECT_VERSION
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
-Downloading MiniSat from https://github.com/niklasso/minisat/archive/37dc6c67e2af26379d88ce349eb9c4c6160e8543.zip --> /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-MiniSat/37dc6c67e2af26379d88ce349eb9c4c6160e8543.zip
 writing MiniSat config file
 linking with realine libraries: /usr/lib/x86_64-linux-gnu/libreadline.so;/usr/lib/x86_64-linux-gnu/libncurses.so
 -- Found LibXml2: /usr/lib/x86_64-linux-gnu/libxml2.so (found version "2.9.4") 
@@ -466,4 +450,4 @@ This warning is for project developers.  Use -Wno-dev to suppress it.
 
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug
+-- Build files have been written to: /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug

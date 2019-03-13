@@ -48,10 +48,10 @@ RM = /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV
+CMAKE_SOURCE_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug
+CMAKE_BINARY_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -93,7 +93,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -104,7 +104,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CPackSourceConfig.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -159,14 +159,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/wff/lr/CMakeFiles/progress.marks
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/wff/lr/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/wff/lr/CMakeFiles/progress.marks
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/wff/lr/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/wff/lr/clean
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/wff/lr/clean
 .PHONY : clean
 
 # The main clean target
@@ -176,22 +176,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/wff/lr/preinstall
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/wff/lr/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/wff/lr/preinstall
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/wff/lr/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/rule:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/rule
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/rule
 .PHONY : code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/rule
 
 # Convenience name for target.
@@ -201,7 +201,7 @@ code_nusmv_core_wff_lr: code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr
 
 # fast build rule for target.
 code_nusmv_core_wff_lr/fast:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/build.make code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/build
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/build.make code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/build
 .PHONY : code_nusmv_core_wff_lr/fast
 
 LogicRecognizerBase.o: LogicRecognizerBase.c.o
@@ -210,7 +210,7 @@ LogicRecognizerBase.o: LogicRecognizerBase.c.o
 
 # target to build an object file
 LogicRecognizerBase.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/build.make code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/LogicRecognizerBase.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/build.make code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/LogicRecognizerBase.c.o
 .PHONY : LogicRecognizerBase.c.o
 
 LogicRecognizerBase.i: LogicRecognizerBase.c.i
@@ -219,7 +219,7 @@ LogicRecognizerBase.i: LogicRecognizerBase.c.i
 
 # target to preprocess a source file
 LogicRecognizerBase.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/build.make code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/LogicRecognizerBase.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/build.make code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/LogicRecognizerBase.c.i
 .PHONY : LogicRecognizerBase.c.i
 
 LogicRecognizerBase.s: LogicRecognizerBase.c.s
@@ -228,7 +228,7 @@ LogicRecognizerBase.s: LogicRecognizerBase.c.s
 
 # target to generate assembly for a file
 LogicRecognizerBase.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/build.make code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/LogicRecognizerBase.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/build.make code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/LogicRecognizerBase.c.s
 .PHONY : LogicRecognizerBase.c.s
 
 LogicRecognizerCore.o: LogicRecognizerCore.c.o
@@ -237,7 +237,7 @@ LogicRecognizerCore.o: LogicRecognizerCore.c.o
 
 # target to build an object file
 LogicRecognizerCore.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/build.make code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/LogicRecognizerCore.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/build.make code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/LogicRecognizerCore.c.o
 .PHONY : LogicRecognizerCore.c.o
 
 LogicRecognizerCore.i: LogicRecognizerCore.c.i
@@ -246,7 +246,7 @@ LogicRecognizerCore.i: LogicRecognizerCore.c.i
 
 # target to preprocess a source file
 LogicRecognizerCore.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/build.make code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/LogicRecognizerCore.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/build.make code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/LogicRecognizerCore.c.i
 .PHONY : LogicRecognizerCore.c.i
 
 LogicRecognizerCore.s: LogicRecognizerCore.c.s
@@ -255,7 +255,7 @@ LogicRecognizerCore.s: LogicRecognizerCore.c.s
 
 # target to generate assembly for a file
 LogicRecognizerCore.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/build.make code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/LogicRecognizerCore.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/build.make code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/LogicRecognizerCore.c.s
 .PHONY : LogicRecognizerCore.c.s
 
 MasterLogicRecognizer.o: MasterLogicRecognizer.c.o
@@ -264,7 +264,7 @@ MasterLogicRecognizer.o: MasterLogicRecognizer.c.o
 
 # target to build an object file
 MasterLogicRecognizer.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/build.make code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/MasterLogicRecognizer.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/build.make code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/MasterLogicRecognizer.c.o
 .PHONY : MasterLogicRecognizer.c.o
 
 MasterLogicRecognizer.i: MasterLogicRecognizer.c.i
@@ -273,7 +273,7 @@ MasterLogicRecognizer.i: MasterLogicRecognizer.c.i
 
 # target to preprocess a source file
 MasterLogicRecognizer.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/build.make code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/MasterLogicRecognizer.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/build.make code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/MasterLogicRecognizer.c.i
 .PHONY : MasterLogicRecognizer.c.i
 
 MasterLogicRecognizer.s: MasterLogicRecognizer.c.s
@@ -282,7 +282,7 @@ MasterLogicRecognizer.s: MasterLogicRecognizer.c.s
 
 # target to generate assembly for a file
 MasterLogicRecognizer.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/build.make code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/MasterLogicRecognizer.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/build.make code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/MasterLogicRecognizer.c.s
 .PHONY : MasterLogicRecognizer.c.s
 
 # Help Target
@@ -321,6 +321,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

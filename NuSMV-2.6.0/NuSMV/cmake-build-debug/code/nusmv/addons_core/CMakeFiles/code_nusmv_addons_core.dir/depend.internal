@@ -70,7 +70,7 @@ code/nusmv/addons_core/CMakeFiles/code_nusmv_addons_core.dir/addonsCore.c.o
  ../code/nusmv/core/utils/object.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/addons_core/addonsCore.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/addons_core/addonsCore.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h

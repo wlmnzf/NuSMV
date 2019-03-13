@@ -93,7 +93,7 @@ code/nusmv/shell/cinit/CMakeFiles/code_nusmv_shell_cinit.dir/cinit.c.o
  ../code/nusmv/shell/simulate/simulateCmd.h
  ../code/nusmv/shell/trace/traceCmd.h
  ../code/nusmv/shell/utils/utilsCmd.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/cinit/cinit.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/cinit/cinit.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -193,7 +193,7 @@ code/nusmv/shell/cinit/CMakeFiles/code_nusmv_shell_cinit.dir/cinitCmd.c.o
  ../code/nusmv/core/wff/ExprMgr.h
  ../code/nusmv/shell/cinit/cinitCmd.h
  ../code/nusmv/shell/cmd/cmd.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/cinit/cinitCmd.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/cinit/cinitCmd.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h

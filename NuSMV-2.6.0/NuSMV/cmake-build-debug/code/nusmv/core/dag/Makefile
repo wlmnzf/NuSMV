@@ -48,10 +48,10 @@ RM = /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV
+CMAKE_SOURCE_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug
+CMAKE_BINARY_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -93,7 +93,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -104,7 +104,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CPackSourceConfig.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -159,14 +159,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/dag/CMakeFiles/progress.marks
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/dag/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/dag/CMakeFiles/progress.marks
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/dag/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/dag/clean
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/dag/clean
 .PHONY : clean
 
 # The main clean target
@@ -176,22 +176,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/dag/preinstall
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/dag/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/dag/preinstall
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/dag/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/rule:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/rule
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/rule
 .PHONY : code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/rule
 
 # Convenience name for target.
@@ -201,7 +201,7 @@ code_nusmv_core_dag: code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/rule
 
 # fast build rule for target.
 code_nusmv_core_dag/fast:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/build.make code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/build
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/build.make code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/build
 .PHONY : code_nusmv_core_dag/fast
 
 dagDfs.o: dagDfs.c.o
@@ -210,7 +210,7 @@ dagDfs.o: dagDfs.c.o
 
 # target to build an object file
 dagDfs.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/build.make code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/dagDfs.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/build.make code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/dagDfs.c.o
 .PHONY : dagDfs.c.o
 
 dagDfs.i: dagDfs.c.i
@@ -219,7 +219,7 @@ dagDfs.i: dagDfs.c.i
 
 # target to preprocess a source file
 dagDfs.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/build.make code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/dagDfs.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/build.make code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/dagDfs.c.i
 .PHONY : dagDfs.c.i
 
 dagDfs.s: dagDfs.c.s
@@ -228,7 +228,7 @@ dagDfs.s: dagDfs.c.s
 
 # target to generate assembly for a file
 dagDfs.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/build.make code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/dagDfs.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/build.make code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/dagDfs.c.s
 .PHONY : dagDfs.c.s
 
 dagEnStat.o: dagEnStat.c.o
@@ -237,7 +237,7 @@ dagEnStat.o: dagEnStat.c.o
 
 # target to build an object file
 dagEnStat.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/build.make code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/dagEnStat.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/build.make code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/dagEnStat.c.o
 .PHONY : dagEnStat.c.o
 
 dagEnStat.i: dagEnStat.c.i
@@ -246,7 +246,7 @@ dagEnStat.i: dagEnStat.c.i
 
 # target to preprocess a source file
 dagEnStat.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/build.make code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/dagEnStat.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/build.make code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/dagEnStat.c.i
 .PHONY : dagEnStat.c.i
 
 dagEnStat.s: dagEnStat.c.s
@@ -255,7 +255,7 @@ dagEnStat.s: dagEnStat.c.s
 
 # target to generate assembly for a file
 dagEnStat.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/build.make code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/dagEnStat.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/build.make code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/dagEnStat.c.s
 .PHONY : dagEnStat.c.s
 
 dagManager.o: dagManager.c.o
@@ -264,7 +264,7 @@ dagManager.o: dagManager.c.o
 
 # target to build an object file
 dagManager.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/build.make code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/dagManager.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/build.make code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/dagManager.c.o
 .PHONY : dagManager.c.o
 
 dagManager.i: dagManager.c.i
@@ -273,7 +273,7 @@ dagManager.i: dagManager.c.i
 
 # target to preprocess a source file
 dagManager.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/build.make code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/dagManager.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/build.make code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/dagManager.c.i
 .PHONY : dagManager.c.i
 
 dagManager.s: dagManager.c.s
@@ -282,7 +282,7 @@ dagManager.s: dagManager.c.s
 
 # target to generate assembly for a file
 dagManager.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/build.make code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/dagManager.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/build.make code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/dagManager.c.s
 .PHONY : dagManager.c.s
 
 dagStat.o: dagStat.c.o
@@ -291,7 +291,7 @@ dagStat.o: dagStat.c.o
 
 # target to build an object file
 dagStat.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/build.make code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/dagStat.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/build.make code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/dagStat.c.o
 .PHONY : dagStat.c.o
 
 dagStat.i: dagStat.c.i
@@ -300,7 +300,7 @@ dagStat.i: dagStat.c.i
 
 # target to preprocess a source file
 dagStat.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/build.make code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/dagStat.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/build.make code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/dagStat.c.i
 .PHONY : dagStat.c.i
 
 dagStat.s: dagStat.c.s
@@ -309,7 +309,7 @@ dagStat.s: dagStat.c.s
 
 # target to generate assembly for a file
 dagStat.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/build.make code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/dagStat.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/build.make code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/dagStat.c.s
 .PHONY : dagStat.c.s
 
 dagVertex.o: dagVertex.c.o
@@ -318,7 +318,7 @@ dagVertex.o: dagVertex.c.o
 
 # target to build an object file
 dagVertex.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/build.make code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/dagVertex.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/build.make code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/dagVertex.c.o
 .PHONY : dagVertex.c.o
 
 dagVertex.i: dagVertex.c.i
@@ -327,7 +327,7 @@ dagVertex.i: dagVertex.c.i
 
 # target to preprocess a source file
 dagVertex.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/build.make code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/dagVertex.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/build.make code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/dagVertex.c.i
 .PHONY : dagVertex.c.i
 
 dagVertex.s: dagVertex.c.s
@@ -336,7 +336,7 @@ dagVertex.s: dagVertex.c.s
 
 # target to generate assembly for a file
 dagVertex.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/build.make code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/dagVertex.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/build.make code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/dagVertex.c.s
 .PHONY : dagVertex.c.s
 
 # Help Target
@@ -381,6 +381,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -81,7 +81,7 @@ code/nusmv/core/trans/CMakeFiles/code_nusmv_core_trans.dir/bdd/BddTrans.c.o
  ../code/nusmv/core/utils/portability.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/trans/bdd/BddTrans.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/trans/bdd/BddTrans.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -105,7 +105,7 @@ code/nusmv/core/trans/CMakeFiles/code_nusmv_core_trans.dir/bdd/Cluster.c.o
  ../code/nusmv/core/utils/object.h
  ../code/nusmv/core/utils/object_private.h
  ../code/nusmv/core/utils/utils.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/trans/bdd/Cluster.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/trans/bdd/Cluster.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -191,7 +191,7 @@ code/nusmv/core/trans/CMakeFiles/code_nusmv_core_trans.dir/bdd/ClusterList.c.o
  ../code/nusmv/core/utils/portability.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/trans/bdd/ClusterList.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/trans/bdd/ClusterList.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -258,7 +258,7 @@ code/nusmv/core/trans/CMakeFiles/code_nusmv_core_trans.dir/bdd/ClusterOptions.c.
  ../code/nusmv/core/utils/object.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/trans/bdd/ClusterOptions.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/trans/bdd/ClusterOptions.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -328,7 +328,7 @@ code/nusmv/core/trans/CMakeFiles/code_nusmv_core_trans.dir/generic/GenericTrans.
  ../code/nusmv/core/utils/object_private.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/trans/generic/GenericTrans.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/trans/generic/GenericTrans.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h

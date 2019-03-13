@@ -103,7 +103,7 @@ code/nusmv/shell/trace/CMakeFiles/code_nusmv_shell_trace.dir/traceCmd.c.o
  ../code/nusmv/shell/bmc/bmcCmd.h
  ../code/nusmv/shell/cmd/cmd.h
  ../code/nusmv/shell/trace/traceCmd.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/trace/traceCmd.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/trace/traceCmd.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h

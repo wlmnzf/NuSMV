@@ -48,10 +48,10 @@ RM = /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV
+CMAKE_SOURCE_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug
+CMAKE_BINARY_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -81,7 +81,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -92,7 +92,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CPackSourceConfig.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -159,14 +159,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/wff/CMakeFiles/progress.marks
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/wff/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/wff/CMakeFiles/progress.marks
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/wff/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/wff/clean
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/wff/clean
 .PHONY : clean
 
 # The main clean target
@@ -176,22 +176,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/wff/preinstall
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/wff/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/wff/preinstall
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/wff/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/rule:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/rule
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/rule
 .PHONY : code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/rule
 
 # Convenience name for target.
@@ -201,7 +201,7 @@ code_nusmv_core_wff: code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/rule
 
 # fast build rule for target.
 code_nusmv_core_wff/fast:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/build.make code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/build
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/build.make code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/build
 .PHONY : code_nusmv_core_wff/fast
 
 ExprMgr.o: ExprMgr.c.o
@@ -210,7 +210,7 @@ ExprMgr.o: ExprMgr.c.o
 
 # target to build an object file
 ExprMgr.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/build.make code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/ExprMgr.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/build.make code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/ExprMgr.c.o
 .PHONY : ExprMgr.c.o
 
 ExprMgr.i: ExprMgr.c.i
@@ -219,7 +219,7 @@ ExprMgr.i: ExprMgr.c.i
 
 # target to preprocess a source file
 ExprMgr.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/build.make code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/ExprMgr.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/build.make code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/ExprMgr.c.i
 .PHONY : ExprMgr.c.i
 
 ExprMgr.s: ExprMgr.c.s
@@ -228,7 +228,7 @@ ExprMgr.s: ExprMgr.c.s
 
 # target to generate assembly for a file
 ExprMgr.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/build.make code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/ExprMgr.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/build.make code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/ExprMgr.c.s
 .PHONY : ExprMgr.c.s
 
 exprWff.o: exprWff.c.o
@@ -237,7 +237,7 @@ exprWff.o: exprWff.c.o
 
 # target to build an object file
 exprWff.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/build.make code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/exprWff.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/build.make code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/exprWff.c.o
 .PHONY : exprWff.c.o
 
 exprWff.i: exprWff.c.i
@@ -246,7 +246,7 @@ exprWff.i: exprWff.c.i
 
 # target to preprocess a source file
 exprWff.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/build.make code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/exprWff.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/build.make code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/exprWff.c.i
 .PHONY : exprWff.c.i
 
 exprWff.s: exprWff.c.s
@@ -255,7 +255,7 @@ exprWff.s: exprWff.c.s
 
 # target to generate assembly for a file
 exprWff.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/build.make code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/exprWff.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/build.make code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/exprWff.c.s
 .PHONY : exprWff.c.s
 
 wffPkg.o: wffPkg.c.o
@@ -264,7 +264,7 @@ wffPkg.o: wffPkg.c.o
 
 # target to build an object file
 wffPkg.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/build.make code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/wffPkg.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/build.make code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/wffPkg.c.o
 .PHONY : wffPkg.c.o
 
 wffPkg.i: wffPkg.c.i
@@ -273,7 +273,7 @@ wffPkg.i: wffPkg.c.i
 
 # target to preprocess a source file
 wffPkg.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/build.make code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/wffPkg.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/build.make code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/wffPkg.c.i
 .PHONY : wffPkg.c.i
 
 wffPkg.s: wffPkg.c.s
@@ -282,7 +282,7 @@ wffPkg.s: wffPkg.c.s
 
 # target to generate assembly for a file
 wffPkg.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/build.make code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/wffPkg.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/build.make code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/wffPkg.c.s
 .PHONY : wffPkg.c.s
 
 wffRewrite.o: wffRewrite.c.o
@@ -291,7 +291,7 @@ wffRewrite.o: wffRewrite.c.o
 
 # target to build an object file
 wffRewrite.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/build.make code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/wffRewrite.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/build.make code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/wffRewrite.c.o
 .PHONY : wffRewrite.c.o
 
 wffRewrite.i: wffRewrite.c.i
@@ -300,7 +300,7 @@ wffRewrite.i: wffRewrite.c.i
 
 # target to preprocess a source file
 wffRewrite.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/build.make code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/wffRewrite.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/build.make code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/wffRewrite.c.i
 .PHONY : wffRewrite.c.i
 
 wffRewrite.s: wffRewrite.c.s
@@ -309,7 +309,7 @@ wffRewrite.s: wffRewrite.c.s
 
 # target to generate assembly for a file
 wffRewrite.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/build.make code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/wffRewrite.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/build.make code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/wffRewrite.c.s
 .PHONY : wffRewrite.c.s
 
 # Help Target
@@ -351,6 +351,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

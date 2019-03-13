@@ -43,10 +43,10 @@ RM = /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV
+CMAKE_SOURCE_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug
+CMAKE_BINARY_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include code/nusmv/core/sexp/CMakeFiles/code_nusmv_core_sexp.dir/depend.make
@@ -59,16 +59,16 @@ include code/nusmv/core/sexp/CMakeFiles/code_nusmv_core_sexp.dir/flags.make
 
 code/nusmv/core/sexp/CMakeFiles/code_nusmv_core_sexp.dir/SexpInliner.c.o: code/nusmv/core/sexp/CMakeFiles/code_nusmv_core_sexp.dir/flags.make
 code/nusmv/core/sexp/CMakeFiles/code_nusmv_core_sexp.dir/SexpInliner.c.o: ../code/nusmv/core/sexp/SexpInliner.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object code/nusmv/core/sexp/CMakeFiles/code_nusmv_core_sexp.dir/SexpInliner.c.o"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/sexp && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_sexp.dir/SexpInliner.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/sexp/SexpInliner.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object code/nusmv/core/sexp/CMakeFiles/code_nusmv_core_sexp.dir/SexpInliner.c.o"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/sexp && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_sexp.dir/SexpInliner.c.o   -c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/sexp/SexpInliner.c
 
 code/nusmv/core/sexp/CMakeFiles/code_nusmv_core_sexp.dir/SexpInliner.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code_nusmv_core_sexp.dir/SexpInliner.c.i"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/sexp && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/sexp/SexpInliner.c > CMakeFiles/code_nusmv_core_sexp.dir/SexpInliner.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/sexp && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/sexp/SexpInliner.c > CMakeFiles/code_nusmv_core_sexp.dir/SexpInliner.c.i
 
 code/nusmv/core/sexp/CMakeFiles/code_nusmv_core_sexp.dir/SexpInliner.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code_nusmv_core_sexp.dir/SexpInliner.c.s"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/sexp && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/sexp/SexpInliner.c -o CMakeFiles/code_nusmv_core_sexp.dir/SexpInliner.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/sexp && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/sexp/SexpInliner.c -o CMakeFiles/code_nusmv_core_sexp.dir/SexpInliner.c.s
 
 code_nusmv_core_sexp: code/nusmv/core/sexp/CMakeFiles/code_nusmv_core_sexp.dir/SexpInliner.c.o
 code_nusmv_core_sexp: code/nusmv/core/sexp/CMakeFiles/code_nusmv_core_sexp.dir/build.make
@@ -81,10 +81,10 @@ code/nusmv/core/sexp/CMakeFiles/code_nusmv_core_sexp.dir/build: code_nusmv_core_
 .PHONY : code/nusmv/core/sexp/CMakeFiles/code_nusmv_core_sexp.dir/build
 
 code/nusmv/core/sexp/CMakeFiles/code_nusmv_core_sexp.dir/clean:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/sexp && $(CMAKE_COMMAND) -P CMakeFiles/code_nusmv_core_sexp.dir/cmake_clean.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/sexp && $(CMAKE_COMMAND) -P CMakeFiles/code_nusmv_core_sexp.dir/cmake_clean.cmake
 .PHONY : code/nusmv/core/sexp/CMakeFiles/code_nusmv_core_sexp.dir/clean
 
 code/nusmv/core/sexp/CMakeFiles/code_nusmv_core_sexp.dir/depend:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/sexp /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/sexp /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/sexp/CMakeFiles/code_nusmv_core_sexp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/sexp /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/sexp /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/sexp/CMakeFiles/code_nusmv_core_sexp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : code/nusmv/core/sexp/CMakeFiles/code_nusmv_core_sexp.dir/depend
 

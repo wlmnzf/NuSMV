@@ -48,10 +48,10 @@ RM = /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV
+CMAKE_SOURCE_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug
+CMAKE_BINARY_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -93,7 +93,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -104,7 +104,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CPackSourceConfig.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -159,14 +159,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/ltl/CMakeFiles/progress.marks
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/ltl/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/ltl/CMakeFiles/progress.marks
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/ltl/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/ltl/clean
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/ltl/clean
 .PHONY : clean
 
 # The main clean target
@@ -176,22 +176,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/ltl/preinstall
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/ltl/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/ltl/preinstall
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/ltl/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/rule:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/rule
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/rule
 .PHONY : code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/rule
 
 # Convenience name for target.
@@ -201,7 +201,7 @@ code_nusmv_core_ltl: code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/rule
 
 # fast build rule for target.
 code_nusmv_core_ltl/fast:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/build.make code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/build
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/build.make code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/build
 .PHONY : code_nusmv_core_ltl/fast
 
 ltl.o: ltl.c.o
@@ -210,7 +210,7 @@ ltl.o: ltl.c.o
 
 # target to build an object file
 ltl.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/build.make code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/ltl.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/build.make code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/ltl.c.o
 .PHONY : ltl.c.o
 
 ltl.i: ltl.c.i
@@ -219,7 +219,7 @@ ltl.i: ltl.c.i
 
 # target to preprocess a source file
 ltl.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/build.make code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/ltl.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/build.make code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/ltl.c.i
 .PHONY : ltl.c.i
 
 ltl.s: ltl.c.s
@@ -228,7 +228,7 @@ ltl.s: ltl.c.s
 
 # target to generate assembly for a file
 ltl.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/build.make code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/ltl.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/build.make code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/ltl.c.s
 .PHONY : ltl.c.s
 
 ltl2smv/ltl2smv.o: ltl2smv/ltl2smv.c.o
@@ -237,7 +237,7 @@ ltl2smv/ltl2smv.o: ltl2smv/ltl2smv.c.o
 
 # target to build an object file
 ltl2smv/ltl2smv.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/build.make code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/ltl2smv/ltl2smv.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/build.make code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/ltl2smv/ltl2smv.c.o
 .PHONY : ltl2smv/ltl2smv.c.o
 
 ltl2smv/ltl2smv.i: ltl2smv/ltl2smv.c.i
@@ -246,7 +246,7 @@ ltl2smv/ltl2smv.i: ltl2smv/ltl2smv.c.i
 
 # target to preprocess a source file
 ltl2smv/ltl2smv.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/build.make code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/ltl2smv/ltl2smv.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/build.make code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/ltl2smv/ltl2smv.c.i
 .PHONY : ltl2smv/ltl2smv.c.i
 
 ltl2smv/ltl2smv.s: ltl2smv/ltl2smv.c.s
@@ -255,7 +255,7 @@ ltl2smv/ltl2smv.s: ltl2smv/ltl2smv.c.s
 
 # target to generate assembly for a file
 ltl2smv/ltl2smv.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/build.make code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/ltl2smv/ltl2smv.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/build.make code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/ltl2smv/ltl2smv.c.s
 .PHONY : ltl2smv/ltl2smv.c.s
 
 ltlCompassion.o: ltlCompassion.c.o
@@ -264,7 +264,7 @@ ltlCompassion.o: ltlCompassion.c.o
 
 # target to build an object file
 ltlCompassion.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/build.make code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/ltlCompassion.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/build.make code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/ltlCompassion.c.o
 .PHONY : ltlCompassion.c.o
 
 ltlCompassion.i: ltlCompassion.c.i
@@ -273,7 +273,7 @@ ltlCompassion.i: ltlCompassion.c.i
 
 # target to preprocess a source file
 ltlCompassion.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/build.make code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/ltlCompassion.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/build.make code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/ltlCompassion.c.i
 .PHONY : ltlCompassion.c.i
 
 ltlCompassion.s: ltlCompassion.c.s
@@ -282,7 +282,7 @@ ltlCompassion.s: ltlCompassion.c.s
 
 # target to generate assembly for a file
 ltlCompassion.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/build.make code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/ltlCompassion.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/build.make code/nusmv/core/ltl/CMakeFiles/code_nusmv_core_ltl.dir/ltlCompassion.c.s
 .PHONY : ltlCompassion.c.s
 
 # Help Target
@@ -321,6 +321,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

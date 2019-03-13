@@ -84,7 +84,7 @@ code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/LogicRecognizerBase
  ../code/nusmv/core/wff/lr/LogicRecognizerBase_private.h
  ../code/nusmv/core/wff/lr/MasterLogicRecognizer.h
  ../code/nusmv/core/wff/lr/MasterLogicRecognizer_private.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/wff/lr/LogicRecognizerBase.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/wff/lr/LogicRecognizerBase.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -177,7 +177,7 @@ code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/LogicRecognizerCore
  ../code/nusmv/core/wff/lr/LogicRecognizerCore_private.h
  ../code/nusmv/core/wff/lr/MasterLogicRecognizer.h
  ../code/nusmv/core/wff/lr/MasterLogicRecognizer_private.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/wff/lr/LogicRecognizerCore.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/wff/lr/LogicRecognizerCore.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -221,7 +221,7 @@ code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/MasterLogicRecogniz
  ../code/nusmv/core/wff/lr/LogicRecognizerCore.h
  ../code/nusmv/core/wff/lr/MasterLogicRecognizer.h
  ../code/nusmv/core/wff/lr/MasterLogicRecognizer_private.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/wff/lr/MasterLogicRecognizer.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/wff/lr/MasterLogicRecognizer.c
  build-cudd/include/cudd/st.h
  build-cudd/include/cudd/util.h
  nusmv-config.h

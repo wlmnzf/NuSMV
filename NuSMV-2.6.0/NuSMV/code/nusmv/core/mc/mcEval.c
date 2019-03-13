@@ -88,7 +88,10 @@ static bdd_ptr ternary_mod_bdd_op(BddFsm_ptr, BddEnc_ptr, BDDPFFBII,
 static bdd_ptr quad_mod_bdd_op(BddFsm_ptr, BddEnc_ptr, BDDPFFBBII,
                                node_ptr, int, int, int, node_ptr);
 
-
+//try to dump sth
+//FILE *fp;
+//int dres=0;
+//int bdd_tmp_size=0;
 /*---------------------------------------------------------------------------*/
 /* Definition of exported functions                                          */
 /*---------------------------------------------------------------------------*/
@@ -103,7 +106,10 @@ bdd_ptr eval_ctl_spec(BddFsm_ptr fsm, BddEnc_ptr enc,
   if (n == Nil) return(bdd_true(dd_manager));
   nusmv_yylineno = node_get_lineno(n);
   res = eval_ctl_spec_recur(fsm, enc, n, context);
-  nusmv_yylineno = temp;
+
+
+
+    nusmv_yylineno = temp;
   return(res);
 }
 
@@ -215,7 +221,10 @@ static bdd_ptr eval_ctl_spec_recur(BddFsm_ptr fsm, BddEnc_ptr enc, node_ptr n,
         ErrorMgr_rpterr(errmgr, "eval_ctl_spec: res = NULL after a call to \"eval\".");
         ErrorMgr_nusmv_exit(errmgr, 1);
       }
-      return res_bdd;
+
+
+
+        return res_bdd;
     }
   } /* switch */
 }

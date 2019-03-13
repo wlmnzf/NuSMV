@@ -43,10 +43,10 @@ RM = /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV
+CMAKE_SOURCE_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug
+CMAKE_BINARY_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/depend.make
@@ -59,94 +59,94 @@ include code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_sy
 
 code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/NFunction.c.o: code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/flags.make
 code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/NFunction.c.o: ../code/nusmv/core/compile/symb_table/NFunction.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/NFunction.c.o"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/symb_table && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_compile_symb_table.dir/NFunction.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/symb_table/NFunction.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/NFunction.c.o"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/symb_table && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_compile_symb_table.dir/NFunction.c.o   -c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/symb_table/NFunction.c
 
 code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/NFunction.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code_nusmv_core_compile_symb_table.dir/NFunction.c.i"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/symb_table && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/symb_table/NFunction.c > CMakeFiles/code_nusmv_core_compile_symb_table.dir/NFunction.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/symb_table && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/symb_table/NFunction.c > CMakeFiles/code_nusmv_core_compile_symb_table.dir/NFunction.c.i
 
 code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/NFunction.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code_nusmv_core_compile_symb_table.dir/NFunction.c.s"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/symb_table && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/symb_table/NFunction.c -o CMakeFiles/code_nusmv_core_compile_symb_table.dir/NFunction.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/symb_table && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/symb_table/NFunction.c -o CMakeFiles/code_nusmv_core_compile_symb_table.dir/NFunction.c.s
 
 code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/ResolveSymbol.c.o: code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/flags.make
 code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/ResolveSymbol.c.o: ../code/nusmv/core/compile/symb_table/ResolveSymbol.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/ResolveSymbol.c.o"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/symb_table && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_compile_symb_table.dir/ResolveSymbol.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/symb_table/ResolveSymbol.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/ResolveSymbol.c.o"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/symb_table && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_compile_symb_table.dir/ResolveSymbol.c.o   -c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/symb_table/ResolveSymbol.c
 
 code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/ResolveSymbol.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code_nusmv_core_compile_symb_table.dir/ResolveSymbol.c.i"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/symb_table && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/symb_table/ResolveSymbol.c > CMakeFiles/code_nusmv_core_compile_symb_table.dir/ResolveSymbol.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/symb_table && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/symb_table/ResolveSymbol.c > CMakeFiles/code_nusmv_core_compile_symb_table.dir/ResolveSymbol.c.i
 
 code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/ResolveSymbol.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code_nusmv_core_compile_symb_table.dir/ResolveSymbol.c.s"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/symb_table && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/symb_table/ResolveSymbol.c -o CMakeFiles/code_nusmv_core_compile_symb_table.dir/ResolveSymbol.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/symb_table && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/symb_table/ResolveSymbol.c -o CMakeFiles/code_nusmv_core_compile_symb_table.dir/ResolveSymbol.c.s
 
 code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbCache.c.o: code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/flags.make
 code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbCache.c.o: ../code/nusmv/core/compile/symb_table/SymbCache.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbCache.c.o"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/symb_table && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbCache.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/symb_table/SymbCache.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbCache.c.o"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/symb_table && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbCache.c.o   -c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/symb_table/SymbCache.c
 
 code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbCache.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbCache.c.i"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/symb_table && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/symb_table/SymbCache.c > CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbCache.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/symb_table && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/symb_table/SymbCache.c > CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbCache.c.i
 
 code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbCache.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbCache.c.s"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/symb_table && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/symb_table/SymbCache.c -o CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbCache.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/symb_table && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/symb_table/SymbCache.c -o CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbCache.c.s
 
 code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbLayer.c.o: code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/flags.make
 code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbLayer.c.o: ../code/nusmv/core/compile/symb_table/SymbLayer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbLayer.c.o"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/symb_table && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbLayer.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/symb_table/SymbLayer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbLayer.c.o"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/symb_table && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbLayer.c.o   -c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/symb_table/SymbLayer.c
 
 code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbLayer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbLayer.c.i"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/symb_table && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/symb_table/SymbLayer.c > CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbLayer.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/symb_table && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/symb_table/SymbLayer.c > CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbLayer.c.i
 
 code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbLayer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbLayer.c.s"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/symb_table && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/symb_table/SymbLayer.c -o CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbLayer.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/symb_table && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/symb_table/SymbLayer.c -o CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbLayer.c.s
 
 code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/symb_table.c.o: code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/flags.make
 code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/symb_table.c.o: ../code/nusmv/core/compile/symb_table/symb_table.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/symb_table.c.o"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/symb_table && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_compile_symb_table.dir/symb_table.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/symb_table/symb_table.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/symb_table.c.o"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/symb_table && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_compile_symb_table.dir/symb_table.c.o   -c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/symb_table/symb_table.c
 
 code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/symb_table.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code_nusmv_core_compile_symb_table.dir/symb_table.c.i"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/symb_table && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/symb_table/symb_table.c > CMakeFiles/code_nusmv_core_compile_symb_table.dir/symb_table.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/symb_table && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/symb_table/symb_table.c > CMakeFiles/code_nusmv_core_compile_symb_table.dir/symb_table.c.i
 
 code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/symb_table.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code_nusmv_core_compile_symb_table.dir/symb_table.c.s"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/symb_table && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/symb_table/symb_table.c -o CMakeFiles/code_nusmv_core_compile_symb_table.dir/symb_table.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/symb_table && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/symb_table/symb_table.c -o CMakeFiles/code_nusmv_core_compile_symb_table.dir/symb_table.c.s
 
 code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbTable.c.o: code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/flags.make
 code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbTable.c.o: ../code/nusmv/core/compile/symb_table/SymbTable.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbTable.c.o"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/symb_table && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbTable.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/symb_table/SymbTable.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbTable.c.o"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/symb_table && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbTable.c.o   -c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/symb_table/SymbTable.c
 
 code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbTable.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbTable.c.i"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/symb_table && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/symb_table/SymbTable.c > CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbTable.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/symb_table && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/symb_table/SymbTable.c > CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbTable.c.i
 
 code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbTable.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbTable.c.s"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/symb_table && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/symb_table/SymbTable.c -o CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbTable.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/symb_table && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/symb_table/SymbTable.c -o CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbTable.c.s
 
 code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbType.c.o: code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/flags.make
 code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbType.c.o: ../code/nusmv/core/compile/symb_table/SymbType.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbType.c.o"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/symb_table && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbType.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/symb_table/SymbType.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbType.c.o"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/symb_table && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbType.c.o   -c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/symb_table/SymbType.c
 
 code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbType.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbType.c.i"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/symb_table && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/symb_table/SymbType.c > CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbType.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/symb_table && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/symb_table/SymbType.c > CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbType.c.i
 
 code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbType.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbType.c.s"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/symb_table && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/symb_table/SymbType.c -o CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbType.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/symb_table && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/symb_table/SymbType.c -o CMakeFiles/code_nusmv_core_compile_symb_table.dir/SymbType.c.s
 
 code_nusmv_core_compile_symb_table: code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/NFunction.c.o
 code_nusmv_core_compile_symb_table: code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/ResolveSymbol.c.o
@@ -165,10 +165,10 @@ code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table
 .PHONY : code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/build
 
 code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/clean:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/symb_table && $(CMAKE_COMMAND) -P CMakeFiles/code_nusmv_core_compile_symb_table.dir/cmake_clean.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/symb_table && $(CMAKE_COMMAND) -P CMakeFiles/code_nusmv_core_compile_symb_table.dir/cmake_clean.cmake
 .PHONY : code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/clean
 
 code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/depend:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/symb_table /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/symb_table /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/compile/symb_table /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/symb_table /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : code/nusmv/core/compile/symb_table/CMakeFiles/code_nusmv_core_compile_symb_table.dir/depend
 

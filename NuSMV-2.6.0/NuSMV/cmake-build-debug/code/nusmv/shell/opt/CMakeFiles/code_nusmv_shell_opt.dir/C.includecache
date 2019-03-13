@@ -852,23 +852,23 @@ nusmv/core/cinit/NuSMVEnv.h
 nusmv/core/cinit/NuSMVEnv.h
 ../code/nusmv/shell/opt/nusmv/core/cinit/NuSMVEnv.h
 
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/opt/optCmd.c
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/opt/optCmd.c
 nusmv-config.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/opt/nusmv-config.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/opt/nusmv-config.h
 nusmv/shell/cmd/cmd.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/opt/nusmv/shell/cmd/cmd.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/opt/nusmv/shell/cmd/cmd.h
 nusmv/shell/opt/optCmd.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/opt/nusmv/shell/opt/optCmd.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/opt/nusmv/shell/opt/optCmd.h
 nusmv/core/opt/opt.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/opt/nusmv/core/opt/opt.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/opt/nusmv/core/opt/opt.h
 nusmv/core/opt/OptsHandler.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/opt/nusmv/core/opt/OptsHandler.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/opt/nusmv/core/opt/OptsHandler.h
 nusmv/core/cinit/cinit.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/opt/nusmv/core/cinit/cinit.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/opt/nusmv/core/cinit/cinit.h
 nusmv/core/cinit/cinit.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/opt/nusmv/core/cinit/cinit.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/opt/nusmv/core/cinit/cinit.h
 nusmv/core/compile/compile.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/opt/nusmv/core/compile/compile.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/opt/nusmv/core/compile/compile.h
 
 build-cudd/include/cudd/cudd.h
 nusmv-config.h

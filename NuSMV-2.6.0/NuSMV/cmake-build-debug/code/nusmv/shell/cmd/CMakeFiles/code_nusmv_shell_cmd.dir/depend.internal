@@ -81,7 +81,7 @@ code/nusmv/shell/cmd/CMakeFiles/code_nusmv_shell_cmd.dir/cmd.c.o
  ../code/nusmv/core/wff/ExprMgr.h
  ../code/nusmv/shell/cmd/cmd.h
  ../code/nusmv/shell/cmd/cmdInt.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/cmd/cmd.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/cmd/cmd.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -169,7 +169,7 @@ code/nusmv/shell/cmd/CMakeFiles/code_nusmv_shell_cmd.dir/cmdCmd.c.o
  ../code/nusmv/shell/cmd/cmdCmd.h
  ../code/nusmv/shell/cmd/cmdCmdInt.h
  ../code/nusmv/shell/cmd/cmdInt.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/cmd/cmdCmd.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/cmd/cmdCmd.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -254,7 +254,7 @@ code/nusmv/shell/cmd/CMakeFiles/code_nusmv_shell_cmd.dir/cmdFile.c.o
  ../code/nusmv/core/wff/ExprMgr.h
  ../code/nusmv/shell/cmd/cmd.h
  ../code/nusmv/shell/cmd/cmdInt.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/cmd/cmdFile.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/cmd/cmdFile.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -269,7 +269,7 @@ code/nusmv/shell/cmd/CMakeFiles/code_nusmv_shell_cmd.dir/cmdHelp.c.o
  ../code/nusmv/core/utils/defs.h
  ../code/nusmv/shell/cmd/cmdCmd.h
  ../code/nusmv/shell/cmd/cmdCmdInt.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/cmd/cmdHelp.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/shell/cmd/cmdHelp.c
  build-cudd/include/cudd/st.h
  build-cudd/include/cudd/util.h
  nusmv-config.h
@@ -352,7 +352,7 @@ code/nusmv/shell/cmd/CMakeFiles/code_nusmv_shell_cmd.dir/cmdMisc.c.o
  ../code/nusmv/core/wff/ExprMgr.h
  ../code/nusmv/shell/cmd/cmd.h
  ../code/nusmv/shell/cmd/cmdInt.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/cmd/cmdMisc.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/cmd/cmdMisc.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h

@@ -6,5 +6,5 @@ C_FLAGS = -g   -fPIC
 
 C_DEFINES = -DBSD -DHAVE_IEEE_754 -DNUSMV_SIZEOF_INT=4 -DNUSMV_SIZEOF_LONG=8 -DNUSMV_SIZEOF_VOID_P=8 -DUNIX
 
-C_INCLUDES = -I/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/include/cudd 
+C_INCLUDES = -I/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/include/cudd 
 

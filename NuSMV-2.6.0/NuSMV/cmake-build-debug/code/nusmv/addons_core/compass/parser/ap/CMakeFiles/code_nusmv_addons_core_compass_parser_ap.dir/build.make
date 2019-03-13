@@ -43,10 +43,10 @@ RM = /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV
+CMAKE_SOURCE_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug
+CMAKE_BINARY_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/depend.make
@@ -58,54 +58,54 @@ include code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_co
 include code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/flags.make
 
 code/nusmv/addons_core/compass/parser/ap/ap_input.c: ../code/nusmv/addons_core/compass/parser/ap/ap_input.l
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "[FLEX][nusmv_compass_ap_lexer] Building scanner with flex 2.6.4"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/addons_core/compass/parser/ap && /usr/bin/flex -o/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_input.c ap_input.l
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "[FLEX][nusmv_compass_ap_lexer] Building scanner with flex 2.6.4"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/addons_core/compass/parser/ap && /usr/bin/flex -o/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_input.c ap_input.l
 
 code/nusmv/addons_core/compass/parser/ap/ap_grammar.c: ../code/nusmv/addons_core/compass/parser/ap/ap_grammar.y
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "[BISON][nusmv_compass_ap_parser] Building parser with bison 3.0.4"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/addons_core/compass/parser/ap && /usr/bin/bison -d -p parser_ap_ -d -o /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c ap_grammar.y
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "[BISON][nusmv_compass_ap_parser] Building parser with bison 3.0.4"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/addons_core/compass/parser/ap && /usr/bin/bison -d -p parser_ap_ -d -o /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c ap_grammar.y
 
 code/nusmv/addons_core/compass/parser/ap/ap_grammar.h: code/nusmv/addons_core/compass/parser/ap/ap_grammar.c
 	@$(CMAKE_COMMAND) -E touch_nocreate code/nusmv/addons_core/compass/parser/ap/ap_grammar.h
 
 code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ParserAp.c.o: code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/flags.make
 code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ParserAp.c.o: ../code/nusmv/addons_core/compass/parser/ap/ParserAp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ParserAp.c.o"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ParserAp.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/addons_core/compass/parser/ap/ParserAp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ParserAp.c.o"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ParserAp.c.o   -c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/addons_core/compass/parser/ap/ParserAp.c
 
 code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ParserAp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ParserAp.c.i"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/addons_core/compass/parser/ap/ParserAp.c > CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ParserAp.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/addons_core/compass/parser/ap/ParserAp.c > CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ParserAp.c.i
 
 code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ParserAp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ParserAp.c.s"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/addons_core/compass/parser/ap/ParserAp.c -o CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ParserAp.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/addons_core/compass/parser/ap/ParserAp.c -o CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ParserAp.c.s
 
 code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ap_input.c.o: code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/flags.make
 code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ap_input.c.o: code/nusmv/addons_core/compass/parser/ap/ap_input.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ap_input.c.o"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ap_input.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_input.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ap_input.c.o"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ap_input.c.o   -c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_input.c
 
 code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ap_input.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ap_input.c.i"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_input.c > CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ap_input.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_input.c > CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ap_input.c.i
 
 code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ap_input.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ap_input.c.s"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_input.c -o CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ap_input.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_input.c -o CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ap_input.c.s
 
 code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ap_grammar.c.o: code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/flags.make
 code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ap_grammar.c.o: code/nusmv/addons_core/compass/parser/ap/ap_grammar.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ap_grammar.c.o"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ap_grammar.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ap_grammar.c.o"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ap_grammar.c.o   -c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c
 
 code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ap_grammar.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ap_grammar.c.i"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c > CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ap_grammar.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c > CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ap_grammar.c.i
 
 code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ap_grammar.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ap_grammar.c.s"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c -o CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ap_grammar.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_grammar.c -o CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ap_grammar.c.s
 
 code_nusmv_addons_core_compass_parser_ap: code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ParserAp.c.o
 code_nusmv_addons_core_compass_parser_ap: code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ap_input.c.o
@@ -120,12 +120,12 @@ code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compa
 .PHONY : code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/build
 
 code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/clean:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap && $(CMAKE_COMMAND) -P CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/cmake_clean.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap && $(CMAKE_COMMAND) -P CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/cmake_clean.cmake
 .PHONY : code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/clean
 
 code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/depend: code/nusmv/addons_core/compass/parser/ap/ap_input.c
 code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/depend: code/nusmv/addons_core/compass/parser/ap/ap_grammar.c
 code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/depend: code/nusmv/addons_core/compass/parser/ap/ap_grammar.h
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/addons_core/compass/parser/ap /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/addons_core/compass/parser/ap /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/depend
 

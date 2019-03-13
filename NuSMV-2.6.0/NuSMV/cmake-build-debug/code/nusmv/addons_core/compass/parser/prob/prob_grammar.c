@@ -144,7 +144,7 @@ void parser_prob_error(char *s);
 int parser_prob_wrap(void);
 
 
-#line 148 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/prob/prob_grammar.c" /* yacc.c:339  */
+#line 148 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/prob/prob_grammar.c" /* yacc.c:339  */
 
 # ifndef YY_NULLPTR
 #  if defined __cplusplus && 201103L <= __cplusplus
@@ -164,8 +164,8 @@ int parser_prob_wrap(void);
 
 /* In a future release of Bison, this section will be replaced
    by #include "prob_grammar.h".  */
-#ifndef YY_PARSER_PROB_HOME_WILLIAM_NUSMV_A_NUSMV_2_6_0_NUSMV_CMAKE_BUILD_DEBUG_CODE_NUSMV_ADDONS_CORE_COMPASS_PARSER_PROB_PROB_GRAMMAR_H_INCLUDED
-# define YY_PARSER_PROB_HOME_WILLIAM_NUSMV_A_NUSMV_2_6_0_NUSMV_CMAKE_BUILD_DEBUG_CODE_NUSMV_ADDONS_CORE_COMPASS_PARSER_PROB_PROB_GRAMMAR_H_INCLUDED
+#ifndef YY_PARSER_PROB_HOME_WILLIAM_CLIONPROJECTS_NUSMV_NUSMV_2_6_0_NUSMV_CMAKE_BUILD_DEBUG_CODE_NUSMV_ADDONS_CORE_COMPASS_PARSER_PROB_PROB_GRAMMAR_H_INCLUDED
+# define YY_PARSER_PROB_HOME_WILLIAM_CLIONPROJECTS_NUSMV_NUSMV_2_6_0_NUSMV_CMAKE_BUILD_DEBUG_CODE_NUSMV_ADDONS_CORE_COMPASS_PARSER_PROB_PROB_GRAMMAR_H_INCLUDED
 /* Debug traces.  */
 #ifndef YYDEBUG
 # define YYDEBUG 0
@@ -203,7 +203,7 @@ union YYSTYPE
 
   node_ptr node;
 
-#line 207 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/prob/prob_grammar.c" /* yacc.c:355  */
+#line 207 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/prob/prob_grammar.c" /* yacc.c:355  */
 };
 
 typedef union YYSTYPE YYSTYPE;
@@ -216,11 +216,11 @@ extern YYSTYPE parser_prob_lval;
 
 int parser_prob_parse (void);
 
-#endif /* !YY_PARSER_PROB_HOME_WILLIAM_NUSMV_A_NUSMV_2_6_0_NUSMV_CMAKE_BUILD_DEBUG_CODE_NUSMV_ADDONS_CORE_COMPASS_PARSER_PROB_PROB_GRAMMAR_H_INCLUDED  */
+#endif /* !YY_PARSER_PROB_HOME_WILLIAM_CLIONPROJECTS_NUSMV_NUSMV_2_6_0_NUSMV_CMAKE_BUILD_DEBUG_CODE_NUSMV_ADDONS_CORE_COMPASS_PARSER_PROB_PROB_GRAMMAR_H_INCLUDED  */
 
 /* Copy the second part of user declarations.  */
 
-#line 224 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/prob/prob_grammar.c" /* yacc.c:358  */
+#line 224 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/prob/prob_grammar.c" /* yacc.c:358  */
 
 #ifdef short
 # undef short
@@ -1313,13 +1313,13 @@ yyreduce:
         case 2:
 #line 100 "prob_grammar.y" /* yacc.c:1646  */
     { }
-#line 1317 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/prob/prob_grammar.c" /* yacc.c:1646  */
+#line 1317 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/prob/prob_grammar.c" /* yacc.c:1646  */
     break;
 
   case 3:
 #line 104 "prob_grammar.y" /* yacc.c:1646  */
     {}
-#line 1323 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/prob/prob_grammar.c" /* yacc.c:1646  */
+#line 1323 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/prob/prob_grammar.c" /* yacc.c:1646  */
     break;
 
   case 4:
@@ -1327,7 +1327,7 @@ yyreduce:
     {
                parser_prob_add(parser_prob_get_global_parser(), (yyvsp[-1].node));
              }
-#line 1331 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/prob/prob_grammar.c" /* yacc.c:1646  */
+#line 1331 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/prob/prob_grammar.c" /* yacc.c:1646  */
     break;
 
   case 5:
@@ -1335,13 +1335,13 @@ yyreduce:
     {
   (yyval.node) = parser_prob_mk_prob(parser_prob_get_global_parser(), (yyvsp[-3].node), (yyvsp[-1].node));
 }
-#line 1339 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/prob/prob_grammar.c" /* yacc.c:1646  */
+#line 1339 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/prob/prob_grammar.c" /* yacc.c:1646  */
     break;
 
   case 7:
 #line 119 "prob_grammar.y" /* yacc.c:1646  */
     { (yyval.node) = parser_prob_mk_var_assigns(parser_prob_get_global_parser(), (yyvsp[0].node), (yyvsp[-2].node)); }
-#line 1345 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/prob/prob_grammar.c" /* yacc.c:1646  */
+#line 1345 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/prob/prob_grammar.c" /* yacc.c:1646  */
     break;
 
   case 8:
@@ -1349,7 +1349,7 @@ yyreduce:
     {
   (yyval.node) = parser_prob_mk_var_assign(parser_prob_get_global_parser(), (yyvsp[-2].node), (yyvsp[0].node));
 }
-#line 1353 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/prob/prob_grammar.c" /* yacc.c:1646  */
+#line 1353 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/prob/prob_grammar.c" /* yacc.c:1646  */
     break;
 
   case 9:
@@ -1357,7 +1357,7 @@ yyreduce:
     {
   (yyval.node) = parser_prob_mk_dot(parser_prob_get_global_parser(), Nil, (yyvsp[0].node));
 }
-#line 1361 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/prob/prob_grammar.c" /* yacc.c:1646  */
+#line 1361 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/prob/prob_grammar.c" /* yacc.c:1646  */
     break;
 
   case 10:
@@ -1365,7 +1365,7 @@ yyreduce:
     {
   (yyval.node) = parser_prob_mk_array(parser_prob_get_global_parser(), (yyvsp[-3].node), (yyvsp[-1].node));
 }
-#line 1369 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/prob/prob_grammar.c" /* yacc.c:1646  */
+#line 1369 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/prob/prob_grammar.c" /* yacc.c:1646  */
     break;
 
   case 11:
@@ -1374,7 +1374,7 @@ yyreduce:
   (yyval.node) = parser_prob_mk_dot(parser_prob_get_global_parser(),
                          (yyvsp[-2].node), (yyvsp[0].node));
 }
-#line 1378 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/prob/prob_grammar.c" /* yacc.c:1646  */
+#line 1378 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/prob/prob_grammar.c" /* yacc.c:1646  */
     break;
 
   case 15:
@@ -1383,7 +1383,7 @@ yyreduce:
   (yyval.node) = parser_prob_mk_array(parser_prob_get_global_parser(),
                            (yyvsp[-3].node), (yyvsp[-1].node));
 }
-#line 1387 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/prob/prob_grammar.c" /* yacc.c:1646  */
+#line 1387 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/prob/prob_grammar.c" /* yacc.c:1646  */
     break;
 
   case 16:
@@ -1392,7 +1392,7 @@ yyreduce:
   (yyval.node) = parser_prob_mk_dot(parser_prob_get_global_parser(),
                          (yyvsp[-2].node), (yyvsp[0].node));
 }
-#line 1396 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/prob/prob_grammar.c" /* yacc.c:1646  */
+#line 1396 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/prob/prob_grammar.c" /* yacc.c:1646  */
     break;
 
   case 17:
@@ -1401,17 +1401,17 @@ yyreduce:
   (yyval.node) = parser_prob_mk_dot(parser_prob_get_global_parser(),
                          (yyvsp[-2].node), (yyvsp[0].node));
 }
-#line 1405 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/prob/prob_grammar.c" /* yacc.c:1646  */
+#line 1405 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/prob/prob_grammar.c" /* yacc.c:1646  */
     break;
 
   case 25:
 #line 182 "prob_grammar.y" /* yacc.c:1646  */
     {}
-#line 1411 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/prob/prob_grammar.c" /* yacc.c:1646  */
+#line 1411 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/prob/prob_grammar.c" /* yacc.c:1646  */
     break;
 
 
-#line 1415 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/prob/prob_grammar.c" /* yacc.c:1646  */
+#line 1415 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/prob/prob_grammar.c" /* yacc.c:1646  */
       default: break;
     }
   /* User semantic actions sometimes alter yychar, and that requires

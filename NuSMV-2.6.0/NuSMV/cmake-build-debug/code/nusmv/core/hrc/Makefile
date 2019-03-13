@@ -48,10 +48,10 @@ RM = /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV
+CMAKE_SOURCE_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug
+CMAKE_BINARY_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -93,7 +93,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -104,7 +104,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CPackSourceConfig.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -159,14 +159,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/hrc/CMakeFiles/progress.marks
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/hrc/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/hrc/CMakeFiles/progress.marks
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/hrc/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/hrc/clean
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/hrc/clean
 .PHONY : clean
 
 # The main clean target
@@ -176,22 +176,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/hrc/preinstall
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/hrc/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/hrc/preinstall
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/hrc/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/rule:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/rule
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/rule
 .PHONY : code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/rule
 
 # Convenience name for target.
@@ -201,7 +201,7 @@ code_nusmv_core_hrc: code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/rule
 
 # fast build rule for target.
 code_nusmv_core_hrc/fast:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build
 .PHONY : code_nusmv_core_hrc/fast
 
 HrcFlattener.o: HrcFlattener.c.o
@@ -210,7 +210,7 @@ HrcFlattener.o: HrcFlattener.c.o
 
 # target to build an object file
 HrcFlattener.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/HrcFlattener.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/HrcFlattener.c.o
 .PHONY : HrcFlattener.c.o
 
 HrcFlattener.i: HrcFlattener.c.i
@@ -219,7 +219,7 @@ HrcFlattener.i: HrcFlattener.c.i
 
 # target to preprocess a source file
 HrcFlattener.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/HrcFlattener.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/HrcFlattener.c.i
 .PHONY : HrcFlattener.c.i
 
 HrcFlattener.s: HrcFlattener.c.s
@@ -228,7 +228,7 @@ HrcFlattener.s: HrcFlattener.c.s
 
 # target to generate assembly for a file
 HrcFlattener.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/HrcFlattener.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/HrcFlattener.c.s
 .PHONY : HrcFlattener.c.s
 
 HrcNode.o: HrcNode.c.o
@@ -237,7 +237,7 @@ HrcNode.o: HrcNode.c.o
 
 # target to build an object file
 HrcNode.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/HrcNode.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/HrcNode.c.o
 .PHONY : HrcNode.c.o
 
 HrcNode.i: HrcNode.c.i
@@ -246,7 +246,7 @@ HrcNode.i: HrcNode.c.i
 
 # target to preprocess a source file
 HrcNode.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/HrcNode.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/HrcNode.c.i
 .PHONY : HrcNode.c.i
 
 HrcNode.s: HrcNode.c.s
@@ -255,7 +255,7 @@ HrcNode.s: HrcNode.c.s
 
 # target to generate assembly for a file
 HrcNode.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/HrcNode.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/HrcNode.c.s
 .PHONY : HrcNode.c.s
 
 HrcVarDependencies.o: HrcVarDependencies.c.o
@@ -264,7 +264,7 @@ HrcVarDependencies.o: HrcVarDependencies.c.o
 
 # target to build an object file
 HrcVarDependencies.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/HrcVarDependencies.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/HrcVarDependencies.c.o
 .PHONY : HrcVarDependencies.c.o
 
 HrcVarDependencies.i: HrcVarDependencies.c.i
@@ -273,7 +273,7 @@ HrcVarDependencies.i: HrcVarDependencies.c.i
 
 # target to preprocess a source file
 HrcVarDependencies.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/HrcVarDependencies.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/HrcVarDependencies.c.i
 .PHONY : HrcVarDependencies.c.i
 
 HrcVarDependencies.s: HrcVarDependencies.c.s
@@ -282,7 +282,7 @@ HrcVarDependencies.s: HrcVarDependencies.c.s
 
 # target to generate assembly for a file
 HrcVarDependencies.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/HrcVarDependencies.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/HrcVarDependencies.c.s
 .PHONY : HrcVarDependencies.c.s
 
 hrc.o: hrc.c.o
@@ -291,7 +291,7 @@ hrc.o: hrc.c.o
 
 # target to build an object file
 hrc.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/hrc.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/hrc.c.o
 .PHONY : hrc.c.o
 
 hrc.i: hrc.c.i
@@ -300,7 +300,7 @@ hrc.i: hrc.c.i
 
 # target to preprocess a source file
 hrc.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/hrc.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/hrc.c.i
 .PHONY : hrc.c.i
 
 hrc.s: hrc.c.s
@@ -309,7 +309,7 @@ hrc.s: hrc.c.s
 
 # target to generate assembly for a file
 hrc.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/hrc.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/hrc.c.s
 .PHONY : hrc.c.s
 
 hrcDump.o: hrcDump.c.o
@@ -318,7 +318,7 @@ hrcDump.o: hrcDump.c.o
 
 # target to build an object file
 hrcDump.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/hrcDump.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/hrcDump.c.o
 .PHONY : hrcDump.c.o
 
 hrcDump.i: hrcDump.c.i
@@ -327,7 +327,7 @@ hrcDump.i: hrcDump.c.i
 
 # target to preprocess a source file
 hrcDump.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/hrcDump.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/hrcDump.c.i
 .PHONY : hrcDump.c.i
 
 hrcDump.s: hrcDump.c.s
@@ -336,7 +336,7 @@ hrcDump.s: hrcDump.c.s
 
 # target to generate assembly for a file
 hrcDump.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/hrcDump.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/hrcDump.c.s
 .PHONY : hrcDump.c.s
 
 hrcPrefixUtils.o: hrcPrefixUtils.c.o
@@ -345,7 +345,7 @@ hrcPrefixUtils.o: hrcPrefixUtils.c.o
 
 # target to build an object file
 hrcPrefixUtils.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/hrcPrefixUtils.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/hrcPrefixUtils.c.o
 .PHONY : hrcPrefixUtils.c.o
 
 hrcPrefixUtils.i: hrcPrefixUtils.c.i
@@ -354,7 +354,7 @@ hrcPrefixUtils.i: hrcPrefixUtils.c.i
 
 # target to preprocess a source file
 hrcPrefixUtils.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/hrcPrefixUtils.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/hrcPrefixUtils.c.i
 .PHONY : hrcPrefixUtils.c.i
 
 hrcPrefixUtils.s: hrcPrefixUtils.c.s
@@ -363,7 +363,7 @@ hrcPrefixUtils.s: hrcPrefixUtils.c.s
 
 # target to generate assembly for a file
 hrcPrefixUtils.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/hrcPrefixUtils.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/hrcPrefixUtils.c.s
 .PHONY : hrcPrefixUtils.c.s
 
 hrcSymbTableUtils.o: hrcSymbTableUtils.c.o
@@ -372,7 +372,7 @@ hrcSymbTableUtils.o: hrcSymbTableUtils.c.o
 
 # target to build an object file
 hrcSymbTableUtils.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/hrcSymbTableUtils.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/hrcSymbTableUtils.c.o
 .PHONY : hrcSymbTableUtils.c.o
 
 hrcSymbTableUtils.i: hrcSymbTableUtils.c.i
@@ -381,7 +381,7 @@ hrcSymbTableUtils.i: hrcSymbTableUtils.c.i
 
 # target to preprocess a source file
 hrcSymbTableUtils.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/hrcSymbTableUtils.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/hrcSymbTableUtils.c.i
 .PHONY : hrcSymbTableUtils.c.i
 
 hrcSymbTableUtils.s: hrcSymbTableUtils.c.s
@@ -390,7 +390,7 @@ hrcSymbTableUtils.s: hrcSymbTableUtils.c.s
 
 # target to generate assembly for a file
 hrcSymbTableUtils.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/hrcSymbTableUtils.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/hrcSymbTableUtils.c.s
 .PHONY : hrcSymbTableUtils.c.s
 
 hrcWrite.o: hrcWrite.c.o
@@ -399,7 +399,7 @@ hrcWrite.o: hrcWrite.c.o
 
 # target to build an object file
 hrcWrite.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/hrcWrite.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/hrcWrite.c.o
 .PHONY : hrcWrite.c.o
 
 hrcWrite.i: hrcWrite.c.i
@@ -408,7 +408,7 @@ hrcWrite.i: hrcWrite.c.i
 
 # target to preprocess a source file
 hrcWrite.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/hrcWrite.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/hrcWrite.c.i
 .PHONY : hrcWrite.c.i
 
 hrcWrite.s: hrcWrite.c.s
@@ -417,7 +417,7 @@ hrcWrite.s: hrcWrite.c.s
 
 # target to generate assembly for a file
 hrcWrite.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/hrcWrite.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/build.make code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/hrcWrite.c.s
 .PHONY : hrcWrite.c.s
 
 # Help Target
@@ -471,6 +471,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

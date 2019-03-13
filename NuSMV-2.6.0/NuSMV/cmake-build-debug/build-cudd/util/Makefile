@@ -48,10 +48,10 @@ RM = /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV
+CMAKE_SOURCE_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug
+CMAKE_BINARY_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -83,7 +83,7 @@ install/fast: preinstall/fast
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -94,7 +94,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CPackSourceConfig.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -159,14 +159,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/util/CMakeFiles/progress.marks
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 build-cudd/util/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/util/CMakeFiles/progress.marks
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 build-cudd/util/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 build-cudd/util/clean
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 build-cudd/util/clean
 .PHONY : clean
 
 # The main clean target
@@ -176,22 +176,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 build-cudd/util/preinstall
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 build-cudd/util/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 build-cudd/util/preinstall
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 build-cudd/util/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/rule:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/rule
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/rule
 .PHONY : build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/rule
 
 # Convenience name for target.
@@ -201,7 +201,7 @@ CUDD_UTIL_LIB: build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/rule
 
 # fast build rule for target.
 CUDD_UTIL_LIB/fast:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build
 .PHONY : CUDD_UTIL_LIB/fast
 
 cpu_stats.o: cpu_stats.c.o
@@ -210,7 +210,7 @@ cpu_stats.o: cpu_stats.c.o
 
 # target to build an object file
 cpu_stats.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/cpu_stats.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/cpu_stats.c.o
 .PHONY : cpu_stats.c.o
 
 cpu_stats.i: cpu_stats.c.i
@@ -219,7 +219,7 @@ cpu_stats.i: cpu_stats.c.i
 
 # target to preprocess a source file
 cpu_stats.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/cpu_stats.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/cpu_stats.c.i
 .PHONY : cpu_stats.c.i
 
 cpu_stats.s: cpu_stats.c.s
@@ -228,7 +228,7 @@ cpu_stats.s: cpu_stats.c.s
 
 # target to generate assembly for a file
 cpu_stats.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/cpu_stats.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/cpu_stats.c.s
 .PHONY : cpu_stats.c.s
 
 cpu_time.o: cpu_time.c.o
@@ -237,7 +237,7 @@ cpu_time.o: cpu_time.c.o
 
 # target to build an object file
 cpu_time.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/cpu_time.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/cpu_time.c.o
 .PHONY : cpu_time.c.o
 
 cpu_time.i: cpu_time.c.i
@@ -246,7 +246,7 @@ cpu_time.i: cpu_time.c.i
 
 # target to preprocess a source file
 cpu_time.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/cpu_time.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/cpu_time.c.i
 .PHONY : cpu_time.c.i
 
 cpu_time.s: cpu_time.c.s
@@ -255,7 +255,7 @@ cpu_time.s: cpu_time.c.s
 
 # target to generate assembly for a file
 cpu_time.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/cpu_time.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/cpu_time.c.s
 .PHONY : cpu_time.c.s
 
 datalimit.o: datalimit.c.o
@@ -264,7 +264,7 @@ datalimit.o: datalimit.c.o
 
 # target to build an object file
 datalimit.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/datalimit.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/datalimit.c.o
 .PHONY : datalimit.c.o
 
 datalimit.i: datalimit.c.i
@@ -273,7 +273,7 @@ datalimit.i: datalimit.c.i
 
 # target to preprocess a source file
 datalimit.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/datalimit.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/datalimit.c.i
 .PHONY : datalimit.c.i
 
 datalimit.s: datalimit.c.s
@@ -282,7 +282,7 @@ datalimit.s: datalimit.c.s
 
 # target to generate assembly for a file
 datalimit.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/datalimit.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/datalimit.c.s
 .PHONY : datalimit.c.s
 
 getopt.o: getopt.c.o
@@ -291,7 +291,7 @@ getopt.o: getopt.c.o
 
 # target to build an object file
 getopt.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/getopt.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/getopt.c.o
 .PHONY : getopt.c.o
 
 getopt.i: getopt.c.i
@@ -300,7 +300,7 @@ getopt.i: getopt.c.i
 
 # target to preprocess a source file
 getopt.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/getopt.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/getopt.c.i
 .PHONY : getopt.c.i
 
 getopt.s: getopt.c.s
@@ -309,7 +309,7 @@ getopt.s: getopt.c.s
 
 # target to generate assembly for a file
 getopt.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/getopt.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/getopt.c.s
 .PHONY : getopt.c.s
 
 pathsearch.o: pathsearch.c.o
@@ -318,7 +318,7 @@ pathsearch.o: pathsearch.c.o
 
 # target to build an object file
 pathsearch.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/pathsearch.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/pathsearch.c.o
 .PHONY : pathsearch.c.o
 
 pathsearch.i: pathsearch.c.i
@@ -327,7 +327,7 @@ pathsearch.i: pathsearch.c.i
 
 # target to preprocess a source file
 pathsearch.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/pathsearch.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/pathsearch.c.i
 .PHONY : pathsearch.c.i
 
 pathsearch.s: pathsearch.c.s
@@ -336,7 +336,7 @@ pathsearch.s: pathsearch.c.s
 
 # target to generate assembly for a file
 pathsearch.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/pathsearch.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/pathsearch.c.s
 .PHONY : pathsearch.c.s
 
 pipefork.o: pipefork.c.o
@@ -345,7 +345,7 @@ pipefork.o: pipefork.c.o
 
 # target to build an object file
 pipefork.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/pipefork.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/pipefork.c.o
 .PHONY : pipefork.c.o
 
 pipefork.i: pipefork.c.i
@@ -354,7 +354,7 @@ pipefork.i: pipefork.c.i
 
 # target to preprocess a source file
 pipefork.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/pipefork.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/pipefork.c.i
 .PHONY : pipefork.c.i
 
 pipefork.s: pipefork.c.s
@@ -363,7 +363,7 @@ pipefork.s: pipefork.c.s
 
 # target to generate assembly for a file
 pipefork.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/pipefork.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/pipefork.c.s
 .PHONY : pipefork.c.s
 
 prtime.o: prtime.c.o
@@ -372,7 +372,7 @@ prtime.o: prtime.c.o
 
 # target to build an object file
 prtime.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/prtime.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/prtime.c.o
 .PHONY : prtime.c.o
 
 prtime.i: prtime.c.i
@@ -381,7 +381,7 @@ prtime.i: prtime.c.i
 
 # target to preprocess a source file
 prtime.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/prtime.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/prtime.c.i
 .PHONY : prtime.c.i
 
 prtime.s: prtime.c.s
@@ -390,7 +390,7 @@ prtime.s: prtime.c.s
 
 # target to generate assembly for a file
 prtime.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/prtime.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/prtime.c.s
 .PHONY : prtime.c.s
 
 ptime.o: ptime.c.o
@@ -399,7 +399,7 @@ ptime.o: ptime.c.o
 
 # target to build an object file
 ptime.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/ptime.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/ptime.c.o
 .PHONY : ptime.c.o
 
 ptime.i: ptime.c.i
@@ -408,7 +408,7 @@ ptime.i: ptime.c.i
 
 # target to preprocess a source file
 ptime.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/ptime.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/ptime.c.i
 .PHONY : ptime.c.i
 
 ptime.s: ptime.c.s
@@ -417,7 +417,7 @@ ptime.s: ptime.c.s
 
 # target to generate assembly for a file
 ptime.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/ptime.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/ptime.c.s
 .PHONY : ptime.c.s
 
 safe_mem.o: safe_mem.c.o
@@ -426,7 +426,7 @@ safe_mem.o: safe_mem.c.o
 
 # target to build an object file
 safe_mem.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/safe_mem.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/safe_mem.c.o
 .PHONY : safe_mem.c.o
 
 safe_mem.i: safe_mem.c.i
@@ -435,7 +435,7 @@ safe_mem.i: safe_mem.c.i
 
 # target to preprocess a source file
 safe_mem.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/safe_mem.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/safe_mem.c.i
 .PHONY : safe_mem.c.i
 
 safe_mem.s: safe_mem.c.s
@@ -444,7 +444,7 @@ safe_mem.s: safe_mem.c.s
 
 # target to generate assembly for a file
 safe_mem.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/safe_mem.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/safe_mem.c.s
 .PHONY : safe_mem.c.s
 
 strsav.o: strsav.c.o
@@ -453,7 +453,7 @@ strsav.o: strsav.c.o
 
 # target to build an object file
 strsav.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/strsav.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/strsav.c.o
 .PHONY : strsav.c.o
 
 strsav.i: strsav.c.i
@@ -462,7 +462,7 @@ strsav.i: strsav.c.i
 
 # target to preprocess a source file
 strsav.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/strsav.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/strsav.c.i
 .PHONY : strsav.c.i
 
 strsav.s: strsav.c.s
@@ -471,7 +471,7 @@ strsav.s: strsav.c.s
 
 # target to generate assembly for a file
 strsav.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/strsav.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/strsav.c.s
 .PHONY : strsav.c.s
 
 stub.o: stub.c.o
@@ -480,7 +480,7 @@ stub.o: stub.c.o
 
 # target to build an object file
 stub.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/stub.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/stub.c.o
 .PHONY : stub.c.o
 
 stub.i: stub.c.i
@@ -489,7 +489,7 @@ stub.i: stub.c.i
 
 # target to preprocess a source file
 stub.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/stub.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/stub.c.i
 .PHONY : stub.c.i
 
 stub.s: stub.c.s
@@ -498,7 +498,7 @@ stub.s: stub.c.s
 
 # target to generate assembly for a file
 stub.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/stub.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/stub.c.s
 .PHONY : stub.c.s
 
 texpand.o: texpand.c.o
@@ -507,7 +507,7 @@ texpand.o: texpand.c.o
 
 # target to build an object file
 texpand.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/texpand.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/texpand.c.o
 .PHONY : texpand.c.o
 
 texpand.i: texpand.c.i
@@ -516,7 +516,7 @@ texpand.i: texpand.c.i
 
 # target to preprocess a source file
 texpand.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/texpand.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/texpand.c.i
 .PHONY : texpand.c.i
 
 texpand.s: texpand.c.s
@@ -525,7 +525,7 @@ texpand.s: texpand.c.s
 
 # target to generate assembly for a file
 texpand.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/texpand.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/texpand.c.s
 .PHONY : texpand.c.s
 
 tmpfile.o: tmpfile.c.o
@@ -534,7 +534,7 @@ tmpfile.o: tmpfile.c.o
 
 # target to build an object file
 tmpfile.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/tmpfile.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/tmpfile.c.o
 .PHONY : tmpfile.c.o
 
 tmpfile.i: tmpfile.c.i
@@ -543,7 +543,7 @@ tmpfile.i: tmpfile.c.i
 
 # target to preprocess a source file
 tmpfile.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/tmpfile.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/tmpfile.c.i
 .PHONY : tmpfile.c.i
 
 tmpfile.s: tmpfile.c.s
@@ -552,7 +552,7 @@ tmpfile.s: tmpfile.c.s
 
 # target to generate assembly for a file
 tmpfile.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/tmpfile.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/build.make build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/tmpfile.c.s
 .PHONY : tmpfile.c.s
 
 # Help Target
@@ -621,6 +621,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

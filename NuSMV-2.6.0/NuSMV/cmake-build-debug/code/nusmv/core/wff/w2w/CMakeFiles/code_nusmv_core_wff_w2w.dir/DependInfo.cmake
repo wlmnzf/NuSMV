@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/wff/w2w/wff2nnf.c" "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/wff/w2w/CMakeFiles/code_nusmv_core_wff_w2w.dir/wff2nnf.c.o"
+  "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/wff/w2w/wff2nnf.c" "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/wff/w2w/CMakeFiles/code_nusmv_core_wff_w2w.dir/wff2nnf.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

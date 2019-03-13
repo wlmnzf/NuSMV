@@ -9,7 +9,7 @@ code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/dagDfs.c.o
  ../code/nusmv/core/utils/defs.h
  ../code/nusmv/core/utils/list.h
  ../code/nusmv/core/utils/utils.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/dag/dagDfs.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/dag/dagDfs.c
  build-cudd/include/cudd/st.h
  build-cudd/include/cudd/util.h
  nusmv-config.h
@@ -20,7 +20,7 @@ code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/dagEnStat.c.o
  ../code/nusmv/core/utils/defs.h
  ../code/nusmv/core/utils/list.h
  ../code/nusmv/core/utils/utils.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/dag/dagEnStat.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/dag/dagEnStat.c
  build-cudd/include/cudd/st.h
  build-cudd/include/cudd/util.h
  nusmv-config.h
@@ -31,7 +31,7 @@ code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/dagManager.c.o
  ../code/nusmv/core/utils/defs.h
  ../code/nusmv/core/utils/list.h
  ../code/nusmv/core/utils/utils.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/dag/dagManager.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/dag/dagManager.c
  build-cudd/include/cudd/st.h
  build-cudd/include/cudd/util.h
  nusmv-config.h
@@ -42,7 +42,7 @@ code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/dagStat.c.o
  ../code/nusmv/core/utils/defs.h
  ../code/nusmv/core/utils/list.h
  ../code/nusmv/core/utils/utils.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/dag/dagStat.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/dag/dagStat.c
  build-cudd/include/cudd/st.h
  build-cudd/include/cudd/util.h
  nusmv-config.h
@@ -53,7 +53,7 @@ code/nusmv/core/dag/CMakeFiles/code_nusmv_core_dag.dir/dagVertex.c.o
  ../code/nusmv/core/utils/defs.h
  ../code/nusmv/core/utils/list.h
  ../code/nusmv/core/utils/utils.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/dag/dagVertex.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/dag/dagVertex.c
  build-cudd/include/cudd/st.h
  build-cudd/include/cudd/util.h
  nusmv-config.h

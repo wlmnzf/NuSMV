@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/epd/epd.c
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/epd/epd.c
 stdio.h
 -
 stdlib.h
@@ -16,11 +16,11 @@ string.h
 math.h
 -
 util.h
-/home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/epd/util.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/epd/util.h
 epd.h
-/home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/epd/epd.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/epd/epd.h
 
-/home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/epd/epd.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/epd/epd.h
 
 build-cudd/include/cudd/util.h
 nusmv-config.h

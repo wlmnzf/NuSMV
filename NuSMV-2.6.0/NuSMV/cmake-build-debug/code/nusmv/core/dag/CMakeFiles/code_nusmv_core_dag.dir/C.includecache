@@ -80,33 +80,33 @@ nusmv/core/cinit/NuSMVEnv.h
 nusmv/core/utils/list.h
 ../code/nusmv/core/utils/nusmv/core/utils/list.h
 
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/dag/dagDfs.c
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/dag/dagDfs.c
 nusmv/core/dag/dagInt.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/dag/nusmv/core/dag/dagInt.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/dag/nusmv/core/dag/dagInt.h
 nusmv/core/utils/Stack.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/dag/nusmv/core/utils/Stack.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/dag/nusmv/core/utils/Stack.h
 
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/dag/dagEnStat.c
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/dag/dagEnStat.c
 nusmv/core/dag/dag.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/dag/nusmv/core/dag/dag.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/dag/nusmv/core/dag/dag.h
 nusmv/core/dag/dagInt.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/dag/nusmv/core/dag/dagInt.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/dag/nusmv/core/dag/dagInt.h
 
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/dag/dagManager.c
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/dag/dagManager.c
 nusmv/core/dag/dagInt.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/dag/nusmv/core/dag/dagInt.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/dag/nusmv/core/dag/dagInt.h
 nusmv/core/utils/utils.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/dag/nusmv/core/utils/utils.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/dag/nusmv/core/utils/utils.h
 
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/dag/dagStat.c
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/dag/dagStat.c
 math.h
 -
 nusmv/core/dag/dagInt.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/dag/nusmv/core/dag/dagInt.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/dag/nusmv/core/dag/dagInt.h
 
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/dag/dagVertex.c
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/dag/dagVertex.c
 nusmv/core/dag/dagInt.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/dag/nusmv/core/dag/dagInt.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/dag/nusmv/core/dag/dagInt.h
 
 build-cudd/include/cudd/st.h
 

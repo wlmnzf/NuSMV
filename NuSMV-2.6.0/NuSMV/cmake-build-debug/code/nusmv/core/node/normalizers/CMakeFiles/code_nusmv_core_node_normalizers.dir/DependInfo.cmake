@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/node/normalizers/MasterNormalizer.c" "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/MasterNormalizer.c.o"
-  "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/node/normalizers/NormalizerBase.c" "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/NormalizerBase.c.o"
-  "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/node/normalizers/NormalizerCore.c" "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/NormalizerCore.c.o"
-  "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/node/normalizers/NormalizerPsl.c" "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/NormalizerPsl.c.o"
+  "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/node/normalizers/MasterNormalizer.c" "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/MasterNormalizer.c.o"
+  "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/node/normalizers/NormalizerBase.c" "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/NormalizerBase.c.o"
+  "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/node/normalizers/NormalizerCore.c" "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/NormalizerCore.c.o"
+  "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/node/normalizers/NormalizerPsl.c" "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/NormalizerPsl.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

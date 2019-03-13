@@ -43,10 +43,10 @@ RM = /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV
+CMAKE_SOURCE_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug
+CMAKE_BINARY_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/depend.make
@@ -58,30 +58,30 @@ include build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/progress.make
 include build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/flags.make
 
 build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/mtrBasic.c.o: build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/flags.make
-build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/mtrBasic.c.o: /home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/mtr/mtrBasic.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/mtrBasic.c.o"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/mtr && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/CUDD_MTR_LIB.dir/mtrBasic.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/mtr/mtrBasic.c
+build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/mtrBasic.c.o: /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/mtr/mtrBasic.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/mtrBasic.c.o"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/mtr && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/CUDD_MTR_LIB.dir/mtrBasic.c.o   -c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/mtr/mtrBasic.c
 
 build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/mtrBasic.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CUDD_MTR_LIB.dir/mtrBasic.c.i"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/mtr && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/mtr/mtrBasic.c > CMakeFiles/CUDD_MTR_LIB.dir/mtrBasic.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/mtr && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/mtr/mtrBasic.c > CMakeFiles/CUDD_MTR_LIB.dir/mtrBasic.c.i
 
 build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/mtrBasic.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CUDD_MTR_LIB.dir/mtrBasic.c.s"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/mtr && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/mtr/mtrBasic.c -o CMakeFiles/CUDD_MTR_LIB.dir/mtrBasic.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/mtr && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/mtr/mtrBasic.c -o CMakeFiles/CUDD_MTR_LIB.dir/mtrBasic.c.s
 
 build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/mtrGroup.c.o: build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/flags.make
-build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/mtrGroup.c.o: /home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/mtr/mtrGroup.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/mtrGroup.c.o"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/mtr && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/CUDD_MTR_LIB.dir/mtrGroup.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/mtr/mtrGroup.c
+build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/mtrGroup.c.o: /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/mtr/mtrGroup.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/mtrGroup.c.o"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/mtr && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/CUDD_MTR_LIB.dir/mtrGroup.c.o   -c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/mtr/mtrGroup.c
 
 build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/mtrGroup.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/CUDD_MTR_LIB.dir/mtrGroup.c.i"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/mtr && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/mtr/mtrGroup.c > CMakeFiles/CUDD_MTR_LIB.dir/mtrGroup.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/mtr && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/mtr/mtrGroup.c > CMakeFiles/CUDD_MTR_LIB.dir/mtrGroup.c.i
 
 build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/mtrGroup.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/CUDD_MTR_LIB.dir/mtrGroup.c.s"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/mtr && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/mtr/mtrGroup.c -o CMakeFiles/CUDD_MTR_LIB.dir/mtrGroup.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/mtr && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/mtr/mtrGroup.c -o CMakeFiles/CUDD_MTR_LIB.dir/mtrGroup.c.s
 
 # Object files for target CUDD_MTR_LIB
 CUDD_MTR_LIB_OBJECTS = \
@@ -95,9 +95,9 @@ build-cudd/lib/libmtr.a: build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/mtrBasic.c.o
 build-cudd/lib/libmtr.a: build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/mtrGroup.c.o
 build-cudd/lib/libmtr.a: build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/build.make
 build-cudd/lib/libmtr.a: build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library ../lib/libmtr.a"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/mtr && $(CMAKE_COMMAND) -P CMakeFiles/CUDD_MTR_LIB.dir/cmake_clean_target.cmake
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/mtr && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CUDD_MTR_LIB.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library ../lib/libmtr.a"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/mtr && $(CMAKE_COMMAND) -P CMakeFiles/CUDD_MTR_LIB.dir/cmake_clean_target.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/mtr && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/CUDD_MTR_LIB.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/build: build-cudd/lib/libmtr.a
@@ -105,10 +105,10 @@ build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/build: build-cudd/lib/libmtr.a
 .PHONY : build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/build
 
 build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/clean:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/mtr && $(CMAKE_COMMAND) -P CMakeFiles/CUDD_MTR_LIB.dir/cmake_clean.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/mtr && $(CMAKE_COMMAND) -P CMakeFiles/CUDD_MTR_LIB.dir/cmake_clean.cmake
 .PHONY : build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/clean
 
 build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/depend:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV /home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/mtr /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/mtr /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/mtr /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/mtr /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/depend
 

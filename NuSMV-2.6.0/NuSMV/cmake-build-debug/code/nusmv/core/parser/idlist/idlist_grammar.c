@@ -145,7 +145,7 @@ void parser_idlist_error(char *s);
 int parser_idlist_wrap(void);
 
 
-#line 149 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/idlist/idlist_grammar.c" /* yacc.c:339  */
+#line 149 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/idlist/idlist_grammar.c" /* yacc.c:339  */
 
 # ifndef YY_NULLPTR
 #  if defined __cplusplus && 201103L <= __cplusplus
@@ -165,8 +165,8 @@ int parser_idlist_wrap(void);
 
 /* In a future release of Bison, this section will be replaced
    by #include "idlist_grammar.h".  */
-#ifndef YY_PARSER_IDLIST_HOME_WILLIAM_NUSMV_A_NUSMV_2_6_0_NUSMV_CMAKE_BUILD_DEBUG_CODE_NUSMV_CORE_PARSER_IDLIST_IDLIST_GRAMMAR_H_INCLUDED
-# define YY_PARSER_IDLIST_HOME_WILLIAM_NUSMV_A_NUSMV_2_6_0_NUSMV_CMAKE_BUILD_DEBUG_CODE_NUSMV_CORE_PARSER_IDLIST_IDLIST_GRAMMAR_H_INCLUDED
+#ifndef YY_PARSER_IDLIST_HOME_WILLIAM_CLIONPROJECTS_NUSMV_NUSMV_2_6_0_NUSMV_CMAKE_BUILD_DEBUG_CODE_NUSMV_CORE_PARSER_IDLIST_IDLIST_GRAMMAR_H_INCLUDED
+# define YY_PARSER_IDLIST_HOME_WILLIAM_CLIONPROJECTS_NUSMV_NUSMV_2_6_0_NUSMV_CMAKE_BUILD_DEBUG_CODE_NUSMV_CORE_PARSER_IDLIST_IDLIST_GRAMMAR_H_INCLUDED
 /* Debug traces.  */
 #ifndef YYDEBUG
 # define YYDEBUG 0
@@ -197,7 +197,7 @@ union YYSTYPE
 
   node_ptr node;
 
-#line 201 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/idlist/idlist_grammar.c" /* yacc.c:355  */
+#line 201 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/idlist/idlist_grammar.c" /* yacc.c:355  */
 };
 
 typedef union YYSTYPE YYSTYPE;
@@ -210,11 +210,11 @@ extern YYSTYPE parser_idlist_lval;
 
 int parser_idlist_parse (void);
 
-#endif /* !YY_PARSER_IDLIST_HOME_WILLIAM_NUSMV_A_NUSMV_2_6_0_NUSMV_CMAKE_BUILD_DEBUG_CODE_NUSMV_CORE_PARSER_IDLIST_IDLIST_GRAMMAR_H_INCLUDED  */
+#endif /* !YY_PARSER_IDLIST_HOME_WILLIAM_CLIONPROJECTS_NUSMV_NUSMV_2_6_0_NUSMV_CMAKE_BUILD_DEBUG_CODE_NUSMV_CORE_PARSER_IDLIST_IDLIST_GRAMMAR_H_INCLUDED  */
 
 /* Copy the second part of user declarations.  */
 
-#line 218 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/idlist/idlist_grammar.c" /* yacc.c:358  */
+#line 218 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/idlist/idlist_grammar.c" /* yacc.c:358  */
 
 #ifdef short
 # undef short
@@ -1283,13 +1283,13 @@ yyreduce:
         case 2:
 #line 101 "idlist_grammar.y" /* yacc.c:1646  */
     { }
-#line 1287 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/idlist/idlist_grammar.c" /* yacc.c:1646  */
+#line 1287 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/idlist/idlist_grammar.c" /* yacc.c:1646  */
     break;
 
   case 3:
 #line 105 "idlist_grammar.y" /* yacc.c:1646  */
     {}
-#line 1293 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/idlist/idlist_grammar.c" /* yacc.c:1646  */
+#line 1293 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/idlist/idlist_grammar.c" /* yacc.c:1646  */
     break;
 
   case 4:
@@ -1297,7 +1297,7 @@ yyreduce:
     {
   parser_id_list_add_id(parser_idlist_get_global_parser(), (yyvsp[-1].node));
 }
-#line 1301 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/idlist/idlist_grammar.c" /* yacc.c:1646  */
+#line 1301 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/idlist/idlist_grammar.c" /* yacc.c:1646  */
     break;
 
   case 7:
@@ -1306,7 +1306,7 @@ yyreduce:
   (yyval.node) = parser_id_list_mk_dot(parser_idlist_get_global_parser(),
                              (yyvsp[-2].node), (yyvsp[0].node));
 }
-#line 1310 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/idlist/idlist_grammar.c" /* yacc.c:1646  */
+#line 1310 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/idlist/idlist_grammar.c" /* yacc.c:1646  */
     break;
 
   case 8:
@@ -1315,7 +1315,7 @@ yyreduce:
   (yyval.node) = parser_id_list_mk_array(parser_idlist_get_global_parser(),
                                (yyvsp[-3].node), (yyvsp[-1].node));
 }
-#line 1319 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/idlist/idlist_grammar.c" /* yacc.c:1646  */
+#line 1319 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/idlist/idlist_grammar.c" /* yacc.c:1646  */
     break;
 
   case 9:
@@ -1324,11 +1324,11 @@ yyreduce:
   (yyval.node) = parser_id_list_mk_dot(parser_idlist_get_global_parser(),
                              (yyvsp[-2].node), (yyvsp[0].node));
 }
-#line 1328 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/idlist/idlist_grammar.c" /* yacc.c:1646  */
+#line 1328 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/idlist/idlist_grammar.c" /* yacc.c:1646  */
     break;
 
 
-#line 1332 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/idlist/idlist_grammar.c" /* yacc.c:1646  */
+#line 1332 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/idlist/idlist_grammar.c" /* yacc.c:1646  */
       default: break;
     }
   /* User semantic actions sometimes alter yychar, and that requires

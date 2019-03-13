@@ -48,10 +48,10 @@ RM = /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV
+CMAKE_SOURCE_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug
+CMAKE_BINARY_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -93,7 +93,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -104,7 +104,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CPackSourceConfig.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -159,14 +159,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/node/printers/CMakeFiles/progress.marks
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/node/printers/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/node/printers/CMakeFiles/progress.marks
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/node/printers/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/node/printers/clean
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/node/printers/clean
 .PHONY : clean
 
 # The main clean target
@@ -176,22 +176,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/node/printers/preinstall
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/node/printers/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/node/printers/preinstall
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/node/printers/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/rule:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/rule
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/rule
 .PHONY : code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/rule
 
 # Convenience name for target.
@@ -201,7 +201,7 @@ code_nusmv_core_node_printers: code/nusmv/core/node/printers/CMakeFiles/code_nus
 
 # fast build rule for target.
 code_nusmv_core_node_printers/fast:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/build.make code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/build
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/build.make code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/build
 .PHONY : code_nusmv_core_node_printers/fast
 
 MasterPrinter.o: MasterPrinter.c.o
@@ -210,7 +210,7 @@ MasterPrinter.o: MasterPrinter.c.o
 
 # target to build an object file
 MasterPrinter.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/build.make code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/MasterPrinter.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/build.make code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/MasterPrinter.c.o
 .PHONY : MasterPrinter.c.o
 
 MasterPrinter.i: MasterPrinter.c.i
@@ -219,7 +219,7 @@ MasterPrinter.i: MasterPrinter.c.i
 
 # target to preprocess a source file
 MasterPrinter.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/build.make code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/MasterPrinter.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/build.make code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/MasterPrinter.c.i
 .PHONY : MasterPrinter.c.i
 
 MasterPrinter.s: MasterPrinter.c.s
@@ -228,7 +228,7 @@ MasterPrinter.s: MasterPrinter.c.s
 
 # target to generate assembly for a file
 MasterPrinter.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/build.make code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/MasterPrinter.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/build.make code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/MasterPrinter.c.s
 .PHONY : MasterPrinter.c.s
 
 PrinterBase.o: PrinterBase.c.o
@@ -237,7 +237,7 @@ PrinterBase.o: PrinterBase.c.o
 
 # target to build an object file
 PrinterBase.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/build.make code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/PrinterBase.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/build.make code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/PrinterBase.c.o
 .PHONY : PrinterBase.c.o
 
 PrinterBase.i: PrinterBase.c.i
@@ -246,7 +246,7 @@ PrinterBase.i: PrinterBase.c.i
 
 # target to preprocess a source file
 PrinterBase.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/build.make code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/PrinterBase.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/build.make code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/PrinterBase.c.i
 .PHONY : PrinterBase.c.i
 
 PrinterBase.s: PrinterBase.c.s
@@ -255,7 +255,7 @@ PrinterBase.s: PrinterBase.c.s
 
 # target to generate assembly for a file
 PrinterBase.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/build.make code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/PrinterBase.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/build.make code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/PrinterBase.c.s
 .PHONY : PrinterBase.c.s
 
 PrinterIWffCore.o: PrinterIWffCore.c.o
@@ -264,7 +264,7 @@ PrinterIWffCore.o: PrinterIWffCore.c.o
 
 # target to build an object file
 PrinterIWffCore.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/build.make code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/PrinterIWffCore.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/build.make code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/PrinterIWffCore.c.o
 .PHONY : PrinterIWffCore.c.o
 
 PrinterIWffCore.i: PrinterIWffCore.c.i
@@ -273,7 +273,7 @@ PrinterIWffCore.i: PrinterIWffCore.c.i
 
 # target to preprocess a source file
 PrinterIWffCore.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/build.make code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/PrinterIWffCore.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/build.make code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/PrinterIWffCore.c.i
 .PHONY : PrinterIWffCore.c.i
 
 PrinterIWffCore.s: PrinterIWffCore.c.s
@@ -282,7 +282,7 @@ PrinterIWffCore.s: PrinterIWffCore.c.s
 
 # target to generate assembly for a file
 PrinterIWffCore.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/build.make code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/PrinterIWffCore.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/build.make code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/PrinterIWffCore.c.s
 .PHONY : PrinterIWffCore.c.s
 
 PrinterPsl.o: PrinterPsl.c.o
@@ -291,7 +291,7 @@ PrinterPsl.o: PrinterPsl.c.o
 
 # target to build an object file
 PrinterPsl.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/build.make code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/PrinterPsl.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/build.make code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/PrinterPsl.c.o
 .PHONY : PrinterPsl.c.o
 
 PrinterPsl.i: PrinterPsl.c.i
@@ -300,7 +300,7 @@ PrinterPsl.i: PrinterPsl.c.i
 
 # target to preprocess a source file
 PrinterPsl.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/build.make code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/PrinterPsl.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/build.make code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/PrinterPsl.c.i
 .PHONY : PrinterPsl.c.i
 
 PrinterPsl.s: PrinterPsl.c.s
@@ -309,7 +309,7 @@ PrinterPsl.s: PrinterPsl.c.s
 
 # target to generate assembly for a file
 PrinterPsl.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/build.make code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/PrinterPsl.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/build.make code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/PrinterPsl.c.s
 .PHONY : PrinterPsl.c.s
 
 PrinterSexpCore.o: PrinterSexpCore.c.o
@@ -318,7 +318,7 @@ PrinterSexpCore.o: PrinterSexpCore.c.o
 
 # target to build an object file
 PrinterSexpCore.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/build.make code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/PrinterSexpCore.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/build.make code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/PrinterSexpCore.c.o
 .PHONY : PrinterSexpCore.c.o
 
 PrinterSexpCore.i: PrinterSexpCore.c.i
@@ -327,7 +327,7 @@ PrinterSexpCore.i: PrinterSexpCore.c.i
 
 # target to preprocess a source file
 PrinterSexpCore.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/build.make code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/PrinterSexpCore.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/build.make code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/PrinterSexpCore.c.i
 .PHONY : PrinterSexpCore.c.i
 
 PrinterSexpCore.s: PrinterSexpCore.c.s
@@ -336,7 +336,7 @@ PrinterSexpCore.s: PrinterSexpCore.c.s
 
 # target to generate assembly for a file
 PrinterSexpCore.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/build.make code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/PrinterSexpCore.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/build.make code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/PrinterSexpCore.c.s
 .PHONY : PrinterSexpCore.c.s
 
 PrinterWffCore.o: PrinterWffCore.c.o
@@ -345,7 +345,7 @@ PrinterWffCore.o: PrinterWffCore.c.o
 
 # target to build an object file
 PrinterWffCore.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/build.make code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/PrinterWffCore.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/build.make code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/PrinterWffCore.c.o
 .PHONY : PrinterWffCore.c.o
 
 PrinterWffCore.i: PrinterWffCore.c.i
@@ -354,7 +354,7 @@ PrinterWffCore.i: PrinterWffCore.c.i
 
 # target to preprocess a source file
 PrinterWffCore.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/build.make code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/PrinterWffCore.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/build.make code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/PrinterWffCore.c.i
 .PHONY : PrinterWffCore.c.i
 
 PrinterWffCore.s: PrinterWffCore.c.s
@@ -363,7 +363,7 @@ PrinterWffCore.s: PrinterWffCore.c.s
 
 # target to generate assembly for a file
 PrinterWffCore.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/build.make code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/PrinterWffCore.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/build.make code/nusmv/core/node/printers/CMakeFiles/code_nusmv_core_node_printers.dir/PrinterWffCore.c.s
 .PHONY : PrinterWffCore.c.s
 
 # Help Target
@@ -411,6 +411,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

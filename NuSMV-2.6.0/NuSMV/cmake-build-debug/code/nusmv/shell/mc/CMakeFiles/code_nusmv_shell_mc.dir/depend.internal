@@ -122,7 +122,7 @@ code/nusmv/shell/mc/CMakeFiles/code_nusmv_shell_mc.dir/mcCmd.c.o
  ../code/nusmv/shell/bmc/sbmc/sbmcCmd.h
  ../code/nusmv/shell/cmd/cmd.h
  ../code/nusmv/shell/mc/mcCmd.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/mc/mcCmd.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/mc/mcCmd.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h

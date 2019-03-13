@@ -43,10 +43,10 @@ RM = /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV
+CMAKE_SOURCE_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug
+CMAKE_BINARY_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug
 
 # Utility rule file for gitarchive.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug
 include CMakeFiles/gitarchive.dir/progress.make
 
 CMakeFiles/gitarchive:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0 && git archive --worktree-attributes --format=tar --prefix=NuSMV-2.6.0/ --output=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/NuSMV-2.6.0.tar HEAD NuSMV/ MiniSat/ zchaff/ cudd-2.4.1.1/
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0 && git archive --worktree-attributes --format=tar --prefix=NuSMV-2.6.0/ --output=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/NuSMV-2.6.0.tar HEAD NuSMV/ MiniSat/ zchaff/ cudd-2.4.1.1/
 
 gitarchive: CMakeFiles/gitarchive
 gitarchive: CMakeFiles/gitarchive.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/gitarchive.dir/clean:
 .PHONY : CMakeFiles/gitarchive.dir/clean
 
 CMakeFiles/gitarchive.dir/depend:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/gitarchive.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/gitarchive.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/gitarchive.dir/depend
 

@@ -70,7 +70,7 @@
 #define yychar          nusmv_yychar
 
 /* Copy the first part of user declarations.  */
-#line 43 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:339  */
+#line 43 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:339  */
 
 
 #if HAVE_CONFIG_H
@@ -165,7 +165,7 @@ static node_ptr node2maincontext(node_ptr node);
 
   static int nusmv_parse_psl(void);
 
-#line 169 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:339  */
+#line 169 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:339  */
 
 # ifndef YY_NULLPTR
 #  if defined __cplusplus && 201103L <= __cplusplus
@@ -185,8 +185,8 @@ static node_ptr node2maincontext(node_ptr node);
 
 /* In a future release of Bison, this section will be replaced
    by #include "grammar.h".  */
-#ifndef YY_NUSMV_YY_HOME_WILLIAM_NUSMV_A_NUSMV_2_6_0_NUSMV_CMAKE_BUILD_DEBUG_CODE_NUSMV_CORE_PARSER_GRAMMAR_H_INCLUDED
-# define YY_NUSMV_YY_HOME_WILLIAM_NUSMV_A_NUSMV_2_6_0_NUSMV_CMAKE_BUILD_DEBUG_CODE_NUSMV_CORE_PARSER_GRAMMAR_H_INCLUDED
+#ifndef YY_NUSMV_YY_HOME_WILLIAM_CLIONPROJECTS_NUSMV_NUSMV_2_6_0_NUSMV_CMAKE_BUILD_DEBUG_CODE_NUSMV_CORE_PARSER_GRAMMAR_H_INCLUDED
+# define YY_NUSMV_YY_HOME_WILLIAM_CLIONPROJECTS_NUSMV_NUSMV_2_6_0_NUSMV_CMAKE_BUILD_DEBUG_CODE_NUSMV_CORE_PARSER_GRAMMAR_H_INCLUDED
 /* Debug traces.  */
 #ifndef YYDEBUG
 # define YYDEBUG 0
@@ -350,12 +350,12 @@ extern int nusmv_yydebug;
 
 union YYSTYPE
 {
-#line 138 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:355  */
+#line 138 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:355  */
 
   node_ptr node;
   int lineno;
 
-#line 359 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:355  */
+#line 359 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:355  */
 };
 
 typedef union YYSTYPE YYSTYPE;
@@ -368,11 +368,11 @@ extern YYSTYPE nusmv_yylval;
 
 int nusmv_yyparse (void);
 
-#endif /* !YY_NUSMV_YY_HOME_WILLIAM_NUSMV_A_NUSMV_2_6_0_NUSMV_CMAKE_BUILD_DEBUG_CODE_NUSMV_CORE_PARSER_GRAMMAR_H_INCLUDED  */
+#endif /* !YY_NUSMV_YY_HOME_WILLIAM_CLIONPROJECTS_NUSMV_NUSMV_2_6_0_NUSMV_CMAKE_BUILD_DEBUG_CODE_NUSMV_CORE_PARSER_GRAMMAR_H_INCLUDED  */
 
 /* Copy the second part of user declarations.  */
 
-#line 376 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:358  */
+#line 376 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:358  */
 
 #ifdef short
 # undef short
@@ -2384,97 +2384,97 @@ yyreduce:
   switch (yyn)
     {
         case 3:
-#line 253 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 253 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = (yyvsp[0].node); }
-#line 2390 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2390 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 5:
-#line 257 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 257 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = (yyvsp[0].node); }
-#line 2396 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2396 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 6:
-#line 259 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 259 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {node_int_setcar((yyvsp[0].node), -(node_get_int((yyvsp[0].node)))); (yyval.node) = (yyvsp[0].node);}
-#line 2402 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2402 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 11:
-#line 272 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 272 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, TWODOTS, (yyvsp[-2].node), (yyvsp[0].node), (yyvsp[-1].lineno));}
-#line 2408 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2408 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 12:
-#line 276 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 276 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, TWODOTS, (yyvsp[-2].node), (yyvsp[0].node), (yyvsp[-1].lineno));}
-#line 2414 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2414 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 15:
-#line 282 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 282 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, UWCONST, (yyvsp[-3].node), (yyvsp[-1].node), (yyvsp[-5].lineno)); }
-#line 2420 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2420 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 16:
-#line 284 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 284 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, SWCONST, (yyvsp[-3].node), (yyvsp[-1].node), (yyvsp[-5].lineno)); }
-#line 2426 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2426 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 17:
-#line 286 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 286 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, WSIZEOF, (yyvsp[-1].node), Nil, (yyvsp[-3].lineno)); }
-#line 2432 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2432 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 18:
-#line 288 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 288 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, CAST_TOINT, (yyvsp[-1].node), Nil, (yyvsp[-3].lineno)); }
-#line 2438 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2438 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 21:
-#line 292 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 292 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {
                  nusmv_yyerror("fractional constants are not supported.");
                  YYABORT;
                }
-#line 2447 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2447 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 22:
-#line 297 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 297 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {
                  nusmv_yyerror("exponential constants are not supported.");
                  YYABORT;
                }
-#line 2456 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2456 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 23:
-#line 302 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 302 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {
                  nusmv_yyerror("real constants are not supported.");
                  YYABORT;
                }
-#line 2465 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2465 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 25:
-#line 311 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 311 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {
                  nusmv_yyerror("functions are not supported.");
                  YYABORT;
                }
-#line 2474 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2474 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 26:
-#line 318 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 318 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {
                     int ntype = node_get_type((yyvsp[-3].node));
                     if (ATOM != ntype && DOT != ntype && SELF != ntype) {
@@ -2483,23 +2483,23 @@ yyreduce:
                     }
                 (yyval.node) = new_lined_node(NODEMGR, NFUNCTION, (yyvsp[-3].node), (yyvsp[-1].node), (yyvsp[-2].lineno));
                }
-#line 2487 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2487 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 28:
-#line 338 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 338 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, UMINUS, (yyvsp[0].node), Nil, (yyvsp[-1].lineno)); }
-#line 2493 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2493 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 30:
-#line 340 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 340 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_node(NODEMGR, SELF,Nil,Nil);}
-#line 2499 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2499 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 31:
-#line 342 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 342 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {
                     int ntype = node_get_type((yyvsp[-2].node));
                     if (ATOM != ntype && DOT != ntype && ARRAY != ntype && SELF != ntype) {
@@ -2508,11 +2508,11 @@ yyreduce:
                     }
                     (yyval.node) = new_lined_node(NODEMGR, DOT, (yyvsp[-2].node), (yyvsp[0].node), (yyvsp[-1].lineno)) ;
                   }
-#line 2512 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2512 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 32:
-#line 351 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 351 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {
                    int ntype = node_get_type((yyvsp[-2].node));
                    if (ATOM != ntype && DOT != ntype && ARRAY != ntype && SELF != ntype) {
@@ -2521,152 +2521,152 @@ yyreduce:
                    }
                    (yyval.node) = new_lined_node(NODEMGR, DOT, (yyvsp[-2].node), (yyvsp[0].node), (yyvsp[-1].lineno)) ;
                   }
-#line 2525 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2525 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 33:
-#line 360 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 360 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {
                    /* array may have any expression on the left.
                       The type check will detect any problems */
                    (yyval.node) = new_lined_node(NODEMGR, ARRAY, (yyvsp[-3].node), (yyvsp[-1].node), (yyvsp[-2].lineno));
                   }
-#line 2535 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2535 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 34:
-#line 366 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 366 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {
                     (yyval.node) = new_lined_node(NODEMGR, BIT_SELECTION, (yyvsp[-5].node),
                                         new_lined_node(NODEMGR, COLON, (yyvsp[-3].node), (yyvsp[-1].node), (yyvsp[-2].lineno)), (yyvsp[-4].lineno));
                   }
-#line 2544 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2544 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 35:
-#line 370 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 370 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = (yyvsp[-1].node); }
-#line 2550 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2550 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 36:
-#line 371 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 371 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { /* abs(a) := (a >= 0) ? a : - a */
                                                       node_ptr zero = new_lined_node(NODEMGR, NUMBER, NODE_FROM_INT((int)(0)), Nil, (yyvsp[-3].lineno));
                                                       node_ptr cond = new_lined_node(NODEMGR, GE, (yyvsp[-1].node), zero, (yyvsp[-3].lineno));
                                                       node_ptr minus_a = new_lined_node(NODEMGR, UMINUS, (yyvsp[-1].node), Nil, (yyvsp[-3].lineno));
                                                       (yyval.node) = new_lined_node(NODEMGR, IFTHENELSE, new_lined_node(NODEMGR, COLON, cond, (yyvsp[-1].node), (yyvsp[-3].lineno)), minus_a, (yyvsp[-3].lineno)); ; }
-#line 2560 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2560 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 37:
-#line 376 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 376 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { /* MIN(a,b) := a < b ? a : b */
                                                                            node_ptr cond = new_lined_node(NODEMGR, LT, (yyvsp[-3].node), (yyvsp[-1].node), (yyvsp[-5].lineno));
                                                                            (yyval.node) = new_lined_node(NODEMGR, IFTHENELSE, new_lined_node(NODEMGR, COLON, cond, (yyvsp[-3].node), (yyvsp[-5].lineno)), (yyvsp[-1].node), (yyvsp[-5].lineno)); ; }
-#line 2568 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2568 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 38:
-#line 379 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 379 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { /* MAX(a,b) := a < b ? b : a */
                                                                            node_ptr cond = new_lined_node(NODEMGR, LT, (yyvsp[-3].node), (yyvsp[-1].node), (yyvsp[-5].lineno));
                                                                            (yyval.node) = new_lined_node(NODEMGR, IFTHENELSE, new_lined_node(NODEMGR, COLON, cond, (yyvsp[-1].node), (yyvsp[-5].lineno)), (yyvsp[-3].node), (yyvsp[-5].lineno)); ;}
-#line 2576 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2576 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 39:
-#line 382 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 382 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, NOT, (yyvsp[0].node), Nil, (yyvsp[-1].lineno)); }
-#line 2582 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2582 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 40:
-#line 383 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 383 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, CAST_BOOL, (yyvsp[-1].node), Nil, (yyvsp[-3].lineno)); }
-#line 2588 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2588 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 41:
-#line 384 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 384 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, CAST_WORD1, (yyvsp[-1].node), Nil, (yyvsp[-3].lineno)); }
-#line 2594 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2594 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 42:
-#line 385 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 385 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, NEXT, (yyvsp[-1].node), Nil, (yyvsp[-3].lineno)); }
-#line 2600 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2600 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 43:
-#line 386 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 386 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, CAST_SIGNED, (yyvsp[-1].node), Nil, (yyvsp[-3].lineno)); }
-#line 2606 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2606 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 44:
-#line 387 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 387 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, CAST_UNSIGNED, (yyvsp[-1].node), Nil, (yyvsp[-3].lineno)); }
-#line 2612 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2612 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 45:
-#line 388 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 388 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, EXTEND, (yyvsp[-3].node), (yyvsp[-1].node), (yyvsp[-5].lineno)); }
-#line 2618 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2618 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 46:
-#line 389 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 389 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, WRESIZE, (yyvsp[-3].node), (yyvsp[-1].node), (yyvsp[-5].lineno)); }
-#line 2624 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2624 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 47:
-#line 390 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 390 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = (yyvsp[-1].node); }
-#line 2630 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2630 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 48:
-#line 394 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 394 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, WAREAD, (yyvsp[-3].node), (yyvsp[-1].node), (yyvsp[-5].lineno)); }
-#line 2636 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2636 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 49:
-#line 397 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 397 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, WAWRITE, (yyvsp[-5].node), new_node(NODEMGR, WAWRITE, (yyvsp[-3].node), (yyvsp[-1].node)), (yyvsp[-6].lineno)); }
-#line 2642 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2642 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 50:
-#line 399 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 399 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, CONST_ARRAY, new_node(NODEMGR, TYPEOF, (yyvsp[-4].node), Nil), (yyvsp[-1].node), (yyvsp[-8].lineno)); }
-#line 2648 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2648 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 51:
-#line 401 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 401 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, COUNT, (yyvsp[-1].node), Nil, (yyvsp[-2].lineno));}
-#line 2654 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2654 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 52:
-#line 405 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 405 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = cons(NODEMGR, (yyvsp[0].node), Nil); }
-#line 2660 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2660 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 53:
-#line 406 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 406 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = cons(NODEMGR, (yyvsp[-2].node), (yyvsp[0].node)); }
-#line 2666 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2666 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 54:
-#line 411 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 411 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {
                const ErrorMgr_ptr errmgr =
                  ERROR_MGR(NuSMVEnv_get_value(__nusmv_parser_env__, ENV_ERROR_MANAGER));
@@ -2677,581 +2677,581 @@ yyreduce:
                                        nusmv_yylineno);
                (yyval.node) = new_node(NODEMGR, CASE, (yyvsp[0].node), fail);
              }
-#line 2681 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2681 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 55:
-#line 421 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 421 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_node(NODEMGR, CASE, (yyvsp[-1].node), (yyvsp[0].node)); }
-#line 2687 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2687 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 56:
-#line 426 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 426 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = build_case_colon_node((yyvsp[-3].node), (yyvsp[-1].node), (yyvsp[-2].lineno)); }
-#line 2693 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2693 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 58:
-#line 432 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 432 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, CONCATENATION, (yyvsp[-2].node), (yyvsp[0].node), (yyvsp[-1].lineno)); }
-#line 2699 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2699 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 60:
-#line 438 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 438 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, CONCATENATION, (yyvsp[-2].node), (yyvsp[0].node), (yyvsp[-1].lineno)); }
-#line 2705 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2705 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 62:
-#line 444 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 444 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, TIMES, (yyvsp[-2].node), (yyvsp[0].node), (yyvsp[-1].lineno)); }
-#line 2711 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2711 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 63:
-#line 445 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 445 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, DIVIDE, (yyvsp[-2].node), (yyvsp[0].node), (yyvsp[-1].lineno)); }
-#line 2717 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2717 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 64:
-#line 446 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 446 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, MOD, (yyvsp[-2].node), (yyvsp[0].node), (yyvsp[-1].lineno)); }
-#line 2723 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2723 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 66:
-#line 451 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 451 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, TIMES, (yyvsp[-2].node), (yyvsp[0].node), (yyvsp[-1].lineno)); }
-#line 2729 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2729 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 67:
-#line 452 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 452 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, DIVIDE, (yyvsp[-2].node), (yyvsp[0].node), (yyvsp[-1].lineno)); }
-#line 2735 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2735 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 68:
-#line 453 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 453 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, MOD, (yyvsp[-2].node), (yyvsp[0].node), (yyvsp[-1].lineno)); }
-#line 2741 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2741 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 70:
-#line 459 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 459 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, PLUS, (yyvsp[-2].node), (yyvsp[0].node), (yyvsp[-1].lineno)); }
-#line 2747 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2747 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 71:
-#line 460 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 460 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, MINUS, (yyvsp[-2].node), (yyvsp[0].node), (yyvsp[-1].lineno)); }
-#line 2753 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2753 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 73:
-#line 466 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 466 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, PLUS, (yyvsp[-2].node), (yyvsp[0].node), (yyvsp[-1].lineno)); }
-#line 2759 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2759 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 74:
-#line 467 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 467 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, MINUS, (yyvsp[-2].node), (yyvsp[0].node), (yyvsp[-1].lineno)); }
-#line 2765 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2765 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 76:
-#line 471 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 471 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, LSHIFT, (yyvsp[-2].node), (yyvsp[0].node), (yyvsp[-1].lineno)); }
-#line 2771 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2771 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 77:
-#line 472 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 472 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, RSHIFT, (yyvsp[-2].node), (yyvsp[0].node), (yyvsp[-1].lineno)); }
-#line 2777 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2777 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 79:
-#line 476 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 476 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, LSHIFT, (yyvsp[-2].node), (yyvsp[0].node), (yyvsp[-1].lineno)); }
-#line 2783 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2783 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 80:
-#line 477 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 477 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, RSHIFT, (yyvsp[-2].node), (yyvsp[0].node), (yyvsp[-1].lineno)); }
-#line 2789 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2789 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 83:
-#line 485 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 485 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = (yyvsp[-1].node); }
-#line 2795 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2795 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 85:
-#line 489 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 489 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, UNION, (yyvsp[-2].node), (yyvsp[0].node), (yyvsp[-1].lineno));}
-#line 2801 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2801 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 87:
-#line 494 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 494 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, UNION, (yyvsp[-2].node), (yyvsp[0].node), (yyvsp[-1].lineno)); }
-#line 2807 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2807 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 89:
-#line 498 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 498 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, SETIN, (yyvsp[-2].node), (yyvsp[0].node), (yyvsp[-1].lineno)); }
-#line 2813 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2813 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 91:
-#line 503 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 503 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, EQUAL, (yyvsp[-2].node), (yyvsp[0].node), (yyvsp[-1].lineno)); }
-#line 2819 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2819 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 92:
-#line 504 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 504 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, NOTEQUAL, (yyvsp[-2].node), (yyvsp[0].node), (yyvsp[-1].lineno)); }
-#line 2825 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2825 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 93:
-#line 505 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 505 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, LT, (yyvsp[-2].node), (yyvsp[0].node), (yyvsp[-1].lineno)); }
-#line 2831 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2831 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 94:
-#line 506 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 506 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, GT, (yyvsp[-2].node), (yyvsp[0].node), (yyvsp[-1].lineno)); }
-#line 2837 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2837 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 95:
-#line 507 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 507 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, LE, (yyvsp[-2].node), (yyvsp[0].node), (yyvsp[-1].lineno)); }
-#line 2843 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2843 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 96:
-#line 508 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 508 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, GE, (yyvsp[-2].node), (yyvsp[0].node), (yyvsp[-1].lineno)); }
-#line 2849 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2849 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 99:
-#line 516 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 516 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, EX, (yyvsp[0].node), Nil, (yyvsp[-1].lineno)); }
-#line 2855 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2855 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 100:
-#line 517 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 517 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, AX, (yyvsp[0].node), Nil, (yyvsp[-1].lineno)); }
-#line 2861 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2861 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 101:
-#line 518 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 518 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, EF, (yyvsp[0].node), Nil, (yyvsp[-1].lineno)); }
-#line 2867 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2867 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 102:
-#line 519 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 519 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, AF, (yyvsp[0].node), Nil, (yyvsp[-1].lineno)); }
-#line 2873 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2873 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 103:
-#line 520 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 520 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, EG, (yyvsp[0].node), Nil, (yyvsp[-1].lineno)); }
-#line 2879 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2879 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 104:
-#line 521 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 521 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, AG, (yyvsp[0].node), Nil, (yyvsp[-1].lineno)); }
-#line 2885 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2885 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 105:
-#line 523 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 523 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, AU, (yyvsp[-3].node), (yyvsp[-1].node), (yyvsp[-5].lineno)); }
-#line 2891 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2891 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 106:
-#line 525 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 525 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, EU, (yyvsp[-3].node), (yyvsp[-1].node), (yyvsp[-5].lineno)); }
-#line 2897 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2897 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 107:
-#line 527 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 527 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, ABU, new_lined_node(NODEMGR, AU, (yyvsp[-4].node), (yyvsp[-1].node), (yyvsp[-6].lineno)), (yyvsp[-2].node), (yyvsp[-6].lineno)); }
-#line 2903 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2903 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 108:
-#line 529 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 529 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, EBU, new_lined_node(NODEMGR, EU, (yyvsp[-4].node), (yyvsp[-1].node), (yyvsp[-6].lineno)), (yyvsp[-2].node), (yyvsp[-6].lineno)); }
-#line 2909 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2909 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 109:
-#line 530 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 530 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, EBF, (yyvsp[0].node), (yyvsp[-1].node), (yyvsp[-2].lineno)); }
-#line 2915 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2915 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 110:
-#line 531 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 531 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, ABF, (yyvsp[0].node), (yyvsp[-1].node), (yyvsp[-2].lineno)); }
-#line 2921 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2921 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 111:
-#line 532 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 532 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, EBG, (yyvsp[0].node), (yyvsp[-1].node), (yyvsp[-2].lineno)); }
-#line 2927 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2927 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 112:
-#line 533 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 533 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, ABG, (yyvsp[0].node), (yyvsp[-1].node), (yyvsp[-2].lineno)); }
-#line 2933 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2933 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 113:
-#line 536 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 536 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, NOT, (yyvsp[0].node), Nil, (yyvsp[-1].lineno)); }
-#line 2939 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2939 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 115:
-#line 543 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 543 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, AND, (yyvsp[-2].node), (yyvsp[0].node), (yyvsp[-1].lineno)); }
-#line 2945 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2945 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 117:
-#line 547 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 547 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, OR,(yyvsp[-2].node), (yyvsp[0].node), (yyvsp[-1].lineno)); }
-#line 2951 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2951 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 118:
-#line 548 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 548 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, XOR,(yyvsp[-2].node), (yyvsp[0].node), (yyvsp[-1].lineno)); }
-#line 2957 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2957 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 119:
-#line 549 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 549 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, XNOR,(yyvsp[-2].node), (yyvsp[0].node), (yyvsp[-1].lineno)); }
-#line 2963 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2963 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 121:
-#line 553 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 553 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, IFF, (yyvsp[-2].node), (yyvsp[0].node), (yyvsp[-1].lineno)); }
-#line 2969 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2969 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 123:
-#line 558 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 558 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, IMPLIES, (yyvsp[-2].node), (yyvsp[0].node), (yyvsp[-1].lineno)); }
-#line 2975 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2975 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 127:
-#line 571 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 571 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, OP_NEXT, (yyvsp[0].node), Nil, (yyvsp[-1].lineno));}
-#line 2981 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2981 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 128:
-#line 572 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 572 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, OP_PREC, (yyvsp[0].node), Nil, (yyvsp[-1].lineno));}
-#line 2987 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2987 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 129:
-#line 573 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 573 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, OP_NOTPRECNOT, (yyvsp[0].node), Nil, (yyvsp[-1].lineno));}
-#line 2993 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2993 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 130:
-#line 574 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 574 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, OP_GLOBAL, (yyvsp[0].node), Nil, (yyvsp[-1].lineno));}
-#line 2999 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 2999 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 131:
-#line 576 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 576 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, OP_GLOBAL, (yyvsp[0].node), new_lined_node(NODEMGR, TWODOTS, (yyvsp[-4].node), (yyvsp[-2].node), (yyvsp[-6].lineno)), (yyvsp[-6].lineno));}
-#line 3005 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3005 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 132:
-#line 577 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 577 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, OP_HISTORICAL, (yyvsp[0].node), Nil, (yyvsp[-1].lineno));}
-#line 3011 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3011 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 133:
-#line 579 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 579 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, OP_HISTORICAL, (yyvsp[0].node), new_lined_node(NODEMGR, TWODOTS, (yyvsp[-4].node), (yyvsp[-2].node), (yyvsp[-6].lineno)), (yyvsp[-6].lineno));}
-#line 3017 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3017 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 134:
-#line 580 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 580 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, OP_FUTURE, (yyvsp[0].node), Nil, (yyvsp[-1].lineno));}
-#line 3023 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3023 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 135:
-#line 582 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 582 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, OP_FUTURE, (yyvsp[0].node), new_lined_node(NODEMGR, TWODOTS, (yyvsp[-4].node), (yyvsp[-2].node), (yyvsp[-6].lineno)), (yyvsp[-6].lineno));}
-#line 3029 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3029 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 136:
-#line 583 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 583 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, OP_ONCE, (yyvsp[0].node), Nil, (yyvsp[-1].lineno));}
-#line 3035 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3035 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 137:
-#line 585 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 585 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, OP_ONCE, (yyvsp[0].node), new_lined_node(NODEMGR, TWODOTS, (yyvsp[-4].node), (yyvsp[-2].node), (yyvsp[-6].lineno)), (yyvsp[-6].lineno));}
-#line 3041 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3041 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 138:
-#line 587 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 587 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, NOT, (yyvsp[0].node), Nil, (yyvsp[-1].lineno)); }
-#line 3047 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3047 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 140:
-#line 596 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 596 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, UNTIL, (yyvsp[-2].node), (yyvsp[0].node), (yyvsp[-1].lineno));}
-#line 3053 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3053 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 141:
-#line 598 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 598 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, SINCE, (yyvsp[-2].node), (yyvsp[0].node), (yyvsp[-1].lineno));}
-#line 3059 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3059 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 142:
-#line 600 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 600 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, NOT,
                            new_lined_node(NODEMGR, UNTIL,
                              new_lined_node(NODEMGR, NOT, (yyvsp[-2].node), Nil, node_get_lineno((yyvsp[-2].node))),
                              new_lined_node(NODEMGR, NOT, (yyvsp[0].node), Nil, node_get_lineno((yyvsp[0].node))),
                              (yyvsp[-1].lineno)), Nil, (yyvsp[-1].lineno));
                   }
-#line 3070 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3070 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 143:
-#line 607 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 607 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, NOT,
                           new_lined_node(NODEMGR, SINCE,
                               new_lined_node(NODEMGR, NOT, (yyvsp[-2].node), Nil, node_get_lineno((yyvsp[-2].node))),
                               new_lined_node(NODEMGR, NOT, (yyvsp[0].node), Nil, node_get_lineno((yyvsp[0].node))),
                               (yyvsp[-1].lineno)), Nil, (yyvsp[-1].lineno));
                   }
-#line 3081 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3081 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 145:
-#line 617 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 617 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, AND, (yyvsp[-2].node), (yyvsp[0].node), (yyvsp[-1].lineno)); }
-#line 3087 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3087 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 147:
-#line 622 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 622 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, OR,(yyvsp[-2].node), (yyvsp[0].node), (yyvsp[-1].lineno)); }
-#line 3093 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3093 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 148:
-#line 623 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 623 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, XOR,(yyvsp[-2].node), (yyvsp[0].node), (yyvsp[-1].lineno)); }
-#line 3099 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3099 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 149:
-#line 624 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 624 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, XNOR,(yyvsp[-2].node), (yyvsp[0].node), (yyvsp[-1].lineno)); }
-#line 3105 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3105 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 151:
-#line 629 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 629 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, IFTHENELSE, new_lined_node(NODEMGR, COLON, (yyvsp[-4].node), (yyvsp[-2].node), (yyvsp[-3].lineno)), (yyvsp[0].node), (yyvsp[-3].lineno)); }
-#line 3111 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3111 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 153:
-#line 634 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 634 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, IFF, (yyvsp[-2].node), (yyvsp[0].node), (yyvsp[-1].lineno)); }
-#line 3117 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3117 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 155:
-#line 639 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 639 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, IMPLIES, (yyvsp[-2].node), (yyvsp[0].node), (yyvsp[-1].lineno)); }
-#line 3123 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3123 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 157:
-#line 650 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 650 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {if (!isCorrectExp((yyval.node), EXP_SIMPLE)) YYABORT;}
-#line 3129 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3129 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 158:
-#line 653 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 653 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {if (!isCorrectExp((yyval.node), EXP_NEXT)) YYABORT;}
-#line 3135 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3135 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 159:
-#line 656 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 656 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {if (!isCorrectExp((yyval.node), EXP_CTL)) YYABORT;}
-#line 3141 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3141 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 160:
-#line 659 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 659 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {if (!isCorrectExp((yyval.node), EXP_LTL)) YYABORT;}
-#line 3147 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3147 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 161:
-#line 664 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 664 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, MINU, (yyvsp[-3].node), (yyvsp[-1].node), (yyvsp[-5].lineno)); }
-#line 3153 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3153 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 162:
-#line 666 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 666 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, MAXU, (yyvsp[-3].node), (yyvsp[-1].node), (yyvsp[-5].lineno)); }
-#line 3159 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3159 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 163:
-#line 674 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 674 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_node(NODEMGR, BOOLEAN, Nil, Nil);}
-#line 3165 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3165 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 164:
-#line 676 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 676 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, UNSIGNED_WORD, (yyvsp[-1].node), Nil, (yyvsp[-3].lineno));}
-#line 3171 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3171 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 165:
-#line 678 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 678 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, UNSIGNED_WORD, (yyvsp[-1].node), Nil, (yyvsp[-4].lineno));}
-#line 3177 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3177 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 166:
-#line 680 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 680 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, SIGNED_WORD, (yyvsp[-1].node), Nil, (yyvsp[-4].lineno));}
-#line 3183 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3183 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 168:
-#line 683 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 683 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, SCALAR, (yyvsp[-1].node), Nil, (yyvsp[-2].lineno));}
-#line 3189 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3189 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 169:
-#line 685 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 685 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, WORDARRAY_TYPE, (yyvsp[-3].node), (yyvsp[0].node), (yyvsp[-6].lineno));}
-#line 3195 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3195 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 170:
-#line 687 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 687 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, ARRAY_TYPE, (yyvsp[-2].node), (yyvsp[0].node), (yyvsp[-3].lineno));}
-#line 3201 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3201 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 171:
-#line 689 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 689 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {nusmv_yyerror("unbounded arrays are not supported.");
                    YYABORT;
                   }
-#line 3209 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3209 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 174:
-#line 697 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 697 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, PROCESS, (yyvsp[0].node), Nil, (yyvsp[-1].lineno));}
-#line 3215 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3215 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 175:
-#line 700 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 700 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = cons(NODEMGR, find_atom(NODEMGR, (yyvsp[0].node)), Nil); free_node(NODEMGR, (yyvsp[0].node));}
-#line 3221 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3221 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 176:
-#line 701 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 701 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = cons(NODEMGR, find_atom(NODEMGR, (yyvsp[0].node)), (yyvsp[-2].node)); free_node(NODEMGR, (yyvsp[0].node));}
-#line 3227 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3227 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 182:
-#line 711 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 711 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, DOT, (yyvsp[-2].node), (yyvsp[0].node), (yyvsp[-1].lineno));}
-#line 3233 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3233 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 183:
-#line 714 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 714 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_node(NODEMGR, MODTYPE, (yyvsp[0].node), Nil);}
-#line 3239 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3239 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 184:
-#line 715 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 715 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_node(NODEMGR, MODTYPE, (yyvsp[-2].node), Nil);}
-#line 3245 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3245 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 185:
-#line 717 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 717 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, MODTYPE, (yyvsp[-3].node), (yyvsp[-1].node), node_get_lineno((yyvsp[-3].node)));}
-#line 3251 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3251 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 186:
-#line 719 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 719 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {
                     /* $$ = new_lined_node(NODEMGR, ARRAY, $2, $4, $1); */
                     /* array of modules is not supported any more.
@@ -3260,287 +3260,287 @@ yyreduce:
                     nusmv_yyerror_lined("array of modules is no supported", (yyvsp[-3].lineno));
                     YYABORT;
                   }
-#line 3264 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3264 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 187:
-#line 730 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 730 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = cons(NODEMGR, (yyvsp[0].node),Nil);}
-#line 3270 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3270 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 188:
-#line 731 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 731 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = cons(NODEMGR, (yyvsp[0].node), (yyvsp[-2].node));}
-#line 3276 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3276 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 189:
-#line 743 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 743 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = cons(NODEMGR, (yyvsp[0].node), Nil);}
-#line 3282 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3282 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 190:
-#line 744 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 744 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = cons(NODEMGR, (yyvsp[0].node), (yyvsp[-1].node));}
-#line 3288 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3288 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 191:
-#line 748 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 748 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, MODULE, (yyvsp[-1].node), (yyvsp[0].node), (yyvsp[-2].lineno));}
-#line 3294 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3294 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 192:
-#line 750 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 750 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_node(NODEMGR, MODTYPE, (yyvsp[0].node), Nil);}
-#line 3300 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3300 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 193:
-#line 751 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 751 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_node(NODEMGR, MODTYPE, (yyvsp[-2].node), Nil);}
-#line 3306 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3306 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 194:
-#line 753 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 753 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_node(NODEMGR, MODTYPE, (yyvsp[-3].node), (yyvsp[-1].node));}
-#line 3312 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3312 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 195:
-#line 755 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 755 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = cons(NODEMGR, find_atom(NODEMGR, (yyvsp[0].node)), Nil); free_node(NODEMGR, (yyvsp[0].node));}
-#line 3318 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3318 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 196:
-#line 756 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 756 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = cons(NODEMGR, find_atom(NODEMGR, (yyvsp[0].node)), (yyvsp[-2].node)); free_node(NODEMGR, (yyvsp[0].node));}
-#line 3324 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3324 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 197:
-#line 761 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 761 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = Nil;}
-#line 3330 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3330 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 198:
-#line 762 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 762 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = cons(NODEMGR, (yyvsp[0].node), (yyvsp[-1].node));}
-#line 3336 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3336 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 199:
-#line 763 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 763 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { SYNTAX_ERROR_HANDLING((yyval.node), (yyvsp[-1].node)); }
-#line 3342 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3342 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 220:
-#line 794 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 794 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, VAR, Nil, Nil, (yyvsp[0].lineno));}
-#line 3348 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3348 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 221:
-#line 795 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 795 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, VAR, (yyvsp[0].node), Nil, (yyvsp[-1].lineno));}
-#line 3354 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3354 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 222:
-#line 798 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 798 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, FROZENVAR, Nil, Nil, (yyvsp[0].lineno));}
-#line 3360 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3360 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 223:
-#line 799 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 799 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, FROZENVAR, (yyvsp[0].node), Nil, (yyvsp[-1].lineno));}
-#line 3366 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3366 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 224:
-#line 802 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 802 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, IVAR, Nil, Nil, (yyvsp[0].lineno));}
-#line 3372 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3372 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 225:
-#line 803 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 803 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, IVAR, (yyvsp[0].node), Nil, (yyvsp[-1].lineno));}
-#line 3378 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3378 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 226:
-#line 805 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 805 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {
                  nusmv_yyerror("functions definitions are not supported.");
                  YYABORT;
                }
-#line 3387 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3387 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 227:
-#line 809 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 809 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {
                  nusmv_yyerror("functions definitions are not supported.");
                  YYABORT;
                }
-#line 3396 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3396 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 228:
-#line 815 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 815 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = cons(NODEMGR, (yyvsp[0].node), Nil);}
-#line 3402 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3402 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 229:
-#line 816 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 816 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = cons(NODEMGR, (yyvsp[0].node), (yyvsp[-1].node));}
-#line 3408 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3408 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 230:
-#line 817 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 817 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { SYNTAX_ERROR_HANDLING((yyval.node), (yyvsp[-1].node)); }
-#line 3414 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3414 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 231:
-#line 819 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 819 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = cons(NODEMGR, (yyvsp[0].node), Nil);}
-#line 3420 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3420 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 232:
-#line 820 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 820 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = cons(NODEMGR, (yyvsp[0].node), (yyvsp[-1].node));}
-#line 3426 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3426 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 233:
-#line 821 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 821 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { SYNTAX_ERROR_HANDLING((yyval.node), (yyvsp[-1].node)); }
-#line 3432 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3432 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 234:
-#line 823 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 823 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = cons(NODEMGR, (yyvsp[0].node), Nil);}
-#line 3438 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3438 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 235:
-#line 824 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 824 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = cons(NODEMGR, (yyvsp[0].node), (yyvsp[-1].node));}
-#line 3444 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3444 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 236:
-#line 825 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 825 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { SYNTAX_ERROR_HANDLING((yyval.node), (yyvsp[-1].node)); }
-#line 3450 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3450 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 237:
-#line 827 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 827 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = cons(NODEMGR, (yyvsp[0].node), Nil);}
-#line 3456 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3456 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 238:
-#line 828 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 828 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = cons(NODEMGR, (yyvsp[0].node), (yyvsp[-1].node));}
-#line 3462 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3462 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 239:
-#line 829 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 829 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { SYNTAX_ERROR_HANDLING((yyval.node), (yyvsp[-1].node)); }
-#line 3468 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3468 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 240:
-#line 832 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 832 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, COLON, (yyvsp[-3].node), (yyvsp[-1].node), (yyvsp[-2].lineno));}
-#line 3474 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3474 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 241:
-#line 834 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 834 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, COLON, (yyvsp[-3].node), (yyvsp[-1].node), (yyvsp[-2].lineno));}
-#line 3480 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3480 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 242:
-#line 836 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 836 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, COLON, (yyvsp[-3].node), (yyvsp[-1].node), (yyvsp[-2].lineno));}
-#line 3486 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3486 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 243:
-#line 838 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 838 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, COLON, (yyvsp[-3].node), (yyvsp[-1].node), (yyvsp[-2].lineno));}
-#line 3492 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3492 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 244:
-#line 841 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 841 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_node(NODEMGR, NFUNCTION_TYPE, (yyvsp[-2].node), (yyvsp[0].node));}
-#line 3498 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3498 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 245:
-#line 845 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 845 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = cons(NODEMGR, (yyvsp[0].node), Nil); }
-#line 3504 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3504 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 246:
-#line 846 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 846 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = cons(NODEMGR, (yyvsp[0].node), (yyvsp[-2].node)); }
-#line 3510 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3510 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 247:
-#line 851 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 851 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, DEFINE, (yyvsp[0].node), Nil, (yyvsp[-1].lineno));}
-#line 3516 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3516 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 248:
-#line 853 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 853 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = Nil;}
-#line 3522 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3522 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 249:
-#line 854 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 854 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = cons(NODEMGR, (yyvsp[0].node), (yyvsp[-1].node));}
-#line 3528 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3528 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 250:
-#line 855 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 855 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { SYNTAX_ERROR_HANDLING((yyval.node), (yyvsp[-1].node)); }
-#line 3534 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3534 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 251:
-#line 859 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 859 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, EQDEF, (yyvsp[-3].node), (yyvsp[-1].node), (yyvsp[-2].lineno));}
-#line 3540 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3540 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 252:
-#line 861 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 861 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, EQDEF, (yyvsp[-3].node), (yyvsp[-1].node), (yyvsp[-2].lineno));
                                  /* Note that array-define is declared
                                     as normal define.
@@ -3549,263 +3549,263 @@ yyreduce:
                                     ARRAY_DEF on right hand side.
                                    */
                                  }
-#line 3553 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3553 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 253:
-#line 873 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 873 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, DEFINE, (yyvsp[0].node), Nil, (yyvsp[-1].lineno));}
-#line 3559 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3559 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 254:
-#line 877 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 877 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = Nil;}
-#line 3565 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3565 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 255:
-#line 878 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 878 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = cons(NODEMGR, new_lined_node(NODEMGR, EQDEF, (yyvsp[-3].node), (yyvsp[-1].node), (yyvsp[-2].lineno)), (yyvsp[-4].node));}
-#line 3571 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3571 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 256:
-#line 879 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 879 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { SYNTAX_ERROR_HANDLING((yyval.node), (yyvsp[-1].node)); }
-#line 3577 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3577 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 257:
-#line 883 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 883 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) =  new_lined_node(NODEMGR, ARRAY_DEF, (yyvsp[-1].node), Nil, (yyvsp[-2].lineno));}
-#line 3583 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3583 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 258:
-#line 884 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 884 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) =  new_lined_node(NODEMGR, ARRAY_DEF, (yyvsp[-1].node), Nil, (yyvsp[-2].lineno));}
-#line 3589 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3589 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 259:
-#line 888 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 888 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = cons(NODEMGR, (yyvsp[0].node), Nil);}
-#line 3595 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3595 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 260:
-#line 889 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 889 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = cons(NODEMGR, (yyvsp[-2].node), (yyvsp[0].node));}
-#line 3601 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3601 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 261:
-#line 893 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 893 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = cons(NODEMGR, (yyvsp[-2].node), (yyvsp[0].node));}
-#line 3607 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3607 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 262:
-#line 894 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 894 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = cons(NODEMGR, (yyvsp[0].node),Nil);}
-#line 3613 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3613 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 263:
-#line 898 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 898 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, ASSIGN, (yyvsp[0].node), Nil, (yyvsp[-1].lineno));}
-#line 3619 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3619 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 264:
-#line 900 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 900 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = Nil;}
-#line 3625 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3625 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 265:
-#line 901 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 901 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_node(NODEMGR, AND, (yyvsp[-1].node), (yyvsp[0].node));}
-#line 3631 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3631 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 266:
-#line 902 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 902 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { SYNTAX_ERROR_HANDLING((yyval.node), (yyvsp[-1].node)); }
-#line 3637 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3637 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 267:
-#line 905 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 905 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, EQDEF, (yyvsp[-3].node), (yyvsp[-1].node), (yyvsp[-2].lineno));}
-#line 3643 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3643 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 268:
-#line 907 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 907 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, EQDEF,
                                         new_lined_node(NODEMGR, SMALLINIT, (yyvsp[-4].node), Nil, (yyvsp[-6].lineno)),
                                         (yyvsp[-1].node), (yyvsp[-2].lineno));
                   }
-#line 3652 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3652 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 269:
-#line 912 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 912 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = new_lined_node(NODEMGR, EQDEF,
                                         new_lined_node(NODEMGR, NEXT, (yyvsp[-4].node), Nil, (yyvsp[-6].lineno)),
                                         (yyvsp[-1].node), (yyvsp[-2].lineno));
                   }
-#line 3661 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3661 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 270:
-#line 919 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 919 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, INIT, (yyvsp[-1].node), Nil, (yyvsp[-2].lineno));}
-#line 3667 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3667 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 271:
-#line 921 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 921 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, INVAR, (yyvsp[-1].node), Nil, (yyvsp[-2].lineno));}
-#line 3673 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3673 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 272:
-#line 923 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 923 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, TRANS, (yyvsp[-1].node), Nil, (yyvsp[-2].lineno));}
-#line 3679 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3679 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 273:
-#line 927 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 927 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, JUSTICE, (yyvsp[-1].node), Nil, (yyvsp[-2].lineno));}
-#line 3685 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3685 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 274:
-#line 930 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 930 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, JUSTICE, (yyvsp[-1].node), Nil, (yyvsp[-2].lineno));}
-#line 3691 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3691 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 275:
-#line 935 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 935 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, COMPASSION, cons(NODEMGR, (yyvsp[-4].node),(yyvsp[-2].node)), Nil, (yyvsp[-6].lineno));}
-#line 3697 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3697 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 276:
-#line 939 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 939 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = (yyvsp[-1].node); }
-#line 3703 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3703 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 277:
-#line 940 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 940 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_node(NODEMGR, CONTEXT, (yyvsp[-1].node), (yyvsp[-3].node));}
-#line 3709 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3709 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 278:
-#line 942 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 942 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, INVARSPEC, (yyvsp[0].node), Nil, (yyvsp[-1].lineno));}
-#line 3715 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3715 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 279:
-#line 943 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 943 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, INVARSPEC, (yyvsp[0].node), (yyvsp[-2].node), (yyvsp[-4].lineno));}
-#line 3721 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3721 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 280:
-#line 946 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 946 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = (yyvsp[-1].node); }
-#line 3727 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3727 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 281:
-#line 947 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 947 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_node(NODEMGR, CONTEXT, (yyvsp[-1].node), (yyvsp[-3].node));}
-#line 3733 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3733 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 282:
-#line 949 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 949 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, SPEC, (yyvsp[0].node), Nil, (yyvsp[-1].lineno));}
-#line 3739 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3739 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 283:
-#line 950 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 950 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, SPEC, (yyvsp[0].node), Nil, (yyvsp[-1].lineno));}
-#line 3745 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3745 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 284:
-#line 951 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 951 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, SPEC, (yyvsp[0].node), (yyvsp[-2].node), (yyvsp[-4].lineno));}
-#line 3751 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3751 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 285:
-#line 952 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 952 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, SPEC, (yyvsp[0].node), (yyvsp[-2].node), (yyvsp[-4].lineno));}
-#line 3757 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3757 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 286:
-#line 955 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 955 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = (yyvsp[-1].node); }
-#line 3763 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3763 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 287:
-#line 956 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 956 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_node(NODEMGR, CONTEXT, (yyvsp[-1].node), (yyvsp[-3].node));}
-#line 3769 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3769 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 288:
-#line 959 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 959 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, LTLSPEC, (yyvsp[0].node), Nil, (yyvsp[-1].lineno));}
-#line 3775 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3775 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 289:
-#line 960 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 960 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, LTLSPEC, (yyvsp[0].node), (yyvsp[-2].node), (yyvsp[-4].lineno));}
-#line 3781 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3781 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 290:
-#line 963 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 963 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = (yyvsp[-1].node); }
-#line 3787 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3787 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 291:
-#line 964 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 964 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_node(NODEMGR, CONTEXT, (yyvsp[-1].node), (yyvsp[-3].node));}
-#line 3793 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3793 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 292:
-#line 966 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 966 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, COMPUTE, (yyvsp[0].node), Nil, (yyvsp[-1].lineno));}
-#line 3799 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3799 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 293:
-#line 967 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 967 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, COMPUTE, (yyvsp[0].node), (yyvsp[-2].node), (yyvsp[-4].lineno));}
-#line 3805 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3805 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 294:
-#line 972 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 972 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {
   if (nusmv_parse_psl() != 0) {
     YYABORT;
@@ -3813,267 +3813,267 @@ yyreduce:
   (yyval.node) = new_lined_node(NODEMGR, PSLSPEC, psl_parsed_tree, psl_property_name, (yyvsp[0].lineno));
   psl_property_name = Nil;
 }
-#line 3817 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3817 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 295:
-#line 982 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 982 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, CONSTANTS, (yyvsp[-1].node), Nil, (yyvsp[-2].lineno));}
-#line 3823 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3823 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 296:
-#line 986 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 986 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = Nil;}
-#line 3829 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3829 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 297:
-#line 987 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 987 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = cons(NODEMGR, (yyvsp[0].node), Nil);}
-#line 3835 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3835 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 298:
-#line 988 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 988 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = cons(NODEMGR, (yyvsp[0].node), (yyvsp[-2].node));}
-#line 3841 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3841 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 299:
-#line 995 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 995 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_node(NODEMGR, ISA, (yyvsp[0].node), Nil);}
-#line 3847 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3847 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 301:
-#line 999 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 999 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {}
-#line 3853 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3853 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 303:
-#line 1008 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 1008 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_node(NODEMGR, DOT, (yyvsp[-2].node), (yyvsp[0].node));}
-#line 3859 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3859 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 304:
-#line 1009 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 1009 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_node(NODEMGR, DOT, (yyvsp[-2].node), (yyvsp[0].node));}
-#line 3865 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3865 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 305:
-#line 1010 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 1010 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_node(NODEMGR, ARRAY, (yyvsp[-3].node), (yyvsp[-1].node));}
-#line 3871 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3871 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 306:
-#line 1012 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 1012 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { node_ptr tmp = new_lined_node(NODEMGR, NUMBER,
                                                       PTR_FROM_INT(node_ptr, -node_get_int((yyvsp[-1].node))),
                                                       Nil,
                                                       (yyvsp[-2].lineno));
                         (yyval.node) = new_node(NODEMGR, ARRAY, (yyvsp[-4].node), tmp);
                       }
-#line 3882 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3882 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 308:
-#line 1021 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 1021 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_node(NODEMGR, SELF,Nil,Nil);}
-#line 3888 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3888 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 309:
-#line 1022 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 1022 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_node(NODEMGR, DOT, (yyvsp[-2].node), (yyvsp[0].node));}
-#line 3894 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3894 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 310:
-#line 1023 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 1023 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_node(NODEMGR, DOT, (yyvsp[-2].node), (yyvsp[0].node));}
-#line 3900 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3900 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 311:
-#line 1024 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 1024 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_node(NODEMGR, ARRAY, (yyvsp[-3].node), (yyvsp[-1].node));}
-#line 3906 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3906 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 312:
-#line 1031 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 1031 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = (yyvsp[0].node);}
-#line 3912 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3912 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 313:
-#line 1032 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 1032 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {return(1);}
-#line 3918 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3918 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 314:
-#line 1033 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 1033 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {return(1);}
-#line 3924 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3924 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 315:
-#line 1037 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 1037 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, INIT, (yyvsp[-1].node), Nil, (yyvsp[-2].lineno));}
-#line 3930 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3930 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 316:
-#line 1039 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 1039 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, JUSTICE, (yyvsp[-1].node), Nil, (yyvsp[-2].lineno));}
-#line 3936 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3936 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 317:
-#line 1041 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 1041 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, TRANS, (yyvsp[-1].node), Nil, (yyvsp[-2].lineno));}
-#line 3942 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3942 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 318:
-#line 1043 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 1043 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, CONSTRAINT, (yyvsp[-1].node), Nil, (yyvsp[-2].lineno));}
-#line 3948 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3948 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 319:
-#line 1045 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 1045 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, ITYPE, (yyvsp[-1].node), Nil, (yyvsp[-2].lineno));}
-#line 3954 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3954 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 320:
-#line 1048 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 1048 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, SIMPWFF, node2maincontext((yyvsp[0].node)), Nil, (yyvsp[-1].lineno));}
-#line 3960 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3960 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 321:
-#line 1049 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 1049 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, NEXTWFF, node2maincontext((yyvsp[0].node)), Nil, (yyvsp[-1].lineno));}
-#line 3966 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3966 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 322:
-#line 1050 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 1050 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, CTLWFF, node2maincontext((yyvsp[0].node)), Nil, (yyvsp[-1].lineno));}
-#line 3972 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3972 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 323:
-#line 1051 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 1051 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, LTLWFF, node2maincontext((yyvsp[0].node)), Nil, (yyvsp[-1].lineno));}
-#line 3978 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3978 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 324:
-#line 1052 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 1052 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, COMPWFF, node2maincontext((yyvsp[0].node)), Nil, (yyvsp[-1].lineno));}
-#line 3984 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3984 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 325:
-#line 1053 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 1053 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_lined_node(NODEMGR, COMPID, (yyvsp[-1].node), Nil, (yyvsp[-2].lineno));}
-#line 3990 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3990 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 326:
-#line 1057 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 1057 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = find_atom(NODEMGR, (yyvsp[0].node)); free_node(NODEMGR, (yyvsp[0].node)); }
-#line 3996 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 3996 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 327:
-#line 1058 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 1058 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = find_node(NODEMGR, DOT, (yyvsp[-2].node), (yyvsp[0].node));}
-#line 4002 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 4002 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 328:
-#line 1059 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 1059 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = find_node(NODEMGR, ARRAY, (yyvsp[-3].node), (yyvsp[-1].node));}
-#line 4008 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 4008 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 329:
-#line 1062 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 1062 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     { (yyval.node) = (yyvsp[-1].node); }
-#line 4014 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 4014 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 330:
-#line 1063 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 1063 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {(yyval.node) = new_node(NODEMGR, CONTEXT, (yyvsp[-1].node), (yyvsp[-3].node));}
-#line 4020 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 4020 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 331:
-#line 1069 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 1069 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {
   if (PARSE_MODULES != parse_mode_flag) {
     nusmv_yyerror("unexpected MODULE definition encountered during parsing");
     YYABORT;
   }
 }
-#line 4031 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 4031 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 332:
-#line 1076 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 1076 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {
                   parsed_tree = (yyvsp[0].node);
                 }
-#line 4039 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 4039 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 333:
-#line 1079 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 1079 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {
                   if (PARSE_COMMAND != parse_mode_flag) {
                     nusmv_yyerror("unexpected command encountered during parsing");
                     YYABORT;
                   }
                 }
-#line 4050 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 4050 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 334:
-#line 1085 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 1085 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {parsed_tree = (yyvsp[0].node);}
-#line 4056 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 4056 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 335:
-#line 1086 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 1086 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {
                   if (PARSE_LTL_EXPR != parse_mode_flag){
                     nusmv_yyerror("unexpected expression encountered during parsing");
                     YYABORT;
                   }
                 }
-#line 4067 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 4067 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
   case 336:
-#line 1092 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
+#line 1092 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1646  */
     {parsed_tree = (yyvsp[0].node);}
-#line 4073 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 4073 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
     break;
 
 
-#line 4077 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
+#line 4077 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c" /* yacc.c:1646  */
       default: break;
     }
   /* User semantic actions sometimes alter yychar, and that requires
@@ -4301,7 +4301,7 @@ yyreturn:
 #endif
   return yyresult;
 }
-#line 1095 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1906  */
+#line 1095 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y" /* yacc.c:1906  */
 
   /* BEGINS: grammar.y.3.50 */
 /***************************************************************  -*-C-*-  ***/

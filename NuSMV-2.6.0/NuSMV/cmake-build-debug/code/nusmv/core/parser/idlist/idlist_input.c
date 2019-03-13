@@ -1,6 +1,6 @@
-#line 2 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/idlist/idlist_input.c"
+#line 2 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/idlist/idlist_input.c"
 
-#line 4 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/idlist/idlist_input.c"
+#line 4 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/idlist/idlist_input.c"
 
 #define  YY_INT_ALIGNED short int
 
@@ -845,10 +845,10 @@ static int nusmv_skip_multiline_comment(void);
 #undef YY_USES_REJECT
 #endif
 
-#line 849 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/idlist/idlist_input.c"
+#line 849 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/idlist/idlist_input.c"
 #line 126 "idlist_input.l"
   /* %option outfile="lex.yy.c" */
-#line 852 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/idlist/idlist_input.c"
+#line 852 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/idlist/idlist_input.c"
 
 #define INITIAL 0
 
@@ -1067,7 +1067,7 @@ YY_DECL
 	{
 #line 129 "idlist_input.l"
 
-#line 1071 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/idlist/idlist_input.c"
+#line 1071 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/idlist/idlist_input.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -1199,7 +1199,7 @@ YY_RULE_SETUP
 #line 153 "idlist_input.l"
 ECHO;
 	YY_BREAK
-#line 1203 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/idlist/idlist_input.c"
+#line 1203 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/idlist/idlist_input.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 

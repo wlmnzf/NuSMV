@@ -48,10 +48,10 @@ RM = /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV
+CMAKE_SOURCE_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug
+CMAKE_BINARY_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -93,7 +93,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -104,7 +104,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CPackSourceConfig.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -159,14 +159,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/mtr/CMakeFiles/progress.marks
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 build-cudd/mtr/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/mtr/CMakeFiles/progress.marks
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 build-cudd/mtr/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 build-cudd/mtr/clean
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 build-cudd/mtr/clean
 .PHONY : clean
 
 # The main clean target
@@ -176,22 +176,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 build-cudd/mtr/preinstall
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 build-cudd/mtr/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 build-cudd/mtr/preinstall
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 build-cudd/mtr/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/rule:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/rule
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/rule
 .PHONY : build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/rule
 
 # Convenience name for target.
@@ -201,7 +201,7 @@ CUDD_MTR_LIB: build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/rule
 
 # fast build rule for target.
 CUDD_MTR_LIB/fast:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/build.make build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/build
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/build.make build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/build
 .PHONY : CUDD_MTR_LIB/fast
 
 mtrBasic.o: mtrBasic.c.o
@@ -210,7 +210,7 @@ mtrBasic.o: mtrBasic.c.o
 
 # target to build an object file
 mtrBasic.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/build.make build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/mtrBasic.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/build.make build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/mtrBasic.c.o
 .PHONY : mtrBasic.c.o
 
 mtrBasic.i: mtrBasic.c.i
@@ -219,7 +219,7 @@ mtrBasic.i: mtrBasic.c.i
 
 # target to preprocess a source file
 mtrBasic.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/build.make build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/mtrBasic.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/build.make build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/mtrBasic.c.i
 .PHONY : mtrBasic.c.i
 
 mtrBasic.s: mtrBasic.c.s
@@ -228,7 +228,7 @@ mtrBasic.s: mtrBasic.c.s
 
 # target to generate assembly for a file
 mtrBasic.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/build.make build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/mtrBasic.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/build.make build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/mtrBasic.c.s
 .PHONY : mtrBasic.c.s
 
 mtrGroup.o: mtrGroup.c.o
@@ -237,7 +237,7 @@ mtrGroup.o: mtrGroup.c.o
 
 # target to build an object file
 mtrGroup.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/build.make build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/mtrGroup.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/build.make build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/mtrGroup.c.o
 .PHONY : mtrGroup.c.o
 
 mtrGroup.i: mtrGroup.c.i
@@ -246,7 +246,7 @@ mtrGroup.i: mtrGroup.c.i
 
 # target to preprocess a source file
 mtrGroup.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/build.make build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/mtrGroup.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/build.make build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/mtrGroup.c.i
 .PHONY : mtrGroup.c.i
 
 mtrGroup.s: mtrGroup.c.s
@@ -255,7 +255,7 @@ mtrGroup.s: mtrGroup.c.s
 
 # target to generate assembly for a file
 mtrGroup.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/build.make build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/mtrGroup.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/build.make build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/mtrGroup.c.s
 .PHONY : mtrGroup.c.s
 
 # Help Target
@@ -291,6 +291,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -117,7 +117,7 @@ code/nusmv/core/bmc/sbmc/CMakeFiles/code_nusmv_core_bmc_sbmc.dir/sbmcBmc.c.o
  ../code/nusmv/core/wff/w2w/w2w.h
  ../code/nusmv/core/wff/wff.h
  ../code/nusmv/core/wff/wffRewrite.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/sbmc/sbmcBmc.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/sbmc/sbmcBmc.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -229,7 +229,7 @@ code/nusmv/core/bmc/sbmc/CMakeFiles/code_nusmv_core_bmc_sbmc.dir/sbmcBmcInc.c.o
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
  ../code/nusmv/core/wff/wffRewrite.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/sbmc/sbmcBmcInc.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/sbmc/sbmcBmcInc.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -342,7 +342,7 @@ code/nusmv/core/bmc/sbmc/CMakeFiles/code_nusmv_core_bmc_sbmc.dir/sbmcGen.c.o
  ../code/nusmv/core/utils/ucmd.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/sbmc/sbmcGen.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/sbmc/sbmcGen.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -426,7 +426,7 @@ code/nusmv/core/bmc/sbmc/CMakeFiles/code_nusmv_core_bmc_sbmc.dir/sbmcHash.c.o
  ../code/nusmv/core/utils/portability.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/sbmc/sbmcHash.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/sbmc/sbmcHash.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -510,7 +510,7 @@ code/nusmv/core/bmc/sbmc/CMakeFiles/code_nusmv_core_bmc_sbmc.dir/sbmcNodeStack.c
  ../code/nusmv/core/utils/portability.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/sbmc/sbmcNodeStack.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/sbmc/sbmcNodeStack.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -614,7 +614,7 @@ code/nusmv/core/bmc/sbmc/CMakeFiles/code_nusmv_core_bmc_sbmc.dir/sbmcPkg.c.o
  ../code/nusmv/core/utils/portability.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/sbmc/sbmcPkg.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/sbmc/sbmcPkg.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -711,7 +711,7 @@ code/nusmv/core/bmc/sbmc/CMakeFiles/code_nusmv_core_bmc_sbmc.dir/sbmcStructs.c.o
  ../code/nusmv/core/utils/ustring.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/sbmc/sbmcStructs.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/sbmc/sbmcStructs.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -817,7 +817,7 @@ code/nusmv/core/bmc/sbmc/CMakeFiles/code_nusmv_core_bmc_sbmc.dir/sbmcTableau.c.o
  ../code/nusmv/core/wff/w2w/w2w.h
  ../code/nusmv/core/wff/wff.h
  ../code/nusmv/core/wff/wffRewrite.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/sbmc/sbmcTableau.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/sbmc/sbmcTableau.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -921,7 +921,7 @@ code/nusmv/core/bmc/sbmc/CMakeFiles/code_nusmv_core_bmc_sbmc.dir/sbmcTableauInc.
  ../code/nusmv/core/utils/portability.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/sbmc/sbmcTableauInc.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/sbmc/sbmcTableauInc.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -1026,7 +1026,7 @@ code/nusmv/core/bmc/sbmc/CMakeFiles/code_nusmv_core_bmc_sbmc.dir/sbmcTableauIncL
  ../code/nusmv/core/utils/portability.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/sbmc/sbmcTableauIncLTLformula.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/sbmc/sbmcTableauIncLTLformula.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -1143,7 +1143,7 @@ code/nusmv/core/bmc/sbmc/CMakeFiles/code_nusmv_core_bmc_sbmc.dir/sbmcTableauLTLf
  ../code/nusmv/core/utils/ucmd.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/sbmc/sbmcTableauLTLformula.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/sbmc/sbmcTableauLTLformula.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -1254,7 +1254,7 @@ code/nusmv/core/bmc/sbmc/CMakeFiles/code_nusmv_core_bmc_sbmc.dir/sbmcUtils.c.o
  ../code/nusmv/core/wff/w2w/w2w.h
  ../code/nusmv/core/wff/wff.h
  ../code/nusmv/core/wff/wffRewrite.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/sbmc/sbmcUtils.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/sbmc/sbmcUtils.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h

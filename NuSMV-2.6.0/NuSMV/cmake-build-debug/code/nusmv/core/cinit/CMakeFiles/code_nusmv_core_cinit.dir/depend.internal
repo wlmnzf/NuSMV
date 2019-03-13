@@ -71,7 +71,7 @@ code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/NuSMVEnv.c.o
  ../code/nusmv/core/utils/portability.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/cinit/NuSMVEnv.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/cinit/NuSMVEnv.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -186,7 +186,7 @@ code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/cinitBatch.c.o
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
  ../code/nusmv/shell/cmd/cmd.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/cinit/cinitBatch.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/cinit/cinitBatch.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -300,7 +300,7 @@ code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/cinitData.c.o
  ../code/nusmv/core/utils/utils_io.h
  ../code/nusmv/core/wff/ExprMgr.h
  ../code/nusmv/shell/cmd/cmd.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/cinit/cinitData.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/cinit/cinitData.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -414,7 +414,7 @@ code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/cinitInit.c.o
  ../code/nusmv/core/wff/ExprMgr.h
  ../code/nusmv/core/wff/wff.h
  ../code/nusmv/core/wff/wffRewrite.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/cinit/cinitInit.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/cinit/cinitInit.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -496,7 +496,7 @@ code/nusmv/core/cinit/CMakeFiles/code_nusmv_core_cinit.dir/cinitVers.c.o
  ../code/nusmv/core/utils/portability.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/cinit/cinitVers.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/cinit/cinitVers.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h

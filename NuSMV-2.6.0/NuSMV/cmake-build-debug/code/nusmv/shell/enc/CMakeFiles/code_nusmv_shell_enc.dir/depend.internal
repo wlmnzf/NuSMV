@@ -87,7 +87,7 @@ code/nusmv/shell/enc/CMakeFiles/code_nusmv_shell_enc.dir/encCmd.c.o
  ../code/nusmv/core/wff/ExprMgr.h
  ../code/nusmv/shell/cmd/cmd.h
  ../code/nusmv/shell/enc/encCmd.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/enc/encCmd.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/enc/encCmd.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h

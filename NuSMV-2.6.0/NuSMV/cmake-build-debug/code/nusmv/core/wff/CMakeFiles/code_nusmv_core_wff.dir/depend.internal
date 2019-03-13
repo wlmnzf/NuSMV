@@ -86,7 +86,7 @@ code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/ExprMgr.c.o
  ../code/nusmv/core/utils/portability.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/wff/ExprMgr.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/wff/ExprMgr.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -173,7 +173,7 @@ code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/exprWff.c.o
  ../code/nusmv/core/wff/lr/MasterLogicRecognizer.h
  ../code/nusmv/core/wff/wff.h
  ../code/nusmv/core/wff/wffRewrite.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/wff/exprWff.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/wff/exprWff.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -214,7 +214,7 @@ code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/wffPkg.c.o
  ../code/nusmv/core/wff/w2w/w2wInt.h
  ../code/nusmv/core/wff/wff.h
  ../code/nusmv/core/wff/wffRewrite.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/wff/wffPkg.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/wff/wffPkg.c
  build-cudd/include/cudd/st.h
  build-cudd/include/cudd/util.h
  nusmv-config.h
@@ -302,7 +302,7 @@ code/nusmv/core/wff/CMakeFiles/code_nusmv_core_wff.dir/wffRewrite.c.o
  ../code/nusmv/core/wff/ExprMgr.h
  ../code/nusmv/core/wff/wff.h
  ../code/nusmv/core/wff/wffRewrite.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/wff/wffRewrite.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/wff/wffRewrite.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h

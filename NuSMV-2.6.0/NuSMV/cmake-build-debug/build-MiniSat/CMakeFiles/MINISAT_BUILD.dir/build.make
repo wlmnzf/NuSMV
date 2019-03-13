@@ -43,10 +43,10 @@ RM = /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV
+CMAKE_SOURCE_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug
+CMAKE_BINARY_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug
 
 # Utility rule file for MINISAT_BUILD.
 
@@ -58,18 +58,18 @@ build-MiniSat/CMakeFiles/MINISAT_BUILD: build-MiniSat/minisat-37dc6c67e2af26379d
 
 
 build-MiniSat/minisat-37dc6c67e2af26379d88ce349eb9c4c6160e8543/Solver_C.h: build-MiniSat/MiniSat_v37dc6c6_nusmv.patch
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating minisat-37dc6c67e2af26379d88ce349eb9c4c6160e8543/Solver_C.h"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-MiniSat && /usr/bin/patch -p0 -N < /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-MiniSat/MiniSat_v37dc6c6_nusmv.patch
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating minisat-37dc6c67e2af26379d88ce349eb9c4c6160e8543/Solver_C.h"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-MiniSat && /usr/bin/patch -p0 -N < /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-MiniSat/MiniSat_v37dc6c6_nusmv.patch
 
 build-MiniSat/minisat-37dc6c67e2af26379d88ce349eb9c4c6160e8543/libMiniSat.a: build-MiniSat/minisat-37dc6c67e2af26379d88ce349eb9c4c6160e8543/Solver_C.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building MiniSat with cmake"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-MiniSat/minisat-37dc6c67e2af26379d88ce349eb9c4c6160e8543 && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -G "Unix Makefiles" -DCMAKE_C_COMPILER=/usr/bin/cc -DCMAKE_CXX_COMPILER=/usr/bin/c++ -DCMAKE_C_FLAGS= -DCMAKE_CXX_FLAGS= -DCMAKE_BUILD_TYPE=Debug -DUSE_ZLIB=OFF .
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-MiniSat/minisat-37dc6c67e2af26379d88ce349eb9c4c6160e8543 && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake --build . --target lib
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building MiniSat with cmake"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-MiniSat/minisat-37dc6c67e2af26379d88ce349eb9c4c6160e8543 && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -G "Unix Makefiles" -DCMAKE_C_COMPILER=/usr/bin/cc -DCMAKE_CXX_COMPILER=/usr/bin/c++ -DCMAKE_C_FLAGS= -DCMAKE_CXX_FLAGS= -DCMAKE_BUILD_TYPE=Debug -DUSE_ZLIB=OFF .
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-MiniSat/minisat-37dc6c67e2af26379d88ce349eb9c4c6160e8543 && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake --build . --target lib
 
-build-MiniSat/MiniSat_v37dc6c6_nusmv.patch: /home/william/NuSMV-a/NuSMV-2.6.0/MiniSat/MiniSat_v37dc6c6_nusmv.patch
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating MiniSat_v37dc6c6_nusmv.patch"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-MiniSat && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -P /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-MiniSat/CMakeFiles/make_minisat_patch.cmake
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-MiniSat && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E tar xzf 37dc6c67e2af26379d88ce349eb9c4c6160e8543.zip
+build-MiniSat/MiniSat_v37dc6c6_nusmv.patch: /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/MiniSat/MiniSat_v37dc6c6_nusmv.patch
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating MiniSat_v37dc6c6_nusmv.patch"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-MiniSat && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -P /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-MiniSat/CMakeFiles/make_minisat_patch.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-MiniSat && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E tar xzf 37dc6c67e2af26379d88ce349eb9c4c6160e8543.zip
 
 MINISAT_BUILD: build-MiniSat/CMakeFiles/MINISAT_BUILD
 MINISAT_BUILD: build-MiniSat/minisat-37dc6c67e2af26379d88ce349eb9c4c6160e8543/Solver_C.h
@@ -85,10 +85,10 @@ build-MiniSat/CMakeFiles/MINISAT_BUILD.dir/build: MINISAT_BUILD
 .PHONY : build-MiniSat/CMakeFiles/MINISAT_BUILD.dir/build
 
 build-MiniSat/CMakeFiles/MINISAT_BUILD.dir/clean:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-MiniSat && $(CMAKE_COMMAND) -P CMakeFiles/MINISAT_BUILD.dir/cmake_clean.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-MiniSat && $(CMAKE_COMMAND) -P CMakeFiles/MINISAT_BUILD.dir/cmake_clean.cmake
 .PHONY : build-MiniSat/CMakeFiles/MINISAT_BUILD.dir/clean
 
 build-MiniSat/CMakeFiles/MINISAT_BUILD.dir/depend:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV /home/william/NuSMV-a/NuSMV-2.6.0/MiniSat /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-MiniSat /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-MiniSat/CMakeFiles/MINISAT_BUILD.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/MiniSat /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-MiniSat /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-MiniSat/CMakeFiles/MINISAT_BUILD.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : build-MiniSat/CMakeFiles/MINISAT_BUILD.dir/depend
 

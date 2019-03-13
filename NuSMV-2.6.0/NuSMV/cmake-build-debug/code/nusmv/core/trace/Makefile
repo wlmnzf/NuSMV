@@ -48,10 +48,10 @@ RM = /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV
+CMAKE_SOURCE_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug
+CMAKE_BINARY_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -93,7 +93,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -104,7 +104,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CPackSourceConfig.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -159,14 +159,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/trace/CMakeFiles/progress.marks
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/trace/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/trace/CMakeFiles/progress.marks
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/trace/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/trace/clean
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/trace/clean
 .PHONY : clean
 
 # The main clean target
@@ -176,22 +176,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/trace/preinstall
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/trace/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/trace/preinstall
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/trace/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/rule:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/rule
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/rule
 .PHONY : code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/rule
 
 # Convenience name for target.
@@ -201,7 +201,7 @@ code_nusmv_core_trace: code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.di
 
 # fast build rule for target.
 code_nusmv_core_trace/fast:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build
 .PHONY : code_nusmv_core_trace/fast
 
 Trace.o: Trace.c.o
@@ -210,7 +210,7 @@ Trace.o: Trace.c.o
 
 # target to build an object file
 Trace.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/Trace.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/Trace.c.o
 .PHONY : Trace.c.o
 
 Trace.i: Trace.c.i
@@ -219,7 +219,7 @@ Trace.i: Trace.c.i
 
 # target to preprocess a source file
 Trace.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/Trace.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/Trace.c.i
 .PHONY : Trace.c.i
 
 Trace.s: Trace.c.s
@@ -228,7 +228,7 @@ Trace.s: Trace.c.s
 
 # target to generate assembly for a file
 Trace.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/Trace.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/Trace.c.s
 .PHONY : Trace.c.s
 
 TraceLabel.o: TraceLabel.c.o
@@ -237,7 +237,7 @@ TraceLabel.o: TraceLabel.c.o
 
 # target to build an object file
 TraceLabel.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/TraceLabel.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/TraceLabel.c.o
 .PHONY : TraceLabel.c.o
 
 TraceLabel.i: TraceLabel.c.i
@@ -246,7 +246,7 @@ TraceLabel.i: TraceLabel.c.i
 
 # target to preprocess a source file
 TraceLabel.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/TraceLabel.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/TraceLabel.c.i
 .PHONY : TraceLabel.c.i
 
 TraceLabel.s: TraceLabel.c.s
@@ -255,7 +255,7 @@ TraceLabel.s: TraceLabel.c.s
 
 # target to generate assembly for a file
 TraceLabel.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/TraceLabel.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/TraceLabel.c.s
 .PHONY : TraceLabel.c.s
 
 TraceMgr.o: TraceMgr.c.o
@@ -264,7 +264,7 @@ TraceMgr.o: TraceMgr.c.o
 
 # target to build an object file
 TraceMgr.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/TraceMgr.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/TraceMgr.c.o
 .PHONY : TraceMgr.c.o
 
 TraceMgr.i: TraceMgr.c.i
@@ -273,7 +273,7 @@ TraceMgr.i: TraceMgr.c.i
 
 # target to preprocess a source file
 TraceMgr.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/TraceMgr.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/TraceMgr.c.i
 .PHONY : TraceMgr.c.i
 
 TraceMgr.s: TraceMgr.c.s
@@ -282,7 +282,7 @@ TraceMgr.s: TraceMgr.c.s
 
 # target to generate assembly for a file
 TraceMgr.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/TraceMgr.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/TraceMgr.c.s
 .PHONY : TraceMgr.c.s
 
 TraceOpt.o: TraceOpt.c.o
@@ -291,7 +291,7 @@ TraceOpt.o: TraceOpt.c.o
 
 # target to build an object file
 TraceOpt.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/TraceOpt.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/TraceOpt.c.o
 .PHONY : TraceOpt.c.o
 
 TraceOpt.i: TraceOpt.c.i
@@ -300,7 +300,7 @@ TraceOpt.i: TraceOpt.c.i
 
 # target to preprocess a source file
 TraceOpt.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/TraceOpt.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/TraceOpt.c.i
 .PHONY : TraceOpt.c.i
 
 TraceOpt.s: TraceOpt.c.s
@@ -309,7 +309,7 @@ TraceOpt.s: TraceOpt.c.s
 
 # target to generate assembly for a file
 TraceOpt.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/TraceOpt.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/TraceOpt.c.s
 .PHONY : TraceOpt.c.s
 
 TraceXml.o: TraceXml.c.o
@@ -318,7 +318,7 @@ TraceXml.o: TraceXml.c.o
 
 # target to build an object file
 TraceXml.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/TraceXml.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/TraceXml.c.o
 .PHONY : TraceXml.c.o
 
 TraceXml.i: TraceXml.c.i
@@ -327,7 +327,7 @@ TraceXml.i: TraceXml.c.i
 
 # target to preprocess a source file
 TraceXml.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/TraceXml.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/TraceXml.c.i
 .PHONY : TraceXml.c.i
 
 TraceXml.s: TraceXml.c.s
@@ -336,7 +336,7 @@ TraceXml.s: TraceXml.c.s
 
 # target to generate assembly for a file
 TraceXml.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/TraceXml.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/TraceXml.c.s
 .PHONY : TraceXml.c.s
 
 Trace_private.o: Trace_private.c.o
@@ -345,7 +345,7 @@ Trace_private.o: Trace_private.c.o
 
 # target to build an object file
 Trace_private.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/Trace_private.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/Trace_private.c.o
 .PHONY : Trace_private.c.o
 
 Trace_private.i: Trace_private.c.i
@@ -354,7 +354,7 @@ Trace_private.i: Trace_private.c.i
 
 # target to preprocess a source file
 Trace_private.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/Trace_private.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/Trace_private.c.i
 .PHONY : Trace_private.c.i
 
 Trace_private.s: Trace_private.c.s
@@ -363,7 +363,7 @@ Trace_private.s: Trace_private.c.s
 
 # target to generate assembly for a file
 Trace_private.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/Trace_private.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/Trace_private.c.s
 .PHONY : Trace_private.c.s
 
 eval/BaseEvaluator.o: eval/BaseEvaluator.c.o
@@ -372,7 +372,7 @@ eval/BaseEvaluator.o: eval/BaseEvaluator.c.o
 
 # target to build an object file
 eval/BaseEvaluator.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/eval/BaseEvaluator.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/eval/BaseEvaluator.c.o
 .PHONY : eval/BaseEvaluator.c.o
 
 eval/BaseEvaluator.i: eval/BaseEvaluator.c.i
@@ -381,7 +381,7 @@ eval/BaseEvaluator.i: eval/BaseEvaluator.c.i
 
 # target to preprocess a source file
 eval/BaseEvaluator.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/eval/BaseEvaluator.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/eval/BaseEvaluator.c.i
 .PHONY : eval/BaseEvaluator.c.i
 
 eval/BaseEvaluator.s: eval/BaseEvaluator.c.s
@@ -390,7 +390,7 @@ eval/BaseEvaluator.s: eval/BaseEvaluator.c.s
 
 # target to generate assembly for a file
 eval/BaseEvaluator.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/eval/BaseEvaluator.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/eval/BaseEvaluator.c.s
 .PHONY : eval/BaseEvaluator.c.s
 
 exec/BDDCompleteTraceExecutor.o: exec/BDDCompleteTraceExecutor.c.o
@@ -399,7 +399,7 @@ exec/BDDCompleteTraceExecutor.o: exec/BDDCompleteTraceExecutor.c.o
 
 # target to build an object file
 exec/BDDCompleteTraceExecutor.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/BDDCompleteTraceExecutor.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/BDDCompleteTraceExecutor.c.o
 .PHONY : exec/BDDCompleteTraceExecutor.c.o
 
 exec/BDDCompleteTraceExecutor.i: exec/BDDCompleteTraceExecutor.c.i
@@ -408,7 +408,7 @@ exec/BDDCompleteTraceExecutor.i: exec/BDDCompleteTraceExecutor.c.i
 
 # target to preprocess a source file
 exec/BDDCompleteTraceExecutor.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/BDDCompleteTraceExecutor.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/BDDCompleteTraceExecutor.c.i
 .PHONY : exec/BDDCompleteTraceExecutor.c.i
 
 exec/BDDCompleteTraceExecutor.s: exec/BDDCompleteTraceExecutor.c.s
@@ -417,7 +417,7 @@ exec/BDDCompleteTraceExecutor.s: exec/BDDCompleteTraceExecutor.c.s
 
 # target to generate assembly for a file
 exec/BDDCompleteTraceExecutor.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/BDDCompleteTraceExecutor.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/BDDCompleteTraceExecutor.c.s
 .PHONY : exec/BDDCompleteTraceExecutor.c.s
 
 exec/BDDPartialTraceExecutor.o: exec/BDDPartialTraceExecutor.c.o
@@ -426,7 +426,7 @@ exec/BDDPartialTraceExecutor.o: exec/BDDPartialTraceExecutor.c.o
 
 # target to build an object file
 exec/BDDPartialTraceExecutor.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/BDDPartialTraceExecutor.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/BDDPartialTraceExecutor.c.o
 .PHONY : exec/BDDPartialTraceExecutor.c.o
 
 exec/BDDPartialTraceExecutor.i: exec/BDDPartialTraceExecutor.c.i
@@ -435,7 +435,7 @@ exec/BDDPartialTraceExecutor.i: exec/BDDPartialTraceExecutor.c.i
 
 # target to preprocess a source file
 exec/BDDPartialTraceExecutor.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/BDDPartialTraceExecutor.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/BDDPartialTraceExecutor.c.i
 .PHONY : exec/BDDPartialTraceExecutor.c.i
 
 exec/BDDPartialTraceExecutor.s: exec/BDDPartialTraceExecutor.c.s
@@ -444,7 +444,7 @@ exec/BDDPartialTraceExecutor.s: exec/BDDPartialTraceExecutor.c.s
 
 # target to generate assembly for a file
 exec/BDDPartialTraceExecutor.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/BDDPartialTraceExecutor.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/BDDPartialTraceExecutor.c.s
 .PHONY : exec/BDDPartialTraceExecutor.c.s
 
 exec/BaseTraceExecutor.o: exec/BaseTraceExecutor.c.o
@@ -453,7 +453,7 @@ exec/BaseTraceExecutor.o: exec/BaseTraceExecutor.c.o
 
 # target to build an object file
 exec/BaseTraceExecutor.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/BaseTraceExecutor.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/BaseTraceExecutor.c.o
 .PHONY : exec/BaseTraceExecutor.c.o
 
 exec/BaseTraceExecutor.i: exec/BaseTraceExecutor.c.i
@@ -462,7 +462,7 @@ exec/BaseTraceExecutor.i: exec/BaseTraceExecutor.c.i
 
 # target to preprocess a source file
 exec/BaseTraceExecutor.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/BaseTraceExecutor.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/BaseTraceExecutor.c.i
 .PHONY : exec/BaseTraceExecutor.c.i
 
 exec/BaseTraceExecutor.s: exec/BaseTraceExecutor.c.s
@@ -471,7 +471,7 @@ exec/BaseTraceExecutor.s: exec/BaseTraceExecutor.c.s
 
 # target to generate assembly for a file
 exec/BaseTraceExecutor.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/BaseTraceExecutor.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/BaseTraceExecutor.c.s
 .PHONY : exec/BaseTraceExecutor.c.s
 
 exec/CompleteTraceExecutor.o: exec/CompleteTraceExecutor.c.o
@@ -480,7 +480,7 @@ exec/CompleteTraceExecutor.o: exec/CompleteTraceExecutor.c.o
 
 # target to build an object file
 exec/CompleteTraceExecutor.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/CompleteTraceExecutor.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/CompleteTraceExecutor.c.o
 .PHONY : exec/CompleteTraceExecutor.c.o
 
 exec/CompleteTraceExecutor.i: exec/CompleteTraceExecutor.c.i
@@ -489,7 +489,7 @@ exec/CompleteTraceExecutor.i: exec/CompleteTraceExecutor.c.i
 
 # target to preprocess a source file
 exec/CompleteTraceExecutor.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/CompleteTraceExecutor.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/CompleteTraceExecutor.c.i
 .PHONY : exec/CompleteTraceExecutor.c.i
 
 exec/CompleteTraceExecutor.s: exec/CompleteTraceExecutor.c.s
@@ -498,7 +498,7 @@ exec/CompleteTraceExecutor.s: exec/CompleteTraceExecutor.c.s
 
 # target to generate assembly for a file
 exec/CompleteTraceExecutor.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/CompleteTraceExecutor.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/CompleteTraceExecutor.c.s
 .PHONY : exec/CompleteTraceExecutor.c.s
 
 exec/PartialTraceExecutor.o: exec/PartialTraceExecutor.c.o
@@ -507,7 +507,7 @@ exec/PartialTraceExecutor.o: exec/PartialTraceExecutor.c.o
 
 # target to build an object file
 exec/PartialTraceExecutor.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/PartialTraceExecutor.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/PartialTraceExecutor.c.o
 .PHONY : exec/PartialTraceExecutor.c.o
 
 exec/PartialTraceExecutor.i: exec/PartialTraceExecutor.c.i
@@ -516,7 +516,7 @@ exec/PartialTraceExecutor.i: exec/PartialTraceExecutor.c.i
 
 # target to preprocess a source file
 exec/PartialTraceExecutor.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/PartialTraceExecutor.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/PartialTraceExecutor.c.i
 .PHONY : exec/PartialTraceExecutor.c.i
 
 exec/PartialTraceExecutor.s: exec/PartialTraceExecutor.c.s
@@ -525,7 +525,7 @@ exec/PartialTraceExecutor.s: exec/PartialTraceExecutor.c.s
 
 # target to generate assembly for a file
 exec/PartialTraceExecutor.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/PartialTraceExecutor.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/PartialTraceExecutor.c.s
 .PHONY : exec/PartialTraceExecutor.c.s
 
 exec/SATCompleteTraceExecutor.o: exec/SATCompleteTraceExecutor.c.o
@@ -534,7 +534,7 @@ exec/SATCompleteTraceExecutor.o: exec/SATCompleteTraceExecutor.c.o
 
 # target to build an object file
 exec/SATCompleteTraceExecutor.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/SATCompleteTraceExecutor.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/SATCompleteTraceExecutor.c.o
 .PHONY : exec/SATCompleteTraceExecutor.c.o
 
 exec/SATCompleteTraceExecutor.i: exec/SATCompleteTraceExecutor.c.i
@@ -543,7 +543,7 @@ exec/SATCompleteTraceExecutor.i: exec/SATCompleteTraceExecutor.c.i
 
 # target to preprocess a source file
 exec/SATCompleteTraceExecutor.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/SATCompleteTraceExecutor.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/SATCompleteTraceExecutor.c.i
 .PHONY : exec/SATCompleteTraceExecutor.c.i
 
 exec/SATCompleteTraceExecutor.s: exec/SATCompleteTraceExecutor.c.s
@@ -552,7 +552,7 @@ exec/SATCompleteTraceExecutor.s: exec/SATCompleteTraceExecutor.c.s
 
 # target to generate assembly for a file
 exec/SATCompleteTraceExecutor.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/SATCompleteTraceExecutor.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/SATCompleteTraceExecutor.c.s
 .PHONY : exec/SATCompleteTraceExecutor.c.s
 
 exec/SATPartialTraceExecutor.o: exec/SATPartialTraceExecutor.c.o
@@ -561,7 +561,7 @@ exec/SATPartialTraceExecutor.o: exec/SATPartialTraceExecutor.c.o
 
 # target to build an object file
 exec/SATPartialTraceExecutor.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/SATPartialTraceExecutor.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/SATPartialTraceExecutor.c.o
 .PHONY : exec/SATPartialTraceExecutor.c.o
 
 exec/SATPartialTraceExecutor.i: exec/SATPartialTraceExecutor.c.i
@@ -570,7 +570,7 @@ exec/SATPartialTraceExecutor.i: exec/SATPartialTraceExecutor.c.i
 
 # target to preprocess a source file
 exec/SATPartialTraceExecutor.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/SATPartialTraceExecutor.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/SATPartialTraceExecutor.c.i
 .PHONY : exec/SATPartialTraceExecutor.c.i
 
 exec/SATPartialTraceExecutor.s: exec/SATPartialTraceExecutor.c.s
@@ -579,7 +579,7 @@ exec/SATPartialTraceExecutor.s: exec/SATPartialTraceExecutor.c.s
 
 # target to generate assembly for a file
 exec/SATPartialTraceExecutor.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/SATPartialTraceExecutor.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/SATPartialTraceExecutor.c.s
 .PHONY : exec/SATPartialTraceExecutor.c.s
 
 exec/traceExec.o: exec/traceExec.c.o
@@ -588,7 +588,7 @@ exec/traceExec.o: exec/traceExec.c.o
 
 # target to build an object file
 exec/traceExec.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/traceExec.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/traceExec.c.o
 .PHONY : exec/traceExec.c.o
 
 exec/traceExec.i: exec/traceExec.c.i
@@ -597,7 +597,7 @@ exec/traceExec.i: exec/traceExec.c.i
 
 # target to preprocess a source file
 exec/traceExec.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/traceExec.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/traceExec.c.i
 .PHONY : exec/traceExec.c.i
 
 exec/traceExec.s: exec/traceExec.c.s
@@ -606,7 +606,7 @@ exec/traceExec.s: exec/traceExec.c.s
 
 # target to generate assembly for a file
 exec/traceExec.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/traceExec.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/traceExec.c.s
 .PHONY : exec/traceExec.c.s
 
 loaders/TraceLoader.o: loaders/TraceLoader.c.o
@@ -615,7 +615,7 @@ loaders/TraceLoader.o: loaders/TraceLoader.c.o
 
 # target to build an object file
 loaders/TraceLoader.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/loaders/TraceLoader.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/loaders/TraceLoader.c.o
 .PHONY : loaders/TraceLoader.c.o
 
 loaders/TraceLoader.i: loaders/TraceLoader.c.i
@@ -624,7 +624,7 @@ loaders/TraceLoader.i: loaders/TraceLoader.c.i
 
 # target to preprocess a source file
 loaders/TraceLoader.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/loaders/TraceLoader.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/loaders/TraceLoader.c.i
 .PHONY : loaders/TraceLoader.c.i
 
 loaders/TraceLoader.s: loaders/TraceLoader.c.s
@@ -633,7 +633,7 @@ loaders/TraceLoader.s: loaders/TraceLoader.c.s
 
 # target to generate assembly for a file
 loaders/TraceLoader.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/loaders/TraceLoader.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/loaders/TraceLoader.c.s
 .PHONY : loaders/TraceLoader.c.s
 
 loaders/TraceXmlLoader.o: loaders/TraceXmlLoader.c.o
@@ -642,7 +642,7 @@ loaders/TraceXmlLoader.o: loaders/TraceXmlLoader.c.o
 
 # target to build an object file
 loaders/TraceXmlLoader.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/loaders/TraceXmlLoader.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/loaders/TraceXmlLoader.c.o
 .PHONY : loaders/TraceXmlLoader.c.o
 
 loaders/TraceXmlLoader.i: loaders/TraceXmlLoader.c.i
@@ -651,7 +651,7 @@ loaders/TraceXmlLoader.i: loaders/TraceXmlLoader.c.i
 
 # target to preprocess a source file
 loaders/TraceXmlLoader.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/loaders/TraceXmlLoader.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/loaders/TraceXmlLoader.c.i
 .PHONY : loaders/TraceXmlLoader.c.i
 
 loaders/TraceXmlLoader.s: loaders/TraceXmlLoader.c.s
@@ -660,7 +660,7 @@ loaders/TraceXmlLoader.s: loaders/TraceXmlLoader.c.s
 
 # target to generate assembly for a file
 loaders/TraceXmlLoader.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/loaders/TraceXmlLoader.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/loaders/TraceXmlLoader.c.s
 .PHONY : loaders/TraceXmlLoader.c.s
 
 pkg_trace.o: pkg_trace.c.o
@@ -669,7 +669,7 @@ pkg_trace.o: pkg_trace.c.o
 
 # target to build an object file
 pkg_trace.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/pkg_trace.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/pkg_trace.c.o
 .PHONY : pkg_trace.c.o
 
 pkg_trace.i: pkg_trace.c.i
@@ -678,7 +678,7 @@ pkg_trace.i: pkg_trace.c.i
 
 # target to preprocess a source file
 pkg_trace.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/pkg_trace.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/pkg_trace.c.i
 .PHONY : pkg_trace.c.i
 
 pkg_trace.s: pkg_trace.c.s
@@ -687,7 +687,7 @@ pkg_trace.s: pkg_trace.c.s
 
 # target to generate assembly for a file
 pkg_trace.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/pkg_trace.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/pkg_trace.c.s
 .PHONY : pkg_trace.c.s
 
 plugins/TraceCompact.o: plugins/TraceCompact.c.o
@@ -696,7 +696,7 @@ plugins/TraceCompact.o: plugins/TraceCompact.c.o
 
 # target to build an object file
 plugins/TraceCompact.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/plugins/TraceCompact.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/plugins/TraceCompact.c.o
 .PHONY : plugins/TraceCompact.c.o
 
 plugins/TraceCompact.i: plugins/TraceCompact.c.i
@@ -705,7 +705,7 @@ plugins/TraceCompact.i: plugins/TraceCompact.c.i
 
 # target to preprocess a source file
 plugins/TraceCompact.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/plugins/TraceCompact.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/plugins/TraceCompact.c.i
 .PHONY : plugins/TraceCompact.c.i
 
 plugins/TraceCompact.s: plugins/TraceCompact.c.s
@@ -714,7 +714,7 @@ plugins/TraceCompact.s: plugins/TraceCompact.c.s
 
 # target to generate assembly for a file
 plugins/TraceCompact.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/plugins/TraceCompact.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/plugins/TraceCompact.c.s
 .PHONY : plugins/TraceCompact.c.s
 
 plugins/TraceEmpty.o: plugins/TraceEmpty.c.o
@@ -723,7 +723,7 @@ plugins/TraceEmpty.o: plugins/TraceEmpty.c.o
 
 # target to build an object file
 plugins/TraceEmpty.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/plugins/TraceEmpty.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/plugins/TraceEmpty.c.o
 .PHONY : plugins/TraceEmpty.c.o
 
 plugins/TraceEmpty.i: plugins/TraceEmpty.c.i
@@ -732,7 +732,7 @@ plugins/TraceEmpty.i: plugins/TraceEmpty.c.i
 
 # target to preprocess a source file
 plugins/TraceEmpty.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/plugins/TraceEmpty.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/plugins/TraceEmpty.c.i
 .PHONY : plugins/TraceEmpty.c.i
 
 plugins/TraceEmpty.s: plugins/TraceEmpty.c.s
@@ -741,7 +741,7 @@ plugins/TraceEmpty.s: plugins/TraceEmpty.c.s
 
 # target to generate assembly for a file
 plugins/TraceEmpty.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/plugins/TraceEmpty.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/plugins/TraceEmpty.c.s
 .PHONY : plugins/TraceEmpty.c.s
 
 plugins/TraceExplainer.o: plugins/TraceExplainer.c.o
@@ -750,7 +750,7 @@ plugins/TraceExplainer.o: plugins/TraceExplainer.c.o
 
 # target to build an object file
 plugins/TraceExplainer.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/plugins/TraceExplainer.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/plugins/TraceExplainer.c.o
 .PHONY : plugins/TraceExplainer.c.o
 
 plugins/TraceExplainer.i: plugins/TraceExplainer.c.i
@@ -759,7 +759,7 @@ plugins/TraceExplainer.i: plugins/TraceExplainer.c.i
 
 # target to preprocess a source file
 plugins/TraceExplainer.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/plugins/TraceExplainer.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/plugins/TraceExplainer.c.i
 .PHONY : plugins/TraceExplainer.c.i
 
 plugins/TraceExplainer.s: plugins/TraceExplainer.c.s
@@ -768,7 +768,7 @@ plugins/TraceExplainer.s: plugins/TraceExplainer.c.s
 
 # target to generate assembly for a file
 plugins/TraceExplainer.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/plugins/TraceExplainer.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/plugins/TraceExplainer.c.s
 .PHONY : plugins/TraceExplainer.c.s
 
 plugins/TracePlugin.o: plugins/TracePlugin.c.o
@@ -777,7 +777,7 @@ plugins/TracePlugin.o: plugins/TracePlugin.c.o
 
 # target to build an object file
 plugins/TracePlugin.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/plugins/TracePlugin.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/plugins/TracePlugin.c.o
 .PHONY : plugins/TracePlugin.c.o
 
 plugins/TracePlugin.i: plugins/TracePlugin.c.i
@@ -786,7 +786,7 @@ plugins/TracePlugin.i: plugins/TracePlugin.c.i
 
 # target to preprocess a source file
 plugins/TracePlugin.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/plugins/TracePlugin.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/plugins/TracePlugin.c.i
 .PHONY : plugins/TracePlugin.c.i
 
 plugins/TracePlugin.s: plugins/TracePlugin.c.s
@@ -795,7 +795,7 @@ plugins/TracePlugin.s: plugins/TracePlugin.c.s
 
 # target to generate assembly for a file
 plugins/TracePlugin.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/plugins/TracePlugin.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/plugins/TracePlugin.c.s
 .PHONY : plugins/TracePlugin.c.s
 
 plugins/TraceTable.o: plugins/TraceTable.c.o
@@ -804,7 +804,7 @@ plugins/TraceTable.o: plugins/TraceTable.c.o
 
 # target to build an object file
 plugins/TraceTable.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/plugins/TraceTable.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/plugins/TraceTable.c.o
 .PHONY : plugins/TraceTable.c.o
 
 plugins/TraceTable.i: plugins/TraceTable.c.i
@@ -813,7 +813,7 @@ plugins/TraceTable.i: plugins/TraceTable.c.i
 
 # target to preprocess a source file
 plugins/TraceTable.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/plugins/TraceTable.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/plugins/TraceTable.c.i
 .PHONY : plugins/TraceTable.c.i
 
 plugins/TraceTable.s: plugins/TraceTable.c.s
@@ -822,7 +822,7 @@ plugins/TraceTable.s: plugins/TraceTable.c.s
 
 # target to generate assembly for a file
 plugins/TraceTable.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/plugins/TraceTable.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/plugins/TraceTable.c.s
 .PHONY : plugins/TraceTable.c.s
 
 plugins/TraceXmlDumper.o: plugins/TraceXmlDumper.c.o
@@ -831,7 +831,7 @@ plugins/TraceXmlDumper.o: plugins/TraceXmlDumper.c.o
 
 # target to build an object file
 plugins/TraceXmlDumper.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/plugins/TraceXmlDumper.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/plugins/TraceXmlDumper.c.o
 .PHONY : plugins/TraceXmlDumper.c.o
 
 plugins/TraceXmlDumper.i: plugins/TraceXmlDumper.c.i
@@ -840,7 +840,7 @@ plugins/TraceXmlDumper.i: plugins/TraceXmlDumper.c.i
 
 # target to preprocess a source file
 plugins/TraceXmlDumper.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/plugins/TraceXmlDumper.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/plugins/TraceXmlDumper.c.i
 .PHONY : plugins/TraceXmlDumper.c.i
 
 plugins/TraceXmlDumper.s: plugins/TraceXmlDumper.c.s
@@ -849,7 +849,7 @@ plugins/TraceXmlDumper.s: plugins/TraceXmlDumper.c.s
 
 # target to generate assembly for a file
 plugins/TraceXmlDumper.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/plugins/TraceXmlDumper.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/plugins/TraceXmlDumper.c.s
 .PHONY : plugins/TraceXmlDumper.c.s
 
 traceEval.o: traceEval.c.o
@@ -858,7 +858,7 @@ traceEval.o: traceEval.c.o
 
 # target to build an object file
 traceEval.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/traceEval.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/traceEval.c.o
 .PHONY : traceEval.c.o
 
 traceEval.i: traceEval.c.i
@@ -867,7 +867,7 @@ traceEval.i: traceEval.c.i
 
 # target to preprocess a source file
 traceEval.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/traceEval.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/traceEval.c.i
 .PHONY : traceEval.c.i
 
 traceEval.s: traceEval.c.s
@@ -876,7 +876,7 @@ traceEval.s: traceEval.c.s
 
 # target to generate assembly for a file
 traceEval.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/traceEval.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/traceEval.c.s
 .PHONY : traceEval.c.s
 
 traceTest.o: traceTest.c.o
@@ -885,7 +885,7 @@ traceTest.o: traceTest.c.o
 
 # target to build an object file
 traceTest.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/traceTest.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/traceTest.c.o
 .PHONY : traceTest.c.o
 
 traceTest.i: traceTest.c.i
@@ -894,7 +894,7 @@ traceTest.i: traceTest.c.i
 
 # target to preprocess a source file
 traceTest.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/traceTest.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/traceTest.c.i
 .PHONY : traceTest.c.i
 
 traceTest.s: traceTest.c.s
@@ -903,7 +903,7 @@ traceTest.s: traceTest.c.s
 
 # target to generate assembly for a file
 traceTest.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/traceTest.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/traceTest.c.s
 .PHONY : traceTest.c.s
 
 traceUtils.o: traceUtils.c.o
@@ -912,7 +912,7 @@ traceUtils.o: traceUtils.c.o
 
 # target to build an object file
 traceUtils.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/traceUtils.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/traceUtils.c.o
 .PHONY : traceUtils.c.o
 
 traceUtils.i: traceUtils.c.i
@@ -921,7 +921,7 @@ traceUtils.i: traceUtils.c.i
 
 # target to preprocess a source file
 traceUtils.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/traceUtils.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/traceUtils.c.i
 .PHONY : traceUtils.c.i
 
 traceUtils.s: traceUtils.c.s
@@ -930,7 +930,7 @@ traceUtils.s: traceUtils.c.s
 
 # target to generate assembly for a file
 traceUtils.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/traceUtils.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/build.make code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/traceUtils.c.s
 .PHONY : traceUtils.c.s
 
 # Help Target
@@ -1041,6 +1041,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

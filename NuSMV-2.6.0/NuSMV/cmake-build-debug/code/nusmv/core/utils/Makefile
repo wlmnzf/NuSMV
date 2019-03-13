@@ -48,10 +48,10 @@ RM = /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV
+CMAKE_SOURCE_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug
+CMAKE_BINARY_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -83,7 +83,7 @@ install/fast: preinstall/fast
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -94,7 +94,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CPackSourceConfig.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -159,14 +159,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/utils/CMakeFiles/progress.marks
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/utils/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/utils/CMakeFiles/progress.marks
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/utils/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/utils/clean
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/utils/clean
 .PHONY : clean
 
 # The main clean target
@@ -176,22 +176,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/utils/preinstall
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/utils/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/utils/preinstall
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/utils/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/rule:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/rule
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/rule
 .PHONY : code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/rule
 
 # Convenience name for target.
@@ -201,7 +201,7 @@ code_nusmv_core_utils: code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.di
 
 # fast build rule for target.
 code_nusmv_core_utils/fast:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build
 .PHONY : code_nusmv_core_utils/fast
 
 BiMap.o: BiMap.c.o
@@ -210,7 +210,7 @@ BiMap.o: BiMap.c.o
 
 # target to build an object file
 BiMap.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/BiMap.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/BiMap.c.o
 .PHONY : BiMap.c.o
 
 BiMap.i: BiMap.c.i
@@ -219,7 +219,7 @@ BiMap.i: BiMap.c.i
 
 # target to preprocess a source file
 BiMap.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/BiMap.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/BiMap.c.i
 .PHONY : BiMap.c.i
 
 BiMap.s: BiMap.c.s
@@ -228,7 +228,7 @@ BiMap.s: BiMap.c.s
 
 # target to generate assembly for a file
 BiMap.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/BiMap.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/BiMap.c.s
 .PHONY : BiMap.c.s
 
 DLlist.o: DLlist.c.o
@@ -237,7 +237,7 @@ DLlist.o: DLlist.c.o
 
 # target to build an object file
 DLlist.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/DLlist.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/DLlist.c.o
 .PHONY : DLlist.c.o
 
 DLlist.i: DLlist.c.i
@@ -246,7 +246,7 @@ DLlist.i: DLlist.c.i
 
 # target to preprocess a source file
 DLlist.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/DLlist.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/DLlist.c.i
 .PHONY : DLlist.c.i
 
 DLlist.s: DLlist.c.s
@@ -255,7 +255,7 @@ DLlist.s: DLlist.c.s
 
 # target to generate assembly for a file
 DLlist.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/DLlist.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/DLlist.c.s
 .PHONY : DLlist.c.s
 
 EnvObject.o: EnvObject.c.o
@@ -264,7 +264,7 @@ EnvObject.o: EnvObject.c.o
 
 # target to build an object file
 EnvObject.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/EnvObject.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/EnvObject.c.o
 .PHONY : EnvObject.c.o
 
 EnvObject.i: EnvObject.c.i
@@ -273,7 +273,7 @@ EnvObject.i: EnvObject.c.i
 
 # target to preprocess a source file
 EnvObject.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/EnvObject.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/EnvObject.c.i
 .PHONY : EnvObject.c.i
 
 EnvObject.s: EnvObject.c.s
@@ -282,7 +282,7 @@ EnvObject.s: EnvObject.c.s
 
 # target to generate assembly for a file
 EnvObject.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/EnvObject.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/EnvObject.c.s
 .PHONY : EnvObject.c.s
 
 ErrorMgr.o: ErrorMgr.c.o
@@ -291,7 +291,7 @@ ErrorMgr.o: ErrorMgr.c.o
 
 # target to build an object file
 ErrorMgr.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/ErrorMgr.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/ErrorMgr.c.o
 .PHONY : ErrorMgr.c.o
 
 ErrorMgr.i: ErrorMgr.c.i
@@ -300,7 +300,7 @@ ErrorMgr.i: ErrorMgr.c.i
 
 # target to preprocess a source file
 ErrorMgr.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/ErrorMgr.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/ErrorMgr.c.i
 .PHONY : ErrorMgr.c.i
 
 ErrorMgr.s: ErrorMgr.c.s
@@ -309,7 +309,7 @@ ErrorMgr.s: ErrorMgr.c.s
 
 # target to generate assembly for a file
 ErrorMgr.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/ErrorMgr.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/ErrorMgr.c.s
 .PHONY : ErrorMgr.c.s
 
 LRUCache.o: LRUCache.c.o
@@ -318,7 +318,7 @@ LRUCache.o: LRUCache.c.o
 
 # target to build an object file
 LRUCache.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/LRUCache.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/LRUCache.c.o
 .PHONY : LRUCache.c.o
 
 LRUCache.i: LRUCache.c.i
@@ -327,7 +327,7 @@ LRUCache.i: LRUCache.c.i
 
 # target to preprocess a source file
 LRUCache.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/LRUCache.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/LRUCache.c.i
 .PHONY : LRUCache.c.i
 
 LRUCache.s: LRUCache.c.s
@@ -336,7 +336,7 @@ LRUCache.s: LRUCache.c.s
 
 # target to generate assembly for a file
 LRUCache.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/LRUCache.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/LRUCache.c.s
 .PHONY : LRUCache.c.s
 
 Logger.o: Logger.c.o
@@ -345,7 +345,7 @@ Logger.o: Logger.c.o
 
 # target to build an object file
 Logger.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Logger.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Logger.c.o
 .PHONY : Logger.c.o
 
 Logger.i: Logger.c.i
@@ -354,7 +354,7 @@ Logger.i: Logger.c.i
 
 # target to preprocess a source file
 Logger.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Logger.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Logger.c.i
 .PHONY : Logger.c.i
 
 Logger.s: Logger.c.s
@@ -363,7 +363,7 @@ Logger.s: Logger.c.s
 
 # target to generate assembly for a file
 Logger.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Logger.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Logger.c.s
 .PHONY : Logger.c.s
 
 NodeGraph.o: NodeGraph.c.o
@@ -372,7 +372,7 @@ NodeGraph.o: NodeGraph.c.o
 
 # target to build an object file
 NodeGraph.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/NodeGraph.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/NodeGraph.c.o
 .PHONY : NodeGraph.c.o
 
 NodeGraph.i: NodeGraph.c.i
@@ -381,7 +381,7 @@ NodeGraph.i: NodeGraph.c.i
 
 # target to preprocess a source file
 NodeGraph.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/NodeGraph.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/NodeGraph.c.i
 .PHONY : NodeGraph.c.i
 
 NodeGraph.s: NodeGraph.c.s
@@ -390,7 +390,7 @@ NodeGraph.s: NodeGraph.c.s
 
 # target to generate assembly for a file
 NodeGraph.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/NodeGraph.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/NodeGraph.c.s
 .PHONY : NodeGraph.c.s
 
 NodeList.o: NodeList.c.o
@@ -399,7 +399,7 @@ NodeList.o: NodeList.c.o
 
 # target to build an object file
 NodeList.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/NodeList.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/NodeList.c.o
 .PHONY : NodeList.c.o
 
 NodeList.i: NodeList.c.i
@@ -408,7 +408,7 @@ NodeList.i: NodeList.c.i
 
 # target to preprocess a source file
 NodeList.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/NodeList.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/NodeList.c.i
 .PHONY : NodeList.c.i
 
 NodeList.s: NodeList.c.s
@@ -417,7 +417,7 @@ NodeList.s: NodeList.c.s
 
 # target to generate assembly for a file
 NodeList.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/NodeList.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/NodeList.c.s
 .PHONY : NodeList.c.s
 
 OAHash.o: OAHash.c.o
@@ -426,7 +426,7 @@ OAHash.o: OAHash.c.o
 
 # target to build an object file
 OAHash.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/OAHash.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/OAHash.c.o
 .PHONY : OAHash.c.o
 
 OAHash.i: OAHash.c.i
@@ -435,7 +435,7 @@ OAHash.i: OAHash.c.i
 
 # target to preprocess a source file
 OAHash.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/OAHash.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/OAHash.c.i
 .PHONY : OAHash.c.i
 
 OAHash.s: OAHash.c.s
@@ -444,7 +444,7 @@ OAHash.s: OAHash.c.s
 
 # target to generate assembly for a file
 OAHash.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/OAHash.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/OAHash.c.s
 .PHONY : OAHash.c.s
 
 OStream.o: OStream.c.o
@@ -453,7 +453,7 @@ OStream.o: OStream.c.o
 
 # target to build an object file
 OStream.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/OStream.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/OStream.c.o
 .PHONY : OStream.c.o
 
 OStream.i: OStream.c.i
@@ -462,7 +462,7 @@ OStream.i: OStream.c.i
 
 # target to preprocess a source file
 OStream.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/OStream.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/OStream.c.i
 .PHONY : OStream.c.i
 
 OStream.s: OStream.c.s
@@ -471,7 +471,7 @@ OStream.s: OStream.c.s
 
 # target to generate assembly for a file
 OStream.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/OStream.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/OStream.c.s
 .PHONY : OStream.c.s
 
 Olist.o: Olist.c.o
@@ -480,7 +480,7 @@ Olist.o: Olist.c.o
 
 # target to build an object file
 Olist.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Olist.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Olist.c.o
 .PHONY : Olist.c.o
 
 Olist.i: Olist.c.i
@@ -489,7 +489,7 @@ Olist.i: Olist.c.i
 
 # target to preprocess a source file
 Olist.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Olist.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Olist.c.i
 .PHONY : Olist.c.i
 
 Olist.s: Olist.c.s
@@ -498,7 +498,7 @@ Olist.s: Olist.c.s
 
 # target to generate assembly for a file
 Olist.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Olist.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Olist.c.s
 .PHONY : Olist.c.s
 
 Pair.o: Pair.c.o
@@ -507,7 +507,7 @@ Pair.o: Pair.c.o
 
 # target to build an object file
 Pair.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Pair.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Pair.c.o
 .PHONY : Pair.c.o
 
 Pair.i: Pair.c.i
@@ -516,7 +516,7 @@ Pair.i: Pair.c.i
 
 # target to preprocess a source file
 Pair.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Pair.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Pair.c.i
 .PHONY : Pair.c.i
 
 Pair.s: Pair.c.s
@@ -525,7 +525,7 @@ Pair.s: Pair.c.s
 
 # target to generate assembly for a file
 Pair.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Pair.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Pair.c.s
 .PHONY : Pair.c.s
 
 Slist.o: Slist.c.o
@@ -534,7 +534,7 @@ Slist.o: Slist.c.o
 
 # target to build an object file
 Slist.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Slist.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Slist.c.o
 .PHONY : Slist.c.o
 
 Slist.i: Slist.c.i
@@ -543,7 +543,7 @@ Slist.i: Slist.c.i
 
 # target to preprocess a source file
 Slist.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Slist.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Slist.c.i
 .PHONY : Slist.c.i
 
 Slist.s: Slist.c.s
@@ -552,7 +552,7 @@ Slist.s: Slist.c.s
 
 # target to generate assembly for a file
 Slist.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Slist.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Slist.c.s
 .PHONY : Slist.c.s
 
 Sset.o: Sset.c.o
@@ -561,7 +561,7 @@ Sset.o: Sset.c.o
 
 # target to build an object file
 Sset.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Sset.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Sset.c.o
 .PHONY : Sset.c.o
 
 Sset.i: Sset.c.i
@@ -570,7 +570,7 @@ Sset.i: Sset.c.i
 
 # target to preprocess a source file
 Sset.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Sset.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Sset.c.i
 .PHONY : Sset.c.i
 
 Sset.s: Sset.c.s
@@ -579,7 +579,7 @@ Sset.s: Sset.c.s
 
 # target to generate assembly for a file
 Sset.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Sset.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Sset.c.s
 .PHONY : Sset.c.s
 
 Stack.o: Stack.c.o
@@ -588,7 +588,7 @@ Stack.o: Stack.c.o
 
 # target to build an object file
 Stack.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Stack.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Stack.c.o
 .PHONY : Stack.c.o
 
 Stack.i: Stack.c.i
@@ -597,7 +597,7 @@ Stack.i: Stack.c.i
 
 # target to preprocess a source file
 Stack.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Stack.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Stack.c.i
 .PHONY : Stack.c.i
 
 Stack.s: Stack.c.s
@@ -606,7 +606,7 @@ Stack.s: Stack.c.s
 
 # target to generate assembly for a file
 Stack.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Stack.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Stack.c.s
 .PHONY : Stack.c.s
 
 StreamMgr.o: StreamMgr.c.o
@@ -615,7 +615,7 @@ StreamMgr.o: StreamMgr.c.o
 
 # target to build an object file
 StreamMgr.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/StreamMgr.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/StreamMgr.c.o
 .PHONY : StreamMgr.c.o
 
 StreamMgr.i: StreamMgr.c.i
@@ -624,7 +624,7 @@ StreamMgr.i: StreamMgr.c.i
 
 # target to preprocess a source file
 StreamMgr.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/StreamMgr.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/StreamMgr.c.i
 .PHONY : StreamMgr.c.i
 
 StreamMgr.s: StreamMgr.c.s
@@ -633,7 +633,7 @@ StreamMgr.s: StreamMgr.c.s
 
 # target to generate assembly for a file
 StreamMgr.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/StreamMgr.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/StreamMgr.c.s
 .PHONY : StreamMgr.c.s
 
 TimerBench.o: TimerBench.c.o
@@ -642,7 +642,7 @@ TimerBench.o: TimerBench.c.o
 
 # target to build an object file
 TimerBench.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/TimerBench.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/TimerBench.c.o
 .PHONY : TimerBench.c.o
 
 TimerBench.i: TimerBench.c.i
@@ -651,7 +651,7 @@ TimerBench.i: TimerBench.c.i
 
 # target to preprocess a source file
 TimerBench.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/TimerBench.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/TimerBench.c.i
 .PHONY : TimerBench.c.i
 
 TimerBench.s: TimerBench.c.s
@@ -660,7 +660,7 @@ TimerBench.s: TimerBench.c.s
 
 # target to generate assembly for a file
 TimerBench.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/TimerBench.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/TimerBench.c.s
 .PHONY : TimerBench.c.s
 
 Triple.o: Triple.c.o
@@ -669,7 +669,7 @@ Triple.o: Triple.c.o
 
 # target to build an object file
 Triple.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Triple.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Triple.c.o
 .PHONY : Triple.c.o
 
 Triple.i: Triple.c.i
@@ -678,7 +678,7 @@ Triple.i: Triple.c.i
 
 # target to preprocess a source file
 Triple.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Triple.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Triple.c.i
 .PHONY : Triple.c.i
 
 Triple.s: Triple.c.s
@@ -687,7 +687,7 @@ Triple.s: Triple.c.s
 
 # target to generate assembly for a file
 Triple.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Triple.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Triple.c.s
 .PHONY : Triple.c.s
 
 Tuple5.o: Tuple5.c.o
@@ -696,7 +696,7 @@ Tuple5.o: Tuple5.c.o
 
 # target to build an object file
 Tuple5.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Tuple5.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Tuple5.c.o
 .PHONY : Tuple5.c.o
 
 Tuple5.i: Tuple5.c.i
@@ -705,7 +705,7 @@ Tuple5.i: Tuple5.c.i
 
 # target to preprocess a source file
 Tuple5.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Tuple5.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Tuple5.c.i
 .PHONY : Tuple5.c.i
 
 Tuple5.s: Tuple5.c.s
@@ -714,7 +714,7 @@ Tuple5.s: Tuple5.c.s
 
 # target to generate assembly for a file
 Tuple5.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Tuple5.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Tuple5.c.s
 .PHONY : Tuple5.c.s
 
 UStringMgr.o: UStringMgr.c.o
@@ -723,7 +723,7 @@ UStringMgr.o: UStringMgr.c.o
 
 # target to build an object file
 UStringMgr.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/UStringMgr.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/UStringMgr.c.o
 .PHONY : UStringMgr.c.o
 
 UStringMgr.i: UStringMgr.c.i
@@ -732,7 +732,7 @@ UStringMgr.i: UStringMgr.c.i
 
 # target to preprocess a source file
 UStringMgr.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/UStringMgr.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/UStringMgr.c.i
 .PHONY : UStringMgr.c.i
 
 UStringMgr.s: UStringMgr.c.s
@@ -741,7 +741,7 @@ UStringMgr.s: UStringMgr.c.s
 
 # target to generate assembly for a file
 UStringMgr.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/UStringMgr.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/UStringMgr.c.s
 .PHONY : UStringMgr.c.s
 
 Vector.o: Vector.c.o
@@ -750,7 +750,7 @@ Vector.o: Vector.c.o
 
 # target to build an object file
 Vector.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Vector.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Vector.c.o
 .PHONY : Vector.c.o
 
 Vector.i: Vector.c.i
@@ -759,7 +759,7 @@ Vector.i: Vector.c.i
 
 # target to preprocess a source file
 Vector.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Vector.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Vector.c.i
 .PHONY : Vector.c.i
 
 Vector.s: Vector.c.s
@@ -768,7 +768,7 @@ Vector.s: Vector.c.s
 
 # target to generate assembly for a file
 Vector.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Vector.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/Vector.c.s
 .PHONY : Vector.c.s
 
 WordNumber.o: WordNumber.c.o
@@ -777,7 +777,7 @@ WordNumber.o: WordNumber.c.o
 
 # target to build an object file
 WordNumber.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/WordNumber.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/WordNumber.c.o
 .PHONY : WordNumber.c.o
 
 WordNumber.i: WordNumber.c.i
@@ -786,7 +786,7 @@ WordNumber.i: WordNumber.c.i
 
 # target to preprocess a source file
 WordNumber.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/WordNumber.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/WordNumber.c.i
 .PHONY : WordNumber.c.i
 
 WordNumber.s: WordNumber.c.s
@@ -795,7 +795,7 @@ WordNumber.s: WordNumber.c.s
 
 # target to generate assembly for a file
 WordNumber.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/WordNumber.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/WordNumber.c.s
 .PHONY : WordNumber.c.s
 
 WordNumberMgr.o: WordNumberMgr.c.o
@@ -804,7 +804,7 @@ WordNumberMgr.o: WordNumberMgr.c.o
 
 # target to build an object file
 WordNumberMgr.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/WordNumberMgr.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/WordNumberMgr.c.o
 .PHONY : WordNumberMgr.c.o
 
 WordNumberMgr.i: WordNumberMgr.c.i
@@ -813,7 +813,7 @@ WordNumberMgr.i: WordNumberMgr.c.i
 
 # target to preprocess a source file
 WordNumberMgr.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/WordNumberMgr.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/WordNumberMgr.c.i
 .PHONY : WordNumberMgr.c.i
 
 WordNumberMgr.s: WordNumberMgr.c.s
@@ -822,7 +822,7 @@ WordNumberMgr.s: WordNumberMgr.c.s
 
 # target to generate assembly for a file
 WordNumberMgr.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/WordNumberMgr.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/WordNumberMgr.c.s
 .PHONY : WordNumberMgr.c.s
 
 array.o: array.c.o
@@ -831,7 +831,7 @@ array.o: array.c.o
 
 # target to build an object file
 array.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/array.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/array.c.o
 .PHONY : array.c.o
 
 array.i: array.c.i
@@ -840,7 +840,7 @@ array.i: array.c.i
 
 # target to preprocess a source file
 array.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/array.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/array.c.i
 .PHONY : array.c.i
 
 array.s: array.c.s
@@ -849,7 +849,7 @@ array.s: array.c.s
 
 # target to generate assembly for a file
 array.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/array.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/array.c.s
 .PHONY : array.c.s
 
 assoc.o: assoc.c.o
@@ -858,7 +858,7 @@ assoc.o: assoc.c.o
 
 # target to build an object file
 assoc.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/assoc.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/assoc.c.o
 .PHONY : assoc.c.o
 
 assoc.i: assoc.c.i
@@ -867,7 +867,7 @@ assoc.i: assoc.c.i
 
 # target to preprocess a source file
 assoc.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/assoc.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/assoc.c.i
 .PHONY : assoc.c.i
 
 assoc.s: assoc.c.s
@@ -876,7 +876,7 @@ assoc.s: assoc.c.s
 
 # target to generate assembly for a file
 assoc.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/assoc.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/assoc.c.s
 .PHONY : assoc.c.s
 
 avl.o: avl.c.o
@@ -885,7 +885,7 @@ avl.o: avl.c.o
 
 # target to build an object file
 avl.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/avl.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/avl.c.o
 .PHONY : avl.c.o
 
 avl.i: avl.c.i
@@ -894,7 +894,7 @@ avl.i: avl.c.i
 
 # target to preprocess a source file
 avl.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/avl.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/avl.c.i
 .PHONY : avl.c.i
 
 avl.s: avl.c.s
@@ -903,7 +903,7 @@ avl.s: avl.c.s
 
 # target to generate assembly for a file
 avl.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/avl.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/avl.c.s
 .PHONY : avl.c.s
 
 error.o: error.c.o
@@ -912,7 +912,7 @@ error.o: error.c.o
 
 # target to build an object file
 error.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/error.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/error.c.o
 .PHONY : error.c.o
 
 error.i: error.c.i
@@ -921,7 +921,7 @@ error.i: error.c.i
 
 # target to preprocess a source file
 error.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/error.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/error.c.i
 .PHONY : error.c.i
 
 error.s: error.c.s
@@ -930,7 +930,7 @@ error.s: error.c.s
 
 # target to generate assembly for a file
 error.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/error.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/error.c.s
 .PHONY : error.c.s
 
 heap.o: heap.c.o
@@ -939,7 +939,7 @@ heap.o: heap.c.o
 
 # target to build an object file
 heap.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/heap.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/heap.c.o
 .PHONY : heap.c.o
 
 heap.i: heap.c.i
@@ -948,7 +948,7 @@ heap.i: heap.c.i
 
 # target to preprocess a source file
 heap.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/heap.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/heap.c.i
 .PHONY : heap.c.i
 
 heap.s: heap.c.s
@@ -957,7 +957,7 @@ heap.s: heap.c.s
 
 # target to generate assembly for a file
 heap.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/heap.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/heap.c.s
 .PHONY : heap.c.s
 
 list.o: list.c.o
@@ -966,7 +966,7 @@ list.o: list.c.o
 
 # target to build an object file
 list.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/list.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/list.c.o
 .PHONY : list.c.o
 
 list.i: list.c.i
@@ -975,7 +975,7 @@ list.i: list.c.i
 
 # target to preprocess a source file
 list.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/list.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/list.c.i
 .PHONY : list.c.i
 
 list.s: list.c.s
@@ -984,7 +984,7 @@ list.s: list.c.s
 
 # target to generate assembly for a file
 list.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/list.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/list.c.s
 .PHONY : list.c.s
 
 object.o: object.c.o
@@ -993,7 +993,7 @@ object.o: object.c.o
 
 # target to build an object file
 object.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/object.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/object.c.o
 .PHONY : object.c.o
 
 object.i: object.c.i
@@ -1002,7 +1002,7 @@ object.i: object.c.i
 
 # target to preprocess a source file
 object.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/object.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/object.c.i
 .PHONY : object.c.i
 
 object.s: object.c.s
@@ -1011,7 +1011,7 @@ object.s: object.c.s
 
 # target to generate assembly for a file
 object.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/object.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/object.c.s
 .PHONY : object.c.s
 
 portability.o: portability.c.o
@@ -1020,7 +1020,7 @@ portability.o: portability.c.o
 
 # target to build an object file
 portability.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/portability.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/portability.c.o
 .PHONY : portability.c.o
 
 portability.i: portability.c.i
@@ -1029,7 +1029,7 @@ portability.i: portability.c.i
 
 # target to preprocess a source file
 portability.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/portability.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/portability.c.i
 .PHONY : portability.c.i
 
 portability.s: portability.c.s
@@ -1038,7 +1038,7 @@ portability.s: portability.c.s
 
 # target to generate assembly for a file
 portability.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/portability.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/portability.c.s
 .PHONY : portability.c.s
 
 range.o: range.c.o
@@ -1047,7 +1047,7 @@ range.o: range.c.o
 
 # target to build an object file
 range.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/range.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/range.c.o
 .PHONY : range.c.o
 
 range.i: range.c.i
@@ -1056,7 +1056,7 @@ range.i: range.c.i
 
 # target to preprocess a source file
 range.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/range.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/range.c.i
 .PHONY : range.c.i
 
 range.s: range.c.s
@@ -1065,7 +1065,7 @@ range.s: range.c.s
 
 # target to generate assembly for a file
 range.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/range.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/range.c.s
 .PHONY : range.c.s
 
 ucmd.o: ucmd.c.o
@@ -1074,7 +1074,7 @@ ucmd.o: ucmd.c.o
 
 # target to build an object file
 ucmd.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/ucmd.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/ucmd.c.o
 .PHONY : ucmd.c.o
 
 ucmd.i: ucmd.c.i
@@ -1083,7 +1083,7 @@ ucmd.i: ucmd.c.i
 
 # target to preprocess a source file
 ucmd.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/ucmd.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/ucmd.c.i
 .PHONY : ucmd.c.i
 
 ucmd.s: ucmd.c.s
@@ -1092,7 +1092,7 @@ ucmd.s: ucmd.c.s
 
 # target to generate assembly for a file
 ucmd.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/ucmd.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/ucmd.c.s
 .PHONY : ucmd.c.s
 
 ustring.o: ustring.c.o
@@ -1101,7 +1101,7 @@ ustring.o: ustring.c.o
 
 # target to build an object file
 ustring.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/ustring.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/ustring.c.o
 .PHONY : ustring.c.o
 
 ustring.i: ustring.c.i
@@ -1110,7 +1110,7 @@ ustring.i: ustring.c.i
 
 # target to preprocess a source file
 ustring.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/ustring.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/ustring.c.i
 .PHONY : ustring.c.i
 
 ustring.s: ustring.c.s
@@ -1119,7 +1119,7 @@ ustring.s: ustring.c.s
 
 # target to generate assembly for a file
 ustring.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/ustring.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/ustring.c.s
 .PHONY : ustring.c.s
 
 utils.o: utils.c.o
@@ -1128,7 +1128,7 @@ utils.o: utils.c.o
 
 # target to build an object file
 utils.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/utils.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/utils.c.o
 .PHONY : utils.c.o
 
 utils.i: utils.c.i
@@ -1137,7 +1137,7 @@ utils.i: utils.c.i
 
 # target to preprocess a source file
 utils.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/utils.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/utils.c.i
 .PHONY : utils.c.i
 
 utils.s: utils.c.s
@@ -1146,7 +1146,7 @@ utils.s: utils.c.s
 
 # target to generate assembly for a file
 utils.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/utils.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/utils.c.s
 .PHONY : utils.c.s
 
 utils_io.o: utils_io.c.o
@@ -1155,7 +1155,7 @@ utils_io.o: utils_io.c.o
 
 # target to build an object file
 utils_io.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/utils_io.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/utils_io.c.o
 .PHONY : utils_io.c.o
 
 utils_io.i: utils_io.c.i
@@ -1164,7 +1164,7 @@ utils_io.i: utils_io.c.i
 
 # target to preprocess a source file
 utils_io.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/utils_io.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/utils_io.c.i
 .PHONY : utils_io.c.i
 
 utils_io.s: utils_io.c.s
@@ -1173,7 +1173,7 @@ utils_io.s: utils_io.c.s
 
 # target to generate assembly for a file
 utils_io.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/utils_io.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/utils_io.c.s
 .PHONY : utils_io.c.s
 
 watchdog_util.o: watchdog_util.c.o
@@ -1182,7 +1182,7 @@ watchdog_util.o: watchdog_util.c.o
 
 # target to build an object file
 watchdog_util.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/watchdog_util.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/watchdog_util.c.o
 .PHONY : watchdog_util.c.o
 
 watchdog_util.i: watchdog_util.c.i
@@ -1191,7 +1191,7 @@ watchdog_util.i: watchdog_util.c.i
 
 # target to preprocess a source file
 watchdog_util.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/watchdog_util.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/watchdog_util.c.i
 .PHONY : watchdog_util.c.i
 
 watchdog_util.s: watchdog_util.c.s
@@ -1200,7 +1200,7 @@ watchdog_util.s: watchdog_util.c.s
 
 # target to generate assembly for a file
 watchdog_util.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/watchdog_util.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/build.make code/nusmv/core/utils/CMakeFiles/code_nusmv_core_utils.dir/watchdog_util.c.s
 .PHONY : watchdog_util.c.s
 
 # Help Target
@@ -1341,6 +1341,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

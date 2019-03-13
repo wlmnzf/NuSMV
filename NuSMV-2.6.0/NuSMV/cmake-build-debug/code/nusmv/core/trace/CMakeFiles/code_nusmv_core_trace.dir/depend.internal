@@ -98,7 +98,7 @@ code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/Trace.c.o
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/utils/utils_io.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/Trace.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/Trace.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -162,7 +162,7 @@ code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/TraceLabel.c.o
  ../code/nusmv/core/utils/portability.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/TraceLabel.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/TraceLabel.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -274,7 +274,7 @@ code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/TraceMgr.c.o
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/utils/utils_io.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/TraceMgr.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/TraceMgr.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -376,7 +376,7 @@ code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/TraceOpt.c.o
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/utils/utils_io.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/TraceOpt.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/TraceOpt.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -389,7 +389,7 @@ code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/TraceXml.c.o
  ../code/nusmv/core/utils/defs.h
  ../code/nusmv/core/utils/list.h
  ../code/nusmv/core/utils/utils.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/TraceXml.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/TraceXml.c
  build-cudd/include/cudd/st.h
  build-cudd/include/cudd/util.h
  nusmv-config.h
@@ -490,7 +490,7 @@ code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/Trace_private.c.o
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/utils/utils_io.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/Trace_private.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/Trace_private.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -581,7 +581,7 @@ code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/eval/BaseEvaluator.c.
  ../code/nusmv/core/utils/portability.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/eval/BaseEvaluator.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/eval/BaseEvaluator.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -681,7 +681,7 @@ code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/BDDCompleteTrace
  ../code/nusmv/core/utils/portability.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/exec/BDDCompleteTraceExecutor.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/exec/BDDCompleteTraceExecutor.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -782,7 +782,7 @@ code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/BDDPartialTraceE
  ../code/nusmv/core/utils/portability.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/exec/BDDPartialTraceExecutor.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/exec/BDDPartialTraceExecutor.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -886,7 +886,7 @@ code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/BaseTraceExecuto
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/utils/utils_io.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/exec/BaseTraceExecutor.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/exec/BaseTraceExecutor.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -977,7 +977,7 @@ code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/CompleteTraceExe
  ../code/nusmv/core/utils/portability.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/exec/CompleteTraceExecutor.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/exec/CompleteTraceExecutor.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -1068,7 +1068,7 @@ code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/PartialTraceExec
  ../code/nusmv/core/utils/portability.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/exec/PartialTraceExecutor.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/exec/PartialTraceExecutor.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -1181,7 +1181,7 @@ code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/SATCompleteTrace
  ../code/nusmv/core/utils/ucmd.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/exec/SATCompleteTraceExecutor.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/exec/SATCompleteTraceExecutor.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -1301,7 +1301,7 @@ code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/SATPartialTraceE
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/utils/utils_io.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/exec/SATPartialTraceExecutor.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/exec/SATPartialTraceExecutor.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -1419,7 +1419,7 @@ code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/exec/traceExec.c.o
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/utils/utils_io.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/exec/traceExec.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/exec/traceExec.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -1525,7 +1525,7 @@ code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/loaders/TraceLoader.c
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/utils/utils_io.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/loaders/TraceLoader.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/loaders/TraceLoader.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -1635,7 +1635,7 @@ code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/loaders/TraceXmlLoade
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/utils/utils_io.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/loaders/TraceXmlLoader.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/loaders/TraceXmlLoader.c
  /usr/include/libxml2/libxml/SAX.h
  /usr/include/libxml2/libxml/SAX2.h
  /usr/include/libxml2/libxml/dict.h
@@ -1762,7 +1762,7 @@ code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/pkg_trace.c.o
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/utils/utils_io.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/pkg_trace.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/pkg_trace.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -1869,7 +1869,7 @@ code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/plugins/TraceCompact.
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/utils/utils_io.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/plugins/TraceCompact.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/plugins/TraceCompact.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -1943,7 +1943,7 @@ code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/plugins/TraceEmpty.c.
  ../code/nusmv/core/utils/object_private.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/plugins/TraceEmpty.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/plugins/TraceEmpty.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -2050,7 +2050,7 @@ code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/plugins/TraceExplaine
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/utils/utils_io.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/plugins/TraceExplainer.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/plugins/TraceExplainer.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -2158,7 +2158,7 @@ code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/plugins/TracePlugin.c
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/utils/utils_io.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/plugins/TracePlugin.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/plugins/TracePlugin.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -2265,7 +2265,7 @@ code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/plugins/TraceTable.c.
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/utils/utils_io.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/plugins/TraceTable.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/plugins/TraceTable.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -2372,7 +2372,7 @@ code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/plugins/TraceXmlDumpe
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/utils/utils_io.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/plugins/TraceXmlDumper.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/plugins/TraceXmlDumper.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -2478,7 +2478,7 @@ code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/traceEval.c.o
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/utils/utils_io.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/traceEval.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/traceEval.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -2587,7 +2587,7 @@ code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/traceTest.c.o
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/utils/utils_io.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/traceTest.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/traceTest.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -2698,7 +2698,7 @@ code/nusmv/core/trace/CMakeFiles/code_nusmv_core_trace.dir/traceUtils.c.o
  ../code/nusmv/core/utils/ucmd.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/traceUtils.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/trace/traceUtils.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h

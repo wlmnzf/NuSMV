@@ -48,10 +48,10 @@ RM = /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV
+CMAKE_SOURCE_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug
+CMAKE_BINARY_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -93,7 +93,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -104,7 +104,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CPackSourceConfig.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -159,14 +159,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/rbc/CMakeFiles/progress.marks
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/rbc/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/rbc/CMakeFiles/progress.marks
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/rbc/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/rbc/clean
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/rbc/clean
 .PHONY : clean
 
 # The main clean target
@@ -176,22 +176,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/rbc/preinstall
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/rbc/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/rbc/preinstall
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/rbc/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rule:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rule
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rule
 .PHONY : code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rule
 
 # Convenience name for target.
@@ -201,7 +201,7 @@ code_nusmv_core_rbc: code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rule
 
 # fast build rule for target.
 code_nusmv_core_rbc/fast:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build
 .PHONY : code_nusmv_core_rbc/fast
 
 ConjSet.o: ConjSet.c.o
@@ -210,7 +210,7 @@ ConjSet.o: ConjSet.c.o
 
 # target to build an object file
 ConjSet.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/ConjSet.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/ConjSet.c.o
 .PHONY : ConjSet.c.o
 
 ConjSet.i: ConjSet.c.i
@@ -219,7 +219,7 @@ ConjSet.i: ConjSet.c.i
 
 # target to preprocess a source file
 ConjSet.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/ConjSet.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/ConjSet.c.i
 .PHONY : ConjSet.c.i
 
 ConjSet.s: ConjSet.c.s
@@ -228,7 +228,7 @@ ConjSet.s: ConjSet.c.s
 
 # target to generate assembly for a file
 ConjSet.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/ConjSet.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/ConjSet.c.s
 .PHONY : ConjSet.c.s
 
 InlineResult.o: InlineResult.c.o
@@ -237,7 +237,7 @@ InlineResult.o: InlineResult.c.o
 
 # target to build an object file
 InlineResult.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/InlineResult.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/InlineResult.c.o
 .PHONY : InlineResult.c.o
 
 InlineResult.i: InlineResult.c.i
@@ -246,7 +246,7 @@ InlineResult.i: InlineResult.c.i
 
 # target to preprocess a source file
 InlineResult.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/InlineResult.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/InlineResult.c.i
 .PHONY : InlineResult.c.i
 
 InlineResult.s: InlineResult.c.s
@@ -255,7 +255,7 @@ InlineResult.s: InlineResult.c.s
 
 # target to generate assembly for a file
 InlineResult.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/InlineResult.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/InlineResult.c.s
 .PHONY : InlineResult.c.s
 
 clg/clgClg.o: clg/clgClg.c.o
@@ -264,7 +264,7 @@ clg/clgClg.o: clg/clgClg.c.o
 
 # target to build an object file
 clg/clgClg.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/clg/clgClg.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/clg/clgClg.c.o
 .PHONY : clg/clgClg.c.o
 
 clg/clgClg.i: clg/clgClg.c.i
@@ -273,7 +273,7 @@ clg/clgClg.i: clg/clgClg.c.i
 
 # target to preprocess a source file
 clg/clgClg.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/clg/clgClg.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/clg/clgClg.c.i
 .PHONY : clg/clgClg.c.i
 
 clg/clgClg.s: clg/clgClg.c.s
@@ -282,7 +282,7 @@ clg/clgClg.s: clg/clgClg.c.s
 
 # target to generate assembly for a file
 clg/clgClg.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/clg/clgClg.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/clg/clgClg.c.s
 .PHONY : clg/clgClg.c.s
 
 rbcCnf.o: rbcCnf.c.o
@@ -291,7 +291,7 @@ rbcCnf.o: rbcCnf.c.o
 
 # target to build an object file
 rbcCnf.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcCnf.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcCnf.c.o
 .PHONY : rbcCnf.c.o
 
 rbcCnf.i: rbcCnf.c.i
@@ -300,7 +300,7 @@ rbcCnf.i: rbcCnf.c.i
 
 # target to preprocess a source file
 rbcCnf.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcCnf.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcCnf.c.i
 .PHONY : rbcCnf.c.i
 
 rbcCnf.s: rbcCnf.c.s
@@ -309,7 +309,7 @@ rbcCnf.s: rbcCnf.c.s
 
 # target to generate assembly for a file
 rbcCnf.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcCnf.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcCnf.c.s
 .PHONY : rbcCnf.c.s
 
 rbcCnfCompact.o: rbcCnfCompact.c.o
@@ -318,7 +318,7 @@ rbcCnfCompact.o: rbcCnfCompact.c.o
 
 # target to build an object file
 rbcCnfCompact.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcCnfCompact.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcCnfCompact.c.o
 .PHONY : rbcCnfCompact.c.o
 
 rbcCnfCompact.i: rbcCnfCompact.c.i
@@ -327,7 +327,7 @@ rbcCnfCompact.i: rbcCnfCompact.c.i
 
 # target to preprocess a source file
 rbcCnfCompact.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcCnfCompact.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcCnfCompact.c.i
 .PHONY : rbcCnfCompact.c.i
 
 rbcCnfCompact.s: rbcCnfCompact.c.s
@@ -336,7 +336,7 @@ rbcCnfCompact.s: rbcCnfCompact.c.s
 
 # target to generate assembly for a file
 rbcCnfCompact.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcCnfCompact.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcCnfCompact.c.s
 .PHONY : rbcCnfCompact.c.s
 
 rbcCnfSimple.o: rbcCnfSimple.c.o
@@ -345,7 +345,7 @@ rbcCnfSimple.o: rbcCnfSimple.c.o
 
 # target to build an object file
 rbcCnfSimple.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcCnfSimple.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcCnfSimple.c.o
 .PHONY : rbcCnfSimple.c.o
 
 rbcCnfSimple.i: rbcCnfSimple.c.i
@@ -354,7 +354,7 @@ rbcCnfSimple.i: rbcCnfSimple.c.i
 
 # target to preprocess a source file
 rbcCnfSimple.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcCnfSimple.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcCnfSimple.c.i
 .PHONY : rbcCnfSimple.c.i
 
 rbcCnfSimple.s: rbcCnfSimple.c.s
@@ -363,7 +363,7 @@ rbcCnfSimple.s: rbcCnfSimple.c.s
 
 # target to generate assembly for a file
 rbcCnfSimple.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcCnfSimple.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcCnfSimple.c.s
 .PHONY : rbcCnfSimple.c.s
 
 rbcFormula.o: rbcFormula.c.o
@@ -372,7 +372,7 @@ rbcFormula.o: rbcFormula.c.o
 
 # target to build an object file
 rbcFormula.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcFormula.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcFormula.c.o
 .PHONY : rbcFormula.c.o
 
 rbcFormula.i: rbcFormula.c.i
@@ -381,7 +381,7 @@ rbcFormula.i: rbcFormula.c.i
 
 # target to preprocess a source file
 rbcFormula.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcFormula.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcFormula.c.i
 .PHONY : rbcFormula.c.i
 
 rbcFormula.s: rbcFormula.c.s
@@ -390,7 +390,7 @@ rbcFormula.s: rbcFormula.c.s
 
 # target to generate assembly for a file
 rbcFormula.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcFormula.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcFormula.c.s
 .PHONY : rbcFormula.c.s
 
 rbcInline.o: rbcInline.c.o
@@ -399,7 +399,7 @@ rbcInline.o: rbcInline.c.o
 
 # target to build an object file
 rbcInline.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcInline.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcInline.c.o
 .PHONY : rbcInline.c.o
 
 rbcInline.i: rbcInline.c.i
@@ -408,7 +408,7 @@ rbcInline.i: rbcInline.c.i
 
 # target to preprocess a source file
 rbcInline.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcInline.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcInline.c.i
 .PHONY : rbcInline.c.i
 
 rbcInline.s: rbcInline.c.s
@@ -417,7 +417,7 @@ rbcInline.s: rbcInline.c.s
 
 # target to generate assembly for a file
 rbcInline.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcInline.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcInline.c.s
 .PHONY : rbcInline.c.s
 
 rbcManager.o: rbcManager.c.o
@@ -426,7 +426,7 @@ rbcManager.o: rbcManager.c.o
 
 # target to build an object file
 rbcManager.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcManager.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcManager.c.o
 .PHONY : rbcManager.c.o
 
 rbcManager.i: rbcManager.c.i
@@ -435,7 +435,7 @@ rbcManager.i: rbcManager.c.i
 
 # target to preprocess a source file
 rbcManager.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcManager.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcManager.c.i
 .PHONY : rbcManager.c.i
 
 rbcManager.s: rbcManager.c.s
@@ -444,7 +444,7 @@ rbcManager.s: rbcManager.c.s
 
 # target to generate assembly for a file
 rbcManager.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcManager.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcManager.c.s
 .PHONY : rbcManager.c.s
 
 rbcOutput.o: rbcOutput.c.o
@@ -453,7 +453,7 @@ rbcOutput.o: rbcOutput.c.o
 
 # target to build an object file
 rbcOutput.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcOutput.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcOutput.c.o
 .PHONY : rbcOutput.c.o
 
 rbcOutput.i: rbcOutput.c.i
@@ -462,7 +462,7 @@ rbcOutput.i: rbcOutput.c.i
 
 # target to preprocess a source file
 rbcOutput.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcOutput.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcOutput.c.i
 .PHONY : rbcOutput.c.i
 
 rbcOutput.s: rbcOutput.c.s
@@ -471,7 +471,7 @@ rbcOutput.s: rbcOutput.c.s
 
 # target to generate assembly for a file
 rbcOutput.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcOutput.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcOutput.c.s
 .PHONY : rbcOutput.c.s
 
 rbcStat.o: rbcStat.c.o
@@ -480,7 +480,7 @@ rbcStat.o: rbcStat.c.o
 
 # target to build an object file
 rbcStat.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcStat.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcStat.c.o
 .PHONY : rbcStat.c.o
 
 rbcStat.i: rbcStat.c.i
@@ -489,7 +489,7 @@ rbcStat.i: rbcStat.c.i
 
 # target to preprocess a source file
 rbcStat.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcStat.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcStat.c.i
 .PHONY : rbcStat.c.i
 
 rbcStat.s: rbcStat.c.s
@@ -498,7 +498,7 @@ rbcStat.s: rbcStat.c.s
 
 # target to generate assembly for a file
 rbcStat.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcStat.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcStat.c.s
 .PHONY : rbcStat.c.s
 
 rbcSubst.o: rbcSubst.c.o
@@ -507,7 +507,7 @@ rbcSubst.o: rbcSubst.c.o
 
 # target to build an object file
 rbcSubst.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcSubst.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcSubst.c.o
 .PHONY : rbcSubst.c.o
 
 rbcSubst.i: rbcSubst.c.i
@@ -516,7 +516,7 @@ rbcSubst.i: rbcSubst.c.i
 
 # target to preprocess a source file
 rbcSubst.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcSubst.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcSubst.c.i
 .PHONY : rbcSubst.c.i
 
 rbcSubst.s: rbcSubst.c.s
@@ -525,7 +525,7 @@ rbcSubst.s: rbcSubst.c.s
 
 # target to generate assembly for a file
 rbcSubst.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcSubst.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcSubst.c.s
 .PHONY : rbcSubst.c.s
 
 rbcUtils.o: rbcUtils.c.o
@@ -534,7 +534,7 @@ rbcUtils.o: rbcUtils.c.o
 
 # target to build an object file
 rbcUtils.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcUtils.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcUtils.c.o
 .PHONY : rbcUtils.c.o
 
 rbcUtils.i: rbcUtils.c.i
@@ -543,7 +543,7 @@ rbcUtils.i: rbcUtils.c.i
 
 # target to preprocess a source file
 rbcUtils.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcUtils.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcUtils.c.i
 .PHONY : rbcUtils.c.i
 
 rbcUtils.s: rbcUtils.c.s
@@ -552,7 +552,7 @@ rbcUtils.s: rbcUtils.c.s
 
 # target to generate assembly for a file
 rbcUtils.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcUtils.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/build.make code/nusmv/core/rbc/CMakeFiles/code_nusmv_core_rbc.dir/rbcUtils.c.s
 .PHONY : rbcUtils.c.s
 
 # Help Target
@@ -621,6 +621,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

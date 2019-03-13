@@ -48,10 +48,10 @@ RM = /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV
+CMAKE_SOURCE_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug
+CMAKE_BINARY_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -93,7 +93,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -104,7 +104,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CPackSourceConfig.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -159,14 +159,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/CMakeFiles/progress.marks
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/addons_core/compass/parser/ap/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/CMakeFiles/progress.marks
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/addons_core/compass/parser/ap/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/addons_core/compass/parser/ap/clean
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/addons_core/compass/parser/ap/clean
 .PHONY : clean
 
 # The main clean target
@@ -176,22 +176,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/addons_core/compass/parser/ap/preinstall
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/addons_core/compass/parser/ap/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/addons_core/compass/parser/ap/preinstall
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/addons_core/compass/parser/ap/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/rule:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/rule
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/rule
 .PHONY : code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/rule
 
 # Convenience name for target.
@@ -201,7 +201,7 @@ code_nusmv_addons_core_compass_parser_ap: code/nusmv/addons_core/compass/parser/
 
 # fast build rule for target.
 code_nusmv_addons_core_compass_parser_ap/fast:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/build.make code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/build
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/build.make code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/build
 .PHONY : code_nusmv_addons_core_compass_parser_ap/fast
 
 ParserAp.o: ParserAp.c.o
@@ -210,7 +210,7 @@ ParserAp.o: ParserAp.c.o
 
 # target to build an object file
 ParserAp.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/build.make code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ParserAp.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/build.make code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ParserAp.c.o
 .PHONY : ParserAp.c.o
 
 ParserAp.i: ParserAp.c.i
@@ -219,7 +219,7 @@ ParserAp.i: ParserAp.c.i
 
 # target to preprocess a source file
 ParserAp.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/build.make code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ParserAp.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/build.make code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ParserAp.c.i
 .PHONY : ParserAp.c.i
 
 ParserAp.s: ParserAp.c.s
@@ -228,7 +228,7 @@ ParserAp.s: ParserAp.c.s
 
 # target to generate assembly for a file
 ParserAp.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/build.make code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ParserAp.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/build.make code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ParserAp.c.s
 .PHONY : ParserAp.c.s
 
 ap_grammar.o: ap_grammar.c.o
@@ -237,7 +237,7 @@ ap_grammar.o: ap_grammar.c.o
 
 # target to build an object file
 ap_grammar.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/build.make code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ap_grammar.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/build.make code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ap_grammar.c.o
 .PHONY : ap_grammar.c.o
 
 ap_grammar.i: ap_grammar.c.i
@@ -246,7 +246,7 @@ ap_grammar.i: ap_grammar.c.i
 
 # target to preprocess a source file
 ap_grammar.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/build.make code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ap_grammar.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/build.make code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ap_grammar.c.i
 .PHONY : ap_grammar.c.i
 
 ap_grammar.s: ap_grammar.c.s
@@ -255,7 +255,7 @@ ap_grammar.s: ap_grammar.c.s
 
 # target to generate assembly for a file
 ap_grammar.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/build.make code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ap_grammar.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/build.make code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ap_grammar.c.s
 .PHONY : ap_grammar.c.s
 
 ap_input.o: ap_input.c.o
@@ -264,7 +264,7 @@ ap_input.o: ap_input.c.o
 
 # target to build an object file
 ap_input.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/build.make code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ap_input.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/build.make code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ap_input.c.o
 .PHONY : ap_input.c.o
 
 ap_input.i: ap_input.c.i
@@ -273,7 +273,7 @@ ap_input.i: ap_input.c.i
 
 # target to preprocess a source file
 ap_input.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/build.make code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ap_input.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/build.make code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ap_input.c.i
 .PHONY : ap_input.c.i
 
 ap_input.s: ap_input.c.s
@@ -282,7 +282,7 @@ ap_input.s: ap_input.c.s
 
 # target to generate assembly for a file
 ap_input.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/build.make code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ap_input.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/build.make code/nusmv/addons_core/compass/parser/ap/CMakeFiles/code_nusmv_addons_core_compass_parser_ap.dir/ap_input.c.s
 .PHONY : ap_input.c.s
 
 # Help Target
@@ -321,6 +321,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

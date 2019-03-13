@@ -118,7 +118,7 @@ code/nusmv/shell/bmc/CMakeFiles/code_nusmv_shell_bmc.dir/bmcCmd.c.o
  ../code/nusmv/shell/bmc/bmcCmd.h
  ../code/nusmv/shell/bmc/sbmc/sbmcCmd.h
  ../code/nusmv/shell/cmd/cmd.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/bmc/bmcCmd.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/bmc/bmcCmd.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -235,7 +235,7 @@ code/nusmv/shell/bmc/CMakeFiles/code_nusmv_shell_bmc.dir/sbmc/sbmcCmd.c.o
  ../code/nusmv/shell/bmc/bmcCmd.h
  ../code/nusmv/shell/bmc/sbmc/sbmcCmd.h
  ../code/nusmv/shell/cmd/cmd.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/bmc/sbmc/sbmcCmd.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/bmc/sbmc/sbmcCmd.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h

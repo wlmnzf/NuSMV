@@ -79,6 +79,11 @@ Mc_fair_si_iteration(BddFsm_ptr fsm,
                      bdd_ptr subspace);
 
 
+
+//try to dump sth
+//FILE *fp;
+//int dres=0;
+//int bdd_tmp_size=0;
 /*---------------------------------------------------------------------------*/
 /* Definition of exported functions                                          */
 /*---------------------------------------------------------------------------*/
@@ -117,7 +122,32 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
 
   /* Evaluates the spec */
   s0 = eval_ctl_spec(fsm, enc, spec, Nil);
-  
+
+
+//
+//  fp = fopen("/home/william/test.dot", "w");
+//
+//  if(fp == NULL)
+//    printf("fail to open the file! \n");
+//  else
+//  {
+//    printf("The file is open! \n");
+////    fprintf (fp, "Name\n");
+//    bdd_tmp_size=bdd_size(dd,s0);
+//    dres=dd_dump_dot(dd,bdd_tmp_size,&s0,NULL,NULL,fp);
+//    if(dres==1)
+//    {
+//      printf("success!\n");
+//    }
+//    else
+//    {
+//      printf("failed!");
+//    }
+//    fclose(fp);
+//  }
+
+
+
   /* ADDED: save accepting states */
   if(get_print_accepting(opts) != NULL)
     accepted = bdd_dup(s0);  

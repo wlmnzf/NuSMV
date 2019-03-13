@@ -48,10 +48,10 @@ RM = /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV
+CMAKE_SOURCE_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug
+CMAKE_BINARY_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -93,7 +93,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -104,7 +104,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CPackSourceConfig.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -159,14 +159,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/node/normalizers/CMakeFiles/progress.marks
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/node/normalizers/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/node/normalizers/CMakeFiles/progress.marks
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/node/normalizers/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/node/normalizers/clean
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/node/normalizers/clean
 .PHONY : clean
 
 # The main clean target
@@ -176,22 +176,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/node/normalizers/preinstall
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/node/normalizers/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/node/normalizers/preinstall
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/node/normalizers/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/rule:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/rule
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/rule
 .PHONY : code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/rule
 
 # Convenience name for target.
@@ -201,7 +201,7 @@ code_nusmv_core_node_normalizers: code/nusmv/core/node/normalizers/CMakeFiles/co
 
 # fast build rule for target.
 code_nusmv_core_node_normalizers/fast:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/build.make code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/build
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/build.make code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/build
 .PHONY : code_nusmv_core_node_normalizers/fast
 
 MasterNormalizer.o: MasterNormalizer.c.o
@@ -210,7 +210,7 @@ MasterNormalizer.o: MasterNormalizer.c.o
 
 # target to build an object file
 MasterNormalizer.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/build.make code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/MasterNormalizer.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/build.make code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/MasterNormalizer.c.o
 .PHONY : MasterNormalizer.c.o
 
 MasterNormalizer.i: MasterNormalizer.c.i
@@ -219,7 +219,7 @@ MasterNormalizer.i: MasterNormalizer.c.i
 
 # target to preprocess a source file
 MasterNormalizer.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/build.make code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/MasterNormalizer.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/build.make code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/MasterNormalizer.c.i
 .PHONY : MasterNormalizer.c.i
 
 MasterNormalizer.s: MasterNormalizer.c.s
@@ -228,7 +228,7 @@ MasterNormalizer.s: MasterNormalizer.c.s
 
 # target to generate assembly for a file
 MasterNormalizer.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/build.make code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/MasterNormalizer.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/build.make code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/MasterNormalizer.c.s
 .PHONY : MasterNormalizer.c.s
 
 NormalizerBase.o: NormalizerBase.c.o
@@ -237,7 +237,7 @@ NormalizerBase.o: NormalizerBase.c.o
 
 # target to build an object file
 NormalizerBase.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/build.make code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/NormalizerBase.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/build.make code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/NormalizerBase.c.o
 .PHONY : NormalizerBase.c.o
 
 NormalizerBase.i: NormalizerBase.c.i
@@ -246,7 +246,7 @@ NormalizerBase.i: NormalizerBase.c.i
 
 # target to preprocess a source file
 NormalizerBase.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/build.make code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/NormalizerBase.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/build.make code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/NormalizerBase.c.i
 .PHONY : NormalizerBase.c.i
 
 NormalizerBase.s: NormalizerBase.c.s
@@ -255,7 +255,7 @@ NormalizerBase.s: NormalizerBase.c.s
 
 # target to generate assembly for a file
 NormalizerBase.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/build.make code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/NormalizerBase.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/build.make code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/NormalizerBase.c.s
 .PHONY : NormalizerBase.c.s
 
 NormalizerCore.o: NormalizerCore.c.o
@@ -264,7 +264,7 @@ NormalizerCore.o: NormalizerCore.c.o
 
 # target to build an object file
 NormalizerCore.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/build.make code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/NormalizerCore.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/build.make code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/NormalizerCore.c.o
 .PHONY : NormalizerCore.c.o
 
 NormalizerCore.i: NormalizerCore.c.i
@@ -273,7 +273,7 @@ NormalizerCore.i: NormalizerCore.c.i
 
 # target to preprocess a source file
 NormalizerCore.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/build.make code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/NormalizerCore.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/build.make code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/NormalizerCore.c.i
 .PHONY : NormalizerCore.c.i
 
 NormalizerCore.s: NormalizerCore.c.s
@@ -282,7 +282,7 @@ NormalizerCore.s: NormalizerCore.c.s
 
 # target to generate assembly for a file
 NormalizerCore.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/build.make code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/NormalizerCore.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/build.make code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/NormalizerCore.c.s
 .PHONY : NormalizerCore.c.s
 
 NormalizerPsl.o: NormalizerPsl.c.o
@@ -291,7 +291,7 @@ NormalizerPsl.o: NormalizerPsl.c.o
 
 # target to build an object file
 NormalizerPsl.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/build.make code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/NormalizerPsl.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/build.make code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/NormalizerPsl.c.o
 .PHONY : NormalizerPsl.c.o
 
 NormalizerPsl.i: NormalizerPsl.c.i
@@ -300,7 +300,7 @@ NormalizerPsl.i: NormalizerPsl.c.i
 
 # target to preprocess a source file
 NormalizerPsl.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/build.make code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/NormalizerPsl.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/build.make code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/NormalizerPsl.c.i
 .PHONY : NormalizerPsl.c.i
 
 NormalizerPsl.s: NormalizerPsl.c.s
@@ -309,7 +309,7 @@ NormalizerPsl.s: NormalizerPsl.c.s
 
 # target to generate assembly for a file
 NormalizerPsl.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/build.make code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/NormalizerPsl.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/build.make code/nusmv/core/node/normalizers/CMakeFiles/code_nusmv_core_node_normalizers.dir/NormalizerPsl.c.s
 .PHONY : NormalizerPsl.c.s
 
 # Help Target
@@ -351,6 +351,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,6 +1,6 @@
-#line 2 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_input.c"
+#line 2 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_input.c"
 
-#line 4 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_input.c"
+#line 4 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_input.c"
 
 #define  YY_INT_ALIGNED short int
 
@@ -925,10 +925,10 @@ static int nusmv_skip_multiline_comment(void);
 #undef YY_USES_REJECT
 #endif
 
-#line 929 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_input.c"
+#line 929 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_input.c"
 #line 124 "ap_input.l"
      /* %option outfile="lex.yy.c" */
-#line 932 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_input.c"
+#line 932 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_input.c"
 
 #define INITIAL 0
 
@@ -1147,7 +1147,7 @@ YY_DECL
 	{
 #line 127 "ap_input.l"
 
-#line 1151 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_input.c"
+#line 1151 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_input.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -1600,7 +1600,7 @@ YY_RULE_SETUP
 #line 297 "ap_input.l"
 ECHO;
 	YY_BREAK
-#line 1604 "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_input.c"
+#line 1604 "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/addons_core/compass/parser/ap/ap_input.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 

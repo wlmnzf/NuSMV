@@ -616,45 +616,45 @@ nusmv/core/node/node.h
 nusmv/core/compile/symb_table/SymbTable.h
 ../code/nusmv/core/wff/nusmv/core/compile/symb_table/SymbTable.h
 
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/be/beCnf.c
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/be/beCnf.c
 nusmv/core/be/be.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/be/nusmv/core/be/be.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/be/nusmv/core/be/be.h
 nusmv/core/utils/assoc.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/be/nusmv/core/utils/assoc.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/be/nusmv/core/utils/assoc.h
 nusmv/core/parser/symbols.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/be/nusmv/core/parser/symbols.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/be/nusmv/core/parser/symbols.h
 
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/be/beManager.c
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/be/beManager.c
 nusmv/core/be/be.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/be/nusmv/core/be/be.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/be/nusmv/core/be/be.h
 nusmv/core/be/beManagerInt.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/be/nusmv/core/be/beManagerInt.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/be/nusmv/core/be/beManagerInt.h
 
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/be/bePkg.c
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/be/bePkg.c
 nusmv/core/be/be.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/be/nusmv/core/be/be.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/be/nusmv/core/be/be.h
 nusmv/core/be/beInt.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/be/nusmv/core/be/beInt.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/be/nusmv/core/be/beInt.h
 nusmv/core/rbc/rbc.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/be/nusmv/core/rbc/rbc.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/be/nusmv/core/rbc/rbc.h
 
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/be/beRbcManager.c
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/be/beRbcManager.c
 nusmv/core/utils/Logger.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/be/nusmv/core/utils/Logger.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/be/nusmv/core/utils/Logger.h
 nusmv/core/be/beRbcManager.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/be/nusmv/core/be/beRbcManager.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/be/nusmv/core/be/beRbcManager.h
 nusmv/core/be/be.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/be/nusmv/core/be/be.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/be/nusmv/core/be/be.h
 nusmv/core/be/beInt.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/be/nusmv/core/be/beInt.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/be/nusmv/core/be/beInt.h
 nusmv/core/rbc/rbc.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/be/nusmv/core/rbc/rbc.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/be/nusmv/core/rbc/rbc.h
 nusmv/core/rbc/InlineResult.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/be/nusmv/core/rbc/InlineResult.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/be/nusmv/core/rbc/InlineResult.h
 nusmv/core/opt/opt.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/be/nusmv/core/opt/opt.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/be/nusmv/core/opt/opt.h
 nusmv/core/utils/defs.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/be/nusmv/core/utils/defs.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/be/nusmv/core/utils/defs.h
 
 build-cudd/include/cudd/cudd.h
 nusmv-config.h

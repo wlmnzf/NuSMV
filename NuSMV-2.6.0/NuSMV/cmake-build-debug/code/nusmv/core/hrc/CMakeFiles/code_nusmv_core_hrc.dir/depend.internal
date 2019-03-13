@@ -90,7 +90,7 @@ code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/HrcFlattener.c.o
  ../code/nusmv/core/utils/portability.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/HrcFlattener.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/HrcFlattener.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -185,7 +185,7 @@ code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/HrcNode.c.o
  ../code/nusmv/core/utils/portability.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/HrcNode.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/HrcNode.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -207,7 +207,7 @@ code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/HrcVarDependencies.c.o
  ../code/nusmv/core/utils/list.h
  ../code/nusmv/core/utils/object.h
  ../code/nusmv/core/utils/utils.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/HrcVarDependencies.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/HrcVarDependencies.c
  build-cudd/include/cudd/st.h
  build-cudd/include/cudd/util.h
  nusmv-config.h
@@ -295,7 +295,7 @@ code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/hrc.c.o
  ../code/nusmv/core/utils/portability.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/hrc.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/hrc.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -378,7 +378,7 @@ code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/hrcDump.c.o
  ../code/nusmv/core/utils/ustring.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/hrcDump.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/hrcDump.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -461,7 +461,7 @@ code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/hrcPrefixUtils.c.o
  ../code/nusmv/core/utils/ustring.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/hrcPrefixUtils.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/hrcPrefixUtils.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -554,7 +554,7 @@ code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/hrcSymbTableUtils.c.o
  ../code/nusmv/core/utils/portability.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/hrcSymbTableUtils.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/hrcSymbTableUtils.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h
@@ -637,7 +637,7 @@ code/nusmv/core/hrc/CMakeFiles/code_nusmv_core_hrc.dir/hrcWrite.c.o
  ../code/nusmv/core/utils/ustring.h
  ../code/nusmv/core/utils/utils.h
  ../code/nusmv/core/wff/ExprMgr.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/hrcWrite.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/hrcWrite.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h

@@ -85,7 +85,7 @@ code/nusmv/shell/parser/CMakeFiles/code_nusmv_shell_parser.dir/parserCmd.c.o
  ../code/nusmv/core/wff/ExprMgr.h
  ../code/nusmv/shell/cmd/cmd.h
  ../code/nusmv/shell/parser/parserCmd.h
- /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/shell/parser/parserCmd.c
+ /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/shell/parser/parserCmd.c
  build-cudd/include/cudd/cudd.h
  build-cudd/include/cudd/epd.h
  build-cudd/include/cudd/mtr.h

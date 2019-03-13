@@ -682,17 +682,17 @@ nusmv/core/node/node.h
 nusmv/core/compile/symb_table/SymbTable.h
 ../code/nusmv/core/wff/nusmv/core/compile/symb_table/SymbTable.h
 
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/addons_core/addonsCore.c
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/addons_core/addonsCore.c
 nusmv/core/utils/Logger.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/addons_core/nusmv/core/utils/Logger.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/addons_core/nusmv/core/utils/Logger.h
 nusmv-config.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/addons_core/nusmv-config.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/addons_core/nusmv-config.h
 nusmv/addons_core/addonsCore.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/addons_core/nusmv/addons_core/addonsCore.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/addons_core/nusmv/addons_core/addonsCore.h
 nusmv/addons_core/compass/compass.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/addons_core/nusmv/addons_core/compass/compass.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/addons_core/nusmv/addons_core/compass/compass.h
 nusmv/core/opt/opt.h
-/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/addons_core/nusmv/core/opt/opt.h
+/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/addons_core/nusmv/core/opt/opt.h
 
 build-cudd/include/cudd/cudd.h
 nusmv-config.h

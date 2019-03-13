@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/main.c" "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/NuSMV.dir/code/nusmv/main.c.o"
+  "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/main.c" "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/NuSMV.dir/code/nusmv/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -26,16 +26,16 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/NUSMV_SHELL_LIB.dir/DependInfo.cmake"
-  "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/NUSMV_ADDONSCORE_LIB.dir/DependInfo.cmake"
-  "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/NUSMV_CORE_LIB.dir/DependInfo.cmake"
-  "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/NUSMV_RBC_LIB.dir/DependInfo.cmake"
-  "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/NUSMV_GRAMMAR_LIB.dir/DependInfo.cmake"
-  "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/cudd/CMakeFiles/CUDD_CUDD_LIB.dir/DependInfo.cmake"
-  "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/epd/CMakeFiles/CUDD_EPD_LIB.dir/DependInfo.cmake"
-  "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/DependInfo.cmake"
-  "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/st/CMakeFiles/CUDD_ST_LIB.dir/DependInfo.cmake"
-  "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/DependInfo.cmake"
+  "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/NUSMV_SHELL_LIB.dir/DependInfo.cmake"
+  "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/NUSMV_ADDONSCORE_LIB.dir/DependInfo.cmake"
+  "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/NUSMV_CORE_LIB.dir/DependInfo.cmake"
+  "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/NUSMV_RBC_LIB.dir/DependInfo.cmake"
+  "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles/NUSMV_GRAMMAR_LIB.dir/DependInfo.cmake"
+  "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/cudd/CMakeFiles/CUDD_CUDD_LIB.dir/DependInfo.cmake"
+  "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/epd/CMakeFiles/CUDD_EPD_LIB.dir/DependInfo.cmake"
+  "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/DependInfo.cmake"
+  "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/st/CMakeFiles/CUDD_ST_LIB.dir/DependInfo.cmake"
+  "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/util/CMakeFiles/CUDD_UTIL_LIB.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

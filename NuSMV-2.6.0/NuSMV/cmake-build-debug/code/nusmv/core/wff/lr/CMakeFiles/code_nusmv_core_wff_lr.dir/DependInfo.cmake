@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/wff/lr/LogicRecognizerBase.c" "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/LogicRecognizerBase.c.o"
-  "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/wff/lr/LogicRecognizerCore.c" "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/LogicRecognizerCore.c.o"
-  "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/wff/lr/MasterLogicRecognizer.c" "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/MasterLogicRecognizer.c.o"
+  "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/wff/lr/LogicRecognizerBase.c" "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/LogicRecognizerBase.c.o"
+  "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/wff/lr/LogicRecognizerCore.c" "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/LogicRecognizerCore.c.o"
+  "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/wff/lr/MasterLogicRecognizer.c" "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/wff/lr/CMakeFiles/code_nusmv_core_wff_lr.dir/MasterLogicRecognizer.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

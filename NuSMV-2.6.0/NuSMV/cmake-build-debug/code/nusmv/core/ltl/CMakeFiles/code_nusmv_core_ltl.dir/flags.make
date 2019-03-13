@@ -6,5 +6,5 @@ C_FLAGS =   -Wdeclaration-after-statement -Werror=declaration-after-statement -g
 
 C_DEFINES = -DHAVE_CONFIG_H -Dinline=inline
 
-C_INCLUDES = -I/usr/include/libxml2 -I/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/include -I/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code -I/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code -I/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug -I/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-MiniSat/minisat-37dc6c67e2af26379d88ce349eb9c4c6160e8543 
+C_INCLUDES = -I/usr/include/libxml2 -I/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/include -I/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code -I/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code -I/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug -I/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-MiniSat/minisat-37dc6c67e2af26379d88ce349eb9c4c6160e8543 
 

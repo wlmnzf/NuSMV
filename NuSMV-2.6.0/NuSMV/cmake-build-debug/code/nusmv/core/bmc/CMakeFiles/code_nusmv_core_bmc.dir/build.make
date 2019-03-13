@@ -43,10 +43,10 @@ RM = /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV
+CMAKE_SOURCE_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug
+CMAKE_BINARY_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/depend.make
@@ -59,224 +59,224 @@ include code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/flags.make
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcBmcInc.c.o: code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/flags.make
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcBmcInc.c.o: ../code/nusmv/core/bmc/bmcBmcInc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcBmcInc.c.o"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_bmc.dir/bmcBmcInc.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcBmcInc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcBmcInc.c.o"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_bmc.dir/bmcBmcInc.c.o   -c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcBmcInc.c
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcBmcInc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code_nusmv_core_bmc.dir/bmcBmcInc.c.i"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcBmcInc.c > CMakeFiles/code_nusmv_core_bmc.dir/bmcBmcInc.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcBmcInc.c > CMakeFiles/code_nusmv_core_bmc.dir/bmcBmcInc.c.i
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcBmcInc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code_nusmv_core_bmc.dir/bmcBmcInc.c.s"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcBmcInc.c -o CMakeFiles/code_nusmv_core_bmc.dir/bmcBmcInc.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcBmcInc.c -o CMakeFiles/code_nusmv_core_bmc.dir/bmcBmcInc.c.s
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcBmcNonInc.c.o: code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/flags.make
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcBmcNonInc.c.o: ../code/nusmv/core/bmc/bmcBmcNonInc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcBmcNonInc.c.o"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_bmc.dir/bmcBmcNonInc.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcBmcNonInc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcBmcNonInc.c.o"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_bmc.dir/bmcBmcNonInc.c.o   -c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcBmcNonInc.c
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcBmcNonInc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code_nusmv_core_bmc.dir/bmcBmcNonInc.c.i"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcBmcNonInc.c > CMakeFiles/code_nusmv_core_bmc.dir/bmcBmcNonInc.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcBmcNonInc.c > CMakeFiles/code_nusmv_core_bmc.dir/bmcBmcNonInc.c.i
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcBmcNonInc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code_nusmv_core_bmc.dir/bmcBmcNonInc.c.s"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcBmcNonInc.c -o CMakeFiles/code_nusmv_core_bmc.dir/bmcBmcNonInc.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcBmcNonInc.c -o CMakeFiles/code_nusmv_core_bmc.dir/bmcBmcNonInc.c.s
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcCheck.c.o: code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/flags.make
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcCheck.c.o: ../code/nusmv/core/bmc/bmcCheck.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcCheck.c.o"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_bmc.dir/bmcCheck.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcCheck.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcCheck.c.o"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_bmc.dir/bmcCheck.c.o   -c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcCheck.c
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcCheck.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code_nusmv_core_bmc.dir/bmcCheck.c.i"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcCheck.c > CMakeFiles/code_nusmv_core_bmc.dir/bmcCheck.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcCheck.c > CMakeFiles/code_nusmv_core_bmc.dir/bmcCheck.c.i
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcCheck.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code_nusmv_core_bmc.dir/bmcCheck.c.s"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcCheck.c -o CMakeFiles/code_nusmv_core_bmc.dir/bmcCheck.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcCheck.c -o CMakeFiles/code_nusmv_core_bmc.dir/bmcCheck.c.s
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcConv.c.o: code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/flags.make
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcConv.c.o: ../code/nusmv/core/bmc/bmcConv.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcConv.c.o"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_bmc.dir/bmcConv.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcConv.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcConv.c.o"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_bmc.dir/bmcConv.c.o   -c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcConv.c
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcConv.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code_nusmv_core_bmc.dir/bmcConv.c.i"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcConv.c > CMakeFiles/code_nusmv_core_bmc.dir/bmcConv.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcConv.c > CMakeFiles/code_nusmv_core_bmc.dir/bmcConv.c.i
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcConv.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code_nusmv_core_bmc.dir/bmcConv.c.s"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcConv.c -o CMakeFiles/code_nusmv_core_bmc.dir/bmcConv.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcConv.c -o CMakeFiles/code_nusmv_core_bmc.dir/bmcConv.c.s
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcDump.c.o: code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/flags.make
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcDump.c.o: ../code/nusmv/core/bmc/bmcDump.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcDump.c.o"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_bmc.dir/bmcDump.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcDump.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcDump.c.o"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_bmc.dir/bmcDump.c.o   -c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcDump.c
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcDump.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code_nusmv_core_bmc.dir/bmcDump.c.i"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcDump.c > CMakeFiles/code_nusmv_core_bmc.dir/bmcDump.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcDump.c > CMakeFiles/code_nusmv_core_bmc.dir/bmcDump.c.i
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcDump.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code_nusmv_core_bmc.dir/bmcDump.c.s"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcDump.c -o CMakeFiles/code_nusmv_core_bmc.dir/bmcDump.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcDump.c -o CMakeFiles/code_nusmv_core_bmc.dir/bmcDump.c.s
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcGen.c.o: code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/flags.make
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcGen.c.o: ../code/nusmv/core/bmc/bmcGen.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcGen.c.o"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_bmc.dir/bmcGen.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcGen.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcGen.c.o"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_bmc.dir/bmcGen.c.o   -c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcGen.c
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcGen.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code_nusmv_core_bmc.dir/bmcGen.c.i"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcGen.c > CMakeFiles/code_nusmv_core_bmc.dir/bmcGen.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcGen.c > CMakeFiles/code_nusmv_core_bmc.dir/bmcGen.c.i
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcGen.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code_nusmv_core_bmc.dir/bmcGen.c.s"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcGen.c -o CMakeFiles/code_nusmv_core_bmc.dir/bmcGen.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcGen.c -o CMakeFiles/code_nusmv_core_bmc.dir/bmcGen.c.s
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcInt.c.o: code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/flags.make
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcInt.c.o: ../code/nusmv/core/bmc/bmcInt.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcInt.c.o"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_bmc.dir/bmcInt.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcInt.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcInt.c.o"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_bmc.dir/bmcInt.c.o   -c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcInt.c
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcInt.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code_nusmv_core_bmc.dir/bmcInt.c.i"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcInt.c > CMakeFiles/code_nusmv_core_bmc.dir/bmcInt.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcInt.c > CMakeFiles/code_nusmv_core_bmc.dir/bmcInt.c.i
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcInt.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code_nusmv_core_bmc.dir/bmcInt.c.s"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcInt.c -o CMakeFiles/code_nusmv_core_bmc.dir/bmcInt.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcInt.c -o CMakeFiles/code_nusmv_core_bmc.dir/bmcInt.c.s
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcModel.c.o: code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/flags.make
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcModel.c.o: ../code/nusmv/core/bmc/bmcModel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcModel.c.o"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_bmc.dir/bmcModel.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcModel.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcModel.c.o"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_bmc.dir/bmcModel.c.o   -c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcModel.c
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcModel.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code_nusmv_core_bmc.dir/bmcModel.c.i"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcModel.c > CMakeFiles/code_nusmv_core_bmc.dir/bmcModel.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcModel.c > CMakeFiles/code_nusmv_core_bmc.dir/bmcModel.c.i
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcModel.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code_nusmv_core_bmc.dir/bmcModel.c.s"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcModel.c -o CMakeFiles/code_nusmv_core_bmc.dir/bmcModel.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcModel.c -o CMakeFiles/code_nusmv_core_bmc.dir/bmcModel.c.s
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcOpt.c.o: code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/flags.make
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcOpt.c.o: ../code/nusmv/core/bmc/bmcOpt.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcOpt.c.o"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_bmc.dir/bmcOpt.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcOpt.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcOpt.c.o"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_bmc.dir/bmcOpt.c.o   -c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcOpt.c
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcOpt.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code_nusmv_core_bmc.dir/bmcOpt.c.i"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcOpt.c > CMakeFiles/code_nusmv_core_bmc.dir/bmcOpt.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcOpt.c > CMakeFiles/code_nusmv_core_bmc.dir/bmcOpt.c.i
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcOpt.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code_nusmv_core_bmc.dir/bmcOpt.c.s"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcOpt.c -o CMakeFiles/code_nusmv_core_bmc.dir/bmcOpt.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcOpt.c -o CMakeFiles/code_nusmv_core_bmc.dir/bmcOpt.c.s
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcPkg.c.o: code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/flags.make
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcPkg.c.o: ../code/nusmv/core/bmc/bmcPkg.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcPkg.c.o"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_bmc.dir/bmcPkg.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcPkg.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcPkg.c.o"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_bmc.dir/bmcPkg.c.o   -c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcPkg.c
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcPkg.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code_nusmv_core_bmc.dir/bmcPkg.c.i"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcPkg.c > CMakeFiles/code_nusmv_core_bmc.dir/bmcPkg.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcPkg.c > CMakeFiles/code_nusmv_core_bmc.dir/bmcPkg.c.i
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcPkg.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code_nusmv_core_bmc.dir/bmcPkg.c.s"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcPkg.c -o CMakeFiles/code_nusmv_core_bmc.dir/bmcPkg.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcPkg.c -o CMakeFiles/code_nusmv_core_bmc.dir/bmcPkg.c.s
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcSimulate.c.o: code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/flags.make
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcSimulate.c.o: ../code/nusmv/core/bmc/bmcSimulate.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcSimulate.c.o"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_bmc.dir/bmcSimulate.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcSimulate.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcSimulate.c.o"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_bmc.dir/bmcSimulate.c.o   -c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcSimulate.c
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcSimulate.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code_nusmv_core_bmc.dir/bmcSimulate.c.i"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcSimulate.c > CMakeFiles/code_nusmv_core_bmc.dir/bmcSimulate.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcSimulate.c > CMakeFiles/code_nusmv_core_bmc.dir/bmcSimulate.c.i
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcSimulate.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code_nusmv_core_bmc.dir/bmcSimulate.c.s"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcSimulate.c -o CMakeFiles/code_nusmv_core_bmc.dir/bmcSimulate.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcSimulate.c -o CMakeFiles/code_nusmv_core_bmc.dir/bmcSimulate.c.s
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcTableau.c.o: code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/flags.make
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcTableau.c.o: ../code/nusmv/core/bmc/bmcTableau.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcTableau.c.o"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_bmc.dir/bmcTableau.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcTableau.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcTableau.c.o"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_bmc.dir/bmcTableau.c.o   -c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcTableau.c
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcTableau.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code_nusmv_core_bmc.dir/bmcTableau.c.i"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcTableau.c > CMakeFiles/code_nusmv_core_bmc.dir/bmcTableau.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcTableau.c > CMakeFiles/code_nusmv_core_bmc.dir/bmcTableau.c.i
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcTableau.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code_nusmv_core_bmc.dir/bmcTableau.c.s"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcTableau.c -o CMakeFiles/code_nusmv_core_bmc.dir/bmcTableau.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcTableau.c -o CMakeFiles/code_nusmv_core_bmc.dir/bmcTableau.c.s
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcTableauLTLformula.c.o: code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/flags.make
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcTableauLTLformula.c.o: ../code/nusmv/core/bmc/bmcTableauLTLformula.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcTableauLTLformula.c.o"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_bmc.dir/bmcTableauLTLformula.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcTableauLTLformula.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcTableauLTLformula.c.o"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_bmc.dir/bmcTableauLTLformula.c.o   -c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcTableauLTLformula.c
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcTableauLTLformula.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code_nusmv_core_bmc.dir/bmcTableauLTLformula.c.i"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcTableauLTLformula.c > CMakeFiles/code_nusmv_core_bmc.dir/bmcTableauLTLformula.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcTableauLTLformula.c > CMakeFiles/code_nusmv_core_bmc.dir/bmcTableauLTLformula.c.i
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcTableauLTLformula.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code_nusmv_core_bmc.dir/bmcTableauLTLformula.c.s"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcTableauLTLformula.c -o CMakeFiles/code_nusmv_core_bmc.dir/bmcTableauLTLformula.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcTableauLTLformula.c -o CMakeFiles/code_nusmv_core_bmc.dir/bmcTableauLTLformula.c.s
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcTableauPLTLformula.c.o: code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/flags.make
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcTableauPLTLformula.c.o: ../code/nusmv/core/bmc/bmcTableauPLTLformula.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcTableauPLTLformula.c.o"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_bmc.dir/bmcTableauPLTLformula.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcTableauPLTLformula.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcTableauPLTLformula.c.o"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_bmc.dir/bmcTableauPLTLformula.c.o   -c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcTableauPLTLformula.c
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcTableauPLTLformula.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code_nusmv_core_bmc.dir/bmcTableauPLTLformula.c.i"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcTableauPLTLformula.c > CMakeFiles/code_nusmv_core_bmc.dir/bmcTableauPLTLformula.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcTableauPLTLformula.c > CMakeFiles/code_nusmv_core_bmc.dir/bmcTableauPLTLformula.c.i
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcTableauPLTLformula.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code_nusmv_core_bmc.dir/bmcTableauPLTLformula.c.s"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcTableauPLTLformula.c -o CMakeFiles/code_nusmv_core_bmc.dir/bmcTableauPLTLformula.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcTableauPLTLformula.c -o CMakeFiles/code_nusmv_core_bmc.dir/bmcTableauPLTLformula.c.s
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcTest.c.o: code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/flags.make
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcTest.c.o: ../code/nusmv/core/bmc/bmcTest.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcTest.c.o"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_bmc.dir/bmcTest.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcTest.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcTest.c.o"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_bmc.dir/bmcTest.c.o   -c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcTest.c
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcTest.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code_nusmv_core_bmc.dir/bmcTest.c.i"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcTest.c > CMakeFiles/code_nusmv_core_bmc.dir/bmcTest.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcTest.c > CMakeFiles/code_nusmv_core_bmc.dir/bmcTest.c.i
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcTest.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code_nusmv_core_bmc.dir/bmcTest.c.s"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcTest.c -o CMakeFiles/code_nusmv_core_bmc.dir/bmcTest.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcTest.c -o CMakeFiles/code_nusmv_core_bmc.dir/bmcTest.c.s
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcTrace.c.o: code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/flags.make
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcTrace.c.o: ../code/nusmv/core/bmc/bmcTrace.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcTrace.c.o"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_bmc.dir/bmcTrace.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcTrace.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcTrace.c.o"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_bmc.dir/bmcTrace.c.o   -c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcTrace.c
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcTrace.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code_nusmv_core_bmc.dir/bmcTrace.c.i"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcTrace.c > CMakeFiles/code_nusmv_core_bmc.dir/bmcTrace.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcTrace.c > CMakeFiles/code_nusmv_core_bmc.dir/bmcTrace.c.i
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcTrace.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code_nusmv_core_bmc.dir/bmcTrace.c.s"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcTrace.c -o CMakeFiles/code_nusmv_core_bmc.dir/bmcTrace.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcTrace.c -o CMakeFiles/code_nusmv_core_bmc.dir/bmcTrace.c.s
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcUtils.c.o: code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/flags.make
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcUtils.c.o: ../code/nusmv/core/bmc/bmcUtils.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcUtils.c.o"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_bmc.dir/bmcUtils.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcUtils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcUtils.c.o"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_bmc.dir/bmcUtils.c.o   -c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcUtils.c
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcUtils.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code_nusmv_core_bmc.dir/bmcUtils.c.i"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcUtils.c > CMakeFiles/code_nusmv_core_bmc.dir/bmcUtils.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcUtils.c > CMakeFiles/code_nusmv_core_bmc.dir/bmcUtils.c.i
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcUtils.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code_nusmv_core_bmc.dir/bmcUtils.c.s"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcUtils.c -o CMakeFiles/code_nusmv_core_bmc.dir/bmcUtils.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc/bmcUtils.c -o CMakeFiles/code_nusmv_core_bmc.dir/bmcUtils.c.s
 
 code_nusmv_core_bmc: code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcBmcInc.c.o
 code_nusmv_core_bmc: code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/bmcBmcNonInc.c.o
@@ -305,10 +305,10 @@ code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/build: code_nusmv_core_bm
 .PHONY : code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/build
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/clean:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && $(CMAKE_COMMAND) -P CMakeFiles/code_nusmv_core_bmc.dir/cmake_clean.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc && $(CMAKE_COMMAND) -P CMakeFiles/code_nusmv_core_bmc.dir/cmake_clean.cmake
 .PHONY : code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/clean
 
 code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/depend:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/bmc /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : code/nusmv/core/bmc/CMakeFiles/code_nusmv_core_bmc.dir/depend
 

@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/mtr/mtrBasic.c" "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/mtrBasic.c.o"
-  "/home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/mtr/mtrGroup.c" "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/mtrGroup.c.o"
+  "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/mtr/mtrBasic.c" "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/mtrBasic.c.o"
+  "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/mtr/mtrGroup.c" "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/mtr/CMakeFiles/CUDD_MTR_LIB.dir/mtrGroup.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

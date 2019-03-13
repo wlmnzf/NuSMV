@@ -48,10 +48,10 @@ RM = /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV
+CMAKE_SOURCE_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug
+CMAKE_BINARY_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -83,7 +83,7 @@ install/fast: preinstall/fast
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -94,7 +94,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CPackSourceConfig.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -159,14 +159,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/idlist/CMakeFiles/progress.marks
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/parser/idlist/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/idlist/CMakeFiles/progress.marks
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/parser/idlist/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/parser/idlist/clean
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/parser/idlist/clean
 .PHONY : clean
 
 # The main clean target
@@ -176,22 +176,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/parser/idlist/preinstall
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/parser/idlist/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/parser/idlist/preinstall
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/parser/idlist/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/rule:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/rule
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/rule
 .PHONY : code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/rule
 
 # Convenience name for target.
@@ -201,7 +201,7 @@ code_nusmv_core_parser_idlist: code/nusmv/core/parser/idlist/CMakeFiles/code_nus
 
 # fast build rule for target.
 code_nusmv_core_parser_idlist/fast:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/build.make code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/build
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/build.make code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/build
 .PHONY : code_nusmv_core_parser_idlist/fast
 
 ParserIdList.o: ParserIdList.c.o
@@ -210,7 +210,7 @@ ParserIdList.o: ParserIdList.c.o
 
 # target to build an object file
 ParserIdList.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/build.make code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/ParserIdList.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/build.make code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/ParserIdList.c.o
 .PHONY : ParserIdList.c.o
 
 ParserIdList.i: ParserIdList.c.i
@@ -219,7 +219,7 @@ ParserIdList.i: ParserIdList.c.i
 
 # target to preprocess a source file
 ParserIdList.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/build.make code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/ParserIdList.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/build.make code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/ParserIdList.c.i
 .PHONY : ParserIdList.c.i
 
 ParserIdList.s: ParserIdList.c.s
@@ -228,7 +228,7 @@ ParserIdList.s: ParserIdList.c.s
 
 # target to generate assembly for a file
 ParserIdList.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/build.make code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/ParserIdList.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/build.make code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/ParserIdList.c.s
 .PHONY : ParserIdList.c.s
 
 idlist_grammar.o: idlist_grammar.c.o
@@ -237,7 +237,7 @@ idlist_grammar.o: idlist_grammar.c.o
 
 # target to build an object file
 idlist_grammar.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/build.make code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/idlist_grammar.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/build.make code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/idlist_grammar.c.o
 .PHONY : idlist_grammar.c.o
 
 idlist_grammar.i: idlist_grammar.c.i
@@ -246,7 +246,7 @@ idlist_grammar.i: idlist_grammar.c.i
 
 # target to preprocess a source file
 idlist_grammar.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/build.make code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/idlist_grammar.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/build.make code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/idlist_grammar.c.i
 .PHONY : idlist_grammar.c.i
 
 idlist_grammar.s: idlist_grammar.c.s
@@ -255,7 +255,7 @@ idlist_grammar.s: idlist_grammar.c.s
 
 # target to generate assembly for a file
 idlist_grammar.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/build.make code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/idlist_grammar.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/build.make code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/idlist_grammar.c.s
 .PHONY : idlist_grammar.c.s
 
 idlist_input.o: idlist_input.c.o
@@ -264,7 +264,7 @@ idlist_input.o: idlist_input.c.o
 
 # target to build an object file
 idlist_input.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/build.make code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/idlist_input.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/build.make code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/idlist_input.c.o
 .PHONY : idlist_input.c.o
 
 idlist_input.i: idlist_input.c.i
@@ -273,7 +273,7 @@ idlist_input.i: idlist_input.c.i
 
 # target to preprocess a source file
 idlist_input.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/build.make code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/idlist_input.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/build.make code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/idlist_input.c.i
 .PHONY : idlist_input.c.i
 
 idlist_input.s: idlist_input.c.s
@@ -282,7 +282,7 @@ idlist_input.s: idlist_input.c.s
 
 # target to generate assembly for a file
 idlist_input.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/build.make code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/idlist_input.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/build.make code/nusmv/core/parser/idlist/CMakeFiles/code_nusmv_core_parser_idlist.dir/idlist_input.c.s
 .PHONY : idlist_input.c.s
 
 # Help Target
@@ -321,6 +321,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

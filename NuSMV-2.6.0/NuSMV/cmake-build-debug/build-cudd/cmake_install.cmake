@@ -1,4 +1,4 @@
-# Install script for directory: /home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1
+# Install script for directory: /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,36 +38,36 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/cudd" TYPE FILE FILES "/home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/st/st.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/cudd" TYPE FILE FILES "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/st/st.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/cudd" TYPE FILE FILES "/home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/cudd/cudd.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/cudd" TYPE FILE FILES "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/cudd/cudd.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/cudd" TYPE FILE FILES "/home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/cudd/cuddInt.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/cudd" TYPE FILE FILES "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/cudd/cuddInt.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/cudd" TYPE FILE FILES "/home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/epd/epd.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/cudd" TYPE FILE FILES "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/epd/epd.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/cudd" TYPE FILE FILES "/home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/mtr/mtr.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/cudd" TYPE FILE FILES "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/mtr/mtr.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/cudd" TYPE FILE FILES "/home/william/NuSMV-a/NuSMV-2.6.0/cudd-2.4.1.1/util/util.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/cudd" TYPE FILE FILES "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/cudd-2.4.1.1/util/util.h")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/st/cmake_install.cmake")
-  include("/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/cudd/cmake_install.cmake")
-  include("/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/epd/cmake_install.cmake")
-  include("/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/mtr/cmake_install.cmake")
-  include("/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/util/cmake_install.cmake")
+  include("/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/st/cmake_install.cmake")
+  include("/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/cudd/cmake_install.cmake")
+  include("/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/epd/cmake_install.cmake")
+  include("/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/mtr/cmake_install.cmake")
+  include("/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/build-cudd/util/cmake_install.cmake")
 
 endif()
 

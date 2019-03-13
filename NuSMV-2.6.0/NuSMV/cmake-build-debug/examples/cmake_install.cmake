@@ -1,4 +1,4 @@
-# Install script for directory: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/examples
+# Install script for directory: /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/examples
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,24 +39,24 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/nusmv/examples" TYPE DIRECTORY FILES
-    "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/examples/abp"
-    "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/examples/example_irst"
-    "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/examples/prod-cons"
-    "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/examples/tcas"
-    "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/examples/guidance"
-    "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/examples/production-cell"
-    "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/examples/brp"
-    "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/examples/queue"
-    "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/examples/deadlock"
-    "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/examples/p-queue"
-    "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/examples/reactor"
-    "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/examples/example_cmu"
-    "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/examples/pci"
-    "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/examples/smv-dist"
-    "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/examples/msi"
-    "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/examples/bmc_tutorial"
-    "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/examples/m4"
-    "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/examples/psl-samples"
+    "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/examples/abp"
+    "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/examples/example_irst"
+    "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/examples/prod-cons"
+    "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/examples/tcas"
+    "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/examples/guidance"
+    "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/examples/production-cell"
+    "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/examples/brp"
+    "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/examples/queue"
+    "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/examples/deadlock"
+    "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/examples/p-queue"
+    "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/examples/reactor"
+    "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/examples/example_cmu"
+    "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/examples/pci"
+    "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/examples/smv-dist"
+    "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/examples/msi"
+    "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/examples/bmc_tutorial"
+    "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/examples/m4"
+    "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/examples/psl-samples"
     REGEX "/CVS$" EXCLUDE REGEX "/[^/]*\\~$" EXCLUDE REGEX "/\\.[^/]*$" EXCLUDE)
 endif()
 

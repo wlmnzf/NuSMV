@@ -48,10 +48,10 @@ RM = /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV
+CMAKE_SOURCE_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug
+CMAKE_BINARY_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -93,7 +93,7 @@ list_install_components/fast: list_install_components
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -104,7 +104,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CPackSourceConfig.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cpack --config ./CPackSourceConfig.cmake /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -159,14 +159,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/flattening/CMakeFiles/progress.marks
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/compile/flattening/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/compile/flattening/CMakeFiles/progress.marks
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/compile/flattening/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/compile/flattening/clean
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/compile/flattening/clean
 .PHONY : clean
 
 # The main clean target
@@ -176,22 +176,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/compile/flattening/preinstall
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/compile/flattening/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/compile/flattening/preinstall
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/compile/flattening/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/rule:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/rule
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/rule
 .PHONY : code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/rule
 
 # Convenience name for target.
@@ -201,7 +201,7 @@ code_nusmv_core_compile_flattening: code/nusmv/core/compile/flattening/CMakeFile
 
 # fast build rule for target.
 code_nusmv_core_compile_flattening/fast:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/build.make code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/build
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/build.make code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/build
 .PHONY : code_nusmv_core_compile_flattening/fast
 
 FlattenerBase.o: FlattenerBase.c.o
@@ -210,7 +210,7 @@ FlattenerBase.o: FlattenerBase.c.o
 
 # target to build an object file
 FlattenerBase.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/build.make code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/FlattenerBase.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/build.make code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/FlattenerBase.c.o
 .PHONY : FlattenerBase.c.o
 
 FlattenerBase.i: FlattenerBase.c.i
@@ -219,7 +219,7 @@ FlattenerBase.i: FlattenerBase.c.i
 
 # target to preprocess a source file
 FlattenerBase.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/build.make code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/FlattenerBase.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/build.make code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/FlattenerBase.c.i
 .PHONY : FlattenerBase.c.i
 
 FlattenerBase.s: FlattenerBase.c.s
@@ -228,7 +228,7 @@ FlattenerBase.s: FlattenerBase.c.s
 
 # target to generate assembly for a file
 FlattenerBase.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/build.make code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/FlattenerBase.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/build.make code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/FlattenerBase.c.s
 .PHONY : FlattenerBase.c.s
 
 FlattenerCore.o: FlattenerCore.c.o
@@ -237,7 +237,7 @@ FlattenerCore.o: FlattenerCore.c.o
 
 # target to build an object file
 FlattenerCore.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/build.make code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/FlattenerCore.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/build.make code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/FlattenerCore.c.o
 .PHONY : FlattenerCore.c.o
 
 FlattenerCore.i: FlattenerCore.c.i
@@ -246,7 +246,7 @@ FlattenerCore.i: FlattenerCore.c.i
 
 # target to preprocess a source file
 FlattenerCore.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/build.make code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/FlattenerCore.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/build.make code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/FlattenerCore.c.i
 .PHONY : FlattenerCore.c.i
 
 FlattenerCore.s: FlattenerCore.c.s
@@ -255,7 +255,7 @@ FlattenerCore.s: FlattenerCore.c.s
 
 # target to generate assembly for a file
 FlattenerCore.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/build.make code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/FlattenerCore.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/build.make code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/FlattenerCore.c.s
 .PHONY : FlattenerCore.c.s
 
 MasterCompileFlattener.o: MasterCompileFlattener.c.o
@@ -264,7 +264,7 @@ MasterCompileFlattener.o: MasterCompileFlattener.c.o
 
 # target to build an object file
 MasterCompileFlattener.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/build.make code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/MasterCompileFlattener.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/build.make code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/MasterCompileFlattener.c.o
 .PHONY : MasterCompileFlattener.c.o
 
 MasterCompileFlattener.i: MasterCompileFlattener.c.i
@@ -273,7 +273,7 @@ MasterCompileFlattener.i: MasterCompileFlattener.c.i
 
 # target to preprocess a source file
 MasterCompileFlattener.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/build.make code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/MasterCompileFlattener.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/build.make code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/MasterCompileFlattener.c.i
 .PHONY : MasterCompileFlattener.c.i
 
 MasterCompileFlattener.s: MasterCompileFlattener.c.s
@@ -282,7 +282,7 @@ MasterCompileFlattener.s: MasterCompileFlattener.c.s
 
 # target to generate assembly for a file
 MasterCompileFlattener.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/build.make code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/MasterCompileFlattener.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/build.make code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/MasterCompileFlattener.c.s
 .PHONY : MasterCompileFlattener.c.s
 
 flatteningPkg.o: flatteningPkg.c.o
@@ -291,7 +291,7 @@ flatteningPkg.o: flatteningPkg.c.o
 
 # target to build an object file
 flatteningPkg.c.o:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/build.make code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/flatteningPkg.c.o
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/build.make code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/flatteningPkg.c.o
 .PHONY : flatteningPkg.c.o
 
 flatteningPkg.i: flatteningPkg.c.i
@@ -300,7 +300,7 @@ flatteningPkg.i: flatteningPkg.c.i
 
 # target to preprocess a source file
 flatteningPkg.c.i:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/build.make code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/flatteningPkg.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/build.make code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/flatteningPkg.c.i
 .PHONY : flatteningPkg.c.i
 
 flatteningPkg.s: flatteningPkg.c.s
@@ -309,7 +309,7 @@ flatteningPkg.s: flatteningPkg.c.s
 
 # target to generate assembly for a file
 flatteningPkg.c.s:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/build.make code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/flatteningPkg.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(MAKE) -f code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/build.make code/nusmv/core/compile/flattening/CMakeFiles/code_nusmv_core_compile_flattening.dir/flatteningPkg.c.s
 .PHONY : flatteningPkg.c.s
 
 # Help Target
@@ -351,6 +351,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

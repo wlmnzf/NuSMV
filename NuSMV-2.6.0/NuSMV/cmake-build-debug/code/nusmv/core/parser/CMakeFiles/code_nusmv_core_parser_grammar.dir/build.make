@@ -43,10 +43,10 @@ RM = /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV
+CMAKE_SOURCE_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug
+CMAKE_BINARY_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser_grammar.dir/depend.make
@@ -58,12 +58,12 @@ include code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser_grammar.dir/pro
 include code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser_grammar.dir/flags.make
 
 code/nusmv/core/parser/input.c: code/nusmv/core/parser/input.l
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "[FLEX][nusmv_core_lexer] Building scanner with flex 2.6.4"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/parser && /usr/bin/flex -Pnusmv_yy -o/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "[FLEX][nusmv_core_lexer] Building scanner with flex 2.6.4"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/parser && /usr/bin/flex -Pnusmv_yy -o/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l
 
 code/nusmv/core/parser/grammar.c: code/nusmv/core/parser/grammar.y
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "[BISON][nusmv_core_parser] Building parser with bison 3.0.4"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/parser && /usr/bin/bison -d -p nusmv_yy -d -o /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "[BISON][nusmv_core_parser] Building parser with bison 3.0.4"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/parser && /usr/bin/bison -d -p nusmv_yy -d -o /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y
 
 code/nusmv/core/parser/grammar.h: code/nusmv/core/parser/grammar.c
 	@$(CMAKE_COMMAND) -E touch_nocreate code/nusmv/core/parser/grammar.h
@@ -76,8 +76,8 @@ code/nusmv/core/parser/input.l: ../code/nusmv/core/parser/input.l.2.51
 code/nusmv/core/parser/input.l: ../code/nusmv/core/parser/input.l.2.75
 code/nusmv/core/parser/input.l: ../code/nusmv/core/parser/input.l.3.50
 code/nusmv/core/parser/input.l: ../cmake/combine_grammar.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "generating flex source /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/parser && /usr/bin/python /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake/../cmake/combine_grammar.py --output /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l input.l.1.25 input.l.1.50 input.l.2.25 input.l.2.50 input.l.2.51 input.l.2.75 input.l.3.50
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "generating flex source /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/parser && /usr/bin/python /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake/../cmake/combine_grammar.py --output /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.l input.l.1.25 input.l.1.50 input.l.2.25 input.l.2.50 input.l.2.51 input.l.2.75 input.l.3.50
 
 code/nusmv/core/parser/grammar.y: ../code/nusmv/core/parser/grammar.y.1.25
 code/nusmv/core/parser/grammar.y: ../code/nusmv/core/parser/grammar.y.1.50
@@ -85,34 +85,34 @@ code/nusmv/core/parser/grammar.y: ../code/nusmv/core/parser/grammar.y.2.50
 code/nusmv/core/parser/grammar.y: ../code/nusmv/core/parser/grammar.y.2.51
 code/nusmv/core/parser/grammar.y: ../code/nusmv/core/parser/grammar.y.3.50
 code/nusmv/core/parser/grammar.y: ../cmake/combine_grammar.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "generating bison source /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/parser && /usr/bin/python /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake/../cmake/combine_grammar.py --output /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y --start begin grammar.y.1.25 grammar.y.1.50 grammar.y.2.50 grammar.y.2.51 grammar.y.3.50
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "generating bison source /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/parser && /usr/bin/python /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake/../cmake/combine_grammar.py --output /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.y --start begin grammar.y.1.25 grammar.y.1.50 grammar.y.2.50 grammar.y.2.51 grammar.y.3.50
 
 code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser_grammar.dir/input.c.o: code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser_grammar.dir/flags.make
 code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser_grammar.dir/input.c.o: code/nusmv/core/parser/input.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser_grammar.dir/input.c.o"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_parser_grammar.dir/input.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser_grammar.dir/input.c.o"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_parser_grammar.dir/input.c.o   -c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.c
 
 code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser_grammar.dir/input.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code_nusmv_core_parser_grammar.dir/input.c.i"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.c > CMakeFiles/code_nusmv_core_parser_grammar.dir/input.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.c > CMakeFiles/code_nusmv_core_parser_grammar.dir/input.c.i
 
 code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser_grammar.dir/input.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code_nusmv_core_parser_grammar.dir/input.c.s"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.c -o CMakeFiles/code_nusmv_core_parser_grammar.dir/input.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/input.c -o CMakeFiles/code_nusmv_core_parser_grammar.dir/input.c.s
 
 code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser_grammar.dir/grammar.c.o: code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser_grammar.dir/flags.make
 code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser_grammar.dir/grammar.c.o: code/nusmv/core/parser/grammar.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser_grammar.dir/grammar.c.o"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_parser_grammar.dir/grammar.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser_grammar.dir/grammar.c.o"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_parser_grammar.dir/grammar.c.o   -c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c
 
 code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser_grammar.dir/grammar.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code_nusmv_core_parser_grammar.dir/grammar.c.i"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c > CMakeFiles/code_nusmv_core_parser_grammar.dir/grammar.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c > CMakeFiles/code_nusmv_core_parser_grammar.dir/grammar.c.i
 
 code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser_grammar.dir/grammar.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code_nusmv_core_parser_grammar.dir/grammar.c.s"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c -o CMakeFiles/code_nusmv_core_parser_grammar.dir/grammar.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/grammar.c -o CMakeFiles/code_nusmv_core_parser_grammar.dir/grammar.c.s
 
 code_nusmv_core_parser_grammar: code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser_grammar.dir/input.c.o
 code_nusmv_core_parser_grammar: code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser_grammar.dir/grammar.c.o
@@ -126,7 +126,7 @@ code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser_grammar.dir/build: code
 .PHONY : code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser_grammar.dir/build
 
 code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser_grammar.dir/clean:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser && $(CMAKE_COMMAND) -P CMakeFiles/code_nusmv_core_parser_grammar.dir/cmake_clean.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser && $(CMAKE_COMMAND) -P CMakeFiles/code_nusmv_core_parser_grammar.dir/cmake_clean.cmake
 .PHONY : code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser_grammar.dir/clean
 
 code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser_grammar.dir/depend: code/nusmv/core/parser/input.c
@@ -134,6 +134,6 @@ code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser_grammar.dir/depend: cod
 code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser_grammar.dir/depend: code/nusmv/core/parser/grammar.h
 code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser_grammar.dir/depend: code/nusmv/core/parser/input.l
 code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser_grammar.dir/depend: code/nusmv/core/parser/grammar.y
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/parser /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser_grammar.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/parser /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser_grammar.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : code/nusmv/core/parser/CMakeFiles/code_nusmv_core_parser_grammar.dir/depend
 

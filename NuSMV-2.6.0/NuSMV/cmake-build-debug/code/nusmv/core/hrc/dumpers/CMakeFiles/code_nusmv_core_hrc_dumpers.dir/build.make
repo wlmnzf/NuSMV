@@ -43,10 +43,10 @@ RM = /home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake -E remove 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV
+CMAKE_SOURCE_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug
+CMAKE_BINARY_DIR = /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/depend.make
@@ -59,68 +59,68 @@ include code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/f
 
 code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumper.c.o: code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/flags.make
 code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumper.c.o: ../code/nusmv/core/hrc/dumpers/HrcDumper.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumper.c.o"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/hrc/dumpers && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumper.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/dumpers/HrcDumper.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumper.c.o"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/hrc/dumpers && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumper.c.o   -c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/dumpers/HrcDumper.c
 
 code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumper.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumper.c.i"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/hrc/dumpers && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/dumpers/HrcDumper.c > CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumper.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/hrc/dumpers && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/dumpers/HrcDumper.c > CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumper.c.i
 
 code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumper.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumper.c.s"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/hrc/dumpers && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/dumpers/HrcDumper.c -o CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumper.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/hrc/dumpers && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/dumpers/HrcDumper.c -o CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumper.c.s
 
 code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperDebug.c.o: code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/flags.make
 code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperDebug.c.o: ../code/nusmv/core/hrc/dumpers/HrcDumperDebug.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperDebug.c.o"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/hrc/dumpers && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperDebug.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/dumpers/HrcDumperDebug.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperDebug.c.o"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/hrc/dumpers && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperDebug.c.o   -c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/dumpers/HrcDumperDebug.c
 
 code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperDebug.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperDebug.c.i"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/hrc/dumpers && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/dumpers/HrcDumperDebug.c > CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperDebug.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/hrc/dumpers && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/dumpers/HrcDumperDebug.c > CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperDebug.c.i
 
 code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperDebug.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperDebug.c.s"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/hrc/dumpers && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/dumpers/HrcDumperDebug.c -o CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperDebug.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/hrc/dumpers && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/dumpers/HrcDumperDebug.c -o CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperDebug.c.s
 
 code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperSmv.c.o: code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/flags.make
 code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperSmv.c.o: ../code/nusmv/core/hrc/dumpers/HrcDumperSmv.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperSmv.c.o"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/hrc/dumpers && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperSmv.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/dumpers/HrcDumperSmv.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperSmv.c.o"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/hrc/dumpers && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperSmv.c.o   -c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/dumpers/HrcDumperSmv.c
 
 code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperSmv.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperSmv.c.i"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/hrc/dumpers && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/dumpers/HrcDumperSmv.c > CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperSmv.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/hrc/dumpers && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/dumpers/HrcDumperSmv.c > CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperSmv.c.i
 
 code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperSmv.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperSmv.c.s"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/hrc/dumpers && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/dumpers/HrcDumperSmv.c -o CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperSmv.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/hrc/dumpers && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/dumpers/HrcDumperSmv.c -o CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperSmv.c.s
 
 code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperXml.c.o: code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/flags.make
 code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperXml.c.o: ../code/nusmv/core/hrc/dumpers/HrcDumperXml.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperXml.c.o"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/hrc/dumpers && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperXml.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/dumpers/HrcDumperXml.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperXml.c.o"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/hrc/dumpers && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperXml.c.o   -c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/dumpers/HrcDumperXml.c
 
 code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperXml.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperXml.c.i"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/hrc/dumpers && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/dumpers/HrcDumperXml.c > CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperXml.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/hrc/dumpers && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/dumpers/HrcDumperXml.c > CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperXml.c.i
 
 code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperXml.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperXml.c.s"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/hrc/dumpers && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/dumpers/HrcDumperXml.c -o CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperXml.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/hrc/dumpers && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/dumpers/HrcDumperXml.c -o CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperXml.c.s
 
 code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperAnonymizer.c.o: code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/flags.make
 code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperAnonymizer.c.o: ../code/nusmv/core/hrc/dumpers/HrcDumperAnonymizer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperAnonymizer.c.o"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/hrc/dumpers && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperAnonymizer.c.o   -c /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/dumpers/HrcDumperAnonymizer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperAnonymizer.c.o"
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/hrc/dumpers && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperAnonymizer.c.o   -c /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/dumpers/HrcDumperAnonymizer.c
 
 code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperAnonymizer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperAnonymizer.c.i"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/hrc/dumpers && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/dumpers/HrcDumperAnonymizer.c > CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperAnonymizer.c.i
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/hrc/dumpers && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/dumpers/HrcDumperAnonymizer.c > CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperAnonymizer.c.i
 
 code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperAnonymizer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperAnonymizer.c.s"
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/hrc/dumpers && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/dumpers/HrcDumperAnonymizer.c -o CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperAnonymizer.c.s
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/hrc/dumpers && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/dumpers/HrcDumperAnonymizer.c -o CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperAnonymizer.c.s
 
 code_nusmv_core_hrc_dumpers: code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumper.c.o
 code_nusmv_core_hrc_dumpers: code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/HrcDumperDebug.c.o
@@ -137,10 +137,10 @@ code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/build: co
 .PHONY : code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/build
 
 code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/clean:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/hrc/dumpers && $(CMAKE_COMMAND) -P CMakeFiles/code_nusmv_core_hrc_dumpers.dir/cmake_clean.cmake
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/hrc/dumpers && $(CMAKE_COMMAND) -P CMakeFiles/code_nusmv_core_hrc_dumpers.dir/cmake_clean.cmake
 .PHONY : code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/clean
 
 code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/depend:
-	cd /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/dumpers /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/hrc/dumpers /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/code/nusmv/core/hrc/dumpers /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/hrc/dumpers /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/cmake-build-debug/code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : code/nusmv/core/hrc/dumpers/CMakeFiles/code_nusmv_core_hrc_dumpers.dir/depend
 

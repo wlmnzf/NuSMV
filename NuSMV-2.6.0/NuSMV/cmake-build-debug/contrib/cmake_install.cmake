@@ -1,4 +1,4 @@
-# Install script for directory: /home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/contrib
+# Install script for directory: /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/contrib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,16 +39,16 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/nusmv/contrib" TYPE FILE FILES
-    "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/contrib/README"
-    "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/contrib/iscas89-2smv"
-    "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/contrib/kiss2-2smv"
-    "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/contrib/smv2table.awk"
-    "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/contrib/smv-mode.el"
-    "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/contrib/order_bits.pl"
-    "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/contrib/nusmv-mode.el"
-    "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/contrib/NuSMV.m4"
-    "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/contrib/emacs-gdb-macros.el"
-    "/home/william/NuSMV-a/NuSMV-2.6.0/NuSMV/contrib/remove_string.pl"
+    "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/contrib/README"
+    "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/contrib/iscas89-2smv"
+    "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/contrib/kiss2-2smv"
+    "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/contrib/smv2table.awk"
+    "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/contrib/smv-mode.el"
+    "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/contrib/order_bits.pl"
+    "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/contrib/nusmv-mode.el"
+    "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/contrib/NuSMV.m4"
+    "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/contrib/emacs-gdb-macros.el"
+    "/home/william/CLionProjects/NuSMV/NuSMV-2.6.0/NuSMV/contrib/remove_string.pl"
     )
 endif()
 
