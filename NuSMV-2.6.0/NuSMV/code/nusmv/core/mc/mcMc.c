@@ -61,6 +61,8 @@
 /* ADDED Header file for printing accepting states */
 #include "nusmv/core/mc/mcAc.h"
 
+#include "nusmv/core/mc/printinfo.h"
+
 /*---------------------------------------------------------------------------*/
 /* Variable declarations                                                     */
 /*---------------------------------------------------------------------------*/
@@ -81,9 +83,11 @@ Mc_fair_si_iteration(BddFsm_ptr fsm,
 
 
 //try to dump sth
-//FILE *fp;
-//int dres=0;
-//int bdd_tmp_size=0;
+FILE *fp;
+int dres=0;
+int bdd_tmp_size=0;
+
+char* str_p=NULL;
 /*---------------------------------------------------------------------------*/
 /* Definition of exported functions                                          */
 /*---------------------------------------------------------------------------*/
@@ -120,7 +124,37 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
   enc = BddFsm_get_bdd_encoding(fsm);
   dd = BddEnc_get_dd_manager(enc);
 
-  /* Evaluates the spec */
+
+
+
+
+  fp = fopen("/home/william/test.dot", "w");
+
+  if(fp == NULL)
+    printf("fail to open the file! \n");
+  else
+  {
+    printf("The file is open! \n");
+//    fprintf (fp, "Name\n");
+//    bdd_tmp_size=bdd_size(dd,spec);
+//    dres=dd_dump_dot(dd,bdd_tmp_size,&spec,NULL,NULL,fp);
+    bst_print_dot(spec,fp);
+    if(dres==1)
+    {
+      printf("success!\n");
+    }
+    else
+    {
+      printf("failed!");
+    }
+    fclose(fp);
+  }
+
+
+
+
+
+    /* Evaluates the spec */
   s0 = eval_ctl_spec(fsm, enc, spec, Nil);
 
 

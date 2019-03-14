@@ -87,7 +87,7 @@ enum NUSMV_CORE_SYMBOLS {
   NUSMV_EXPR_SYMBOL_FIRST,
 
   FAILURE,
-  CONTEXT,
+  CONTEXT,//131
   EU,
   AU,
   EBU,
@@ -117,7 +117,7 @@ enum NUSMV_CORE_SYMBOLS {
   CTLWFF,
   COMPWFF,
   ATOM, /* 160 */
-  NUMBER,
+  NUMBER,//161
   COMMA,
   IMPLIES,
   IFF,
@@ -125,10 +125,10 @@ enum NUSMV_CORE_SYMBOLS {
   XOR,
   XNOR,
   AND,
-  NOT,
+  NOT,//169
   EX,
   AX,
-  EF,
+  EF,//172
   AF,
   EG,
   AG,
@@ -147,7 +147,7 @@ enum NUSMV_CORE_SYMBOLS {
   OP_NOTPRECNOT,
   OP_HISTORICAL,
   OP_ONCE,
-  EQUAL,
+  EQUAL,//191
   NOTEQUAL,
   LT,
   GT,

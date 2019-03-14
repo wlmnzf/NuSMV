@@ -11,4 +11,4 @@ set(SRCS
 
 nusmv_add_pkg_lib(${SRCS})
 
-nusmv_add_pkg_headers(mc.h mcAc.h)
+nusmv_add_pkg_headers(mc.h mcAc.h printinfo.h)

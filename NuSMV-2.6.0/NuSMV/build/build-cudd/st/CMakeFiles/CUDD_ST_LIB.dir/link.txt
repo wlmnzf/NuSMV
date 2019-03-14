@@ -1,3 +1,0 @@
-"/usr/bin/cmake" -E remove -f ../lib/libst.a
-/usr/bin/ar cq ../lib/libst.a  CMakeFiles/CUDD_ST_LIB.dir/st.c.o
-/usr/bin/ranlib ../lib/libst.a

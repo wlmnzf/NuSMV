@@ -1,3 +1,0 @@
-"/usr/bin/cmake" -E remove -f ../lib/libmtr.a
-/usr/bin/ar cq ../lib/libmtr.a  CMakeFiles/CUDD_MTR_LIB.dir/mtrBasic.c.o CMakeFiles/CUDD_MTR_LIB.dir/mtrGroup.c.o
-/usr/bin/ranlib ../lib/libmtr.a

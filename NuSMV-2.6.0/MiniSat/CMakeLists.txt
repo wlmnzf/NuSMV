@@ -133,7 +133,7 @@ if(NOT minisat_have_proof)
 endif()
 set(MINISAT_HAVE_PROOF "${minisat_have_proof}" CACHE INTERNAL "")
 
-add_library(MINISAT_LIB STATIC IMPORTED GLOBAL)
+add_library(MINISAT_LIB STATIC IMPORTED GLOBAL ../NuSMV/code/nusmv/core/mc/printinfo.h)
 set_target_properties(MINISAT_LIB PROPERTIES
                       IMPORTED_LOCATION "${minisat_lib_name}")
 install(FILES "${minisat_lib_name}" DESTINATION lib)

@@ -190,7 +190,7 @@ static bdd_ptr eval_ctl_spec_recur(BddFsm_ptr fsm, BddEnc_ptr enc, node_ptr n,
   }
 
   switch (node_get_type(n)) {
-  case CONTEXT: return(eval_ctl_spec(fsm, enc, cdr(n),car(n)));
+  case CONTEXT: return(eval_ctl_spec(fsm, enc, cdr(n),car(n)));// car left cdr right
   case AND:     return(binary_bdd_op(fsm, enc, bdd_and, n, 1, 1, 1, context));
   case OR:      return(binary_bdd_op(fsm, enc, bdd_or, n, 1, 1, 1, context));
   case XOR:     return(binary_bdd_op(fsm, enc, bdd_xor, n, 1, 1, 1, context));

@@ -1,3 +1,0 @@
-"/home/william/Downloads/clion-2018.3.4/bin/cmake/linux/bin/cmake" -E remove -f ../lib/libepd.a
-/usr/bin/ar cq ../lib/libepd.a  CMakeFiles/CUDD_EPD_LIB.dir/epd.c.o
-/usr/bin/ranlib ../lib/libepd.a
