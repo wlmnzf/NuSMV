@@ -9,7 +9,7 @@ include(NuSMVUtils)
 
 #-----------------------------------------------------------------------------
 # User options
-#-----------------------------------------------------------------------------
+#----------------------------------------------       -------------------------------
 option(ENABLE_SHELL "Builds the interactive mode of nusmv" ON)
 option(ENABLE_LTL2SMV "Builds the executable ltl2smv" ON)
 option(ENABLE_PSLPARSER "Builds the executable pslparser to parse PSL properties" OFF)
