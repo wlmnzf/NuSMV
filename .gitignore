@@ -1,3 +1,4 @@
 NuSMV-2.6.0/NuSMV/build/
 NuSMV-2.6.0/NuSMV/cmake-build-debug/
 .idea/
+*pyc
