@@ -251,82 +251,149 @@ void bst_print_dot_null(char* last_str, int nullcount, FILE* stream)
     fprintf(stream, "    %s -> null%d;\n", last_str, nullcount);
 }
 
-void bst_print_dot_aux(struct node* node, FILE* stream,char* last_str)
+void bst_print_dot_aux(struct node* node, FILE* stream,char* last_str,int index)
 {
     static int nullcount = 0;
     char *inttype=NULL;
     char strtype[1000];
     char buffer[100];
     char total_str[2000];
+    node_val *nv;
     strcpy(total_str,"");
 
-    //
-    if ((node->left).nodetype||(node->left).strtype)
-    {
-        if((node->left).nodetype)
-        {
-            if(node->type=NUMBER)
-            {
-                inttype=myitoa(  ((node_val)(node->left)).inttype,buffer,10);
 
-            } else
+    switch(node->type) {
+
+//        case CONTEXT:
+//        case AND:
+//        case OR:
+//        case XOR:
+//        case XNOR:
+//        case NOT:
+//        case IMPLIES:
+//        case IFF:
+//        case EX:
+//        case AX:
+//        case EF:
+//        case AG:
+//        case AF:
+//        case EG:
+//        case EU:
+//        case AU:
+//        case EBU:
+//        case ABU:
+//        case EBF:
+//        case ABF:
+//        case EBG:
+//        case ABG:
+            //
+
+
+        case ATOM:
+//             nv=(node_val*)(node->left.nodetype);
+             strcpy(strtype,node->left.strtype->text);
+             fprintf(stream, "   \"%d : %s\" -> \"%d : %s\";\n",index, last_str,index+1, strtype);
+            break;
+        case NUMBER:
+//            nv=(node_val*)(node->left.nodetype);
+            inttype=myitoa(node->left.inttype,buffer,10);
+            fprintf(stream, "   \"%d : %s\" -> \"%d : %s\";\n", index,last_str,index+1, inttype);
+            break;
+
+//
+//        case FAILURE:
+//        case TRUEEXP:
+//        case FALSEEXP:
+//        case SELF:
+//        case BOOLEAN:
+//        case DOT:
+//        case ARRAY:
+//        case NUMBER_UNSIGNED_WORD:
+//        case UWCONST:
+//        case SWCONST:
+//        case NUMBER_SIGNED_WORD:
+//        case NUMBER_FRAC:
+//        case NUMBER_REAL:
+//        case NUMBER_EXP:
+//        case BIT:break;
+
+        default:
+            if(node->type<100||node->type>256)  break;
+
+            if ((node->left).nodetype)
             {
+//                    if(node->type=NUMBER)
+//                    {
+//                        inttype=myitoa(  ((node_val)(node->left)).inttype,buffer,10);
+//
+//                    } else
+//                    {
                 inttype=search_str((node->left).nodetype->type);
+//                    }
+
+//                    strcpy(total_str,inttype);
+//                }
+//                else
+////        if((node->left).strtype&&(node->left).strtype->text&&strcmp((node->left).strtype->text,"")!=0)
+//                {
+////            if(strcmp(total_str,"")!=0)
+////            {
+////                strcat(total_str,":");
+////            }
+//                    strcpy(strtype,(node->left).strtype->text);
+//                    strcat(total_str,strtype);
+//                }
+
+                fprintf(stream, "   \"%d : %s\" -> \"%d : %s\";\n",index, last_str, index+1,inttype);
+                bst_print_dot_aux((node->left).nodetype, stream,inttype,index+1);
             }
-
-            strcpy(total_str,inttype);
-        }
-        else
-//        if((node->left).strtype&&(node->left).strtype->text&&strcmp((node->left).strtype->text,"")!=0)
-        {
-//            if(strcmp(total_str,"")!=0)
-//            {
-//                strcat(total_str,":");
-//            }
-            strcpy(strtype,(node->left).strtype->text);
-            strcat(total_str,strtype);
-        }
-
-        fprintf(stream, "    %s -> %s;\n", last_str, total_str);
-        bst_print_dot_aux((node->left).nodetype, stream,total_str);
-    }
-    else
-        bst_print_dot_null(total_str, nullcount++, stream);
+//            else
+//                bst_print_dot_null(inttype, nullcount++, stream);
 
 
 
 
-    if ( ((node->right).nodetype&&(node->right).nodetype->type>0 )||( (node->right).strtype&&(node->right).strtype->text&&strcmp((node->right).strtype->text,"")!=0) )
-    {
-        if((node->right).nodetype&&(node->right).nodetype->type>0)
-        {
-            if(node->type=161)
+            if ( (node->right).nodetype )
             {
-                inttype=myitoa(  ((node_val)(node->left)).inttype,buffer,10);
-
-            } else
-            {
+//                if((node->right).nodetype&&(node->right).nodetype->type>0)
+//                {
+//                    if(node->type=161)
+//                    {
+//                        inttype=myitoa(  ((node_val)(node->left)).inttype,buffer,10);
+//
+//                    } else
+//                    {
                 inttype=search_str((node->right).nodetype->type);
-            }
+//                    }
+//
+//                    strcpy(total_str,inttype);
+//                }
+//                else
+////        if((node->right).strtype&&(node->right).strtype->text&& ((node->right).strtype->text,"")  )
+//                {
+//                    if(strcmp(total_str,"")!=0)
+//                    {
+//                        strcat(total_str,":");
+//                    }
+//                    strcpy(strtype,(node->right).strtype->text);
+//                    strcat(total_str,strtype);
+//                }
 
-            strcpy(total_str,inttype);
-        }
-        else
-//        if((node->right).strtype&&(node->right).strtype->text&& ((node->right).strtype->text,"")  )
-        {
-            if(strcmp(total_str,"")!=0)
-            {
-                strcat(total_str,":");
+                fprintf(stream, "   \"%d : %s\" -> \"%d : %s\";\n", index,last_str,index+1, inttype);
+                bst_print_dot_aux((node->right).nodetype, stream,inttype,index+1);
             }
-            strcpy(strtype,(node->right).strtype->text);
-            strcat(total_str,strtype);
-        }
+//            else
+//                bst_print_dot_null(inttype, nullcount++, stream);
 
-        fprintf(stream, "    %s -> %s;\n", last_str, total_str);
-        bst_print_dot_aux((node->right).nodetype, stream,total_str);
+
+            break;
+
+
+            break;
     }
-    else
-        bst_print_dot_null(total_str, nullcount++, stream);
+
+
+
 
 
 //    if (node->right)
@@ -340,16 +407,17 @@ void bst_print_dot_aux(struct node* node, FILE* stream,char* last_str)
 
 void bst_print_dot(struct node * tree, FILE* stream)
 {
+    int index=0;
     fprintf(stream, "digraph Tree {\n");
     fprintf(stream, "    node [fontname=\"Arial\"];\n");
 
     if (!tree)
         fprintf(stream, "\n");
     else if (!(tree->left).nodetype && !(tree->right).nodetype && !(tree->left).strtype && !(tree->right).strtype) {
-        fprintf(stream, "Root:%s;\n", search_str(tree->type));
+        fprintf(stream, "%d : Root:%s;\n",index, search_str(tree->type));
     }
     else {
-        bst_print_dot_aux(tree, stream,search_str(tree->type));
+        bst_print_dot_aux(tree, stream,search_str(tree->type),index);
     }
 
     fprintf(stream, "}\n");

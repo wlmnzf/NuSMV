@@ -332,7 +332,7 @@ static bdd_ptr binary_bdd_op(BddFsm_ptr fsm, BddEnc_ptr enc, BDDPFDBB op,
     ERROR_MGR(NuSMVEnv_get_value(env, ENV_ERROR_MANAGER));
 
   bdd_ptr tmp_1, tmp_2, tmp_3, res;
-  bdd_ptr arg1 = eval_ctl_spec(fsm, enc, car(n), context);
+  bdd_ptr arg1 = eval_ctl_spec(fsm, enc, car(n), context);// car left cdr right
   bdd_ptr arg2 = eval_ctl_spec(fsm, enc, cdr(n), context);
 
   DDMgr_ptr dd = BddEnc_get_dd_manager(enc);

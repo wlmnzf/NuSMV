@@ -82,18 +82,21 @@ Mc_fair_si_iteration(BddFsm_ptr fsm,
 
 
 
-//try to dump sth
-FILE *fp;
-int dres=0;
-int bdd_tmp_size=0;
 
-char* str_p=NULL;
 /*---------------------------------------------------------------------------*/
 /* Definition of exported functions                                          */
 /*---------------------------------------------------------------------------*/
 
 void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
 {
+    //try to dump sth
+    FILE *fp;
+    int dres=0;
+    int bdd_tmp_size=0;
+
+    char* str_p=NULL;
+
+
   const StreamMgr_ptr streams =
     STREAM_MGR(NuSMVEnv_get_value(env, ENV_STREAM_MANAGER));
   const ErrorMgr_ptr errmgr =
@@ -128,7 +131,7 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
 
 
 
-  fp = fopen("/home/william/test.dot", "w");
+  fp = fopen("/home/william/spec.dot", "w");
 
   if(fp == NULL)
     printf("fail to open the file! \n");

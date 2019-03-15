@@ -118,6 +118,9 @@ static void bdd_fsm_check_init_state_invar_emptiness(const BddFsm_ptr self);
 static void bdd_fsm_check_fairness_emptiness(const BddFsm_ptr self);
 
 
+
+
+
 /* ---------------------------------------------------------------------- */
 /*                          public methods                                */
 /* ---------------------------------------------------------------------- */
@@ -963,12 +966,19 @@ BddStates BddFsm_states_inputs_to_states(const BddFsm_ptr self,
   return states;
 }
 
-
+//SSSSSSSSSSSSS获得FSM
 boolean BddFsm_expand_cached_reachable_states(BddFsm_ptr self,
                                               int k,
                                               int max_seconds)
 {
-  bdd_ptr reachable_states_bdd;
+
+
+//    FILE *fp;
+//    int dres=0;
+//    int bdd_tmp_size=0;
+
+
+    bdd_ptr reachable_states_bdd;
   bdd_ptr from_lower_bound;   /* the frontier */
   bdd_ptr invars;
   node_ptr reachable_states_layers;
@@ -1043,7 +1053,7 @@ boolean BddFsm_expand_cached_reachable_states(BddFsm_ptr self,
     /* No cache, we hawe to start from scratch */
 
     /* Initial state = inits && invars */
-    reachable_states_bdd = BddFsm_get_init(self);
+    reachable_states_bdd = BddFsm_get_init(self);  //这里用于求得FSM
     invars = BddFsm_get_state_constraints(self);
     bdd_and_accumulate(self->dd, &reachable_states_bdd, invars);
     bdd_free(self->dd, invars);
@@ -1184,6 +1194,30 @@ boolean BddFsm_expand_cached_reachable_states(BddFsm_ptr self,
     Logger_ptr logger = LOGGER(NuSMVEnv_get_value(env, ENV_LOGGER));
     Logger_log(logger, "done\n");
   }
+
+
+
+//  fp = fopen("/home/william/fsm.dot", "w");
+//
+//  if(fp == NULL)
+//    printf("fail to open the file! \n");
+//  else
+//  {
+//    printf("The file is open! \n");
+////    fprintf (fp, "Name\n");
+//    bdd_tmp_size=bdd_size(self->dd,reachable_states_bdd);
+//    dres=dd_dump_dot(self->dd,bdd_tmp_size,&reachable_states_bdd,NULL,NULL,fp);
+//    if(dres==1)
+//    {
+//      printf("success!\n");
+//    }
+//    else
+//    {
+//      printf("failed!");
+//    }
+//    fclose(fp);
+//  }
+
 
   /* True if fixpoint, false otherwise */
   return result;
