@@ -1486,7 +1486,7 @@ static int UsageIwls95PrintOption(const NuSMVEnv_ptr env)
   </dl>
 
 */
-
+//goooooooooo
 int CommandGo(NuSMVEnv_ptr env, int argc, char** argv)
 {
   int c;

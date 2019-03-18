@@ -422,3 +422,9 @@ void bst_print_dot(struct node * tree, FILE* stream)
 
     fprintf(stream, "}\n");
 }
+
+//go可以代替底下的4条
+//read_model
+//flatten_hierarchy
+//encode_variabes
+//build_model

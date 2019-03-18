@@ -120,6 +120,7 @@ static int CommandReadModel(NuSMVEnv_ptr env, int argc, char** argv)
     goto read_model_free;
   }
 
+  //smv文件的三种来源，第一种来源是read_model -i,第二种是来自批量模式
   /* NULL input files are allowed in batch mode (that calls this
      command) when reading from stdin */
   if (NULL == i_file &&
