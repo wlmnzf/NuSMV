@@ -12,4 +12,4 @@ next(state):=case
 		esac;
 
 
-SPEC ! EF(state=7)|EF (state=6)
+SPEC !EF(state=7)&!EF (state=6)
