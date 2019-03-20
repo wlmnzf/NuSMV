@@ -109,7 +109,7 @@ bdd_ptr eval_ctl_spec(BddFsm_ptr fsm, BddEnc_ptr enc,
 
 
 
-    nusmv_yylineno = temp;
+  nusmv_yylineno = temp;
   return(res);
 }
 
@@ -185,7 +185,7 @@ static bdd_ptr eval_ctl_spec_recur(BddFsm_ptr fsm, BddEnc_ptr enc, node_ptr n,
         ErrorMgr_rpterr(errmgr, "eval_ctl_spec: res = NULL after a call to \"eval\".");
         ErrorMgr_nusmv_exit(errmgr, 1);
       }
-      return res_bdd;
+      return res_bdd;  //EQUAL
     }
   }
 
@@ -280,6 +280,8 @@ static int eval_compute_recur(BddFsm_ptr fsm, BddEnc_ptr enc,
 
   \sa binary_bdd_op, ternary_bdd_op, quaternary_bdd_op
 */
+
+
 static bdd_ptr unary_bdd_op(BddFsm_ptr fsm, BddEnc_ptr enc, BDDPFDB op,
                             node_ptr n, int resflag, int argflag,
                             node_ptr context)
@@ -294,42 +296,13 @@ static bdd_ptr unary_bdd_op(BddFsm_ptr fsm, BddEnc_ptr enc, BDDPFDB op,
 
 
 //    case NOT:     return(unary_bdd_op(fsm, enc, bdd_not, n, 1, 1, context));
-//    case EX:      return(unary_mod_bdd_op(fsm, enc, ex, n,  1,  1, context));
-//    case AX:      return(unary_mod_bdd_op(fsm, enc, ex, n, -1, -1, context));
-//    case EF:      return(unary_mod_bdd_op(fsm, enc, ef, n,  1,  1, context));
-//    case AG:      return(unary_mod_bdd_op(fsm, enc, ef, n, -1, -1, context));
-//    case AF:      return(unary_mod_bdd_op(fsm, enc, eg, n, -1, -1, context));
-//    case EG:      return(unary_mod_bdd_op(fsm, enc, eg, n,  1,  1, context));
 
 
     if(op==bdd_not)
     {
         printf("NOT\n");
     }
-    else if(op==ex&&resflag==1&&argflag==1)
-    {
-        printf("EX\n");
-    }
-    else if(op=ex&&resflag==-1&&argflag==-1)
-    {
-        printf("AX\n");
-    }
-    else if (op==ef&&resflag==1&&argflag==1)
-    {
-        printf("EF\n");
-    }
-    else if(op=ef&&resflag==-1&&argflag==-1)
-    {
-        printf("AG\n");
-    }
-    else if(op=eg&&resflag==-1&&argflag==-1)
-    {
-        printf("AF\n");
-    }
-    else if(op=eg&&resflag==1&&argflag==1)
-    {
-        printf("EG\n");
-    }
+
 
 
   arg = eval_ctl_spec(fsm, enc, car(n), context);
@@ -377,6 +350,7 @@ static bdd_ptr binary_bdd_op(BddFsm_ptr fsm, BddEnc_ptr enc, BDDPFDBB op,
   bdd_ptr tmp_1, tmp_2, tmp_3, res;
   bdd_ptr arg1;// car left cdr right
   bdd_ptr arg2;
+  DDMgr_ptr dd;
 
 
 //    case AND:     return(binary_bdd_op(fsm, enc, bdd_and, n, 1, 1, 1, context));
@@ -397,7 +371,7 @@ static bdd_ptr binary_bdd_op(BddFsm_ptr fsm, BddEnc_ptr enc, BDDPFDBB op,
     {
         printf("OR\n");
     }
-    else if(op=bdd_xor&&resflag==1&&argflag1==1&&argflag2==1)
+    else if(op==bdd_xor&&resflag==1&&argflag1==1&&argflag2==1)
     {
         printf("XOR\n");
     }
@@ -405,19 +379,19 @@ static bdd_ptr binary_bdd_op(BddFsm_ptr fsm, BddEnc_ptr enc, BDDPFDBB op,
     {
         printf("XNOR\n");
     }
-    else if(op=bdd_or&&resflag==1&&argflag1==-1&&argflag2==1)
+    else if(op==bdd_or&&resflag==1&&argflag1==-1&&argflag2==1)
     {
         printf("IMPLIES\n");
     }
-    else if(op=bdd_xor&&resflag==-1&&argflag1==1&&argflag2==1)
+    else if(op==bdd_xor&&resflag==-1&&argflag1==1&&argflag2==1)
     {
         printf("IFF\n");
     }
-    else if(op=eu&&resflag==1&&argflag1==1,argflag2==1)
+    else if(op==eu&&resflag==1&&argflag1==1,argflag2==1)
     {
         printf("EU\n");
     }
-    else if(op=au&&resflag==1&&argflag1==1,argflag2==1)
+    else if(op==au&&resflag==1&&argflag1==1,argflag2==1)
     {
         printf("AU\n");
     }
@@ -426,7 +400,7 @@ static bdd_ptr binary_bdd_op(BddFsm_ptr fsm, BddEnc_ptr enc, BDDPFDBB op,
   arg1 = eval_ctl_spec(fsm, enc, car(n), context);// car left cdr right
   arg2 = eval_ctl_spec(fsm, enc, cdr(n), context);
 
-  DDMgr_ptr dd = BddEnc_get_dd_manager(enc);
+  dd = BddEnc_get_dd_manager(enc);
   ErrorMgr_set_the_node(errmgr, n);
 
   tmp_1 = BddEnc_eval_sign_bdd(enc, arg1, argflag1);
@@ -467,8 +441,39 @@ static bdd_ptr unary_mod_bdd_op(BddFsm_ptr fsm, BddEnc_ptr enc, BDDPFFB op,
   DDMgr_ptr dd;
 
   BDD_FSM_CHECK_INSTANCE(fsm);
+  //    case EX:      return(unary_mod_bdd_op(fsm, enc, ex, n,  1,  1, context));
+//    case AX:      return(unary_mod_bdd_op(fsm, enc, ex, n, -1, -1, context));
+//    case EF:      return(unary_mod_bdd_op(fsm, enc, ef, n,  1,  1, context));
+//    case AG:      return(unary_mod_bdd_op(fsm, enc, ef, n, -1, -1, context));
+//    case AF:      return(unary_mod_bdd_op(fsm, enc, eg, n, -1, -1, context));
+//    case EG:      return(unary_mod_bdd_op(fsm, enc, eg, n,  1,  1, context));
 
-  arg = eval_ctl_spec(fsm, enc, car(n), context);
+    if(op==ex&&resflag==1&&argflag==1)
+    {
+        printf("EX\n");
+    }
+    else if(op==ex&&resflag==-1&&argflag==-1)
+    {
+        printf("AX\n");
+    }
+    else if (op==ef&&resflag==1&&argflag==1)
+    {
+        printf("EF\n");
+    }
+    else if(op==ef&&resflag==-1&&argflag==-1)
+    {
+        printf("AG\n");
+    }
+    else if(op==eg&&resflag==-1&&argflag==-1)
+    {
+        printf("AF\n");
+    }
+    else if(op==eg&&resflag==1&&argflag==1)
+    {
+        printf("EG\n");
+    }
+
+  arg = eval_ctl_spec(fsm, enc, car(n), context);  //EQUAL   // car left cdr right 因为等号不属于CTL的逻辑符号，所以直接返回结果
   dd = BddEnc_get_dd_manager(enc);
   ErrorMgr_set_the_node(errmgr, n);
 
@@ -612,7 +617,7 @@ static bdd_ptr ternary_mod_bdd_op(BddFsm_ptr fsm, BddEnc_ptr enc, BDDPFFBII op,
   DDMgr_ptr dd;
 
   BDD_FSM_CHECK_INSTANCE(fsm);
-  //    case EBF:     return(ternary_mod_bdd_op(fsm, enc, ebf, n, 1, 1, context));
+//    case EBF:     return(ternary_mod_bdd_op(fsm, enc, ebf, n, 1, 1, context));
 //    case ABF:     return(ternary_mod_bdd_op(fsm, enc, ebg, n, -1, -1, context));
 //    case EBG:     return(ternary_mod_bdd_op(fsm, enc, ebg, n, 1, 1, context));
 //    case ABG:     return(ternary_mod_bdd_op(fsm, enc, ebf, n, -1, -1, context));
@@ -625,11 +630,11 @@ static bdd_ptr ternary_mod_bdd_op(BddFsm_ptr fsm, BddEnc_ptr enc, BDDPFFBII op,
     {
         printf("ABF\n");
     }
-    else if(op=ebg&&resflag==1&&argflag==1)
+    else if(op==ebg&&resflag==1&&argflag==1)
     {
         printf("XOR\n");
     }
-    else if(op=ebf&&resflag==-1&&argflag==-1)
+    else if(op==ebf&&resflag==-1&&argflag==-1)
     {
         printf("ABG\n");
     }
