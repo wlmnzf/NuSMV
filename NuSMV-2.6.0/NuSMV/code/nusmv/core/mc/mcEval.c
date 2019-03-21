@@ -478,10 +478,10 @@ static bdd_ptr unary_mod_bdd_op(BddFsm_ptr fsm, BddEnc_ptr enc, BDDPFFB op,
   ErrorMgr_set_the_node(errmgr, n);
 
   /* compute and ref argument of operation according its sign */
-  tmp_1 = BddEnc_eval_sign_bdd(enc, arg, argflag);
+  tmp_1 = BddEnc_eval_sign_bdd(enc, arg, argflag);//if 1 则bdd_ref else bdd_not   这里因为argflag为1所以我么可以发现我们这里tmp_1=arg
 
   /* apply and ref the result of the application of "op" to previous arg. */
-  tmp_2 = op(fsm, tmp_1);
+  tmp_2 = op(fsm, tmp_1);   //op=EF
 
   /* compute and ref the result according to sign of the result */
   res = BddEnc_eval_sign_bdd(enc, tmp_2, resflag);

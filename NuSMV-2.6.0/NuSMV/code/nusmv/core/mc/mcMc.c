@@ -395,7 +395,8 @@ BddStates ex(BddFsm_ptr fsm, BddStates g)
   return(result);
 }
 
-BddStates eu(BddFsm_ptr fsm, BddStates f, BddStates g)
+//f=true,g=tmp_1
+BddStates   eu(BddFsm_ptr fsm, BddStates f, BddStates g)
 {
   BddEnc_ptr enc = BddFsm_get_bdd_encoding(fsm);
   DDMgr_ptr dd = BddEnc_get_dd_manager(enc);
@@ -407,12 +408,14 @@ BddStates eu(BddFsm_ptr fsm, BddStates f, BddStates g)
     ERROR_MGR(NuSMVEnv_get_value(env, ENV_ERROR_MANAGER));
 
   bdd_ptr new, oldY;
-  bdd_ptr Y = bdd_dup(g);
+  bdd_ptr Y = bdd_dup(g);//bdd_ref
   int n = 1;
 
   /* The following simplification may be useful for efficiency since g
      may be unreachable (but they are not fundamental for correctness
      similar simplifications are applied in ex). */
+
+  //优化,是不是这里才是计算fixedpoint啊？好像是获得Fairness规则的部分
 
   {
     bdd_ptr fair_states_bdd = BddFsm_get_fair_states(fsm);
@@ -427,19 +430,22 @@ BddStates eu(BddFsm_ptr fsm, BddStates f, BddStates g)
       bdd_free(dd, reachable_states_bdd);
   }
 
-  if (opt_verbose_level_gt(opts, 1)) {
+//  if (opt_verbose_level_gt(opts, 1)) {
+    if (true) {
     Logger_ptr logger = LOGGER(NuSMVEnv_get_value(env, ENV_LOGGER));
     Logger_nlog(logger, wffprint,
                 "eu: computing fixed point approximations for %N ...\n",
                 ErrorMgr_get_the_node(errmgr));
   }
-
+    //计算fixedpoint了
   oldY = bdd_dup(Y);
-  new = bdd_dup(Y);
+  new = bdd_dup(Y);//这里都是Y
+  //应该是没跑了，这里在计算fixed point，而且应该是least fixed point
   while(bdd_isnot_false(dd, new)) {
     bdd_ptr tmp_1, tmp_2;
 
-    if (opt_verbose_level_gt(opts, 1)) {
+    if (true) {
+//    if (opt_verbose_level_gt(opts, 1)) {
       Logger_ptr logger = LOGGER(NuSMVEnv_get_value(env, ENV_LOGGER));
       double states = BddEnc_count_states_of_bdd(enc, Y);
       int size = bdd_size(dd, Y);
@@ -466,7 +472,7 @@ BddStates eu(BddFsm_ptr fsm, BddStates f, BddStates g)
 
     bdd_free(dd, tmp_1);
   }
-  bdd_free(dd, new);
+  bdd_free(dd, new);//这里看看Logic False是个什么样的吧，new到这里除了循环说明已经是Logic False了
   bdd_free(dd, oldY);
 
   return(Y);
@@ -502,7 +508,7 @@ BddStates ef(BddFsm_ptr fsm, BddStates g)
   DDMgr_ptr dd = BddEnc_get_dd_manager(BddFsm_get_bdd_encoding(fsm));
   bdd_ptr result, one;
 
-  one = bdd_true(dd);
+  one = bdd_true(dd);//获得一个TRUE？
   result = eu(fsm, one, g);
   bdd_free(dd, one);
 
