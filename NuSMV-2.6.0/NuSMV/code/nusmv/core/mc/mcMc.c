@@ -440,7 +440,8 @@ BddStates   eu(BddFsm_ptr fsm, BddStates f, BddStates g)
     //计算fixedpoint了
   oldY = bdd_dup(Y);
   new = bdd_dup(Y);//这里都是Y
-  //应该是没跑了，这里在计算fixed point，而且应该是least fixed point
+  //应该是没跑了，这里在计算fixed point，而且应该是least fixed poin这个循环很重要呢，需要好好研究
+  //model checking中的不同算法
   while(bdd_isnot_false(dd, new)) {
     bdd_ptr tmp_1, tmp_2;
 
