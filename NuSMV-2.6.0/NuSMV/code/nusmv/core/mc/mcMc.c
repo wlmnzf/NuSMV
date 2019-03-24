@@ -397,6 +397,7 @@ BddStates ex(BddFsm_ptr fsm, BddStates g)
 }
 
 //f=true,g=tmp_1
+//Check(E[f U g]) = CheckEU(Check(f); Check(g));
 BddStates   eu(BddFsm_ptr fsm, BddStates f, BddStates g)
 {
   BddEnc_ptr enc = BddFsm_get_bdd_encoding(fsm);
