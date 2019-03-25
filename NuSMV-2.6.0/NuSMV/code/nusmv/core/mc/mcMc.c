@@ -383,7 +383,7 @@ BddStates ex(BddFsm_ptr fsm, BddStates g)
     bdd_free(dd, reachable_states_bdd);
   }
 
-  result = BddFsm_get_backward_image(fsm, tmp);
+  result = BddFsm_get_backward_image(fsm, tmp);//后继？
   bdd_free(dd, tmp);
 
   if (opt_use_reachable_states(opts)) {
@@ -510,7 +510,7 @@ BddStates ef(BddFsm_ptr fsm, BddStates g)
   DDMgr_ptr dd = BddEnc_get_dd_manager(BddFsm_get_bdd_encoding(fsm));
   bdd_ptr result, one;
 
-  one = bdd_true(dd);//获得一个TRUE？
+  one = bdd_true(dd);//获得一个TRUE？是的，ef=eu(true,sub_formula)
   result = eu(fsm, one, g);
   bdd_free(dd, one);
 
