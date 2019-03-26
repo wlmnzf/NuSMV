@@ -1517,13 +1517,17 @@ static node_ptr Extend_trace_with_state_input_pair(BddFsm_ptr fsm,
   inputs = BddFsm_states_to_states_get_inputs(fsm,
                                               starting_state,
                                               next_state);
-  input = BddEnc_pick_one_input(enc, inputs);
+//  input = BddEnc_pick_one_input(enc, inputs);//important
+    printf("IIInputs  NUM:%lf\n",BddEnc_get_minterms_of_bdd(enc, inputs));
+    input = BddEnc_pick_one_input_rand(enc, inputs);//important
 
   //cons  NodeMgr.c NodeMgr_cons----
   //#define cons(mgr, x, y)                         \
   //  NodeMgr_cons(mgr, x, y)
+  //Node ->leftNode=x ->rightNode=y
   res = cons(nodemgr, (node_ptr) bdd_dup(next_state),
              cons(nodemgr, (node_ptr) bdd_dup(input), path));
+
 
 #ifdef EXPLAIN_TRACE_DEBUG
   snprintf(com, size, "%s: (%d)", comment, 2);

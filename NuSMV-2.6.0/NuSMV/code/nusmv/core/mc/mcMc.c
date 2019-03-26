@@ -221,9 +221,9 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
     if (opt_counter_examples(opts)) {
       char* trace_title = NULL;
       char* trace_title_postfix = " Counterexample";
-//        printf("AAAXXXX  NUM:%lf\n",BddEnc_get_minterms_of_bdd(enc, s0));
-      tmp_1 = BddEnc_pick_one_state(enc, s0);
-//        tmp_1 = BddEnc_pick_one_state_rand(enc, s0);
+        printf("AAAXXXX  NUM:%lf\n",BddEnc_get_minterms_of_bdd(enc, s0));
+//      tmp_1 = BddEnc_pick_one_state(enc, s0);
+        tmp_1 = BddEnc_pick_one_state_rand(enc, s0);
       bdd_free(dd, s0);
       s0 = bdd_dup(tmp_1);
       bdd_free(dd, tmp_1);
@@ -236,8 +236,23 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
         exp = cons(nodemgr, (node_ptr) bdd_dup(s0), Nil);
       }
 
-      /* The trace title depends on the property type. For example it
-       is in the form "LTL Counterexample" */
+
+        fp = fopen("/home/william/path.dot", "w");
+
+        if(fp == NULL)
+            printf("fail to open the file! \n");
+        else
+        {
+            printf("The file is open! \n");
+            bst_print_dot(exp,fp);
+
+            fclose(fp);
+        }
+
+
+
+        /* The trace title depends on the property type. For example it
+         is in the form "LTL Counterexample" */
       trace_title = ALLOC(char,
                           strlen(Prop_get_type_as_string(prop)) +
                           strlen(trace_title_postfix) + 1);
