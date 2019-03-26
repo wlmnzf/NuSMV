@@ -1686,10 +1686,13 @@ int n)
 	return(NULL);
     }
 
+    printf("\n\n-------old------%d\n",n);
     for (i = 0; i < n; i++) {
         indices[i] = vars[i]->index;
+        printf("i:%d   index:%d\n",i,indices[i]);
     }
 
+    printf("-------old------\n\n");
     result = Cudd_bddPickOneCubeNR(dd,f,string);
     if (result == 0) {
 	FREE(string);
@@ -1703,17 +1706,21 @@ int n)
       {0, 1, 2}; 0 represents a complemented literal, 1 represents an
       uncomplemented literal, and 2 stands for don't care.
     */
+
+    printf("\n\n-------new------\n");
     for (i = 0; i < n; i++) {
+        printf("i:%d   index:%d\n",i,indices[i]);
       if (string[indices[i]] == 2) {
         /* For dont care we choose false */
         string[indices[i]] = 0;
       }
     }
+    printf("-------new------\n\n");
 
     /* Build result BDD. */
-    old = Cudd_ReadTrue(dd);
+    old = Cudd_ReadTrue(dd);  //true
     cuddRef(old);
-    zero = Cudd_Not(Cudd_ReadTrue(dd));
+    zero = Cudd_Not(Cudd_ReadTrue(dd));//false
 
     for (i = 0; i < n; i++) {
 	if (string[indices[i]] == 0) {

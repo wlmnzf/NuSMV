@@ -54,6 +54,8 @@ Report by E. Clarke, O. Grumberg, K. McMillan and X. Zhao.
 #include "nusmv/core/utils/error.h"
 #include "nusmv/core/utils/utils_io.h" /* for indent_node */
 #include "nusmv/core/compile/symb_table/ResolveSymbol.h"
+
+//#include "nusmv/core/mc/printinfo.h"
 /* Define this to enable trace explain debug */
 /* #define EXPLAIN_TRACE_DEBUG */
 
@@ -124,9 +126,12 @@ node_ptr explain(BddFsm_ptr fsm, BddEnc_ptr enc,
 /*--------------------------------------------------------------------------*/
 /* Definition of internal functions                                         */
 /*--------------------------------------------------------------------------*/
-
+//SSSSSSSSSSSSSSS
 node_ptr ex_explain(BddFsm_ptr fsm, BddEnc_ptr enc, node_ptr path, bdd_ptr f)
 {
+    FILE *fp;
+    int dres=0;
+    int bdd_tmp_size=0;
   bdd_ptr acc, starting_state, image;
   DDMgr_ptr dd_manager = BddEnc_get_dd_manager(enc);
   NuSMVEnv_ptr env = EnvObject_get_environment(ENV_OBJECT(enc));
@@ -138,11 +143,43 @@ node_ptr ex_explain(BddFsm_ptr fsm, BddEnc_ptr enc, node_ptr path, bdd_ptr f)
 
   starting_state = bdd_dup((bdd_ptr) car(path));
   nusmv_assert( BddFsm_is_fair_states(fsm, starting_state) );
-  image = BddFsm_get_forward_image(fsm, starting_state);
+  image = BddFsm_get_forward_image(fsm, starting_state);//EX是preimage
 
-  acc = bdd_dup(f);
+  //f = a1 = eval_ctl_spec(fsm, enc, car(formula_expr), context);
+  acc = bdd_dup(f);   //acc =f 也就是formula_expr的左子树的起点
 
-  if (opt_use_fair_states(opts)) {
+
+
+
+//
+//    fp = fopen("/home/william/ex_f.dot", "w");
+//
+//    if(fp == NULL)
+//        printf("fail to open the file! \n");
+//    else
+//    {
+//        printf("The file is open! \n");
+////    fprintf (fp, "Name\n");
+////    bdd_tmp_size=bdd_size(dd,spec);
+////    dres=dd_dump_dot(dd,bdd_tmp_size,&spec,NULL,NULL,fp);
+//        bst_print_dot(f,fp);
+////        if(dres==1)
+////        {
+////            printf("success!\n");
+////        }
+////        else
+////        {
+////            printf("failed!");
+////        }
+//        fclose(fp);
+//    }
+//
+
+
+
+
+
+    if (opt_use_fair_states(opts)) {
     bdd_ptr fair_states_bdd = BddFsm_get_fair_states(fsm);
     bdd_and_accumulate(dd_manager, &acc, fair_states_bdd);
     bdd_free(dd_manager, fair_states_bdd);
@@ -151,11 +188,12 @@ node_ptr ex_explain(BddFsm_ptr fsm, BddEnc_ptr enc, node_ptr path, bdd_ptr f)
   bdd_and_accumulate(dd_manager, &acc, image);
   bdd_free(dd_manager, image);
 
-  if (bdd_is_false(dd_manager, acc)) {
+  if (bdd_is_false(dd_manager, acc)) {    // 与 一下为空
     /* Failure in search */
     path = Nil;
   }
   else {
+
     path = Extend_trace_with_state_input_pair(fsm, enc, path, starting_state,
                                               acc, "ex_explain: (1).");
   }
@@ -953,7 +991,7 @@ node_ptr ebg_explain(BddFsm_ptr fsm, BddEnc_ptr enc,
 /*--------------------------------------------------------------------------*/
 /* Definition of static functions                                           */
 /*--------------------------------------------------------------------------*/
-
+//SSSSSSSSSSSSSSSSSSSSS
 /*!
   \brief Recursively traverse the formula CTL and rewrite
    it in order to use the base witnesses generator functions.
@@ -1451,6 +1489,7 @@ node_ptr explain_eval(BddFsm_ptr fsm, BddEnc_ptr enc,
 
   
 */
+//SSSSSSSSSSSSSSSS
 static node_ptr Extend_trace_with_state_input_pair(BddFsm_ptr fsm,
                                                    BddEnc_ptr enc,
                                                    node_ptr path,
@@ -1480,6 +1519,9 @@ static node_ptr Extend_trace_with_state_input_pair(BddFsm_ptr fsm,
                                               next_state);
   input = BddEnc_pick_one_input(enc, inputs);
 
+  //cons  NodeMgr.c NodeMgr_cons----
+  //#define cons(mgr, x, y)                         \
+  //  NodeMgr_cons(mgr, x, y)
   res = cons(nodemgr, (node_ptr) bdd_dup(next_state),
              cons(nodemgr, (node_ptr) bdd_dup(input), path));
 

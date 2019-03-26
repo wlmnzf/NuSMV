@@ -221,9 +221,9 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
     if (opt_counter_examples(opts)) {
       char* trace_title = NULL;
       char* trace_title_postfix = " Counterexample";
-        printf("AAAXXXX  NUM:%lf\n",BddEnc_get_minterms_of_bdd(enc, s0));
-//      tmp_1 = BddEnc_pick_one_state(enc, s0);
-        tmp_1 = BddEnc_pick_one_state_rand(enc, s0);
+//        printf("AAAXXXX  NUM:%lf\n",BddEnc_get_minterms_of_bdd(enc, s0));
+      tmp_1 = BddEnc_pick_one_state(enc, s0);
+//        tmp_1 = BddEnc_pick_one_state_rand(enc, s0);
       bdd_free(dd, s0);
       s0 = bdd_dup(tmp_1);
       bdd_free(dd, tmp_1);
