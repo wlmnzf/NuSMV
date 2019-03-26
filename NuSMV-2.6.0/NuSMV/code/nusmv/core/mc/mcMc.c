@@ -95,6 +95,7 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
     int bdd_tmp_size=0;
 
     char* str_p=NULL;
+    node_ptr tmp_explain;
 
 
   const StreamMgr_ptr streams =
@@ -228,8 +229,9 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
       s0 = bdd_dup(tmp_1);
       bdd_free(dd, tmp_1);
 
-      exp = reverse(explain(fsm, enc, cons(nodemgr, (node_ptr) bdd_dup(s0), Nil),
-                            spec, Nil));
+      tmp_explain=explain(fsm, enc, cons(nodemgr, (node_ptr) bdd_dup(s0), Nil),
+                          spec, Nil);
+      exp = reverse(tmp_explain);
 
       if (exp == Nil) {
         /* The counterexample consists of one initial state */

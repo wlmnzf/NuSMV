@@ -269,6 +269,8 @@ node_ptr eu_si_explain(BddFsm_ptr fsm, BddEnc_ptr enc,
   return res;
 } /* eu_si_explain */
 
+
+//SSSSSSSSSSSSSS
 node_ptr eu_explain(BddFsm_ptr fsm, BddEnc_ptr enc,
                     node_ptr path, bdd_ptr f, bdd_ptr g)
 {
@@ -293,7 +295,7 @@ node_ptr eu_explain(BddFsm_ptr fsm, BddEnc_ptr enc,
   _new = bdd_dup((bdd_ptr) car(path));
 
   /* Set of states reached so far along a path satisfying f. */
-  Z = bdd_and(dd_manager, _new, f);
+  Z = bdd_and(dd_manager, _new, f);//f是fomnula的左子树
 
   n = 0; /* Iteration counter */
 
@@ -303,20 +305,23 @@ node_ptr eu_explain(BddFsm_ptr fsm, BddEnc_ptr enc,
 
   /* The final accepting states 'g'. If fair states are to be used,
      then 'g' is intersected with fair states */
-  acc = bdd_dup(g);
+  acc = bdd_dup(g);   //g是fomula的右子树,accept=acc
   if (opt_use_fair_states(opts)) {
     tmp = BddFsm_get_fair_states(fsm);
     bdd_and_accumulate(dd_manager, &acc, tmp);
     bdd_free(dd_manager, tmp);
   }
 
-  if (opt_verbose_level_gt(opts, 1)) {
+//  if (opt_verbose_level_gt(opts, 1)) {
+  if (true) {
     Logger_ptr logger = LOGGER(NuSMVEnv_get_value(env, ENV_LOGGER));
     Logger_nlog(logger, wffprint, "searching (counter)example for %N\n", ErrorMgr_get_the_node(errmgr));
   }
 
   /* --- If initial states intersect with accepted states then no further
      computation is required, just reset the initial states to one minterm */
+  //初始状态与接收状态有交集,则我们可以不再计算,直接重置初始状态到最小项即可
+  //这个mintern跟witness和counterexample到底有什么关系呢
   tmp = bdd_and(dd_manager, _new, acc);
   if (bdd_isnot_false(dd_manager, tmp)) {
     bdd_ptr state = BddEnc_pick_one_state(enc, tmp);
