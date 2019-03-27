@@ -305,7 +305,7 @@ node_ptr eu_explain(BddFsm_ptr fsm, BddEnc_ptr enc,
 
   /* The final accepting states 'g'. If fair states are to be used,
      then 'g' is intersected with fair states */
-  acc = bdd_dup(g);   //g是fomula的右子树,accept=acc
+  acc = bdd_dup(g);   //g是fomula的右子树,accept=acc,就是until的状态
   if (opt_use_fair_states(opts)) {
     tmp = BddFsm_get_fair_states(fsm);
     bdd_and_accumulate(dd_manager, &acc, tmp);
@@ -322,7 +322,7 @@ node_ptr eu_explain(BddFsm_ptr fsm, BddEnc_ptr enc,
      computation is required, just reset the initial states to one minterm */
   //初始状态与接收状态有交集,则我们可以不再计算,直接重置初始状态到最小项即可
   //这个mintern跟witness和counterexample到底有什么关系呢
-  tmp = bdd_and(dd_manager, _new, acc);
+  tmp = bdd_and(dd_manager, _new, acc);//根据所述,这个部分的_new表示为初始状态,这里交一下看是不是有共同的交集,如果有,则可以直接结束了
   if (bdd_isnot_false(dd_manager, tmp)) {
     bdd_ptr state = BddEnc_pick_one_state(enc, tmp);
     bdd_free(dd_manager, tmp);
@@ -335,20 +335,21 @@ node_ptr eu_explain(BddFsm_ptr fsm, BddEnc_ptr enc,
   bdd_free(dd_manager, tmp);
 
   /* --- accepting states were not reached => restrict frontier to f */
-  bdd_free(dd_manager, _new);
-  _new = bdd_dup(Z);
+  bdd_free(dd_manager, _new);//EU,p holds until q
+  _new = bdd_dup(Z);//Z是将_new与formula的左子树f与一下,交集
 
   /* -- if frontier is empty => return Nil */
   if (bdd_is_false(dd_manager, _new)) {
     witness_path = Nil; /* 'Nil' will be returned */
-    goto free_local_bdds_and_return;
+    goto free_local_bdds_and_return;     //交集为空
   }
 
   /* -- the main loop => continue working until frontier is empty or
      intersects with accepting states */
   while (true) {
 
-    if (opt_verbose_level_gt(opts, 1)) {
+//    if (opt_verbose_level_gt(opts, 1)) {
+      if (true) {
       Logger_ptr logger = LOGGER(NuSMVEnv_get_value(env, ENV_LOGGER));
       Logger_log(logger, "eu_explain: iteration %d: states = %g, " \
               "BDD nodes = %d\n", n++, BddEnc_count_states_of_bdd(enc, Z),
@@ -357,7 +358,7 @@ node_ptr eu_explain(BddFsm_ptr fsm, BddEnc_ptr enc,
 
     /* -- generate forward image */
     tmp = _new;
-    _new = BddFsm_get_forward_image(fsm, _new);
+    _new = BddFsm_get_forward_image(fsm, _new);//获得后继,其实就是image
     bdd_free(dd_manager, tmp);
 
     /* --- If the image intersects with accepting states then it is

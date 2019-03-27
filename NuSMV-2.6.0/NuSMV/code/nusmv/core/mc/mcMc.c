@@ -401,7 +401,7 @@ BddStates ex(BddFsm_ptr fsm, BddStates g)
     bdd_free(dd, reachable_states_bdd);
   }
 
-  result = BddFsm_get_backward_image(fsm, tmp);//后继？
+  result = BddFsm_get_backward_image(fsm, tmp);//后继？其实应该是前驱,就是preimage
   bdd_free(dd, tmp);
 
   if (opt_use_reachable_states(opts)) {
