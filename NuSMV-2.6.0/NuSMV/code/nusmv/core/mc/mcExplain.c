@@ -362,11 +362,14 @@ node_ptr eu_explain(BddFsm_ptr fsm, BddEnc_ptr enc,
     bdd_free(dd_manager, tmp);
 
     /* --- If the image intersects with accepting states then it is
-       time to restrict new path to minterms and return. */
-    tmp = bdd_and(dd_manager, _new, acc);
-    if (bdd_isnot_false(dd_manager, tmp)) {
-      bdd_ptr state = BddEnc_pick_one_state(enc, tmp);
-      bdd_free(dd_manager, tmp);
+       time to restrict new path to minterms and return. */ //如果image与可接受状态相交,然后show time,是时候限制新的路径到最小项然后返回
+    tmp = bdd_and(dd_manager, _new, acc);//在我们的案例中tmp先是false然后是true
+    if (bdd_isnot_false(dd_manager, tmp)) {//可交,好像就是已经到达了终点
+//      bdd_ptr state = BddEnc_pick_one_state(enc, tmp);
+
+        bdd_ptr state = BddEnc_pick_one_state_rand(enc, tmp);
+        printf("EU Explain  NUM:%lf\n",BddEnc_get_minterms_of_bdd(enc, tmp));
+        bdd_free(dd_manager, tmp);
 
       witness_path =
         Extend_trace_with_states_inputs_pair(fsm, enc, witness_path,
@@ -383,12 +386,12 @@ node_ptr eu_explain(BddFsm_ptr fsm, BddEnc_ptr enc,
 
     /* -- since accepting states were not reached => restrict the states
        to f and update all reached states and frontier */
-    bdd_and_accumulate(dd_manager, &_new, f);
+    bdd_and_accumulate(dd_manager, &_new, f);   //_new=_new && f,这里的_new是上面获得的后继
 
-    tmp = bdd_not(dd_manager, Z);
+    tmp = bdd_not(dd_manager, Z);//tmp=非Z
 
-    bdd_or_accumulate(dd_manager, &Z, _new);
-    bdd_and_accumulate(dd_manager, &_new, tmp);
+    bdd_or_accumulate(dd_manager, &Z, _new);//Z=Z or _new
+    bdd_and_accumulate(dd_manager, &_new, tmp);//_new=_new &tmp
 
     bdd_free(dd_manager, tmp);
 
@@ -1555,6 +1558,12 @@ static node_ptr Extend_trace_with_state_input_pair(BddFsm_ptr fsm,
 
   
 */
+
+//witness_path =
+//Extend_trace_with_states_inputs_pair(fsm, enc, witness_path,
+//                                     (bdd_ptr) car(witness_path),
+//                                     _new, "eu_explain: (1).");
+
 static node_ptr Extend_trace_with_states_inputs_pair(BddFsm_ptr fsm,
                                                      BddEnc_ptr enc,
                                                      node_ptr path,

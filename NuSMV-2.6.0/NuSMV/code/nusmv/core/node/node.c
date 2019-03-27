@@ -339,6 +339,8 @@ node_ptr append_ns(NodeMgr_ptr nodemgr, node_ptr x, node_ptr y)
   return(cons(nodemgr, car(x), append_ns(nodemgr, cdr(x), y)));
 }
 
+
+//以右子树为链,将他们整个反转
 node_ptr reverse(node_ptr x)
 {
   node_ptr y=Nil;
