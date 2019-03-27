@@ -127,9 +127,9 @@ Mc_fill_trace_from_bdd_state_input_list(const BddEnc_ptr bdd_enc,
   NodeList_ptr sf_vars;
   NodeList_ptr i_vars;
 
-#if MC_MODEL_DEBUG
+//#if MC_MODEL_DEBUG
   int i = 1; /* for debugging only */
-#endif
+//#endif
 
   nusmv_assert(Nil != path);
 
