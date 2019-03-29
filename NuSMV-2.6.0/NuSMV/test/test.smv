@@ -15,3 +15,4 @@ next(state):=case
 
 
 SPEC  !EF (state=6)
+SPEC  !EF (state=3)
