@@ -100,7 +100,7 @@ int TracePlugin_action(const TracePlugin_ptr self, const Trace_ptr trace,
     trace_plugin_prepare_action(self, trace, opt);
 
     CATCH(errmgr) {
-      res = self->action(self);//trace_explainer_action
+      res = self->action(self);//TraceExplainer.c => trace_explainer_action
     }
     FAIL(errmgr) { res = -1; }
 

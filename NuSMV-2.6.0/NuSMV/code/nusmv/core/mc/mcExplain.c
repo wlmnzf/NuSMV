@@ -1504,7 +1504,7 @@ static node_ptr Extend_trace_with_state_input_pair(BddFsm_ptr fsm,
                                                    node_ptr path,
                                                    bdd_ptr starting_state,
                                                    bdd_ptr next_states,
-                                                   const char * comment)
+                                                   const char * comment) 
 {
   const NuSMVEnv_ptr env = EnvObject_get_environment(ENV_OBJECT(enc));
   const NodeMgr_ptr nodemgr =
@@ -1590,6 +1590,7 @@ static node_ptr Extend_trace_with_states_inputs_pair(BddFsm_ptr fsm,
   inputs = BddFsm_states_to_states_get_inputs(fsm, starting_states,
                                               next_states);
 
+  //左子树为当前的值,右子树为接下来的路径.树是倒过来的,即子节点是上一个节点,当前节点属于下一个节点.他们从下到上分别按照上一个状态,输入,当前状态进行排列
   res = cons(nodemgr, (node_ptr) bdd_dup(next_states),
              cons(nodemgr, (node_ptr) bdd_dup(inputs), path));
 

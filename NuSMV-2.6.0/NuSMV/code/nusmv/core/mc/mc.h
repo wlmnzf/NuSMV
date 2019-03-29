@@ -45,6 +45,9 @@
 #include "nusmv/core/trace/Trace.h"
 #include "nusmv/core/opt/opt.h"
 
+
+
+
 /*!
   \brief Options for top level function of check_invar command
 
@@ -512,4 +515,10 @@ int Mc_check_invar(NuSMVEnv_ptr env,
 */
 node_ptr make_AG_counterexample(BddFsm_ptr, BddStates);
 
+
+
+MasterPrinter_ptr global_wffprint;
+StreamMgr_ptr global_streams;
 #endif /* __NUSMV_CORE_MC_MC_H__ */
+
+

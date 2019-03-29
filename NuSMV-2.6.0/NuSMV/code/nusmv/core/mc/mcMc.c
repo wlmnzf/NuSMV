@@ -71,6 +71,11 @@
 /* Static function prototypes                                                */
 /*---------------------------------------------------------------------------*/
 
+
+//extern MasterPrinter_ptr global_wffprint;
+//extern StreamMgr_ptr global_streams;
+StreamMgr_ptr global_streams;
+
 static BddStatesInputs
 Mc_get_fair_si_subset(BddFsm_ptr fsm,
                       BddStatesInputs si);
@@ -96,6 +101,8 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
 
     char* str_p=NULL;
     node_ptr tmp_explain;
+
+
 
 
   const StreamMgr_ptr streams =
@@ -252,6 +259,7 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
         }
 
 
+        global_streams=streams;
 
         /* The trace title depends on the property type. For example it
          is in the form "LTL Counterexample" */
@@ -281,6 +289,7 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
 
       StreamMgr_print_output(streams, 
               "-- as demonstrated by the following execution sequence\n");
+
 
       TraceMgr_register_trace(TRACE_MGR(NuSMVEnv_get_value(env, ENV_TRACE_MGR)), trace);
       TraceMgr_execute_plugin(TRACE_MGR(NuSMVEnv_get_value(env, ENV_TRACE_MGR)), TRACE_OPT(NULL),
@@ -419,7 +428,10 @@ BddStates   eu(BddFsm_ptr fsm, BddStates f, BddStates g)
 {
   BddEnc_ptr enc = BddFsm_get_bdd_encoding(fsm);
   DDMgr_ptr dd = BddEnc_get_dd_manager(enc);
-  NuSMVEnv_ptr env = EnvObject_get_environment(ENV_OBJECT(dd));
+  MasterPrinter_ptr global_wffprint;
+
+
+    NuSMVEnv_ptr env = EnvObject_get_environment(ENV_OBJECT(dd));
   const OptsHandler_ptr opts =
     OPTS_HANDLER(NuSMVEnv_get_value(env, ENV_OPTS_HANDLER));
   const MasterPrinter_ptr wffprint = MASTER_PRINTER(NuSMVEnv_get_value(env, ENV_WFF_PRINTER));
@@ -449,6 +461,7 @@ BddStates   eu(BddFsm_ptr fsm, BddStates f, BddStates g)
       bdd_free(dd, reachable_states_bdd);
   }
 
+    global_wffprint=wffprint;
 //  if (opt_verbose_level_gt(opts, 1)) {
     if (true) {
     Logger_ptr logger = LOGGER(NuSMVEnv_get_value(env, ENV_LOGGER));

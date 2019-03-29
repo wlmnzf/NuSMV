@@ -46,6 +46,8 @@
 #include "nusmv/core/trace/Trace.h"
 #include "nusmv/core/parser/symbols.h"
 #include "nusmv/core/utils/WordNumberMgr.h"
+//#include "nusmv/core/mc/printinfo.h"
+
 /*---------------------------------------------------------------------------*/
 /* Constant declarations                                                     */
 /*---------------------------------------------------------------------------*/
@@ -55,7 +57,14 @@
 
   \todo Missing description
 */
+
+
+extern StreamMgr_ptr global_streams;
+extern MasterPrinter_ptr global_wffprint;
+
+
 #define MC_MODEL_DEBUG 0
+
 
 /*---------------------------------------------------------------------------*/
 /* Type declarations                                                         */
@@ -122,14 +131,22 @@ Mc_fill_trace_from_bdd_state_input_list(const BddEnc_ptr bdd_enc,
                                         Trace_ptr trace,
                                         node_ptr path)
 {
+
+
   TraceIter step;
 
   NodeList_ptr sf_vars;
   NodeList_ptr i_vars;
+  StreamMgr_ptr streams;
 
-//#if MC_MODEL_DEBUG
+
+
+
+#if MC_MODEL_DEBUG
+
   int i = 1; /* for debugging only */
-//#endif
+  streams=global_streams;
+#endif
 
   nusmv_assert(Nil != path);
 
@@ -141,7 +158,8 @@ Mc_fill_trace_from_bdd_state_input_list(const BddEnc_ptr bdd_enc,
   step = Trace_first_iter(trace);
 
 #if MC_MODEL_DEBUG
-  StreamMgr_print_error(streams,  "\n--- MC Model extraction ---\n");
+  if(streams)
+    StreamMgr_print_error(streams,  "\n--- MC Model extraction ---\n");
 #endif
 
   /* first node of path is initial state */
@@ -173,7 +191,8 @@ Mc_fill_trace_from_bdd_state_input_list(const BddEnc_ptr bdd_enc,
   }
 
 #if MC_MODEL_DEBUG
-  StreamMgr_print_error(streams,  "\n\n");
+  if(streams)
+    StreamMgr_print_error(streams,  "\n\n");
 #endif
 
   return trace;
@@ -352,15 +371,27 @@ static void mc_model_trace_step_print(const Trace_ptr trace,
 {
   TraceStepIter iter;
   node_ptr symb, val;
+//  extern StreamMgr_ptr global_streams;
+//  extern MasterPrinter_ptr global_wffprint;
 
-  if (0 < count) { StreamMgr_print_error(streams,  "%s%d:", prefix, count); }
-  else { StreamMgr_print_error(streams,  "%s:", prefix); }
+#if MC_MODEL_DEBUG
+    StreamMgr_ptr streams;
+    MasterPrinter_ptr wffprint = global_wffprint;
+    streams=global_streams;
+#endif
 
-  TRACE_STEP_FOREACH(trace, step, it_type, iter, symb, val) {
-    StreamMgr_nprint_error(streams, wffprint, "%N", symb); StreamMgr_print_error(streams,  "=");
-    StreamMgr_nprint_error(streams, wffprint, "%N", val); StreamMgr_print_error(streams,  " ");
-  }
+    if(streams) {
+        if (0 < count) { StreamMgr_print_error(streams, "%s%d:", prefix, count); }
+        else { StreamMgr_print_error(streams, "%s:", prefix); }
 
-  StreamMgr_print_error(streams,  "\n");
+        TRACE_STEP_FOREACH(trace, step, it_type, iter, symb, val) {
+            StreamMgr_nprint_error(streams, wffprint, "%N", symb);
+            StreamMgr_print_error(streams, "=");
+            StreamMgr_nprint_error(streams, wffprint, "%N", val);
+            StreamMgr_print_error(streams, " ");
+        }
+
+        StreamMgr_print_error(streams, "\n");
+    }
 } /* mc_model_trace_step_print */
 #endif

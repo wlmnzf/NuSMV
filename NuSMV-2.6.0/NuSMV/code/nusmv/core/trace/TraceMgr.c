@@ -578,7 +578,7 @@ array_t* TraceMgr_get_registered_layers(const TraceMgr_ptr self)
   return self->layer_names;
 }
 
-int TraceMgr_execute_plugin(const TraceMgr_ptr self,
+int  TraceMgr_execute_plugin(const TraceMgr_ptr self,
 			    const TraceOpt_ptr opt,
 			    int plugin_index,
 			    int trace_index)

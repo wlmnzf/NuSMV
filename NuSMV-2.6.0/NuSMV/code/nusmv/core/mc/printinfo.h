@@ -5,7 +5,10 @@
 #ifndef NUSMV_PRINTINFO_H
 #define NUSMV_PRINTINFO_H
 
-#endif //NUSMV_PRINTINFO_H
+
+
+
+
 
 
 char *myitoa(int num,char *str,int radix)
@@ -368,3 +371,5 @@ void bst_print_dot(struct node * tree, FILE* stream)
 //flatten_hierarchy
 //encode_variabes
 //build_model
+
+#endif //NUSMV_PRINTINFO_H
