@@ -335,7 +335,7 @@ bdd_ptr BddTrans_get_forward_image_state(const BddTrans_ptr self, bdd_ptr s)
 {
   BDD_TRANS_CHECK_INSTANCE(self);
   return self->trans_compute_image(self->transition, s,
-                                   TRANS_IMAGE_FORWARD_STATE);
+                                   TRANS_IMAGE_FORWARD_STATE);//BddTrans.c  bdd_trans_clusterlist_compute_image
 
 }
 
