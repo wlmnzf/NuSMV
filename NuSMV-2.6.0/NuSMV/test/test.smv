@@ -6,7 +6,7 @@ ASSIGN
 init(state):=1;
 next(state):=case
 			 state=1:{2,3};
-             state=2:{4,5};
+             state=2:{4,5,6};
              state=3:6;
              state=4:6;
              state=5:6;
@@ -15,4 +15,3 @@ next(state):=case
 
 
 SPEC  !EF (state=6)
-SPEC  !EF (state=3)

@@ -602,7 +602,7 @@ BddFsm_get_constrained_forward_image(const BddFsm_ptr self,
   bdd_and_accumulate(self->dd, &constr_trans, constraints);
   /* ------------------------------------------------------------ */
 
-  tmp = BddTrans_get_forward_image_state(self->trans, constr_trans);
+  tmp = BddTrans_get_forward_image_state(self->trans, constr_trans);//BddTrans.c  bdd_trans_clusterlist_compute_image
   bdd_free(self->dd, constr_trans);
 
   res = BDD_STATES( BddEnc_next_state_var_to_state_var(self->enc, tmp) );

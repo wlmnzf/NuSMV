@@ -127,6 +127,7 @@ void TracePlugin_print_assignment(const TracePlugin_ptr self, node_ptr symb,
 {
   TRACE_PLUGIN_CHECK_INSTANCE(self);
   self->print_assignment(self, symb, val);
+//  trace_plugin_print_assignment
 }
 
 char* TracePlugin_get_desc(const TracePlugin_ptr self)

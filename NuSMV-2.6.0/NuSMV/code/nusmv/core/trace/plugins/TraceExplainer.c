@@ -232,7 +232,7 @@ int trace_explainer_action(const TracePlugin_ptr self)
         insert_assoc(changed_states, symb, val);
       }
 
-      TracePlugin_print_assignment(self, symb, val);
+      TracePlugin_print_assignment(self, symb, val);//这里就是打印出来的状态
     } /* foreach SF_SYMBOLS */
 
     ++ i; step = TraceIter_get_next(step);

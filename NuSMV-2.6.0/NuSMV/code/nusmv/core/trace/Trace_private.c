@@ -392,7 +392,10 @@ trace_create (SymbTable_ptr st, const char* desc,
   TRACE_CHECK_INSTANCE(res);
 
   trace_init (res);
-
+//看出来了，这里很重要
+//都不用你说的
+//你代码写那么深奥你爸爸知道吗？
+//头疼
   /* Very important! Call after trace_init */
   env_object_init(ENV_OBJECT(res), env);
 
@@ -796,6 +799,10 @@ boolean
 trace_step_iter_fetch (TraceStepIter* iter,
                        node_ptr* symb_name, node_ptr* symb_value)
 {
+    //这个地方是用来去每一步去取的一个具体的值
+    //年轻人这里还挺重要的
+    //哈哈哈哈哈哈
+    //调试的时候多注意点
   node_ptr* base;
   node_ptr value = Nil;
 
@@ -1017,7 +1024,8 @@ trace_set_language(Trace_ptr self, SymbTable_ptr st,
     NODE_LIST_FOREACH(symbols, iter) {
       node_ptr sym  = NodeList_get_elem_at(symbols, iter);
 
-      if (opt_verbose_level_ge(opts, 6)) {
+//      if (opt_verbose_level_ge(opts, 6)) {
+      if (true) {
         Logger_ptr logger = LOGGER(NuSMVEnv_get_value(env, ENV_LOGGER));
         const MasterPrinter_ptr wffprint =
           MASTER_PRINTER(NuSMVEnv_get_value(env, ENV_WFF_PRINTER));
@@ -1071,7 +1079,8 @@ trace_set_language(Trace_ptr self, SymbTable_ptr st,
       /* here the symbol can become part of the trace language */
       CHECK(!NodeList_belongs_to(self->symbols, sym));
 
-      if (opt_verbose_level_ge(opts, 6)) {
+//      if (opt_verbose_level_ge(opts, 6)) {
+if (true) {
         Logger_ptr logger = LOGGER(NuSMVEnv_get_value(env, ENV_LOGGER));
         const MasterPrinter_ptr wffprint =
           MASTER_PRINTER(NuSMVEnv_get_value(env, ENV_WFF_PRINTER));
