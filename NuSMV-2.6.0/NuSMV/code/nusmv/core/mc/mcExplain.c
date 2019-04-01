@@ -405,6 +405,7 @@ node_ptr eu_explain(BddFsm_ptr fsm, BddEnc_ptr enc,
     bdd_free(dd_manager, tmp);
 
     /* -- if new frontier is empty => free everything and return Nil */
+    //the frontier set  边境集合,不是很明白这个东西是用来干什么的
     if (bdd_is_false(dd_manager, _new)) {
       while (witness_path != path) {
         node_ptr tmp_node = witness_path;
