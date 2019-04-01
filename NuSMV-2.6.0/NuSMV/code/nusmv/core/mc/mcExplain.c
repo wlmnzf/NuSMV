@@ -1013,6 +1013,8 @@ node_ptr ebg_explain(BddFsm_ptr fsm, BddEnc_ptr enc,
 
   \sa explain
 */
+
+//TODO:需要了解一下除了那三个基本操作EX EU EG需要修改成为能够寻找多个分支路径之外,别的一些需要修改吗?
 static node_ptr explain_recur(BddFsm_ptr fsm, BddEnc_ptr enc, node_ptr path,
                               node_ptr formula_expr, node_ptr context)
 {
