@@ -271,6 +271,9 @@ node_ptr eu_si_explain(BddFsm_ptr fsm, BddEnc_ptr enc,
 
 
 //SSSSSSSSSSSSSS
+//TODO: Problems1,我们的限界要怎么跟路径长度进行对比,是新写一个function去计算呢,还是在path的结构体里面新增一个数据项
+//TODO: Problems2,限界改怎么通过参数传到这个地方
+//TODO: Problems3,
 node_ptr eu_explain(BddFsm_ptr fsm, BddEnc_ptr enc,
                     node_ptr path, bdd_ptr f, bdd_ptr g)
 {
@@ -321,7 +324,9 @@ node_ptr eu_explain(BddFsm_ptr fsm, BddEnc_ptr enc,
   /* --- If initial states intersect with accepted states then no further
      computation is required, just reset the initial states to one minterm */
   //初始状态与接收状态有交集,则我们可以不再计算,直接重置初始状态到最小项即可
-  //这个mintern跟witness和counterexample到底有什么关系呢
+  //这个mintern跟witness和counterexample到底有什么关系呢//
+  //TODO: goto的部分进行改造,如果初始状态就跟结束状态存在交集,我们需要继续向前搜索一定的界限
+  //TODO:界限需要事先进行设定,用户可以自行通过参数进行指定
   tmp = bdd_and(dd_manager, _new, acc);//根据所述,这个部分的_new表示为初始状态,这里交一下看是不是有共同的交集,如果有,则可以直接结束了
   if (bdd_isnot_false(dd_manager, tmp)) {
     bdd_ptr state = BddEnc_pick_one_state(enc, tmp);
@@ -338,6 +343,7 @@ node_ptr eu_explain(BddFsm_ptr fsm, BddEnc_ptr enc,
   bdd_free(dd_manager, _new);//EU,p holds until q
   _new = bdd_dup(Z);//Z是将_new与formula的左子树f与一下,交集
 
+  //TODO:初始状态跟formula的左子树相交,不是很理解这一部分,暂时不去考虑它的各种情况
   /* -- if frontier is empty => return Nil */
   if (bdd_is_false(dd_manager, _new)) {
     witness_path = Nil; /* 'Nil' will be returned */
@@ -363,6 +369,7 @@ node_ptr eu_explain(BddFsm_ptr fsm, BddEnc_ptr enc,
 
     /* --- If the image intersects with accepting states then it is
        time to restrict new path to minterms and return. */ //如果image与可接受状态相交,然后show time,是时候限制新的路径到最小项然后返回
+    //TODO:此处不断地求解状态节点的后继,直到求得的状态与我们的可接受状态相交非空,这里接直接return了,我们在这里不能将其return,而需要继续执行下去计算一下别的一些界限
     tmp = bdd_and(dd_manager, _new, acc);//在我们的案例中tmp先是false然后是true
     if (bdd_isnot_false(dd_manager, tmp)) {//可交,好像就是已经到达了终点
 //      bdd_ptr state = BddEnc_pick_one_state(enc, tmp);
@@ -382,6 +389,8 @@ node_ptr eu_explain(BddFsm_ptr fsm, BddEnc_ptr enc,
 
       goto free_local_bdds_and_return; /* 'witness_path' will be returned */
     }
+
+
     bdd_free(dd_manager, tmp);
 
     /* -- since accepting states were not reached => restrict the states
@@ -1106,7 +1115,7 @@ static node_ptr explain_recur(BddFsm_ptr fsm, BddEnc_ptr enc, node_ptr path,
     new_path = eu_explain(fsm, enc, path, a1, a2);
     bdd_free(dd_manager, a2);
     bdd_free(dd_manager, a1);
-    if (new_path != Nil) {  //这里是不是因为它EU的f里面还有别的嵌套的formula
+    if (new_path != Nil) {  //这里是不是因为它EU的f里面还有别的嵌套的formula,所以要继续进行迭代计算
       node_ptr q = explain_recur(fsm, enc, new_path, cdr(formula_expr),
                                  context);
 
