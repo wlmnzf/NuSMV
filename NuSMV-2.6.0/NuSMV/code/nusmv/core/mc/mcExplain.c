@@ -1106,7 +1106,7 @@ static node_ptr explain_recur(BddFsm_ptr fsm, BddEnc_ptr enc, node_ptr path,
     new_path = eu_explain(fsm, enc, path, a1, a2);
     bdd_free(dd_manager, a2);
     bdd_free(dd_manager, a1);
-    if (new_path != Nil) {
+    if (new_path != Nil) {  //这里是不是因为它EU的f里面还有别的嵌套的formula
       node_ptr q = explain_recur(fsm, enc, new_path, cdr(formula_expr),
                                  context);
 
