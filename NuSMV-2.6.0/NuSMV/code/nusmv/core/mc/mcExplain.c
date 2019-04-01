@@ -1070,9 +1070,9 @@ static node_ptr explain_recur(BddFsm_ptr fsm, BddEnc_ptr enc, node_ptr path,
                                    Nil),
                          context);
 
-  case EF:
+  case EF:   // EF f= E[True U f]
     return explain_recur(fsm, enc, path,
-                         find_node(nodemgr, EU, ExprMgr_true(exprs), car(formula_expr)),
+                         find_node(nodemgr, EU, ExprMgr_true(exprs), car(formula_expr)),   //NodeMgr_find_node   in NodeMgr.c   //将EF的fomula,转换为EU的formula.
                          context);
 
   case AG:
