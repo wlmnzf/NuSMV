@@ -273,7 +273,7 @@ node_ptr eu_si_explain(BddFsm_ptr fsm, BddEnc_ptr enc,
 //SSSSSSSSSSSSSS
 //TODO: Problems1,我们的限界要怎么跟路径长度进行对比,是新写一个function去计算呢,还是在path的结构体里面新增一个数据项
 //TODO: Problems2,限界改怎么通过参数传到这个地方
-//TODO: Problems3,
+//TODO: Problems3,如何将多出来的path,复制一份继续搜寻下来
 node_ptr eu_explain(BddFsm_ptr fsm, BddEnc_ptr enc,
                     node_ptr path, bdd_ptr f, bdd_ptr g)
 {
@@ -291,6 +291,8 @@ node_ptr eu_explain(BddFsm_ptr fsm, BddEnc_ptr enc,
   bdd_ptr tmp, _new, Z, acc;
   int n;
   node_ptr witness_path;
+
+  int flag=0;
 
   if (path == Nil) return Nil;
 
@@ -326,7 +328,7 @@ node_ptr eu_explain(BddFsm_ptr fsm, BddEnc_ptr enc,
   //初始状态与接收状态有交集,则我们可以不再计算,直接重置初始状态到最小项即可
   //这个mintern跟witness和counterexample到底有什么关系呢//
   //TODO: goto的部分进行改造,如果初始状态就跟结束状态存在交集,我们需要继续向前搜索一定的界限
-  //TODO:界限需要事先进行设定,用户可以自行通过参数进行指定
+  //TODO: 界限需要事先进行设定,用户可以自行通过参数进行指定
   tmp = bdd_and(dd_manager, _new, acc);//根据所述,这个部分的_new表示为初始状态,这里交一下看是不是有共同的交集,如果有,则可以直接结束了
   if (bdd_isnot_false(dd_manager, tmp)) {
     bdd_ptr state = BddEnc_pick_one_state(enc, tmp);
@@ -335,7 +337,8 @@ node_ptr eu_explain(BddFsm_ptr fsm, BddEnc_ptr enc,
     bdd_free(dd_manager, (bdd_ptr) car(path));
     node_bdd_setcar(path, NODE_PTR(state));
     /* 'path' will be returned */
-    goto free_local_bdds_and_return;
+
+        goto free_local_bdds_and_return;
   }
   bdd_free(dd_manager, tmp);
 
@@ -372,22 +375,26 @@ node_ptr eu_explain(BddFsm_ptr fsm, BddEnc_ptr enc,
     //TODO:此处不断地求解状态节点的后继,直到求得的状态与我们的可接受状态相交非空,这里接直接return了,我们在这里不能将其return,而需要继续执行下去计算一下别的一些界限
     tmp = bdd_and(dd_manager, _new, acc);//在我们的案例中tmp先是false然后是true
     if (bdd_isnot_false(dd_manager, tmp)) {//可交,好像就是已经到达了终点
+        flag++;
+        if(flag>=17) {
 //      bdd_ptr state = BddEnc_pick_one_state(enc, tmp);
 
-        bdd_ptr state = BddEnc_pick_one_state_rand(enc, tmp);
-        printf("EU Explain  NUM:%lf\n",BddEnc_get_minterms_of_bdd(enc, tmp));
-        bdd_free(dd_manager, tmp);
+            bdd_ptr state = BddEnc_pick_one_state_rand(enc, tmp);
+            printf("EU Explain  NUM:%lf\n", BddEnc_get_minterms_of_bdd(enc, tmp));
+            bdd_free(dd_manager, tmp);
 
-      witness_path =
-        Extend_trace_with_states_inputs_pair(fsm, enc, witness_path,
-                                             (bdd_ptr) car(witness_path),
-                                             state,
-                                             "eu_explain: (1).");
-      bdd_free(dd_manager, state);
-      mc_eu_explain_restrict_state_input_to_minterms(fsm, enc,
-                                                     witness_path, path);
+            witness_path =
+                    Extend_trace_with_states_inputs_pair(fsm, enc, witness_path,
+                                                         (bdd_ptr) car(witness_path),
+                                                         state,
+                                                         "eu_explain: (1).");
+            bdd_free(dd_manager, state);
+            mc_eu_explain_restrict_state_input_to_minterms(fsm, enc,
+                                                           witness_path, path);
 
-      goto free_local_bdds_and_return; /* 'witness_path' will be returned */
+            goto free_local_bdds_and_return; /* 'witness_path' will be returned */
+        }
+//        else continue;
     }
 
 

@@ -12,6 +12,7 @@ next(state):=case
              ctrl=0&state=3:{4,5};
              ctrl=0&state=4:{6};
              ctrl=0&state=5:{4};
+             ctrl=0&state=6:1;
              ctrl=1:6;
 			TRUE : state;
 		esac;
