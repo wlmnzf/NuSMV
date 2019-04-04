@@ -172,9 +172,9 @@ ASSIGN
     esac;
 
 SPEC
-  AG EF (p0.readable)
+ ! AG EF (p0.readable)
 SPEC
-  AG EF (p0.writable)
+ ! AG EF (p0.writable)
 SPEC
-  AG !(p0.writable & p1.writable)
+ ! AG !(p0.writable & p1.writable)
 

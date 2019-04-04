@@ -1,0 +1,18 @@
+digraph {
+s1 [label="bit0.carry_out=TRUE\nbit0.value=TRUE\nbit1.carry_out=TRUE\nbit1.value=TRUE\nbit2.carry_out=TRUE\nbit2.value=TRUE"];
+s2 [label="bit0.carry_out=TRUE\nbit0.value=TRUE\nbit1.carry_out=FALSE\nbit1.value=FALSE\nbit2.carry_out=FALSE\nbit2.value=TRUE"];
+s3 [label="bit0.carry_out=FALSE\nbit0.value=FALSE\nbit1.carry_out=FALSE\nbit1.value=TRUE\nbit2.carry_out=FALSE\nbit2.value=TRUE"];
+s4 [label="bit0.carry_out=TRUE\nbit0.value=TRUE\nbit1.carry_out=TRUE\nbit1.value=TRUE\nbit2.carry_out=FALSE\nbit2.value=FALSE"];
+s5 [label="bit0.carry_out=TRUE\nbit0.value=TRUE\nbit1.carry_out=FALSE\nbit1.value=FALSE\nbit2.carry_out=FALSE\nbit2.value=FALSE"];
+s6 [label="bit0.carry_out=FALSE\nbit0.value=FALSE\nbit1.carry_out=FALSE\nbit1.value=FALSE\nbit2.carry_out=FALSE\nbit2.value=TRUE"];
+s7 [label="bit0.carry_out=FALSE\nbit0.value=FALSE\nbit1.carry_out=FALSE\nbit1.value=TRUE\nbit2.carry_out=FALSE\nbit2.value=FALSE"];
+s8 [label="bit0.carry_out=FALSE\nbit0.value=FALSE\nbit1.carry_out=FALSE\nbit1.value=FALSE\nbit2.carry_out=FALSE\nbit2.value=FALSE",penwidth=5];
+s7->s4 ;
+s8->s5 ;
+s2->s3 ;
+s4->s6 ;
+s6->s2 ;
+s3->s1 ;
+s1->s8 ;
+s5->s7 ;
+}

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<counterexample specification="AG !bit2.carry_out">
+   <node id="0">
+      <state>
+         <value variable="bit0.carry_out">FALSE</value>
+         <value variable="bit0.value">FALSE</value>
+         <value variable="bit1.carry_out">FALSE</value>
+         <value variable="bit1.value">FALSE</value>
+         <value variable="bit2.carry_out">FALSE</value>
+         <value variable="bit2.value">FALSE</value>
+      </state>
+      <existential specification="EF !(!bit2.carry_out)" explained="true">
+         <node id="1">
+            <state>
+               <value variable="bit0.carry_out">FALSE</value>
+               <value variable="bit0.value">FALSE</value>
+               <value variable="bit1.carry_out">FALSE</value>
+               <value variable="bit1.value">FALSE</value>
+               <value variable="bit2.carry_out">FALSE</value>
+               <value variable="bit2.value">FALSE</value>
+            </state>
+         </node>
+         <input>
+         </input>
+         <combinatorial>
+         </combinatorial>
+         <node id="2">
+            <state>
+               <value variable="bit0.carry_out">TRUE</value>
+               <value variable="bit0.value">TRUE</value>
+               <value variable="bit1.carry_out">FALSE</value>
+               <value variable="bit1.value">FALSE</value>
+               <value variable="bit2.carry_out">FALSE</value>
+               <value variable="bit2.value">FALSE</value>
+            </state>
+         </node>
+         <input>
+         </input>
+         <combinatorial>
+         </combinatorial>
+         <node id="3">
+            <state>
+               <value variable="bit0.carry_out">FALSE</value>
+               <value variable="bit0.value">FALSE</value>
+               <value variable="bit1.carry_out">FALSE</value>
+               <value variable="bit1.value">TRUE</value>
+               <value variable="bit2.carry_out">FALSE</value>
+               <value variable="bit2.value">FALSE</value>
+            </state>
+         </node>
+         <input>
+         </input>
+         <combinatorial>
+         </combinatorial>
+         <node id="4">
+            <state>
+               <value variable="bit0.carry_out">TRUE</value>
+               <value variable="bit0.value">TRUE</value>
+               <value variable="bit1.carry_out">TRUE</value>
+               <value variable="bit1.value">TRUE</value>
+               <value variable="bit2.carry_out">FALSE</value>
+               <value variable="bit2.value">FALSE</value>
+            </state>
+         </node>
+         <input>
+         </input>
+         <combinatorial>
+         </combinatorial>
+         <node id="5">
+            <state>
+               <value variable="bit0.carry_out">FALSE</value>
+               <value variable="bit0.value">FALSE</value>
+               <value variable="bit1.carry_out">FALSE</value>
+               <value variable="bit1.value">FALSE</value>
+               <value variable="bit2.carry_out">FALSE</value>
+               <value variable="bit2.value">TRUE</value>
+            </state>
+         </node>
+         <input>
+         </input>
+         <combinatorial>
+         </combinatorial>
+         <node id="6">
+            <state>
+               <value variable="bit0.carry_out">TRUE</value>
+               <value variable="bit0.value">TRUE</value>
+               <value variable="bit1.carry_out">FALSE</value>
+               <value variable="bit1.value">FALSE</value>
+               <value variable="bit2.carry_out">FALSE</value>
+               <value variable="bit2.value">TRUE</value>
+            </state>
+         </node>
+         <input>
+         </input>
+         <combinatorial>
+         </combinatorial>
+         <node id="7">
+            <state>
+               <value variable="bit0.carry_out">FALSE</value>
+               <value variable="bit0.value">FALSE</value>
+               <value variable="bit1.carry_out">FALSE</value>
+               <value variable="bit1.value">TRUE</value>
+               <value variable="bit2.carry_out">FALSE</value>
+               <value variable="bit2.value">TRUE</value>
+            </state>
+         </node>
+         <input>
+         </input>
+         <combinatorial>
+         </combinatorial>
+         <node id="8">
+            <state>
+               <value variable="bit0.carry_out">TRUE</value>
+               <value variable="bit0.value">TRUE</value>
+               <value variable="bit1.carry_out">TRUE</value>
+               <value variable="bit1.value">TRUE</value>
+               <value variable="bit2.carry_out">TRUE</value>
+               <value variable="bit2.value">TRUE</value>
+            </state>
+            <atomic specification="bit2.carry_out" />
+         </node>
+      </existential>
+   </node>
+</counterexample>
+
