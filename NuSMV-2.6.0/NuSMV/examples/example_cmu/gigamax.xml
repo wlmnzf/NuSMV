@@ -50,109 +50,108 @@
       <universal specification="AG (EF p0.readable)" />
    </node>
 </counterexample>
-
 <?xml version="1.0" encoding="UTF-8"?>
 <counterexample specification="!(AG (EF p0.writable))">
-   <node id="0">
-      <state>
-         <value variable="REPLY-STALL">FALSE</value>
-         <value variable="REPLY-WAITING">FALSE</value>
-         <value variable="REPLY-OWNED">FALSE</value>
-         <value variable="CMD">read-shared</value>
-         <value variable="p0.abort">FALSE</value>
-         <value variable="p0.reply-waiting">FALSE</value>
-         <value variable="p0.master">FALSE</value>
-         <value variable="p0.cmd">read-shared</value>
-         <value variable="p0.waiting">FALSE</value>
-         <value variable="p0.reply-stall">FALSE</value>
-         <value variable="p0.writable">FALSE</value>
-         <value variable="p0.readable">FALSE</value>
-         <value variable="p0.reply-owned">FALSE</value>
-         <value variable="p0.state">invalid</value>
-         <value variable="p0.snoop">invalid</value>
-         <value variable="p1.abort">FALSE</value>
-         <value variable="p1.reply-waiting">FALSE</value>
-         <value variable="p1.master">FALSE</value>
-         <value variable="p1.cmd">read-shared</value>
-         <value variable="p1.waiting">FALSE</value>
-         <value variable="p1.reply-stall">FALSE</value>
-         <value variable="p1.writable">FALSE</value>
-         <value variable="p1.readable">FALSE</value>
-         <value variable="p1.reply-owned">FALSE</value>
-         <value variable="p1.state">invalid</value>
-         <value variable="p1.snoop">invalid</value>
-         <value variable="p2.abort">FALSE</value>
-         <value variable="p2.reply-waiting">FALSE</value>
-         <value variable="p2.master">FALSE</value>
-         <value variable="p2.cmd">read-shared</value>
-         <value variable="p2.waiting">FALSE</value>
-         <value variable="p2.reply-stall">FALSE</value>
-         <value variable="p2.writable">FALSE</value>
-         <value variable="p2.readable">FALSE</value>
-         <value variable="p2.reply-owned">FALSE</value>
-         <value variable="p2.state">invalid</value>
-         <value variable="p2.snoop">invalid</value>
-         <value variable="m.abort">FALSE</value>
-         <value variable="m.reply-waiting">FALSE</value>
-         <value variable="m.reply-owned">FALSE</value>
-         <value variable="m.master">FALSE</value>
-         <value variable="m.cmd">read-shared</value>
-         <value variable="m.busy">FALSE</value>
-         <value variable="m.reply-stall">FALSE</value>
-      </state>
-      <universal specification="AG (EF p0.writable)" />
-   </node>
+<node id="0">
+   <state>
+      <value variable="REPLY-STALL">FALSE</value>
+      <value variable="REPLY-WAITING">FALSE</value>
+      <value variable="REPLY-OWNED">FALSE</value>
+      <value variable="CMD">read-shared</value>
+      <value variable="p0.abort">FALSE</value>
+      <value variable="p0.reply-waiting">FALSE</value>
+      <value variable="p0.master">FALSE</value>
+      <value variable="p0.cmd">read-shared</value>
+      <value variable="p0.waiting">FALSE</value>
+      <value variable="p0.reply-stall">FALSE</value>
+      <value variable="p0.writable">FALSE</value>
+      <value variable="p0.readable">FALSE</value>
+      <value variable="p0.reply-owned">FALSE</value>
+      <value variable="p0.state">invalid</value>
+      <value variable="p0.snoop">invalid</value>
+      <value variable="p1.abort">FALSE</value>
+      <value variable="p1.reply-waiting">FALSE</value>
+      <value variable="p1.master">FALSE</value>
+      <value variable="p1.cmd">read-shared</value>
+      <value variable="p1.waiting">FALSE</value>
+      <value variable="p1.reply-stall">FALSE</value>
+      <value variable="p1.writable">FALSE</value>
+      <value variable="p1.readable">FALSE</value>
+      <value variable="p1.reply-owned">FALSE</value>
+      <value variable="p1.state">invalid</value>
+      <value variable="p1.snoop">invalid</value>
+      <value variable="p2.abort">FALSE</value>
+      <value variable="p2.reply-waiting">FALSE</value>
+      <value variable="p2.master">FALSE</value>
+      <value variable="p2.cmd">read-shared</value>
+      <value variable="p2.waiting">FALSE</value>
+      <value variable="p2.reply-stall">FALSE</value>
+      <value variable="p2.writable">FALSE</value>
+      <value variable="p2.readable">FALSE</value>
+      <value variable="p2.reply-owned">FALSE</value>
+      <value variable="p2.state">invalid</value>
+      <value variable="p2.snoop">invalid</value>
+      <value variable="m.abort">FALSE</value>
+      <value variable="m.reply-waiting">FALSE</value>
+      <value variable="m.reply-owned">FALSE</value>
+      <value variable="m.master">FALSE</value>
+      <value variable="m.cmd">read-shared</value>
+      <value variable="m.busy">FALSE</value>
+      <value variable="m.reply-stall">FALSE</value>
+   </state>
+   <universal specification="AG (EF p0.writable)" />
+</node>
 </counterexample>
-
 <?xml version="1.0" encoding="UTF-8"?>
 <counterexample specification="!(AG !(p0.writable &amp; p1.writable))">
-   <node id="0">
-      <state>
-         <value variable="REPLY-STALL">FALSE</value>
-         <value variable="REPLY-WAITING">FALSE</value>
-         <value variable="REPLY-OWNED">FALSE</value>
-         <value variable="CMD">read-shared</value>
-         <value variable="p0.abort">FALSE</value>
-         <value variable="p0.reply-waiting">FALSE</value>
-         <value variable="p0.master">FALSE</value>
-         <value variable="p0.cmd">read-shared</value>
-         <value variable="p0.waiting">FALSE</value>
-         <value variable="p0.reply-stall">FALSE</value>
-         <value variable="p0.writable">FALSE</value>
-         <value variable="p0.readable">FALSE</value>
-         <value variable="p0.reply-owned">FALSE</value>
-         <value variable="p0.state">invalid</value>
-         <value variable="p0.snoop">invalid</value>
-         <value variable="p1.abort">FALSE</value>
-         <value variable="p1.reply-waiting">FALSE</value>
-         <value variable="p1.master">FALSE</value>
-         <value variable="p1.cmd">read-shared</value>
-         <value variable="p1.waiting">FALSE</value>
-         <value variable="p1.reply-stall">FALSE</value>
-         <value variable="p1.writable">FALSE</value>
-         <value variable="p1.readable">FALSE</value>
-         <value variable="p1.reply-owned">FALSE</value>
-         <value variable="p1.state">invalid</value>
-         <value variable="p1.snoop">invalid</value>
-         <value variable="p2.abort">FALSE</value>
-         <value variable="p2.reply-waiting">FALSE</value>
-         <value variable="p2.master">FALSE</value>
-         <value variable="p2.cmd">read-shared</value>
-         <value variable="p2.waiting">FALSE</value>
-         <value variable="p2.reply-stall">FALSE</value>
-         <value variable="p2.writable">FALSE</value>
-         <value variable="p2.readable">FALSE</value>
-         <value variable="p2.reply-owned">FALSE</value>
-         <value variable="p2.state">invalid</value>
-         <value variable="p2.snoop">invalid</value>
-         <value variable="m.abort">FALSE</value>
-         <value variable="m.reply-waiting">FALSE</value>
-         <value variable="m.reply-owned">FALSE</value>
-         <value variable="m.master">FALSE</value>
-         <value variable="m.cmd">read-shared</value>
-         <value variable="m.busy">FALSE</value>
-         <value variable="m.reply-stall">FALSE</value>
-      </state>
-      <universal specification="AG !(p0.writable &amp; p1.writable)" />
-   </node>
+<node id="0">
+   <state>
+      <value variable="REPLY-STALL">FALSE</value>
+      <value variable="REPLY-WAITING">FALSE</value>
+      <value variable="REPLY-OWNED">FALSE</value>
+      <value variable="CMD">read-shared</value>
+      <value variable="p0.abort">FALSE</value>
+      <value variable="p0.reply-waiting">FALSE</value>
+      <value variable="p0.master">FALSE</value>
+      <value variable="p0.cmd">read-shared</value>
+      <value variable="p0.waiting">FALSE</value>
+      <value variable="p0.reply-stall">FALSE</value>
+      <value variable="p0.writable">FALSE</value>
+      <value variable="p0.readable">FALSE</value>
+      <value variable="p0.reply-owned">FALSE</value>
+      <value variable="p0.state">invalid</value>
+      <value variable="p0.snoop">invalid</value>
+      <value variable="p1.abort">FALSE</value>
+      <value variable="p1.reply-waiting">FALSE</value>
+      <value variable="p1.master">FALSE</value>
+      <value variable="p1.cmd">read-shared</value>
+      <value variable="p1.waiting">FALSE</value>
+      <value variable="p1.reply-stall">FALSE</value>
+      <value variable="p1.writable">FALSE</value>
+      <value variable="p1.readable">FALSE</value>
+      <value variable="p1.reply-owned">FALSE</value>
+      <value variable="p1.state">invalid</value>
+      <value variable="p1.snoop">invalid</value>
+      <value variable="p2.abort">FALSE</value>
+      <value variable="p2.reply-waiting">FALSE</value>
+      <value variable="p2.master">FALSE</value>
+      <value variable="p2.cmd">read-shared</value>
+      <value variable="p2.waiting">FALSE</value>
+      <value variable="p2.reply-stall">FALSE</value>
+      <value variable="p2.writable">FALSE</value>
+      <value variable="p2.readable">FALSE</value>
+      <value variable="p2.reply-owned">FALSE</value>
+      <value variable="p2.state">invalid</value>
+      <value variable="p2.snoop">invalid</value>
+      <value variable="m.abort">FALSE</value>
+      <value variable="m.reply-waiting">FALSE</value>
+      <value variable="m.reply-owned">FALSE</value>
+      <value variable="m.master">FALSE</value>
+      <value variable="m.cmd">read-shared</value>
+      <value variable="m.busy">FALSE</value>
+      <value variable="m.reply-stall">FALSE</value>
+   </state>
+   <universal specification="AG !(p0.writable &amp; p1.writable)" />
+</node>
 </counterexample>
+
