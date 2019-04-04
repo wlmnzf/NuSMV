@@ -271,6 +271,14 @@ node_ptr eu_si_explain(BddFsm_ptr fsm, BddEnc_ptr enc,
 
 
 //SSSSSSSSSSSSSS
+
+for state, inputs in zip(explanation[::10], explanation[1::2]):
+    if state == explanation[-1]:
+print("-- Loop starts here")
+print(state.get_str_values())
+print(inputs.get_str_values())
+
+
 //TODO: Problems1,我们的限界要怎么跟路径长度进行对比,是新写一个function去计算呢,还是在path的结构体里面新增一个数据项
 //TODO: Problems2,限界改怎么通过参数传到这个地方
 //TODO: Problems3,如何将多出来的path,复制一份继续搜寻下来

@@ -1,0 +1,79 @@
+digraph G {
+
+			graph [
+				rankdir = TD
+			];
+			node [
+                fontname = "Bitstream Vera Sans"
+                fontsize = 8
+                shape = "Mrecord"
+			];
+		
+a3 [label=<<TABLE><TR><TD>value</TD></TR><TR><TD>variable = state</TD></TR><TR><TD>1</TD></TR></TABLE>>];
+a2 -> a3;
+a4 [label=<<TABLE><TR><TD>value</TD></TR><TR><TD>variable = ctrl</TD></TR><TR><TD>0</TD></TR></TABLE>>];
+a2 -> a4;
+a5 [label=<<TABLE><TR><TD>value</TD></TR><TR><TD>variable = time</TD></TR><TR><TD>0</TD></TR></TABLE>>];
+a2 -> a5;
+a2 [label=<<TABLE><TR><TD>state</TD></TR></TABLE>>];
+a1 -> a2;
+a9 [label=<<TABLE><TR><TD>value</TD></TR><TR><TD>variable = state</TD></TR><TR><TD>1</TD></TR></TABLE>>];
+a8 -> a9;
+a10 [label=<<TABLE><TR><TD>value</TD></TR><TR><TD>variable = ctrl</TD></TR><TR><TD>0</TD></TR></TABLE>>];
+a8 -> a10;
+a11 [label=<<TABLE><TR><TD>value</TD></TR><TR><TD>variable = time</TD></TR><TR><TD>0</TD></TR></TABLE>>];
+a8 -> a11;
+a8 [label=<<TABLE><TR><TD>state</TD></TR></TABLE>>];
+a7 -> a8;
+a7 [label=<<TABLE><TR><TD>node</TD></TR><TR><TD>id = 1</TD></TR></TABLE>>];
+a6 -> a7;
+a12 [label=<<TABLE><TR><TD>input</TD></TR></TABLE>>];
+a6 -> a12;
+a13 [label=<<TABLE><TR><TD>combinatorial</TD></TR></TABLE>>];
+a6 -> a13;
+a16 [label=<<TABLE><TR><TD>value</TD></TR><TR><TD>variable = state</TD></TR><TR><TD>2</TD></TR></TABLE>>];
+a15 -> a16;
+a17 [label=<<TABLE><TR><TD>value</TD></TR><TR><TD>variable = ctrl</TD></TR><TR><TD>0</TD></TR></TABLE>>];
+a15 -> a17;
+a18 [label=<<TABLE><TR><TD>value</TD></TR><TR><TD>variable = time</TD></TR><TR><TD>1</TD></TR></TABLE>>];
+a15 -> a18;
+a15 [label=<<TABLE><TR><TD>state</TD></TR></TABLE>>];
+a14 -> a15;
+a14 [label=<<TABLE><TR><TD>node</TD></TR><TR><TD>id = 2</TD></TR></TABLE>>];
+a6 -> a14;
+a19 [label=<<TABLE><TR><TD>input</TD></TR></TABLE>>];
+a6 -> a19;
+a20 [label=<<TABLE><TR><TD>combinatorial</TD></TR></TABLE>>];
+a6 -> a20;
+a23 [label=<<TABLE><TR><TD>value</TD></TR><TR><TD>variable = state</TD></TR><TR><TD>3</TD></TR></TABLE>>];
+a22 -> a23;
+a24 [label=<<TABLE><TR><TD>value</TD></TR><TR><TD>variable = ctrl</TD></TR><TR><TD>0</TD></TR></TABLE>>];
+a22 -> a24;
+a25 [label=<<TABLE><TR><TD>value</TD></TR><TR><TD>variable = time</TD></TR><TR><TD>2</TD></TR></TABLE>>];
+a22 -> a25;
+a22 [label=<<TABLE><TR><TD>state</TD></TR></TABLE>>];
+a21 -> a22;
+a21 [label=<<TABLE><TR><TD>node</TD></TR><TR><TD>id = 3</TD></TR></TABLE>>];
+a6 -> a21;
+a26 [label=<<TABLE><TR><TD>input</TD></TR></TABLE>>];
+a6 -> a26;
+a27 [label=<<TABLE><TR><TD>combinatorial</TD></TR></TABLE>>];
+a6 -> a27;
+a30 [label=<<TABLE><TR><TD>value</TD></TR><TR><TD>variable = state</TD></TR><TR><TD>4</TD></TR></TABLE>>];
+a29 -> a30;
+a31 [label=<<TABLE><TR><TD>value</TD></TR><TR><TD>variable = ctrl</TD></TR><TR><TD>0</TD></TR></TABLE>>];
+a29 -> a31;
+a32 [label=<<TABLE><TR><TD>value</TD></TR><TR><TD>variable = time</TD></TR><TR><TD>3</TD></TR></TABLE>>];
+a29 -> a32;
+a29 [label=<<TABLE><TR><TD>state</TD></TR></TABLE>>];
+a28 -> a29;
+a33 [label=<<TABLE><TR><TD>atomic</TD></TR><TR><TD>specification = state = 4</TD></TR></TABLE>>];
+a28 -> a33;
+a28 [label=<<TABLE><TR><TD>node</TD></TR><TR><TD>id = 4</TD></TR></TABLE>>];
+a6 -> a28;
+a6 [label=<<TABLE><TR><TD>existential</TD></TR><TR><TD>specification = EF (state = 6 | state = 4)<BR/>explained = true</TD></TR></TABLE>>];
+a1 -> a6;
+a1 [label=<<TABLE><TR><TD>node</TD></TR><TR><TD>id = 0</TD></TR></TABLE>>];
+a0 -> a1;
+a0 [label=<<TABLE><TR><TD>counterexample</TD></TR><TR><TD>specification = !(EF (state = 6 | state = 4))</TD></TR></TABLE>>];
+}

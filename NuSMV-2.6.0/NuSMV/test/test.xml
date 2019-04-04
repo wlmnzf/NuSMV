@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<counterexample specification="!(EF (state = 6 | state = 4))">
+   <node id="0">
+      <state>
+         <value variable="state">1</value>
+         <value variable="ctrl">0</value>
+         <value variable="time">0</value>
+      </state>
+      <existential specification="EF (state = 6 | state = 4)" explained="true">
+         <node id="1">
+            <state>
+               <value variable="state">1</value>
+               <value variable="ctrl">0</value>
+               <value variable="time">0</value>
+            </state>
+         </node>
+         <input>
+         </input>
+         <combinatorial>
+         </combinatorial>
+         <node id="2">
+            <state>
+               <value variable="state">2</value>
+               <value variable="ctrl">0</value>
+               <value variable="time">1</value>
+            </state>
+         </node>
+         <input>
+         </input>
+         <combinatorial>
+         </combinatorial>
+         <node id="3">
+            <state>
+               <value variable="state">3</value>
+               <value variable="ctrl">0</value>
+               <value variable="time">2</value>
+            </state>
+         </node>
+         <input>
+         </input>
+         <combinatorial>
+         </combinatorial>
+         <node id="4">
+            <state>
+               <value variable="state">4</value>
+               <value variable="ctrl">0</value>
+               <value variable="time">3</value>
+            </state>
+            <atomic specification="state = 4" />
+         </node>
+      </existential>
+   </node>
+</counterexample>
+
