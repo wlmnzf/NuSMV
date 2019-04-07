@@ -54,6 +54,7 @@ Report by E. Clarke, O. Grumberg, K. McMillan and X. Zhao.
 #include "nusmv/core/utils/error.h"
 #include "nusmv/core/utils/utils_io.h" /* for indent_node */
 #include "nusmv/core/compile/symb_table/ResolveSymbol.h"
+#include "nusmv/core/mc/multipath.h"
 
 //#include "nusmv/core/mc/printinfo.h"
 /* Define this to enable trace explain debug */
@@ -272,11 +273,11 @@ node_ptr eu_si_explain(BddFsm_ptr fsm, BddEnc_ptr enc,
 
 //SSSSSSSSSSSSSS
 
-for state, inputs in zip(explanation[::10], explanation[1::2]):
-    if state == explanation[-1]:
-print("-- Loop starts here")
-print(state.get_str_values())
-print(inputs.get_str_values())
+//for state, inputs in zip(explanation[::10], explanation[1::2]):
+//    if state == explanation[-1]:
+//print("-- Loop starts here")
+//print(state.get_str_values())
+//print(inputs.get_str_values())
 
 
 //TODO: Problems1,我们的限界要怎么跟路径长度进行对比,是新写一个function去计算呢,还是在path的结构体里面新增一个数据项
@@ -296,9 +297,12 @@ node_ptr eu_explain(BddFsm_ptr fsm, BddEnc_ptr enc,
   const MasterPrinter_ptr wffprint =
     MASTER_PRINTER(NuSMVEnv_get_value(env, ENV_WFF_PRINTER));
 
-  bdd_ptr tmp, _new, Z, acc;
+  bdd_ptr tmp,tmp1, _new, Z, acc;
   int n;
   node_ptr witness_path;
+  node_ptr tmp_path;
+  node_ptr tmp_witness_path;
+  bdd_ptr state;
 
   int flag=0;
 
@@ -382,14 +386,19 @@ node_ptr eu_explain(BddFsm_ptr fsm, BddEnc_ptr enc,
        time to restrict new path to minterms and return. */ //如果image与可接受状态相交,然后show time,是时候限制新的路径到最小项然后返回
     //TODO:此处不断地求解状态节点的后继,直到求得的状态与我们的可接受状态相交非空,这里接直接return了,我们在这里不能将其return,而需要继续执行下去计算一下别的一些界限
     tmp = bdd_and(dd_manager, _new, acc);//在我们的案例中tmp先是false然后是true
+//    tmp1 = bdd_and(dd_manager, _new, acc);//在我们的案例中tmp先是false然后是true
     if (bdd_isnot_false(dd_manager, tmp)) {//可交,好像就是已经到达了终点
-        flag++;
-        if(flag>=17) {
-//      bdd_ptr state = BddEnc_pick_one_state(enc, tmp);
+          flag++;
+          tmp_path=copy_path(path);//TODO:这里可能不能这么子干，因为bdd_ptr需要deep_copy
+          tmp_witness_path=copy_path(witness_path);
+//        if(flag>=3) {
 
-            bdd_ptr state = BddEnc_pick_one_state_rand(enc, tmp);
-            printf("EU Explain  NUM:%lf\n", BddEnc_get_minterms_of_bdd(enc, tmp));
-            bdd_free(dd_manager, tmp);
+            state = BddEnc_pick_one_state(enc, tmp);
+//          bdd_ptr state = BddEnc_pick_one_state_rand(enc, tmp);
+//            printf("EU Explain  NUM:%lf\n", BddEnc_get_minterms_of_bdd(enc, tmp));
+
+
+//            bdd_free(dd_manager, tmp);
 
             witness_path =
                     Extend_trace_with_states_inputs_pair(fsm, enc, witness_path,
@@ -400,8 +409,19 @@ node_ptr eu_explain(BddFsm_ptr fsm, BddEnc_ptr enc,
             mc_eu_explain_restrict_state_input_to_minterms(fsm, enc,
                                                            witness_path, path);
 
-            goto free_local_bdds_and_return; /* 'witness_path' will be returned */
-        }
+            addToPath(witness_path);
+
+            if(flag>=2)
+               goto free_local_bdds_and_return; /* 'witness_path' will be returned */
+             else
+            {
+              path=copy_path(tmp_path);
+              witness_path=copy_path(tmp_witness_path);
+//              tmp = bdd_and(dd_manager, _new, acc);
+            }
+
+
+            //        }
 //        else continue;
     }
 
@@ -448,7 +468,7 @@ node_ptr eu_explain(BddFsm_ptr fsm, BddEnc_ptr enc,
   } /* while true */
 
 free_local_bdds_and_return:
-  bdd_free(dd_manager, Z);
+bdd_free(dd_manager, Z);
   bdd_free(dd_manager, _new);
   bdd_free(dd_manager, acc);
 
@@ -1055,8 +1075,12 @@ static node_ptr explain_recur(BddFsm_ptr fsm, BddEnc_ptr enc, node_ptr path,
   DDMgr_ptr dd_manager = BddEnc_get_dd_manager(enc);
   bdd_ptr a1, a2;
   node_ptr new_path;
+  struct multipath *x;
+  struct multipath *y;
+  int flag=0;
+    node_ptr q;
 
-  if (formula_expr == Nil) return Nil;
+    if (formula_expr == Nil) return Nil;
 
   nusmv_yylineno = node_get_lineno(formula_expr);
   switch (node_get_type(formula_expr)) {
@@ -1125,18 +1149,45 @@ static node_ptr explain_recur(BddFsm_ptr fsm, BddEnc_ptr enc, node_ptr path,
                                    Nil), context);
 
   case EU:
-    a1 = eval_ctl_spec(fsm, enc, car(formula_expr), context);
+
+      a1 = eval_ctl_spec(fsm, enc, car(formula_expr), context);
     a2 = eval_ctl_spec(fsm, enc, cdr(formula_expr), context);
     ErrorMgr_set_the_node(errmgr, formula_expr);
     new_path = eu_explain(fsm, enc, path, a1, a2);
     bdd_free(dd_manager, a2);
     bdd_free(dd_manager, a1);
-    if (new_path != Nil) {  //这里是不是因为它EU的f里面还有别的嵌套的formula,所以要继续进行迭代计算
-      node_ptr q = explain_recur(fsm, enc, new_path, cdr(formula_expr),
-                                 context);
+    flag=0;
+    if(multipath_head->size>0)
+    {
+        x=multipath_head->next;
+        while(x!=NULL)
+        {
+            printf("----- %d -----\n",x->index);
+            //TODO：其实这里也应该有很多子树的情况，但是暂时不考虑，先试试这样子能不能行
+            q = explain_recur(fsm, enc, x->path, cdr(formula_expr),
+                                       context);
 
-      if (q != Nil) return q;
+            if (q != Nil)
+            {
+                x->path=copy_path(q);
+                y=q;
+                flag=1;
+            }
+            x=x->next;
+        }
+        if(flag==1)
+            return y;
     }
+
+//    if (new_path != Nil) {
+//        //这里是不是因为它EU的f里面还有别的嵌套的formula,所以要继续进行迭代计算
+//        //EU操作左子树是E后面的公式，右子树表示U后面的公式
+//        //将反例Path继续接下去
+//      node_ptr q = explain_recur(fsm, enc, new_path, cdr(formula_expr),
+//                                 context);
+//
+//      if (q != Nil) return q;
+//    }
     return new_path;
 
   case AU:

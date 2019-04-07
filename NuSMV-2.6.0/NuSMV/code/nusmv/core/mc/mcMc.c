@@ -62,6 +62,7 @@
 #include "nusmv/core/mc/mcAc.h"
 
 #include "nusmv/core/mc/printinfo.h"
+#include "nusmv/core/mc/multipath.h"
 
 /*---------------------------------------------------------------------------*/
 /* Variable declarations                                                     */
@@ -101,6 +102,7 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
 
     char* str_p=NULL;
     node_ptr tmp_explain;
+    struct multipath *x;
 
 
 
@@ -160,6 +162,14 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
     }
     fclose(fp);
   }
+
+
+//added:multipath
+multipath_head=(struct multipath*)malloc(sizeof(struct multipath));
+multipath_head->size=0;
+multipath_head->index=0;
+multipath_head->next=NULL;
+multipath_head->current=NULL;
 
 
 
@@ -230,76 +240,85 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
       char* trace_title = NULL;
       char* trace_title_postfix = " Counterexample";
         printf("AAAXXXX  NUM:%lf\n",BddEnc_get_minterms_of_bdd(enc, s0));
-//      tmp_1 = BddEnc_pick_one_state(enc, s0);
-        tmp_1 = BddEnc_pick_one_state_rand(enc, s0);
+      tmp_1 = BddEnc_pick_one_state(enc, s0);
+//        tmp_1 = BddEnc_pick_one_state_rand(enc, s0);
       bdd_free(dd, s0);
       s0 = bdd_dup(tmp_1);
       bdd_free(dd, tmp_1);
 
       tmp_explain=explain(fsm, enc, cons(nodemgr, (node_ptr) bdd_dup(s0), Nil),
                           spec, Nil);
-      exp = reverse(tmp_explain);
 
-      if (exp == Nil) {
-        /* The counterexample consists of one initial state */
-        exp = cons(nodemgr, (node_ptr) bdd_dup(s0), Nil);
-      }
+      if(multipath_head->size>0) {
+          x = multipath_head->next;
+          while (x != NULL) {
+              tmp_explain=x->path;
+              exp = reverse(tmp_explain);
 
-
-        fp = fopen("/home/william/path.dot", "w");
-
-        if(fp == NULL)
-            printf("fail to open the file! \n");
-        else
-        {
-            printf("The file is open! \n");
-            bst_print_dot(exp,fp);
-
-            fclose(fp);
-        }
+              if (exp == Nil) {
+                  /* The counterexample consists of one initial state */
+                  exp = cons(nodemgr, (node_ptr) bdd_dup(s0), Nil);
+              }
 
 
-        global_streams=streams;
+              fp = fopen("/home/william/path.dot", "w");
 
-        /* The trace title depends on the property type. For example it
-         is in the form "LTL Counterexample" */
-      trace_title = ALLOC(char,
-                          strlen(Prop_get_type_as_string(prop)) +
-                          strlen(trace_title_postfix) + 1);
-      nusmv_assert(trace_title != (char*) NULL);
-      strcpy(trace_title, Prop_get_type_as_string(prop));
-      strcat(trace_title, trace_title_postfix);
+              if (fp == NULL)
+                  printf("fail to open the file! \n");
+              else {
+                  printf("The file is open! \n");
+                  bst_print_dot(exp, fp);
 
-      {
-        SexpFsm_ptr sexp_fsm; /* needed for trace lanugage */
-        sexp_fsm = Prop_get_scalar_sexp_fsm(prop);
-        if (SEXP_FSM(NULL) == sexp_fsm) {
-          sexp_fsm = \
+                  fclose(fp);
+              }
+
+
+              global_streams = streams;
+
+              /* The trace title depends on the property type. For example it
+               is in the form "LTL Counterexample" */
+              trace_title = ALLOC(char,
+                                  strlen(Prop_get_type_as_string(prop)) +
+                                  strlen(trace_title_postfix) + 1);
+              nusmv_assert(trace_title != (char *) NULL);
+              strcpy(trace_title, Prop_get_type_as_string(prop));
+              strcat(trace_title, trace_title_postfix);
+
+              {
+                  SexpFsm_ptr sexp_fsm; /* needed for trace lanugage */
+                  sexp_fsm = Prop_get_scalar_sexp_fsm(prop);
+                  if (SEXP_FSM(NULL) == sexp_fsm) {
+                      sexp_fsm = \
             SEXP_FSM(NuSMVEnv_get_value(env, ENV_SEXP_FSM));
-          SEXP_FSM_CHECK_INSTANCE(sexp_fsm);
-        }
+                      SEXP_FSM_CHECK_INSTANCE(sexp_fsm);
+                  }
 
-        trace = \
+                  trace = \
           Mc_create_trace_from_bdd_state_input_list(enc,
-               SexpFsm_get_symbols_list(sexp_fsm), trace_title,
-                                                   TRACE_TYPE_CNTEXAMPLE, exp);
+                                                    SexpFsm_get_symbols_list(sexp_fsm), trace_title,
+                                                    TRACE_TYPE_CNTEXAMPLE, exp);
+              }
+
+              FREE(trace_title);
+
+              StreamMgr_print_output(streams,
+                                     "-- as demonstrated by the following execution sequence\n");
+
+
+              TraceMgr_register_trace(TRACE_MGR(NuSMVEnv_get_value(env, ENV_TRACE_MGR)), trace);
+              TraceMgr_execute_plugin(TRACE_MGR(NuSMVEnv_get_value(env, ENV_TRACE_MGR)), TRACE_OPT(NULL),
+                                      TRACE_MGR_DEFAULT_PLUGIN,
+                                      TRACE_MGR_LAST_TRACE);
+
+              Prop_set_trace(prop, Trace_get_id(trace));
+
+              walk_dd(dd, bdd_free, exp);
+              free_list(nodemgr, exp);
+              x=x->next;
+          }
       }
 
-      FREE(trace_title);
 
-      StreamMgr_print_output(streams, 
-              "-- as demonstrated by the following execution sequence\n");
-
-
-      TraceMgr_register_trace(TRACE_MGR(NuSMVEnv_get_value(env, ENV_TRACE_MGR)), trace);
-      TraceMgr_execute_plugin(TRACE_MGR(NuSMVEnv_get_value(env, ENV_TRACE_MGR)), TRACE_OPT(NULL),
-                                  TRACE_MGR_DEFAULT_PLUGIN,
-                                  TRACE_MGR_LAST_TRACE);
-
-      Prop_set_trace(prop, Trace_get_id(trace));
-
-      walk_dd(dd, bdd_free, exp);
-      free_list(nodemgr, exp);
     }
   }
     
