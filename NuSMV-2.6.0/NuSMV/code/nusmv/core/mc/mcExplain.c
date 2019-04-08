@@ -391,7 +391,7 @@ node_ptr eu_explain(BddFsm_ptr fsm, BddEnc_ptr enc,
           flag++;
           //tmp_path=copy_path(path);//TODO:这里可能不能这么子干，因为bdd_ptr需要deep_copy
 //          tmp_witness_path=copy_path(witness_path);
-//        if(flag>=3) {
+//        if(flag>15) {
 
             state = BddEnc_pick_one_state(enc, tmp);
 //          bdd_ptr state = BddEnc_pick_one_state_rand(enc, tmp);
@@ -410,8 +410,9 @@ node_ptr eu_explain(BddFsm_ptr fsm, BddEnc_ptr enc,
                                                            tmp_witness_path, path);
 
             addToPath(tmp_witness_path);
+//            addToPath(tmp_witness_path);
 
-            if(flag>=1) {
+            if(flag>=3) {
               witness_path=tmp_witness_path;
               goto free_local_bdds_and_return; /* 'witness_path' will be returned */
             }

@@ -24,8 +24,9 @@ void addToPath(node_ptr path)
     if(multipath_head->current==NULL)
     {
         multipath_head->next=tmp_mp;
+//    multipath_head->size=1;
 
-//        multipath_head->size
+
     } else
     {
         multipath_head->current->next=tmp_mp;

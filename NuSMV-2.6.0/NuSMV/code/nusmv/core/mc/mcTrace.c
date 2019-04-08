@@ -122,7 +122,7 @@ Mc_create_trace_from_bdd_state_input_list(const BddEnc_ptr bdd_enc,
 
   trace = Trace_create(BaseEnc_get_symb_table(BASE_ENC(bdd_enc)),
                        desc, type, symbols, false);
-
+//BDD_STATES(car(path))
   return Mc_fill_trace_from_bdd_state_input_list(bdd_enc, trace, path);
 }
 
@@ -161,7 +161,7 @@ Mc_fill_trace_from_bdd_state_input_list(const BddEnc_ptr bdd_enc,
   if(streams)
     StreamMgr_print_error(streams,  "\n--- MC Model extraction ---\n");
 #endif
-
+//注意这个的BDD_STATES(car(path))
   /* first node of path is initial state */
   mc_trace_step_put_values(trace, step, bdd_enc, BDD_STATES(car(path)), sf_vars);
 

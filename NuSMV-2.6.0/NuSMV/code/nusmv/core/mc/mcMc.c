@@ -103,6 +103,8 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
     char* str_p=NULL;
     node_ptr tmp_explain;
     struct multipath *x;
+    int flag;
+    SexpFsm_ptr sexp_fsm; /* needed for trace lanugage */
 
 
 
@@ -251,6 +253,31 @@ multipath_head->current=NULL;
 
       if(multipath_head->size>0) {
           x = multipath_head->next;
+          global_streams = streams;
+
+          /* The trace title depends on the property type. For example it
+           is in the form "LTL Counterexample" */
+          trace_title = ALLOC(char,
+                              strlen(Prop_get_type_as_string(prop)) +
+                              strlen(trace_title_postfix) + 1);
+          nusmv_assert(trace_title != (char *) NULL);
+          strcpy(trace_title, Prop_get_type_as_string(prop));
+          strcat(trace_title, trace_title_postfix);
+
+//          {
+
+              sexp_fsm = Prop_get_scalar_sexp_fsm(prop);
+              if (SEXP_FSM(NULL) == sexp_fsm) {
+                  sexp_fsm = \
+            SEXP_FSM(NuSMVEnv_get_value(env, ENV_SEXP_FSM));
+                  SEXP_FSM_CHECK_INSTANCE(sexp_fsm);
+              }
+//          }
+
+          flag=0;
+
+
+
           while (x != NULL) {
               tmp_explain=x->path;
               exp = reverse(tmp_explain);
@@ -261,37 +288,22 @@ multipath_head->current=NULL;
               }
 
 
-              fp = fopen("/home/william/path.dot", "w");
+//              fp = fopen("/home/william/path.dot", "w");
+//
+//              if (fp == NULL)
+//                  printf("fail to open the file! \n");
+//              else {
+//                  printf("The file is open! \n");
+//                  bst_print_dot(exp, fp);
+//
+//                  fclose(fp);
+//              }
 
-              if (fp == NULL)
-                  printf("fail to open the file! \n");
-              else {
-                  printf("The file is open! \n");
-                  bst_print_dot(exp, fp);
-
-                  fclose(fp);
-              }
 
 
-              global_streams = streams;
-
-              /* The trace title depends on the property type. For example it
-               is in the form "LTL Counterexample" */
-              trace_title = ALLOC(char,
-                                  strlen(Prop_get_type_as_string(prop)) +
-                                  strlen(trace_title_postfix) + 1);
-              nusmv_assert(trace_title != (char *) NULL);
-              strcpy(trace_title, Prop_get_type_as_string(prop));
-              strcat(trace_title, trace_title_postfix);
 
               {
-                  SexpFsm_ptr sexp_fsm; /* needed for trace lanugage */
-                  sexp_fsm = Prop_get_scalar_sexp_fsm(prop);
-                  if (SEXP_FSM(NULL) == sexp_fsm) {
-                      sexp_fsm = \
-            SEXP_FSM(NuSMVEnv_get_value(env, ENV_SEXP_FSM));
-                      SEXP_FSM_CHECK_INSTANCE(sexp_fsm);
-                  }
+
 //这里这里，有问题的地方在这里
                   trace = \
           Mc_create_trace_from_bdd_state_input_list(enc,
@@ -313,7 +325,7 @@ multipath_head->current=NULL;
               Prop_set_trace(prop, Trace_get_id(trace));
 
               walk_dd(dd, bdd_free, exp);
-              free_list(nodemgr, exp);
+//              free_list(nodemgr, exp);
               x=x->next;
           }
       }
@@ -334,7 +346,7 @@ multipath_head->current=NULL;
     bdd_free(dd,init);
     bdd_free(dd,accepted);
   }
-  
+  free_list(nodemgr, exp);
   bdd_free(dd, s0);
 } 
 
