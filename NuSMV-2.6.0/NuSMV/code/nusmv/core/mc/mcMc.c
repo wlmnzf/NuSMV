@@ -292,7 +292,7 @@ multipath_head->current=NULL;
             SEXP_FSM(NuSMVEnv_get_value(env, ENV_SEXP_FSM));
                       SEXP_FSM_CHECK_INSTANCE(sexp_fsm);
                   }
-
+//这里这里，有问题的地方在这里
                   trace = \
           Mc_create_trace_from_bdd_state_input_list(enc,
                                                     SexpFsm_get_symbols_list(sexp_fsm), trace_title,

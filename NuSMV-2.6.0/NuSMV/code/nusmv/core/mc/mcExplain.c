@@ -389,8 +389,8 @@ node_ptr eu_explain(BddFsm_ptr fsm, BddEnc_ptr enc,
 //    tmp1 = bdd_and(dd_manager, _new, acc);//在我们的案例中tmp先是false然后是true
     if (bdd_isnot_false(dd_manager, tmp)) {//可交,好像就是已经到达了终点
           flag++;
-          tmp_path=copy_path(path);//TODO:这里可能不能这么子干，因为bdd_ptr需要deep_copy
-          tmp_witness_path=copy_path(witness_path);
+          //tmp_path=copy_path(path);//TODO:这里可能不能这么子干，因为bdd_ptr需要deep_copy
+//          tmp_witness_path=copy_path(witness_path);
 //        if(flag>=3) {
 
             state = BddEnc_pick_one_state(enc, tmp);
@@ -400,28 +400,31 @@ node_ptr eu_explain(BddFsm_ptr fsm, BddEnc_ptr enc,
 
 //            bdd_free(dd_manager, tmp);
 
-            witness_path =
+            tmp_witness_path =
                     Extend_trace_with_states_inputs_pair(fsm, enc, witness_path,
                                                          (bdd_ptr) car(witness_path),
                                                          state,
                                                          "eu_explain: (1).");
             bdd_free(dd_manager, state);
             mc_eu_explain_restrict_state_input_to_minterms(fsm, enc,
-                                                           witness_path, path);
+                                                           tmp_witness_path, path);
 
-            addToPath(witness_path);
+            addToPath(tmp_witness_path);
 
-            if(flag>=2)
-               goto free_local_bdds_and_return; /* 'witness_path' will be returned */
-             else
-            {
-              path=copy_path(tmp_path);
-              witness_path=copy_path(tmp_witness_path);
-//              tmp = bdd_and(dd_manager, _new, acc);
+            if(flag>=1) {
+              witness_path=tmp_witness_path;
+              goto free_local_bdds_and_return; /* 'witness_path' will be returned */
             }
+//             else
+//            {
+//             // path=copy_path(tmp_path);
+//             witness_path=tmp_witness_path;
+////              witness_path=tmp_witness_path;
+////              tmp = bdd_and(dd_manager, _new, acc);
+//            }
 
 
-            //        }
+//                    }//if(flag>=3)
 //        else continue;
     }
 
@@ -461,10 +464,14 @@ node_ptr eu_explain(BddFsm_ptr fsm, BddEnc_ptr enc,
       Here instead of '_new' we could use 'Z'.
       Both are correct but it is unclear wich one is more efficient
     */
+//    tmp_witness_path =
+//      Extend_trace_with_states_inputs_pair(fsm, enc, witness_path,
+//                                           (bdd_ptr) car(witness_path),
+//                                           _new, "eu_explain: (1).");
     witness_path =
-      Extend_trace_with_states_inputs_pair(fsm, enc, witness_path,
-                                           (bdd_ptr) car(witness_path),
-                                           _new, "eu_explain: (1).");
+            Extend_trace_with_states_inputs_pair(fsm, enc, witness_path,
+                                                 (bdd_ptr) car(witness_path),
+                                                 _new, "eu_explain: (1).");
   } /* while true */
 
 free_local_bdds_and_return:
@@ -1169,7 +1176,7 @@ static node_ptr explain_recur(BddFsm_ptr fsm, BddEnc_ptr enc, node_ptr path,
 
             if (q != Nil)
             {
-                x->path=copy_path(q);
+                x->path=q;
                 y=q;
                 flag=1;
             }

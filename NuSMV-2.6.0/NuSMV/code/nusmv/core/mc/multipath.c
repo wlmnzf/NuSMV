@@ -10,10 +10,11 @@ struct multipath *multipath_head;
 void addToPath(node_ptr path)
 {
     struct multipath *tmp_mp;
-    node_ptr tmp=copy_path(path);
+//    node_ptr tmp=copy_path(path);
+
     tmp_mp=(struct multipath *)malloc(sizeof(struct multipath));
     tmp_mp->index=++(multipath_head->size);
-    tmp_mp->path=tmp;
+    tmp_mp->path=path;
     tmp_mp->current=NULL;
     tmp_mp->next=NULL;
     tmp_mp->size=-1;
@@ -37,7 +38,7 @@ node_ptr copy_path(node_ptr path)
     node_ptr cp_path;
     cp_path=(node_ptr)malloc(sizeof(struct node));
     memcpy(cp_path,path,sizeof(struct node));
-//    return cp_path;
+    return cp_path;
     if(path->left.nodetype)
     {
         cp_path->left.nodetype=copy_path_recur(path->left.nodetype);
@@ -85,7 +86,12 @@ node_ptr copy_path_recur(struct node* path)
 {
    struct  node* tmp=(struct node*)malloc(sizeof(struct node));
    memcpy(tmp,path, sizeof(struct node));
-   tmp->link=copy_path_recur(path->link);
+   if(path->link) {
+       tmp->link = copy_path_recur(path->link);
+   } else
+   {
+       tmp->link=NULL;
+   }
 
 
     if(path->left.nodetype)
