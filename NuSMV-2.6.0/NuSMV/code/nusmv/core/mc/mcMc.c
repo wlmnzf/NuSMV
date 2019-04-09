@@ -280,7 +280,7 @@ multipath_head->current=NULL;
 
           while (x != NULL) {
               tmp_explain=x->path;
-              exp = reverse(tmp_explain);
+              exp = reverse_cpy(tmp_explain);
 
               if (exp == Nil) {
                   /* The counterexample consists of one initial state */
@@ -311,7 +311,7 @@ multipath_head->current=NULL;
                                                     TRACE_TYPE_CNTEXAMPLE, exp);
               }
 
-              FREE(trace_title);
+//              FREE(trace_title);
 
               StreamMgr_print_output(streams,
                                      "-- as demonstrated by the following execution sequence\n");
@@ -324,7 +324,7 @@ multipath_head->current=NULL;
 
               Prop_set_trace(prop, Trace_get_id(trace));
 
-              walk_dd(dd, bdd_free, exp);
+//              walk_dd(dd, bdd_free, exp);
 //              free_list(nodemgr, exp);
               x=x->next;
           }

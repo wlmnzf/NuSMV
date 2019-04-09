@@ -560,6 +560,8 @@ node_ptr append_ns(NodeMgr_ptr nodemgr, node_ptr, node_ptr);
 */
 node_ptr reverse(node_ptr);
 
+node_ptr reverse_cpy(node_ptr);
+
 /*!
   \brief DEPRECATED
                       reverses the list with no side-effect

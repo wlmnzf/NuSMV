@@ -406,8 +406,8 @@ node_ptr eu_explain(BddFsm_ptr fsm, BddEnc_ptr enc,
                                                          state,
                                                          "eu_explain: (1).");
             bdd_free(dd_manager, state);
-//            mc_eu_explain_restrict_state_input_to_minterms(fsm, enc,
-//                                                           tmp_witness_path, path);
+            mc_eu_explain_restrict_state_input_to_minterms(fsm, enc,
+                                                           tmp_witness_path, path);
 
             addToPath(tmp_witness_path);
 //            addToPath(tmp_witness_path);
@@ -1784,7 +1784,8 @@ mc_eu_explain_restrict_state_input_to_minterms(BddFsm_ptr fsm,
 
     /* debugging code : current_state should not be empty ever */
     mc_explain_debug_check_not_empty_state(fsm, enc, current_state,
-                                           "eu_explain");
+                                           ""
+                                           "");
 
     { /* get one previous state, i.e. compute preimage for the given
          current state and intersect with provided previous states.

@@ -358,6 +358,29 @@ node_ptr reverse(node_ptr x)
   return(y);
 }
 
+node_ptr reverse_cpy(node_ptr x)
+{
+    node_ptr tmp_cpy=Nil;//=(node_ptr)malloc(sizeof(struct node));
+    node_ptr z=Nil;
+    node_ptr y=Nil;
+
+    while (x != Nil) {
+        tmp_cpy=(node_ptr)malloc(sizeof(struct node));
+        memcpy(tmp_cpy,x, sizeof(struct node));
+
+        z = x->right.nodetype;
+
+        /* nusmv_assert(CONS == node_get_type(x)); */
+
+        tmp_cpy->right.nodetype = y;
+        y = tmp_cpy;
+        x = z;
+    }
+
+    return(y);
+
+}
+
 node_ptr reverse_ns(NodeMgr_ptr nodemgr, node_ptr l)
 {
   node_ptr res = Nil;
