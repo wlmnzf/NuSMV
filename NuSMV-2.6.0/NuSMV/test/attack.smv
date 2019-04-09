@@ -1,0 +1,72 @@
+MODULE cache(clflush, sameset, sameaddr)
+VAR
+
+state: {full,empty};
+secret:{exist,nonexist};
+
+ASSIGN
+
+init(state) := empty;
+
+next(state) := 
+case
+   clflush:empty;
+   (state = empty)&!clflush: full;
+   (state = full)&sameset&sameaddr: full;
+   (state = full)&sameset&!sameaddr: empty;
+   TRUE : state;
+esac;
+
+
+
+
+MODULE main
+VAR
+  timer: 0..100;   
+
+ASSIGN
+  init(timer) := 0;
+  next(timer) := (timer + 1) mod 100;
+
+DEFINE
+  timeout100 := timer mod 100 = 0;
+  timeout50  := timer mod 50 = 0;
+  timeout20  := timer mod 20 = 0;
+
+VAR
+  clflush:boolean;
+  sameset:boolean;
+  sameaddr:boolean;
+  ca: cache(clflush, sameset,sameaddr);
+
+ASSIGN
+  init(clflush) := FALSE;
+  init(sameset) := FALSE;
+  init(sameaddr):= FALSE;
+
+  next(clflush) := 
+    case
+      timeout20:FALSE;
+      timeout50:FALSE;
+      timeout100:TRUE;
+       TRUE : clflush;
+    esac;
+
+  next(sameset) := 
+    case
+      timeout20:TRUE;
+      timeout50:TRUE;
+      timeout100:TRUE;
+       TRUE : sameset;
+    esac;
+
+  next(sameaddr) := 
+    case
+      timeout20:FALSE;
+      timeout50:TRUE;
+      timeout100:TRUE;
+       TRUE : sameaddr;
+    esac;
+
+
+SPEC AG ca.state=empty

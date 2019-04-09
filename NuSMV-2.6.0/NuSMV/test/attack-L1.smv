@@ -1,0 +1,131 @@
+MODULE L1Cache(attacker,victim)
+VAR
+ExistStateSC:boolean;
+-- VictimState:{};
+AttackerState:boolean;  --true 表示非空 false表示空
+AttackerStateWithSecret:boolean;  --true 表示非空 false表示空
+-- Assume victim's data in cache is the secret, and the rest of the cache is Attacker's state, 
+-- if attacker try to empty the victim's data,that means he is do sth on ExistStateSC rather than AttackerState
+
+ASSIGN
+init(ExistStateSC):=TRUE;
+init(AttackerState):=TRUE;
+init(AttackerStateWithSecret):=FALSE;
+
+next(ExistStateSC):= case
+                        victim.cmd=clflush:FALSE;
+                        victim.cmd=read|victim.cmd=write: TRUE;
+                        TRUE:      TRUE;
+                     esac;
+
+next(AttackerState):= case
+                        attacker.cmd=clflush:FALSE;
+                        attacker.cmd=read|attacker.cmd=write:TRUE;
+                        TRUE:      TRUE;
+                     esac;
+
+next(AttackerStateWithSecret):=case
+                        attacker.step=flush & AttackerState=FALSE:TRUE;
+                        TRUE:TRUE;
+                     esac;
+
+
+-- MODULE Membus
+
+
+
+-- MODULE Memory
+
+
+
+
+MODULE Predictor(attacker,victim)
+VAR
+Predict:{Taken,NTaken};
+Actually:{Taken,NTaken};
+state:{ok,clear};
+
+ASSIGN
+init(Predict):=Taken;
+init(Actually):={Taken,NTaken};
+init(state):=ok;
+
+
+next(state):= case                  
+                MissPredictedBranch:clear;
+                PredictedBranch:ok;
+                TRUE:      state;
+              esac;
+-- // 设置一个actully的数组
+-- // 前几次是T，则预测Taken
+-- // 如果actually不taken则，prediction也不taken
+
+DEFINE
+  PredictedBranch:= Predict=Actually;
+  MissPredictedBranch:= Predict!=Actually;
+
+
+
+
+
+
+
+MODULE ROB
+VAR
+state:{check,commit,clear};
+
+
+
+
+-- MODULE CPU
+
+
+
+
+
+MODULE Attacker
+VAR 
+step:{flush,reload,test,end};
+cmd:{nop,clflush,read,write};
+sameVA:boolean;
+-- samePA:boolean;
+sameSet_differentVA:boolean;
+
+
+
+MODULE Victim
+VAR
+cmd:{clflush,read,write};
+sameVA:boolean;
+-- samePA:boolean;
+sameSet_differentVA:boolean;
+
+
+
+MODULE main
+VAR
+attacker: Attacker;
+victim: Victim;
+cache: L1Cache(attacker,victim);
+predictor:Predictor(attacker,victim);
+
+ASSIGN
+init(attacker.step):=flush;
+init(victim.cmd):=write;
+init(attacker.cmd):=nop;
+
+next(attacker.step):= case                  
+                      attacker.step=flush & cache.AttackerState=FALSE: reload;   
+                      attacker.step=reload& predictor.state=clear:test;
+                      attacker.step=test  : end;
+                      TRUE: attacker.step     ;
+                      esac;
+
+next(victim.cmd):=write;
+
+
+
+SPEC
+!EF((attacker.step=test) & (cache.AttackerStateWithSecret=TRUE))
+
+

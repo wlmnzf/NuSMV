@@ -1,0 +1,129 @@
+MODULE Attacker(cache)
+
+VAR
+    cmd:{nop,clflush,read,write};
+
+ASSIGN
+
+init(cmd) := nop;
+
+next(cmd) := 
+case
+   (cmd = nop) : clflush;
+   (cmd=clflush) & (cache.sets=empty): nop;--如果内存已经清空，那么我们就开始等待victim写入数据
+   (cmd=clflush) & (cache.sets=full): read;-- 然后我们在进行reload操作，当进行read的时候hit
+   TRUE : cmd;
+esac;
+
+
+
+
+
+MODULE Victim(cache)
+VAR
+    cmd:{nop,clflush,read,write};
+
+ASSIGN
+
+init(cmd) := nop;
+
+next(cmd) :=  {read,write};
+
+
+
+
+
+
+
+MODULE Cache(attacker,victim)
+
+VAR
+state:{probe,hit,miss,replace,return};
+sets:{empty,full};
+with_secret:boolean;
+
+ASSIGN
+
+init(state) := probe;
+init(sets) :=empty;
+init(with_secret):=FALSE;
+
+next(state) := 
+case
+   (attacker.cmd=clflush|victim.cmd=clflush):probe;
+   (state = probe)&(sets = full) : hit;
+   (state = probe) & (sets = empty): miss;
+   (state = miss) :  replace;
+   (state = replace ) | (state = hit) : return;
+   (state = return) : probe;
+   TRUE : state;
+esac;
+
+
+next(sets) :=
+case
+   (attacker.cmd = clflush) |(victim.cmd=clflush):empty; 
+   (state = probe)&(sets=empty):empty;
+   (state = miss )&(sets=empty):empty;
+   TRUE : full;
+esac;
+
+next(with_secret) :=
+case
+   (attacker.cmd = clflush) |(victim.cmd=clflush):FALSE;
+   (state = probe)&(sets=empty):FALSE;
+   (state = miss )&(sets=empty):FALSE;
+   TRUE : TRUE;
+esac;
+
+
+-- FAIRNESS
+-- running
+
+
+
+
+
+MODULE main
+
+VAR
+cache :Cache(attacker,victim);
+attacker: Attacker(cache);
+victim:  Victim(cache);
+
+-- ASSIGN
+
+-- init(turn) := FALSE;
+
+-- FAIRNESS
+-- !(s0 = critical)
+
+--FAIRNESS
+--!(s1 = critical)
+
+SPEC
+-- EX cache.sets=full
+!EF(E[  E[    (cache.sets=empty) U (victim.cmd=read|victim.cmd=write)& (EX (cache.sets=full))   ] U (attacker.cmd=read|attacker.cmd=write) & (EX (cache.sets=full))   ])
+
+-- SPEC
+
+-- AG((s0 = trying) -> AF (s0 = critical))
+
+-- SPEC
+
+-- AG((s1 = trying) -> AF (s1 = critical))
+
+-- SPEC
+
+-- AG((s0 = critical) -> A[(s0 = critical) U (!(s0 = critical) & A[!(s0 = critical) U (s1 = critical)])])
+
+-- SPEC
+
+-- AG((s1 = critical) -> A[(s1 = critical) U (!(s1 = critical) & A[!(s1 = critical) U (s0 = critical)])])
+
+
+
+
+
+
+

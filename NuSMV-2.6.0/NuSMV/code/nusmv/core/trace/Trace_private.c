@@ -1024,8 +1024,8 @@ trace_set_language(Trace_ptr self, SymbTable_ptr st,
     NODE_LIST_FOREACH(symbols, iter) {
       node_ptr sym  = NodeList_get_elem_at(symbols, iter);
 
-//      if (opt_verbose_level_ge(opts, 6)) {
-      if (true) {
+      if (opt_verbose_level_ge(opts, 6)) {
+//      if (true) {
         Logger_ptr logger = LOGGER(NuSMVEnv_get_value(env, ENV_LOGGER));
         const MasterPrinter_ptr wffprint =
           MASTER_PRINTER(NuSMVEnv_get_value(env, ENV_WFF_PRINTER));
@@ -1079,8 +1079,8 @@ trace_set_language(Trace_ptr self, SymbTable_ptr st,
       /* here the symbol can become part of the trace language */
       CHECK(!NodeList_belongs_to(self->symbols, sym));
 
-//      if (opt_verbose_level_ge(opts, 6)) {
-if (true) {
+      if (opt_verbose_level_ge(opts, 6)) {
+//if (true) {
         Logger_ptr logger = LOGGER(NuSMVEnv_get_value(env, ENV_LOGGER));
         const MasterPrinter_ptr wffprint =
           MASTER_PRINTER(NuSMVEnv_get_value(env, ENV_WFF_PRINTER));
