@@ -107,6 +107,12 @@ mc_eu_explain_restrict_state_input_to_minterms(BddFsm_ptr fsm,
                                                node_ptr path,
                                                node_ptr initial_node);
 
+static node_ptr
+mc_eu_explain_restrict_state_input_to_minterms_cpy(BddFsm_ptr fsm,
+                                               BddEnc_ptr enc,
+                                               node_ptr path,
+                                               node_ptr initial_node);
+
 static void
 mc_explain_debug_check_not_empty_state(BddFsm_ptr fsm,
                                        BddEnc_ptr enc,
@@ -302,6 +308,7 @@ node_ptr eu_explain(BddFsm_ptr fsm, BddEnc_ptr enc,
   node_ptr witness_path;
   node_ptr tmp_path;
   node_ptr tmp_witness_path;
+
   bdd_ptr state;
 
   int flag=0;
@@ -389,7 +396,7 @@ node_ptr eu_explain(BddFsm_ptr fsm, BddEnc_ptr enc,
 //    tmp1 = bdd_and(dd_manager, _new, acc);//在我们的案例中tmp先是false然后是true
     if (bdd_isnot_false(dd_manager, tmp)) {//可交,好像就是已经到达了终点
           flag++;
-          //tmp_path=copy_path(path);//TODO:这里可能不能这么子干，因为bdd_ptr需要deep_copy
+          tmp_path=copy_path(path);//TODO:这里可能不能这么子干，因为bdd_ptr需要deep_copy
 //          tmp_witness_path=copy_path(witness_path);
 //        if(flag>15) {
 
@@ -398,7 +405,7 @@ node_ptr eu_explain(BddFsm_ptr fsm, BddEnc_ptr enc,
 //            printf("EU Explain  NUM:%lf\n", BddEnc_get_minterms_of_bdd(enc, tmp));
 
 
-//            bdd_free(dd_manager, tmp);
+            bdd_free(dd_manager, tmp);
 
             tmp_witness_path =
                     Extend_trace_with_states_inputs_pair(fsm, enc, witness_path,
@@ -406,20 +413,20 @@ node_ptr eu_explain(BddFsm_ptr fsm, BddEnc_ptr enc,
                                                          state,
                                                          "eu_explain: (1).");
             bdd_free(dd_manager, state);
-//            mc_eu_explain_restrict_state_input_to_minterms(fsm, enc,
-//                                                           tmp_witness_path, path);
+           tmp_path= mc_eu_explain_restrict_state_input_to_minterms_cpy(fsm, enc,
+                                                          tmp_witness_path, path);
 
             addToPath(tmp_witness_path);
 //            addToPath(tmp_witness_path);
 
-            if(flag>=1) {
+            if(flag>=2) {
               witness_path=tmp_witness_path;
               goto free_local_bdds_and_return; /* 'witness_path' will be returned */
             }
 //             else
 //            {
 //             // path=copy_path(tmp_path);
-//             witness_path=tmp_witness_path;
+//             witness_path=tmp_path;
 ////              witness_path=tmp_witness_path;
 ////              tmp = bdd_and(dd_manager, _new, acc);
 //            }
@@ -1612,9 +1619,9 @@ static node_ptr Extend_trace_with_state_input_pair(BddFsm_ptr fsm,
   inputs = BddFsm_states_to_states_get_inputs(fsm,
                                               starting_state,
                                               next_state);
-//  input = BddEnc_pick_one_input(enc, inputs);//important
-    printf("IIInputs  NUM:%lf\n",BddEnc_get_minterms_of_bdd(enc, inputs));
-    input = BddEnc_pick_one_input_rand(enc, inputs);//important
+  input = BddEnc_pick_one_input(enc, inputs);//important
+//    printf("IIInputs  NUM:%lf\n",BddEnc_get_minterms_of_bdd(enc, inputs));
+//    input = BddEnc_pick_one_input_rand(enc, inputs);//important
 
   //cons  NodeMgr.c NodeMgr_cons----
   //#define cons(mgr, x, y)                         \
@@ -1822,6 +1829,91 @@ mc_eu_explain_restrict_state_input_to_minterms(BddFsm_ptr fsm,
     node_bdd_setcar(cdr(cdr(iter)), one_prev_state);
   } /* while iter != initial_node */
 }
+
+
+
+static node_ptr
+mc_eu_explain_restrict_state_input_to_minterms_cpy(BddFsm_ptr fsm,
+                                               BddEnc_ptr enc,
+                                               node_ptr path,
+                                               node_ptr initial_node)
+{
+    node_ptr iter,iter_cpy;
+    node_ptr path_cpy,p,q;
+    DDMgr_ptr dd_manager = BddEnc_get_dd_manager(enc);
+
+    {
+        /* We ensure the initial state is a minterm */
+        bdd_ptr state = BddEnc_pick_one_state(enc, (bdd_ptr)car(path));
+
+//        bdd_free(dd_manager, (bdd_ptr)car(path));
+        path_cpy=(node_ptr)malloc(sizeof(struct node));
+        memcpy(path_cpy,path,sizeof(struct node));
+        node_bdd_setcar(path, state);
+    }
+
+    for (iter = path,iter_cpy=path_cpy; iter != initial_node; iter = cdr(cdr(iter)),iter_cpy=cdr(cdr(iter_cpy))) {
+        /* NOTE FOR DESCRIPTION: Here current_state must be minterm, and
+           by construction it is such. */
+        bdd_ptr current_state = (bdd_ptr) car(iter);
+        bdd_ptr one_prev_state;
+        bdd_ptr one_input;
+
+        /* there must exist current state, input and previous state */
+        nusmv_assert(iter != Nil && cdr(iter) != Nil && cdr(cdr(iter)) != Nil);
+
+
+        /* debugging code : current_state should not be empty ever */
+        mc_explain_debug_check_not_empty_state(fsm, enc, current_state,
+                                               ""
+                                               "");
+
+        { /* get one previous state, i.e. compute preimage for the given
+         current state and intersect with provided previous states.
+
+         NOTE FOR DEVELOPERS:
+         Here we avoid to use bdd_dup since the BDDs are only used as
+         argument of other functions, and by construction they already
+         have a non-zero reference count.
+      */
+            bdd_ptr inputs = (bdd_ptr)car(cdr(iter));
+            bdd_ptr prev_states = (bdd_ptr)car(cdr(cdr(iter)));
+            bdd_ptr image = BddFsm_get_constrained_backward_image(fsm,
+                                                                  current_state,
+                                                                  inputs);
+            bdd_and_accumulate(dd_manager, &image, prev_states);
+            one_prev_state = BddEnc_pick_one_state(enc, image);
+            bdd_free(dd_manager, image);
+        }
+
+
+        { /* We extract a singleton input connecting current and previous state */
+            bdd_ptr all_inputs = BddFsm_states_to_states_get_inputs(fsm,
+                                                                    one_prev_state,
+                                                                    current_state);
+            one_input = BddEnc_pick_one_input(enc, all_inputs);
+            bdd_free(dd_manager, all_inputs);
+        }
+
+        /* Store the computed state and input in the path */
+//        bdd_free(dd_manager, (bdd_ptr)car(cdr(iter)));
+        p=(node_ptr)malloc(sizeof(struct node));
+        memcpy(p,cdr(path),sizeof(struct node));
+        iter_cpy->right.nodetype=p;
+
+        node_bdd_setcar(cdr(iter), one_input);
+
+        q=(node_ptr)malloc(sizeof(struct node));
+        memcpy(q,cdr(path),sizeof(struct node));
+        p->right.nodetype=q;
+//        bdd_free(dd_manager, (bdd_ptr)car(cdr(cdr(iter))));
+        node_bdd_setcar(cdr(cdr(iter)), one_prev_state);
+    } /* while iter != initial_node */
+
+    return path_cpy;
+}
+
+
 
 /*!
   \brief Debugging code for eu_explain
