@@ -1,0 +1,4 @@
+Cannot generate into /home/william/CLionProjects/NuSMV/NuSMV-2.6.0/MiniSat/cmake-build-debug
+Cannot create directory
+
+Please either delete it manually or select another generation directory
