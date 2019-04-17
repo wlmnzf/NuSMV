@@ -396,7 +396,7 @@ node_ptr eu_explain(BddFsm_ptr fsm, BddEnc_ptr enc,
 //    tmp1 = bdd_and(dd_manager, _new, acc);//在我们的案例中tmp先是false然后是true
     if (bdd_isnot_false(dd_manager, tmp)) {//可交,好像就是已经到达了终点
           flag++;
-          tmp_path=copy_path(path);//TODO:这里可能不能这么子干，因为bdd_ptr需要deep_copy
+          tmp_path=copy_path(witness_path);//TODO:这里可能不能这么子干，因为bdd_ptr需要deep_copy
 //          tmp_witness_path=copy_path(witness_path);
 //        if(flag>15) {
 
@@ -407,29 +407,34 @@ node_ptr eu_explain(BddFsm_ptr fsm, BddEnc_ptr enc,
 
             bdd_free(dd_manager, tmp);
 
-            tmp_witness_path =
-                    Extend_trace_with_states_inputs_pair(fsm, enc, witness_path,
-                                                         (bdd_ptr) car(witness_path),
-                                                         state,
-                                                         "eu_explain: (1).");
+//            tmp_witness_path =
+//                    Extend_trace_with_states_inputs_pair(fsm, enc, witness_path,
+//                                                         (bdd_ptr) car(witness_path),
+//                                                         state,
+//                                                         "eu_explain: (1).");
+      tmp_witness_path =
+              Extend_trace_with_states_inputs_pair(fsm, enc, tmp_path,
+                                                   (bdd_ptr) car(tmp_path),
+                                                   state,
+                                                   "eu_explain: (1).");
             bdd_free(dd_manager, state);
-           tmp_path= mc_eu_explain_restrict_state_input_to_minterms_cpy(fsm, enc,
+            mc_eu_explain_restrict_state_input_to_minterms(fsm, enc,
                                                           tmp_witness_path, path);
 
             addToPath(tmp_witness_path);
 //            addToPath(tmp_witness_path);
 
-            if(flag>=2) {
+            if(flag>=1) {
               witness_path=tmp_witness_path;
               goto free_local_bdds_and_return; /* 'witness_path' will be returned */
             }
-//             else
-//            {
-//             // path=copy_path(tmp_path);
-//             witness_path=tmp_path;
-////              witness_path=tmp_witness_path;
-////              tmp = bdd_and(dd_manager, _new, acc);
-//            }
+             else
+            {
+             // path=copy_path(tmp_path);
+            // witness_path=tmp_path;
+//              witness_path=tmp_witness_path;
+//              tmp = bdd_and(dd_manager, _new, acc);
+            }
 
 
 //                    }//if(flag>=3)

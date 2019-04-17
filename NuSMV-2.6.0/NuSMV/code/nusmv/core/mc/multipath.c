@@ -36,24 +36,22 @@ void addToPath(node_ptr path)
 
 node_ptr copy_path(node_ptr path)
 {
-    node_ptr cp_path,iter,l,r,p;
+    node_ptr cp_path,iter,l,r,p,q;
     cp_path=(node_ptr)malloc(sizeof(struct node));
-    p=cp_path;
+    q=p=cp_path;
 
 
     for (iter = path; iter != NULL; iter = cdr(iter)  ) {
-          memcpy(p,path,sizeof(struct node));
+         q->right.nodetype=p;
+          memcpy(p,iter,sizeof(struct node));
 
           l=(node_ptr)malloc(sizeof(struct node));
           memcpy(l,car(path),sizeof(struct node));
           p->left.nodetype=l;
-
-          if(cdr(iter)!=NULL) {
-              r = (node_ptr) malloc(sizeof(struct node));
-              memcpy(r,cdr(iter),sizeof(struct node));
-
-          }
+          q=p;
+          p=(node_ptr)malloc(sizeof(struct node));
     }
+    q->right.nodetype=NULL;
     return cp_path;
 
 
