@@ -1213,7 +1213,7 @@ static node_ptr explain_recur(BddFsm_ptr fsm, BddEnc_ptr enc, node_ptr path,
             return y;
     }
 
-//    if (new_path != Nil) {
+//    if (new_path != Nil) {1
 //        //这里是不是因为它EU的f里面还有别的嵌套的formula,所以要继续进行迭代计算
 //        //EU操作左子树是E后面的公式，右子树表示U后面的公式
 //        //将反例Path继续接下去
