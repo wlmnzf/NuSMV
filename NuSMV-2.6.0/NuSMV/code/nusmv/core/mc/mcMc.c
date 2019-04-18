@@ -143,27 +143,27 @@ void Mc_CheckCTLSpec(NuSMVEnv_ptr env, Prop_ptr prop)
 
 
 
-  fp = fopen("/home/william/spec.dot", "w");
-
-  if(fp == NULL)
-    printf("fail to open the file! \n");
-  else
-  {
-    printf("The file is open! \n");
-//    fprintf (fp, "Name\n");
-//    bdd_tmp_size=bdd_size(dd,spec);
-//    dres=dd_dump_dot(dd,bdd_tmp_size,&spec,NULL,NULL,fp);
-    bst_print_dot(spec,fp);
-    if(dres==1)
-    {
-      printf("success!\n");
-    }
-    else
-    {
-      printf("failed!");
-    }
-    fclose(fp);
-  }
+//  fp = fopen("/home/william/spec.dot", "w");
+//
+//  if(fp == NULL)
+//    printf("fail to open the file! \n");
+//  else
+//  {
+//    printf("The file is open! \n");
+////    fprintf (fp, "Name\n");
+////    bdd_tmp_size=bdd_size(dd,spec);
+////    dres=dd_dump_dot(dd,bdd_tmp_size,&spec,NULL,NULL,fp);
+//    bst_print_dot(spec,fp);
+//    if(dres==1)
+//    {
+//      printf("success!\n");
+//    }
+//    else
+//    {
+//      printf("failed!");
+//    }
+//    fclose(fp);
+//  }
 
 
 //added:multipath
@@ -241,7 +241,7 @@ multipath_head->current=NULL;
     if (opt_counter_examples(opts)) {
       char* trace_title = NULL;
       char* trace_title_postfix = " Counterexample";
-        printf("AAAXXXX  NUM:%lf\n",BddEnc_get_minterms_of_bdd(enc, s0));
+//        printf("AAAXXXX  NUM:%lf\n",BddEnc_get_minterms_of_bdd(enc, s0));
       tmp_1 = BddEnc_pick_one_state(enc, s0);
 //        tmp_1 = BddEnc_pick_one_state_rand(enc, s0);
       bdd_free(dd, s0);
@@ -493,12 +493,12 @@ BddStates   eu(BddFsm_ptr fsm, BddStates f, BddStates g)
   }
 
     global_wffprint=wffprint;
-//  if (opt_verbose_level_gt(opts, 1)) {
-    if (true) {
-    Logger_ptr logger = LOGGER(NuSMVEnv_get_value(env, ENV_LOGGER));
-    Logger_nlog(logger, wffprint,
-                "eu: computing fixed point approximations for %N ...\n",
-                ErrorMgr_get_the_node(errmgr));
+ if (opt_verbose_level_gt(opts, 1)) {
+    // if (true) {
+//    Logger_ptr logger = LOGGER(NuSMVEnv_get_value(env, ENV_LOGGER));
+//    Logger_nlog(logger, wffprint,
+//                "eu: computing fixed point approximations for %N ...\n",
+//                ErrorMgr_get_the_node(errmgr));
   }
     //计算fixedpoint了
   oldY = bdd_dup(Y);
@@ -508,8 +508,8 @@ BddStates   eu(BddFsm_ptr fsm, BddStates f, BddStates g)
   while(bdd_isnot_false(dd, new)) {
     bdd_ptr tmp_1, tmp_2;
 
-    if (true) {
-//    if (opt_verbose_level_gt(opts, 1)) {
+//    if (true) {
+    if (opt_verbose_level_gt(opts, 1)) {
       Logger_ptr logger = LOGGER(NuSMVEnv_get_value(env, ENV_LOGGER));
       double states = BddEnc_count_states_of_bdd(enc, Y);
       int size = bdd_size(dd, Y);

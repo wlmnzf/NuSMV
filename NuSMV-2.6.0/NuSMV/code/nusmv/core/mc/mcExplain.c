@@ -308,6 +308,7 @@ node_ptr eu_explain(BddFsm_ptr fsm, BddEnc_ptr enc,
   node_ptr witness_path;
   node_ptr tmp_path;
   node_ptr tmp_witness_path;
+  node_ptr new_init;
 
   bdd_ptr state;
 
@@ -336,8 +337,8 @@ node_ptr eu_explain(BddFsm_ptr fsm, BddEnc_ptr enc,
     bdd_free(dd_manager, tmp);
   }
 
-//  if (opt_verbose_level_gt(opts, 1)) {
-  if (true) {
+  if (opt_verbose_level_gt(opts, 1)) {
+//  if (true) {
     Logger_ptr logger = LOGGER(NuSMVEnv_get_value(env, ENV_LOGGER));
     Logger_nlog(logger, wffprint, "searching (counter)example for %N\n", ErrorMgr_get_the_node(errmgr));
   }
@@ -376,8 +377,8 @@ node_ptr eu_explain(BddFsm_ptr fsm, BddEnc_ptr enc,
      intersects with accepting states */
   while (true) {
 
-//    if (opt_verbose_level_gt(opts, 1)) {
-      if (true) {
+    if (opt_verbose_level_gt(opts, 1)) {
+//      if (true) {
       Logger_ptr logger = LOGGER(NuSMVEnv_get_value(env, ENV_LOGGER));
       Logger_log(logger, "eu_explain: iteration %d: states = %g, " \
               "BDD nodes = %d\n", n++, BddEnc_count_states_of_bdd(enc, Z),
@@ -417,24 +418,37 @@ node_ptr eu_explain(BddFsm_ptr fsm, BddEnc_ptr enc,
                                                    (bdd_ptr) car(tmp_path),
                                                    state,
                                                    "eu_explain: (1).");
+//        tmp_path =
+//                Extend_trace_with_states_inputs_pair(fsm, enc, witness_path,
+//                                                     (bdd_ptr) car(witness_path),
+//                                                     state,
+//                                                     "eu_explain: (1).");
+
+            new_init=tmp_witness_path;
+            while(cdr(new_init)!=NULL)
+            {
+                new_init=cdr(new_init);
+            }
+
+
             bdd_free(dd_manager, state);
             mc_eu_explain_restrict_state_input_to_minterms(fsm, enc,
-                                                          tmp_witness_path, path);
+                                                          tmp_witness_path, new_init);
 
             addToPath(tmp_witness_path);
 //            addToPath(tmp_witness_path);
 
-            if(flag>=1) {
+            if(flag>=6) {
               witness_path=tmp_witness_path;
               goto free_local_bdds_and_return; /* 'witness_path' will be returned */
             }
-             else
-            {
-             // path=copy_path(tmp_path);
-            // witness_path=tmp_path;
-//              witness_path=tmp_witness_path;
-//              tmp = bdd_and(dd_manager, _new, acc);
-            }
+//             else
+//            {
+//             // path=copy_path(tmp_path);
+//            // witness_path=tmp_path;
+////              witness_path=tmp_witness_path;
+////              tmp = bdd_and(dd_manager, _new, acc);
+//            }
 
 
 //                    }//if(flag>=3)
@@ -1170,7 +1184,7 @@ static node_ptr explain_recur(BddFsm_ptr fsm, BddEnc_ptr enc, node_ptr path,
 
   case EU:
 
-      a1 = eval_ctl_spec(fsm, enc, car(formula_expr), context);
+    a1 = eval_ctl_spec(fsm, enc, car(formula_expr), context);
     a2 = eval_ctl_spec(fsm, enc, cdr(formula_expr), context);
     ErrorMgr_set_the_node(errmgr, formula_expr);
     new_path = eu_explain(fsm, enc, path, a1, a2);
@@ -1182,7 +1196,7 @@ static node_ptr explain_recur(BddFsm_ptr fsm, BddEnc_ptr enc, node_ptr path,
         x=multipath_head->next;
         while(x!=NULL)
         {
-            printf("----- %d -----\n",x->index);
+            // printf("----- %d -----\n",x->index);
             //TODO：其实这里也应该有很多子树的情况，但是暂时不考虑，先试试这样子能不能行
             q = explain_recur(fsm, enc, x->path, cdr(formula_expr),
                                        context);
