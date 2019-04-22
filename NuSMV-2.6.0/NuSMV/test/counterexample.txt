@@ -19,6 +19,8 @@ Trace Type: Counterexample
     cpu.state = squash
   -> State: 1.4 <-
     cpu.state = normal
+
+
 -- as demonstrated by the following execution sequence
 Trace Description: CTL Counterexample
 Trace Type: Counterexample
@@ -45,6 +47,8 @@ Trace Type: Counterexample
     cpu.state = squash
   -> State: 2.6 <-
     cpu.state = normal
+
+
 -- as demonstrated by the following execution sequence
 Trace Description: CTL Counterexample
 Trace Type: Counterexample
