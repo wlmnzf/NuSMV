@@ -53,7 +53,11 @@ def file2lsit(fpath):
 	return multi_counterexample_path_list
 
 def fill_states(multi_counterexample_path_list):
-	print("todo")
+	print(multi_counterexample_path_list)
+	for i in range(len(multi_counterexample_path_list)):
+		# every counterexample
+		for j in range(len(multi_counterexample_path_list[i])):
+
 	
 
 
