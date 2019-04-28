@@ -15,13 +15,13 @@ class Trace:
 #         self.list = []     
 
 black_list=["attacker.cmd","victim.cmd"]
-white_list=["cache.ExistStateSC","cpu.state","predictor.Predict","cache.ExistStateSC"]
+white_list=["cache.ExistStateSC","cpu.state","predictor.Predict","cache.ExistStateSC","cache.ExistStateOT","r_time","w_time"]
 
-def file2lsit(fpath):
+def file2list(fpath):
 	f = open(fpath, 'r')
 	multi_counterexample=f.read().replace('\n','').replace('\t','')
 	# print(multi_counterexample)
-	pattern = re.compile(r'-> State: ([0-9]*).([0-9]*) <-([\s|.|=|0-9A-Za-z]*)')
+	pattern = re.compile(r'-> State: ([0-9]*).([0-9]*) <-([\s|_|.|=|0-9A-Za-z]*)')
 	results=re.findall(pattern,multi_counterexample)
 	# print(results)
 
@@ -129,7 +129,7 @@ def generate_graph(multi_counterexample_path_list):
 
 
 def main(argv):
-	multi_counterexample_path_list=file2lsit('counterexample.txt')
+	multi_counterexample_path_list=file2list('counterexample.txt')
 	multi_counterexample_path_list=fill_states(multi_counterexample_path_list);
 	generate_graph(multi_counterexample_path_list)
 

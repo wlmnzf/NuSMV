@@ -1,0 +1,137 @@
+MODULE Processor(attacker,victim,cache,predictor)
+VAR
+state:{normal,squash,authfailed,predict};
+
+ASSIGN
+next(state):=case
+                (state=predict)&(predictor.Predict=TSuccess|predictor.Predict=NTSuccess):normal;
+                (state=predict)&(predictor.Predict=TFailed|predictor.Predict=NTFailed):squash;
+                state=squash:normal;
+
+                attacker.cmd=branch|victim.cmd=branch:predict;
+                TRUE:state;
+              esac;
+
+
+
+MODULE L1Cache(attacker,victim)
+VAR
+ExistStateSC:boolean;
+ExistStateOT:boolean;
+
+
+ASSIGN
+init(ExistStateSC):=FALSE;
+init(ExistStateOT):=TRUE;
+
+
+next(ExistStateSC):= case
+                        victim.cmd=load|victim.cmd=store:TRUE;
+                        victim.cmd=flush|attacker.cmd=flush:FALSE;
+                        TRUE: ExistStateSC;
+                     esac;
+
+next(ExistStateOT):= case
+                        attacker.cmd=flush:FALSE;
+                        attacker.cmd=load|attacker.cmd=store:TRUE;
+                        TRUE: ExistStateOT;
+                     esac;
+
+
+
+-- MODULE Membus
+
+
+
+-- MODULE Memory
+
+
+
+
+MODULE Predictor(attacker,victim)
+VAR
+Predict:{nop,TSuccess,TFailed,NTSuccess,NTFailed};
+
+ASSIGN
+next(Predict):=case
+    attacker.cmd=branch|victim.cmd=branch:{TSuccess,TFailed,NTSuccess,NTFailed};
+    TRUE:nop;
+esac;
+
+
+
+
+MODULE ROB
+VAR
+state:{check,commit,clear};
+
+
+
+
+-- MODULE CPU
+
+
+
+
+
+MODULE Attacker
+VAR
+-- step:{flush,reload,test,end};
+cmd:{nop,load,store,branch,jump,flush};
+rw_addr:{SC_addr,OT_addr};
+
+
+
+
+MODULE Victim
+VAR
+cmd:{nop,load,store,branch,jump,flush};
+-- sameVA:boolean;
+-- -- samePA:boolean;
+-- sameSet_differentVA:boolean;
+
+
+
+
+
+MODULE main
+VAR
+attacker: Attacker;
+victim: Victim;
+cache: L1Cache(attacker,victim);
+predictor:Predictor(attacker,victim);
+cpu:Processor(attacker,victim,cache,predictor);
+
+r_time:0..5;
+w_time:0..5;
+
+ASSIGN
+next(victim.cmd):=case
+                    cpu.state=squash|cpu.state=predict|cpu.state=authfailed:victim.cmd;
+                    TRUE:{nop,load,store,branch,jump,flush};
+                  esac;
+
+next(attacker.cmd):=case
+                    cpu.state=squash|cpu.state=predict|cpu.state=authfailed:attacker.cmd;
+                    TRUE:{nop,load,store,branch,jump,flush};
+                  esac;
+
+next(r_time):=case
+                 attacker.cmd=load&r_time=5:5;
+                 attacker.cmd=load:r_time+1;
+                 TRUE:0;
+             esac;
+next(w_time):=case
+                attacker.cmd=store&w_time=5:5;
+                attacker.cmd=store:w_time+1;
+                TRUE:0;
+              esac;
+
+DEFINE
+evict:=r_time=10|w_time=10;
+
+
+SPEC
+!EF(   (attacker.cmd=flush|evict) & EF( (cpu.state=squash) & EX(cache.ExistStateSC=TRUE)      ) )
+
+

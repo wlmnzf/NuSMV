@@ -438,7 +438,7 @@ node_ptr eu_explain(BddFsm_ptr fsm, BddEnc_ptr enc,
             addToPath(tmp_witness_path);
 //            addToPath(tmp_witness_path);
 
-            if(flag>=6) {
+            if(flag>=10) {
               witness_path=tmp_witness_path;
               goto free_local_bdds_and_return; /* 'witness_path' will be returned */
             }
