@@ -14,26 +14,32 @@ next(state):=case
 
 
 
-MODULE L1Cache(attacker,victim)
+MODULE L1Cache(attacker,victim,r_time,w_time)
 VAR
 ExistStateSC:boolean;
 ExistStateOT:boolean;
 
 
+DEFINE
+evict:=r_time=3|w_time=3;
+
 ASSIGN
-init(ExistStateSC):=FALSE;
+init(ExistStateSC):=TRUE;
 init(ExistStateOT):=TRUE;
+
 
 
 next(ExistStateSC):= case
                         victim.cmd=load|victim.cmd=store:TRUE;
                         victim.cmd=flush|attacker.cmd=flush:FALSE;
+                        evict:FALSE;
                         TRUE: ExistStateSC;
                      esac;
 
 next(ExistStateOT):= case
                         attacker.cmd=flush:FALSE;
                         attacker.cmd=load|attacker.cmd=store:TRUE;
+                        evict:FALSE;
                         TRUE: ExistStateOT;
                      esac;
 
@@ -96,14 +102,14 @@ cmd:{nop,load,store,branch,jump,flush};
 
 MODULE main
 VAR
+r_time:0..3;
+w_time:0..3;
 attacker: Attacker;
 victim: Victim;
-cache: L1Cache(attacker,victim);
+cache: L1Cache(attacker,victim,r_time,w_time);
 predictor:Predictor(attacker,victim);
 cpu:Processor(attacker,victim,cache,predictor);
 
-r_time:0..5;
-w_time:0..5;
 
 ASSIGN
 next(victim.cmd):=case
@@ -117,21 +123,21 @@ next(attacker.cmd):=case
                   esac;
 
 next(r_time):=case
-                 attacker.cmd=load&r_time=5:5;
+                 attacker.cmd=load&r_time=3:3;
                  attacker.cmd=load:r_time+1;
                  TRUE:0;
              esac;
 next(w_time):=case
-                attacker.cmd=store&w_time=5:5;
+                attacker.cmd=store&w_time=3:3;
                 attacker.cmd=store:w_time+1;
                 TRUE:0;
               esac;
 
-DEFINE
-evict:=r_time=10|w_time=10;
+-- DEFINE
+-- evict:=r_time=3|w_time=3;
 
 
 SPEC
-!EF(   (attacker.cmd=flush|evict) & EF( (cpu.state=squash) & EX(cache.ExistStateSC=TRUE)      ) )
+!EF(E[ cache.ExistStateSC=FALSE U (cpu.state=squash) & EX(cache.ExistStateSC=TRUE)]   )
 
 

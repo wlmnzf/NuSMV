@@ -14,8 +14,19 @@ class Trace:
 #     def __init__(self):  
 #         self.list = []     
 
+	# r_time = 0
+	# w_time = 0
+	# attacker.cmd = branch
+	# attacker.rw_addr = SC_addr
+	# victim.cmd = nop
+	# cache.ExistStateSC = TRUE
+	# cache.ExistStateOT = TRUE
+	# predictor.Predict = nop
+	# cpu.state = normal
+	# evict = FALSE
+	# cache.evict = FALSE
 black_list=["attacker.cmd","victim.cmd"]
-white_list=["cache.ExistStateSC","cpu.state","predictor.Predict","cache.ExistStateSC","cache.ExistStateOT","r_time","w_time"]
+white_list=["cache.ExistStateSC","cpu.state","predictor.Predict","cache.ExistStateSC","cache.ExistStateOT","r_time","w_time","cache.evict"]
 
 def file2list(fpath):
 	f = open(fpath, 'r')
@@ -63,11 +74,29 @@ def fill_states(multi_counterexample_path_list):
 			if(j==0):
 				items=list(multi_counterexample_path_list[i][j].trace_state_dic.keys());
 				multi_counterexample_path_list[i][j].filled_trace_state_dic=multi_counterexample_path_list[i][j].trace_state_dic.copy()
+				for x in range(len(items)):
+					if(items[x] not in white_list and items[x] not in black_list):
+						multi_counterexample_path_list[i][j].filled_trace_state_dic.pop(items[x])
+				# items=list(multi_counterexample_path_list[i][j].filled_trace_state_dic.keys());
+
 			else:
+				# items=list(multi_counterexample_path_list[i][j-1].filled_trace_state_dic.keys());
 				multi_counterexample_path_list[i][j].filled_trace_state_dic=multi_counterexample_path_list[i][j].trace_state_dic.copy();
 				for k in range(len(items)):
 					if(not ( items[k] in multi_counterexample_path_list[i][j].filled_trace_state_dic) and  (items[k] in white_list  or items[k] in black_list)):
 						multi_counterexample_path_list[i][j].filled_trace_state_dic[items[k]]=multi_counterexample_path_list[i][j-1].filled_trace_state_dic[items[k]]
+					elif ( (items[k] in multi_counterexample_path_list[i][j].filled_trace_state_dic) and (items[k] not in white_list  and items[k] not in black_list) ):
+						multi_counterexample_path_list[i][j].filled_trace_state_dic.pop(items[k])
+
+				# for x in range(len(items)):
+				# 	if(items[x] not in white_list and items[x] not in black_list):
+				# 		multi_counterexample_path_list[i][j].filled_trace_state_dic.pop(items[x])
+				#
+				# for k in range(len(items)):
+				# 	if(not ( items[k] in multi_counterexample_path_list[i][j].filled_trace_state_dic) and  (items[k] in white_list  or items[k] in black_list or items[k] in black_list)):
+				# 		multi_counterexample_path_list[i][j].filled_trace_state_dic[items[k]]=multi_counterexample_path_list[i][j-1].filled_trace_state_dic[items[k]]
+
+
 	return multi_counterexample_path_list;
 
 
@@ -99,7 +128,7 @@ def generate_graph(multi_counterexample_path_list):
 				print("Accept:\n")
 			items=list(multi_counterexample_path_list[i][j].filled_trace_state_dic.items())
 			for k in range(len(items)):
-				if (items[k][0] in black_list):
+				if (items[k][0] in black_list ):
 					continue;
 				print('%s = %s\n' % (items[k][0],items[k][1]))
 
