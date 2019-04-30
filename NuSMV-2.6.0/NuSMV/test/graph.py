@@ -101,12 +101,13 @@ def fill_states(multi_counterexample_path_list):
 
 
 def generate_graph(multi_counterexample_path_list):
-	print(" strict digraph Tree {\n")
+	print(" strict digraph prof {\n")
 	print("    node [fontname=\"Arial\"];\n")
+	print("    splines=line;")
 
 	for i in range(len(multi_counterexample_path_list)):
 		# every counterexample
-		items=[]
+
 		for j in range(len(multi_counterexample_path_list[i])):
 			if(j==0):
 				continue;
@@ -119,30 +120,26 @@ def generate_graph(multi_counterexample_path_list):
 					list_str=list_str + ("%s = %s\n" %(items[k][0],items[k][1]))
 					continue;
 				print('%s = %s\n' % (items[k][0],items[k][1]))
+			# print(multi_counterexample_path_list[i][j-1].trace_index)
+			# print(".")
+			# print(multi_counterexample_path_list[i][j-1].trace_state_index)
 
 			print("\" -> \"");
-			# print("op%d:" % i)
-			# print(list_str)
-			# print("\"\n -> \"");
-			if(j==len(multi_counterexample_path_list[i])-1):
-				print("Accept:\n")
+
+			# if(j==len(multi_counterexample_path_list[i])-1):
+			# 	print("Accept:\n")
 			items=list(multi_counterexample_path_list[i][j].filled_trace_state_dic.items())
 			for k in range(len(items)):
 				if (items[k][0] in black_list ):
 					continue;
 				print('%s = %s\n' % (items[k][0],items[k][1]))
+			# print(multi_counterexample_path_list[i][j].trace_index)
+			# print(".")
+			# print(multi_counterexample_path_list[i][j].trace_state_index)
 
 			print("\"");
 			print("[ label=\"%s\" ]" % list_str)
-			# if(j==len(multi_counterexample_path_list[i])-1):
-			# 	items=list(multi_counterexample_path_list[i][j].filled_trace_state_dic.items())
-			# 	print("\"Accept:\n")
-			# 	for k in range(len(items)):
-			# 		if (items[k][0] in black_list):
-			# 			continue;
-			# 		print('%s = %s\n' % (items[k][0],items[k][1]))
-			# 	print("\"")
-			# 	print(" [color = red,style=filled]\n")
+
 
 
 
