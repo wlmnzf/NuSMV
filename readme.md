@@ -1,3 +1,11 @@
+Modified by Limin Wang
+Target:NuSMV for Multiple Counterexamples
+
+The EF,EU operations of CTL have been modified to generate multiple counterexamples
+
+
+
+
 
 
 ### About NuSMV-a 
