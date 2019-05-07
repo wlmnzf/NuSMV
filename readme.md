@@ -4,7 +4,8 @@ Target:NuSMV for Multiple Counterexamples
 The EF,EU operations of CTL have been modified to generate multiple counterexamples
 
 from https://github.com/hklarner/NuSMV-a.git
-==================================================================================================================================
+
+##### ==================================================================================================================================
 
 
 
