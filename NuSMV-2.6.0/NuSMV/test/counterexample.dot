@@ -1,0 +1,421 @@
+ strict digraph Tree {
+
+    node [fontname="Arial"];
+
+    splines=line;
+"
+start
+" -> "
+0:0:cpu.state = normal
+
+"
+[ label="" ]
+"
+0:0:cpu.state = normal
+
+" -> "
+0:1:cpu.state = predict
+
+"
+[ label="attacker.cmd = branch
+victim.cmd = nop
+" ]
+"
+0:1:cpu.state = predict
+
+" -> "
+0:2:cpu.state = squash
+
+"
+[ label="victim.cmd = branch
+attacker.cmd = store
+" ]
+"
+0:2:cpu.state = squash
+
+" -> "
+0:3:cpu.state = normal
+
+"
+[ label="attacker.cmd = store
+victim.cmd = branch
+" ]
+"
+0:3:cpu.state = normal
+
+" -> "Danger"
+"
+start
+" -> "
+1:0:cpu.state = normal
+
+"
+[ label="" ]
+"
+1:0:cpu.state = normal
+
+" -> "
+1:1:cpu.state = predict
+
+"
+[ label="attacker.cmd = branch
+victim.cmd = nop
+" ]
+"
+1:1:cpu.state = predict
+
+" -> "
+1:2:cpu.state = normal
+
+"
+[ label="victim.cmd = branch
+attacker.cmd = flush
+" ]
+"
+1:2:cpu.state = normal
+
+" -> "
+1:3:cpu.state = predict
+
+"
+[ label="attacker.cmd = flush
+victim.cmd = branch
+" ]
+"
+1:3:cpu.state = predict
+
+" -> "
+1:4:cpu.state = normal
+
+"
+[ label="attacker.cmd = branch
+victim.cmd = branch
+" ]
+"
+1:4:cpu.state = normal
+
+" -> "
+1:5:cpu.state = predict
+
+"
+[ label="attacker.cmd = branch
+victim.cmd = branch
+" ]
+"
+1:5:cpu.state = predict
+
+" -> "
+1:6:cpu.state = squash
+
+"
+[ label="victim.cmd = load
+attacker.cmd = branch
+" ]
+"
+1:6:cpu.state = squash
+
+" -> "
+1:7:cpu.state = normal
+
+"
+[ label="attacker.cmd = branch
+victim.cmd = load
+" ]
+"
+1:7:cpu.state = normal
+
+" -> "Danger"
+"
+start
+" -> "
+2:0:cpu.state = normal
+
+"
+[ label="" ]
+"
+2:0:cpu.state = normal
+
+" -> "
+2:1:cpu.state = predict
+
+"
+[ label="attacker.cmd = branch
+victim.cmd = nop
+" ]
+"
+2:1:cpu.state = predict
+
+" -> "
+2:2:cpu.state = normal
+
+"
+[ label="attacker.cmd = flush
+victim.cmd = nop
+" ]
+"
+2:2:cpu.state = normal
+
+" -> "
+2:3:cpu.state = normal
+
+"
+[ label="attacker.cmd = flush
+victim.cmd = nop
+" ]
+"
+2:3:cpu.state = normal
+
+" -> "
+2:4:cpu.state = predict
+
+"
+[ label="attacker.cmd = store
+victim.cmd = branch
+" ]
+"
+2:4:cpu.state = predict
+
+" -> "
+2:5:cpu.state = normal
+
+"
+[ label="attacker.cmd = load
+victim.cmd = branch
+" ]
+"
+2:5:cpu.state = normal
+
+" -> "
+2:6:cpu.state = predict
+
+"
+[ label="attacker.cmd = load
+victim.cmd = branch
+" ]
+"
+2:6:cpu.state = predict
+
+" -> "
+2:7:cpu.state = squash
+
+"
+[ label="victim.cmd = load
+attacker.cmd = branch
+" ]
+"
+2:7:cpu.state = squash
+
+" -> "
+2:8:cpu.state = normal
+
+"
+[ label="attacker.cmd = branch
+victim.cmd = load
+" ]
+"
+2:8:cpu.state = normal
+
+" -> "Danger"
+"
+start
+" -> "
+3:0:cpu.state = normal
+
+"
+[ label="" ]
+"
+3:0:cpu.state = normal
+
+" -> "
+3:1:cpu.state = predict
+
+"
+[ label="attacker.cmd = branch
+victim.cmd = nop
+" ]
+"
+3:1:cpu.state = predict
+
+" -> "
+3:2:cpu.state = normal
+
+"
+[ label="victim.cmd = branch
+attacker.cmd = flush
+" ]
+"
+3:2:cpu.state = normal
+
+" -> "
+3:3:cpu.state = predict
+
+"
+[ label="attacker.cmd = flush
+victim.cmd = branch
+" ]
+"
+3:3:cpu.state = predict
+
+" -> "
+3:4:cpu.state = normal
+
+"
+[ label="attacker.cmd = branch
+victim.cmd = branch
+" ]
+"
+3:4:cpu.state = normal
+
+" -> "
+3:5:cpu.state = predict
+
+"
+[ label="attacker.cmd = branch
+victim.cmd = branch
+" ]
+"
+3:5:cpu.state = predict
+
+" -> "
+3:6:cpu.state = normal
+
+"
+[ label="attacker.cmd = load
+victim.cmd = branch
+" ]
+"
+3:6:cpu.state = normal
+
+" -> "
+3:7:cpu.state = predict
+
+"
+[ label="attacker.cmd = load
+victim.cmd = branch
+" ]
+"
+3:7:cpu.state = predict
+
+" -> "
+3:8:cpu.state = squash
+
+"
+[ label="victim.cmd = load
+attacker.cmd = branch
+" ]
+"
+3:8:cpu.state = squash
+
+" -> "
+3:9:cpu.state = normal
+
+"
+[ label="attacker.cmd = branch
+victim.cmd = load
+" ]
+"
+3:9:cpu.state = normal
+
+" -> "Danger"
+"
+start
+" -> "
+4:0:cpu.state = normal
+
+"
+[ label="" ]
+"
+4:0:cpu.state = normal
+
+" -> "
+4:1:cpu.state = predict
+
+"
+[ label="attacker.cmd = branch
+victim.cmd = nop
+" ]
+"
+4:1:cpu.state = predict
+
+" -> "
+4:2:cpu.state = squash
+
+"
+[ label="victim.cmd = jump
+attacker.cmd = store
+" ]
+"
+4:2:cpu.state = squash
+
+" -> "
+4:3:cpu.state = normal
+
+"
+[ label="attacker.cmd = store
+victim.cmd = jump
+" ]
+"
+4:3:cpu.state = normal
+
+" -> "
+4:4:cpu.state = normal
+
+"
+[ label="attacker.cmd = store
+victim.cmd = jump
+" ]
+"
+4:4:cpu.state = normal
+
+" -> "
+4:5:cpu.state = evict
+
+"
+[ label="attacker.cmd = store
+victim.cmd = nop
+" ]
+"
+4:5:cpu.state = evict
+
+" -> "
+4:6:cpu.state = evict
+
+"
+[ label="attacker.cmd = load
+victim.cmd = branch
+" ]
+"
+4:6:cpu.state = evict
+
+" -> "
+4:7:cpu.state = predict
+
+"
+[ label="attacker.cmd = flush
+victim.cmd = branch
+" ]
+"
+4:7:cpu.state = predict
+
+" -> "
+4:8:cpu.state = squash
+
+"
+[ label="victim.cmd = load
+attacker.cmd = branch
+" ]
+"
+4:8:cpu.state = squash
+
+" -> "
+4:9:cpu.state = normal
+
+"
+[ label="attacker.cmd = branch
+victim.cmd = load
+" ]
+"
+4:9:cpu.state = normal
+
+" -> "Danger"
+}

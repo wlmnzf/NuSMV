@@ -26,7 +26,9 @@ class Trace:
 	# evict = FALSE
 	# cache.evict = FALSE
 black_list=["attacker.cmd","victim.cmd"]
-white_list=["cache.ExistStateSC","cpu.state","predictor.Predict","cache.ExistStateSC","cache.ExistStateOT","r_time","w_time","cache.evict"]
+# white_list=["cache.ExistStateSC","cpu.state","predictor.Predict","cache.ExistStateSC","cache.ExistStateOT","r_time","w_time","cache.evict"]
+
+white_list=["cpu.state"]
 
 def file2list(fpath):
 	f = open(fpath, 'r')
@@ -63,6 +65,7 @@ def file2list(fpath):
 		counterexample.append(trace)
 
 	multi_counterexample_path_list.append(counterexample);
+	multi_counterexample_path_list.sort(key=len)
 	return multi_counterexample_path_list
 
 def fill_states(multi_counterexample_path_list):
@@ -100,29 +103,34 @@ def fill_states(multi_counterexample_path_list):
 	return multi_counterexample_path_list;
 
 
-def generate_graph(multi_counterexample_path_list):
-	print(" strict digraph prof {\n")
+def generate_graph(multi_counterexample_path_list,length):
+	print(" strict digraph Tree {\n")
 	print("    node [fontname=\"Arial\"];\n")
 	print("    splines=line;")
 
-	for i in range(len(multi_counterexample_path_list)):
+	if(length>len(multi_counterexample_path_list)):
+		length=len(multi_counterexample_path_list)
+
+
+
+	for i in range(length):
 		# every counterexample
 
 		for j in range(len(multi_counterexample_path_list[i])):
-			if(j==0):
-				continue;
-			print("\"");
-
 			list_str=""
-			items=list(multi_counterexample_path_list[i][j-1].filled_trace_state_dic.items())
-			for k in range(len(items)):
-				if (items[k][0] in black_list):
-					list_str=list_str + ("%s = %s\n" %(items[k][0],items[k][1]))
-					continue;
-				print('%s = %s\n' % (items[k][0],items[k][1]))
-			# print(multi_counterexample_path_list[i][j-1].trace_index)
-			# print(".")
-			# print(multi_counterexample_path_list[i][j-1].trace_state_index)
+			print("\"");
+			if(j==0):
+				print("start");
+			else:
+				items=list(multi_counterexample_path_list[i][j-1].filled_trace_state_dic.items())
+				for k in range(len(items)):
+					if (items[k][0] in black_list):
+						list_str=list_str + ("%s = %s\n" %(items[k][0],items[k][1]))
+						continue;
+					print('%d:%d:%s = %s\n' % (i,j-1,items[k][0],items[k][1]))
+				# print(multi_counterexample_path_list[i][j-1].trace_index)
+				# print(".")
+				# print(multi_counterexample_path_list[i][j-1].trace_state_index)
 
 			print("\" -> \"");
 
@@ -132,13 +140,23 @@ def generate_graph(multi_counterexample_path_list):
 			for k in range(len(items)):
 				if (items[k][0] in black_list ):
 					continue;
-				print('%s = %s\n' % (items[k][0],items[k][1]))
+				print('%d:%d:%s = %s\n' % (i,j,items[k][0],items[k][1]))
 			# print(multi_counterexample_path_list[i][j].trace_index)
 			# print(".")
 			# print(multi_counterexample_path_list[i][j].trace_state_index)
 
 			print("\"");
 			print("[ label=\"%s\" ]" % list_str)
+
+
+			if(j==len(multi_counterexample_path_list[i])-1):
+				print("\"");
+				for k in range(len(items)):
+					if (items[k][0] in black_list ):
+						continue;
+					print('%d:%d:%s = %s\n' % (i,j,items[k][0],items[k][1]))
+
+				print("\" -> \"Danger\"");
 
 
 
@@ -157,11 +175,12 @@ def generate_graph(multi_counterexample_path_list):
 def main(argv):
 	multi_counterexample_path_list=file2list('counterexample.txt')
 	multi_counterexample_path_list=fill_states(multi_counterexample_path_list);
-	generate_graph(multi_counterexample_path_list)
+	generate_graph(multi_counterexample_path_list,5)
 
 	# for i in range(len(multi_counterexample_path_list)):
-	# for j in range(len(multi_counterexample_path_list[0])):
-	# 		print(multi_counterexample_path_list[0][j].filled_trace_state_dic);
+	# 	print(len(multi_counterexample_path_list[i]))
+		# for j in range(len(multi_counterexample_path_list[0])):
+		# 	print(multi_counterexample_path_list[0][j].filled_trace_state_dic);
 
 
 

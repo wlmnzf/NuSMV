@@ -357,7 +357,7 @@ node_ptr eu_explain(BddFsm_ptr fsm, BddEnc_ptr enc,
     bdd_free(dd_manager, (bdd_ptr) car(path));
     node_bdd_setcar(path, NODE_PTR(state));
     /* 'path' will be returned */
-
+      addToPath(witness_path);
         goto free_local_bdds_and_return;
   }
   bdd_free(dd_manager, tmp);
