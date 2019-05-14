@@ -2,5683 +2,1178 @@
 
     node [fontname="Arial"];
 
-    splines=line;
 "
-r_time = 0
+start
+" -> "
+4:cache.ExistStateSC = TRUE
 
-cache.ExistStateSC = TRUE
+4:w_time = 0
 
-cache.evict = FALSE
+4:cpu.state = normal
 
-w_time = 0
+4:cache.ExistStateOT = TRUE
 
-cpu.state = normal
+4:predictor.Predict = nop
 
-cache.ExistStateOT = TRUE
+"
+[ label="" ]
+"
+4:cache.ExistStateSC = TRUE
 
-predictor.Predict = nop
+4:w_time = 0
+
+4:cpu.state = normal
+
+4:cache.ExistStateOT = TRUE
+
+4:predictor.Predict = nop
 
 " -> "
-r_time = 0
+empty
+" -> "
+4:cache.ExistStateSC = TRUE
 
-cache.ExistStateSC = TRUE
+4:w_time = 0
 
-cache.evict = FALSE
+4:cache.ExistStateOT = TRUE
 
-w_time = 0
+4:cpu.state = predict
 
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TFailed
+4:predictor.Predict = TFailed
 
 "
 [ label="attacker.cmd = branch
 victim.cmd = nop
 " ]
 "
-r_time = 0
+4:cache.ExistStateSC = TRUE
 
-cache.ExistStateSC = TRUE
+4:w_time = 0
 
-cache.evict = FALSE
+4:cache.ExistStateOT = TRUE
 
-w_time = 0
+4:cpu.state = predict
 
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TFailed
+4:predictor.Predict = TFailed
 
 " -> "
-r_time = 1
+4:cache.ExistStateSC = TRUE
 
-cache.ExistStateSC = TRUE
+4:w_time = 1
 
-cache.evict = FALSE
+4:cache.ExistStateOT = TRUE
 
-w_time = 0
+4:cpu.state = squash
 
-cpu.state = squash
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = TSuccess
+4:predictor.Predict = nop
 
 "
-[ label="attacker.cmd = load
-victim.cmd = branch
+[ label="attacker.cmd = store
+victim.cmd = nop
 " ]
 "
-r_time = 1
+4:cache.ExistStateSC = TRUE
 
-cache.ExistStateSC = TRUE
+4:w_time = 1
 
-cache.evict = FALSE
+4:cache.ExistStateOT = TRUE
 
-w_time = 0
+4:cpu.state = squash
 
-cpu.state = squash
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = TSuccess
+4:predictor.Predict = nop
 
 " -> "
-r_time = 2
+4:cache.ExistStateSC = TRUE
 
-cache.ExistStateSC = TRUE
+4:w_time = 2
 
-cache.evict = FALSE
+4:cache.ExistStateOT = TRUE
 
-w_time = 0
+4:cpu.state = normal
 
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = TSuccess
+4:predictor.Predict = nop
 
 "
-[ label="attacker.cmd = load
-victim.cmd = branch
+[ label="attacker.cmd = store
+victim.cmd = nop
 " ]
 "
-r_time = 0
+4:cache.ExistStateSC = TRUE
 
-cache.ExistStateSC = TRUE
+4:w_time = 2
 
-cache.evict = FALSE
+4:cache.ExistStateOT = TRUE
 
-w_time = 0
+4:cpu.state = normal
 
-cpu.state = normal
+4:predictor.Predict = nop
 
-cache.ExistStateOT = TRUE
+" -> "Danger"
+"
+start
+" -> "
+4:cache.ExistStateSC = TRUE
 
-predictor.Predict = nop
+4:w_time = 0
+
+4:cpu.state = normal
+
+4:cache.ExistStateOT = TRUE
+
+4:predictor.Predict = nop
+
+"
+[ label="" ]
+"
+4:cache.ExistStateSC = TRUE
+
+4:w_time = 0
+
+4:cpu.state = normal
+
+4:cache.ExistStateOT = TRUE
+
+4:predictor.Predict = nop
 
 " -> "
-r_time = 0
+empty
+" -> "
+4:cache.ExistStateSC = TRUE
 
-cache.ExistStateSC = TRUE
+4:w_time = 0
 
-cache.evict = FALSE
+4:cache.ExistStateOT = TRUE
 
-w_time = 0
+4:cpu.state = predict
 
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
+4:predictor.Predict = TFailed
 
 "
 [ label="attacker.cmd = branch
 victim.cmd = nop
 " ]
 "
-r_time = 0
+4:cache.ExistStateSC = TRUE
 
-cache.ExistStateSC = TRUE
+4:w_time = 0
 
-cache.evict = FALSE
+4:cache.ExistStateOT = TRUE
 
-w_time = 0
+4:cpu.state = predict
 
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
+4:predictor.Predict = TFailed
 
 " -> "
-r_time = 1
+4:cache.ExistStateSC = TRUE
 
-cache.ExistStateSC = FALSE
+4:w_time = 1
 
-cache.evict = FALSE
+4:cache.ExistStateOT = TRUE
 
-w_time = 0
+4:cpu.state = squash
 
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
+4:predictor.Predict = nop
 
 "
-[ label="attacker.cmd = load
-victim.cmd = flush
+[ label="attacker.cmd = store
+victim.cmd = nop
 " ]
 "
-r_time = 1
+4:cache.ExistStateSC = TRUE
 
-cache.ExistStateSC = FALSE
+4:w_time = 1
 
-cache.evict = FALSE
+4:cache.ExistStateOT = TRUE
 
-w_time = 0
+4:cpu.state = squash
 
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
+4:predictor.Predict = nop
 
 " -> "
-r_time = 2
+4:cache.ExistStateSC = TRUE
 
-cache.ExistStateSC = FALSE
+4:w_time = 2
 
-cache.evict = FALSE
+4:cache.ExistStateOT = TRUE
 
-w_time = 0
+4:cpu.state = normal
 
-cache.ExistStateOT = TRUE
-
-cpu.state = normal
-
-predictor.Predict = nop
+4:predictor.Predict = nop
 
 "
-[ label="attacker.cmd = load
-victim.cmd = flush
+[ label="attacker.cmd = store
+victim.cmd = nop
 " ]
 "
-r_time = 2
+4:cache.ExistStateSC = TRUE
 
-cache.ExistStateSC = FALSE
+4:w_time = 2
 
-cache.evict = FALSE
+4:cache.ExistStateOT = TRUE
 
-w_time = 0
+4:cpu.state = normal
 
-cache.ExistStateOT = TRUE
+4:predictor.Predict = nop
 
-cpu.state = normal
+" -> "Danger"
+"
+start
+" -> "
+4:cache.ExistStateSC = TRUE
 
-predictor.Predict = nop
+4:w_time = 0
+
+4:cpu.state = normal
+
+4:cache.ExistStateOT = TRUE
+
+4:predictor.Predict = nop
+
+"
+[ label="" ]
+"
+4:cache.ExistStateSC = TRUE
+
+4:w_time = 0
+
+4:cpu.state = normal
+
+4:cache.ExistStateOT = TRUE
+
+4:predictor.Predict = nop
 
 " -> "
-r_time = 0
+empty
+" -> "
+4:cache.ExistStateSC = TRUE
 
-cache.ExistStateSC = FALSE
+4:w_time = 0
 
-cache.evict = FALSE
+4:cache.ExistStateOT = TRUE
 
-w_time = 0
+4:cpu.state = predict
 
-cache.ExistStateOT = TRUE
+4:predictor.Predict = TFailed
 
-cpu.state = predict
+"
+[ label="attacker.cmd = branch
+victim.cmd = load
+" ]
+"
+4:cache.ExistStateSC = TRUE
 
-predictor.Predict = TSuccess
+4:w_time = 0
+
+4:cache.ExistStateOT = TRUE
+
+4:cpu.state = predict
+
+4:predictor.Predict = TFailed
+
+" -> "
+4:cache.ExistStateSC = TRUE
+
+4:w_time = 1
+
+4:cache.ExistStateOT = TRUE
+
+4:cpu.state = squash
+
+4:predictor.Predict = nop
+
+"
+[ label="attacker.cmd = store
+victim.cmd = nop
+" ]
+"
+4:cache.ExistStateSC = TRUE
+
+4:w_time = 1
+
+4:cache.ExistStateOT = TRUE
+
+4:cpu.state = squash
+
+4:predictor.Predict = nop
+
+" -> "
+4:cache.ExistStateSC = TRUE
+
+4:w_time = 2
+
+4:cache.ExistStateOT = TRUE
+
+4:cpu.state = normal
+
+4:predictor.Predict = nop
+
+"
+[ label="attacker.cmd = store
+victim.cmd = nop
+" ]
+"
+4:cache.ExistStateSC = TRUE
+
+4:w_time = 2
+
+4:cache.ExistStateOT = TRUE
+
+4:cpu.state = normal
+
+4:predictor.Predict = nop
+
+" -> "Danger"
+"
+start
+" -> "
+4:cache.ExistStateSC = TRUE
+
+4:w_time = 0
+
+4:cpu.state = normal
+
+4:cache.ExistStateOT = TRUE
+
+4:predictor.Predict = nop
+
+"
+[ label="" ]
+"
+4:cache.ExistStateSC = TRUE
+
+4:w_time = 0
+
+4:cpu.state = normal
+
+4:cache.ExistStateOT = TRUE
+
+4:predictor.Predict = nop
+
+" -> "
+empty
+" -> "
+4:cache.ExistStateSC = TRUE
+
+4:w_time = 0
+
+4:cache.ExistStateOT = TRUE
+
+4:cpu.state = predict
+
+4:predictor.Predict = TFailed
+
+"
+[ label="attacker.cmd = branch
+victim.cmd = load
+" ]
+"
+4:cache.ExistStateSC = TRUE
+
+4:w_time = 0
+
+4:cache.ExistStateOT = TRUE
+
+4:cpu.state = predict
+
+4:predictor.Predict = TFailed
+
+" -> "
+4:cache.ExistStateSC = TRUE
+
+4:w_time = 1
+
+4:cache.ExistStateOT = TRUE
+
+4:cpu.state = squash
+
+4:predictor.Predict = nop
+
+"
+[ label="attacker.cmd = store
+victim.cmd = nop
+" ]
+"
+4:cache.ExistStateSC = TRUE
+
+4:w_time = 1
+
+4:cache.ExistStateOT = TRUE
+
+4:cpu.state = squash
+
+4:predictor.Predict = nop
+
+" -> "
+4:cache.ExistStateSC = TRUE
+
+4:w_time = 2
+
+4:cache.ExistStateOT = TRUE
+
+4:cpu.state = normal
+
+4:predictor.Predict = nop
+
+"
+[ label="attacker.cmd = store
+victim.cmd = nop
+" ]
+"
+4:cache.ExistStateSC = TRUE
+
+4:w_time = 2
+
+4:cache.ExistStateOT = TRUE
+
+4:cpu.state = normal
+
+4:predictor.Predict = nop
+
+" -> "Danger"
+"
+start
+" -> "
+4:cache.ExistStateSC = TRUE
+
+4:w_time = 0
+
+4:cpu.state = normal
+
+4:cache.ExistStateOT = TRUE
+
+4:predictor.Predict = nop
+
+"
+[ label="" ]
+"
+4:cache.ExistStateSC = TRUE
+
+4:w_time = 0
+
+4:cpu.state = normal
+
+4:cache.ExistStateOT = TRUE
+
+4:predictor.Predict = nop
+
+" -> "
+empty
+" -> "
+4:cache.ExistStateSC = TRUE
+
+4:w_time = 0
+
+4:cache.ExistStateOT = TRUE
+
+4:cpu.state = predict
+
+4:predictor.Predict = TFailed
+
+"
+[ label="attacker.cmd = branch
+victim.cmd = store
+" ]
+"
+4:cache.ExistStateSC = TRUE
+
+4:w_time = 0
+
+4:cache.ExistStateOT = TRUE
+
+4:cpu.state = predict
+
+4:predictor.Predict = TFailed
+
+" -> "
+4:cache.ExistStateSC = TRUE
+
+4:w_time = 1
+
+4:cache.ExistStateOT = TRUE
+
+4:cpu.state = squash
+
+4:predictor.Predict = nop
+
+"
+[ label="attacker.cmd = store
+victim.cmd = nop
+" ]
+"
+4:cache.ExistStateSC = TRUE
+
+4:w_time = 1
+
+4:cache.ExistStateOT = TRUE
+
+4:cpu.state = squash
+
+4:predictor.Predict = nop
+
+" -> "
+4:cache.ExistStateSC = TRUE
+
+4:w_time = 2
+
+4:cache.ExistStateOT = TRUE
+
+4:cpu.state = normal
+
+4:predictor.Predict = nop
+
+"
+[ label="attacker.cmd = store
+victim.cmd = nop
+" ]
+"
+4:cache.ExistStateSC = TRUE
+
+4:w_time = 2
+
+4:cache.ExistStateOT = TRUE
+
+4:cpu.state = normal
+
+4:predictor.Predict = nop
+
+" -> "Danger"
+"
+start
+" -> "
+4:cache.ExistStateSC = TRUE
+
+4:w_time = 0
+
+4:cpu.state = normal
+
+4:cache.ExistStateOT = TRUE
+
+4:predictor.Predict = nop
+
+"
+[ label="" ]
+"
+4:cache.ExistStateSC = TRUE
+
+4:w_time = 0
+
+4:cpu.state = normal
+
+4:cache.ExistStateOT = TRUE
+
+4:predictor.Predict = nop
+
+" -> "
+empty
+" -> "
+4:cache.ExistStateSC = TRUE
+
+4:w_time = 0
+
+4:cache.ExistStateOT = TRUE
+
+4:cpu.state = predict
+
+4:predictor.Predict = TFailed
+
+"
+[ label="attacker.cmd = branch
+victim.cmd = store
+" ]
+"
+4:cache.ExistStateSC = TRUE
+
+4:w_time = 0
+
+4:cache.ExistStateOT = TRUE
+
+4:cpu.state = predict
+
+4:predictor.Predict = TFailed
+
+" -> "
+4:cache.ExistStateSC = TRUE
+
+4:w_time = 1
+
+4:cache.ExistStateOT = TRUE
+
+4:cpu.state = squash
+
+4:predictor.Predict = nop
+
+"
+[ label="attacker.cmd = store
+victim.cmd = nop
+" ]
+"
+4:cache.ExistStateSC = TRUE
+
+4:w_time = 1
+
+4:cache.ExistStateOT = TRUE
+
+4:cpu.state = squash
+
+4:predictor.Predict = nop
+
+" -> "
+4:cache.ExistStateSC = TRUE
+
+4:w_time = 2
+
+4:cache.ExistStateOT = TRUE
+
+4:cpu.state = normal
+
+4:predictor.Predict = nop
+
+"
+[ label="attacker.cmd = store
+victim.cmd = nop
+" ]
+"
+4:cache.ExistStateSC = TRUE
+
+4:w_time = 2
+
+4:cache.ExistStateOT = TRUE
+
+4:cpu.state = normal
+
+4:predictor.Predict = nop
+
+" -> "Danger"
+"
+start
+" -> "
+5:cache.ExistStateSC = TRUE
+
+5:w_time = 0
+
+5:cpu.state = normal
+
+5:cache.ExistStateOT = TRUE
+
+5:predictor.Predict = nop
+
+"
+[ label="" ]
+"
+5:cache.ExistStateSC = TRUE
+
+5:w_time = 0
+
+5:cpu.state = normal
+
+5:cache.ExistStateOT = TRUE
+
+5:predictor.Predict = nop
+
+" -> "
+empty
+" -> "
+5:cache.ExistStateSC = TRUE
+
+5:w_time = 0
+
+5:cache.ExistStateOT = TRUE
+
+5:cpu.state = normal
+
+5:predictor.Predict = nop
 
 "
 [ label="attacker.cmd = nop
-victim.cmd = branch
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 1
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = flush
-" ]
-"
-r_time = 1
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 2
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = normal
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = flush
-" ]
-"
-r_time = 2
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = normal
-
-predictor.Predict = nop
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cpu.state = predict
-
-predictor.Predict = TFailed
-
-cache.evict = FALSE
-
-w_time = 1
-
-cache.ExistStateOT = TRUE
-
-"
-[ label="attacker.cmd = store
-victim.cmd = branch
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cpu.state = predict
-
-predictor.Predict = TFailed
-
-cache.evict = FALSE
-
-w_time = 1
-
-cache.ExistStateOT = TRUE
-
-" -> "
-r_time = 1
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = squash
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = load
-" ]
-"
-r_time = 1
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = squash
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 2
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = load
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = branch
 victim.cmd = nop
 " ]
 "
-r_time = 0
+5:cache.ExistStateSC = TRUE
 
-cache.ExistStateSC = TRUE
+5:w_time = 0
 
-cache.evict = FALSE
+5:cache.ExistStateOT = TRUE
 
-w_time = 0
+5:cpu.state = normal
 
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
+5:predictor.Predict = nop
 
 " -> "
-r_time = 1
+5:cache.ExistStateSC = TRUE
 
-cache.ExistStateSC = FALSE
+5:w_time = 0
 
-cache.evict = FALSE
+5:cache.ExistStateOT = TRUE
 
-w_time = 0
+5:cpu.state = predict
 
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = flush
-" ]
-"
-r_time = 1
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 2
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = flush
-" ]
-"
-r_time = 2
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 3
-
-cache.ExistStateSC = FALSE
-
-cpu.state = predict
-
-cache.evict = TRUE
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = TSuccess
-
-w_time = 0
-
-"
-[ label="attacker.cmd = load
-victim.cmd = branch
-" ]
-"
-r_time = 3
-
-cache.ExistStateSC = FALSE
-
-cpu.state = predict
-
-cache.evict = TRUE
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = TSuccess
-
-w_time = 0
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = FALSE
-
-predictor.Predict = TSuccess
+5:predictor.Predict = TFailed
 
 "
 [ label="attacker.cmd = branch
-victim.cmd = branch
+victim.cmd = load
 " ]
 "
-r_time = 0
+5:cache.ExistStateSC = TRUE
 
-cache.ExistStateSC = FALSE
+5:w_time = 0
 
-cache.evict = FALSE
+5:cache.ExistStateOT = TRUE
 
-w_time = 0
+5:cpu.state = predict
 
-cpu.state = normal
-
-cache.ExistStateOT = FALSE
-
-predictor.Predict = TSuccess
+5:predictor.Predict = TFailed
 
 " -> "
-r_time = 0
+5:cache.ExistStateSC = TRUE
 
-cache.ExistStateSC = FALSE
+5:w_time = 1
 
-cache.evict = FALSE
+5:cache.ExistStateOT = TRUE
 
-w_time = 0
+5:cpu.state = squash
 
-cache.ExistStateOT = FALSE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = branch
-victim.cmd = branch
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = FALSE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 1
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = flush
-" ]
-"
-r_time = 1
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 2
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = normal
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = flush
-" ]
-"
-r_time = 2
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = normal
-
-predictor.Predict = nop
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cpu.state = predict
-
-predictor.Predict = TFailed
-
-cache.evict = FALSE
-
-w_time = 1
-
-cache.ExistStateOT = TRUE
+5:predictor.Predict = nop
 
 "
 [ label="attacker.cmd = store
-victim.cmd = branch
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cpu.state = predict
-
-predictor.Predict = TFailed
-
-cache.evict = FALSE
-
-w_time = 1
-
-cache.ExistStateOT = TRUE
-
-" -> "
-r_time = 1
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = squash
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = load
-" ]
-"
-r_time = 1
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = squash
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 2
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = load
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = branch
 victim.cmd = nop
 " ]
 "
-r_time = 0
+5:cache.ExistStateSC = TRUE
 
-cache.ExistStateSC = TRUE
+5:w_time = 1
 
-cache.evict = FALSE
+5:cache.ExistStateOT = TRUE
 
-w_time = 0
+5:cpu.state = squash
 
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
+5:predictor.Predict = nop
 
 " -> "
-r_time = 1
+5:cache.ExistStateSC = TRUE
 
-cache.ExistStateSC = FALSE
+5:w_time = 2
 
-cache.evict = FALSE
+5:cache.ExistStateOT = TRUE
 
-w_time = 0
+5:cpu.state = normal
 
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = flush
-" ]
-"
-r_time = 1
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 2
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = flush
-" ]
-"
-r_time = 2
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 3
-
-cache.ExistStateSC = TRUE
-
-cache.evict = TRUE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = load
-" ]
-"
-r_time = 3
-
-cache.ExistStateSC = TRUE
-
-cache.evict = TRUE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-cache.ExistStateSC = FALSE
-
-r_time = 3
-
-cache.evict = TRUE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = load
-victim.cmd = branch
-" ]
-"
-cache.ExistStateSC = FALSE
-
-r_time = 3
-
-cache.evict = TRUE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = FALSE
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = branch
-victim.cmd = branch
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = FALSE
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = FALSE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = branch
-victim.cmd = branch
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = FALSE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 1
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = flush
-" ]
-"
-r_time = 1
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 2
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = normal
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = flush
-" ]
-"
-r_time = 2
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = normal
-
-predictor.Predict = nop
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cpu.state = predict
-
-predictor.Predict = TFailed
-
-cache.evict = FALSE
-
-w_time = 1
-
-cache.ExistStateOT = TRUE
+5:predictor.Predict = nop
 
 "
 [ label="attacker.cmd = store
-victim.cmd = branch
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cpu.state = predict
-
-predictor.Predict = TFailed
-
-cache.evict = FALSE
-
-w_time = 1
-
-cache.ExistStateOT = TRUE
-
-" -> "
-r_time = 1
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = squash
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = load
-" ]
-"
-r_time = 1
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = squash
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 2
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = load
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = branch
 victim.cmd = nop
 " ]
 "
-r_time = 0
+5:cache.ExistStateSC = TRUE
 
-cache.ExistStateSC = TRUE
+5:w_time = 2
 
-cache.evict = FALSE
+5:cache.ExistStateOT = TRUE
 
-w_time = 0
+5:cpu.state = normal
 
-cache.ExistStateOT = TRUE
+5:predictor.Predict = nop
 
-cpu.state = predict
+" -> "Danger"
+"
+start
+" -> "
+5:cache.ExistStateSC = TRUE
 
-predictor.Predict = TSuccess
+5:w_time = 0
+
+5:cpu.state = normal
+
+5:cache.ExistStateOT = TRUE
+
+5:predictor.Predict = nop
+
+"
+[ label="" ]
+"
+5:cache.ExistStateSC = TRUE
+
+5:w_time = 0
+
+5:cpu.state = normal
+
+5:cache.ExistStateOT = TRUE
+
+5:predictor.Predict = nop
 
 " -> "
-cache.ExistStateSC = FALSE
-
-r_time = 0
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = FALSE
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = flush
-victim.cmd = branch
-" ]
-"
-cache.ExistStateSC = FALSE
-
-r_time = 0
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = FALSE
-
-predictor.Predict = TSuccess
-
+empty
 " -> "
-r_time = 0
+5:cache.ExistStateSC = TRUE
 
-cache.ExistStateSC = FALSE
+5:w_time = 0
 
-cache.evict = FALSE
+5:cache.ExistStateOT = TRUE
 
-w_time = 0
+5:cpu.state = normal
 
-cache.ExistStateOT = FALSE
-
-cpu.state = predict
-
-predictor.Predict = TFailed
-
-"
-[ label="attacker.cmd = flush
-victim.cmd = branch
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = FALSE
-
-cpu.state = predict
-
-predictor.Predict = TFailed
-
-" -> "
-r_time = 1
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = squash
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = load
-victim.cmd = branch
-" ]
-"
-r_time = 1
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = squash
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 2
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = load
-victim.cmd = branch
-" ]
-"
-r_time = 2
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 3
-
-cache.ExistStateSC = FALSE
-
-cache.evict = TRUE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = load
-victim.cmd = branch
-" ]
-"
-r_time = 3
-
-cache.ExistStateSC = FALSE
-
-cache.evict = TRUE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = FALSE
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = branch
-victim.cmd = branch
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = FALSE
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = FALSE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = branch
-victim.cmd = branch
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = FALSE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 1
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = flush
-" ]
-"
-r_time = 1
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 2
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = normal
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = flush
-" ]
-"
-r_time = 2
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = normal
-
-predictor.Predict = nop
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cpu.state = predict
-
-predictor.Predict = TFailed
-
-cache.evict = FALSE
-
-w_time = 1
-
-cache.ExistStateOT = TRUE
-
-"
-[ label="attacker.cmd = store
-victim.cmd = branch
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cpu.state = predict
-
-predictor.Predict = TFailed
-
-cache.evict = FALSE
-
-w_time = 1
-
-cache.ExistStateOT = TRUE
-
-" -> "
-r_time = 1
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = squash
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = load
-" ]
-"
-r_time = 1
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = squash
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 2
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = load
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = branch
-victim.cmd = nop
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 1
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = flush
-" ]
-"
-r_time = 1
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 2
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = normal
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = flush
-" ]
-"
-r_time = 2
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = normal
-
-predictor.Predict = nop
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TFailed
+5:predictor.Predict = nop
 
 "
 [ label="attacker.cmd = nop
-victim.cmd = branch
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TFailed
-
-" -> "
-r_time = 1
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = squash
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = load
-" ]
-"
-r_time = 1
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = squash
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 2
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = load
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = branch
 victim.cmd = nop
 " ]
 "
-r_time = 0
+5:cache.ExistStateSC = TRUE
 
-cache.ExistStateSC = TRUE
+5:w_time = 0
 
-cache.evict = FALSE
+5:cache.ExistStateOT = TRUE
 
-w_time = 0
+5:cpu.state = normal
 
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
+5:predictor.Predict = nop
 
 " -> "
-r_time = 1
+5:cache.ExistStateSC = TRUE
 
-cache.ExistStateSC = FALSE
+5:w_time = 0
 
-cache.evict = FALSE
+5:cache.ExistStateOT = TRUE
 
-w_time = 0
+5:cpu.state = predict
 
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
+5:predictor.Predict = TFailed
 
 "
-[ label="attacker.cmd = load
-victim.cmd = flush
+[ label="attacker.cmd = branch
+victim.cmd = load
 " ]
 "
-r_time = 1
+5:cache.ExistStateSC = TRUE
 
-cache.ExistStateSC = FALSE
+5:w_time = 0
 
-cache.evict = FALSE
+5:cache.ExistStateOT = TRUE
 
-w_time = 0
+5:cpu.state = predict
 
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
+5:predictor.Predict = TFailed
 
 " -> "
-r_time = 2
+5:cache.ExistStateSC = TRUE
 
-cache.ExistStateSC = FALSE
+5:w_time = 1
 
-cache.evict = FALSE
+5:cache.ExistStateOT = TRUE
 
-w_time = 0
+5:cpu.state = squash
 
-cache.ExistStateOT = TRUE
-
-cpu.state = normal
-
-predictor.Predict = nop
+5:predictor.Predict = nop
 
 "
-[ label="attacker.cmd = load
-victim.cmd = flush
+[ label="attacker.cmd = store
+victim.cmd = nop
 " ]
 "
-r_time = 2
+5:cache.ExistStateSC = TRUE
 
-cache.ExistStateSC = FALSE
+5:w_time = 1
 
-cache.evict = FALSE
+5:cache.ExistStateOT = TRUE
 
-w_time = 0
+5:cpu.state = squash
 
-cache.ExistStateOT = TRUE
-
-cpu.state = normal
-
-predictor.Predict = nop
+5:predictor.Predict = nop
 
 " -> "
-r_time = 0
+5:cache.ExistStateSC = TRUE
 
-cache.ExistStateSC = FALSE
+5:w_time = 2
 
-cache.evict = FALSE
+5:cache.ExistStateOT = TRUE
 
-w_time = 0
+5:cpu.state = normal
 
-cache.ExistStateOT = TRUE
+5:predictor.Predict = nop
 
-cpu.state = predict
+"
+[ label="attacker.cmd = store
+victim.cmd = nop
+" ]
+"
+5:cache.ExistStateSC = TRUE
 
-predictor.Predict = TSuccess
+5:w_time = 2
+
+5:cache.ExistStateOT = TRUE
+
+5:cpu.state = normal
+
+5:predictor.Predict = nop
+
+" -> "Danger"
+"
+start
+" -> "
+5:cache.ExistStateSC = TRUE
+
+5:w_time = 0
+
+5:cpu.state = normal
+
+5:cache.ExistStateOT = TRUE
+
+5:predictor.Predict = nop
+
+"
+[ label="" ]
+"
+5:cache.ExistStateSC = TRUE
+
+5:w_time = 0
+
+5:cpu.state = normal
+
+5:cache.ExistStateOT = TRUE
+
+5:predictor.Predict = nop
+
+" -> "
+empty
+" -> "
+5:cache.ExistStateSC = TRUE
+
+5:w_time = 0
+
+5:cache.ExistStateOT = TRUE
+
+5:cpu.state = normal
+
+5:predictor.Predict = nop
 
 "
 [ label="attacker.cmd = nop
-victim.cmd = branch
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 1
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = store
-victim.cmd = branch
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 1
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 2
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TFailed
-
-"
-[ label="attacker.cmd = store
-victim.cmd = branch
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 2
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TFailed
-
-" -> "
-r_time = 1
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = squash
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
 victim.cmd = load
 " ]
 "
-r_time = 1
+5:cache.ExistStateSC = TRUE
 
-cache.ExistStateSC = TRUE
+5:w_time = 0
 
-cache.evict = FALSE
+5:cache.ExistStateOT = TRUE
 
-w_time = 0
+5:cpu.state = normal
 
-cpu.state = squash
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
+5:predictor.Predict = nop
 
 " -> "
-r_time = 2
+5:cache.ExistStateSC = TRUE
 
-cache.ExistStateSC = TRUE
+5:w_time = 0
 
-cache.evict = FALSE
+5:cache.ExistStateOT = TRUE
 
-w_time = 0
+5:cpu.state = predict
 
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = load
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
+5:predictor.Predict = TFailed
 
 "
 [ label="attacker.cmd = branch
+victim.cmd = load
+" ]
+"
+5:cache.ExistStateSC = TRUE
+
+5:w_time = 0
+
+5:cache.ExistStateOT = TRUE
+
+5:cpu.state = predict
+
+5:predictor.Predict = TFailed
+
+" -> "
+5:cache.ExistStateSC = TRUE
+
+5:w_time = 1
+
+5:cache.ExistStateOT = TRUE
+
+5:cpu.state = squash
+
+5:predictor.Predict = nop
+
+"
+[ label="attacker.cmd = store
 victim.cmd = nop
 " ]
 "
-r_time = 0
+5:cache.ExistStateSC = TRUE
 
-cache.ExistStateSC = TRUE
+5:w_time = 1
 
-cache.evict = FALSE
+5:cache.ExistStateOT = TRUE
 
-w_time = 0
+5:cpu.state = squash
 
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
+5:predictor.Predict = nop
 
 " -> "
-r_time = 1
+5:cache.ExistStateSC = TRUE
 
-cache.ExistStateSC = FALSE
+5:w_time = 2
 
-cache.evict = FALSE
+5:cache.ExistStateOT = TRUE
 
-w_time = 0
+5:cpu.state = normal
 
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
+5:predictor.Predict = nop
 
 "
-[ label="attacker.cmd = load
-victim.cmd = flush
+[ label="attacker.cmd = store
+victim.cmd = nop
 " ]
 "
-r_time = 1
+5:cache.ExistStateSC = TRUE
 
-cache.ExistStateSC = FALSE
+5:w_time = 2
 
-cache.evict = FALSE
+5:cache.ExistStateOT = TRUE
 
-w_time = 0
+5:cpu.state = normal
 
-cpu.state = normal
+5:predictor.Predict = nop
 
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
+" -> "Danger"
+"
+start
 " -> "
-r_time = 2
+5:cache.ExistStateSC = TRUE
 
-cache.ExistStateSC = FALSE
+5:w_time = 0
 
-cache.evict = FALSE
+5:cpu.state = normal
 
-w_time = 0
+5:cache.ExistStateOT = TRUE
 
-cache.ExistStateOT = TRUE
-
-cpu.state = normal
-
-predictor.Predict = nop
+5:predictor.Predict = nop
 
 "
-[ label="attacker.cmd = load
-victim.cmd = flush
-" ]
+[ label="" ]
 "
-r_time = 2
+5:cache.ExistStateSC = TRUE
 
-cache.ExistStateSC = FALSE
+5:w_time = 0
 
-cache.evict = FALSE
+5:cpu.state = normal
 
-w_time = 0
+5:cache.ExistStateOT = TRUE
 
-cache.ExistStateOT = TRUE
-
-cpu.state = normal
-
-predictor.Predict = nop
+5:predictor.Predict = nop
 
 " -> "
-r_time = 0
+empty
+" -> "
+5:cache.ExistStateSC = TRUE
 
-cache.ExistStateSC = FALSE
+5:w_time = 0
 
-cache.evict = FALSE
+5:cache.ExistStateOT = TRUE
 
-w_time = 0
+5:cpu.state = normal
 
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
+5:predictor.Predict = nop
 
 "
 [ label="attacker.cmd = nop
-victim.cmd = branch
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 1
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = flush
-" ]
-"
-r_time = 1
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 2
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = normal
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = flush
-" ]
-"
-r_time = 2
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = normal
-
-predictor.Predict = nop
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cpu.state = predict
-
-predictor.Predict = TFailed
-
-cache.evict = FALSE
-
-w_time = 1
-
-cache.ExistStateOT = TRUE
-
-"
-[ label="attacker.cmd = store
-victim.cmd = branch
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cpu.state = predict
-
-predictor.Predict = TFailed
-
-cache.evict = FALSE
-
-w_time = 1
-
-cache.ExistStateOT = TRUE
-
-" -> "
-r_time = 1
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = squash
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
 victim.cmd = load
 " ]
 "
-r_time = 1
+5:cache.ExistStateSC = TRUE
 
-cache.ExistStateSC = TRUE
+5:w_time = 0
 
-cache.evict = FALSE
+5:cache.ExistStateOT = TRUE
 
-w_time = 0
+5:cpu.state = normal
 
-cpu.state = squash
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
+5:predictor.Predict = nop
 
 " -> "
-r_time = 2
+5:cache.ExistStateSC = TRUE
 
-cache.ExistStateSC = TRUE
+5:w_time = 0
 
-cache.evict = FALSE
+5:cache.ExistStateOT = TRUE
 
-w_time = 0
+5:cpu.state = predict
 
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = load
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
+5:predictor.Predict = TFailed
 
 "
 [ label="attacker.cmd = branch
+victim.cmd = load
+" ]
+"
+5:cache.ExistStateSC = TRUE
+
+5:w_time = 0
+
+5:cache.ExistStateOT = TRUE
+
+5:cpu.state = predict
+
+5:predictor.Predict = TFailed
+
+" -> "
+5:cache.ExistStateSC = TRUE
+
+5:w_time = 1
+
+5:cache.ExistStateOT = TRUE
+
+5:cpu.state = squash
+
+5:predictor.Predict = nop
+
+"
+[ label="attacker.cmd = store
 victim.cmd = nop
 " ]
 "
-r_time = 0
+5:cache.ExistStateSC = TRUE
 
-cache.ExistStateSC = TRUE
+5:w_time = 1
 
-cache.evict = FALSE
+5:cache.ExistStateOT = TRUE
 
-w_time = 0
+5:cpu.state = squash
 
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
+5:predictor.Predict = nop
 
 " -> "
-r_time = 1
+5:cache.ExistStateSC = TRUE
 
-cache.ExistStateSC = FALSE
+5:w_time = 2
 
-cache.evict = FALSE
+5:cache.ExistStateOT = TRUE
 
-w_time = 0
+5:cpu.state = normal
 
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
+5:predictor.Predict = nop
 
 "
-[ label="attacker.cmd = load
-victim.cmd = flush
-" ]
-"
-r_time = 1
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 2
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = flush
-" ]
-"
-r_time = 2
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 3
-
-cache.ExistStateSC = FALSE
-
-cpu.state = predict
-
-cache.evict = TRUE
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = TSuccess
-
-w_time = 0
-
-"
-[ label="attacker.cmd = load
-victim.cmd = branch
-" ]
-"
-r_time = 3
-
-cache.ExistStateSC = FALSE
-
-cpu.state = predict
-
-cache.evict = TRUE
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = TSuccess
-
-w_time = 0
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = FALSE
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = branch
-victim.cmd = branch
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = FALSE
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = FALSE
-
-cpu.state = predict
-
-predictor.Predict = TFailed
-
-"
-[ label="attacker.cmd = branch
-victim.cmd = branch
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = FALSE
-
-cpu.state = predict
-
-predictor.Predict = TFailed
-
-" -> "
-r_time = 1
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = squash
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = load
-" ]
-"
-r_time = 1
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = squash
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 2
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = load
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = branch
+[ label="attacker.cmd = store
 victim.cmd = nop
 " ]
 "
-r_time = 0
+5:cache.ExistStateSC = TRUE
 
-cache.ExistStateSC = TRUE
+5:w_time = 2
 
-cache.evict = FALSE
+5:cache.ExistStateOT = TRUE
 
-w_time = 0
+5:cpu.state = normal
 
-cache.ExistStateOT = TRUE
+5:predictor.Predict = nop
 
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 1
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = flush
-" ]
-"
-r_time = 1
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 2
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = flush
-" ]
-"
-r_time = 2
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 3
-
-cache.ExistStateSC = FALSE
-
-cpu.state = predict
-
-cache.evict = TRUE
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = TSuccess
-
-w_time = 0
-
-"
-[ label="attacker.cmd = load
-victim.cmd = branch
-" ]
-"
-r_time = 3
-
-cache.ExistStateSC = FALSE
-
-cpu.state = predict
-
-cache.evict = TRUE
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = TSuccess
-
-w_time = 0
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = FALSE
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = branch
-victim.cmd = branch
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = FALSE
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = FALSE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = branch
-victim.cmd = branch
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = FALSE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 1
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = store
-victim.cmd = branch
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 1
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 2
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TFailed
-
-"
-[ label="attacker.cmd = store
-victim.cmd = branch
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 2
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TFailed
-
-" -> "
-r_time = 1
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = squash
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = load
-" ]
-"
-r_time = 1
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = squash
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 2
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = load
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = branch
-victim.cmd = nop
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 1
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = flush
-" ]
-"
-r_time = 1
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 2
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = flush
-" ]
-"
-r_time = 2
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 3
-
-cache.ExistStateSC = FALSE
-
-cpu.state = predict
-
-cache.evict = TRUE
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = TSuccess
-
-w_time = 0
-
-"
-[ label="attacker.cmd = load
-victim.cmd = branch
-" ]
-"
-r_time = 3
-
-cache.ExistStateSC = FALSE
-
-cpu.state = predict
-
-cache.evict = TRUE
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = TSuccess
-
-w_time = 0
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = FALSE
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = branch
-victim.cmd = branch
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = FALSE
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = FALSE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = branch
-victim.cmd = branch
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = FALSE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 1
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = flush
-" ]
-"
-r_time = 1
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 2
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = normal
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = flush
-" ]
-"
-r_time = 2
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = normal
-
-predictor.Predict = nop
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cpu.state = predict
-
-predictor.Predict = TFailed
-
-cache.evict = FALSE
-
-w_time = 1
-
-cache.ExistStateOT = TRUE
-
-"
-[ label="attacker.cmd = store
-victim.cmd = branch
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cpu.state = predict
-
-predictor.Predict = TFailed
-
-cache.evict = FALSE
-
-w_time = 1
-
-cache.ExistStateOT = TRUE
-
-" -> "
-r_time = 1
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = squash
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = load
-" ]
-"
-r_time = 1
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = squash
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 2
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = load
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = branch
-victim.cmd = nop
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 1
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = flush
-" ]
-"
-r_time = 1
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 2
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = flush
-" ]
-"
-r_time = 2
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 3
-
-cache.ExistStateSC = TRUE
-
-cache.evict = TRUE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = load
-" ]
-"
-r_time = 3
-
-cache.ExistStateSC = TRUE
-
-cache.evict = TRUE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-cache.ExistStateSC = FALSE
-
-r_time = 3
-
-cache.evict = TRUE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = load
-victim.cmd = branch
-" ]
-"
-cache.ExistStateSC = FALSE
-
-r_time = 3
-
-cache.evict = TRUE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = FALSE
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = branch
-victim.cmd = branch
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = FALSE
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = FALSE
-
-cpu.state = predict
-
-predictor.Predict = TFailed
-
-"
-[ label="attacker.cmd = branch
-victim.cmd = branch
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = FALSE
-
-cpu.state = predict
-
-predictor.Predict = TFailed
-
-" -> "
-r_time = 1
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = squash
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = load
-" ]
-"
-r_time = 1
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = squash
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 2
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = load
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = branch
-victim.cmd = nop
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 1
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = flush
-" ]
-"
-r_time = 1
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 2
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = flush
-" ]
-"
-r_time = 2
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 3
-
-cache.ExistStateSC = TRUE
-
-cache.evict = TRUE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = load
-" ]
-"
-r_time = 3
-
-cache.ExistStateSC = TRUE
-
-cache.evict = TRUE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-cache.ExistStateSC = FALSE
-
-r_time = 3
-
-cache.evict = TRUE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = load
-victim.cmd = branch
-" ]
-"
-cache.ExistStateSC = FALSE
-
-r_time = 3
-
-cache.evict = TRUE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = FALSE
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = branch
-victim.cmd = branch
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = FALSE
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = FALSE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = branch
-victim.cmd = branch
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = FALSE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 1
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = store
-victim.cmd = branch
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 1
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 2
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TFailed
-
-"
-[ label="attacker.cmd = store
-victim.cmd = branch
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 2
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TFailed
-
-" -> "
-r_time = 1
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = squash
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = load
-" ]
-"
-r_time = 1
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = squash
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 2
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = load
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = branch
-victim.cmd = nop
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 1
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = flush
-" ]
-"
-r_time = 1
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 2
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = flush
-" ]
-"
-r_time = 2
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 3
-
-cache.ExistStateSC = TRUE
-
-cache.evict = TRUE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = load
-" ]
-"
-r_time = 3
-
-cache.ExistStateSC = TRUE
-
-cache.evict = TRUE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-cache.ExistStateSC = FALSE
-
-r_time = 3
-
-cache.evict = TRUE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = load
-victim.cmd = branch
-" ]
-"
-cache.ExistStateSC = FALSE
-
-r_time = 3
-
-cache.evict = TRUE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = FALSE
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = branch
-victim.cmd = branch
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = FALSE
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = FALSE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = branch
-victim.cmd = branch
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = FALSE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 1
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = flush
-" ]
-"
-r_time = 1
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 2
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = normal
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = flush
-" ]
-"
-r_time = 2
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = normal
-
-predictor.Predict = nop
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cpu.state = predict
-
-predictor.Predict = TFailed
-
-cache.evict = FALSE
-
-w_time = 1
-
-cache.ExistStateOT = TRUE
-
-"
-[ label="attacker.cmd = store
-victim.cmd = branch
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cpu.state = predict
-
-predictor.Predict = TFailed
-
-cache.evict = FALSE
-
-w_time = 1
-
-cache.ExistStateOT = TRUE
-
-" -> "
-r_time = 1
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = squash
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = load
-" ]
-"
-r_time = 1
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = squash
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 2
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = load
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = branch
-victim.cmd = nop
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-" -> "
-cache.ExistStateSC = FALSE
-
-r_time = 0
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = FALSE
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = flush
-victim.cmd = branch
-" ]
-"
-cache.ExistStateSC = FALSE
-
-r_time = 0
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = FALSE
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = FALSE
-
-cpu.state = predict
-
-predictor.Predict = TFailed
-
-"
-[ label="attacker.cmd = flush
-victim.cmd = branch
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = FALSE
-
-cpu.state = predict
-
-predictor.Predict = TFailed
-
-" -> "
-r_time = 1
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = squash
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = load
-victim.cmd = branch
-" ]
-"
-r_time = 1
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = squash
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 2
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = load
-victim.cmd = branch
-" ]
-"
-r_time = 2
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 3
-
-cache.ExistStateSC = FALSE
-
-cache.evict = TRUE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = load
-victim.cmd = branch
-" ]
-"
-r_time = 3
-
-cache.ExistStateSC = FALSE
-
-cache.evict = TRUE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = FALSE
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = branch
-victim.cmd = branch
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = FALSE
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = FALSE
-
-cpu.state = predict
-
-predictor.Predict = TFailed
-
-"
-[ label="attacker.cmd = branch
-victim.cmd = branch
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = FALSE
-
-cpu.state = predict
-
-predictor.Predict = TFailed
-
-" -> "
-r_time = 1
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = squash
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = load
-" ]
-"
-r_time = 1
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = squash
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 2
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = load
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = branch
-victim.cmd = nop
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-" -> "
-cache.ExistStateSC = FALSE
-
-r_time = 0
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = FALSE
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = flush
-victim.cmd = branch
-" ]
-"
-cache.ExistStateSC = FALSE
-
-r_time = 0
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = FALSE
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = FALSE
-
-cpu.state = predict
-
-predictor.Predict = TFailed
-
-"
-[ label="attacker.cmd = flush
-victim.cmd = branch
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = FALSE
-
-cpu.state = predict
-
-predictor.Predict = TFailed
-
-" -> "
-r_time = 1
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = squash
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = load
-victim.cmd = branch
-" ]
-"
-r_time = 1
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = squash
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 2
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = load
-victim.cmd = branch
-" ]
-"
-r_time = 2
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 3
-
-cache.ExistStateSC = FALSE
-
-cache.evict = TRUE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = load
-victim.cmd = branch
-" ]
-"
-r_time = 3
-
-cache.ExistStateSC = FALSE
-
-cache.evict = TRUE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = FALSE
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = branch
-victim.cmd = branch
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = FALSE
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = FALSE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = branch
-victim.cmd = branch
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = FALSE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 1
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = store
-victim.cmd = branch
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 1
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 2
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TFailed
-
-"
-[ label="attacker.cmd = store
-victim.cmd = branch
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 2
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TFailed
-
-" -> "
-r_time = 1
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = squash
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = load
-" ]
-"
-r_time = 1
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = squash
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 2
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = load
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = branch
-victim.cmd = nop
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-" -> "
-cache.ExistStateSC = FALSE
-
-r_time = 0
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = FALSE
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = flush
-victim.cmd = branch
-" ]
-"
-cache.ExistStateSC = FALSE
-
-r_time = 0
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = FALSE
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = FALSE
-
-cpu.state = predict
-
-predictor.Predict = TFailed
-
-"
-[ label="attacker.cmd = flush
-victim.cmd = branch
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = FALSE
-
-cpu.state = predict
-
-predictor.Predict = TFailed
-
-" -> "
-r_time = 1
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = squash
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = load
-victim.cmd = branch
-" ]
-"
-r_time = 1
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = squash
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 2
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = load
-victim.cmd = branch
-" ]
-"
-r_time = 2
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 3
-
-cache.ExistStateSC = FALSE
-
-cache.evict = TRUE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = load
-victim.cmd = branch
-" ]
-"
-r_time = 3
-
-cache.ExistStateSC = FALSE
-
-cache.evict = TRUE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = FALSE
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = branch
-victim.cmd = branch
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = FALSE
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = FALSE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-"
-[ label="attacker.cmd = branch
-victim.cmd = branch
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = FALSE
-
-cpu.state = predict
-
-predictor.Predict = TSuccess
-
-" -> "
-r_time = 1
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = flush
-" ]
-"
-r_time = 1
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 2
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = normal
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = flush
-" ]
-"
-r_time = 2
-
-cache.ExistStateSC = FALSE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cache.ExistStateOT = TRUE
-
-cpu.state = normal
-
-predictor.Predict = nop
-
-" -> "
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cpu.state = predict
-
-predictor.Predict = TFailed
-
-cache.evict = FALSE
-
-w_time = 1
-
-cache.ExistStateOT = TRUE
-
-"
-[ label="attacker.cmd = store
-victim.cmd = branch
-" ]
-"
-r_time = 0
-
-cache.ExistStateSC = FALSE
-
-cpu.state = predict
-
-predictor.Predict = TFailed
-
-cache.evict = FALSE
-
-w_time = 1
-
-cache.ExistStateOT = TRUE
-
-" -> "
-r_time = 1
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = squash
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = load
-" ]
-"
-r_time = 1
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = squash
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-" -> "
-r_time = 2
-
-cache.ExistStateSC = TRUE
-
-cache.evict = FALSE
-
-w_time = 0
-
-cpu.state = normal
-
-cache.ExistStateOT = TRUE
-
-predictor.Predict = nop
-
-"
-[ label="attacker.cmd = load
-victim.cmd = load
-" ]
+" -> "Danger"
 }
