@@ -83,10 +83,12 @@ def file2list(fdir):
 
 def fill_states(multi_counterexample_path_list):
 	# print(multi_counterexample_path_list)
-	phase_evict_index=0;
+	phase_evict_index=-1;
 	for i in range(len(multi_counterexample_path_list)):
 		# every counterexample
 		items=[]
+		phase_evict_index=-1;
+
 		for j in range(len(multi_counterexample_path_list[i])):
 			if(j==0):
 				items=list(multi_counterexample_path_list[i][j].trace_state_dic.keys());
@@ -111,8 +113,8 @@ def fill_states(multi_counterexample_path_list):
 						# print(key)
 						# print("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
 						phase_evict_index=j
-
-		multi_counterexample_path_list[i][phase_evict_index].phase="empty"
+		if(phase_evict_index>0):
+			multi_counterexample_path_list[i][phase_evict_index].phase="empty"
 
 
 
@@ -131,7 +133,8 @@ def fill_states(multi_counterexample_path_list):
 def generate_graph(multi_counterexample_path_list,length):
 	print(" strict digraph prof {\n")
 	print("    node [fontname=\"Arial\"];\n")
-	# print("    splines=line;")
+	# print("    splines=line;\n")
+	print("\"\nempty\n\" [shape=box,width=10]\n")
 
 	if(length>len(multi_counterexample_path_list)):
 		length=len(multi_counterexample_path_list)
@@ -141,6 +144,7 @@ def generate_graph(multi_counterexample_path_list,length):
 	for i in range(length):
 		# every counterexample
 		len_j=len(multi_counterexample_path_list[i])
+		phase_id=1
 		for j in range(len_j):
 			list_str=""
 			print("\"");
@@ -152,7 +156,7 @@ def generate_graph(multi_counterexample_path_list,length):
 					if (items[k][0] in black_list):
 						list_str=list_str + ("%s = %s\n" %(items[k][0],items[k][1]))
 						continue;
-					print('%d:%s = %s\n' % (len_j,items[k][0],items[k][1]))
+					print('%d:%d:%s = %s\n' % (phase_id,len_j,items[k][0],items[k][1]))
 					# print('%d:%d:%s = %s\n' % (i,j-1,items[k][0],items[k][1]))
 				# print(multi_counterexample_path_list[i][j-1].trace_index)
 				# print(".")
@@ -162,7 +166,8 @@ def generate_graph(multi_counterexample_path_list,length):
 
 			if(multi_counterexample_path_list[i][j-1].phase != ""):
 				print(multi_counterexample_path_list[i][j-1].phase);
-				print("\" -> \"");
+				print("\"   -> \"");
+				phase_id=phase_id+1;
 
 
 
@@ -172,7 +177,7 @@ def generate_graph(multi_counterexample_path_list,length):
 			for k in range(len(items)):
 				if (items[k][0] in black_list ):
 					continue;
-				print('%d:%s = %s\n' % (len_j,items[k][0],items[k][1]))
+				print('%d:%d:%s = %s\n' % (phase_id,len_j,items[k][0],items[k][1]))
 				# print('%d:%d:%s = %s\n' % (i,j,items[k][0],items[k][1]))
 			# print(multi_counterexample_path_list[i][j].trace_index)
 			# print(".")
@@ -187,7 +192,7 @@ def generate_graph(multi_counterexample_path_list,length):
 				for k in range(len(items)):
 					if (items[k][0] in black_list ):
 						continue;
-					print('%d:%s = %s\n' % (len_j,items[k][0],items[k][1]))
+					print('%d:%d:%s = %s\n' % (phase_id,len_j,items[k][0],items[k][1]))
 					# print('%d:%d:%s = %s\n' % (i,j,items[k][0],items[k][1]))
 
 				print("\" -> \"Danger\"");
@@ -209,7 +214,7 @@ def generate_graph(multi_counterexample_path_list,length):
 def main(argv):
 	multi_counterexample_path_list=file2list('ce')
 	multi_counterexample_path_list=fill_states(multi_counterexample_path_list);
-	generate_graph(multi_counterexample_path_list,10)
+	generate_graph(multi_counterexample_path_list,1000)
 
 	# for i in range(len(multi_counterexample_path_list)):
 	# 	print(len(multi_counterexample_path_list[i]))

@@ -2,8 +2,8 @@ import os
 
 with open('attack_flush_reload.smv', 'r') as f:
     smv=f.read()
-    attacker=["nop","flush","load","store","branch"]
-    victim=["nop","flush","load","store"]
+    attacker=["nop","load","store"]
+    victim=["nop","load","store"]
     # attacker=["nop","load","store","flush","branch"]
     # victim=["nop","load","store","flush"]
     if not os.path.exists("tmp"):

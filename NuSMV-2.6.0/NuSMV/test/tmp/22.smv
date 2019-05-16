@@ -26,7 +26,7 @@ ExistStateOT:boolean;
 --evict:=w_time=3;
 
 ASSIGN
-init(ExistStateSC):=TRUE;
+init(ExistStateSC):=FALSE;
 init(ExistStateOT):=TRUE;
 
 
@@ -116,8 +116,8 @@ ASSIGN
 init(w_time):=0;
 --init(cache.ExistStateSC):=FALSE;
 
-init(victim.cmd):=load;
-init(attacker.cmd):=load;
+init(victim.cmd):=store;
+init(attacker.cmd):=store;
 
 next(victim.cmd):=case
                     cpu.state=squash|cpu.state=predict|cpu.state=authfailed:victim.cmd;
