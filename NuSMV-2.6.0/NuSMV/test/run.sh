@@ -14,6 +14,6 @@ for i in $dir
            NuSMV tmp/$i > ce/$i.ce
      done
 python graph.py >demo.dot
-dot -Tpng demo.dot -o demo.png
+dot -Tpng -s1 demo.dot -o demo.png
 
 
