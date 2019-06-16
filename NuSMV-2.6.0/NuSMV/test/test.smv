@@ -1,31 +1,18 @@
 MODULE main
 VAR
 state:{1,2,3,4,5,6};
-ctrl:{0,1};z
-time:0..20;
 
 ASSIGN
 init(state):=1;
 next(state):=case
-			 ctrl=0&state=1:2;
-             ctrl=0&state=2:3;
-             ctrl=0&state=3:{4,5};
-             ctrl=0&state=4:{6};
-             ctrl=0&state=5:{4};
-             ctrl=0&state=6:1;
-             ctrl=1:6;
+			 state=1:2;
+             state=2:3;
+             state=3:{4,5};
+             state=4:{6};
+             state=5:{4};
+             state=6:1;
 			TRUE : state;
 		esac;
 
-init(ctrl):=0;
-next(ctrl):=case
-          time=19:1;
-          TRUE:ctrl;
-        esac;
 
-
-init(time):=0;
-next(time):=(time + 1) mod 20;
-
-
-SPEC  !EF (state=6 |state=4)
+SPEC  EF (state=7)
