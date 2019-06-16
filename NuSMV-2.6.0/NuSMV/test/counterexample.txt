@@ -1,4 +1,4 @@
-/tmp/tmp.0RQ7y2kWUx/cmake-build-debug/bin/NuSMV ../../test/attack_flush_reload.smv
+sudo /tmp/tmp.0RQ7y2kWUx/cmake-build-debug/bin/NuSMV ../../test/attack_flush_reload.smv
 *** This is NuSMV-A (compiled on Fri May 10 19:35:33 2019)
 *** NuSMV-A is an extension of NuSMV 2.6.0
 *** For more information on NuSMV-A see <http://github.com/hklarner/NuSMV-A>

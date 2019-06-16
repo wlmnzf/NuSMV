@@ -29,8 +29,8 @@ class Trace:
 	# cache.evict = FALSE
 black_list=["attacker.cmd","victim.cmd"]
 white_list=["cache.ExistStateOT","cpu.state","predictor.Predict","cache.ExistStateSC","cache.ExistStateOT","r_time","w_time","cache.evict"]
-phase_evict={"attacker.cmd":"flush","victim.cmd":"flush","cpu.state":"evict"}
-
+phase_evict={"victim.cmd":"flush","cpu.state":"evict"}
+# phase_evict={"attacker.cmd":"flush","victim.cmd":"flush","cpu.state":"evict"}
 # white_list=["cpu.state"]
 
 def file2list(fdir):
@@ -112,11 +112,17 @@ def fill_states(multi_counterexample_path_list):
 				for key in phase_items:
 					if(multi_counterexample_path_list[i][j].filled_trace_state_dic[key]==phase_evict[key]):
 						# print(key)
+						# print(phase_evict[key])
 						# print("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
 						phase_evict_index=j
 						phase_str=phase_evict[key];
+						# break;
 		if(phase_evict_index>0):
 			multi_counterexample_path_list[i][phase_evict_index].phase=phase_str
+			# print(i)
+			# print(phase_evict_index);
+			# print(multi_counterexample_path_list[i][phase_evict_index].phase)
+			# print("sssssss")
 
 
 
@@ -149,6 +155,7 @@ def generate_graph(multi_counterexample_path_list,length):
 		# every counterexample
 		len_j=len(multi_counterexample_path_list[i])
 		if(len_j>length):
+			# print("jjjjjjjj");
 			break;
 		phase_id=1
 		for j in range(len_j):
@@ -169,8 +176,11 @@ def generate_graph(multi_counterexample_path_list,length):
 				# print(multi_counterexample_path_list[i][j-1].trace_state_index)
 
 			print("\" -> \"");
-
+			# if(j==2):
+			# 	print("222222")
+			# 	print(multi_counterexample_path_list[i][j-1].phase)
 			if(multi_counterexample_path_list[i][j-1].phase != ""):
+				# print("aaaaaaaaa");
 				print(multi_counterexample_path_list[i][j-1].phase);
 				print("\"   -> \"");
 				phase_id=phase_id+1;
@@ -220,12 +230,12 @@ def generate_graph(multi_counterexample_path_list,length):
 def main(argv):
 	multi_counterexample_path_list=file2list('ce')
 	multi_counterexample_path_list=fill_states(multi_counterexample_path_list);
-	generate_graph(multi_counterexample_path_list,8)
+	generate_graph(multi_counterexample_path_list,6)
 
-	# for i in range(len(multi_counterexample_path_list)):
+	# for i in range(100):
 	# 	print(len(multi_counterexample_path_list[i]))
-		# for j in range(len(multi_counterexample_path_list[0])):
-		# 	print(multi_counterexample_path_list[0][j].filled_trace_state_dic);
+	# 	for j in range(len(multi_counterexample_path_list[0])):
+	# 		print(multi_counterexample_path_list[0][j].filled_trace_state_dic);
 
 
 

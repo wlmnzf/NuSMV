@@ -11,7 +11,7 @@ mkdir ce
 rm -rf ce/*
 for i in $dir
 	do
-           NuSMV tmp/$i > ce/$i.ce
+          NuSMV tmp/$i > ce/$i.ce
      done
 python graph.py >demo.dot
 dot -Tpng -s1 demo.dot -o demo.png
