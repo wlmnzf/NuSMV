@@ -250,7 +250,7 @@ def main(argv):
 		print("PASS\n");
 		return;
 	multi_counterexample_path_list=fill_states(multi_counterexample_path_list);
-	generate_graph(multi_counterexample_path_list,7)
+	generate_graph(multi_counterexample_path_list,9)
 
 	# for i in range(100):
 	# 	print(len(multi_counterexample_path_list[i]))

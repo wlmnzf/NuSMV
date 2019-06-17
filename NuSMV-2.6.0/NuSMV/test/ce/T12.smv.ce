@@ -22,10 +22,10 @@ Trace Description: CTL Counterexample
 Trace Type: Counterexample 
   -> State: 1.1 <-
     w_time = 0
-    attacker.cmd = nop
+    attacker.cmd = load
     attacker.rw_addr = SC_addr
     victim.cmd = store
-    cache.ExistStateSC = FALSE
+    cache.ExistStateSC = TRUE
     cache.ExistStateOT = TRUE
     predictor.Predict = nop
     cpu.state = normal
@@ -33,7 +33,6 @@ Trace Type: Counterexample
     w_time = 1
     attacker.cmd = flush
     victim.cmd = flush
-    cache.ExistStateSC = TRUE
   -> State: 1.3 <-
     w_time = 0
     cache.ExistStateSC = FALSE
@@ -61,10 +60,10 @@ Trace Description: CTL Counterexample
 Trace Type: Counterexample 
   -> State: 2.1 <-
     w_time = 0
-    attacker.cmd = nop
+    attacker.cmd = load
     attacker.rw_addr = SC_addr
     victim.cmd = store
-    cache.ExistStateSC = FALSE
+    cache.ExistStateSC = TRUE
     cache.ExistStateOT = TRUE
     predictor.Predict = nop
     cpu.state = normal
@@ -72,7 +71,6 @@ Trace Type: Counterexample
     w_time = 1
     attacker.cmd = flush
     victim.cmd = flush
-    cache.ExistStateSC = TRUE
   -> State: 2.3 <-
     w_time = 0
     cache.ExistStateSC = FALSE
@@ -106,10 +104,10 @@ Trace Description: CTL Counterexample
 Trace Type: Counterexample 
   -> State: 3.1 <-
     w_time = 0
-    attacker.cmd = nop
+    attacker.cmd = load
     attacker.rw_addr = SC_addr
     victim.cmd = store
-    cache.ExistStateSC = FALSE
+    cache.ExistStateSC = TRUE
     cache.ExistStateOT = TRUE
     predictor.Predict = nop
     cpu.state = normal
@@ -117,7 +115,6 @@ Trace Type: Counterexample
     w_time = 1
     attacker.cmd = flush
     victim.cmd = flush
-    cache.ExistStateSC = TRUE
   -> State: 3.3 <-
     w_time = 0
     cache.ExistStateSC = FALSE

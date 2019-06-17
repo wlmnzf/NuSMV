@@ -22,28 +22,35 @@ Trace Description: CTL Counterexample
 Trace Type: Counterexample 
   -> State: 1.1 <-
     w_time = 0
-    attacker.cmd = load
+    attacker.cmd = store
     attacker.rw_addr = SC_addr
     victim.cmd = nop
-    cache.ExistStateSC = FALSE
+    cache.ExistStateSC = TRUE
     cache.ExistStateOT = TRUE
     predictor.Predict = nop
     cpu.state = normal
   -> State: 1.2 <-
-    attacker.cmd = branch
+    attacker.cmd = flush
+    victim.cmd = flush
   -> State: 1.3 <-
-    attacker.cmd = load
+    cache.ExistStateSC = FALSE
+    cache.ExistStateOT = FALSE
+  -> State: 1.4 <-
+    attacker.cmd = branch
+    victim.cmd = nop
+  -> State: 1.5 <-
+    attacker.cmd = flush
     victim.cmd = store
     cache.ExistStateSC = TRUE
     predictor.Predict = TFailed
     cpu.state = predict
-  -> State: 1.4 <-
+  -> State: 1.6 <-
     w_time = 1
     attacker.cmd = nop
     victim.cmd = nop
     predictor.Predict = nop
     cpu.state = squash
-  -> State: 1.5 <-
+  -> State: 1.7 <-
     w_time = 0
     cpu.state = normal
 -- as demonstrated by the following execution sequence
@@ -51,10 +58,10 @@ Trace Description: CTL Counterexample
 Trace Type: Counterexample 
   -> State: 2.1 <-
     w_time = 0
-    attacker.cmd = load
+    attacker.cmd = store
     attacker.rw_addr = SC_addr
     victim.cmd = nop
-    cache.ExistStateSC = FALSE
+    cache.ExistStateSC = TRUE
     cache.ExistStateOT = TRUE
     predictor.Predict = nop
     cpu.state = normal
@@ -62,126 +69,65 @@ Trace Type: Counterexample
     attacker.cmd = flush
     victim.cmd = flush
   -> State: 2.3 <-
-    attacker.cmd = branch
-    victim.cmd = nop
+    cache.ExistStateSC = FALSE
     cache.ExistStateOT = FALSE
   -> State: 2.4 <-
-    attacker.cmd = load
+    attacker.cmd = branch
+    victim.cmd = nop
+  -> State: 2.5 <-
     victim.cmd = store
     cache.ExistStateSC = TRUE
+    predictor.Predict = TSuccess
+    cpu.state = predict
+  -> State: 2.6 <-
+    w_time = 1
+    cpu.state = normal
+  -> State: 2.7 <-
+    w_time = 2
+    attacker.cmd = flush
+    victim.cmd = nop
     predictor.Predict = TFailed
     cpu.state = predict
-  -> State: 2.5 <-
-    w_time = 1
+  -> State: 2.8 <-
+    w_time = 0
     attacker.cmd = nop
-    victim.cmd = nop
-    cache.ExistStateOT = TRUE
     predictor.Predict = nop
     cpu.state = squash
-  -> State: 2.6 <-
-    w_time = 0
+  -> State: 2.9 <-
     cpu.state = normal
 -- as demonstrated by the following execution sequence
 Trace Description: CTL Counterexample 
 Trace Type: Counterexample 
   -> State: 3.1 <-
     w_time = 0
-    attacker.cmd = load
+    attacker.cmd = store
     attacker.rw_addr = SC_addr
     victim.cmd = nop
-    cache.ExistStateSC = FALSE
+    cache.ExistStateSC = TRUE
     cache.ExistStateOT = TRUE
     predictor.Predict = nop
     cpu.state = normal
   -> State: 3.2 <-
-    attacker.cmd = branch
+    attacker.cmd = flush
+    victim.cmd = flush
   -> State: 3.3 <-
+    cache.ExistStateSC = FALSE
+    cache.ExistStateOT = FALSE
+  -> State: 3.4 <-
+    attacker.cmd = branch
+    victim.cmd = nop
+  -> State: 3.5 <-
+    attacker.cmd = flush
     victim.cmd = store
     cache.ExistStateSC = TRUE
-    predictor.Predict = TSuccess
-    cpu.state = predict
-  -> State: 3.4 <-
-    w_time = 1
-    cpu.state = normal
-  -> State: 3.5 <-
-    w_time = 2
-    attacker.cmd = flush
-    victim.cmd = nop
     predictor.Predict = TFailed
     cpu.state = predict
   -> State: 3.6 <-
-    w_time = 0
+    w_time = 1
     attacker.cmd = nop
-    cache.ExistStateOT = FALSE
+    victim.cmd = nop
     predictor.Predict = nop
     cpu.state = squash
   -> State: 3.7 <-
-    cpu.state = normal
--- as demonstrated by the following execution sequence
-Trace Description: CTL Counterexample 
-Trace Type: Counterexample 
-  -> State: 4.1 <-
-    w_time = 0
-    attacker.cmd = load
-    attacker.rw_addr = SC_addr
-    victim.cmd = nop
-    cache.ExistStateSC = FALSE
-    cache.ExistStateOT = TRUE
-    predictor.Predict = nop
-    cpu.state = normal
-  -> State: 4.2 <-
-    attacker.cmd = flush
-    victim.cmd = flush
-  -> State: 4.3 <-
-    attacker.cmd = branch
-    victim.cmd = nop
-    cache.ExistStateOT = FALSE
-  -> State: 4.4 <-
-    victim.cmd = store
-    cache.ExistStateSC = TRUE
-    predictor.Predict = TSuccess
-    cpu.state = predict
-  -> State: 4.5 <-
-    w_time = 1
-    cpu.state = normal
-  -> State: 4.6 <-
-    w_time = 2
-    attacker.cmd = nop
-    victim.cmd = nop
-    predictor.Predict = TFailed
-    cpu.state = predict
-  -> State: 4.7 <-
-    w_time = 0
-    predictor.Predict = nop
-    cpu.state = squash
-  -> State: 4.8 <-
-    cpu.state = normal
--- as demonstrated by the following execution sequence
-Trace Description: CTL Counterexample 
-Trace Type: Counterexample 
-  -> State: 5.1 <-
-    w_time = 0
-    attacker.cmd = load
-    attacker.rw_addr = SC_addr
-    victim.cmd = nop
-    cache.ExistStateSC = FALSE
-    cache.ExistStateOT = TRUE
-    predictor.Predict = nop
-    cpu.state = normal
-  -> State: 5.2 <-
-    attacker.cmd = branch
-  -> State: 5.3 <-
-    attacker.cmd = load
-    victim.cmd = store
-    cache.ExistStateSC = TRUE
-    predictor.Predict = TFailed
-    cpu.state = predict
-  -> State: 5.4 <-
-    w_time = 1
-    attacker.cmd = nop
-    victim.cmd = nop
-    predictor.Predict = nop
-    cpu.state = squash
-  -> State: 5.5 <-
     w_time = 0
     cpu.state = normal

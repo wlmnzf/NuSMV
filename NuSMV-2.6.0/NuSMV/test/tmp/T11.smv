@@ -41,7 +41,7 @@ ExistStateOT:boolean;
 --evict:=w_time=3;
 
 ASSIGN
-init(ExistStateSC):=FALSE;
+init(ExistStateSC):=TRUE;
 init(ExistStateOT):=TRUE;
 
 
@@ -134,7 +134,7 @@ init(w_time):=0;
 --init(cache.ExistStateSC):=FALSE;
 
 init(victim.cmd):=load;
-init(attacker.cmd):=nop;
+init(attacker.cmd):=load;
 
 next(victim.cmd):=case
 (cpu.state=predict)&(predictor.Predict=TFailed|predictor.Predict=NTFailed):nop;

@@ -41,7 +41,7 @@ ExistStateOT:boolean;
 --evict:=w_time=3;
 
 ASSIGN
-init(ExistStateSC):=FALSE;
+init(ExistStateSC):=TRUE;
 init(ExistStateOT):=TRUE;
 
 
@@ -133,7 +133,7 @@ ASSIGN
 init(w_time):=0;
 --init(cache.ExistStateSC):=FALSE;
 
-init(victim.cmd):=nop;
+init(victim.cmd):=store;
 init(attacker.cmd):=load;
 
 next(victim.cmd):=case

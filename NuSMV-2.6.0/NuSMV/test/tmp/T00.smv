@@ -41,7 +41,7 @@ ExistStateOT:boolean;
 --evict:=w_time=3;
 
 ASSIGN
-init(ExistStateSC):=FALSE;
+init(ExistStateSC):=TRUE;
 init(ExistStateOT):=TRUE;
 
 
