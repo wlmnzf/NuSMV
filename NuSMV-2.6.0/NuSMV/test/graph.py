@@ -28,9 +28,21 @@ class Trace:
 	# evict = FALSE
 	# cache.evict = FALSE
 black_list=["attacker.cmd","victim.cmd"]
-white_list=["cache.ExistStateOT","cpu.state","predictor.Predict","cache.ExistStateSC","cache.ExistStateOT","r_time","w_time","cache.evict"]
-phase_evict={"victim.cmd":"flush","cpu.state":"evict"}
-# phase_evict={"attacker.cmd":"flush","victim.cmd":"flush","cpu.state":"evict"}
+white_list=["cache.ExistStateOT","cpu.state","predictor.Predict","cache.ExistStateSC","cache.ExistStateOT","r_time","w_time","cache.evict","cpu.isflush"]
+# white_list=["cache.ExistStateOT","cpu.state","predictor.Predict","cache.ExistStateSC","cache.ExistStateOT","r_time","w_time","cache.evict","cpu.isflush"]
+# white_list=["cpu.state","predictor.Predict","cache.ExistStateSC","w_time","cache.evict","cpu.isflush"]
+# phase_evict={"victim.cmd":"flush","cpu.state":"evict"}
+
+phase_n=[0,0,0,1]
+phase_key=["attacker.cmd","victim.cmd","cpu.state","cpu.state"]
+phase_value=["flush","flush","evict","squash"]
+
+phase_target_key=["cache.ExistStateSC","cache.ExistStateSC","cache.ExistStateSC","cache.ExistStateSC"];
+phase_target_value=["FALSE","FALSE","FALSE","TRUE"];
+
+# phase_evict_index=[-1,-1,-1,-1]
+
+
 # white_list=["cpu.state"]
 
 def file2list(fdir):
@@ -74,8 +86,8 @@ def file2list(fdir):
 				trace.trace_index=cnt
 
 			counterexample.append(trace)
-
-		multi_counterexample_path_list.append(counterexample);
+		if(len(counterexample)>0):
+			multi_counterexample_path_list.append(counterexample);
 		cnt=cnt+1
 
 	multi_counterexample_path_list.sort(key=len)
@@ -87,8 +99,8 @@ def fill_states(multi_counterexample_path_list):
 	for i in range(len(multi_counterexample_path_list)):
 		# every counterexample
 		items=[]
-		phase_evict_index=-1;
-		phase_str="";
+		phase_evict_index=[-1,-1];
+		phase_str=["",""];
 
 		for j in range(len(multi_counterexample_path_list[i])):
 			if(j==0):
@@ -108,17 +120,22 @@ def fill_states(multi_counterexample_path_list):
 					else:																		  #否则从本trace中取值
 						multi_counterexample_path_list[i][j].filled_trace_state_dic[items[k]]=multi_counterexample_path_list[i][j].trace_state_dic[items[k]]
 
-				phase_items=list(phase_evict.keys())
-				for key in phase_items:
-					if(multi_counterexample_path_list[i][j].filled_trace_state_dic[key]==phase_evict[key]):
+				# phase_items=list(phase_evict.keys())
+				# target_items=list(phase_target.keys())
+				for pi in range(len(phase_key)):
+					key=phase_key[pi];
+					target_key=phase_target_key[pi];
+					target_value=phase_target_value[pi];
+					if(j< len(multi_counterexample_path_list[i]) and multi_counterexample_path_list[i][j-1].filled_trace_state_dic[key]==phase_value[pi] and multi_counterexample_path_list[i][j].filled_trace_state_dic[target_key]==target_value):
 						# print(key)
 						# print(phase_evict[key])
 						# print("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
-						phase_evict_index=j
-						phase_str=phase_evict[key];
+						phase_evict_index[phase_n[pi]]=j-1
+						phase_str[phase_n[pi]]=phase_value[pi];
 						# break;
-		if(phase_evict_index>0):
-			multi_counterexample_path_list[i][phase_evict_index].phase=phase_str
+		for pn in range(len(phase_n)):
+			if(phase_evict_index[phase_n[pn]]>=0):
+				multi_counterexample_path_list[i][phase_evict_index[phase_n[pn]]].phase=phase_str[phase_n[pn]]
 			# print(i)
 			# print(phase_evict_index);
 			# print(multi_counterexample_path_list[i][phase_evict_index].phase)
@@ -142,9 +159,9 @@ def generate_graph(multi_counterexample_path_list,length):
 	print(" strict digraph prof {\n")
 	print("    node [fontname=\"Arial\"];\n")
 	# print("    splines=line;\n")
-	phase_items=list(phase_evict.keys())
-	for key in phase_items:
-		print("\"\n%s\n\" [style=filled,fillcolor=yellow,shape=box,width=5]\n" %(phase_evict[key]))
+	# phase_items=list(phase_evict.keys())
+	for i in range(len(phase_key)):
+		print("\"\n%s\n\" [style=filled,fillcolor=yellow,shape=box,width=5]\n" %(phase_value[i]))
 
 	if(length>len(multi_counterexample_path_list)):
 		length=len(multi_counterexample_path_list)
@@ -229,8 +246,11 @@ def generate_graph(multi_counterexample_path_list,length):
 
 def main(argv):
 	multi_counterexample_path_list=file2list('ce')
+	if(len(multi_counterexample_path_list)==0):
+		print("PASS\n");
+		return;
 	multi_counterexample_path_list=fill_states(multi_counterexample_path_list);
-	generate_graph(multi_counterexample_path_list,6)
+	generate_graph(multi_counterexample_path_list,7)
 
 	# for i in range(100):
 	# 	print(len(multi_counterexample_path_list[i]))

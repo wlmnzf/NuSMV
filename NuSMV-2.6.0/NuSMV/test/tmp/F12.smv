@@ -1,8 +1,8 @@
 MODULE Processor(attacker,victim,cache,predictor,w_time)
 VAR
 state:{normal,squash,authfailed,predict,evict};
-time:0..100;
-isflush:{0,1};
+--time:0..100;
+--isflush:{0,1};
 
 ASSIGN
 init(state):=normal;
@@ -15,18 +15,18 @@ next(state):=case
                 (attacker.cmd=branch|victim.cmd=branch)&victim.cmd!=flush:predict;
                 TRUE:state;
               esac;
-init(time):=0;
-next(time):=case
-                time<99:time+1;
-                TRUE:time;
-            esac;
+--init(time):=0;
+--next(time):=case
+--                time<99:time+1;
+--                TRUE:time;
+--            esac;
 
-init(isflush):=0;
-next(isflush):=case
-                time=0&cache.ExistStateSC=FALSE:1;
-                attacker.cmd=flush|victim.cmd=flush|w_time=3:1;
-                TRUE:isflush;
-               esac;
+--init(isflush):=0;
+--next(isflush):=case
+--                time=0&cache.ExistStateSC=FALSE:1;
+--                attacker.cmd=flush|victim.cmd=flush|w_time=3:1;
+--               TRUE:isflush;
+--               esac;
 
 
 
@@ -47,7 +47,9 @@ init(ExistStateOT):=TRUE;
 
 
 next(ExistStateSC):= case
-                        victim.cmd=flush|attacker.cmd=flush:FALSE;
+                        attacker.cmd=branch:TRUE;
+                         victim.cmd=flush:FALSE;
+                        --attacker.cmd=flush:FALSE;
                         victim.cmd=load|victim.cmd=store:TRUE;
                         w_time=3:FALSE;
                         TRUE: ExistStateSC;
@@ -135,21 +137,25 @@ init(victim.cmd):=store;
 init(attacker.cmd):=load;
 
 next(victim.cmd):=case
+(cpu.state=predict)&(predictor.Predict=TFailed|predictor.Predict=NTFailed):nop;
+                   --  cache.ExistStateSC=FALSE:{nop,load,store,branch,flush};
                     cpu.state=squash|cpu.state=predict|cpu.state=authfailed:victim.cmd;
                     TRUE:{nop,load,store,flush};
                   esac;
 
 next(attacker.cmd):=case
+(cpu.state=predict)&(predictor.Predict=TFailed|predictor.Predict=NTFailed):nop;
                     cpu.state=squash|cpu.state=predict|cpu.state=authfailed:attacker.cmd;
-                    cache.ExistStateSC=TRUE&victim.cmd!=flush&attacker.cmd!=flush=TRUE&cpu.isflush=1:{nop,load,store,branch,flush};
-                     cache.ExistStateSC=TRUE&victim.cmd!=flush&attacker.cmd!=flush=TRUE&cpu.isflush=0:{nop,load,store,flush};
+                    cache.ExistStateSC=FALSE&victim.cmd!=load&victim.cmd!=store:{nop,load,store,branch,flush};
+                    --cache.ExistStateSC=TRUE&victim.cmd!=flush&attacker.cmd!=flush=TRUE:{nop,load,store,branch,flush};
+                     --cache.ExistStateSC=TRUE&victim.cmd!=flush&attacker.cmd!=flush=TRUE&cpu.isflush=0:{nop,load,store,flush};
                     TRUE:{nop,load,store,flush};
                   esac;
 
 
 next(w_time):=case
-                attacker.cmd=store&victim.cmd!=load&victim.cmd!=store&w_time=3:3;
-                attacker.cmd=store&victim.cmd!=load&victim.cmd!=store:w_time+1;
+                victim.cmd!=load&victim.cmd=store&w_time=3:3;
+                victim.cmd!=load&victim.cmd=store:w_time+1;
                 TRUE:0;
               esac;
 

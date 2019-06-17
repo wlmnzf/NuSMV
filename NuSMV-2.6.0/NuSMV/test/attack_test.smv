@@ -19,14 +19,14 @@ init(time):=0;
 next(time):=case
                 time<99:time+1;
                 TRUE:time;
-            esac;
+           esac;
 
 init(isflush):=0;
 next(isflush):=case
-                time=0&cache.ExistStateSC=FALSE:1;
-                attacker.cmd=flush|victim.cmd=flush|w_time=3:1;
-                TRUE:isflush;
-               esac;
+               time=0&cache.ExistStateSC=FALSE:1;
+               attacker.cmd=flush|victim.cmd=flush|w_time=3:1;
+               TRUE:isflush;
+              esac;
 
 
 
@@ -47,7 +47,8 @@ init(ExistStateOT):=TRUE;
 
 
 next(ExistStateSC):= case
-                        victim.cmd=flush|attacker.cmd=flush:FALSE;
+                        --victim.cmd=flush|attacker.cmd=flush:FALSE;
+                       -- attacker.cmd=flush:FALSE;
                         victim.cmd=load|victim.cmd=store:TRUE;
                         w_time=3:FALSE;
                         TRUE: ExistStateSC;
@@ -131,7 +132,7 @@ ASSIGN
 init(w_time):=0;
 --init(cache.ExistStateSC):=FALSE;
 
-init(victim.cmd):=flush;
+init(victim.cmd):=nop;
 init(attacker.cmd):=store;
 
 next(victim.cmd):=case
@@ -148,8 +149,8 @@ next(attacker.cmd):=case
 
 
 next(w_time):=case
-                attacker.cmd=store&victim.cmd!=load&victim.cmd!=store&w_time=3:3;
-                attacker.cmd=store&victim.cmd!=load&victim.cmd!=store:w_time+1;
+                victim.cmd!=load&victim.cmd=store&w_time=3:3;
+                victim.cmd!=load&victim.cmd=store:w_time+1;
                 TRUE:0;
               esac;
 
